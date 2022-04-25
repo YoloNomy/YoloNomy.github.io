@@ -1,18 +1,18 @@
 \\
-## About us
+# About us
 
 We want to make physic lectures and codes available for all.
 
-### Codes
+# Codes
 
-# Black holes
-# Cosmic horizons
-# De Broglie - Bohm trajectories
+## Black holes
+## Cosmic horizons
+## De Broglie - Bohm trajectories
 
-### Lecture notes
+# Lecture notes
 
 Differential geometry and physics (to come)
 
-### Philosophy of science
+# Philosophy of science
 
-### More
+# More
