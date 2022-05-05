@@ -8,11 +8,13 @@ We want to make physic lectures and codes available for all.
 ### Black holes
 ### Cosmic horizons
 ## Quantum physics
-### De Broglie - Bohm trajectories
+### De Broglie-Bohm trajectories
 
 # Lecture notes
 
+### Cosmology
 ### Differential geometry and physics (to come)
+### Statistical mechanics
 
 # Philosophy of science
 
