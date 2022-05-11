@@ -6,3 +6,5 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 include:
   - _pages
+
+encoding: "utf-8"
