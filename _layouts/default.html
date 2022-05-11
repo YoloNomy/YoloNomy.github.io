@@ -1,23 +1,34 @@
-<!DOCTYPE html>
-<html>
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>
-    {% include html_meta %}
-    <title>How to use MathJax in Jekyll generated Github pages -- Haixing Hu's Homepage</title>
-    <link href="/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    {% include head.html %}
+    {% include head/custom.html %}
     {% if page.use_math %}
-      {% include mathjax_support %}
+    {% include mathjax_support.html %}
     {% endif %}
   </head>
+
   <body>
-    {% include navigation_bar %}
-    <div class="container-narrow">
-      <div class="content">
-        {{ content }}
-      </div>
-      <hr/>
-      {% include footer %}
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    {{ content }}
+
+    <div class="page__footer">
+      <footer>
+        {% include footer.html %}
+      </footer>
     </div>
-    {% include JB/analytics %}
+
+    {% include scripts.html %}
+    {% include footer/custom.html %}
+
   </body>
 </html>
