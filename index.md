@@ -15,7 +15,7 @@ We want to make physic lectures and codes available for all.
 
 ### Cosmic horizons
 
-You can find [here](./pages/horizons.md) some small python codes simulating the evolution of cosmological horizons for various evolutions of the universe. The goal is to become familiar with the notion of horizon itself and the various types that can be encountered in cosmology.
+You can find [here](./_pages/horizons.md) some small python codes simulating the evolution of cosmological horizons for various evolutions of the universe. The goal is to become familiar with the notion of horizon itself and the various types that can be encountered in cosmology.
 
 ## Quantum physics
 
