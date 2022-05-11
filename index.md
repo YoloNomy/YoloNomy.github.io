@@ -6,7 +6,7 @@ We want to make physic lectures and codes available for all.
 # Codes
 ## Cosmology
 ### Black holes
-### Cosmic horizons
+### [Cosmic horizons](./pages/horizons.md)
 ## Quantum physics
 ### De Broglie-Bohm trajectories
 
