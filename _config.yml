@@ -3,27 +3,111 @@ title: Yolonomy
 description: Physics sandbox
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+# This is the default format.
+# For more see: http://jekyllrb.com/docs/permalinks/
 
-include:
-  - _pages
+# markdown: kramdown
+markdown: maruku
+markdown_ext: markdown,mkd,mkdn,md
+permalink: /:categories/:year/:month/:day/:title
+exclude:
+    - ".rvmrc"
+    - ".rbenv-version"
+    - "README.md"
+    - "Rakefile"
+    - "changelog.md"
+    - "bower.json"
 
-encoding: "utf-8"
+# set pygments to true in order to support syntax highlight
+pygments: true
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+# support the pagination
+paginate: 5
+paginate_path: "archive/page:num"
 
+# The separator for exceprt
+excerpt_separator: <!--more-->
 
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+# Themes are encouraged to use these universal variables
+# so be sure to set them if your theme uses them.
+#
+title : Haixing Hu's Homepage
+tagline: We must know, we shall know
+author :
+  name : Haixing Hu
+  email : starfish.hu@gmail.com
+  github : Haixing-Hu
+  facebook: starfish.hu
+  weibo: 2566267863
+  linkedin: haixing
+# twitter : username
+# feedburner : feedname
+
+# The license for the articles of the site
+license:
+  url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+  img:
+    - /img/cc.png
+    - /img/by.png
+    - /img/nc.png
+    - /img/sa.png
+
+# Configurations for the menu items of the navigation bar
+menuitems:
+    - { title:    Cosmology, 
+        category: Cosmology,
+        url:      /cosmology.html }
+   
+
+sections:
+    - Cosmology
+    - Codes
+
+# The production_url is only used when full-domain names are needed
+# such as sitemap.txt
+# Most places will/should use BASE_PATH to make the urls
+#
+# If you have set a CNAME (pages.github.com) set your custom domain here.
+# Else if you are pushing to username.github.io, replace with your username.
+# Finally if you are pushing to a GitHub project page, include the project name at the end.
+#
+production_url : http://yolonomy.github.io
+
+# All Jekyll-Bootstrap specific configurations are namespaced into this hash
+#
+JB :
+  version : 0.3.0
+
+  # All links will be namespaced by BASE_PATH if defined.
+  # Links in your website should always be prefixed with {{BASE_PATH}}
+  # however this value will be dynamically changed depending on your deployment situation.
+  #
+  # CNAME (http://yourcustomdomain.com)
+  #   DO NOT SET BASE_PATH
+  #   (urls will be prefixed with "/" and work relatively)
+  #
+  # GitHub Pages (http://username.github.io)
+  #   DO NOT SET BASE_PATH
+  #   (urls will be prefixed with "/" and work relatively)
+  #
+  # GitHub Project Pages (http://username.github.io/project-name)
+  #
+  #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
+  #  REQUIRED! Set BASE_PATH to: http://username.github.io/project-name
+  #
+  # CAUTION:
+  #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
+  #   - Only the following values are falsy: ["", null, false]
+  #   - When setting BASE_PATH it must be a valid url.
+  #     This means always setting the protocol (http|https) or prefixing with "/"
+  BASE_PATH : false
+
+  # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
+  # ex: [BASE_PATH]/themes/[THEME-NAME]
+  #
+  # Override this by defining an absolute path to assets here.
+  # ex:
+  #   http://s3.amazonaws.com/yoursite/themes/watermelon
+  #   /assets
+  #
+  ASSET_PATH : false
