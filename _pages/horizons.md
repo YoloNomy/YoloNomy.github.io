@@ -1,8 +1,7 @@
+---
 title: "Test math"
-author: Haixing Hu
-category: misc
-tags: [test]
 use_math: true
+---
 
 # Cosmological Horizons
 
