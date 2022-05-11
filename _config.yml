@@ -1,13 +1,11 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
+theme: jekyll-theme-tactile
 
 # markdown: kramdown
 markdown: kramdown
 markdown_ext: markdown,mkd,mkdn,md
 
-lsi: false
-safe: true
-incremental: false
 highlighter: rouge
 gist:
   noscript: false
@@ -20,21 +18,3 @@ kramdown:
 #
 title :  Yolonomy
 tagline: Physics sandbox
-
-# The license for the articles of the site
-license:
-  url: http://creativecommons.org/licenses/by-nc-sa/3.0/
-  
-# Configurations for the menu items of the navigation bar
-menuitems:
-    - { title:    Cosmology, 
-        category: Cosmology,
-        url:      /cosmology.html }
-    - { title: Codes,
-        category: Codes,
-        url: /codes.html }
-   
-
-sections:
-    - Cosmology
-    - Codes
