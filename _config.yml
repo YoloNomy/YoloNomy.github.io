@@ -1,8 +1,3 @@
-theme: jekyll-theme-tactile
-title: Yolonomy
-description: Physics sandbox
-markdown: kramdown
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
 
@@ -31,32 +26,21 @@ excerpt_separator: <!--more-->
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Haixing Hu's Homepage
-tagline: We must know, we shall know
-author :
-  name : Haixing Hu
-  email : starfish.hu@gmail.com
-  github : Haixing-Hu
-  facebook: starfish.hu
-  weibo: 2566267863
-  linkedin: haixing
-# twitter : username
-# feedburner : feedname
+title :  Yolonomy
+tagline: Physics sandbox
 
 # The license for the articles of the site
 license:
   url: http://creativecommons.org/licenses/by-nc-sa/3.0/
-  img:
-    - /img/cc.png
-    - /img/by.png
-    - /img/nc.png
-    - /img/sa.png
-
+  
 # Configurations for the menu items of the navigation bar
 menuitems:
     - { title:    Cosmology, 
         category: Cosmology,
         url:      /cosmology.html }
+    - { title: Codes,
+        category: Codes,
+        url: /codes.html }
    
 
 sections:
