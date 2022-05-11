@@ -2,6 +2,7 @@ theme: jekyll-theme-tactile
 title: Yolonomy
 description: Physics sandbox
 markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 include:
   - _pages
