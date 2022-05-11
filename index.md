@@ -1,10 +1,3 @@
----
-layout: default
-title: Home
-use_math: true
-lang: en
----
-
 # About us
 
 We want to make physic lectures and codes available for all.
