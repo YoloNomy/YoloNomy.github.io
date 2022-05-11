@@ -2,7 +2,7 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 
 # markdown: kramdown
-markdown: maruku
+markdown: kramdown
 markdown_ext: markdown,mkd,mkdn,md
 permalink: /:categories/:year/:month/:day/:title
 exclude:
@@ -14,7 +14,7 @@ exclude:
     - "bower.json"
 
 # set pygments to true in order to support syntax highlight
-pygments: true
+highlighter: 'rouge'
 
 # support the pagination
 paginate: 5
