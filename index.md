@@ -14,7 +14,7 @@ layout: home
 
 ### Cosmic horizons
 
-You can find [here]({% link _posts/horizons.md %}) some small python codes simulating the evolution of cosmological horizons for various evolutions of the universe. The goal is to become familiar with the notion of horizon itself and the various types that can be encountered in cosmology.
+You can find [here]({% link _cosmo_pages/horizons.md %}) some small python codes simulating the evolution of cosmological horizons for various evolutions of the universe. The goal is to become familiar with the notion of horizon itself and the various types that can be encountered in cosmology.
 Some maths
 $$ x = y^2 $$
 
