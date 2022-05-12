@@ -1,6 +1,6 @@
 ----
 layout: post
-title: Cosmological horizons
+title: "Cosmological horizons"
 ----
 # Horizons
 
