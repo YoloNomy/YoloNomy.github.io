@@ -1,7 +1,3 @@
-# About us
-
-We want to make physic lectures and codes available for all.
-
 # Codes
 ## Cosmology
 ### Black holes
