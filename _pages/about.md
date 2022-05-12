@@ -1,7 +1,7 @@
 
-----
+---
 layout: post
-----
+---
 
 # About us
 
