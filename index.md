@@ -1,6 +1,13 @@
 ---
-layout: default
+#
+# By default, content added below the "---" mark will appear in the home page
+# between the top bar and the list of recent posts.
+# To change the home page layout, edit the _layouts/home.html file.
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#
+layout: home
 ---
+
 # Codes
 ## Cosmology
 ### Black holes
@@ -8,7 +15,7 @@ layout: default
 ### Cosmic horizons
 
 You can find [here](./_pages/horizons.md) some small python codes simulating the evolution of cosmological horizons for various evolutions of the universe. The goal is to become familiar with the notion of horizon itself and the various types that can be encountered in cosmology.
-Some maths 
+Some maths
 $$ x = y^2 $$
 
 ## Quantum physics
