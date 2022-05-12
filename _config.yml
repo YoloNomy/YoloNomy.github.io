@@ -1,19 +1,10 @@
-# This is the default format.
-# For more see: http://jekyllrb.com/docs/permalinks/
-theme: jekyll-theme-tactile
 
 # markdown: kramdown
 markdown: kramdown
-markdown_ext: markdown,mkd,mkdn,md
 
-highlighter: rouge
-
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
+permalink: /blog/:year/:month/:day/:title
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
 title :  Yolonomy
-tagline: Physics sandbox
