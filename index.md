@@ -6,11 +6,11 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
-title: "Welcome on Yolonomy"
+title: "Welcome to Yolonomy"
 ---
 
 Welcome to the Yolonomy website (currently under construction).
 
-The goal is to share our passion for physics and what we think understand of !!! Hope you will love it !
+This website is intended to be a support for teaching and outreach of physics. 
 
-On the home page you can find some blog posts
+You will find here some explained codes that simulate fun physics situations and lecture notes that can help you 
