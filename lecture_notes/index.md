@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Lectures Notes"
+title: "Lecture Notes"
 ---
 
 Welcome to the Lecture Notes part of the site
