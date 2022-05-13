@@ -9,7 +9,7 @@ You will find here some fun python applications.
 
 [cosmological horizons]({% link codes/cosmo/horizons.md %})\\
 
-[black holes]({% link codes/cosmo/bkack-holes.md %})\\
+[black holes]({% link codes/cosmo/black-holes.md %})\\
 
 # Quantum physics
 
