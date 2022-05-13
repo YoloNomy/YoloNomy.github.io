@@ -6,29 +6,11 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
-title: "Welcome on Yolonomy"
+title: "Welcome to Yolonomy"
 ---
 
 Welcome to the Yolonomy website (currently under construction).
 
 This website is intended to be a support for teaching and outreach of physics. 
 
-# Codes and simulations
-
-## Astrophysics and cosmology
-
-### Black holes
-### Horizons
-
-## Quantum physics
-
-### De Broglie Bohm
-
-## Others
-
-### Game of life
-
-# Lecture notes
-
-### Cosmology 
-### Differential geometry for physics
+You will find here some explained codes that simulate fun physics situations and lecture notes that can help you 
