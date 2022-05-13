@@ -20,6 +20,10 @@ On earth it is $\sim 11$ km/s and this is the speed at which rockets are launche
 
 Now, a natural question arise: what if $v \geq c$, that is, what if light itself could not be fast enough to escape the gravity of the planet?
 
+Such a strange star, called a "black star" would have a radius given by
+
+$ r_s = \frac{2GM}{c^2}$
+
 The french astronomer Pierre-Simon de Laplace asked himself this question in 1796.
 
 # The Schwarzchild metric
@@ -28,14 +32,16 @@ In general relativity, our best theory of gravitation, the gravitational force i
 
 $$ ds^2 = g_{\mu \nu}dx^\mu dx^\nu$$
 
-
 Solution to the Einstein equation
 
 $$R_{\mu \nu} - \frac{1}{2}R g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu \nu}$$
 
 The gravitational field around a spherical mass is given by the Schwarzchild metric, discovered by Karl Schwarzchild in 1916, while he was fighting in the trenches of WWI.
 
-$$ ds^2 = $$
+$$  ds^2 = -\left( 1 -\frac{r_s}{r} \right)c^2dt^2 + \left( 1 -\frac{r_s}{r} \right)^{-1}dr^2 + r^2(d\theta^2 + sin^2\theta d\phi^2) $$
+
+with the Schwarzshild radius
+$ r_s = \frac{2GM}{c^2}$
 
 # Black holes in the universe
 
