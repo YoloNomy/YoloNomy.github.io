@@ -3,7 +3,7 @@ layout: post
 title: "Cosmological Horizons"
 ---
 
-### The idea of black-holes
+# The idea of black-holes
 
 The idea of black holes is already hidden in Newtonian mechanics. 
 
@@ -22,7 +22,7 @@ Now, a natural question arise: what if $v \geq c$, that is, what if light itself
 
 The french astronomer Pierre-Simon de Laplace asked himself this question in 1796.
 
-### The Schwarzchild metric
+# The Schwarzchild metric
 
 In general relativity, our best theory of gravitation, the gravitational force is understood as motion in a curved space-time. The geometry of space time is fully described by the metric field $g_{\mu\nu}$, allowing to describe length through the generalized pythagorian theorem :
 
@@ -37,7 +37,7 @@ The gravitational field around a spherical mass is given by the Schwarzchild met
 
 $$ ds^2 = $$
 
-### Black holes in the universe
+# Black holes in the universe
 
 ## Stellar black holes
 ## Super massive black holes 
@@ -46,6 +46,6 @@ $$ ds^2 = $$
 ## primordial black holes
 
 
-### Playing with your own black hole
+# Playing with your own black hole
 
 Présentation du code
