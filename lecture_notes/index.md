@@ -5,14 +5,14 @@ title: "Lecture Notes"
 
 You will find here some lecture notes we gathered on our favorite subjects:
 
-- [Cosmology]({% link lecture_notes/lecture-notes/cosmo.pdf %})
+- Cosmology
 
 - Quantum physics
 
 - Newtonian mechanics
 
-- [Statistical mechanics and thermodynamics]({% link lecture_notes/lecture-notes/statphy.pdf %})
- 
-- [Analytical mechanics]({% link lecture_notes/lecture-notes/mechanics.pdf %})
+- Statistical mechanics and thermodynamics
+
+- Analytical mechanics
 
 - Differential geometry and physics
