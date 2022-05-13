@@ -10,7 +10,7 @@ title: "Cosmological Horizons"
 $$ \frac{1}{2}mv^2 - \frac{GMm}{R} $$
 
 $$ v = \sqrt{\frac{2GM}{R}}$$
-
+This is the escape velocity. On earth it is $\sim 11$ km/s.
 What if $v \geq c$?
 
 
@@ -22,7 +22,7 @@ Solution to the Einstein equation
 
 $R_{\mu \nu} - \frac{1}{2}R g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu \nu}$
 
-The gravitational field around a spherical mass is given by the Schwarzchild metric.
+The gravitational field around a spherical mass is given by the Schwarzchild metric, discovered by Karl Schwarzchild in 1916, while he was fighting in the trenches of WWI.
 
 ### Black holes in the universe
 
