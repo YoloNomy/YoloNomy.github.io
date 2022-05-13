@@ -7,12 +7,12 @@ title: "Cosmological Horizons"
 
 The idea of black holes is already hidden in Newtonian mechanics. 
 
-Indeed, imagine you are in a starship of mass $m$, on the surface of a planet of mass $M$ and radius $R$. If you want to leave the planet, you will have to go fast enough to escape gravity. To do so, you will need a kinetic energy $T$ that is large enough to compensate the gravitational potential energy $V$ of the planet. That is $ T \geq V  $.
+Indeed, imagine you are in a starship of mass $m$, on the surface of a planet of mass $M$ and radius $R$. If you want to leave the planet, you will have to go fast enough to escape gravity. To do so, you will need a kinetic energy $T$ that is large enough to compensate the gravitational potential energy $V$ of the planet. That is $ T \geq -V  $.
 Using the corresponding mathematical expressions, you have the condition:
 
 $$ \frac{1}{2}mv^2 \geq \frac{GMm}{R}  $$
 
-The minimal speed satisfying this is condition $v_e$, is called the escape velocity
+The minimal speed satisfying this is condition $v_l$, is called the escape velocity
 
 $$ v_l = \sqrt{\frac{2GM}{R}}$$
 
