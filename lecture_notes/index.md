@@ -3,10 +3,10 @@ layout: page
 title: "Lecture Notes"
 ---
 
-Welcome to the Lecture Notes part of the site
+You will find here some lecture notes we gathered on our favorite subjects:
 
 ## Cosmology
-This is [here]({% link lecture_notes/cosmo/index.md %})
+This is here
 
 ## Quantum physics
 This is here
