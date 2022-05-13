@@ -15,6 +15,10 @@ You will find here some fun python applications to physics with some detailled e
 
 - De Broglie-Bohm trajectories
 
-# Other
+# Chaos
 
 - Game of life
+- Lorenz attractor
+- 3 body system
+- Chaotic pendulum 
+
