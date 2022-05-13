@@ -49,3 +49,7 @@ $$ ds^2 = $$
 # Playing with your own black hole
 
 Présentation du code
+
+# Bonus : the detail of the equations
+
+# Bonus : details of the code
