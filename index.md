@@ -11,17 +11,24 @@ title: "Welcome on Yolonomy"
 
 Welcome to the Yolonomy website (currently under construction).
 
-The goal is to share our passion for physics and what we think understand of it !!! Hope you will love it !
+This website is intended to be a support for teaching and outreach of physics. 
 
-On the home page you can find some blog posts
-
-# Codes
+# Codes and simulations
 
 ## Astrophysics and cosmology
 
+### Black holes
+### Horizons
 
 ## Quantum physics
 
+### De Broglie Bohm
+
 ## Others
 
+### Game of life
+
 # Lecture notes
+
+### Cosmology 
+### Differential geometry for physics
