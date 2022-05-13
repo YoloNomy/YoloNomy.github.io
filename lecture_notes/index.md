@@ -11,8 +11,8 @@ You will find here some lecture notes we gathered on our favorite subjects:
 
 - Newtonian mechanics
 
-- [Statistical mechanics and thermodynamics]({% link lecture-notes/lecture-notes/statphy.pdf %})
+- [Statistical mechanics and thermodynamics]({% link lecture-notes/lecture_notes/statphy.pdf %})
  
-- [Analytical mechanics]({% link lecture-notes/lecture-notes/mechanics.pdf %})
+- [Analytical mechanics]({% link lecture_notes/lecture-notes/mechanics.pdf %})
 
 - Differential geometry and physics
