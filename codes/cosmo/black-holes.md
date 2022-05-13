@@ -16,7 +16,7 @@ The minimal speed satisfying this is condition $v_l$, is called the escape veloc
 
 $$ v_l = \sqrt{\frac{2GM}{R}}$$
 
-On earth it is $\sim 11$ km/s and this is the speed at which rockets are launched in space.
+On earth it is $\sim 11$ km/s and this is the speed at which rockets are launched in space. The value will change depending on the ratio $M/R$ of the planet i.e. its density. On the moon it is 2,4 km/s while escaping from the sun would require a speed of 617,5 km/s (even though you would probably have other problems being on the surface of the sun ...).
 
 Now, a natural question arise: what if $v \geq c$, that is, what if light itself could not be fast enough to escape the gravity of the planet?
 
@@ -27,7 +27,6 @@ $ r_s = \frac{2GM}{c^2}$
 The french astronomer Pierre-Simon de Laplace asked himself this question in 1796.
 
 # General relativity
-
 
 In general relativity, our best theory of gravitation, the gravitational force is understood as motion in a curved space-time. The geometry of space time is fully described by the metric field $g_{\mu\nu}$, allowing to describe length through the generalized pythagorian theorem :
 
@@ -51,13 +50,15 @@ $ r_s = \frac{2GM}{c^2}$
 
 Singularity
 
-No hair theorem.
+No hair theorem. (rotating + charged black holes).
 
 # Black holes in the universe
 
 ## Stellar black holes
 ## Super massive black holes 
+
 (M84\*, SgrA\*)
+
 ## Intermediate mass black holes
 ## primordial black holes
 
