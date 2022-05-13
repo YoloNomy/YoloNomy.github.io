@@ -26,15 +26,21 @@ $ r_s = \frac{2GM}{c^2}$
 
 The french astronomer Pierre-Simon de Laplace asked himself this question in 1796.
 
-# The Schwarzchild metric
+# General relativity
+
 
 In general relativity, our best theory of gravitation, the gravitational force is understood as motion in a curved space-time. The geometry of space time is fully described by the metric field $g_{\mu\nu}$, allowing to describe length through the generalized pythagorian theorem :
 
 $$ ds^2 = g_{\mu \nu}dx^\mu dx^\nu$$
 
+
 Solution to the Einstein equation
 
 $$R_{\mu \nu} - \frac{1}{2}R g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu \nu}$$
+
+Particles are then moving on geodesics : paths of smallest length, in the curved space-time.
+
+# The Schwarzchild metric
 
 The gravitational field around a spherical mass is given by the Schwarzchild metric, discovered by Karl Schwarzchild in 1916, while he was fighting in the trenches of WWI.
 
@@ -42,6 +48,10 @@ $$  ds^2 = -\left( 1 -\frac{r_s}{r} \right)c^2dt^2 + \left( 1 -\frac{r_s}{r} \ri
 
 with the Schwarzshild radius
 $ r_s = \frac{2GM}{c^2}$
+
+Singularity
+
+No hair theorem.
 
 # Black holes in the universe
 
@@ -51,6 +61,9 @@ $ r_s = \frac{2GM}{c^2}$
 ## Intermediate mass black holes
 ## primordial black holes
 
+# Black holes and quantum gravity
+
+Bekenstein's entropy
 
 # Playing with your own black hole
 
