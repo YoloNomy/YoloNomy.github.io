@@ -35,7 +35,7 @@ $$R_{\mu \nu} - \frac{1}{2}R g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu \nu}$$
 
 The gravitational field around a spherical mass is given by the Schwarzchild metric, discovered by Karl Schwarzchild in 1916, while he was fighting in the trenches of WWI.
 
-$$
+$$ ds^2 = $$
 
 ### Black holes in the universe
 
