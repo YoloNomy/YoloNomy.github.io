@@ -6,35 +6,11 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
+title: "Welcome on Yolonomy"
 ---
 
-# Codes
-## Cosmology
-### Black holes
+Welcome to the Yolonomy website (currently under construction).
 
-### Cosmic horizons
+The goal is to share our passion for physics and what we think understand of !!! Hope you will love it !
 
-You can find [here]({% link cosmo_pages/horizons.md %}) some small python codes simulating the evolution of cosmological horizons for various evolutions of the universe. The goal is to become familiar with the notion of horizon itself and the various types that can be encountered in cosmology.
-Some maths
-$$ x = y^2 $$
-
-## Quantum physics
-
-## Other
-
-### Game of life
-
-### De Broglie-Bohm trajectories
-
-# Lecture notes
-
-### Newtonian mechanics
-### Quantum mechanics
-### Statistical mechanics and thermodynamics
-### Analytical mechanics
-### Cosmology
-### Differential geometry and physics
-
-# Philosophy of science
-
-# More
+On the home page you can find some blog posts
