@@ -39,7 +39,12 @@ $$ ds^2 = $$
 
 ### Black holes in the universe
 
-M84\*, SgrA\*
+## Stellar black holes
+## Super massive black holes 
+(M84\*, SgrA\*)
+## Intermediate mass black holes
+## primordial black holes
+
 
 ### Playing with your own black hole
 
