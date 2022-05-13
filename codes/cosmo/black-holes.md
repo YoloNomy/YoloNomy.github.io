@@ -1,31 +1,75 @@
 ---
 layout: post
-title: "Cosmological Horizons"
+title: "Black holes"
 ---
 
-### The idea of black-holes
+# The idea of black-holes
 
-"black stars"
+The idea of black holes is already hidden in Newtonian mechanics. 
 
-$$ \frac{1}{2}mv^2 - \frac{GMm}{R} $$
+Indeed, imagine you are in a starship of mass $m$, on the surface of a planet of mass $M$ and radius $R$. If you want to leave the planet, you will have to go fast enough to escape gravity. To do so, you will need a kinetic energy $T$ that is large enough to compensate the gravitational potential energy $V$ of the planet. That is $ T \geq -V  $.
+Using the corresponding mathematical expressions, you have the condition:
 
-$$ v = \sqrt{\frac{2GM}{R}}$$
-This is the escape velocity. On earth it is $\sim 11$ km/s.
-What if $v \geq c$?
+$$ \frac{1}{2}mv^2 \geq \frac{GMm}{R}  $$
 
+The minimal speed satisfying this is condition $v_l$, is called the escape velocity
 
-### The Schwarzchild metric
+$$ v_l = \sqrt{\frac{2GM}{R}}$$
 
-In general relativity, our best theory of gravitation, the gravitational force is understood as motion in a curved space-time. The geometry of space time is fully described by the metric field $g_{\mu\nu}$, allowing to describe length.
+On earth it is $\sim 11$ km/s and this is the speed at which rockets are launched in space. The value will change depending on the ratio $M/R$ of the planet i.e. its density. On the moon it is 2,4 km/s while escaping from the sun would require a speed of 617,5 km/s (even though you would probably have other problems being on the surface of the sun ...).
+
+Now, a natural question arise: what if $v \geq c$, that is, what if light itself could not be fast enough to escape the gravity of the planet?
+
+Such a strange star, called a "black star" would have a radius given by
+
+$ r_s = \frac{2GM}{c^2}$
+
+The french astronomer Pierre-Simon de Laplace asked himself this question in 1796.
+
+# General relativity
+
+In general relativity, our best theory of gravitation, the gravitational force is understood as motion in a curved space-time. The geometry of space time is fully described by the metric field $g_{\mu\nu}$, allowing to describe length through the generalized pythagorian theorem :
+
+$$ ds^2 = g_{\mu \nu}dx^\mu dx^\nu$$
+
 
 Solution to the Einstein equation
 
-$R_{\mu \nu} - \frac{1}{2}R g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu \nu}$
+$$R_{\mu \nu} - \frac{1}{2}R g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu \nu}$$
+
+Particles are then moving on geodesics : paths of smallest length, in the curved space-time.
+
+# The Schwarzchild metric
 
 The gravitational field around a spherical mass is given by the Schwarzchild metric, discovered by Karl Schwarzchild in 1916, while he was fighting in the trenches of WWI.
 
-### Black holes in the universe
+$$  ds^2 = -\left( 1 -\frac{r_s}{r} \right)c^2dt^2 + \left( 1 -\frac{r_s}{r} \right)^{-1}dr^2 + r^2(d\theta^2 + sin^2\theta d\phi^2) $$
 
-### Playing with your own black hole
+with the Schwarzshild radius
+$ r_s = \frac{2GM}{c^2}$
 
+Singularity
 
+No hair theorem. (rotating + charged black holes).
+
+# Black holes in the universe
+
+## Stellar black holes
+## Super massive black holes 
+
+(M84\*, SgrA\*)
+
+## Intermediate mass black holes
+## primordial black holes
+
+# Black holes and quantum gravity
+
+Bekenstein's entropy
+
+# Playing with your own black hole
+
+Présentation du code
+
+# Bonus : the detail of the equations
+
+# Bonus : details of the code

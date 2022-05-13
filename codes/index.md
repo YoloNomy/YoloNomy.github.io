@@ -3,18 +3,22 @@ layout: page
 title: "Codes"
 ---
 
-You will find here some fun python applications.
+You will find here some fun python applications to physics with some detailled explanations.
 
 # Cosmology and astrophysics
 
-[cosmological horizons]({% link codes/cosmo/horizons.md %})
+- [cosmological horizons]({% link codes/cosmo/horizons.md %})
 
-[black holes]({% link codes/cosmo/black-holes.md %})
+- [black holes]({% link codes/cosmo/black-holes.md %})
 
 # Quantum physics
 
-De Broglie-Bohm trajectories
+- De Broglie-Bohm trajectories
 
-# Other
+# Chaos
 
-Game of life
+- Game of life
+- [Chaotic attractors]({% link codes/chaos/Lorenz.pdf %})
+- [3 body system]({% link codes/chaos/3corps.pdf %})
+- Chaotic pendulum 
+
