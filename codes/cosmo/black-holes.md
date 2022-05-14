@@ -54,6 +54,7 @@ No hair theorem. (rotating + charged black holes).
 
 # Black holes in the universe
 
+
 ## Stellar black holes
 ## Super massive black holes 
 
@@ -67,6 +68,10 @@ No hair theorem. (rotating + charged black holes).
 Bekenstein's entropy
 
 # Playing with your own black hole
+
+### Geodesic motions
+
+### Light ray bends
 
 Présentation du code
 

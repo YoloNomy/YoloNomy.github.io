@@ -5,6 +5,10 @@ title: "Codes"
 
 You will find here some fun python applications to physics with some detailled explanations.
 
+# Newtonian mechanics 
+
+- a falling ant
+
 # Cosmology and astrophysics
 
 - [cosmological horizons]({% link codes/cosmo/horizons.md %})
