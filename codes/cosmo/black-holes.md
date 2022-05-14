@@ -61,6 +61,7 @@ No hair theorem. (rotating + charged black holes).
 (M84\*, SgrA\*)
 
 ## Intermediate mass black holes
+
 ## primordial black holes
 
 # Black holes and quantum gravity
@@ -69,12 +70,19 @@ Bekenstein's entropy
 
 # Playing with your own black hole
 
-### Geodesic motions
+## Geodesic motions
 
-### Light ray bends
+# How to use the code 
 
-Présentation du code
+# Equations of geodesics for particles
 
-# Bonus : the detail of the equations
+# Details of the code
 
-# Bonus : details of the code
+## Light ray bends
+
+# How to use the code 
+
+# Equations for light rays
+
+# Details of the code
+
