@@ -121,18 +121,24 @@ $$
 
 Then when $a \rightarrow +\infty$ we have $H \rightarrow \sqrt{\Omega_\Lambda}$
 
-We can solve the differential equation of $a(t)$ in the limit when $t \rightarrow +\infty$
+We can solve the differential equation of $a(t)$ in the limit when $t \rightarrow +\infty$ :
+
 $$
 a(t) = e^{\sqrt{\Omega_\Lambda} t}
 $$
+
 With this solution for $a(t)$ we can compute the limit of the event horizon :
+
 $$
 d_{evt} \sim a(t) c\int_t^{+\infty} e^{-\sqrt{\Omega_\Lambda} t}
 $$
+
 That give us :
+
 $$ 
 d_{evt} \sim a(t) \frac{1}{a(t) \sqrt{\Omega_\Lambda}} = \frac{c}{H} 
 $$
+
 That is the definition of the Hubble radius !
 
 
