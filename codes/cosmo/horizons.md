@@ -112,4 +112,28 @@ Looking at the particle horizon we can see that due to expansion it's distance i
 
 Another remark is that the event horizon is greater than the Hubble distance : photons that lie between the two are currently receeding at supra-light speed but we will finally saw them as they will enter in the Hubble horizon ! 
 
+We can prove that the Hubble horizon and the event horizon converge to the same limit :
+the Friedmann equations give us 
+
+$$
+\frac{\dot{a}}{a} = H(a) = \sqrt{\Omega_m a^{-3} + \Omega_\Lambda}
+$$
+
+Then when $a \rightarrow +\infty$ we have $H \rightarrow \sqrt{\Omega_\Lambda}$
+
+We can solve the differential equation of $a(t)$ in the limit when $t \rightarrow +\infty$
+$$
+a(t) = e^{\sqrt{\Omega_\Lambda} t}
+$$
+With this solution for $a(t)$ we can compute the limit of the event horizon :
+$$
+d_{evt} \sim a(t) c\int_t^{+\infty} e^{-\sqrt{\Omega_\Lambda} t}
+$$
+That give us :
+$$ 
+d_{evt} \sim a(t) \frac{1}{a(t) \sqrt{\Omega_\Lambda}} = \frac{c}{H} 
+$$
+That is the definition of the Hubble radius !
+
+
 Something that can be strange is that our future light-cone seems to cross the envent horizon : How can it be possible we can interact with what is beyond? What we have to remember is that if we emit a photon now it will never reach someone that is at the event horizon now, but the proper distance of the object at the event horizon will evolve during the photon travel and the photon will never reach it!
