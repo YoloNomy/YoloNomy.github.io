@@ -104,11 +104,12 @@ Another remark is that the event horizon can diverge and be infinite.
 ## The $\Lambda$CMD case 
 Take the example of the $\Lambda$CDM cosmology using Planck parameters.
 
-   ![my image](./images/LCDMhorizons.png)
-  
+   ![my image](./images/LCDMhorizons.png "my image") 
   
 We can give a value for today horizons : in present time the particle is at ~ 48 Glyrs, the event horizon is at ~ 17 Glyrs and the Hubble horizon is at ~ 14 Glyrs.
 
 Looking at the particle horizon we can see that due to expansion it's distance increase rapdily, it means that the farthest light we can see was emits by objects that are today at 48 Glyrs of us ! In our expansing universe the particle univers will tend to infinity.
 
 Another remark is that the event horizon is greater than the Hubble distance : photons that lie between the two are currently receeding at supra-light speed but we will finally saw them as they will enter in the Hubble horizon ! 
+
+Something that can be strange is that our future light-cone seems to cross the envent horizon : How can it be possible we can interact with what is beyond? What we have to remember is that if we emit a photon now it will never reach someone that is at the event horizon now, but the proper distance of the object at the event horizon will evolve during the photon travel and the photon will never reach it!
