@@ -23,7 +23,6 @@ $$
 In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $\text{d}\Omega^2 = r^2\sin\theta^2 \text{d}\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the *scale factor* and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with $a(t)$.)). $k$ is the *spatial curvature* of the universe.
 %%%%%%%%%%%%%%%%%%%%%%%
 
-
 For practical purposes, the whole metric can be rewritten as:
 
 $$ 
@@ -146,7 +145,7 @@ We can prove that the Hubble horizon and the event horizon converge to the same 
 the Friedmann equations give us 
 
 $$
-\frac{\dot{a}}{a} = H(a) = \sqrt{\Omega_m a^{-3} + \Omega_\Lambda}
+\frac{\dot{a}}{a} = H(a) = H_0\sqrt{\Omega_m a^{-3} + \Omega_\Lambda}
 $$
 
 Then when $a \rightarrow +\infty$ we have $H \rightarrow \sqrt{\Omega_\Lambda}$
