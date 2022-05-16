@@ -7,9 +7,27 @@ You will find here some fun python applications to physics with some detailled e
 
 # Newtonian mechanics
 
+- Newton laws and the reign of parabolas
 - the pendulum and harmonic oscillators
 - a falling ant
 - Kepler laws
+
+# Chaos
+
+- Game of life
+- [Chaotic attractors]({% link codes/chaos/Lorenz.pdf %})
+- [3 body system]({% link codes/chaos/3corps.pdf %})
+- Chaotic pendulum
+
+# Optics
+
+# Thermodynamics
+
+- The ideal gas
+
+# Quantum physics
+
+- De Broglie-Bohm trajectories
 
 # General relativity
 
@@ -21,13 +39,5 @@ You will find here some fun python applications to physics with some detailled e
 - [Cosmological horizons]({% link codes/cosmo/horizons.md %})
 
 
-# Quantum physics
 
-- De Broglie-Bohm trajectories
 
-# Chaos
-
-- Game of life
-- [Chaotic attractors]({% link codes/chaos/Lorenz.pdf %})
-- [3 body system]({% link codes/chaos/3corps.pdf %})
-- Chaotic pendulum
