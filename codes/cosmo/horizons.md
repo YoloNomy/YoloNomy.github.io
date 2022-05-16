@@ -37,9 +37,9 @@ $$
 $\chi$ is called the comoving distance. One can then recover the physical space distance $\ell$ by integration of $d\ell = \sqrt{a^2(t)d\chi^2 + S_k^2(r) d\Omega^2\right) $.
 If $k=0$ then $\chi = r$. 
 
-## Distance and travel of light
+## The travel of light
 
-Let's now ask ourselves how one can measure distances on cosmological scales. The main source of informations for cosmology is carried by light. By definition, light must have a physical speed of $c = d\ell/dt$ (This condition is equivalent to ask for $ds^2=0$).
+The maximal speed at which information can be carried is the speed of light. By definition, light itself has the physical speed  $c = d\ell/dt$ (This condition is equivalent to ask for $ds^2=0$).
 
 Choosing our coordinate system such that the photons only travel on the radial coordinate, this allows us to write:
 $$ 
