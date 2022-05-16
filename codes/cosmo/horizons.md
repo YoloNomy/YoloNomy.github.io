@@ -12,7 +12,7 @@ However, black holes are not the only objects to display such a feature ... the 
 In this situation, we talk about cosmological horizons, and they can be of different kind.
 
 One of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
-The most general result is given by the *Friedman-Lemaître-Robertson-Walker (FLRW) metric*:
+The most general result is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric*:
 
 $$ 
 \text{d}s^2 = -\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
@@ -121,9 +121,9 @@ Note that as we our light will never reach something behind the event horizon, w
 
 ## The $\Lambda$-CMD case 
 
-In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to get it, you have to insert the FLRW metric in the Einstein equation (see [Black holes]({% link codes/cosmo/black-holes.md %}))).
+In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to get it, you have to insert the FLRW metric in the Einstein equation (see cosmology lecture notes) and assume that the matter in the universe is a perfect fluid. This allows you to derive the fundamental equation of cosmology, called the Friedmann-Lemaître equation:
 
-$$ \frac{H^2}{H_0} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
+$$ \frac{H^2}{H_0^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
 
 Take the example of the $\Lambda$CDM cosmology using Planck parameters.
 
@@ -131,11 +131,11 @@ Take the example of the $\Lambda$CDM cosmology using Planck parameters.
   
 We can give a value for today horizons : in present time the particle is at ~ 48 Glyrs, the event horizon is at ~ 17 Glyrs and the Hubble horizon is at ~ 14 Glyrs.
 
-Looking at the particle horizon we can see that due to expansion it's distance increase rapdily, it means that the farthest light we can see was emits by objects that are today at 48 Glyrs of us ! In our expansing universe the particle univers will tend to infinity.
+Looking at the particle horizon we can see that due to expansion it's distance increase rapdily, it means that the farthest light we can see was emits by objects that are today at 48 Glyrs of us! In our expansing universe the particle univers will tend to infinity.
 
-Another remark is that the event horizon is greater than the Hubble distance : photons that lie between the two are currently receeding at supra-light speed but we will finally saw them as they will enter in the Hubble horizon ! 
+Another remark is that the event horizon is greater than the Hubble distance : photons that lie between the two are currently receeding at supra-light speed but we will finally saw them as they will enter in the Hubble horizon! 
 
-We can prove that the Hubble horizon and the event horizon converge to the same limit :
+We can prove that the Hubble horizon and the event horizon converge to the same limit:
 the Friedmann equations give us 
 
 $$
