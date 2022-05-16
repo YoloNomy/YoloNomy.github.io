@@ -30,7 +30,6 @@ A) also gives strong constraints on the possible behavior of the content in the 
 $$ T_{\mu \nu}=\rho u_\mu u_\nu + p (g_{\mu\,\nu}+ u_\mu u_\nu)= {\rm diag}(\rho,p,p,p)
 $$
 
-
 $$
 p=w\rho
 $$
@@ -54,6 +53,10 @@ $$
 $$
 
 # The Friedmann equation(s)
+
+We now use our last assumption C). General relativity 
+
+$$     R^{\mu \nu} = 8 \pi G \left( T^{\mu \nu} - \frac{1}{2}g^{\mu \nu} T_{\ \sigma}^{\sigma}\right) $$ 
 
 $$ \frac{H^2}{H_0^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
 
