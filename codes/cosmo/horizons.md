@@ -11,12 +11,14 @@ However, black holes are not the only objects to display such a feature ... the 
 
 In this cituation, we talk about cosmological horizons, and they can be of different kind.
 
-One of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. If one make this assumption, the metric i.e. the way to measure distance is given by the Friedman-Lemaître-Robertson-Walker (FLRW) metric:
+One of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
+The most general result is given by the Friedman-Lemaître-Robertson-Walker (FLRW) metric:
 $$ 
 ds^2 = -dt^2 + a(t)^2\left( \frac{dr^2}{1 - kr^2}  + r^2d\Omega^2\right) 
 $$
 %
-which can be rewritten as :
+In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $d\Omega = r^2sin\theta d\varphi$ is the spherical infinetisimal surface element. $a(t)$ is called the scale factor and quantify this expansion. 
+. The whole metric can be rewritten as :
 %
 $$ 
 ds^2 = -c^2dt^2 + a(t)^2\left(d\chi^2 + S_k^2(r) d\Omega^2\right) 
