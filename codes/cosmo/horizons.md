@@ -37,19 +37,6 @@ $$
 $\chi$ is called the *comoving distance*. One can then recover the physical space distance $\ell$ by integration of $d\ell = \sqrt{a^2(t)d\chi^2 + S_k^2(r) d\Omega^2 $.
 If $k=0$ then $\chi = r$. 
 
-## The travel of light
-
-The maximal speed at which information can be carried is the speed of light. By definition, light has the physical speed $c = d\ell/dt$ (This condition is equivalent to ask for $ds^2=0$).
-
-Choosing our coordinate system such that the photons only travel on the radial coordinate, this allows us to write:
-$$ 
-cdt = \pm a(t) d\chi 
-$$
-(the two solutions comes from the square root) and the co-moving distance $\chi$ between a source that the photon leave at $t_0$ and an observer that receive it at $t_1$ is given by:
-$$ 
-\chi = c \int_{t_0}^{t_1} \frac{dt}{a(t)} 
-$$
-
 ## The Hubble Horizon
 
 The *Hubble Horizon* is the most known and easily understandable type cosmological horizon. It is actually the one we disccued in introduction, describing the distance at which galaxies recessed at the speed of light. To every point of the universe one can associate a Hubble sphere delimited by this horizon. Beyond this horizon, it is de facto impossible to receive any signal and thus observe any galaxy.
@@ -78,12 +65,22 @@ This defines the radius of the Hubble sphere around earth.
 The other types of cosmological horizons are more subtle to understand that the Hubble horizon.
 The particle horizon is again a sphere around a point delimited by the following condition:  What is the maximum distance of the object that emits light that we can receive today?
 
-If a photon is emitted at the first moment of the universe $t = 0$ the distance it has been able to travel is:
+The maximal speed at which information can be carried is the speed of light. By definition, light has the physical speed $c = d\ell/dt$ (This condition is equivalent to ask for $ds^2=0$).
+
+Choosing our coordinate system such that the photons only travel on the radial coordinate, this allows us to write:
+$$ 
+cdt = \pm a(t) d\chi 
+$$
+(the two solutions comes from the square root) and the co-moving distance $\chi$ between a source that the photon leave at $t_0$ and an observer that receive it at $t_1$ is given by:
+$$ 
+\chi = c \int_{t_0}^{t_1} \frac{dt}{a(t)} 
+$$
+
+If a photon is emitted at primordial singularity, $t = 0$ the maximal distance it has been able to travel is:
 
 $$
 \chi_p(t) = c \int_{0}^{t} \frac{dt'}{a(t')} 
 $$
-
 
 This distance is sometimes the called *conformal time* $\eta$
 
