@@ -54,24 +54,29 @@ $$
 
 # The Friedmann equation(s)
 
-We now use our last assumption C). General relativity 
+We now use our last assumption C). General relativity's fundamental equation is Einstein's equation, that can be rewritten as:
 
-$$     R^{\mu \nu} = 8 \pi G \left( T^{\mu \nu} - \frac{1}{2}g^{\mu \nu} T_{\ \sigma}^{\sigma}\right) $$ 
+$$     R^{\mu \nu} = 8 \pi G \left( T^{\mu \nu} - \frac{1}{2}g^{\mu \nu} T_{\ \sigma}^{\sigma}\right) $$
+
+Inserting FLRW for $g$ and perfect fluids for $T$, one gets:
 
 $$ \frac{H^2}{H_0^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
 
+and
 $$
 \frac{\ddot{a}}{a} = H^2 + \dot{H} = \frac{4 \pi G}{3}(\rho+3p)
 $$
 
+Introducing the critical density
 $$
 \rho_c := \frac{3 H_0^2}{8 \pi G}
 $$
-
+one can consider the density parameters
 $$
 \Omega_{i} := \frac{\rho^i_0}{\rho_c} \qquad i\in\{m,r,DE,\kappa\}
 $$
-
+allowing to rewrite the Friedmann equation as:
 $$ \frac{H^2}{H_0^2} = \sum_i \Omega_i a^{-3(1+w_i)}$$
 
 # Various evolutions and the Big-Bang model
+

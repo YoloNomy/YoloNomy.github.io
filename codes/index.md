@@ -18,6 +18,8 @@ You will find here some fun python applications to physics with some detailled e
 - [Chaotic attractors]({% link codes/chaos/Lorenz.pdf %})
 - [3 body system]({% link codes/chaos/3corps.pdf %})
 - Chaotic pendulum
+- saturn's ring
+- Sinai's Billiards
 
 # Fluid mechanics
 
