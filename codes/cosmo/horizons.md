@@ -65,7 +65,7 @@ This defines the radius of the Hubble sphere around earth.
 
 ## Particle horizon
 
-The particle horizon, in some sense, is like a "backward" Hubble horizon. From a given point emission point, it is the surface answering the question:  What is the maximum distance of the object that emits light that we can receive today?
+The particle horizon around a given point is the surface answering the question:  What is the maximum distance of the object that emits light that we can still receive today despite the expansion? Understanding the difference with the Hubble horizon is quite subtle.
 
 The maximal speed at which information can be carried is the speed of light. By definition, light has the physical speed $c = d\ell/dt$ (This condition is equivalent to ask for $ds^2=0$).
 
