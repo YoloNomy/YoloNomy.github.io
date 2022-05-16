@@ -15,23 +15,31 @@ The three building blocks of modern cosmology are the following:
 
 - C) Gravity: the theory of gravity is given by general relativity (see [here]({% link codes/cosmo/black-holes.md %}))) with a non zero cosmological constant $\Lambda$, responsible for the accelerated expansion of the universe.
 
-
 # The FLRW metric
 
-The assumption A)
+The assumption A) gives strong constraints on the possible geometry of the universe. 
+
 $$ 
 \text{d}s^2 = -c^2\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
 $$
 
 # Universe content and perfect fluids
 
-$$    T_{\mu \nu}=\rho u_\mu u_\nu + p (g_{\mu\,\nu}+ u_\mu u_\nu)= {\rm diag}(\rho,p,p,p)
+A) also gives strong constraints on the possible behavior of the content in the universe.
+
+$$ T_{\mu \nu}=\rho u_\mu u_\nu + p (g_{\mu\,\nu}+ u_\mu u_\nu)= {\rm diag}(\rho,p,p,p)
 $$
 
 
 $$
 p=w\rho
 $$
+
+The continuity equation
+$$
+\nabla_\mu T^{\mu \nu} = 0
+$$
+equivalent to fluid mechanics
 
 $$
 \frac{\partial\rho}{\partial t} + 3 H(1 + w)\rho =0

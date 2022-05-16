@@ -19,6 +19,8 @@ You will find here some fun python applications to physics with some detailled e
 - [3 body system]({% link codes/chaos/3corps.pdf %})
 - Chaotic pendulum
 
+# Fluid mechanics
+
 # Optics
 
 # Thermodynamics
