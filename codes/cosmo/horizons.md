@@ -52,13 +52,14 @@ $$
 
 ## The Hubble Horizon
 
-Maybe the most famous, it describe the distance at which galaxies recessed at the speed of light. The physical distance to a galaxy is given by:
+The Hubble Horizon is the most known and easily understandable type cosmological horizon. It is actually the one we disccued in introduction, describing the distance at which galaxies recessed at the speed of light. To every point of the universe one can associate a Hubble sphere delimited by this horizon. Beyond this horizon, it is de facto impossible to receive any signal and thus observe any galaxy.
+As we discussed already, the physical distance from the origin (say earth) to a galaxy is given by:
 
 $$ 
 d = a(t)\chi 
 $$
 
-So the recession velocity is
+The recession velocity is given by its time derivative
 
 $$ 
 v = \frac{\text{d}d}{\mathrm{dt}} = \dot{a}\chi = aH\chi
