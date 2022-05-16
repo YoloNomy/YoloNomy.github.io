@@ -42,13 +42,14 @@ Using this metric, we will be able to define three different types of horizons o
 ## The Hubble Horizon
 
 The *Hubble Horizon* is the most known and easily understandable type cosmological horizon. It is actually the one we discussed in introduction, describing the distance at which galaxies recessed at the speed of light. To every point of the universe one can associate a surface, also called the *Hubble sphere*, delimited by this horizon. Beyond this horizon, it is de facto impossible to receive any signal and thus observe any galaxy. In a sense, it defines the size of what is commonly called the *observable universe*.
+
 As we discussed already, the physical distance from the origin (say earth) to a galaxy is given by:
 
 $$ 
 d = a(t)\chi 
 $$
 
-The recession velocity is given by its time derivative (which is in fact the Hubble-Lemaître law)
+The recession velocity is given by its time derivative (which gives us  the Hubble-Lemaître law)
 
 $$ 
 v = \frac{\text{d}d}{\mathrm{dt}} = \dot{a}\chi = aH\chi
@@ -64,8 +65,7 @@ This defines the radius of the Hubble sphere around earth.
 
 ## Particle horizon
 
-The other types of cosmological horizons are more subtle to understand that the Hubble horizon.
-The particle horizon is again a sphere around a point delimited by the following condition:  What is the maximum distance of the object that emits light that we can receive today?
+The particle horizon, in some sense, is like a "backward" Hubble horizon. From a given point emission point, it is the surface answering the question:  What is the maximum distance of the object that emits light that we can receive today?
 
 The maximal speed at which information can be carried is the speed of light. By definition, light has the physical speed $c = d\ell/dt$ (This condition is equivalent to ask for $ds^2=0$).
 
