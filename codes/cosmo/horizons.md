@@ -14,7 +14,7 @@ In this situation, we talk about cosmological horizons, and they can be of diffe
 alléger cette partie et détailler FLRW dans une autre partie
 %%%%%%%%%%%%%%%%%%%%%%%
 One of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
-The most general result is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric*:
+The most general result is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric* (see lectures on cosmology):
 
 $$ 
 \text{d}s^2 = -c^2\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
@@ -123,7 +123,7 @@ Note that as we our light will never reach something behind the event horizon, w
 
 ## The $\Lambda$-CMD case 
 
-In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to do so, you need to find the fundamental equation of cosmology, called the Friedmann-Lemaître equation:
+In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to do so, you need to find invoque the fundamental equation of cosmology, called the Friedmann-Lemaître equation: (see lectures on cosmology)
 
 $$ \frac{H^2}{H_0^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
 
