@@ -15,7 +15,7 @@ One of the building principles of cosmology is to assume that the universe is ho
 The most general result is given by the *Friedman-Lemaître-Robertson-Walker (FLRW) metric*:
 
 $$ 
-\text{d}s^2 = -\text{d}t^2 + a(t)^2\left( \frac{dr^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
+\text{d}s^2 = -\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
 $$
 
 In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $\text{d}\Omega^2 = r^2\sin\theta^2 \text{d}\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the *scale factor* and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with $a(t)$.)). $k$ is the *spatial curvature* of the universe.
@@ -94,7 +94,7 @@ $$
 d_p(t) = a(t)\chi_p(t)
 $$
 
-Which gives us the radius of the particle horizon.
+Receiving some signals from earth, no light can have been emitted from further away than this distance $d_p(t)$. This gives us the radius of the particle horizon.
 
 ## Event horizon
 
@@ -155,6 +155,5 @@ d_{evt} \sim a(t) \frac{1}{a(t) \sqrt{\Omega_\Lambda}} = \frac{c}{H}
 $$
 
 That is the definition of the Hubble radius !
-
 
 Something that can be strange is that our future light-cone seems to cross the envent horizon : How can it be possible we can interact with what is beyond? What we have to remember is that if we emit a photon now it will never reach someone that is at the event horizon now, but the proper distance of the object at the event horizon will evolve during the photon travel and the photon will never reach it!
