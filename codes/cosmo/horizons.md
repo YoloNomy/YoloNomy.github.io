@@ -37,9 +37,11 @@ $$
 $\chi$ is called the *comoving distance*. One can then recover the physical space distance $\ell$ by integration of $d\ell = \sqrt{a^2(t)d\chi^2 + S_k^2(r) d\Omega^2} $.
 If $k=0$ then $\chi = r$. 
 
+Using this metric, we will be able to define three different types of horizons on cosmological scales: the Hubble, particle and even horizons. Understanding the difference between them is quite subtle, hang on!
+
 ## The Hubble Horizon
 
-The *Hubble Horizon* is the most known and easily understandable type cosmological horizon. It is actually the one we disccued in introduction, describing the distance at which galaxies recessed at the speed of light. To every point of the universe one can associate a Hubble sphere delimited by this horizon. Beyond this horizon, it is de facto impossible to receive any signal and thus observe any galaxy.
+The *Hubble Horizon* is the most known and easily understandable type cosmological horizon. It is actually the one we discussed in introduction, describing the distance at which galaxies recessed at the speed of light. To every point of the universe one can associate a Hubble sphere delimited by this horizon. Beyond this horizon, it is de facto impossible to receive any signal and thus observe any galaxy.
 As we discussed already, the physical distance from the origin (say earth) to a galaxy is given by:
 
 $$ 
