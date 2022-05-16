@@ -19,13 +19,13 @@ ds^2 = -dt^2 + a(t)^2\left( \frac{dr^2}{1 - kr^2}  + r^2d\Omega^2\right)
 $$
 
 In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $d\Omega^2 = r^2\sin\theta^2 d\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the scale factor and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with $a(t)$.)).
-The whole metric can be rewritten as :
+For practical purposes, the whole metric can be rewritten as:
 
 $$ 
-ds^2 = -c^2dt^2 + a(t)^2\left(d\chi^2 + S_k^2(r) d\Omega^2\right) 
+ds^2 = -c^2dt^2 + a(t)^2\left(d\chi^2 + S_k^2(r) d\Omega^2\right), 
 $$
 
-Where
+where
 
 $$ 
 S_k(r) =R_0 \left\{\begin{matrix}\frac{\chi}{R_0} \text{ if } k = 0\\
