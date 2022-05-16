@@ -73,20 +73,20 @@ The maximal speed at which information can be carried is indeed the speed of lig
 
 Choosing our coordinate system such that the photons only travel on the radial coordinate, this allows us to write:
 $$ 
-cdt = \pm a(t) d\chi 
+cdt = \pm a(t) {\rm d}\chi 
 $$
 (the two solutions comes from the square root) and the co-moving distance $\chi$ between a source that the photon leave at $t_0$ and an observer that receive it at $t_1$ is given by:
 $$ 
-\chi = c \int_{t_0}^{t_1} \frac{dt}{a(t)} 
+\chi = c \int_{t_0}^{t_1} \frac{{\rm d}t}{a(t)} 
 $$
 
 If a photon is emitted at primordial singularity, $t = 0$ the maximal distance it has then been able to travel is:
 
 $$
-\chi_p(t) = c \int_{0}^{t} \frac{dt'}{a(t')} 
+\chi_p(t) = c \int_{0}^{t} \frac{{\rm d}t'}{a(t')} 
 $$
 
-This distance is sometimes the called *conformal time* $\eta$
+When setting $c=1$, this distance can be identified with a time usually called *conformal time* $\eta$ (formally ${\rm d}t = a {\rm d}\eta$).
 
 In terms of proper distance we can write
 
