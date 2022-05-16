@@ -11,8 +11,6 @@ However, black holes are not the only objects to display such a feature ... the 
 
 In this situation, we talk about cosmological horizons, and they can be of different kind.
 
-alléger cette partie et détailler FLRW dans une autre partie
-%%%%%%%%%%%%%%%%%%%%%%%
 One of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
 The most general result is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric* (see lectures on cosmology):
 
