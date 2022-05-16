@@ -37,15 +37,15 @@ $$
 $\chi$ is called the comoving distance. One can then recover the physical space distance $\ell$ by integration of $d\ell = \sqrt{a^2(t)d\chi^2 + S_k^2(r) d\Omega^2\right) $.
 If $k=0$ then $\chi = r$. 
 
-## Distance and travel of photons
+## Distance and travel of light
 
-Let's now ask ourselves how one can measure distances on cosmological scales. A common way to measure distances is to look at the travel path of light. By definition, light must have a physical speed of $c = d\ell/dt$. This is equivalent to ask for $ds^2=0$.
+Let's now ask ourselves how one can measure distances on cosmological scales. The main source of informations for cosmology is carried by light. By definition, light must have a physical speed of $c = d\ell/dt$ (This condition is equivalent to ask for $ds^2=0$).
 
 Choosing our coordinate system such that the photons only travel on the radial coordinate, this allows us to write:
 $$ 
 cdt = \pm a(t) d\chi 
 $$
-and the co-moving distance $\chi$ between a source that the photon leave at $t_0$ and an observer that receive it at $t_1$ is given by:
+(the two solutions comes from the square root) and the co-moving distance $\chi$ between a source that the photon leave at $t_0$ and an observer that receive it at $t_1$ is given by:
 $$ 
 \chi = c \int_{t_0}^{t_1} \frac{dt}{a(t)} 
 $$
