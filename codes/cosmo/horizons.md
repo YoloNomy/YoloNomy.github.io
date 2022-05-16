@@ -90,6 +90,8 @@ $$
 d_p(t) = a(t)\chi_p(t)
 $$
 
+Which gives us the radius of the particle horizon.
+
 ## Event horizon
 
 The event horizon answer to the question : If we send a photon today what is the maximum distance it can reach until the end of the Universe?
