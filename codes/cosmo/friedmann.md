@@ -15,8 +15,39 @@ $$
 
 # Universe content and perfect fluids
 
-# The Friedmann equation
+$$    T_{\mu \nu}=\rho u_\mu u_\nu + p (g_{\mu\,\nu}+ u_\mu u_\nu)= {\rm diag}(\rho,p,p,p)
+$$
+
+
+$$
+p=w\rho
+$$
+
+$$
+\frac{\partial\rho}{\partial t} + 3 H(1 + w)\rho =0
+$$
+
+$$
+H := \frac{\dot{a}}{a}
+$$
+
+$$
+\rho(a) =  a^{-3(1+w)}
+$$
+
+# The Friedmann equation(s)
 
 $$ \frac{H^2}{H_0^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
 
+$$
+\frac{\ddot{a}}{a} = H^2 + \dot{H} = \frac{4 \pi G}{3}(\rho+3p)
+$$
+
+$$
+\rho_c := \frac{3 H_0^2}{8 \pi G}
+$$
+
+$$
+\Omega_{i} := \frac{\rho^i_0}{\rho_c} \qquad i\in\{m,r,DE,\kappa\}
+$$
 # Various evolutions and the big bang model
