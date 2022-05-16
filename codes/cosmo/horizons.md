@@ -37,11 +37,11 @@ $$
 
 ## Distance and travel of photons
 
-Let's now ask ourselves how one can measure distances on cosmological scales. A common way to measure distances is to look at photon travel path.
+Let's now ask ourselves how one can measure distances on cosmological scales. A common way to measure distances is to look at the travel path of light.
 
-Since a photon is massless it follows the geodesics of null intervall : $ds^2 = 0$ (see ...).
+Since a photon is massless it follows the geodesics of null intervall : $ds^2 = 0$ (see cours de relat').
 
-So, choosing our coordinate system such that the photons only travel on the radial coordinate we have:
+choosing our coordinate system such that the photons only travel on the radial coordinate, we can get from the metric:
 $$ 
 cdt = \pm a(t) d\chi 
 $$
