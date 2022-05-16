@@ -94,7 +94,7 @@ $$
 d_p(t) = a(t)\chi_p(t)
 $$
 
-Receiving some signals from earth, no light can have been emitted from further away than this distance $d_p(t)$. This gives us the radius of the particle horizon.
+Receiving some signals from earth, no light can have been emitted from further away than this physical distance $d_p(t)$. This gives us the radius of the particle horizon which, in principle is different from the Hubble horizon.
 
 ## Event horizon
 
