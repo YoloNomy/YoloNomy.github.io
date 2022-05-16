@@ -7,7 +7,7 @@ title: "Cosmological Horizons"
 
 An Horizon is a virtual region from which no information can travel. The most familiar exemple is given by the event horizons of black holes, from which not even light can espace (if you want to know more on them, go check [Black holes]({% link codes/cosmo/black-holes.md %})).
 
-However, black holes are not the only objects to display such a feature ... the whole universe is! Intuitively, the Hubble-Lemaître law ($v = H_0d$) implies that the speed at which objects are pulled away from us due to expansion increase with their distance. One can then naturally ask the question : what happens when this speed becomes greater than the speed of light? In some sense, this horizon, works like a 'reversed black hole'. We'll come back to this ...
+However, black holes are not the only objects to display such a feature ... the whole universe is! Intuitively, the Hubble-Lemaître law ($v = H_0d$) implies that the speed at which objects are pulled away from us due to expansion increase with their distance. One can then naturally ask the question : what happens when this speed becomes greater than the speed of light? In some sense, this horizon, works like a 'reversed black hole'. This even leads some physicists to assert that "we leave in a black hole"! We'll come back to this ...
 
 In this situation, we talk about cosmological horizons, and they can be of different kind.
 
@@ -18,7 +18,7 @@ $$
 \text{d}s^2 = -\text{d}t^2 + a(t)^2\left( \frac{dr^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
 $$
 
-In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $d\Omega^2 = r^2\sin\theta^2 d\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the *scale factor* and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with $a(t)$.)). $k$ is the *spatial curvature* of the universe.
+In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $\text{d}\Omega^2 = r^2\sin\theta^2 \text{d}\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the *scale factor* and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with $a(t)$.)). $k$ is the *spatial curvature* of the universe.
 For practical purposes, the whole metric can be rewritten as:
 
 $$ 
