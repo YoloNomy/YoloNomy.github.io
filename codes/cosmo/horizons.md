@@ -3,30 +3,38 @@ layout: post
 title: "Cosmological Horizons"
 ---
 
-## FLRW metric and travel of photons
+## Horizons in cosmology
 
-Here we will talk about cosmological horizons. To do that we need to define distance in the Universe. A common way to measure distance is to look at photon travel path.
+An Horizon is a virtual region from which no information can travel. The most familiar exemple is given by the event horizons of black holes, from which not even light can espace (if you want to know more on them, go check [Black holes]({% link codes/cosmo/black-holes.md %})).
 
-Before we can recall the FLRW metric:
+However, black holes are not the only objects to display such a feature ... the whole universe is! Intuitively, the Hubble-Lemaître law ($v = H_0d$) implies that the speed at which objects are pulled away from us due to expansion increase with their distance. One can then naturally ask the question : what happens when this speed becomes greater than the speed of light? We'll come back to this ...
 
+In this cituation, we talk about cosmological horizons, and they can be of different kind.
+
+One of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. If one make this assumption, the metric i.e. the way to measure distance is given by the Friedman-Lemaître-Robertson-Walker (FLRW) metric:
 $$ 
 ds^2 = -dt^2 + a(t)^2\left( \frac{dr^2}{1 - kr^2}  + r^2d\Omega^2\right) 
 $$
-
-That can be rewrite as :
-
+%
+which can be rewritten as :
+%
 $$ 
 ds^2 = -c^2dt^2 + a(t)^2\left(d\chi^2 + S_k^2(r) d\Omega^2\right) 
 $$
-
+%
 Where
-
+%
 $$ 
 S_k(r) =R_0 \left\{\begin{matrix}\frac{\chi}{R_0} \text{ if } k = 0\\
                  \sin\left(\frac{\chi}{R_0}\right) \text{ if } k = 1\\
                   \sinh\left(\frac{\chi}{R_0}\right) \text{ if } k = -1\\
-				\end{matrix}\right. 
+            \end{matrix}\right. 
 $$
+
+
+## Distance and travel of photons
+
+Let's now ask ourselves how one can measure distances on cosmological scales. A common way to measure distance is to look at photon travel path.
 
 Since a photon is massless it follow the geodesic with $ds^2 = 0$
 
