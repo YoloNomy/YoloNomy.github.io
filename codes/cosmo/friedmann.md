@@ -71,4 +71,4 @@ $$
 
 $$ \frac{H^2}{H_0^2} = \sum_i \Omega_i a^{-3(1+w_i)}$$
 
-# Various evolutions and the big bang model
+# Various evolutions and the Big-Bang model
