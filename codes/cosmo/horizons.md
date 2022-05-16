@@ -37,16 +37,13 @@ $$
 
 Let's now ask ourselves how one can measure distances on cosmological scales. A common way to measure distance is to look at photon travel path.
 
-Since a photon is massless it follow the geodesic with $ds^2 = 0$
+Since a photon is massless it follows the geodesics of null intervall : $ds^2 = 0$ (see ...).
 
-So, assuming that our coordinates system is such as the photon only travel on the radial coordinate we have:
-
+So, choosing our coordinate system such that the photons only travel on the radial coordinate we have:
 $$ 
 cdt = \pm a(t) d\chi 
 $$
-
 and the co-moving distance between a source that the photon leave at $t_0$ and an observer that receive it at $t_1$ is given by:
-
 $$ 
 \chi = c \int_{t_0}^{t_1} \frac{dt}{a(t)} 
 $$
