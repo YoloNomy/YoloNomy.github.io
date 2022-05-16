@@ -7,8 +7,9 @@ You will find here some fun python applications to physics with some detailled e
 
 # Newtonian mechanics
 
-- the simple pendulum
+- the pendulum and harmonic oscillators
 - a falling ant
+- Kepler laws
 
 # General relativity
 
