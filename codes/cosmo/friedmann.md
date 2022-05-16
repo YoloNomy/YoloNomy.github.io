@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Black holes"
+title: "Universe evolution and Friedmann equations"
 ---
 
 # The building blocks of cosmology
