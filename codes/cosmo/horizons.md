@@ -67,9 +67,9 @@ This defines the radius of the Hubble sphere around earth.
 
 The particle horizon around a given point is the surface answering the question:  What is the maximum distance of the object that emits light that we can still receive today despite the expansion? 
 
-Before understanding what we really means, let's first cover how to calculate the distance travelled by light.
+Before understanding what we really mean, let's first cover how to calculate the distance travelled by light in a given time.
 
-The maximal speed at which information can be carried is the speed of light. By definition, light has the physical speed $c = d\ell/dt$ (This condition is equivalent to ask for $ds^2=0$).
+The maximal speed at which information can be carried is indeed the speed of light. By definition, light has the physical speed $c = d\ell/dt$ (This condition is equivalent to ask for $ds^2=0$).
 
 Choosing our coordinate system such that the photons only travel on the radial coordinate, this allows us to write:
 $$ 
@@ -80,7 +80,7 @@ $$
 \chi = c \int_{t_0}^{t_1} \frac{dt}{a(t)} 
 $$
 
-If a photon is emitted at primordial singularity, $t = 0$ the maximal distance it has been able to travel is:
+If a photon is emitted at primordial singularity, $t = 0$ the maximal distance it has then been able to travel is:
 
 $$
 \chi_p(t) = c \int_{0}^{t} \frac{dt'}{a(t')} 
