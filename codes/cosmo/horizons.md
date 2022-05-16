@@ -37,7 +37,7 @@ $$
 
 ## Distance and travel of photons
 
-Let's now ask ourselves how one can measure distances on cosmological scales. A common way to measure distance is to look at photon travel path.
+Let's now ask ourselves how one can measure distances on cosmological scales. A common way to measure distances is to look at photon travel path.
 
 Since a photon is massless it follows the geodesics of null intervall : $ds^2 = 0$ (see ...).
 
