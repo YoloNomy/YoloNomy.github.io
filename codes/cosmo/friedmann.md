@@ -50,4 +50,7 @@ $$
 $$
 \Omega_{i} := \frac{\rho^i_0}{\rho_c} \qquad i\in\{m,r,DE,\kappa\}
 $$
+
+$$ \frac{H^2}{H_0^2} = \sum_i \Omega_i a^{-3(1+w_i)}$$
+
 # Various evolutions and the big bang model
