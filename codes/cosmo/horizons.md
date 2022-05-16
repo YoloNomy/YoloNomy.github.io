@@ -18,7 +18,7 @@ $$
 ds^2 = -dt^2 + a(t)^2\left( \frac{dr^2}{1 - kr^2}  + r^2d\Omega^2\right) 
 $$
 
-In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $d\Omega = r^2sin\theta d\varphi$ is the spherical infinetisimal surface element. $a(t)$ is called the scale factor and quantify this expansion. 
+In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $d\Omega^2 = r^2\sin\theta^2 d\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the scale factor and quantify the expansion of the coordinate system. 
 . The whole metric can be rewritten as :
 
 $$ 
