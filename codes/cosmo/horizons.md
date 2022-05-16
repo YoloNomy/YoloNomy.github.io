@@ -41,7 +41,7 @@ Using this metric, we will be able to define three different types of horizons o
 
 ## The Hubble Horizon
 
-The *Hubble Horizon* is the most known and easily understandable type cosmological horizon. It is actually the one we discussed in introduction, describing the distance at which galaxies recessed at the speed of light. To every point of the universe one can associate a Hubble sphere delimited by this horizon. Beyond this horizon, it is de facto impossible to receive any signal and thus observe any galaxy.
+The *Hubble Horizon* is the most known and easily understandable type cosmological horizon. It is actually the one we discussed in introduction, describing the distance at which galaxies recessed at the speed of light. To every point of the universe one can associate a surface, also called the *Hubble sphere*, delimited by this horizon. Beyond this horizon, it is de facto impossible to receive any signal and thus observe any galaxy. In a sense, it defines the size of what is commonly called the *observable universe*.
 As we discussed already, the physical distance from the origin (say earth) to a galaxy is given by:
 
 $$ 
