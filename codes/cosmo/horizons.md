@@ -9,10 +9,10 @@ An Horizon is a virtual region from which no information can travel. The most fa
 
 However, black holes are not the only objects to display such a feature ... the whole universe is! Intuitively, the Hubble-Lemaître law ($v = H_0d$) implies that the speed at which objects are pulled away from us due to expansion increase with their distance. One can then naturally ask the question : what happens when this speed becomes greater than the speed of light? In some sense, this horizon, works like a 'reversed black hole'. This even leads some physicists to assert that "we leave in a black hole"! We'll come back to this ...
 
-In this situation, we talk about cosmological horizons, and they can be of different kind.
+For horizons at the scale of the universe, we talk about cosmological horizons, and they can be of different kinds. Instead of being localized in a region of space time, like for black holes, we will see that cosmological horizons are defined relatively to an observer.
 
-One of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
-The most general result is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric* (see lectures on cosmology):
+As we discussed in X, one of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. This will also be our starting point. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
+The most general result is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric*:
 
 $$ 
 \text{d}s^2 = -c^2\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
