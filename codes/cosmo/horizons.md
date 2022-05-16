@@ -18,7 +18,7 @@ $$
 ds^2 = -dt^2 + a(t)^2\left( \frac{dr^2}{1 - kr^2}  + r^2d\Omega^2\right) 
 $$
 
-In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $d\Omega^2 = r^2\sin\theta^2 d\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the scale factor and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with $a(t)$.)). $k$ is the spatial curvature of the universe.
+In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $d\Omega^2 = r^2\sin\theta^2 d\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the *scale factor* and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with $a(t)$.)). $k$ is the *spatial curvature* of the universe.
 For practical purposes, the whole metric can be rewritten as:
 
 $$ 
@@ -34,7 +34,7 @@ S_k(r) =R_0 \left\{\begin{matrix}\frac{\chi}{R_0} \text{ if } k = 0\\
             \end{matrix}\right. 
 $$
 
-$\chi$ is called the comoving distance. One can then recover the physical space distance $\ell$ by integration of $d\ell = \sqrt{a^2(t)d\chi^2 + S_k^2(r) d\Omega^2\right) $.
+$\chi$ is called the *comoving distance*. One can then recover the physical space distance $\ell$ by integration of $d\ell = \sqrt{a^2(t)d\chi^2 + S_k^2(r) d\Omega^2\right) $.
 If $k=0$ then $\chi = r$. 
 
 ## The travel of light
