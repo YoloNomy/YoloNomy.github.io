@@ -34,15 +34,14 @@ S_k(r) =R_0 \left\{\begin{matrix}\frac{\chi}{R_0} \text{ if } k = 0\\
             \end{matrix}\right. 
 $$
 
-$\chi$ is called the comoving distance. If $k=0$ then $\chi =r$. 
+$\chi$ is called the comoving distance. One can then recover the physical space distance $\ell$ by integration of $d\ell = \sqrt{a^2(t)d\chi^2 + S_k^2(r) d\Omega^2\right) $.
+If $k=0$ then $\chi = r$. 
 
 ## Distance and travel of photons
 
-Let's now ask ourselves how one can measure distances on cosmological scales. A common way to measure distances is to look at the travel path of light.
+Let's now ask ourselves how one can measure distances on cosmological scales. A common way to measure distances is to look at the travel path of light. By definition, light must have a physical speed of $c = d\ell/dt$. This is equivalent to ask for $ds^2=0$.
 
-Since a photon is massless it follows the geodesics of null intervall : $ds^2 = 0$ (see cours de relat').
-
-choosing our coordinate system such that the photons only travel on the radial coordinate, we can get from the metric:
+Choosing our coordinate system such that the photons only travel on the radial coordinate, this allows us to write:
 $$ 
 cdt = \pm a(t) d\chi 
 $$
