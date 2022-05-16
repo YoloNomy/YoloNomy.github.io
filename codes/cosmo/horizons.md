@@ -21,8 +21,6 @@ $$
 $$
 
 In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $\text{d}\Omega^2 = r^2\sin\theta^2 \text{d}\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the *scale factor* and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with $a(t)$.)). $k$ is the *spatial curvature* of the universe.
-%%%%%%%%%%%%%%%%%%%%%%%
-
 For practical purposes, the whole metric can be rewritten as:
 
 $$ 
@@ -125,12 +123,10 @@ Note that as we our light will never reach something behind the event horizon, w
 
 ## The $\Lambda$-CMD case 
 
-déplacer cette partie dans une autre page
-%%%%%%%%%%%%%%%%%%%%%%%
-In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to get it, you have to insert the FLRW metric in the Einstein equation (see cosmology lecture notes) and assume that the matter in the universe is a perfect fluid. This allows you to derive the fundamental equation of cosmology, called the Friedmann-Lemaître equation:
+In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to do so, you need to find the fundamental equation of cosmology, called the Friedmann-Lemaître equation:
 
 $$ \frac{H^2}{H_0^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
-%%%%%%%%%%%%%%%%%%%%
+
 Take the example of the $\Lambda$CDM cosmology using Planck parameters.
 
    ![my image](./images/LCDMhorizons.png "my image") 
