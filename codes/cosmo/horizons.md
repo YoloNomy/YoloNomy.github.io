@@ -98,9 +98,12 @@ Receiving some signals from earth, no light can have been emitted from further a
 
 ## Event horizon
 
-The event horizon answer to the question : If we send a photon today what is the maximum distance it can reach until the end of the Universe?
 
-It's pretty same as for the particle horizon but this time we emitting the photon today $t_0$ and we let it travel until $t_f = +\infty$
+answer to the question : If we send a photon today what is the maximum distance it can reach until the end of the Universe?
+
+In some sense, the event horizon is a "reversed" particle horizon but this time the photon is emitted today $t_0$ on earth and we let it travel until $t_f \to +\infty$. Contrary to the two other kinds, this horizon does not set a limit on how far we can receive informations from, but on how far we can send informations to.
+
+From previous considerations it is now straightforward to calculate it's radius as:
 
 $$ 
 \chi_{evt}(t) = c\int_{t}^{+\infty} \frac{\text{d}t'}{a(t')} 
