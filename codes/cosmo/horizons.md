@@ -15,7 +15,7 @@ One of the building principles of cosmology is to assume that the universe is ho
 The most general result is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric*:
 
 $$ 
-\text{d}s^2 = -\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
+\text{d}s^2 = -c^2\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
 $$
 
 In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $\text{d}\Omega^2 = r^2\sin\theta^2 \text{d}\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the *scale factor* and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with $a(t)$.)). $k$ is the *spatial curvature* of the universe.
