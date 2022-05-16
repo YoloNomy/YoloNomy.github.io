@@ -7,13 +7,18 @@ You will find here some fun python applications to physics with some detailled e
 
 # Newtonian mechanics
 
+- the simple pendulum
 - a falling ant
 
-# Cosmology and astrophysics
-
-- [Cosmological horizons]({% link codes/cosmo/horizons.md %})
+# General relativity
 
 - [Black holes]({% link codes/cosmo/black-holes.md %})
+
+# Cosmology
+
+- Universe evolution and Friedmann equations
+- [Cosmological horizons]({% link codes/cosmo/horizons.md %})
+
 
 # Quantum physics
 
