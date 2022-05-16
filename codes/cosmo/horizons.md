@@ -126,7 +126,8 @@ In order to predict the evolution of the horizons through the history of the uni
 $$ \frac{H^2}{H_0^2} = \sum_i \Omega_i a^{-3(1+w_i)}$$
 
 Where $w_i$ are the coefficients of the equations of states.
-Considering the $\Lambda$CDM cosmology using Planck parameters, the evolution of the horizons are given by:
+Considering the $\Lambda$CDM cosmology using Planck parameters, the evolution of the horizons are given by: 
+%LV: comment faire un lien direct avec le code?
 
    ![my image](./images/LCDMhorizons.png "my image") 
   
