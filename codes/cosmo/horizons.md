@@ -127,13 +127,13 @@ $$ \frac{H^2}{H_0^2} = \sum_i \Omega_i a^{-3(1+w_i)}$$
 
 Where $w_i$ are the coefficients of the equations of states.
 Considering the $\Lambda$CDM cosmology using Planck parameters, the evolution of the horizons are given by: 
-%LV: comment faire un lien direct avec le code?
+%LV: comment faire un lien direct avec le code ?
 
    ![my image](./images/LCDMhorizons.png "my image") 
   
 We can give a value for today horizons : in present time the particle is at ~ 48 Glyrs, the event horizon is at ~ 17 Glyrs and the Hubble horizon is at ~ 14 Glyrs.
 
-Looking at the particle horizon we can see that due to expansion it's distance increase rapdily, it means that the farthest light we can see was emits by objects that are today at 48 Glyrs of us! In our expansing universe the particle univers will tend to infinity.
+Looking at the particle horizon we can see that due to expansion it's distance increase rapdily, it means that the farthest light we can see was emits by objects that are today at 48 Glyrs of us! In our expansing universe the particle horizon will diverge towards infinity.
 
 Another remark is that the event horizon is greater than the Hubble distance : photons that lie between the two are currently receeding at supra-light speed but we will finally saw them as they will enter in the Hubble horizon! 
 
