@@ -12,7 +12,7 @@ However, black holes are not the only objects to display such a feature ... the 
 In this situation, we talk about cosmological horizons, and they can be of different kind.
 
 One of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
-The most general result is given by the Friedman-Lemaître-Robertson-Walker (FLRW) metric:
+The most general result is given by the *Friedman-Lemaître-Robertson-Walker (FLRW) metric*:
 
 $$ 
 ds^2 = -dt^2 + a(t)^2\left( \frac{dr^2}{1 - kr^2}  + r^2d\Omega^2\right) 
@@ -52,37 +52,40 @@ $$
 
 ## The Hubble Horizon
 
-The Hubble Horizon is the most known and easily understandable type cosmological horizon. It is actually the one we disccued in introduction, describing the distance at which galaxies recessed at the speed of light. To every point of the universe one can associate a Hubble sphere delimited by this horizon. Beyond this horizon, it is de facto impossible to receive any signal and thus observe any galaxy.
+The *Hubble Horizon* is the most known and easily understandable type cosmological horizon. It is actually the one we disccued in introduction, describing the distance at which galaxies recessed at the speed of light. To every point of the universe one can associate a Hubble sphere delimited by this horizon. Beyond this horizon, it is de facto impossible to receive any signal and thus observe any galaxy.
 As we discussed already, the physical distance from the origin (say earth) to a galaxy is given by:
 
 $$ 
 d = a(t)\chi 
 $$
 
-The recession velocity is given by its time derivative
+The recession velocity is given by its time derivative (which is in fact the Hubble-Lemaître law)
 
 $$ 
 v = \frac{\text{d}d}{\mathrm{dt}} = \dot{a}\chi = aH\chi
 $$
 
-From this, we deduce that the velocity reaches $v = c$ at the distance of :
+From this, we deduce that the velocity reaches $v = c$ at the distance of:
 
 $$ 
 d_H(t) = a(t)\chi = \frac{c}{H}
 $$
 
+This defines the radius of the Hubble sphere around earth.
+
 ## Particle horizon
 
-The particle horizon is the answer to the question :  What is the maximum distance of the object that emit light that we receive today?
+The other types of cosmological horizons are more subtle to understand that the Hubble horizon.
+The particle horizon is again a sphere around a point delimited by the following condition:  What is the maximum distance of the object that emits light that we can receive today?
 
-If a photon is emitted at the first moment of the universe $t = 0$ the distance it has travel is:
+If a photon is emitted at the first moment of the universe $t = 0$ the distance it has been able to travel is:
 
 $$
 \chi_p(t) = c \int_{0}^{t} \frac{dt'}{a(t')} 
 $$
 
 
-This distance is sometimes called *conformal time* $\eta$
+This distance is sometimes the called *conformal time* $\eta$
 
 In terms of proper distance we can write
 
