@@ -55,6 +55,7 @@ $$
 v = \frac{\text{d}d}{\mathrm{dt}} = \dot{a}\chi = aH\chi
 $$
 
+Where $H := \dot{a}/a$ is the *Hubble parameter*.
 From this, we deduce that the velocity reaches $v = c$ at the distance of:
 
 $$ 
@@ -120,7 +121,7 @@ Note that as we our light will never reach something behind the event horizon, w
 
 ## The $\Lambda$-CMD case 
 
-In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$.
+In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to get it, you have to insert the FLRW metric in the Einstein equation (see [Black holes]({% link codes/cosmo/black-holes.md %}))).
 
 $$ \frac{H^2}{H_0} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
 
