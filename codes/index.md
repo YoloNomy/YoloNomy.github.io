@@ -17,7 +17,7 @@ You will find here some fun python applications to physics with some detailled e
 
 # Cosmology
 
-- Universe evolution and Friedmann equations
+- [Universe evolution and Friedmann equations]({% link codes/cosmo/friedmann.md %})
 - [Cosmological horizons]({% link codes/cosmo/horizons.md %})
 
 

@@ -11,7 +11,7 @@ However, black holes are not the only objects to display such a feature ... the 
 
 For horizons at the scale of the universe, we talk about cosmological horizons, and they can be of different kinds. Instead of being localized in a region of space time, like for black holes, we will see that cosmological horizons are defined relatively to an observer.
 
-As we discussed in X, one of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. This will also be our starting point. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
+As we discussed in [here](({% link codes/cosmo/friedmann.md %})), one of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. This will also be our starting point. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
 The most general result is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric*:
 
 $$ 
@@ -121,7 +121,7 @@ Note that as we our light will never reach something behind the event horizon, w
 
 ## The $\Lambda$-CMD case 
 
-In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to do so, you need to find invoque the fundamental equation of cosmology, called the Friedmann-Lemaître equation: (see lectures on cosmology)
+In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to do so, you need to find invoque the fundamental equation of cosmology, called the Friedmann-Lemaître equation: (see [here](({% link codes/cosmo/friedmann.md %})))
 
 $$ \frac{H^2}{H_0^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
 
