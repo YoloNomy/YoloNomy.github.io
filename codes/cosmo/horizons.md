@@ -9,7 +9,7 @@ An Horizon is a virtual region from which no information can travel. The most fa
 
 However, black holes are not the only objects to display such a feature ... the whole universe is! Intuitively, the Hubble-Lemaître law ($v = H_0d$) implies that the speed at which objects are pulled away from us due to expansion increase with their distance. One can then naturally ask the question : what happens when this speed becomes greater than the speed of light? We'll come back to this ...
 
-In this cituation, we talk about cosmological horizons, and they can be of different kind.
+In this situation, we talk about cosmological horizons, and they can be of different kind.
 
 One of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
 The most general result is given by the Friedman-Lemaître-Robertson-Walker (FLRW) metric:
@@ -19,7 +19,6 @@ $$
 %
 In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $d\Omega = r^2sin\theta d\varphi$ is the spherical infinetisimal surface element. $a(t)$ is called the scale factor and quantify this expansion. 
 . The whole metric can be rewritten as :
-%
 $$ 
 ds^2 = -c^2dt^2 + a(t)^2\left(d\chi^2 + S_k^2(r) d\Omega^2\right) 
 $$
