@@ -121,11 +121,12 @@ Note that as we our light will never reach something behind the event horizon, w
 
 ## The $\Lambda$-CMD case 
 
-In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to do so, you need to find invoque the fundamental equation of cosmology, called the [Friedmann-Lemaître equation]({% link codes/cosmo/friedmann.md %})
+In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to do so, you need to find invoque the fundamental equation of cosmology, called the [Friedmann-Lemaître equation]({% link codes/cosmo/friedmann.md %}), that we will consider in the following form:
 
-$$ \frac{H^2}{H_0^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
+$$ \frac{H^2}{H_0^2} = \sum_i \Omega_i a^{-3(1+w_i)}$$
 
-Take the example of the $\Lambda$CDM cosmology using Planck parameters.
+Where $w_i$ are the coefficients of the equations of states.
+Considering the $\Lambda$CDM cosmology using Planck parameters, the evolution of the horizons are given by:
 
    ![my image](./images/LCDMhorizons.png "my image") 
   
