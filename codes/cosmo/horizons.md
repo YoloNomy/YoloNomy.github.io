@@ -15,14 +15,14 @@ One of the building principles of cosmology is to assume that the universe is ho
 The most general result is given by the *Friedman-Lemaître-Robertson-Walker (FLRW) metric*:
 
 $$ 
-ds^2 = -dt^2 + a(t)^2\left( \frac{dr^2}{1 - kr^2}  + r^2d\Omega^2\right) 
+{\rm d}s^2 = -{\rm d}t^2 + a(t)^2\left( \frac{dr^2}{1 - kr^2}  + r^2{\rm d}\Omega^2\right) 
 $$
 
 In a frame called the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $d\Omega^2 = r^2\sin\theta^2 d\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the *scale factor* and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with $a(t)$.)). $k$ is the *spatial curvature* of the universe.
 For practical purposes, the whole metric can be rewritten as:
 
 $$ 
-ds^2 = -c^2dt^2 + a(t)^2\left(d\chi^2 + S_k^2(r) d\Omega^2\right), 
+{\rm d}s^2 = -c^2{\rm d}t^2 + a(t)^2\left({\rm d}\chi^2 + S_k^2(r) {\rm d}\Omega^2\right), 
 $$
 
 where
@@ -34,7 +34,7 @@ S_k(r) =R_0 \left\{\begin{matrix}\frac{\chi}{R_0} \text{ if } k = 0\\
             \end{matrix}\right. 
 $$
 
-$\chi$ is called the *comoving distance*. One can then recover the physical space distance $\ell$ by integration of $d\ell = \sqrt{a^2(t)d\chi^2 + S_k^2(r) d\Omega^2} $.
+$\chi$ is called the *comoving distance*. One can then recover the physical space distance $\ell$ by integration of ${\rm d}\ell = \sqrt{a^2(t)d\chi^2 + S_k^2(r) {\rm d}\Omega^2} $.
 If $k=0$ then $\chi = r$. 
 
 Using this metric, we will be able to define three different types of horizons on cosmological scales: the Hubble, particle and even horizons. Understanding the difference between them is quite subtle, hang on!
@@ -103,7 +103,7 @@ The event horizon answer to the question : If we send a photon today what is the
 It's pretty same as for the particle horizon but this time we emitting the photon today $t_0$ and we let it travel until $t_f = +\infty$
 
 $$ 
-\chi_{evt}(t) = c\int_{t}^{+\infty} \frac{dt'}{a(t')} 
+\chi_{evt}(t) = c\int_{t}^{+\infty} \frac{{\rm d}t'}{a(t')} 
 $$
 
 In proper distance it is
