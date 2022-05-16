@@ -5,10 +5,20 @@ title: "Universe evolution and Friedmann equations"
 
 # The building blocks of cosmology
 
-Cosmological principle 
+Cosmology is the science that study the universe as a whole. Promoting cosmology as a branch of natural sciences has been made possible only very recently with the discovery of the universe expansion, showing that it was a dynamical entity (hence it becomes possible to predict and postdict its behavior) and the discovery of its very first light with the cosmic microwave background (cmb), implying that it history might have had a beggining.
+
+The three building blocks of modern cosmology are the following:
+
+- A) Cosmological principle: the universe is homogeneous (invariant under translation) and isotropic (invariant under rotations) on large scales.
+
+- B) Content: the content of the universe is given by the various species of particle physics and an additional unknown component called cold dark matter (cdm). The species can all be sorted in two broad categories depending on their mass: matter (heavy and cold) and radiation (light and hot).
+
+- C) Gravity: the theory of gravity is given by general relativity (see [here]({% link codes/cosmo/black-holes.md %}))) with a non zero cosmological constant $\Lambda$, responsible for the accelerated expansion of the universe.
+
 
 # The FLRW metric
 
+The assumption A)
 $$ 
 \text{d}s^2 = -c^2\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
 $$
