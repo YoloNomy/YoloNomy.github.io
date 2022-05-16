@@ -39,7 +39,7 @@ If $k=0$ then $\chi = r$.
 
 ## The travel of light
 
-The maximal speed at which information can be carried is the speed of light. By definition, light itself has the physical speed  $c = d\ell/dt$ (This condition is equivalent to ask for $ds^2=0$).
+The maximal speed at which information can be carried is the speed of light. By definition, light has the physical speed $c = d\ell/dt$ (This condition is equivalent to ask for $ds^2=0$).
 
 Choosing our coordinate system such that the photons only travel on the radial coordinate, this allows us to write:
 $$ 
