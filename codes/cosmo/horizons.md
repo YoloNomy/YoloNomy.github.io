@@ -99,8 +99,9 @@ Receiving some signals from earth, no light can have been emitted from further a
 ## Event horizon
 
 
-This time, we will answer the question: If we send a photon today what is the maximum distance it can reachs until the end of the Universe?
+This time, we will ask ourselves the following question: If we send a photon today what is the maximum distance it can reach until the end of the Universe?
 
+Even if the universe is eternal, this question can surprinsingly have a finite answer due to the expansion. However, it can also diverge and be infinite.
 In some sense, the event horizon is a "reversed" particle horizon but this time the photon is emitted today $t_0$ on earth and we let it travel until $t_f \to +\infty$. Contrary to the two other kinds, this horizon does not set a limit on how far we can receive informations from, but on how far we can send informations to.
 
 From previous considerations it is now straightforward to calculate it's conformal radius as:
@@ -115,11 +116,14 @@ $$
 d_{evt}(t) = a(t)\chi_{evt}(t)
 $$
 
-Note that as we cannot reach something behind the event horizon, we cannot see what is emitted today behind it.
+Note that as we our light will never reach something behind the event horizon, we will never be able to see what is emitted today behind it. In that sense it is similmar to the other two we presented.
 
-Another remark is that the event horizon can diverge and be infinite.
+## The $\Lambda$-CMD case 
 
-## The $\Lambda$CMD case 
+In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$.
+
+$$ \frac{H^2}{H_0} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
+
 Take the example of the $\Lambda$CDM cosmology using Planck parameters.
 
    ![my image](./images/LCDMhorizons.png "my image") 
