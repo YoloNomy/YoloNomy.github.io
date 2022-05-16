@@ -65,7 +65,7 @@ $$
 v = \frac{\text{d}d}{\mathrm{dt}} = \dot{a}\chi = aH\chi
 $$
 
-If the velocity is $v = c$ the galaxy is at the distance of :
+From this, we deduce that the velocity reaches $v = c$ at the distance of :
 
 $$ 
 d_H(t) = a(t)\chi = \frac{c}{H}
