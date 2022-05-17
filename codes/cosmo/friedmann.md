@@ -50,6 +50,8 @@ $$
 $$
 equivalent to fluid mechanics
 
+$$ \frac{\partial \rho}{\partial t}= - \vec{\nabla}\cdot\vec{j}$$
+
 $$
 \frac{\partial\rho}{\partial t} + 3 H(1 + w)\rho =0
 $$
