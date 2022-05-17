@@ -89,7 +89,7 @@ $$
 
 When setting $c=1$, this distance can be identified with a time usually called *conformal time* $\eta$ (formally $\text{d}t = a \text{d}\eta$).
 
-In terms of proper distance we can write
+In terms of proper distance we can write 
 
 $$ 
 d_p(t) = a(t)\chi_p(t)
@@ -98,7 +98,6 @@ $$
 Receiving some signals from earth, no light can have been emitted from further away than this physical distance $d_p(t)$. This gives us the radius of the particle horizon which, in principle is different from the Hubble horizon.
 
 ## Event horizon
-
 
 This time, we will ask ourselves the following question: If we send a photon today what is the maximum distance it can reach until the end of the Universe?
 
@@ -164,6 +163,6 @@ $$
 d_{evt} \sim a(t) \frac{1}{a(t) \sqrt{\Omega_\Lambda}} = \frac{c}{H} 
 $$
 
-That is the definition of the Hubble radius !
+That is the definition of the Hubble radius!
 
 Something that can be strange is that our future light-cone seems to cross the envent horizon : How can it be possible we can interact with what is beyond? What we have to remember is that if we emit a photon now it will never reach someone that is at the event horizon now, but the proper distance of the object at the event horizon will evolve during the photon travel and the photon will never reach it!
