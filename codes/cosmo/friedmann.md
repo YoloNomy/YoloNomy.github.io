@@ -35,22 +35,24 @@ $$
 p=w\rho
 $$
 
-One could think about an ideal gaz where $w = k_B T$.
+One could think about an ideal gaz where $w = k_B T$. (see ideal gas ?)
 We will assume that:
 
 - All heavy elements are slow and have a null pressure. $w=0$.
 - All light and relativistic elements (photons and neutrinos) have $w=1/3$. (to be proven in thermo)
 - The existence of a cosmological constant is equivalent to a energy vaccum of negative pressure with $w=-1$
-\end{itemize}
 
 The continuity equation
+
 $$
 \nabla_\mu T^{\mu \nu} = 0
 $$
-equivalent to fluid mechanics
+
+equivalent to fluid mechanics (mass) conservation/continuity equation:
 
 $$ \frac{\partial \rho}{\partial t}= - \vec{\nabla}\cdot\vec{j}$$
 
+Takes the form with the FLRW metric:
 $$
 \frac{\partial\rho}{\partial t} + 3 H(1 + w)\rho =0
 $$
