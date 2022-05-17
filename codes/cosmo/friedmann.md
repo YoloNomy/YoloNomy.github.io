@@ -38,10 +38,9 @@ $$
 One could think about an ideal gaz where $w = k_B T$.
 We will assume that:
 
-\begin{itemize}
-\item All heavy elements are slow and have a null pressure. $w=0$.
-\item All light and relativistic elements (photons and neutrinos) have $w=1/3$. (to be proven in thermo)
-\item The existence of a cosmological constant is equivalent to a energy vaccum of negative pressure with $w=-1$
+- All heavy elements are slow and have a null pressure. $w=0$.
+- All light and relativistic elements (photons and neutrinos) have $w=1/3$. (to be proven in thermo)
+- The existence of a cosmological constant is equivalent to a energy vaccum of negative pressure with $w=-1$
 \end{itemize}
 
 The continuity equation
