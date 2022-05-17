@@ -17,12 +17,16 @@ The three building blocks of modern cosmology are the following:
 
 # The FLRW metric
 
-The assumption A) gives strong constraints on the possible geometry of the universe. The most general metric $g$ satisfying the constraints of being homogeneous and isotropic is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric*:
+The assumption A) gives strong constraints on the possible geometry of the universe. 
+Let's consider a *comoving frame* $(t,r,\theta,\varphi)$.
+The most general metric $g$ satisfying the constraints of being homogeneous and isotropic is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric*:
 
 $$ 
 \text{d}s^2 = -c^2\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
 $$
 
+- $a(t)$ is the *scale factor*. a(t=t_0)=1, a(t=0)=0 (singularity).
+- $k$ *spatial curvature*
 # Universe content and perfect fluids
 
 A) also gives strong constraints on the possible behavior of the content in the universe. Since no overall prefered direction should exist, the fluids/matter distribution in the universe must iself be homogeneous without any resulting velocity. We talk about a perfect fluid. The general form of their stress-energy tensor is given by:
