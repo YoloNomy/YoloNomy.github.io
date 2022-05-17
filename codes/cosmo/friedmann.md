@@ -40,7 +40,7 @@ We will assume that:
 
 - All heavy elements are slow and have a null pressure. $w=0$.
 - All light and relativistic elements (photons and neutrinos) have $w=1/3$. (to be proven in thermo)
-- The existence of a cosmological constant is equivalent to a energy vaccum of negative pressure with $w=-1$
+- The existence of a cosmological constant is equivalent to a energy vaccum of negative pressure with $w=-1$.
 
 The continuity equation
 
@@ -81,15 +81,22 @@ $$
 $$
 
 Introducing the critical density
+
 $$
 \rho_c := \frac{3 H_0^2}{8 \pi G}
 $$
+
 one can consider the density parameters
+
 $$
 \Omega_{i} := \frac{\rho^i_0}{\rho_c} \qquad i\in\{m,r,DE,\kappa\}
 $$
+
 allowing to rewrite the Friedmann equation as:
+
 $$ \frac{H^2}{H_0^2} = \sum_i \Omega_i a^{-3(1+w_i)}$$
 
 # Various evolutions and the Big-Bang model
+
+
 
