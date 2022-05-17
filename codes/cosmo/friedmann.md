@@ -17,7 +17,7 @@ The three building blocks of modern cosmology are the following:
 
 # The FLRW metric
 
-The assumption A) gives strong constraints on the possible geometry of the universe. 
+The assumption A) gives strong constraints on the possible geometry of the universe. The most general metric $g$ satisfying the constraints of being homogeneous and isotropic is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric*:
 
 $$ 
 \text{d}s^2 = -c^2\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
@@ -25,14 +25,24 @@ $$
 
 # Universe content and perfect fluids
 
-A) also gives strong constraints on the possible behavior of the content in the universe.
+A) also gives strong constraints on the possible behavior of the content in the universe. Since no overall prefered direction should exist, the fluids/matter distribution in the universe must iself be homogeneous without any resulting velocity. We talk about a perfect fluid. The general form of their stress-energy tensor is given by:
 
 $$ T_{\mu \nu}=\rho u_\mu u_\nu + p (g_{\mu\,\nu}+ u_\mu u_\nu)= {\rm diag}(\rho,p,p,p)
 $$
 
+More simply, such a fluid should obey the equation of state:
 $$
 p=w\rho
 $$
+
+One could think about an ideal gaz where $w = k_B T$.
+We will assume that:
+
+\begin{itemize}
+\item All heavy elements are slow and have a null pressure. $w=0$.
+\item All light and relativistic elements (photons and neutrinos) have $w=1/3$. (to be proven in thermo)
+\item The existence of a cosmological constant is equivalent to a energy vaccum of negative pressure with $w=-1$
+\end{itemize}
 
 The continuity equation
 $$
