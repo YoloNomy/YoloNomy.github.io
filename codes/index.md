@@ -28,6 +28,7 @@ You will find here some fun python applications to physics with some detailled e
 # Thermodynamics
 
 - The ideal gas
+- Van der Waals gas
 
 # Quantum physics
 
