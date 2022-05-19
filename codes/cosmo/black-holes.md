@@ -28,6 +28,12 @@ The french astronomer Pierre-Simon de Laplace asked himself this question in 179
 
 # General relativity
 
+As Wheeler famously put it "Matter tells space time how to curve, space-time tells matter how to move."
+
+### Matter tells space time how to curve 
+
+# The Einstein equation
+
 In general relativity, our best theory of gravitation, the gravitational force is understood as motion in a curved space-time. The geometry of space time is fully described by the metric field $g_{\mu\nu}$, allowing to describe length through the generalized pythagorian theorem :
 
 $$ ds^2 = g_{\mu \nu}dx^\mu dx^\nu$$
@@ -36,7 +42,7 @@ Solution to the Einstein equation
 
 $$R_{\mu \nu} - \frac{1}{2}R g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu \nu}$$
 
-Particles are then moving on geodesics : paths of smallest length, in the curved space-time.
+The connexion $\Gamma$.
 
 # The Schwarzchild metric
 
@@ -50,6 +56,20 @@ $ r_s = \frac{2GM}{c^2}$
 Singularity
 
 No hair theorem. (rotating + charged black holes).
+
+### Space-time tells matter how to move 
+
+# Geodesic equations
+
+Particles are moving on geodesics : paths of smallest length, in the curved space-time.
+
+
+# Killing vectors and conserved quantities
+
+# semi-Newtonian approach
+
+
+
 
 # Black holes in the universe
 
