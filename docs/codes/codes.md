@@ -18,8 +18,8 @@ You will find here some fun python applications to physics with some detailled e
 # Chaos
 
 - Game of life
-- [Chaotic attractors]({% link codes/chaos/Lorenz.pdf %})
-- [3 body system]({% link codes/chaos/3corps.pdf %})
+- [Chaotic attractors]({% link docs/codes/chaos/Lorenz.pdf %})
+- [3 body system]({% link docs/codes/chaos/3corps.pdf %})
 - Chaotic pendulum
 - saturn's ring
 - Sinai's Billiards
@@ -39,12 +39,12 @@ You will find here some fun python applications to physics with some detailled e
 
 # General relativity
 
-- [Black holes]({% link codes/cosmo/black-holes.md %})
+- [Black holes]({% link docs/codes/cosmo/black-holes.md %})
 
 # Cosmology
 
-- [Universe evolution and Friedmann equations]({% link codes/cosmo/friedmann.md %})
-- [Cosmological horizons]({% link codes/cosmo/horizons.md %})
+- [Universe evolution and Friedmann equations]({% link docs/codes/cosmo/friedmann.md %})
+- [Cosmological horizons]({% link docs/codes/cosmo/horizons.md %})
 
 
 

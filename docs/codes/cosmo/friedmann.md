@@ -15,7 +15,7 @@ The three building blocks of modern cosmology are the following:
 
 - B) Content: the content of the universe is given by the various species of particle physics and an additional unknown component called cold dark matter (cdm). The species can all be sorted in two broad categories depending on their mass: matter (heavy and cold) and radiation (light and hot).
 
-- C) Gravity: the theory of gravity is given by general relativity (see [here]({% link codes/cosmo/black-holes.md %}))) with a non zero cosmological constant $\Lambda$, responsible for the accelerated expansion of the universe.
+- C) Gravity: the theory of gravity is given by general relativity (see [here]({% link docs/codes/cosmo/black-holes.md %}))) with a non zero cosmological constant $\Lambda$, responsible for the accelerated expansion of the universe.
 
 # The FLRW metric
 
@@ -70,7 +70,6 @@ In the the FLRW metric, the continuity equation can be written as:
 $$
 \frac{\partial\rho}{\partial t} + 3 H(1 + w)\rho =0
 $$
-
 Integrating this, we obtain the evolution of the density (i.e. the dilution of a given species) through the evolution of the universe:
 $$
 \rho(a) =  a^{-3(1+w)}

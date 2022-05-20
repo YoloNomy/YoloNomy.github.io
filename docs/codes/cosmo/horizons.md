@@ -7,13 +7,13 @@ nav_order: 4
 
 ## Horizons in cosmology
 
-An Horizon is a virtual region from which no information can travel. The most familiar exemple is given by the event horizons of black holes, from which not even light can espace (if you want to know more on them, go check [Black holes]({% link codes/cosmo/black-holes.md %})).
+An Horizon is a virtual region from which no information can travel. The most familiar exemple is given by the event horizons of black holes, from which not even light can espace (if you want to know more on them, go check [Black holes]({% link docs/codes/cosmo/black-holes.md %})).
 
 However, black holes are not the only objects to display such a feature ... the whole universe is! Intuitively, the Hubble-Lemaître law ($v = H_0d$) implies that the speed at which objects are pulled away from us due to expansion increase with their distance. One can then naturally ask the question : what happens when this speed becomes greater than the speed of light? In some sense, this horizon, works like a 'reversed black hole'. This even leads some physicists to assert that "we leave in a black hole"! We'll come back to this ...
 
 For horizons at the scale of the universe, we talk about cosmological horizons, and they can be of different kinds. Instead of being localized in a region of space time, like for black holes, we will see that cosmological horizons are defined relatively to an observer.
 
-When we discussed [evolutions of the universe]({% link codes/cosmo/friedmann.md %}), we saw that one of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. This will also be our starting point. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
+When we discussed [evolutions of the universe]({% link docs/codes/cosmo/friedmann.md %}), we saw that one of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. This will also be our starting point. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein's equation for the universe.
 The most general result is given by the *Friedmann-Lemaître-Robertson-Walker (FLRW) metric*:
 
 $$
