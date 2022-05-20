@@ -17,11 +17,22 @@ nav_order: 2
 
 # Polar coordinates
 
+# The cross product 
+
+Consider two vectors $\vec{u}$ and $\vec{v}$. 
+$\vec{u} \times \vec{v}$ or $\vec{u} \wedge \vec{v}$.
+
+# Newton and gravity
+
+$$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r}_ $$
+
 # Proof of the second law
+
+# Presenting the first law
 
 # A warm-up: third law for spherical orbits
 
-# Proof of the first law
+# General proof of the first law
 
-# Proof of the third law
+# General proof of the third law
 
