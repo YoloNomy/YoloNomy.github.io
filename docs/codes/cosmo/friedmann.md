@@ -54,8 +54,8 @@ $$
 One could think about an ideal gaz where $w = k_B T$. (see ideal gas ?)
 We will assume that:
 
-- All heavy elements are slow and have a null pressure. $w=0$.
-- All light and relativistic elements (photons and neutrinos) have $w=1/3$. (to be proven in thermo)
+- All heavy elements are slow and have a null pressure. $w=0$. This includes matter and dark matter.
+- All light and relativistic elements (photons and neutrinos) have $w=1/3$. (see statistical physics)
 - The existence of a cosmological constant is equivalent to a energy vaccum of negative pressure with $w=-1$.
 
 The continuity equation
@@ -80,28 +80,32 @@ So one gets:
 - $\rho^M(a) =   rho^M_0 a^{-3}$ for matter
 - $\rho^\Lambda(a) = rho^\Lambda_0 $ for cosmological constant.
 
-
 # The Friedmann equation(s)
 
-We now use our last assumption C). General relativity's fundamental equation is Einstein's equation, that can be rewritten as:
+We now use our last assumption C). The fundamental equation of General relativity is Einstein's equation, that can be rewritten as:
 
 $$     R^{\mu \nu} = 8 \pi G \left( T^{\mu \nu} - \frac{1}{2}g^{\mu \nu} T_{\ \sigma}^{\sigma}\right) $$
 
-Inserting FLRW for $g$ and perfect fluids for $T$, one gets:
+Inserting FLRW for $g$ and perfect fluids for $T$, one gets the *Friedmann-Lemaître* equation
 
 $$ \frac{H^2}{H_0^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
 
-and
+and the Raychaudaury or acceleration equation
+
 $$
-\frac{\ddot{a}}{a} = H^2 + \dot{H} = \frac{4 \pi G}{3}(\rho+3p)
+\frac{\ddot{a}}{a} = H^2 + \dot{H} = \frac{4 \pi G}{3}(\rho+3p).
 $$
-Those are the fundamental equations of cosmology. If you know what the content of the universe is $\rho$ and its geometry $k$, you are fully able to predict its evolution.
+
+Those are the fundamental equations of cosmology. If you know what the content of the universe $\rho$ is and its geometry $k$, you are fully able to predict its evolution.
 
 Introducing the critical density
+
 $$
 \rho_c := \frac{3 H_0^2}{8 \pi G}
 $$
+
 one can consider the density parameters
+
 $$
 \Omega_{i} := \frac{\rho^i_0}{\rho_c} \qquad i\in\{m,r,DE,\kappa\}
 $$

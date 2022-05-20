@@ -35,6 +35,7 @@ You will find here some fun python applications to physics with some detailled e
 
 # Quantum physics
 
+- Particle in a box
 - De Broglie-Bohm trajectories
 
 # General relativity
