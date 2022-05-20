@@ -72,8 +72,15 @@ $$
 $$
 Integrating this, we obtain the evolution of the density (i.e. the dilution of a given species) through the evolution of the universe:
 $$
-\rho(a) =  a^{-3(1+w)}
+\rho(a) =  rho_0 a^{-3(1+w)}
 $$
+
+So one gets:
+- $\rho^r(a) =  rho^r_0 a^{-4}$ for radiation
+- $\rho^M(a) =   rho^M_0 a^{-3}$ for matter
+- $\rho^\Lambda(a) = rho^\Lambda_0 $ for cosmological constant.
+
+
 # The Friedmann equation(s)
 
 We now use our last assumption C). General relativity's fundamental equation is Einstein's equation, that can be rewritten as:
