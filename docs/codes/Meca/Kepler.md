@@ -17,18 +17,30 @@ nav_order: 2
 
 # Polar coordinates
 
-# The cross product 
+# Proof of the second law
+
+## The cross product 
 
 Consider two vectors $\vec{u}$ and $\vec{v}$. 
 $\vec{u} \times \vec{v}$ or $\vec{u} \wedge \vec{v}$.
 
-# Newton and gravity
+## Newton and gravity
 
 $$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r}_ $$
 
-# Proof of the second law
+## The angular momentum 
+
+$$ \vec{L} = \vec{r} \wedge \vec{p} $$
+
+$$ \frac{\text{d}\vec{L}}{\text{d} t} = \frac{\text{d}\vec{r}}{\text{d} t} \wedge \vec{p} + \vec{r} \wedge \frac{\text{d}\vec{p}}{\text{d} t}  $$
+
+
+## Proof of the second law
+
 
 # Presenting the first law
+
+## conics
 
 # A warm-up: third law for spherical orbits
 
