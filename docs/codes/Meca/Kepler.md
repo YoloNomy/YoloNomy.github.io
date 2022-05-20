@@ -26,14 +26,15 @@ $\vec{u} \times \vec{v}$ or $\vec{u} \wedge \vec{v}$.
 
 ## Newton and gravity
 
-$$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r} $$
+$$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r} \\
+= $$
 
 ## The angular momentum 
 
 $$ \vec{L} = \vec{r} \wedge \vec{p} $$
 
-$$ \frac{\text{d}\vec{L}}{\text{d} t} = \frac{\text{d}\vec{r}}{\text{d} t} \wedge \vec{p} + \vec{r} \wedge \frac{\text{d}\vec{p}}{\text{d} t}  $$
-
+$$ \frac{\text{d}\vec{L}}{\text{d} t} = \frac{\text{d}\vec{r}}{\text{d} t} \wedge \vec{p} + \vec{r} \wedge \frac{\text{d}\vec{p}}{\text{d} t} $$
+$$ = \vec{v} \wedge \vec{p} + \vec{r} \wedge \sum \vec{F} $$
 
 ## Proof of the second law
 
