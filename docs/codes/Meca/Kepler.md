@@ -9,7 +9,7 @@ nav_order: 2
 
 - law 1: trajectories
 - law 2: areas
-- law 3: $T^2/a^3$
+- law 3: $$T^2/a^3$$
 
 # Why are they so important ?
 
