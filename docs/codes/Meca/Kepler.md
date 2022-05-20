@@ -26,7 +26,7 @@ $\vec{u} \times \vec{v}$ or $\vec{u} \wedge \vec{v}$.
 
 ## Newton and gravity
 
-$$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r}_ $$
+$$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r} $$
 
 ## The angular momentum 
 
