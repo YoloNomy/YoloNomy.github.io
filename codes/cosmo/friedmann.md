@@ -26,7 +26,19 @@ $$
 $$
 
 - $a(t)$ is the *scale factor*. a(t=t_0)=1, a(t=0)=0 (singularity).
-- $k$ *spatial curvature*
+- $k$ *spatial curvature*.
+
+We introduce the famous *Hubble parameter*
+$$
+H := \frac{\dot{a}}{a}
+$$
+
+Quantifying the whole evolution of the universe.
+
+Hubble law:
+
+$$v\sim H_0d$$
+
 # Universe content and perfect fluids
 
 A) also gives strong constraints on the possible behavior of the content in the universe. Since no overall prefered direction should exist, the fluids/matter distribution in the universe must iself be homogeneous without any resulting velocity. We talk about a perfect fluid. The general form of their stress-energy tensor is given by:
@@ -56,14 +68,13 @@ equivalent to fluid mechanics (mass) conservation/continuity equation:
 
 $$ \frac{\partial \rho}{\partial t}= - \vec{\nabla}\cdot\vec{j}$$
 
-Takes the form with the FLRW metric:
+In the the FLRW metric, the continuity equation can be written as:
 $$
 \frac{\partial\rho}{\partial t} + 3 H(1 + w)\rho =0
 $$
 
-$$
-H := \frac{\dot{a}}{a}
-$$
+
+Integrating this, we obtain the evolution of the density (i.e. the dilution of a given species) through the evolution of the universe:
 
 $$
 \rho(a) =  a^{-3(1+w)}
@@ -84,6 +95,8 @@ $$
 \frac{\ddot{a}}{a} = H^2 + \dot{H} = \frac{4 \pi G}{3}(\rho+3p)
 $$
 
+Those are the fundamental equations of cosmology. If you know what the content of the universe is $\rho$ and its geometry $k$, you are fully able to predict its evolution.
+
 Introducing the critical density
 
 $$
@@ -99,6 +112,14 @@ $$
 allowing to rewrite the Friedmann equation as:
 
 $$ \frac{H^2}{H_0^2} = \sum_i \Omega_i a^{-3(1+w_i)}$$
+
+$$     \left(\frac{H}{H_0}\right)^2 = \frac{\Omega_r}{a^4} +\frac{\Omega_m}{a^3} + \frac{\Omega_k}{a^2}+ \Omega_\Lambda $$
+
+Looking at $t=t_0$, we get the closure equation:
+
+$$\Omega_k + \Omega_\Lambda + \Omega_m + \Omega_r = 1 $$
+
+Allowing to interpret the $\Omega$ as fractions.
 
 # Various evolutions and the Big-Bang model
 

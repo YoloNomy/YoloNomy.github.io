@@ -69,8 +69,6 @@ Particles are moving on geodesics : paths of smallest length, in the curved spac
 # semi-Newtonian approach
 
 
-
-
 # Black holes in the universe
 
 
