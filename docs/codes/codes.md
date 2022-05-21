@@ -11,8 +11,8 @@ You will find here some fun python applications to physics with some detailled e
 # Newtonian mechanics
 
 - Newton laws and the reign of parabolas
-- the pendulum and harmonic oscillators
-- a falling ant
+- The pendulum and harmonic oscillators
+- A falling ant
 - [Kepler laws]({% link docs/codes/Meca/Kepler.md %})
 
 # Chaos
@@ -21,7 +21,7 @@ You will find here some fun python applications to physics with some detailled e
 - [Chaotic attractors]({% link docs/codes/chaos/Lorenz.pdf %})
 - [3 body system]({% link docs/codes/chaos/3corps.pdf %})
 - Chaotic pendulum
-- saturn's ring
+- Saturn's ring
 - Sinai's Billiards
 
 # Fluid mechanics
