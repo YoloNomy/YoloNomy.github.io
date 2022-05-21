@@ -44,7 +44,7 @@ $$ = m \vec{v} \wedge \vec{v} + \vec{r} \wedge \sum \vec{F} = \frac{GMm}{r}\vec{
 
 $$  \vec{L} = \vec{r} \wedge \vec{p} = r m \vec{u_r}\wedge  \vec{v} = mr^2 \dot{\theta}  \vec{u_r}\wedge  \vec{u_\theta} $$ 
 
-$$ \vec{L} = mr^2 \dot{\theta} \vec{u_r} $$
+$$ \vec{L} = mr^2 \dot{\theta} \vec{u_z} $$
 
 ## Proof of the second law
 
