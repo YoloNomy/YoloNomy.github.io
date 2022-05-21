@@ -43,7 +43,9 @@ $$ \vec{L} = mr^2 \dot{\theta} \vec{u_r} $$
 
 $$ dS = \frac{r^2 \text{d}\theta}{2}$$
 
-$$ \frac{dS}{dt} = \frac{r^2}{2} \frac{\text{d}\theta }{\text{d}t}$$
+$$ \frac{dS}{dt} = \frac{r^2}{2} \dot{\theta} = \frac{|L|}{2m}$$
+
+$$ \Delta S = \int \frac{|L|}{2m} dt = \frac{|L|}{2m} \Delta t $$
 
 
 # Presenting the first law
