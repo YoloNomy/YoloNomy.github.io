@@ -7,9 +7,13 @@ nav_order: 2
 
 # Kepler laws
 
+## The laws
+
 - law 1: trajectories
 - law 2: areas
 - law 3: $$T^2/a^3$$
+
+## History : from laws to theorem
 
 # Why are they so important ?
 
@@ -127,3 +131,4 @@ $$ \frac{T^2}{R^3} = \frac{4\pi^2}{GM} $$
 
 # Third law for ellipses
 
+# Limits
