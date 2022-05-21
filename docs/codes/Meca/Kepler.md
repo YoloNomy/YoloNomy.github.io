@@ -32,9 +32,11 @@ While cartesian coordinates are fixed $ \dot{u_x}=0$ and $\dot{u_y}=0$ (We use t
 ). Polar coordinate vectors changes with time.
 
 $$ \frac{ \text{d}\vec{u_r}}{\text{d} \theta } = -\sin\theta \vec{u_x} + \cos\theta \vec{u_y} = \vec{u_\theta}  $$ 
+
 $$ \frac{ \text{d}\vec{u_\theta}}{\text{d} \theta } = -\cos\theta \vec{u_x} - \sin\theta \vec{u_y} = - \vec{u_r} $$ 
 
 $$ \dot{u_r} = \frac{\text{d} \theta}{\text{d} t}\frac{ \text{d}\vec{u_r}}{\text{d} \theta } = \dot{\theta} \vec{u_\theta}  $$ 
+
 $$ \dot{u_\theta} = \frac{\text{d} \theta}{\text{d} t} \frac{ \text{d}\vec{u_\theta}}{\text{d} \theta } = -\dot{\theta} \vec{u_r}  $$ 
 
 The position:
@@ -46,6 +48,8 @@ The velocity:
 $$ \vec{v} = \dot{\vec{r}} = \dot{r}\vec{u_r} + r \dot{\vec{u_r}} =  \dot{r} $$
 
 The acceleration:
+
+$$ \vec{a} = \dot{\vec{v}} = \dot{r}\vec{u_r} + r \dot{\vec{u_r}} =  \dot{r} $$
 
 # Proof of the second law
 
