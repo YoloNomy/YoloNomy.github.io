@@ -13,7 +13,7 @@ You will find here some fun python applications to physics with some detailled e
 - Newton laws and the reign of parabolas
 - the pendulum and harmonic oscillators
 - a falling ant
-- [Kepler laws]({% link docs/codes/cosmo/Kepler.md %})
+- [Kepler laws]({% link docs/codes/Meca/Kepler.md %})
 
 # Chaos
 
