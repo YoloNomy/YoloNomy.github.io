@@ -15,6 +15,8 @@ nav_order: 2
 
 # Examples
 
+The mass of Sgr A* and the discovery of black holes.
+
 # Polar coordinates
 
 $$ r = \sqrt{x^2 + y^2} $$
