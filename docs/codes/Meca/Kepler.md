@@ -62,6 +62,10 @@ The planets orbit are in one single plane.
 
 # A warm-up: third law for spherical orbits
 
+$$ \vec{v} = R \dot{\theta} \vec{u_\theta}$$
+
+$$ \vec{a} = R^2\dot{\theta} \vec{u_r}= -\frac{v^2}{R} \vec{u_r} $$
+
 # General proof of the first law
 
 # General proof of the third law
