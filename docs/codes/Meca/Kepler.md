@@ -50,7 +50,7 @@ $$ \vec{L} = mr^2 \dot{\theta} \vec{u_z} $$
 
 $$ dS = \frac{r^2 \text{d}\theta}{2}$$
 
-$$ \frac{dS}{dt} = \frac{r^2}{2} \dot{\theta} = \frac{|L|}{2m}$$
+$$ \frac{dS}{dt} = \frac{r^2}{2} \dot{\theta} = \frac{|\vec{L}|}{2m}$$
 
 $$ \Delta S = \int \frac{|L|}{2m} dt = \frac{|L|}{2m} \Delta t $$
 
