@@ -115,7 +115,7 @@ $$ -\frac{GmM}{R^2} \vec{u_r} =  m \vec{a} = -\frac{m v^2}{R} \vec{u_r}$$
 
 $$ v = \sqrt{\frac{GM}{R}} $$
 
-Over a whole period $T$ the distance is $d= 2\pi R$. Since the volocity is constant 
+Over a whole period $T$, the distance is $d= 2\pi R$. Since the volocity is constant 
 
 $$v= \frac{d}{T}= \frac{2\pi R}{T}$$
 
@@ -125,10 +125,14 @@ $$ \frac{4\pi^2 R^2}{T^2} = \frac{GM}{R} $$
 
 $$ \frac{T^2}{R^3} = \frac{4\pi^2}{GM} $$
 
-
+Which is the third Kepler law.
 
 # General proof of the first law
 
+Here comes the most technical aspect of our discussion.
+
 # Third law for ellipses
+
+$S=\pi ab$
 
 # Limits
