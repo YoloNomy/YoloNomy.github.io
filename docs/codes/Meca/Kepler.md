@@ -125,5 +125,5 @@ $$ \frac{T^2}{R^3} = \frac{4\pi^2}{GM} $$
 
 # General proof of the first law
 
-# General proof of the third law
+# Third law for ellipses
 
