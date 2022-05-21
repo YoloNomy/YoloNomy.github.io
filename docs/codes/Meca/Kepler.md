@@ -28,7 +28,7 @@ Right hand rule.
 
 $$ \vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}$$ 
 
-$$ a\vec{u} \wedge b\vec{v} = ab\vec{u} \wedge \vec{v}$$ 
+$$ a\vec{u} \wedge b\vec{v} = ab \, \vec{u} \wedge \vec{v}$$ 
 
 ## Newton and gravity
 
