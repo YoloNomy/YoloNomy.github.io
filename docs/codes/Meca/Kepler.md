@@ -38,7 +38,9 @@ $$ = \vec{v} \wedge \vec{p} + \vec{r} \wedge \sum \vec{F} $$
 
 ## Proof of the second law
 
+$$ dS = \frac{r^2 \text{d}\theta}{2} \frac{\text{d}\theta }{\text{d}t}$$
 
+$$ \frac{dS}{dt} = \frac{r^2}{2} $$
 # Presenting the first law
 
 ## conics
