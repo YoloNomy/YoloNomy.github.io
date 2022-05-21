@@ -101,11 +101,27 @@ The planets orbit are in one single plane.
 
 # A warm-up: third law for spherical orbits
 
-For a spherical orbit $r=R$ is a constant (thus $\dot{r} = 0$) and the angular velocity is a constant $\ddot{\theta}=0$.
+For a spherical orbit $r=R$ is a constant (thus $\dot{r} = 0$) and the angular velocity is a constant ($\ddot{\theta}=0$).
 
 $$ \vec{v} = R \dot{\theta} \vec{u_\theta}$$
 
 $$ \vec{a} = -R\dot{\theta}^2 \vec{u_r}= -\frac{v^2}{R} \vec{u_r} $$
+
+$$ -\frac{GmM}{R^2} \vec{u_r} =  m \vec{a} = -\frac{m v^2}{R} \vec{u_r}$$
+
+$$ v = \sqrt{\frac{GM}{R}} $$
+
+Over a whole period $T$ the distance is $d= 2\pi R$. Since the volocity is constant 
+
+$$v= \frac{d}{T}= \frac{2\pi R}{T}$$
+
+Using the two expressions we get:
+
+$$ \frac{4\pi^2 R^2}{T^2} = \frac{GM}{R} $$
+
+$$ \frac{T^2}{R^3} = \frac{4\pi^2}{GM} $$
+
+
 
 # General proof of the first law
 
