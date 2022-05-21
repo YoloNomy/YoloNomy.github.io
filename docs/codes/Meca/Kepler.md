@@ -26,8 +26,7 @@ $\vec{u} \times \vec{v}$ or $\vec{u} \wedge \vec{v}$.
 
 ## Newton and gravity
 
-$$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r} \\
-= $$
+$$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r} $$
 
 ## The angular momentum 
 
@@ -36,11 +35,17 @@ $$ \vec{L} = \vec{r} \wedge \vec{p} $$
 $$ \frac{\text{d}\vec{L}}{\text{d} t} = \frac{\text{d}\vec{r}}{\text{d} t} \wedge \vec{p} + \vec{r} \wedge \frac{\text{d}\vec{p}}{\text{d} t} $$
 $$ = \vec{v} \wedge \vec{p} + \vec{r} \wedge \sum \vec{F} $$
 
+
+$$  \vec{L} = \vec{r} \wedge \vec{p} = r m \vec{u_r}\wedge  \vec{v} = mr^2 \dot{\theta}  \vec{u_r}\wedge  \vec{u_\theta} $$ 
+
+$$ \vec{L} = mr^2 \dot{\theta} \vec{u_r} $$
 ## Proof of the second law
 
-$$ dS = \frac{r^2 \text{d}\theta}{2} \frac{\text{d}\theta }{\text{d}t}$$
+$$ dS = \frac{r^2 \text{d}\theta}{2}$$
 
-$$ \frac{dS}{dt} = \frac{r^2}{2} $$
+$$ \frac{dS}{dt} = \frac{r^2}{2} \frac{\text{d}\theta }{\text{d}t}$$
+
+
 # Presenting the first law
 
 ## conics
