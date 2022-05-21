@@ -24,6 +24,12 @@ nav_order: 2
 Consider two vectors $\vec{u}$ and $\vec{v}$. 
 $\vec{u} \times \vec{v}$ or $\vec{u} \wedge \vec{v}$.
 
+Right hand rule.
+
+$$ \vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}$$ 
+
+$$ a\vec{u} \wedge b\vec{v} = ab\vec{u} \wedge \vec{v}$$ 
+
 ## Newton and gravity
 
 $$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r} $$
@@ -39,6 +45,7 @@ $$ = m \vec{v} \wedge \vec{v} + \vec{r} \wedge \sum \vec{F} = \frac{GMm}{r}\vec{
 $$  \vec{L} = \vec{r} \wedge \vec{p} = r m \vec{u_r}\wedge  \vec{v} = mr^2 \dot{\theta}  \vec{u_r}\wedge  \vec{u_\theta} $$ 
 
 $$ \vec{L} = mr^2 \dot{\theta} \vec{u_r} $$
+
 ## Proof of the second law
 
 $$ dS = \frac{r^2 \text{d}\theta}{2}$$
@@ -47,6 +54,7 @@ $$ \frac{dS}{dt} = \frac{r^2}{2} \dot{\theta} = \frac{|L|}{2m}$$
 
 $$ \Delta S = \int \frac{|L|}{2m} dt = \frac{|L|}{2m} \Delta t $$
 
+The planets orbit are in one single plane.
 
 # Presenting the first law
 
