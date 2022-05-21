@@ -17,6 +17,26 @@ nav_order: 2
 
 # Polar coordinates
 
+$$ r = \sqrt{x^2 + y^2} $$
+$$ \theta = \arctan(y/x) $$
+
+$$x = r \cos\theta $$
+$$y = r \sin\theta $$
+
+$$ \vec{u_r} = \cos\theta \vec{u_x} + \sin\theta \vec{u_y} $$ 
+
+We use the notation $ \dot{x} = \frac{\text{d}X}{\text{d}t}$.
+
+The position:
+
+$$ \vec{r} = r \vec{u_r}$$
+
+The velocity:
+
+$$ \vec{v} = \dot{\vec{r}} = \dot{r}\vec{u_r} + r \dot{\vec{u_r}} $$
+
+The acceleration:
+
 # Proof of the second law
 
 ## The cross product 
@@ -64,7 +84,7 @@ The planets orbit are in one single plane.
 
 $$ \vec{v} = R \dot{\theta} \vec{u_\theta}$$
 
-$$ \vec{a} = R^2\dot{\theta} \vec{u_r}= -\frac{v^2}{R} \vec{u_r} $$
+$$ \vec{a} = R\dot{\theta}^2 \vec{u_r}= -\frac{v^2}{R} \vec{u_r} $$
 
 # General proof of the first law
 
