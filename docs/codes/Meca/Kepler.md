@@ -101,9 +101,11 @@ The planets orbit are in one single plane.
 
 # A warm-up: third law for spherical orbits
 
+For a spherical orbit $r=R$ is a constant (thus $\dot{r} = 0$) and the angular velocity is a constant $\ddot{\theta}=0$.
+
 $$ \vec{v} = R \dot{\theta} \vec{u_\theta}$$
 
-$$ \vec{a} = R\dot{\theta}^2 \vec{u_r}= -\frac{v^2}{R} \vec{u_r} $$
+$$ \vec{a} = -R\dot{\theta}^2 \vec{u_r}= -\frac{v^2}{R} \vec{u_r} $$
 
 # General proof of the first law
 
