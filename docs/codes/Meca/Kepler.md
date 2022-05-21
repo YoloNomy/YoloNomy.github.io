@@ -20,15 +20,18 @@ The mass of Sgr A* and the discovery of black holes.
 # Polar coordinates
 
 $$ r = \sqrt{x^2 + y^2} $$
+
 $$ \theta = \arctan(y/x) $$
 
 $$x = r \cos\theta $$
+
 $$y = r \sin\theta $$
 
 $$ \vec{u_r} = \cos\theta \vec{u_x} + \sin\theta \vec{u_y} $$ 
+
 $$ \vec{u_\theta} = -\sin\theta \vec{u_x} + \cos\theta \vec{u_y} $$ 
 
-While cartesian coordinates are fixed $ \dot{u_x}=0$ and $\dot{u_y}=0$ (We use the notation $ \dot{x} = \frac{\text{d}X}{\text{d}t}$.
+While cartesian coordinates are fixed $ \dot{u_x}=0$ and $\dot{u_y}=0$ (We use the notation $ \dot{x} = \frac{\text{d}x}{\text{d}t}$.
 ). Polar coordinate vectors changes with time.
 
 $$ \frac{ \text{d}\vec{u_r}}{\text{d} \theta } = -\sin\theta \vec{u_x} + \cos\theta \vec{u_y} = \vec{u_\theta}  $$ 
