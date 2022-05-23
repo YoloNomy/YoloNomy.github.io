@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Codes
+title: codes
 nav_order: 3
 has_children: true
 permalink: /docs/codes
