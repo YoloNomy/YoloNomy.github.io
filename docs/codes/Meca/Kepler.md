@@ -130,7 +130,7 @@ $$ \frac{|\vec{L}|}{2m} = \frac{\pi ab}{T} $$
 
 So that the second law is simply given by:
 
-$$ $$ \boxed{\Delta S = \int = \frac{\pi ab}{T} \Delta t} $$
+$$ \boxed{\Delta S = \int = \frac{\pi ab}{T} \Delta t} $$
 
 # Presenting the first law
 
