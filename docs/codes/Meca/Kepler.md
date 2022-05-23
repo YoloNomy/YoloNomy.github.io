@@ -154,7 +154,7 @@ $$ r\ddot{\theta} + 2\dot{r}\dot{\theta}=0$$
 
 The second equation is just the conservation of angular momentum:
 
-$$ \dot{|L|} = \dot{r^2\dot{\theta}} = 0 $$
+$$ \dot{|L|} = \dot{r}^2\dot{\theta}} = 0 $$
 
 While the first one really is the equation of motion.
 
