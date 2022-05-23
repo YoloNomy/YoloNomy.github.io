@@ -28,13 +28,21 @@ Exoplanets
 As we discussed already (see ...), the first thing to do before studying a motion in mechanics, is to define both a *frame* (otherwise motion is meaningless) and a *coordinate system* (otherwise it is impossible to quantify anything).
 So far we were only using *cartesian coordinates*, that is, perpendicular and fixed axis $(O,x,y,z)$. Cylindrical/Polar coordinates replace $x$ and $y$ by $r$ and $\theta$.
 
+Using Pythagorian theorem (need figures):
+
 $$ r = \sqrt{x^2 + y^2} $$
 
+And from basic trigonometry (need figures):
+
 $$ \theta = \arctan(y/x) $$
+
+Also from basic trigonometry (need figures):
 
 $$x = r \cos\theta $$
 
 $$y = r \sin\theta $$
+
+The unit vectors:
 
 $$ \vec{u_r} = \cos\theta \vec{u_x} + \sin\theta \vec{u_y} $$ 
 
