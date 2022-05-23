@@ -93,6 +93,8 @@ $$  \vec{L} = \vec{r} \wedge \vec{p} = r m \vec{u_r}\wedge  \vec{v} = mr^2 \dot{
 
 $$ \vec{L} = mr^2 \dot{\theta} \vec{u_z} $$
 
+At every moment $\vec{L}$ defines a single plane of rotation.
+
 ## Proof of the second law
 
 $$ dS = \frac{r^2 \text{d}\theta}{2}$$
