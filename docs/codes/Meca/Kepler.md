@@ -134,9 +134,13 @@ Which is the third Kepler law.
 
 # General proof of the first law
 
-Here comes the most technical aspect of our discussion.
+Here comes the most technical aspect of our discussion. Hang on!
+
+In the most general case, thes second Newton law is:
 
 $$ \vec{F_G} = m \vec{a} $$
+
+That we can project on the two polar basis vectors:
 
 $$ -\vec{GMm}{r^2}\vec{u_r} = a_r\vec{u_r} $$
 
@@ -162,7 +166,7 @@ $$ u'' + u - \frac{1}{p} = 0$$
 To see this, we first introduce the notation $x'= \frac{\text{d}x}{\text{d}\theta}$. Let's also not forget the cross-derivative relation: $x'= \frac{\text{d}x}{\text{d}t}\frac{\text{d}\theta}{\text{d}t} = \dot{x}\dot{\theta}$
 We then have:
 
-$$ \dot{u}= \frac{-1}{r^2}\dot{r} $$
+$$ \dot{u}= -\frac{1}{r^2}\dot{r} $$
 
 That we can reverse to get: 
 
@@ -170,13 +174,24 @@ $$ \dot{r} = -r^2 \dot{u} = -r^2\dot{\theta}u'$$
 
 That is:
 
-$$ \boxed{\dot{r} = \frac{-L}{m}u}'$$
+$$ \boxed{\dot{r} = \frac{-L}{m}u4}$$
 
 Similarly:
 
 $$ \boxed{\ddot{r} = \frac{-L^2}{m^2r^2}u^2u'}$$
 
-$$ u'' + u - \frac{1}{p} = 0$$
+Inserting these expressions in the equation of motion, we have:
+
+$$ -\frac{L^2}{m^2}u^2u'--\frac{L^2}{m^2}u^3 + GMu^2 =0$$
+
+That we can finally rerwrite in the suggestive form:
+
+$$ \boxed{u'' + u - \frac{1}{p} = 0}$$
+
+With 
+
+$$ \boxed{p= \frac{L^2}{GMm^2}}$$
+
 
 # Third law for ellipses
 
