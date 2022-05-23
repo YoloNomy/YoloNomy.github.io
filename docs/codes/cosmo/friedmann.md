@@ -76,9 +76,9 @@ $$
 $$
 
 So one gets:
-- $\rho^r(a) =  rho^r_0 a^{-4}$ for radiation
-- $\rho^M(a) =   rho^M_0 a^{-3}$ for matter
-- $\rho^\Lambda(a) = rho^\Lambda_0 $ for cosmological constant.
+- $\rho^r(a) =  \rho^r_0 a^{-4}$ for radiation
+- $\rho^M(a) =   \rho^M_0 a^{-3}$ for matter
+- $\rho^\Lambda(a) = \rho^\Lambda_0 $ for cosmological constant.
 
 # The Friedmann equation(s)
 
