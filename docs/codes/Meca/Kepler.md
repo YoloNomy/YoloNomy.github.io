@@ -108,7 +108,7 @@ The planets orbit are in one single plane.
 
 ## conics
 
-Conicx polar equation:
+Conic polar equation:
 
 $$r = \frac{p}{1+e\cos(\theta-\theta_0)}$$ 
 
@@ -198,9 +198,19 @@ With
 
 $$ \boxed{p= \frac{L^2}{GMm^2}}$$
 
+The general solution of the harmonic oscillator (see harmonic oscillator) is
+
+$$ u = \frac{1}{p} + c_1 \cos(\theta) + c_2 \sin(\theta)$$
+
+or 
+
+$$ u = \frac{1}{p} + e\cos(\theta - \theta_0) $$
+
+Going back to r, we get:
+
+$$\boxed{r = \frac{p}{1+e\cos(\theta-\theta_0)}}$$ 
 
 # Third law for ellipses
-
 
 $$S= \int dS = \pi ab$$
 
