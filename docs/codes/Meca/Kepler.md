@@ -122,7 +122,12 @@ $$ S_{\rm tot} = \pi ab = \frac{|\vec{L}|}{2m}  T$$
 
 Giving the relation:
 
-$$ |\vec{L}| = \frac{2m\pi ab}{T} $$
+$$ \frac{|\vec{L}|}{2m} = \frac{\pi ab}{T} $$
+
+So that the second law is simply given by:
+
+$$ $$ \Delta S = \int = \frac{\pi ab}{T} \Delta t $$
+ $$ 
 
 # Presenting the first law
 
