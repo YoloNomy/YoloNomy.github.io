@@ -164,13 +164,11 @@ $$ u'' + u - \frac{1}{p} = 0$$
 
 
 To see this, we first introduce the notation $x'= \frac{\text{d}x}{\text{d}\theta}$. Let's also not forget the cross-derivative relation: $x'= \frac{\text{d}x}{\text{d}t}\frac{\text{d}\theta}{\text{d}t} = \dot{x}\dot{\theta}$
+
 We then have:
 
-$$ \dot{u}= -\frac{1}{r^2}\dot{r} $$
-
-That we can reverse to get: 
-
-$$ \dot{r} = -r^2 \dot{u} = -r^2\dot{\theta}u'$$
+$$ $$ \dot{u}= \dot{1/r} = -\frac{1}{r^2}\dot{r} $$
+ \Rightarrow \dot{r} = -r^2 \dot{u} = -r^2\dot{\theta}u'$$
 
 That is:
 
