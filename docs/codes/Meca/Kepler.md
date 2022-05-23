@@ -25,6 +25,9 @@ Exoplanets
 
 # Polar coordinates
 
+As we discussed already (see ...), the first thing to do before studying a motion in mechanics, is to define both a *frame* (otherwise motion is meaningless) and a *coordinate system* (otherwise it is impossible to quantify anything).
+While so far we were only using *cartesian coordinates*, that is a fixed grid of  
+
 $$ r = \sqrt{x^2 + y^2} $$
 
 $$ \theta = \arctan(y/x) $$
