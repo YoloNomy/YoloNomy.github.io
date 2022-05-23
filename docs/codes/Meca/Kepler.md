@@ -136,6 +136,45 @@ Which is the third Kepler law.
 
 Here comes the most technical aspect of our discussion.
 
+$$ \vec{F_G} = m \vec{a} $$
+
+$$ -\vec{GMm}{r^2}\vec{u_r} = a_r\vec{u_r} $$
+
+$$ 0 = a_\theta \vec{u_\theta}$$
+
+Using the general expression for the accelaration in polar coordinates, one gets the system
+
+$$ \ddot{r} - r\dot{\theta}^2 = -\frac{GM}{r^2}$$ 
+
+$$ r\ddot{\theta} + 2\dot{r}\dot{\theta}=0$$
+
+The second equation is just the conservation of angular momentum:
+
+$$ \dot{|L|} = \dot{r^2\dot{\theta}} = 0 $$
+
+While the first one really is the equation of motion.
+
+To see more clearly what is happening, we will rewrite this equation in term of $u=1/r$. As we will show this will give us an harmonic oscillator equation that we can solve easily:
+
+$$ u'' + u - \frac{1}{p} = 0$$
+
+
+To see this, we first introduce the notation $x'= \frac{\text{d}x}{\text{d}\theta}$. Let's also not forget the cross-derivative relation: $x'= \frac{\text{d}x}{\text{d}t}\frac{\text{d}\theta}{\text{d}t} = \dot{x}\dot{\theta}$
+We then have:
+
+$$ \dot{u}= \frac{-1}{r^2}\dot{r} $$
+
+That we can reverse to get: 
+
+$$ \dot{r} = -r^2 \dot{u} = -r^2\dot{\theta}u'$$
+
+That is:
+
+$$ \dot{r} = \frac{-L}{m}u'$$
+
+
+$$ u'' + u - \frac{1}{p} = 0$$
+
 # Third law for ellipses
 
 
