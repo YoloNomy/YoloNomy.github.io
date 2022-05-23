@@ -88,7 +88,6 @@ $$ \vec{L} = \vec{r} \wedge \vec{p} $$
 $$ \frac{\text{d}\vec{L}}{\text{d} t} = \frac{\text{d}\vec{r}}{\text{d} t} \wedge \vec{p} + \vec{r} \wedge \frac{\text{d}\vec{p}}{\text{d} t} \\
  = m \vec{v} \wedge \vec{v} + \vec{r} \wedge \sum \vec{F} = \frac{GMm}{r}\vec{u_r} \wedge \vec{u_r}  = \vec{0} $$
 
-
 $$  \vec{L} = \vec{r} \wedge \vec{p} = r m \vec{u_r}\wedge  \vec{v} = mr^2 \dot{\theta}  \vec{u_r}\wedge  \vec{u_\theta} $$ 
 
 $$ \vec{L} = mr^2 \dot{\theta} \vec{u_z} $$
@@ -107,10 +106,9 @@ The planets orbit are in one single plane.
 
 # Presenting the first law
 
-
-
 ## conics
 
+Conicx polar equation:
 
 $$r = \frac{p}{1+e\cos(\theta-\theta_0)}$$ 
 
