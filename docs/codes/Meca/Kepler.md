@@ -170,8 +170,11 @@ $$ \dot{r} = -r^2 \dot{u} = -r^2\dot{\theta}u'$$
 
 That is:
 
-$$ \dot{r} = \frac{-L}{m}u'$$
+$$ \boxed{\dot{r} = \frac{-L}{m}u}'$$
 
+Similarly:
+
+$$ \boxed{\ddot{r} = \frac{-L^2}{m^2r^2}u^2u'}$$
 
 $$ u'' + u - \frac{1}{p} = 0$$
 
