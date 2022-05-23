@@ -167,7 +167,7 @@ To see this, we first introduce the notation $x'= \frac{\text{d}x}{\text{d}\thet
 
 We then have:
 
-$$ $$ \dot{u}= \dot{1/r} = -\frac{1}{r^2}\dot{r} $$
+$$  \dot{u}= \dot{1/r} = -\frac{1}{r^2}\dot{r} $$
  \Rightarrow \dot{r} = -r^2 \dot{u} = -r^2\dot{\theta}u'$$
 
 That is:
