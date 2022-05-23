@@ -178,7 +178,11 @@ $$ \boxed{\dot{r} = \frac{-L}{m}u4}$$
 
 Similarly:
 
-$$ \boxed{\ddot{r} = \frac{-L^2}{m^2r^2}u^2u'}$$
+$$ \ddot{r} = \frac{\text{d}}{\text{d}t}\left(-\frac{L}{m}u'\right)= -\frac{L}{m}\dot{\theta}u'' = -\frac{L^2}{m^2r^2}u''$$
+
+So that:
+
+$$ \boxed{\ddot{r} = \frac{-L^2}{m^2}u^2u'}$$
 
 Inserting these expressions in the equation of motion, we have:
 
