@@ -142,7 +142,7 @@ $$ \vec{F_G} = m \vec{a} $$
 
 That we can project on the two polar basis vectors:
 
-$$ -\vec{GMm}{r^2}\vec{u_r} = a_r\vec{u_r} $$
+$$ -\frac{GMm}{r^2}\vec{u_r} = a_r\vec{u_r} $$
 
 $$ 0 = a_\theta \vec{u_\theta}$$
 
@@ -167,7 +167,7 @@ To see this, we first introduce the notation $x'= \frac{\text{d}x}{\text{d}\thet
 
 We then have:
 
-$$  \dot{u}= \dot{1/r} = -\frac{1}{r^2}\dot{r} $$
+$$  \dot{u}= \dot{1/r} = -\frac{1}{r^2}\dot{r}
  \Rightarrow \dot{r} = -r^2 \dot{u} = -r^2\dot{\theta}u'$$
 
 That is:
@@ -215,3 +215,5 @@ And so, we immediatly find back the third Kepler law:
 $$ \frac{T^2}{a^3} = \frac{4\pi^2}{GM}$$
 
 # Limits
+
+See three bodies problem.
