@@ -116,6 +116,14 @@ $$ \Delta S = \int \frac{|\vec{L}|}{2m} dt = \frac{|\vec{L}|}{2m} \Delta t $$
 
 The planets orbit are in one single plane.
 
+For an ellipse, integrating over a full period gives:
+
+$$ S_{\rm tot} = \pi ab = \frac{|\vec{L}|}{2m}  T$$
+
+Giving the relation:
+
+$$ |\vec{L}| = \frac{2m\pi ab}{T} $$
+
 # Presenting the first law
 
 ## conics
