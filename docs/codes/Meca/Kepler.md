@@ -63,7 +63,6 @@ $$ \vec{a} = \dot{\vec{v}} = \dot{r}\vec{u_r} + r \dot{\vec{u_r}} =  \ddot{r}\ve
 = a_r \vec{u_r} + a_\theta\vec{u_\theta}
 $$
 
-
 # Proof of the second law
 
 ## The cross product 
@@ -95,6 +94,9 @@ $$ \vec{L} = mr^2 \dot{\theta} \vec{u_z} $$
 At every moment $\vec{L}$ defines a single plane of rotation.
 
 ## Proof of the second law
+
+
+Remember that for a circle of radius $r$, the perimeter is $L=2\pi r$, corresponding to a full turn of the circle in radian $\theta=2\pi$. We conclude that for a small angle $d\theta$, $d L = Rd \theta$. Following the same logic, we know that for a disk, the full area is $S=\pi r^2$ and so an infinitesimal area is given by
 
 $$ dS = \frac{r^2 \text{d}\theta}{2}$$
 
