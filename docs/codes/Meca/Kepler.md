@@ -98,14 +98,13 @@ At every moment $\vec{L}$ defines a single plane of rotation.
 
 ## Proof of the second law
 
-
 Remember that for a circle of radius $r$, the perimeter is $L=2\pi r$, corresponding to a full turn of the circle in radian $\theta=2\pi$. We conclude that for a small angle $d\theta$, $d L = Rd \theta$. Following the same logic, we know that for a disk, the full area is $S=\pi r^2$ and so an infinitesimal area is given by
 
 $$ dS = \frac{r^2 \text{d}\theta}{2}$$
 
 $$ \frac{dS}{dt} = \frac{r^2}{2} \dot{\theta} = \frac{|\vec{L}|}{2m}$$
 
-$$ \Delta S = \int \frac{|L|}{2m} dt = \frac{|L|}{2m} \Delta t $$
+$$ \Delta S = \int \frac{|\vec{L}|}{2m} dt = \frac{|\vec{L}|}{2m} \Delta t $$
 
 The planets orbit are in one single plane.
 
