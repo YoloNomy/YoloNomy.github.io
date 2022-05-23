@@ -101,7 +101,12 @@ The planets orbit are in one single plane.
 
 # Presenting the first law
 
+
+
 ## conics
+
+
+$$r = \frac{p}{1+e\cos(\theta-\theta_0)}$$ 
 
 # A warm-up: third law for spherical orbits
 
@@ -133,6 +138,21 @@ Here comes the most technical aspect of our discussion.
 
 # Third law for ellipses
 
-$S=\pi ab$
+
+$$S= \int dS = \pi ab$$
+
+$$S = \int_T \frac{L}{2m} dt = \frac{L}{2m}T $$
+
+$$ T^2 = \frac{4\pi^2 a^2b^2 m^2}{L^2}$$
+
+$$ p = \frac{b^2}{a} $$
+
+$$ p = \frac{L^2}{GMm^2} $$
+
+$$ L^2 = \frac{GMm^2b^2}{a}$$
+
+And so, we immediatly find back the third Kepler law:
+
+$$ \frac{T^2}{a^3} = \frac{4\pi^2}{GM}$$
 
 # Limits
