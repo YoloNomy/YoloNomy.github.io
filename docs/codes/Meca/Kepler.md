@@ -98,11 +98,17 @@ $$ \vec{L} = \vec{r} \wedge \vec{p} $$
 $$ \frac{\text{d}\vec{L}}{\text{d} t} = \frac{\text{d}\vec{r}}{\text{d} t} \wedge \vec{p} + \vec{r} \wedge \frac{\text{d}\vec{p}}{\text{d} t} \\
  = m \vec{v} \wedge \vec{v} + \vec{r} \wedge \sum \vec{F} = \frac{GMm}{r}\vec{u_r} \wedge \vec{u_r}  = \vec{0} $$
 
+At every moment $\vec{L}$ defines a single plane of rotation. Since it is conserved, the whole motion remains in a given plane.
+
+We can calculate $\vec{L}$ in terms of the coordinates:
+
 $$  \vec{L} = \vec{r} \wedge \vec{p} = r m \vec{u_r}\wedge  \vec{v} = mr^2 \dot{\theta}  \vec{u_r}\wedge  \vec{u_\theta} $$ 
 
 $$ \vec{L} = mr^2 \dot{\theta} \vec{u_z} $$
 
-At every moment $\vec{L}$ defines a single plane of rotation.
+$$ |\vec{L}| = mr^2 \dot{\theta} $$
+
+
 
 ## Proof of the second law
 
@@ -113,8 +119,6 @@ $$ dS = \frac{r^2 \text{d}\theta}{2}$$
 $$ \frac{dS}{dt} = \frac{r^2}{2} \dot{\theta} = \frac{|\vec{L}|}{2m}$$
 
 $$ \Delta S = \int \frac{|\vec{L}|}{2m} dt = \frac{|\vec{L}|}{2m} \Delta t $$
-
-The planets orbit are in one single plane.
 
 For an ellipse, integrating over a full period gives:
 
