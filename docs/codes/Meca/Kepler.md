@@ -21,6 +21,8 @@ nav_order: 2
 
 The mass of Sgr A* and the discovery of black holes.
 
+Exoplanets
+
 # Polar coordinates
 
 $$ r = \sqrt{x^2 + y^2} $$
