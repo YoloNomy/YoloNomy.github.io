@@ -172,7 +172,7 @@ $$ $$ \dot{u}= \dot{1/r} = -\frac{1}{r^2}\dot{r} $$
 
 That is:
 
-$$ \boxed{\dot{r} = \frac{-L}{m}u4}$$
+$$ \boxed{\dot{r} = \frac{-L}{m}u'}$$
 
 Similarly:
 
