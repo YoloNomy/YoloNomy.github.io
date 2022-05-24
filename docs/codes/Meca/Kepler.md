@@ -96,7 +96,7 @@ $$ \vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}$$
 
 $$ \|\vec{w}\|=\|\vec{u}\|\|\vec{v}\|\sin(\langle \vec{u},\vec{v}\rangle)$$
 
-Which is indeed the area of a rectangle $|\vec{w}|=S_{\rm rect} = \|\vec{u}\|\|\vec{v}\| $ is $\theta=90^{\circ}$.
+Which is indeed the area of a rectangle $\|\vec{w}\|=S_{\rm rect} = \|\vec{u}\|\|\vec{v}\| $ is $\theta=90^{\circ}$.
 
 A very useful property coming from this, is that you can multiply the numbers in front of it:
 
