@@ -80,7 +80,7 @@ $$
 
 Consider two vectors $\vec{u}$ and $\vec{v}$. How could you combine them? We already saw (see), that it is possible to make a number out of them using the scalar or dot product $\vec{u}\cdot\vec{v}$. This number quantify how much the two vectors are aligned and allows to calculate length. 
 
-$\vec{w}=\vec{u} \times \vec{v}$ or $\vec{w}=\vec{u} \wedge \vec{v}$.
+We define the new product called the *cross product*, allowing this time to get a third vector $\vec{w}$ from two vectors $\vec{u}$ and $\vec{v}$. It is usually noted $\vec{w}=\vec{u} \times \vec{v}$ or $\vec{w}=\vec{u} \wedge \vec{v}$.
 
 Right hand rule.
 
