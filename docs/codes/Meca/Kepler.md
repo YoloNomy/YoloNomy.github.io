@@ -82,13 +82,17 @@ Consider two vectors $\vec{u}$ and $\vec{v}$. How could you combine them? We alr
 
 We define the new product called the *cross product*, allowing this time to get a third vector $\vec{w}$ from two vectors $\vec{u}$ and $\vec{v}$. It is usually noted $\vec{w}=\vec{u} \times \vec{v}$ or $\vec{w}=\vec{u} \wedge \vec{v}$.
 
-This new vectors allows to define a single plane. Contrary to the dot product, it quantifies how perpendicular vectors are and can allow to define surfaces.
+Contrary to the dot product, this product quantifies how perpendicular the two original vectors are. Since it gives back a vector and not a simple number, it has much more geometry hidden in it. We'll see that it can actually allow to define a surface from the original vectors.
 
 - This third vector is always orthogonal to the plane defined by $\vec{u}$ and $\vec{v}$ and thus always tells you in which plane the two original vectors lies.
 
-You can find it's direction using the right hand rule.
+- You can find it's direction using the right hand rule.
+
+- It's length gives the area of the parallelogram that can be built out of $\vec{u}$ and $\vec{v}$: 
 
 $$ |\vec{w}|=|\vec{u}|\vec{v}|\sin(\langle \vec{u},\vec{v}\rangle)$$
+
+Which is indeed the area of a rectangle $|\vec{w}|=S_{\rm rect} = |\vec{u}|\vec{v}| $ is $\theta=90^{\circ}$.
 
 $$ \vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}$$ 
 
