@@ -113,7 +113,7 @@ $$ \vec{L} = \vec{r} \wedge \vec{p} $$
 This quantity can fully describe a rotation since it gives you at any-time:
 - A single plane of rotation
 - A single direction of rotation
-- A "strength of rotation", greater if the speed is orthogonal to the radius $|\vec{L}|= |\vec{r}||\vec{p}|\sin(\langle \vec{r},\vec{p}\rangle)$
+- A "strength of rotation", greater if the speed is orthogonal to the radius $\|\vec{L}\|= \|\vec{r}\|\|\vec{p}\|\sin(\langle \vec{r},\vec{p}\rangle)$
 
 $$ \frac{\text{d}\vec{L}}{\text{d} t} = \frac{\text{d}\vec{r}}{\text{d} t} \wedge \vec{p} + \vec{r} \wedge \frac{\text{d}\vec{p}}{\text{d} t} \\
  = m \vec{v} \wedge \vec{v} + \vec{r} \wedge \sum \vec{F} = \frac{GMm}{r}\vec{u_r} \wedge \vec{u_r}  = \vec{0} $$
