@@ -82,7 +82,11 @@ Consider two vectors $\vec{u}$ and $\vec{v}$. How could you combine them? We alr
 
 We define the new product called the *cross product*, allowing this time to get a third vector $\vec{w}$ from two vectors $\vec{u}$ and $\vec{v}$. It is usually noted $\vec{w}=\vec{u} \times \vec{v}$ or $\vec{w}=\vec{u} \wedge \vec{v}$.
 
-Right hand rule.
+This new vectors allows to define a single plane. Contrary to the dot product, it quantifies how perpendicular vectors are and can allow to define surfaces.
+
+- This third vector is always orthogonal to the plane defined by $\vec{u}$ and $\vec{v}$ and thus always tells you in which plane the two original vectors lies.
+
+You can find it's direction using the right hand rule.
 
 $$ |\vec{w}|=|\vec{u}|\vec{v}|\sin(\langle \vec{u},\vec{v}\rangle)$$
 
