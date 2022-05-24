@@ -86,7 +86,11 @@ Contrary to the dot product, this product quantifies how perpendicular the two o
 
 - This third vector is always orthogonal to the plane defined by $\vec{u}$ and $\vec{v}$ and thus always tells you in which plane the two original vectors lies.
 
-- You can find it's direction using the right hand rule.
+- You can find it's direction using the right hand rule. 
+From this, you can see that it is *antisymetric* (or non commutative):
+
+$$ \vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}$$ 
+
 
 - It's length gives the area of the parallelogram that can be built out of $\vec{u}$ and $\vec{v}$: 
 
@@ -94,7 +98,6 @@ $$ |\vec{w}|=|\vec{u}|\vec{v}|\sin(\langle \vec{u},\vec{v}\rangle)$$
 
 Which is indeed the area of a rectangle $|\vec{w}|=S_{\rm rect} = |\vec{u}|\vec{v}| $ is $\theta=90^{\circ}$.
 
-$$ \vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}$$ 
 
 $$ a\vec{u} \wedge b\vec{v} = ab \, \vec{u} \wedge \vec{v}$$ 
 
