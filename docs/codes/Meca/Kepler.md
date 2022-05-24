@@ -49,7 +49,7 @@ $$ \vec{u_r} = \cos\theta \vec{u_x} + \sin\theta \vec{u_y} $$
 $$ \vec{u_\theta} = -\sin\theta \vec{u_x} + \cos\theta \vec{u_y} $$ 
 
 While cartesian coordinates are fixed $ \dot{u_x}=0$ and $\dot{u_y}=0$ (We use the notation $ \dot{x} = \frac{\text{d}x}{\text{d}t}$.
-). Polar coordinate vectors changes with time.
+). Polar coordinate vectors change with time.
 
 $$ \frac{ \text{d}\vec{u_r}}{\text{d} \theta } = -\sin\theta \vec{u_x} + \cos\theta \vec{u_y} = \vec{u_\theta}  $$ 
 
@@ -78,10 +78,13 @@ $$
 
 ## The cross product 
 
-Consider two vectors $\vec{u}$ and $\vec{v}$. 
-$\vec{u} \times \vec{v}$ or $\vec{u} \wedge \vec{v}$.
+Consider two vectors $\vec{u}$ and $\vec{v}$. How could you combine them? We already saw (see), that it is possible to make a number out of them using the scalar or dot product $\vec{u}\cdot\vec{v}$. This number quantify how much the two vectors are aligned and allows to calculate length. 
+
+$\vec{w}=\vec{u} \times \vec{v}$ or $\vec{w}=\vec{u} \wedge \vec{v}$.
 
 Right hand rule.
+
+$$ |\vec{w}|=|\vec{u}|\vec{v}|\sin(\langle \vec{u},\vec{v}\rangle)$$
 
 $$ \vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}$$ 
 
