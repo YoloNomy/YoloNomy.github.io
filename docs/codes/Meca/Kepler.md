@@ -112,7 +112,7 @@ $$ |\vec{L}| = mr^2 \dot{\theta} $$
 
 ## Proof of the second law
 
-Remember that for a circle of radius $r$, the perimeter is $L=2\pi r$, corresponding to a full turn of the circle in radian $\theta=2\pi$. We conclude that for a small angle $d\theta$, $d L = Rd \theta$. Following the same logic, we know that for a disk, the full area is $S=\pi r^2$ and so an infinitesimal area is given by
+Remember that for a circle of radius $r$, the perimeter is $\ell=2\pi r$, corresponding to a full turn of the circle in radian $\theta=2\pi$. We conclude that for a small angle $d\theta$, $d \ell = Rd \theta$. Following the same logic, we know that for a disk, the full area is $S=\pi r^2$ and so an infinitesimal area is given by
 
 $$ dS = \frac{r^2 \text{d}\theta}{2}$$
 
