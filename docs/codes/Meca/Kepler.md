@@ -94,7 +94,7 @@ $$ \vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}$$
 
 - It's length gives the area of the parallelogram that can be built out of $\vec{u}$ and $\vec{v}$: 
 
-$$ |\vec{w}|=|\vec{u}|\vec{v}|\sin(\langle \vec{u},\vec{v}\rangle)$$
+$$ \|\vec{w}\|=\|\vec{u}\|\|\vec{v}\|\sin(\langle \vec{u},\vec{v}\rangle)$$
 
 Which is indeed the area of a rectangle $|\vec{w}|=S_{\rm rect} = |\vec{u}|\vec{v}| $ is $\theta=90^{\circ}$.
 
