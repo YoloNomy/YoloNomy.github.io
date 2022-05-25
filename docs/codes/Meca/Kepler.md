@@ -126,7 +126,7 @@ $$  \vec{L} = \vec{r} \wedge \vec{p} = r m \vec{u_r}\wedge  \vec{v} = mr^2 \dot{
 
 $$ \vec{L} = mr^2 \dot{\theta} \vec{u_z} $$
 
-$$ |\vec{L}| = mr^2 \dot{\theta} $$
+$$ \|\vec{L}\| = mr^2 \dot{\theta} $$
 
 
 
@@ -136,17 +136,17 @@ Remember that for a circle of radius $r$, the perimeter is $\ell=2\pi r$, corres
 
 $$ dS = \frac{r^2 \text{d}\theta}{2}$$
 
-$$ \frac{dS}{dt} = \frac{r^2}{2} \dot{\theta} = \frac{|\vec{L}|}{2m}$$
+$$ \frac{dS}{dt} = \frac{r^2}{2} \dot{\theta} = \frac{\|\vec{L}\|}{2m}$$
 
-$$ \Delta S = \int \frac{|\vec{L}|}{2m} dt = \frac{|\vec{L}|}{2m} \Delta t $$
+$$ \Delta S = \int \frac{\|\vec{L}\|}{2m} dt = \frac{\|\vec{L}\|}{2m} \Delta t $$
 
 For an ellipse, integrating over a full period gives:
 
-$$ S_{\rm tot} = \pi ab = \frac{|\vec{L}|}{2m}  T$$
+$$ S_{\rm tot} = \pi ab = \frac{\|\vec{L}\|}{2m}  T$$
 
 Giving the relation:
 
-$$ \frac{|\vec{L}|}{2m} = \frac{\pi ab}{T} $$
+$$ \frac{\|\vec{L}\|}{2m} = \frac{\pi ab}{T} $$
 
 So that the second law is simply given by:
 
@@ -224,7 +224,7 @@ $$  \dot{u}= \dot{1/r} = -\frac{1}{r^2}\dot{r}
 
 That is:
 
-$$ \boxed{\dot{r} = \frac{-L}{m}u'}$$
+$$ \boxed{\dot{r} =-\frac{L}{m}u'}$$
 
 Similarly:
 
@@ -232,7 +232,7 @@ $$ \ddot{r} = \frac{\text{d}}{\text{d}t}\left(-\frac{L}{m}u'\right)= -\frac{L}{m
 
 So that:
 
-$$ \boxed{\ddot{r} = \frac{-L^2}{m^2}u^2u'}$$
+$$ \boxed{\ddot{r} = -\frac{L^2}{m^2}u^2u'}$$
 
 Inserting these expressions in the equation of motion, we have:
 
