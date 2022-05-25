@@ -206,7 +206,7 @@ $$ r\ddot{\theta} + 2\dot{r}\dot{\theta}=0$$
 
 The second equation is just the conservation of angular momentum:
 
-$$ \dot{|L|} = \frac{\text{d}(r^2\dot{\theta})}{\text{d}t} = 0 $$
+$$ \dot{\|\vec{L}\|} = \frac{\text{d}(r^2\dot{\theta})}{\text{d}t} = 0 $$
 
 While the first one really is the equation of motion.
 
@@ -236,7 +236,7 @@ $$ \boxed{\ddot{r} = \frac{-L^2}{m^2}u^2u'}$$
 
 Inserting these expressions in the equation of motion, we have:
 
-$$ -\frac{L^2}{m^2}u^2u'--\frac{L^2}{m^2}u^3 + GMu^2 =0$$
+$$ -\frac{L^2}{m^2}u^2u'-\frac{L^2}{m^2}u^3 + GMu^2 =0$$
 
 That we can finally rerwrite in the suggestive form:
 
