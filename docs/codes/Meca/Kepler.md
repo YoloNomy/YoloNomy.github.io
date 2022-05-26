@@ -215,7 +215,7 @@ To see more clearly what is happening, we will rewrite this equation in term of 
 $$ u'' + u - \frac{1}{p} = 0$$
 
 
-To see this, we first introduce the notation $x'= \frac{\text{d}x}{\text{d}\theta}$. Let's also not forget the cross-derivative relation: $x'= \frac{\text{d}x}{\text{d}t}\frac{\text{d}\theta}{\text{d}t} = \dot{x}\dot{\theta}$
+To see this, we first introduce the notation $x'= \frac{\text{d}x}{\text{d}\theta}$. Let's also not forget the cross-derivative relation: $\dot{x}= \frac{\text{d}x}{\text{d}\theta}\frac{\text{d}\theta}{\text{d}t} = x'\dot{\theta}$
 
 We then have:
 
