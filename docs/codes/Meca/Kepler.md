@@ -82,7 +82,7 @@ Consider two vectors $\vec{u}$ and $\vec{v}$. How could you combine them? We alr
 
 In order to study rotations, it will be useful to define another product, called the *cross product*, allowing this time to get a third vector $\vec{w}$ from two vectors $\vec{u}$ and $\vec{v}$. It is usually noted $\vec{w}=\vec{u} \times \vec{v}$ or $\vec{w}=\vec{u} \wedge \vec{v}$.
 
-Contrary to the dot product, this product quantifies how perpendicular the two original vectors are. Since it gives back a vector and not a simple number, it has much more geometry hidden in it. We'll see that it can actually allow to define a surface from the original vectors.
+Contrary to the dot product, this product quantifies how perpendicular the two original vectors are. Since it gives back a vector and not a simple number, it has a lot of geometry hidden in it. We'll see that, while the scalar product defines lengths, the cross product defines surfaces from the original vectors.
 
 - This third vector is always orthogonal to the plane defined by $\vec{u}$ and $\vec{v}$ and thus always tells you in which plane the two original vectors lies.
 
