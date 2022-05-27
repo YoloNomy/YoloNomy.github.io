@@ -78,7 +78,7 @@ $$
 
 ## The cross product 
 
-Consider two vectors $\vec{u}$ and $\vec{v}$. How could you combine them? We already saw (see), that it is possible to make a number out of them using the scalar or dot product $\vec{u}\cdot\vec{v}$. This number quantify how much the two vectors are aligned and allows to calculate length. 
+Consider two vectors $\vec{u}$ and $\vec{v}$. How could you combine them? We already saw (see), that it is possible to build a number out two vectors using the scalar or dot product $\vec{u}\cdot\vec{v}$. The resulting number tells you how much the two vectors are aligned and allows to calculate lengths. 
 
 We define the new product called the *cross product*, allowing this time to get a third vector $\vec{w}$ from two vectors $\vec{u}$ and $\vec{v}$. It is usually noted $\vec{w}=\vec{u} \times \vec{v}$ or $\vec{w}=\vec{u} \wedge \vec{v}$.
 
@@ -270,7 +270,7 @@ $$ p = \frac{b^2}{a} $$
 
 $$ p = \frac{L^2}{GMm^2} $$
 
-$$ L^2 = \frac{GMm^2b^2}{a}$$
+$$ L^2 = \frac{GMm^2b^2}{a} $$
 
 And so, we immediatly find back the third Kepler law:
 
