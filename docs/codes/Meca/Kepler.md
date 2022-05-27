@@ -61,7 +61,7 @@ $$ \dot{u_\theta} = \frac{\text{d} \theta}{\text{d} t} \frac{ \text{d}\vec{u_\th
 
 The position:
 
-$$ \vec{r} = r \vec{u_r}$$
+$$ \vec{r} = r \vec{u_r} $$
 
 The velocity:
 
@@ -91,12 +91,11 @@ From this, you can see that it is *antisymetric* (or non commutative):
 
 $$ \vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}$$ 
 
-
 - It's length gives the area of the parallelogram that can be built out of $\vec{u}$ and $\vec{v}$: 
 
 $$ \|\vec{w}\|=\|\vec{u}\|\|\vec{v}\|\sin(\langle \vec{u},\vec{v}\rangle)$$
 
-Which is indeed the area of a rectangle $\|\vec{w}\|=S_{\rm rect} = \|\vec{u}\|\|\vec{v}\| $ with $\theta=90^{\circ}$.
+Which is indeed the area of a rectangle $\|\vec{w}\|=S_{\rm rect} = \|\vec{u}\|\|\vec{v}\| $ with $\langle \vec{u},\vec{v}\rangle=90^{\circ}$.
 
 A very useful property coming from this, is that you can multiply the numbers in front of it:
 
@@ -174,7 +173,7 @@ $$ v = \sqrt{\frac{GM}{R}} $$
 
 Over a whole period $T$, the distance is $d= 2\pi R$. Since the volocity is constant 
 
-$$v= \frac{d}{T}= \frac{2\pi R}{T}$$
+$$v = \frac{d}{T}= \frac{2\pi R}{T}$$
 
 Using the two expressions we get:
 
@@ -274,7 +273,7 @@ $$ \|\vec{L}\|^2 = \frac{GMm^2b^2}{a} $$
 
 And so, we immediatly find back the third Kepler law:
 
-$$ \frac{T^2}{a^3} = \frac{4\pi^2}{GM}$$
+$$ \frac{T^2}{a^3} = \frac{4\pi^2}{GM} $$
 
 # Limits
 
