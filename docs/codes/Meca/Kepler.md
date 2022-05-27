@@ -224,11 +224,11 @@ $$  \dot{u}= \dot{1/r} = -\frac{1}{r^2}\dot{r}
 
 That is:
 
-$$ \boxed{\dot{r} =-\frac{L}{m}u'}$$
+$$ \boxed{\dot{r} =-\frac{\|\vec{L}\|}{m}u'}$$
 
 Similarly:
 
-$$ \ddot{r} = \frac{\text{d}}{\text{d}t}\left(-\frac{L}{m}u'\right)= -\frac{L}{m}\dot{\theta}u'' = -\frac{L^2}{m^2r^2}u''$$
+$$ \ddot{r} = \frac{\text{d}}{\text{d}t}\left(-\frac{L}{m}u'\right)= -\frac{\|\vec{L}\|}{m}\dot{\theta}u'' = -\frac{\|\vec{L}\|^2}{m^2r^2}u''$$
 
 So that:
 
@@ -236,7 +236,7 @@ $$ \boxed{\ddot{r} = -\frac{L^2}{m^2}u^2u'}$$
 
 Inserting these expressions in the equation of motion, we have:
 
-$$ -\frac{L^2}{m^2}u^2u'-\frac{L^2}{m^2}u^3 + GMu^2 =0$$
+$$ -\frac{\|\vec{L}\|^2}{m^2}u^2u'-\frac{L^2}{m^2}u^3 + GMu^2 =0$$
 
 That we can finally rerwrite in the suggestive form:
 
@@ -244,7 +244,7 @@ $$ \boxed{u'' + u - \frac{1}{p} = 0}$$
 
 With 
 
-$$ \boxed{p= \frac{L^2}{GMm^2}}$$
+$$ \boxed{p= \frac{\|\vec{L}\|^2}{GMm^2}}$$
 
 The general solution of the harmonic oscillator (see harmonic oscillator) is
 
@@ -262,15 +262,15 @@ $$\boxed{r = \frac{p}{1+e\cos(\theta-\theta_0)}}$$
 
 $$S= \int dS = \pi ab$$
 
-$$S = \int_T \frac{L}{2m} dt = \frac{L}{2m}T $$
+$$S = \int_T \frac{\|\vec{L}\|}{2m} dt = \frac{\|\vec{L}\|}{2m}T $$
 
 $$ T^2 = \frac{4\pi^2 a^2b^2 m^2}{L^2}$$
 
 $$ p = \frac{b^2}{a} $$
 
-$$ p = \frac{L^2}{GMm^2} $$
+$$ p = \frac{\|\vec{L}\|^2}{GMm^2} $$
 
-$$ L^2 = \frac{GMm^2b^2}{a} $$
+$$ \|\vec{L}\|^2 = \frac{GMm^2b^2}{a} $$
 
 And so, we immediatly find back the third Kepler law:
 
