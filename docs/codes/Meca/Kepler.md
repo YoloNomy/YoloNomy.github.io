@@ -118,7 +118,7 @@ This quantity can fully describe a rotation since it gives you at any-time:
 $$ \frac{\text{d}\vec{L}}{\text{d} t} = \frac{\text{d}\vec{r}}{\text{d} t} \wedge \vec{p} + \vec{r} \wedge \frac{\text{d}\vec{p}}{\text{d} t} \\
  = m \vec{v} \wedge \vec{v} + \vec{r} \wedge \sum \vec{F} = \frac{GMm}{r}\vec{u_r} \wedge \vec{u_r}  = \vec{0} $$
 
-At every moment $\vec{L}$ defines a single plane of rotation. Since it is conserved, the whole motion remains in a given plane.
+At every time, $\vec{L}$ defines a single plane of rotation. Since it is conserved, the whole motion remains in a given plane.
 
 We can calculate $\vec{L}$ in terms of the coordinates:
 
