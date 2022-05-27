@@ -228,15 +228,15 @@ $$ \boxed{\dot{r} =-\frac{\|\vec{L}\|}{m}u'}$$
 
 Similarly:
 
-$$ \ddot{r} = \frac{\text{d}}{\text{d}t}\left(-\frac{L}{m}u'\right)= -\frac{\|\vec{L}\|}{m}\dot{\theta}u'' = -\frac{\|\vec{L}\|^2}{m^2r^2}u''$$
+$$ \ddot{r} = \frac{\text{d}}{\text{d}t}\left(-\frac{\|\vec{L}\|}{m}u'\right)= -\frac{\|\vec{L}\|}{m}\dot{\theta}u'' = -\frac{\|\vec{L}\|^2}{m^2r^2}u''$$
 
 So that:
 
-$$ \boxed{\ddot{r} = -\frac{L^2}{m^2}u^2u'}$$
+$$ \boxed{\ddot{r} = -\frac{\|\vec{L}\|^2}{m^2}u^2u'}$$
 
 Inserting these expressions in the equation of motion, we have:
 
-$$ -\frac{\|\vec{L}\|^2}{m^2}u^2u'-\frac{L^2}{m^2}u^3 + GMu^2 =0$$
+$$ -\frac{\|\vec{L}\|^2}{m^2}u^2u'-\frac{\|\vec{L}\|^2}{m^2}u^3 + GMu^2 =0$$
 
 That we can finally rerwrite in the suggestive form:
 
