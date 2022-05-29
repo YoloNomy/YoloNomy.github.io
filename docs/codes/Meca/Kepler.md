@@ -9,11 +9,17 @@ nav_order: 2
 
 ## The laws
 
-- law 1: trajectories
-- law 2: areas
-- law 3: $$T^2/a^3$$
+Three laws allowing to predict the 
+
+- law 1: trajectories of celestial bodies are conics.
+- law 2: A line connecting the planet and its star sweeps out equal areas during equal intervals of time. 
+- law 3: The ratio of the period squared and semi axis cubed of the planets orbit is a constant: $$T^2/a^3 = cst$$
 
 ## History : from laws to theorem
+
+Discovered by Joannes Kepler and published between 1609 and 1619 from Tycho Brahe's measurements. Part of the great changes giving birth to modern astronomy with Galileo's observations $\sim 1605$ and Copernician's revolution.
+
+At the time they were indeed understood as *laws* that is fundamental rules of nature that can not be proven. However, they can be fully derived from geometrical consideration and Newton *laws* of mechanics.
 
 # Why are they so important ?
 
@@ -97,9 +103,14 @@ $$ \|\vec{w}\|=\|\vec{u}\|\|\vec{v}\|\sin(\langle \vec{u},\vec{v}\rangle)$$
 
 Which is indeed the area of a rectangle $\|\vec{w}\|=S_{\rm rect} = \|\vec{u}\|\|\vec{v}\| $ with $\langle \vec{u},\vec{v}\rangle=90^{\circ}$.
 
-A very useful property coming from this, is that you can multiply the numbers in front of it:
+A very useful property coming from this, is that any numbers multiplying the vectors can be put in front of the product:
 
 $$ (a\vec{u}) \wedge (b\vec{v}) = ab \, (\vec{u} \wedge \vec{v})$$ 
+
+This is especially usefull when expressing vectors in term of unit vectors since
+
+$$ \vec{u_r} \wedge \vec{u_\theta} = \vec{u_z}$$
+$$  \vec{u_r} \wedge  \vec{u_r} $$
 
 ## Newton and gravity
 
@@ -127,8 +138,6 @@ $$ \vec{L} = mr^2 \dot{\theta} \vec{u_z} $$
 
 $$ \|\vec{L}\| = mr^2 \dot{\theta} $$
 
-
-
 ## Proof of the second law
 
 Remember that for a circle of radius $r$, the perimeter is $\ell=2\pi r$, corresponding to a full turn of the circle in radian $\theta=2\pi$. We conclude that for a small angle $d\theta$, $d \ell = Rd \theta$. Following the same logic, we know that for a disk, the full area is $S=\pi r^2$ and so an infinitesimal area is given by
@@ -154,6 +163,8 @@ $$ \boxed{\Delta S = \frac{\pi ab}{T} \Delta t} $$
 # Presenting the first law
 
 ## conics
+
+Conics are 1D slices of a 2D cone. 
 
 Conic polar equation:
 
