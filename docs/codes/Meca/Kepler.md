@@ -9,7 +9,7 @@ nav_order: 2
 
 ## The laws
 
-Three laws allowing to predict the motion ofcelestial bodies.
+Three laws allowing to predict the motion of celestial bodies.
 
 - law 1: trajectories of celestial bodies are conics with the star at one of the focci.
 
@@ -18,9 +18,9 @@ Three laws allowing to predict the motion ofcelestial bodies.
 
 ## History : from laws to theorem
 
-Discovered by Joannes Kepler and published between 1609 and 1619 from Tycho Brahe's measurements. Part of the great changes giving birth to modern astronomy with Galileo's observations $\sim 1605$ and Copernician's revolution.
+Discovered by Joannes Kepler and published between 1609 and 1619 from Tycho Brahe's measurements. Part of the great changes giving birth to modern astronomy with Galileo's observations (1605) and Copernician's revolution.
 
-At the time they were indeed understood as *laws* that is fundamental rules of nature that can not be proven. However, they can be fully derived from geometrical consideration and Newton *laws* of mechanics.
+At the time they were indeed understood as *laws* that is fundamental rules of nature that can not be proven. However, they can be fully derived from geometrical consideration and Newton *laws* of mechanics. Proven in 1687 by Newton.
 
 # Why are they so important ?
 
