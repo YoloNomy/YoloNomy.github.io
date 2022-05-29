@@ -9,11 +9,12 @@ nav_order: 2
 
 ## The laws
 
-Three laws allowing to predict the 
+Three laws allowing to predict the motion ofcelestial bodies.
 
-- law 1: trajectories of celestial bodies are conics.
+- law 1: trajectories of celestial bodies are conics with the star at one of the focci.
+
 - law 2: A line connecting the planet and its star sweeps out equal areas during equal intervals of time. 
-- law 3: The ratio of the period squared and semi axis cubed of the planets orbit is a constant: $$T^2/a^3 = cst$$
+- law 3: If the trajectory is an ellipse, the ratio of the period squared and the semi axis cubed is a constant: $$T^2/a^3 = cst$$
 
 ## History : from laws to theorem
 
