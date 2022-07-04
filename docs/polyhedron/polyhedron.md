@@ -7,9 +7,11 @@ nav_order: 5
 
 # Approche historique du théorème d'Euler sur les polyèdres
 
+**En cours d'écriture, de nombreuses erreurs subsistent**
 
+**En cours d'écriture, de nombreuses erreurs subsistent**
 
-[TOC]
+**En cours d'écriture, de nombreuses erreurs subsistent**
 
 ## Introduction
 
