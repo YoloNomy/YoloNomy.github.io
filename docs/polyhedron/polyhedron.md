@@ -56,7 +56,6 @@ Euler en donnera une preuve 8 ans plus tard, Legendre, L'Huilier et Cauchy suivr
 
 C'est les répercutions de ce théorème sur les mathématiciens francophones que nous allons analyser, comment les nombreuses preuves à paraître vont venir enrichir le débat, tout autant que des contres exemples. 
 
-[^sommet]: Un angle solide est ici un synonyme de sommet.
 
 ## La preuve de Legendre par projection sur une sphère 
 
@@ -89,3 +88,43 @@ Imre Lakatos - Preuves et Réfutations essai sur la logique de la découverte ma
 Jean-Claude Pont - La topologie algébrique des origines à Poincaré
 
 ***Sources Primaires***
+
+L. Euler,
+
+> 1758 'Elementa Doctrinae Solidorum', Novi Commentarii Academiae Scientiiuuni Petropolitanae 4 (1752/53) ppl09-140 427
+
+> (1758b). Elementa doctrinae solidorum. Novi Commentarii Academiae Sci- entiarum Petropolitanae 4, 72–93. Reprinted in Opera Omnia series 1, vol. 26, 71–93.
+
+> 1758 'Demonstratio Nonnullarum Insignium Proprietatum Quibus Solida Hedris Planis Inclusa Sunt Praedita', Novi Commentarii Academiae Scientiarum Petropolitanae 4 (1752/53) ppl40-160
+
+>  (1758a). Demonstratio nonnullarum insignium proprietatum quibus solida hedris planis inclusa sunt praedita. Novi Commentarii Academiae Scientiarum Petropolitanae 4, 94–108. Reprinted in Opera Omnia series 1, vol. 26, 94–108.
+
+> Solutio problematis ad geometriam situs pertinentis. Commentarii Academiae Scientiarum Imperialis Petropolitanae 8, 128–40. Reprinted in Opera Omnia series 1, vol. 7, 1–10.
+
+> Euler Archive, http://www.eulerarchive.org.
+
+A. M. Legendre,
+
+> 1794 Elements de Geometrie, def p.163, proof p.226, note p.307, Paris ((Euler))
+
+L. Poinsot,
+
+> 1810 'Memoire sur les Polygones et les Polyedres', J. Ecoie Polytechnique 10 (1810) ppl6-48 ((Euler,Legendre))
+
+S. A. J. L'Huilier,
+
+> 1811 'Demonstration Immediate d'un Theoreme Fondamental d'Euler sur les Polyhedres, et Exceptions dont ce Theoreme est Susceptible', Memoires de VAcademie Imperiale de Saint Petersbourg 4 (1811) pp271-301 ((Euler,Legendre))
+
+> 1812 'Memoire sur la Polyedrometrie', Annales de Math., Pures et Appliquees 3 (1812/13) ppl68-191 428 Bibliography 
+
+> 1812 'Memoire sur les Solides Reguliers', Annales de Math., Pures et Appliquees 3 (1812/13) pp233-237 
+
+A. L. Cauchy,
+
+> 1813 'Recherches sur les Polyedres (first memoire, part 2)', J. Ecolc Polytochnique 9 (1813) pp68-86 ((Euler,Legendre,poinsot))
+
+> 1813 'Sur les Polygones et Polyedres (second memoire)', J. Ecole Polytechnique 9 (1813) pp87-98 
+
+***Notes de bas de page***
+
+[^sommet]: Un angle solide est ici un synonyme de sommet.
