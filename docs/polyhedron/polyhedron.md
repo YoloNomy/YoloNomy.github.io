@@ -35,7 +35,7 @@ Revenons sur le terrains moins glissant des exemples de la figure XXX, peut on t
 
 C'est en 1750 qu'Euler, dans une lettre à Golbach, énonce le théorème qui porte son nom. Descartes était passé de peu à côté [[1]](#1), Euler pointe son importance parmis une série de conjecture sur les polyèdres.
 
-Pour tout polyèdre, son nombre de face $H$ auquelle on ajoute ses angles solides $S$ [[a]](#a) est égale à son nombre d'arête $A$ plus deux.
+Pour tout polyèdre, son nombre de face $H$ auquelle on ajoute ses angles solides $S$ [^sommet] est égale à son nombre d'arête $A$ plus deux.
 
 $$H+S=A+2$$
 
@@ -56,13 +56,13 @@ Euler en donnera une preuve 8 ans plus tard, Legendre, L'Huilier et Cauchy suivr
 
 C'est les répercutions de ce théorème sur les mathématiciens francophones que nous allons analyser, comment les nombreuses preuves à paraître vont venir enrichir le débat, tout autant que des contres exemples. 
 
+[^sommet]: Un angle solide est ici un synonyme de sommet.
+
 ## La preuve de Legendre par projection sur une sphère 
 
 En 1794, Legendre sort ses Éléments de géométrie, ces ouvrages se veulent une actualisation et une simplification des éléments d'Euclide. La preuve du théorème d'Euler n'y est pas centrale et semble être un petit détour que Legendre prend. Citons Lebesgue à propos de cette preuve :
 
-```Lebesgue
-Legendre ne s'est jamais proposé de démontrer le théorème d'Euler, mais ayant bâti à une occasion quelconque des considérations voisines de celles qui figurent dans sa démonstration, il s'est aperçu qu'il avait les éléments nécessaires à cette démonstration.
-```
+> Legendre ne s'est jamais proposé de démontrer le théorème d'Euler, mais ayant bâti à une occasion quelconque des considérations voisines de celles qui figurent dans sa démonstration, il s'est aperçu qu'il avait les éléments nécessaires à cette démonstration. 
 
 C'est dans son chapitre sur la géométrie sur la sphère que la démonstration prend place, l'astuce est de projeter le polyèdre sur une sphère pour utiliser les théorèmes développés précédement par Legendre. Une retranscription de la preuve est disponible en vidéo ci-dessous.
 
@@ -76,4 +76,16 @@ C'est dans son chapitre sur la géométrie sur la sphère que la démonstration 
 ## References
 <a id="1">[1]</a>  Ref 1 test
 
-<a id="a">[a]</a>
+***Pour aller plus loin***
+
+David S. Richeson, Eulers gem - the polyhedron formula and the birth of topology (2008)
+
+Norman L. Biggs, E. Keith Lloyd, R. J. Wilson - Graph Theory 1736-1936 
+
+Peter R. Cromwell - Polyhedra (1999)
+
+Imre Lakatos - Preuves et Réfutations essai sur la logique de la découverte mathématique
+
+Jean-Claude Pont - La topologie algébrique des origines à Poincaré
+
+***Sources Primaires***
