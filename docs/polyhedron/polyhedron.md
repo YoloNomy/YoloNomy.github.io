@@ -62,12 +62,8 @@ En 1794, Legendre sort ses Éléments de géométrie, ces ouvrages se veulent un
 
 C'est dans son chapitre sur la géométrie sur la sphère que la démonstration prend place, l'astuce est de projeter le polyèdre sur une sphère pour utiliser les théorèmes développés précédement par Legendre. Une retranscription de la preuve est disponible en vidéo ci-dessous.
 
-<video style="max-width:100%;"controls>
-
-  <source src="media/legendre.mp4" type="video/mp4">
-
-Your browser does not support the video tag.
-
+<video width="100%" controls>
+	<source src="media/legendre.mp4" type="video/mp4">
 </video>
 
 ## Poissot et la classification des polyèdres
