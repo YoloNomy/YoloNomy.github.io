@@ -65,9 +65,33 @@ En 1794, Legendre sort ses Éléments de géométrie, ces ouvrages se veulent un
 
 C'est dans son chapitre sur la géométrie sur la sphère que la démonstration prend place, l'astuce est de projeter le polyèdre sur une sphère pour utiliser les théorèmes développés précédement par Legendre. Une retranscription de la preuve est disponible en vidéo ci-dessous.
 
+Quelques définitions sont nécessaire pour appréhender la preuve :
+
+1. On appelle *grand cercle* la section de la sphère faite par un plan passant par sont centre. Ce plan coupe en deux surfaces égales la sphère.
+2. *Fuseau* est la partie de la surface de la sphère comprise entre deux demi-grands cercle qui se terminent à un diamètre commun.
+3. *Triangle sphérique* est une partie de la surface de la sphère comprise par trois arcs de grands cercles. Ces arcs, qui sont les côtés du triangle, sont toujours supposés plus petits que la demi-circonférence.
+
 <video width="100%" controls>
 	<source src="media/legendre.mp4" type="video/mp4">
 </video>
+
+Dans le chapitre sur les polyèdres précédent celui sur la sphère, Legendre nous donne sa définition des polyèdres :
+
+> On appelle *solide polyèdre*, ou simplement *polyèdre*, tout solide terminé par des plans ou des faces planes. (Ces plans sont nécessairement terminés eux-mêmes par des lignes droites.) 
+
+À propos des arêtes :
+
+> L'intersection commune de deux faces adjacentes d'un polyèdre s'appelle côté ou arête du polyèdre
+
+Puis en bas de page, il y a cette note très importante :
+
+> N. B. Tous les polyèdres que nous considérons sont des polyèdres à angles saillants ou polyèdres convexes. Nous appelons ainsi ceux dont la surface ne peut être rencontrée par uen linge droite en plus de deux points. Dans ces sortes de polyèdres le plan prolongé d'une face ne peut couper le solide ; il est donc impossible que le polyèdre soit en partie au-dessus du plan d'uen face, en partie au-dessous; il est tout entier d'un même côté de ce plan.
+
+Legendre se replie sur le terrain sûr celui des polyèdres convexes, il ne souhaite donc pas pouvrer la conjecture d'Euler dans toute sa généralité (sur tout polyèdre). Il évite ainsi les questions difficiles de la conjecture, qui est la classification des solides non convexes. (commentaire de Poinsot)
+
+On peut aussi noté que c'est une preuve géométrique qui ne s'écarte pas des concepts métriques contrairement à ce qu'avais essayé Euler et c'est aussi dans ce sens que sera la preuve de Cauchy. On remarque alors sont utilisation des unité 
+
+flou sur la triangularisation d'un polygone
 
 ## Poissot et la classification des polyèdres
 ## L'Huilier une classification des contres exemples
