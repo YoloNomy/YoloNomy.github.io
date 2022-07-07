@@ -17,19 +17,20 @@ nav_order: 5
 
 ### *Les polyèdres*
 
-Le concept de polyèdre qui paraît intuitif à tous, va se montrer très vaguement défini sur la période étudiée ici. C'est justement le travail de démonstration sur les polyèdres, en particuliers du théorème d'Euler, qui va mettre le problème au premier plan. 
-
 ![poly](media/poly2crop.png)
 
-> Figure XXX
+> Figure XXX : Polyèdres réguliers et semi-réguliers
 
-Sur la figure, on peut observer des polyèdres qui font concensus, les solides de Platon qui sont des polyèdres réguliers et des solides d'Archimède. Quels sont leurs propriétés communes qui pourrait nous donner une première définition de polyèdre. Naïvement, ce sont des solides à faces planes polygonales, avec pour définition d'un polygone une figure géométrique plane formée d'une ligne brisée fermée. Il faut commencer quelque part et c'est avec ces définitions que nous commencerons, elles se montreront insuffisantes et on peut déjà la mettre en conflit face à des exemples que nous rencontrerons durant ce périple.
+Le concept de polyèdre pour les mathématiciens du 18ème siècle était vaguement défini et reposait surtout sur une intuition forte de ces solides. Sur la figure, on peut observer des polyèdres qui font concensus, les solides de Platon qui sont des polyèdres réguliers et des solides d'Archimède. Quels sont leurs propriétés communes qui pourrait nous donner une première définition de polyèdre. Naïvement, ce sont des solides à face plane et c'est ainsi qu'il sont considéré par **de nombreux mathématiens** sans remarquer les postulats sous-jacent. Il faut commencer quelque part et c'est avec cette définition que nous commencerons, elle se montrera insuffisante et on peut déjà la mettre en conflit face à des exemples que nous rencontrerons durant ce périple.
+
+
+
 
 ![oly3cro](media/poly3crop.png)
 
->Figure XXX
+> Figure XXX : Solides et surfaces polyèdrales hétérodoxes
 
-Revenons sur le terrains moins glissant des exemples de la figure XXX, peut on trouver une relation entre le nombre de face d'un polyèdre, son nombre de sommet et son nombre d'arête.
+C'est justement le travail de démonstration sur les polyèdres, en particuliers du théorème d'Euler, qui va venir consolider ce champs de recherche et mettre au grand jour les difficultés à saisir le sens de polyèdre. Et de cette question toute simple, peut on trouver une relation entre le nombre de face d'un polyèdre, son nombre de sommet et son nombre d'arête.
 
 ### *Le théorème d'Euler*
 
@@ -39,6 +40,8 @@ Pour tout polyèdre, son nombre de face $H$ auquelle on ajoute ses angles solide
 
 $$H+S=A+2$$
 
+Vérifions cette équation sur certains exemples, et peut être souhaitez vous en chercher des contre-exemples.
+
 | Polyèdre                | Nb de Sommet | Nb d'Arête | Nb de Face | S-A+H |
 | ----------------------- | ------------ | ---------- | ---------- | ----- |
 | Octaèdre                | 6            | 12         | 8          | 2     |
@@ -46,9 +49,11 @@ $$H+S=A+2$$
 | Cuboctaèdre             | 12           | 24         | 14         | 2     |
 | Icosidodécaèdre tronqué | 120          | 180        | 62         | 2     |
 
-![odec](media/dodeca.jpg)
 
-> Figure XXX
+
+![odec](media/icosi.jpg)
+
+> Figure XXX : Icosidodécaèdre tronqué
 
 Dans cette lettre, Euler introduit le terme d'arête, ce nouveau concept modifie la réflexion autour des polyèdres. On peut alors se demander si ce n'est pas le concept qui manquait pour découvrir cette relation. 
 
@@ -71,6 +76,8 @@ Quelques définitions sont nécessaire pour appréhender la preuve :
 2. *Fuseau* est la partie de la surface de la sphère comprise entre deux demi-grands cercle qui se terminent à un diamètre commun.
 3. *Triangle sphérique* est une partie de la surface de la sphère comprise par trois arcs de grands cercles. Ces arcs, qui sont les côtés du triangle, sont toujours supposés plus petits que la demi-circonférence.
 
+L'unité d'angle est l'angle droit et l'untité de surface est le triangle tri-rectangle sur la sphere (1/8 ème de la sphère).
+
 <video width="100%" controls>
 	<source src="media/legendre.mp4" type="video/mp4">
 </video>
@@ -87,13 +94,43 @@ Puis en bas de page, il y a cette note très importante :
 
 > N. B. Tous les polyèdres que nous considérons sont des polyèdres à angles saillants ou polyèdres convexes. Nous appelons ainsi ceux dont la surface ne peut être rencontrée par uen linge droite en plus de deux points. Dans ces sortes de polyèdres le plan prolongé d'une face ne peut couper le solide ; il est donc impossible que le polyèdre soit en partie au-dessus du plan d'uen face, en partie au-dessous; il est tout entier d'un même côté de ce plan.
 
-Legendre se replie sur le terrain sûr celui des polyèdres convexes, il ne souhaite donc pas pouvrer la conjecture d'Euler dans toute sa généralité (sur tout polyèdre). Il évite ainsi les questions difficiles de la conjecture, qui est la classification des solides non convexes. (commentaire de Poinsot)
+Legendre se replie sur le terrain sûr celui des polyèdres convexes, il ne souhaite donc pas pouvrer la conjecture d'Euler dans toute sa généralité (sur tout polyèdre). Il évite ainsi les questions difficiles de la conjecture, qui est la classification des solides non convexes.
 
-On peut aussi noté que c'est une preuve géométrique qui ne s'écarte pas des concepts métriques contrairement à ce qu'avais essayé Euler et c'est aussi dans ce sens que sera la preuve de Cauchy. On remarque alors sont utilisation des unité 
+Poinsot en 1810 remarquera que la preuve de Legendre peut s'appliquer à une classe plus grande de polyèdres :
 
-flou sur la triangularisation d'un polygone
+> Je ferai d'abord observer que l'équation précédente n'a pas seulement lieu pour les solides convexes ordinaires, c'est-à-dire, pour ceux dont la surface ne peut être coupée par une droite en plus de deux points elle subsiste encore pour tout polyèdre qui a des angles solides rentrans pourvu qu'on puisse trouver, dans l'intérieur du solide un point qui soit le centre d'une sphère telle que les faces du solide y étant projetées par des lignes menées au centre, il n'y ait sur la sphère aucune duplicature de ces projections je veux dire, pourvu qu'aucune face ne se projette, en tout ou en partie, sur la projection d'une autre; ce qui convient, comme on voit, à une infinité de polyèdres à angles solides rentrans.
+
+On peut aussi noté que c'est une preuve géométrique qui ne s'écarte pas des concepts métriques contrairement à ce qu'avais essayé Euler et c'est aussi dans ce sens que sera la preuve de Cauchy. On remarque alors sont utilisation des unité et il peut être étonnant de que certaine de ses équations sont une égalité entre des angles et des aires. par exemple $aire(ABC)=\sum_{i=1}^{3}\tau_i-2$ avec $\tau_i$ l'angle i du triangle. On peut faire sens cette équation en ce ramenant à l'égalité entre proportion sur le fuseau d'une sphère :
+
+$$\frac{aire(Fuseau)}{aire(Sphere)}=\frac{angle(Fuseau)}{4\ angles\ droits} \Leftrightarrow \frac{aire(Fuseau)}{8}=\frac{angle(Fuseau)}{4} \Leftrightarrow \frac{aire(Fuseau)}{2}=angle(Fuseau)$$
+
+On peut alors penser un angle comme une aire à l'aide cette égalité.
+
+Le mathématicien suivant qui nous intéresse a justement développé sa classification des polyèdres sur la technique de démonstration de Legendre. En applicant sa méthode, Poissot va aussi (re)découvrir des polyèdres étoilés qui seront un carburant pour une pensée plus globale de ce champs.
 
 ## Poissot et la classification des polyèdres
+
+C'est dans le journal de l'école polytechnique de 1810 que Poissot présente sa réflexion sur la question des polyèdre. Dans son introduction il place sa réflexion dans un champs de recherche bien précis des mathématiques qui est celui de la géométrie de situation :
+
+> On rapporte les questions suivantes à la géométrie de situation parce qu'on y considère moins la grandeur et la proportion des figures, que l'ordre et la situation des divers élémens qui les composent.
+
+Il fait aussi état du peu de travaux dans cette branche, il semble donc mettre en avant l'aspect novateur de la question qui l'occupe, d'où le fait d'utiliser des outils de géométrie pour traiter cette branche naissante.
+
+Avant de traiter la classification des polyèdres, il va traiter la classification des polygones, une question plus simple, amenant de bonnes idées pour le traitement des polyèdres, en particuliers la questions des polygones étoilés. Combient existe il de polygones à 5 côtés égaux ?
+
+géométrie de situation def, lien analisis situs et topologie. 
+
+def polygone, convexité des polygones, classification des polygones (somme des angles et nb de côtés)
+
+justification des polygones étoilés (p.26)
+
+limite des 5 polyèdres réguliers, sujection de la preuve pour la convexité (p.34)
+mot sommet, Notion de minimum de faces. def face, arête, sommet.
+
+Solide. Projection sur la sphère (par.29) nombre de recouvrement.
+
+Notion de "Contre exemple" non introduite
+
 ## L'Huilier une classification des contres exemples
 ## Cauchy projette sur le plan les polyèdres
 ## References
