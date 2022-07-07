@@ -116,7 +116,13 @@ C'est dans le journal de l'école polytechnique de 1810 que Poissot présente sa
 
 Il fait aussi état du peu de travaux dans cette branche, il semble donc mettre en avant l'aspect novateur de la question qui l'occupe, d'où le fait d'utiliser des outils de géométrie pour traiter cette branche naissante.
 
-Avant de traiter la classification des polyèdres, il va traiter la classification des polygones, une question plus simple, amenant de bonnes idées pour le traitement des polyèdres, en particuliers la questions des polygones étoilés. Combient existe il de polygones à 5 côtés égaux ?
+Avant de traiter la classification des polyèdres, il va traiter la classification des polygones, une question plus simple, amenant de bonnes idées pour le traitement des polyèdres, en particuliers la questions des polygones étoilés. Combient existe il de polygones réguliers à 7 côtés, il distingue la première espèce, l'heptagone, des espèces supérieurs (étoilés), les heptagrammes. La notion d'espèce supérieur correspond au fait que pour tracer un n-polygone de h-ième espèce, les points sont joints de h en h, et finalement le périmètre fait h fois le tour de l'espace angulaire. Pour que la h-ième espèce soit considérée il faut fermer le n-polygone en une seule ligne et qu'il ne soit pas similaire à un n-polygone d'espèce inférieure. 
+
+> L'espèce sera marquée par le nombre de fois que le périmètre fait le tour de l'espace angulaire.
+
+<video width="100%" controls>
+	<source src="media/RP.mp4" type="video/mp4">
+</video>
 
 géométrie de situation def, lien analisis situs et topologie. 
 
