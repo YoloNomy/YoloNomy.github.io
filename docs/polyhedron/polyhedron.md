@@ -116,13 +116,30 @@ C'est dans le journal de l'école polytechnique de 1810 que Poissot présente sa
 
 Il fait aussi état du peu de travaux dans cette branche, il semble donc mettre en avant l'aspect novateur de la question qui l'occupe, d'où le fait d'utiliser des outils de géométrie pour traiter cette branche naissante.
 
-Avant de traiter la classification des polyèdres, il va traiter la classification des polygones, une question plus simple, amenant de bonnes idées pour le traitement des polyèdres, en particuliers la questions des polygones étoilés. Combient existe il de polygones réguliers à 7 côtés, il distingue la première espèce, l'heptagone, des espèces supérieurs (étoilés), les heptagrammes. La notion d'espèce supérieur correspond au fait que pour tracer un n-polygone de h-ième espèce, les points sont joints de h en h, et finalement le périmètre fait h fois le tour de l'espace angulaire. Pour que la h-ième espèce soit considérée il faut fermer le n-polygone en une seule ligne et qu'il ne soit pas similaire à un n-polygone d'espèce inférieure. 
-
-> L'espèce sera marquée par le nombre de fois que le périmètre fait le tour de l'espace angulaire.
+Avant de traiter la classification des polyèdres, Poissot va traiter la classification des polygones, une question plus simple, amenant de bonnes idées dans le traitement des polyèdres, en particuliers la questions des polygones étoilés. Combient existe il de polygones réguliers à 7 côtés, il distingue la première espèce, l'heptagone, des espèces supérieurs (étoilés), les heptagrammes. La notion d'espèce supérieur correspond au fait que pour tracer un n-polygone de h-ième espèce, les points sont joints de h en h, et finalement le périmètre fait h fois le tour de l'espace angulaire. Pour que la h-ième espèce soit considérée il faut fermer le n-polygone en une seule ligne et qu'il ne soit pas similaire à un n-polygone d'espèce inférieure. Dans le cas de l'heptagone, il y a 3 espèces :
 
 <video width="100%" controls>
 	<source src="media/RP.mp4" type="video/mp4">
 </video>
+
+Ces considérations sur les polygones étoilés, amène Poissot (ou il a eu l'idée des polygones après ???) à se demander si on ne pourrait pas appliqués des polygones d'espèces supérieurs comme faces des polyèdres mais encore plus surprenants, si les faces ne pourrait pas se rencontrer en un sommet sous cette forme. 
+
+<video width="100%" controls>
+	<source src="media/espece.mp4" type="video/mp4">
+</video>
+
+$$e.S-A+H=E.2$$
+
+Avec $e$ l'espèce du polygone d'un sommet et E l'espèce du polygone (ou la somme des espèces des polygones) relevant d'une section plane passant par le centre du polyèdre. E est aussi le nombre de recouvrement de la sphère circonscrite dans le cas d'une projection des faces.
+
+| Polyèdre Étoilé de Kepler-Poinsot | e    | E    |
+| --------------------------------- | ---- | ---- |
+| Petit dodécaèdre étoilé           | 1    | 3    |
+| Grand dodécaèdre étoilé           | 1    | 7    |
+| Grand dodécaèdre                  | 2    | 3    |
+| Grand icosaèdre                   | 2    | 7    |
+
+![odec](media/etoile2crop.png)
 
 géométrie de situation def, lien analisis situs et topologie. 
 
@@ -139,6 +156,11 @@ Notion de "Contre exemple" non introduite
 
 ## L'Huilier une classification des contres exemples
 ## Cauchy projette sur le plan les polyèdres
+
+<video width="100%" controls>
+	<source src="media/cauchy.mp4" type="video/mp4">
+</video>
+
 ## References
 <a id="1">[1]</a>  Ref 1 test
 
