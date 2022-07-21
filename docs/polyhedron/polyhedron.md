@@ -23,9 +23,6 @@ nav_order: 5
 
 Le concept de polyèdre pour les mathématiciens du 18ème siècle était vaguement défini et reposait surtout sur une intuition forte de ces solides. Sur la figure, on peut observer des polyèdres qui font concensus, les solides de Platon qui sont des polyèdres réguliers et des solides d'Archimède. Quels sont leurs propriétés communes qui pourrait nous donner une première définition de polyèdre. Naïvement, ce sont des solides à face plane et c'est ainsi qu'il sont considéré par **de nombreux mathématiens** sans remarquer les postulats sous-jacent. Il faut commencer quelque part et c'est avec cette définition que nous commencerons, elle se montrera insuffisante et on peut déjà la mettre en conflit face à des exemples que nous rencontrerons durant ce périple.
 
-
-
-
 ![oly3cro](media/poly3crop.png)
 
 > Figure XXX : Solides et surfaces polyèdrales hétérodoxes
@@ -49,8 +46,6 @@ Vérifions cette équation sur certains exemples, et peut être souhaitez vous e
 | Cuboctaèdre             | 12           | 24         | 14         | 2     |
 | Icosidodécaèdre tronqué | 120          | 180        | 62         | 2     |
 
-
-
 ![odec](media/icosi.jpg)
 
 > Figure XXX : Icosidodécaèdre tronqué
@@ -61,8 +56,7 @@ Euler en donnera une preuve 8 ans plus tard, Legendre, L'Huilier et Cauchy suivr
 
 C'est les répercutions de ce théorème sur les mathématiciens francophones que nous allons analyser, comment les nombreuses preuves à paraître vont venir enrichir le débat, tout autant que des contres exemples. 
 
-
-## La preuve de Legendre par projection sur une sphère 
+## La preuve de Legendre par projection sur une sphère
 
 En 1794, Legendre sort ses Éléments de géométrie, ces ouvrages se veulent une actualisation et une simplification des éléments d'Euclide. La preuve du théorème d'Euler n'y est pas centrale et semble être un petit détour que Legendre prend. Citons Lebesgue à propos de cette preuve :
 
@@ -79,7 +73,7 @@ Quelques définitions sont nécessaire pour appréhender la preuve :
 L'unité d'angle est l'angle droit et l'untité de surface est le triangle tri-rectangle sur la sphere (1/8 ème de la sphère).
 
 <video width="100%" controls>
-	<source src="media/legendre.mp4" type="video/mp4">
+    <source src="media/legendre.mp4" type="video/mp4">
 </video>
 
 Dans le chapitre sur les polyèdres précédent celui sur la sphère, Legendre nous donne sa définition des polyèdres :
@@ -106,44 +100,52 @@ $$\frac{aire(Fuseau)}{aire(Sphere)}=\frac{angle(Fuseau)}{4\ angles\ droits} \Lef
 
 On peut alors penser un angle comme une aire à l'aide cette égalité.
 
-Le mathématicien suivant qui nous intéresse a justement développé sa classification des polyèdres sur la technique de démonstration de Legendre. En applicant sa méthode, Poissot va aussi (re)découvrir des polyèdres étoilés qui seront un carburant pour une pensée plus globale de ce champs.
+Le mathématicien suivant qui nous intéresse a justement développé sa classification des polyèdres sur la technique de démonstration de Legendre. En applicant sa méthode, Poinsot va aussi (re)découvrir des polyèdres étoilés qui seront un carburant pour une pensée plus globale de ce champs.
 
-## Poissot et la classification des polyèdres
+## Poinsot et la classification des polyèdres
 
-C'est dans le journal de l'école polytechnique de 1810 que Poissot présente sa réflexion sur la question des polyèdre. Dans son introduction il place sa réflexion dans un champs de recherche bien précis des mathématiques qui est celui de la géométrie de situation :
+C'est dans le journal de l'école polytechnique de 1810 que Poinsot présente sa réflexion sur la question des polyèdre. Dans son introduction il place sa réflexion dans un champs de recherche bien précis des mathématiques qui est celui de la géométrie de situation :
 
 > On rapporte les questions suivantes à la géométrie de situation parce qu'on y considère moins la grandeur et la proportion des figures, que l'ordre et la situation des divers élémens qui les composent.
 
-Il fait aussi état du peu de travaux dans cette branche, il semble donc mettre en avant l'aspect novateur de la question qui l'occupe, d'où le fait d'utiliser des outils de géométrie pour traiter cette branche naissante.
+Il fait aussi état du peu de travaux dans cette branche, il semble donc mettre en avant l'aspect novateur de la question qui l'occupe, d'où le fait d'utiliser des outils de géométrie pour traiter cette branche naissante. ???
 
-Avant de traiter la classification des polyèdres, Poissot va traiter la classification des polygones, une question plus simple, amenant de bonnes idées dans le traitement des polyèdres, en particuliers la questions des polygones étoilés. Combient existe il de polygones réguliers à 7 côtés, il distingue la première espèce, l'heptagone, des espèces supérieurs (étoilés), les heptagrammes. La notion d'espèce supérieur correspond au fait que pour tracer un n-polygone de h-ième espèce, les points sont joints de h en h, et finalement le périmètre fait h fois le tour de l'espace angulaire. Pour que la h-ième espèce soit considérée il faut fermer le n-polygone en une seule ligne et qu'il ne soit pas similaire à un n-polygone d'espèce inférieure. Dans le cas de l'heptagone, il y a 3 espèces :
-
-<video width="100%" controls>
-	<source src="media/RP.mp4" type="video/mp4">
-</video>
-
-Ces considérations sur les polygones étoilés, amène Poissot (ou il a eu l'idée des polygones après ???) à se demander si on ne pourrait pas appliqués des polygones d'espèces supérieurs comme faces des polyèdres mais encore plus surprenants, si les faces ne pourrait pas se rencontrer en un sommet sous cette forme. 
+Avant de traiter la classification des polyèdres, Poinsot va traiter la classification des polygones, une question plus simple, amenant de bonnes idées dans le traitement des polyèdres, en particuliers la questions des polygones étoilés. Combient existe il de polygones réguliers à 7 côtés, il distingue la première espèce, l'heptagone, des espèces supérieurs (étoilés), les heptagrammes. La notion d'espèce supérieur correspond au fait que pour tracer un n-polygone de h-ième espèce, les points sont joints de h en h, et finalement le périmètre fait h fois le tour de l'espace angulaire. Pour que la h-ième espèce soit considérée il faut fermer le n-polygone en une seule ligne et qu'il ne soit pas similaire à un n-polygone d'espèce inférieure. Dans le cas de l'heptagone, il y a 3 espèces :
 
 <video width="100%" controls>
-	<source src="media/espece.mp4" type="video/mp4">
+    <source src="media/RP.mp4" type="video/mp4">
 </video>
+
+Ces considérations sur les polygones étoilés, amène Poinsot (ou il a eu l'idée des polygones après ???) à se demander si on ne pourrait pas appliqués des polygones d'espèces supérieurs comme faces des polyèdres mais encore plus surprenants, si les faces ne pourrait pas se rencontrer en un sommet sous cette forme. 
+
+<video width="100%" controls>
+    <source src="media/espece.mp4" type="video/mp4">
+</video>
+
+En partant de ces considération et de la preuve de Legendre, Poinsot va généraliser son utilisation :
+
+1. Legendre supposait (à raison pour les polyèdres convexes) que lors de la projection les faces du polyèdre recouvrait une seule fois la sphère circonscrite. Poinsot dans le cas de ses polyèdres étoilés remarque que la sphère peut être recouverte plusieurs fois. Le nombre de recouvrement de la sphère (E) est égale à l'espèce du polygone (ou la somme des espèces des polygones) relevant d'une section plane passant par le centre du polyèdre.
+
+2. Autour de chaque sommet, la somme des angles réunis vaut e fois 4 angles droits, e correspond à l'espèce des angles solides.
+
+Il obtient alors :
 
 $$e.S-A+H=E.2$$
 
-Avec $e$ l'espèce du polygone d'un sommet et E l'espèce du polygone (ou la somme des espèces des polygones) relevant d'une section plane passant par le centre du polyèdre. E est aussi le nombre de recouvrement de la sphère circonscrite dans le cas d'une projection des faces.
+En fixant des valeurs, puis en cherchant des solutions de l'équation il va trouver 4 polyèdres réguliers étoilés.
 
-| Polyèdre Étoilé de Kepler-Poinsot | e    | E    |
-| --------------------------------- | ---- | ---- |
-| Petit dodécaèdre étoilé           | 1    | 3    |
-| Grand dodécaèdre étoilé           | 1    | 7    |
-| Grand dodécaèdre                  | 2    | 3    |
-| Grand icosaèdre                   | 2    | 7    |
+| Polyèdre Étoilé de Kepler-Poinsot | e   | E   |
+| --------------------------------- | --- | --- |
+| Petit dodécaèdre étoilé           | 1   | 3   |
+| Grand dodécaèdre étoilé           | 1   | 7   |
+| Grand dodécaèdre                  | 2   | 3   |
+| Grand icosaèdre                   | 2   | 7   |
 
 ![odec](media/etoile2crop.png)
 
-géométrie de situation def, lien analisis situs et topologie. 
+Poinsot ne discutera pas du fait que deux de ces polyèdres sont des contre exemples à la conjecture d'Euler. Pour le Petit Dodécaèdre Étoilé et le Grand Dodécaèdre on a $S-A+F=-6$. Il n'use pas non plus de la relégation de monstres, c'est à dire qu'il n'essaye pas d'exclure ces nouveaux objects de la définition des polyèdres pour conserver la validité du théorème d'Euler. Bien au contraire, il passe par la légitimité des polygones d'espèces supérieurs pour légitimer les polyèdres étoilés. 
 
-def polygone, convexité des polygones, classification des polygones (somme des angles et nb de côtés)
+L'Huilier va continuer à détérrer des contres examples qui amènera à sa façon une nouvelle généralisation du théorème d'Euler vers ce qui plus tard sera la charactéristique d'Euler.
 
 justification des polygones étoilés (p.26)
 
@@ -155,13 +157,57 @@ Solide. Projection sur la sphère (par.29) nombre de recouvrement.
 Notion de "Contre exemple" non introduite
 
 ## L'Huilier une classification des contres exemples
+
+Les travaux de L'Huilier dont nous avons connaissances sur le théorèmes d'Euler, sont au nombre de deux, une publication en 1811 dans les Memoires de l'Academie Imperiale de Saint Petersbourg, puis une réédition écourté et réinterprété par Gergonne dans les Annales de Mathématiques en 1813.
+
+Deux parties structures ces articles, une démonstration du théorème d'Euler dans le cas des polyèdres convexes puis une catégorisation d'exceptions à ce théorème.
+
+Nous n'allons pas développer sa démonstration, retenons juste qu'elle se base sur l'idée suivante : la décomposition d'un polyèdre en pyramides à partir d'un point quelconque de son intérieur et les faces du polyèdre comme base. Il faut alors montrer que dans le cas d'une pyramide on a bien $S-A+F=2$ et que les différents recollement des pyramides n'affectent en rien l'équation.
+
+C'est la seconde partie qui nous intéresse, qui est en partie issue de la réflexion de l'huilier sur sa démonstration du théorème d'Euler et qui fera dire à Lebesgue :
+
+> Pourtant Euler ne comprit pas le véritable intérêt de sa proposition, lequel ne pouvait être mis en évidence que par celui qui, au lieu de démontrer la formule d'Euler, montrerait qu'elle n'est pas toujours vraie comme devait le raire L'Huilier en 1813.
+
+Trois types d'exceptions sont introduites, qui il nous semble sont plutôt au nombre de quatre. 
+
+1. La première exception est la face annulaire ou couronne polygonale, c'est une face qui est comprise entre deux polygones. L'ajout d'une arête (voir fig.XXX) ne modifie pas le nombre de face ni le nombre de sommet et vient donc changer la valeur de $S-A+F$. Si n est le nombre de face annulaire du polyèdre, on a $S-A+F=2+n$.
+
+![odec](media/huilier2.png)
+
+2. Ensuite L'Huilier se propose de pouvoir diminuer le résultat de $S-A+F$ en joignant deux sommet pour n'en former qu'un, sans modifier le nombre de face ou d'arête. Gergonne ne reviendra pas sur cette partie de l'article.
+
+![odec](media/huilier5.png)
+
+3. La troisième exception survient quand un polyèdre est traversé de part en part, pour chaque trou dans le polyèdre la somme $S-A+F$ est diminué de deux unité. Soit n le nombre de trou distint $S-A+F=2(1-n)$. Cette équation est très intéressante, et peut faire penser à de nombreux égars au concept de genre en topologie, bien que ici il soit encore défini de manière primaire et ne permet pas de classifier des polyèdres comme dans la figure XXX.
+
+![odec](media/huilier3.png)
+
+![odec](media/huilier0.png)
+
+4. La dernière exception concerne les polyèdres contenant une cavité. Les résultats des équations $S-A+F=2$ s'additionnent pour les deux surface du polyèdre on a alors $S-A+F=4$. Toit n le nombre de cavité d'un polyèdre, on a alors $S-A+F=2(n+1)$
+
+![odec](media/huilier1.png)
+
+Il est difficile de considérer l'entièreté de ces exceptions comme des monstruosités qui n'appartiennent pas au groupe des polyèdres, on peut donc chercher à quel sous ensemble s'applique le théorème d'Euler, mais de façon tout aussi intéressante et c'est ce qui semble se dessiner ici, on peut classifier les différents types de polyèdre en fonction du résultat de $S-A+F$ et quelles sont les propriétés qui différencie ces classes.
+
+La même année (1813), un grand mathématicien va pourtant prouver que tous les polyèdres sont Eulerien ($S-A+F=2$).
+
 ## Cauchy projette sur le plan les polyèdres
 
+La structure de l'article où Cauchy présente sa preuve est assez ironique, dans une première partie il étudie les questions laissées en suspend par Poinsot dans son étude des polyèdres étoilés, puis il passe à la démonstration du théorème d'Euler pour tout polyèdre alors même que sa première partie contenait des contres exemples. Mais cette mauvaise démonstration est très importante pour la réflexion sur les polyèdres car les démonstrations précédentes se repliait sur le cas des polyèdres convexes et donc empéchais une réflexion plus globale.
+
+On peut voir ci dessous la preuve de Cauchy (un peu simplifié)
+
 <video width="100%" controls>
-	<source src="media/cauchy.mp4" type="video/mp4">
+    <source src="media/cauchy.mp4" type="video/mp4">
+</video>
+
+<video width="100%" controls>
+    <source src="media/cauchy2.mp4" type="video/mp4">
 </video>
 
 ## References
+
 <a id="1">[1]</a>  Ref 1 test
 
 ***Pour aller plus loin***
