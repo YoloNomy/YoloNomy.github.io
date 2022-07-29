@@ -17,21 +17,25 @@ nav_order: 5
 
 ### *Les polyèdres*
 
+<a name="fig1"></a>
+
 ![poly](media/poly2crop.png)
 
-> Figure XXX : Polyèdres réguliers et semi-réguliers
+> Figure 1 : Polyèdres réguliers et semi-réguliers
 
-Le concept de polyèdre pour les mathématiciens du 18ème siècle était vaguement défini et reposait surtout sur une intuition forte de ces solides. Sur la figure, on peut observer des polyèdres qui font concensus, les solides de Platon qui sont des polyèdres réguliers et des solides d'Archimède. Quels sont leurs propriétés communes qui pourrait nous donner une première définition de polyèdre. Naïvement, ce sont des solides à face plane et c'est ainsi qu'il sont considéré par **de nombreux mathématiens** sans remarquer les postulats sous-jacent. Il faut commencer quelque part et c'est avec cette définition que nous commencerons, elle se montrera insuffisante et on peut déjà la mettre en conflit face à des exemples que nous rencontrerons durant ce périple.
+Le concept de polyèdre pour les mathématiciens du 18ème siècle était vaguement défini et reposait surtout sur une intuition forte de ces solides. Sur la [figure 1](#fig1), on peut observer des polyèdres qui font concensus, les solides de Platon qui sont des polyèdres réguliers et des solides d'Archimède. Quels sont leurs propriétés communes qui pourrait nous donner une première définition de polyèdre. Naïvement, ce sont des solides à face plane et c'est ainsi qu'il sont considéré par **de nombreux mathématiens** [Qui ?] sans remarquer les postulats sous-jacent. Il faut commencer quelque part et c'est avec cette définition que nous commencerons, elle se montrera insuffisante et on peut déjà la mettre en conflit face à des exemples que nous rencontrerons durant ce périple. [bof ce paragraphe, inutile de donner une définition pour l'instant ? Ou en donner plusieurs ?]
+
+<a name="fig2"></a>
 
 ![oly3cro](media/poly3crop.png)
 
-> Figure XXX : Solides et surfaces polyèdrales hétérodoxes
+> Figure 2 : Solides et surfaces polyèdrales hétérodoxes
 
-C'est justement le travail de démonstration sur les polyèdres, en particuliers du théorème d'Euler, qui va venir consolider ce champs de recherche et mettre au grand jour les difficultés à saisir le sens de polyèdre. Et de cette question toute simple, peut on trouver une relation entre le nombre de face d'un polyèdre, son nombre de sommet et son nombre d'arête.
+C'est justement le travail de preuve des conjectures, en particuliers du théorème d'Euler, qui va venir consolider ce champs de recherche et mettre au grand jour les difficultés à saisir le sens de polyèdre [^lakatos]. Et de cette question toute simple, peut on trouver une relation entre le nombre de face d'un polyèdre, son nombre de sommet et son nombre d'arête.
 
 ### *Le théorème d'Euler*
 
-C'est en 1750 qu'Euler, dans une lettre à Golbach, énonce le théorème qui porte son nom. Descartes était passé de peu à côté [[1]](#1), Euler pointe son importance parmis une série de conjecture sur les polyèdres.
+C'est en 1750 qu'Euler, dans une lettre à Golbach [^golbach], énonce le théorème qui porte son nom. Descartes était passé de peu à côté (voir p.6 [^pont]), Euler pointe son importance parmis une série de conjecture sur les polyèdres.
 
 Pour tout polyèdre, son nombre de face $H$ auquelle on ajoute ses angles solides $S$ [^sommet] est égale à son nombre d'arête $A$ plus deux.
 
@@ -46,19 +50,21 @@ Vérifions cette équation sur certains exemples, et peut être souhaitez vous e
 | Cuboctaèdre             | 12           | 24         | 14         | 2     |
 | Icosidodécaèdre tronqué | 120          | 180        | 62         | 2     |
 
+<a name="fig3"></a>
+
 ![odec](media/icosi.jpg)
 
-> Figure XXX : Icosidodécaèdre tronqué
+> Figure 3 : Icosidodécaèdre tronqué
 
 Dans cette lettre, Euler introduit le terme d'arête, ce nouveau concept modifie la réflexion autour des polyèdres. On peut alors se demander si ce n'est pas le concept qui manquait pour découvrir cette relation. 
 
-Euler en donnera une preuve 8 ans plus tard, Legendre, L'Huilier et Cauchy suivront peu après.
+Euler en donnera une preuve 8 ans plus tard, Legendre, L'Huilier et Cauchy suivront peu après. Nous n'allons pas étudier sa preuve disponible dans son mémoire [^eulerdemo], une critique en est faite par J.C Pont p.18 [^pont].
 
 C'est les répercutions de ce théorème sur les mathématiciens francophones que nous allons analyser, comment les nombreuses preuves à paraître vont venir enrichir le débat, tout autant que des contres exemples. 
 
 ## La preuve de Legendre par projection sur une sphère
 
-En 1794, Legendre sort ses Éléments de géométrie, ces ouvrages se veulent une actualisation et une simplification des éléments d'Euclide. La preuve du théorème d'Euler n'y est pas centrale et semble être un petit détour que Legendre prend. Citons Lebesgue à propos de cette preuve :
+En 1794, Legendre sort ses Éléments de géométrie [^legendre], ces ouvrages se veulent une actualisation et une simplification des éléments d'Euclide. La preuve du théorème d'Euler n'y est pas centrale et semble être un petit détour que Legendre prend. Citons Lebesgue à propos de cette preuve :
 
 > Legendre ne s'est jamais proposé de démontrer le théorème d'Euler, mais ayant bâti à une occasion quelconque des considérations voisines de celles qui figurent dans sa démonstration, il s'est aperçu qu'il avait les éléments nécessaires à cette démonstration. 
 
@@ -86,15 +92,15 @@ Dans le chapitre sur les polyèdres précédent celui sur la sphère, Legendre n
 
 Puis en bas de page, il y a cette note très importante :
 
-> N. B. Tous les polyèdres que nous considérons sont des polyèdres à angles saillants ou polyèdres convexes. Nous appelons ainsi ceux dont la surface ne peut être rencontrée par uen linge droite en plus de deux points. Dans ces sortes de polyèdres le plan prolongé d'une face ne peut couper le solide ; il est donc impossible que le polyèdre soit en partie au-dessus du plan d'uen face, en partie au-dessous; il est tout entier d'un même côté de ce plan.
+> N. B. Tous les polyèdres que nous considérons sont des polyèdres à angles saillants ou polyèdres convexes. Nous appelons ainsi ceux dont la surface ne peut être rencontrée par une ligne droite en plus de deux points. Dans ces sortes de polyèdres le plan prolongé d'une face ne peut couper le solide ; il est donc impossible que le polyèdre soit en partie au-dessus du plan d'une face, en partie au-dessous; il est tout entier d'un même côté de ce plan.
 
-Legendre se replie sur le terrain sûr celui des polyèdres convexes, il ne souhaite donc pas pouvrer la conjecture d'Euler dans toute sa généralité (sur tout polyèdre). Il évite ainsi les questions difficiles de la conjecture, qui est la classification des solides non convexes.
+Legendre se replie sur le terrain sûr des polyèdres convexes, il ne souhaite donc pas prouver la conjecture d'Euler dans toute sa généralité (sur tout polyèdre). Il évite ainsi les questions difficiles de la conjecture, qui est la classification des solides non convexes.
 
 Poinsot en 1810 remarquera que la preuve de Legendre peut s'appliquer à une classe plus grande de polyèdres :
 
-> Je ferai d'abord observer que l'équation précédente n'a pas seulement lieu pour les solides convexes ordinaires, c'est-à-dire, pour ceux dont la surface ne peut être coupée par une droite en plus de deux points elle subsiste encore pour tout polyèdre qui a des angles solides rentrans pourvu qu'on puisse trouver, dans l'intérieur du solide un point qui soit le centre d'une sphère telle que les faces du solide y étant projetées par des lignes menées au centre, il n'y ait sur la sphère aucune duplicature de ces projections je veux dire, pourvu qu'aucune face ne se projette, en tout ou en partie, sur la projection d'une autre; ce qui convient, comme on voit, à une infinité de polyèdres à angles solides rentrans.
+> Je ferai d'abord observer que l'équation précédente n'a pas seulement lieu pour les solides convexes ordinaires, c'est-à-dire, pour ceux dont la surface ne peut être coupée par une droite en plus de deux points elle subsiste encore pour tout polyèdre qui a des angles solides rentrans pourvu qu'on puisse trouver, dans l'intérieur du solide un point qui soit le centre d'une sphère telle que les faces du solide y étant projetées par des lignes menées au centre, il n'y ait sur la sphère aucune duplicature de ces projections je veux dire, pourvu qu'aucune face ne se projette, en tout ou en partie, sur la projection d'une autre ; ce qui convient, comme on voit, à une infinité de polyèdres à angles solides rentrans. [^poinsot]
 
-On peut aussi noté que c'est une preuve géométrique qui ne s'écarte pas des concepts métriques contrairement à ce qu'avais essayé Euler et c'est aussi dans ce sens que sera la preuve de Cauchy. On remarque alors sont utilisation des unité et il peut être étonnant de que certaine de ses équations sont une égalité entre des angles et des aires. par exemple $aire(ABC)=\sum_{i=1}^{3}\tau_i-2$ avec $\tau_i$ l'angle i du triangle. On peut faire sens cette équation en ce ramenant à l'égalité entre proportion sur le fuseau d'une sphère :
+On peut aussi noté que c'est une preuve géométrique qui ne s'écarte pas des concepts métriques contrairement à ce qu'avait essayé Euler et c'est aussi dans ce sens qu'ira la preuve de Cauchy. On remarque alors sont utilisation des unités et il peut être étonnant de que certaines de ses équations sont une égalité entre des angles et des aires. par exemple $aire(ABC)=\sum_{i=1}^{3}\tau_i-2$ avec $\tau_i$ l'angle i du triangle ABC. On peut faire sens cette équation en ce ramenant à l'égalité entre proportion sur le fuseau d'une sphère :
 
 $$\frac{aire(Fuseau)}{aire(Sphere)}=\frac{angle(Fuseau)}{4\ angles\ droits} \Leftrightarrow \frac{aire(Fuseau)}{8}=\frac{angle(Fuseau)}{4} \Leftrightarrow \frac{aire(Fuseau)}{2}=angle(Fuseau)$$
 
@@ -102,13 +108,11 @@ On peut alors penser un angle comme une aire à l'aide cette égalité.
 
 Le mathématicien suivant qui nous intéresse a justement développé sa classification des polyèdres sur la technique de démonstration de Legendre. En applicant sa méthode, Poinsot va aussi (re)découvrir des polyèdres étoilés qui seront un carburant pour une pensée plus globale de ce champs.
 
-## Poinsot et la classification des polyèdres
+## Les polyèdres étoilés de Poinsot
 
-C'est dans le journal de l'école polytechnique de 1810 que Poinsot présente sa réflexion sur la question des polyèdre. Dans son introduction il place sa réflexion dans un champs de recherche bien précis des mathématiques qui est celui de la géométrie de situation :
+C'est dans le journal de l'école polytechnique de 1810 [^poinsot] que Poinsot présente sa réflexion sur la question des polyèdre. Dans son introduction il place sa réflexion dans un champs de recherche bien précis des mathématiques qui est celui de la géométrie de situation :
 
 > On rapporte les questions suivantes à la géométrie de situation parce qu'on y considère moins la grandeur et la proportion des figures, que l'ordre et la situation des divers élémens qui les composent.
-
-Il fait aussi état du peu de travaux dans cette branche, il semble donc mettre en avant l'aspect novateur de la question qui l'occupe, d'où le fait d'utiliser des outils de géométrie pour traiter cette branche naissante. ???
 
 Avant de traiter la classification des polyèdres, Poinsot va traiter la classification des polygones, une question plus simple, amenant de bonnes idées dans le traitement des polyèdres, en particuliers la questions des polygones étoilés. Combient existe il de polygones réguliers à 7 côtés, il distingue la première espèce, l'heptagone, des espèces supérieurs (étoilés), les heptagrammes. La notion d'espèce supérieur correspond au fait que pour tracer un n-polygone de h-ième espèce, les points sont joints de h en h, et finalement le périmètre fait h fois le tour de l'espace angulaire. Pour que la h-ième espèce soit considérée il faut fermer le n-polygone en une seule ligne et qu'il ne soit pas similaire à un n-polygone d'espèce inférieure. Dans le cas de l'heptagone, il y a 3 espèces :
 
@@ -116,7 +120,7 @@ Avant de traiter la classification des polyèdres, Poinsot va traiter la classif
     <source src="media/RP.mp4" type="video/mp4">
 </video>
 
-Ces considérations sur les polygones étoilés, amène Poinsot (ou il a eu l'idée des polygones après ???) à se demander si on ne pourrait pas appliqués des polygones d'espèces supérieurs comme faces des polyèdres mais encore plus surprenants, si les faces ne pourrait pas se rencontrer en un sommet sous cette forme. 
+Ces considérations sur les polygones étoilés, pourrait expliquer ce qui amène Poissot à se demander si il est possible d'appliquer des polygones d'espèces supérieurs comme faces des polyèdres mais encore plus surprenants, si les faces ne pourrait pas se rencontrer en un sommet sous cette forme. 
 
 <video width="100%" controls>
     <source src="media/espece.mp4" type="video/mp4">
@@ -145,16 +149,9 @@ En fixant des valeurs, puis en cherchant des solutions de l'équation il va trou
 
 Poinsot ne discutera pas du fait que deux de ces polyèdres sont des contre exemples à la conjecture d'Euler. Pour le Petit Dodécaèdre Étoilé et le Grand Dodécaèdre on a $S-A+F=-6$. Il n'use pas non plus de la relégation de monstres, c'est à dire qu'il n'essaye pas d'exclure ces nouveaux objects de la définition des polyèdres pour conserver la validité du théorème d'Euler. Bien au contraire, il passe par la légitimité des polygones d'espèces supérieurs pour légitimer les polyèdres étoilés. 
 
-L'Huilier va continuer à détérrer des contres examples qui amènera à sa façon une nouvelle généralisation du théorème d'Euler vers ce qui plus tard sera la charactéristique d'Euler.
+Ces polyèdres étoilées sont aussi appelés solides de Kepler-Poinsot car Kepler en décrivait déjà deux dans sont œuvre XXX en XXX. Poinsot semble les avoirs redécouvert   et ne fait aucune référence à Kepler.
 
-justification des polygones étoilés (p.26)
-
-limite des 5 polyèdres réguliers, sujection de la preuve pour la convexité (p.34)
-mot sommet, Notion de minimum de faces. def face, arête, sommet.
-
-Solide. Projection sur la sphère (par.29) nombre de recouvrement.
-
-Notion de "Contre exemple" non introduite
+Un an plus tard, L'Huilier va continuer à détérrer des contres examples, et qu'il identifira comme tels.
 
 ## L'Huilier une classification des contres exemples
 
@@ -166,7 +163,7 @@ Nous n'allons pas développer sa démonstration, retenons juste qu'elle se base 
 
 C'est la seconde partie qui nous intéresse, qui est en partie issue de la réflexion de l'huilier sur sa démonstration du théorème d'Euler et qui fera dire à Lebesgue :
 
-> Pourtant Euler ne comprit pas le véritable intérêt de sa proposition, lequel ne pouvait être mis en évidence que par celui qui, au lieu de démontrer la formule d'Euler, montrerait qu'elle n'est pas toujours vraie comme devait le raire L'Huilier en 1813.
+> Pourtant Euler ne comprit pas le véritable intérêt de sa proposition, lequel ne pouvait être mis en évidence que par celui qui, au lieu de démontrer la formule d'Euler, montrerait qu'elle n'est pas toujours vraie comme devait le faire L'Huilier en 1813.
 
 Trois types d'exceptions sont introduites, qui il nous semble sont plutôt au nombre de quatre. 
 
@@ -184,27 +181,49 @@ Trois types d'exceptions sont introduites, qui il nous semble sont plutôt au no
 
 ![odec](media/huilier0.png)
 
-4. La dernière exception concerne les polyèdres contenant une cavité. Les résultats des équations $S-A+F=2$ s'additionnent pour les deux surface du polyèdre on a alors $S-A+F=4$. Toit n le nombre de cavité d'un polyèdre, on a alors $S-A+F=2(n+1)$
+4. La dernière exception concerne les polyèdres contenant une cavité. Les résultats des équations $S-A+F=2$ s'additionnent pour les deux surface du polyèdre on a alors $S-A+F=4$. Soit n le nombre de cavité d'un polyèdre, on a alors $S-A+F=2(n+1)$
 
 ![odec](media/huilier1.png)
 
-Il est difficile de considérer l'entièreté de ces exceptions comme des monstruosités qui n'appartiennent pas au groupe des polyèdres, on peut donc chercher à quel sous ensemble s'applique le théorème d'Euler, mais de façon tout aussi intéressante et c'est ce qui semble se dessiner ici, on peut classifier les différents types de polyèdre en fonction du résultat de $S-A+F$ et quelles sont les propriétés qui différencie ces classes.
+Il est difficile de considérer l'entièreté de ces exceptions comme des monstruosités qui n'appartiennent pas au groupe des polyèdres, on peut donc chercher à quel sous ensemble s'applique le théorème d'Euler, mais de façon tout aussi intéressante et c'est ce qui semble se dessiner ici, on peut classifier les différents types de polyèdre en fonction du résultat de $S-A+F$ et quelles sont les propriétés qui différencient ces classes.
+
+L'Huilier et Gergonne permettent en un sens de sortir de la conjecture rigide d'Euler pour les polyèdres vers ce qui deviendra une propriété topologique des polyèdres : la charactéristique d'Euler. 
 
 La même année (1813), un grand mathématicien va pourtant prouver que tous les polyèdres sont Eulerien ($S-A+F=2$).
 
 ## Cauchy projette sur le plan les polyèdres
 
-La structure de l'article où Cauchy présente sa preuve est assez ironique, dans une première partie il étudie les questions laissées en suspend par Poinsot dans son étude des polyèdres étoilés, puis il passe à la démonstration du théorème d'Euler pour tout polyèdre alors même que sa première partie contenait des contres exemples. Mais cette mauvaise démonstration est très importante pour la réflexion sur les polyèdres car les démonstrations précédentes se repliait sur le cas des polyèdres convexes et donc empéchais une réflexion plus globale.
+La structure de l'article où Cauchy présente sa preuve est assez ironique, dans une première partie il étudie les questions laissées en suspend par Poinsot dans son étude des polyèdres étoilés, puis il passe à la démonstration du théorème d'Euler pour tout polyèdre alors même que sa première partie contenait des contres exemples. Mais cette démonstration erronée est très importante pour la réflexion sur les polyèdres car les preuves précédentes se repliaient sur le cas des polyèdres convexes et donc empéchaient une réflexion plus globale.
 
-On peut voir ci dessous la preuve de Cauchy (un peu simplifié)
+On peut voir ci dessous la preuve de Cauchy (un peu simplifié), les contres exemples globaux que nous connaissons nous informent sur la fausseté de certaines assomptions, en particuliers il est supposé que tous les polyèdres peuvent être mis sous forme de graphe dans le plans. Cette hypothèse est fausse dans de nombreux cas , par exemple dans le cas d'un polyèdre traversé de part en part (3ème exception de l'huilier), si l'on enlève une face il est impossible de mettre le reste du polyèdre dans le plan sans croiser des arêtes. C'est par de semblable raisonnement que de nouveau concept (graphe planaire), champs de recherche (théorie des graphes), définition (polyèdre) peuvent émerger.
 
 <video width="100%" controls>
     <source src="media/cauchy.mp4" type="video/mp4">
 </video>
 
+Malgré cette preuve erroné elle peut facilement être modifié en introduisant l'assomption caché dans le théorème "Tout les polyèdres transformable en graphe planaire sont Eulerien" on a ainsi réussi à montrer le théorème d'Euler sur un ensemble plus grand que les polyèdres convexes. Lakatos appelle cette étude de la démonstration "analyse critique de la preuve", pour lui c'est un passage essentiel du développement de nouvelles mathématiques.
+
 <video width="100%" controls>
     <source src="media/cauchy2.mp4" type="video/mp4">
 </video>
+
+> Exemple de polyèdre non convexe qui fonctionne dans la preuve de Cauchy
+
+## Conclusion
+
+L'étude des polyèdres par les mathématiciens est loin d'être fini, sur les questions abordées dans cet article, deux développement nous semblent essentiels, la preuve de Von Staudt qui prouve le théorème d'Euler avec de bonnes hypothèses : 
+
+> Lorsque l'on peut joindre chaque somet à tout autre par une ligne formée d'arêtes, et lorsque sa surface est pratagée en deux parties par toute ligne fermée composée d'arêtes passant au plus une fois par un même sommet, le nombre e des sommets plus le nombre f des faces est égal au nombre k des arêtes moins 2.
+
+La tentative d'axiomatisation des polyèdres par Poincaré est aussi incroyable en cela qu'elle règle la problèmatique de la définition des polyèdres ou du moins elle nous mais face au fait accomplie du choix des axiomes.
+
+En 20 ans, de 1794 à 1814, la recherche sur les polyèdres fut principalement francophone, elle permit un premier tri des hypothèses nécessaires principalement en limitant le champ d'application de la conjecture d'Euler à l'aide de contre exemples. Les démonstrations proposés seront aussi des pistes pour l'étude des polyèdres, par exemple la preuve de Cauchy fait un lien entre les polyèdres et la théorie des graphes, et c'est dans ce sens qu'ira Von Staudt avec sa preuve. On peut aussi retrouver si tôt de nombreuses relations avec la topologie, qu'aujourd'hui nous retrouvons souvent dans les hypothèses du théorème d'Euler.
+
+> There are many proofs of Euler's formula. One was given by Cauchy in 1811, as follows. It applies to any convex polyhedron, and more 
+> generally to any polyhedron whose boundary is topologically equivalent 
+> to a sphere and whose faces are topologically equivalent to disks.
+> 
+> [Euler characteristic - Wikipedia](https://en.wikipedia.org/wiki/Euler_characteristic)
 
 ## References
 
@@ -262,4 +281,22 @@ A. L. Cauchy,
 
 ***Notes de bas de page***
 
+[^lakatos]: Imre Lakatos, Preuves et Réfutations
+
+[^goldbach]: L. Euler, Letter to Christian Goldbachl, Berlin. November 1750
+
+[^pont]: Jean-Claude Pont, La topologie algébrique des origines à Poincaré
+
 [^sommet]: Un angle solide est ici un synonyme de sommet.
+
+[^eulerdemo]: L. Euler, Demonstratio Nonnularum Insignium Proprietatum Quibus Solida Hedris Planis Inclusa Sunt Praedita, Novi Commentarii Academiae Scientiarum Petropolitanae 4 (1752/53), 1758, p.140-160
+
+[^legendre]: A. M. Legendre, Elements de Geometrie, 1794
+
+[^poinsot]: L. Poinsot, Mémoire sur les Polygones et les Polyèdres, J. École Polytechnique 10 (1810) p.16-48
+
+[^huilier1]: S. A. J. L'Huilier, Démonstration Immédiate d'un Théoreme Fondamental d'Euler sur les Polyèdres et Exceptions dont ce Theoreme est Susceptible, Memoires de l'Academie Imperiale de Saint Petersbourg 4, 1811, p.271-301
+
+[^huilier2]: S. A. J. L'Huilier et J. D. Gergonne, Mémoire sur la Polyèdrométrie, Annales de Math., Pures et Appliquees 3, 1812/13, p.168-191
+
+[^cauchy]: A. L. Cauchy, Recherches sur les Polyedres , J. École Polytechnique 9, 1813, p.68-86
