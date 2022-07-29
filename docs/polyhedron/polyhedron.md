@@ -82,6 +82,8 @@ L'unité d'angle est l'angle droit et l'untité de surface est le triangle tri-r
     <source src="media/legendre.mp4" type="video/mp4">
 </video>
 
+> Vidéo 1 : Preuve de Legendre du théorème d'Euler pour les polyèdres convexes
+
 Dans le chapitre sur les polyèdres précédent celui sur la sphère, Legendre nous donne sa définition des polyèdres :
 
 > On appelle *solide polyèdre*, ou simplement *polyèdre*, tout solide terminé par des plans ou des faces planes. (Ces plans sont nécessairement terminés eux-mêmes par des lignes droites.) 
@@ -120,11 +122,15 @@ Avant de traiter la classification des polyèdres, Poinsot va traiter la classif
     <source src="media/RP.mp4" type="video/mp4">
 </video>
 
+> Vidéo 2 : Espèces d'heptagone
+
 Ces considérations sur les polygones étoilés, pourrait expliquer ce qui amène Poissot à se demander si il est possible d'appliquer des polygones d'espèces supérieurs comme faces des polyèdres mais encore plus surprenants, si les faces ne pourrait pas se rencontrer en un sommet sous cette forme. 
 
 <video width="100%" controls>
     <source src="media/espece.mp4" type="video/mp4">
 </video>
+
+> Vidéo 3 : Espèce des sommets d'un polyèdre et espèce du polyèdre
 
 En partant de ces considération et de la preuve de Legendre, Poinsot va généraliser son utilisation :
 
@@ -146,6 +152,8 @@ En fixant des valeurs, puis en cherchant des solutions de l'équation il va trou
 | Grand icosaèdre                   | 2   | 7   |
 
 ![odec](media/etoile2crop.png)
+
+> Figure 4 : Les polyèdres de Kepler-Poinsot
 
 Poinsot ne discutera pas du fait que deux de ces polyèdres sont des contre exemples à la conjecture d'Euler. Pour le Petit Dodécaèdre Étoilé et le Grand Dodécaèdre on a $S-A+F=-6$. Il n'use pas non plus de la relégation de monstres, c'est à dire qu'il n'essaye pas d'exclure ces nouveaux objects de la définition des polyèdres pour conserver la validité du théorème d'Euler. Bien au contraire, il passe par la légitimité des polygones d'espèces supérieurs pour légitimer les polyèdres étoilés. 
 
@@ -171,19 +179,29 @@ Trois types d'exceptions sont introduites, qui il nous semble sont plutôt au no
 
 ![odec](media/huilier2.png)
 
+> Figure 5 : Exemple de face annulaire et non annulaire
+
 2. Ensuite L'Huilier se propose de pouvoir diminuer le résultat de $S-A+F$ en joignant deux sommet pour n'en former qu'un, sans modifier le nombre de face ou d'arête. Gergonne ne reviendra pas sur cette partie de l'article.
 
 ![odec](media/huilier5.png)
+
+> Figure 6 : Exemple de solide pour lequel $S-A+F=1$
 
 3. La troisième exception survient quand un polyèdre est traversé de part en part, pour chaque trou dans le polyèdre la somme $S-A+F$ est diminué de deux unité. Soit n le nombre de trou distint $S-A+F=2(1-n)$. Cette équation est très intéressante, et peut faire penser à de nombreux égars au concept de genre en topologie, bien que ici il soit encore défini de manière primaire et ne permet pas de classifier des polyèdres comme dans la figure XXX.
 
 ![odec](media/huilier3.png)
 
+> Figure 7 : Polyèdre à un trou et polyèdre à 3 trous
+
 ![odec](media/huilier0.png)
+
+> Figure 8 : Exemple de polyèdre non décrit par le modèle de L'Huilier
 
 4. La dernière exception concerne les polyèdres contenant une cavité. Les résultats des équations $S-A+F=2$ s'additionnent pour les deux surface du polyèdre on a alors $S-A+F=4$. Soit n le nombre de cavité d'un polyèdre, on a alors $S-A+F=2(n+1)$
 
 ![odec](media/huilier1.png)
+
+> Figure 9 : Polyèdre cubique avec une cavité cubique
 
 Il est difficile de considérer l'entièreté de ces exceptions comme des monstruosités qui n'appartiennent pas au groupe des polyèdres, on peut donc chercher à quel sous ensemble s'applique le théorème d'Euler, mais de façon tout aussi intéressante et c'est ce qui semble se dessiner ici, on peut classifier les différents types de polyèdre en fonction du résultat de $S-A+F$ et quelles sont les propriétés qui différencient ces classes.
 
@@ -201,13 +219,15 @@ On peut voir ci dessous la preuve de Cauchy (un peu simplifié), les contres exe
     <source src="media/cauchy.mp4" type="video/mp4">
 </video>
 
+> Vidéo 4 : Preuve de Cauchy du théorème d'Euler sur les polyèdres
+
 Malgré cette preuve erroné elle peut facilement être modifié en introduisant l'assomption caché dans le théorème "Tout les polyèdres transformable en graphe planaire sont Eulerien" on a ainsi réussi à montrer le théorème d'Euler sur un ensemble plus grand que les polyèdres convexes. Lakatos appelle cette étude de la démonstration "analyse critique de la preuve", pour lui c'est un passage essentiel du développement de nouvelles mathématiques.
 
 <video width="100%" controls>
     <source src="media/cauchy2.mp4" type="video/mp4">
 </video>
 
-> Exemple de polyèdre non convexe qui fonctionne dans la preuve de Cauchy
+> Vidéo 5 : Exemple de polyèdre non convexe qui fonctionne dans la preuve de Cauchy
 
 ## Conclusion
 
