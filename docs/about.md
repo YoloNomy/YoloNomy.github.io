@@ -8,5 +8,5 @@ We are two PhD students in cosmology wanting to share their passion about physic
 
 Find more about us and our contact infos here:
 
-- [Bastien Carreres](https://college-doctoral.univ-amu.fr/fr/inscrit/12309)
+- [Bastien Carreres](https://bcarreres.github.io/)
 - [Léo Vacher](https://leovacher.github.io/LeoVacher/)
