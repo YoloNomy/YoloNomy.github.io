@@ -7,14 +7,17 @@ nav_order: 2
 
 # Kepler laws
 
+Our goal here will be to understand and demonstrate the three Kepler laws from Newton laws with an increasing level of complexity. Codes will be provided to help you getting familiar.
+
 ## The laws
 
-Three laws allowing to predict the motion of celestial bodies.
+Kepler laws are three statements allowing to predict the motion of celestial bodies in the case of a two body system with one much larger than the other. A typical case is then given by the motion of a planet around a star. They can be stated as follow:
 
-- law 1: trajectories of celestial bodies are conics with the star at one of the focci.
+- Law 1: trajectories of planets are conics with the star at one of the focci.
+- Law 2: A line connecting the planet and its star sweeps out equal areas during equal intervals of time. 
+- Law 3: If the trajectory is an ellipse, the ratio of the period $$T$$ squared and the semi axis $$a$$ cubed is a constant, that is $$T^2/a^3 = \text{cst}$$.
 
-- law 2: A line connecting the planet and its star sweeps out equal areas during equal intervals of time. 
-- law 3: If the trajectory is an ellipse, the ratio of the period squared and the semi axis cubed is a constant: $$T^2/a^3 = cst$$
+As we will see, these three laws were first deduced from observations by the german astronomer Joannes Kepler, who understood them as fundamental laws of nature. They were then demonstrated from deeper and more abstract principles by Isaac Newton.
 
 ## History : from laws to theorem
 
@@ -24,7 +27,7 @@ At the time they were indeed understood as *laws* that is fundamental rules of n
 
 # Why are they so important ?
 
-# Examples
+## Examples
 
 The mass of Sgr A* and the discovery of black holes.
 
@@ -32,7 +35,9 @@ Exoplanets
 
 # Polar coordinates
 
-As we discussed already (see ...), the first thing to do before studying a motion in mechanics, is to define both a *frame* (otherwise motion is meaningless) and a *coordinate system* (otherwise it is impossible to quantify anything).
+![my image](./images/polar.png "my image") 
+
+As we discussed already, the first thing to do before studying a motion in mechanics, is to define both a *frame* (otherwise motion is meaningless) and a *coordinate system* (otherwise it is impossible to quantify anything).
 So far we were only using *cartesian coordinates*, that is, perpendicular and fixed axis $(O,x,y,z)$. Cylindrical/Polar coordinates replace $x$ and $y$ by $r$ and $\theta$.
 
 Using Pythagorian theorem (need figures):
@@ -83,11 +88,11 @@ $$
 
 # Proof of the second law
 
-## The cross product 
+## The wonderfull cross product 
 
-Consider two vectors $\vec{u}$ and $\vec{v}$. How could you combine them? We already saw (see), that it is possible to build a number out two vectors using the scalar or dot product $\vec{u}\cdot\vec{v}$. The resulting number tells you how much the two vectors are aligned and allows to calculate lengths. 
+Consider two vectors $\vec{u}$ and $\vec{v}$. How could you combine them? You might already be familiar with one way to combine vectors together? Indeed, it is possible to build a number out two vectors using the scalar or dot product $\vec{u}\cdot\vec{v}$. The resulting number tells you how much the two vectors are aligned and allows to calculate lengths. There exist however, another way to multiply two vectors. 
 
-In order to study rotations, it will be useful to define another product, called the *cross product*, allowing this time to get a third vector $\vec{w}$ from two vectors $\vec{u}$ and $\vec{v}$. It is usually noted $\vec{w}=\vec{u} \times \vec{v}$ or $\vec{w}=\vec{u} \wedge \vec{v}$.
+In order to study rotations, it will indeed be useful to define another product, called the *cross product*, allowing this time to get a third vector $\vec{w}$ from two vectors $\vec{u}$ and $\vec{v}$. It is usually noted $\vec{w}=\vec{u} \times \vec{v}$ or $\vec{w}=\vec{u} \wedge \vec{v}$.
 
 Contrary to the dot product, this product quantifies how perpendicular the two original vectors are. Since it gives back a vector and not a simple number, it has a lot of geometry hidden in it. We'll see that, while the scalar product defines lengths, the cross product defines surfaces from the original vectors.
 
@@ -143,11 +148,11 @@ $$ \|\vec{L}\| = mr^2 \dot{\theta} $$
 
 Remember that for a circle of radius $r$, the perimeter is $\ell=2\pi r$, corresponding to a full turn of the circle in radian $\theta=2\pi$. We conclude that for a small angle $d\theta$, $d \ell = Rd \theta$. Following the same logic, we know that for a disk, the full area is $S=\pi r^2$ and so an infinitesimal area is given by
 
-$$ dS = \frac{r^2 \text{d}\theta}{2}$$
+$$ \text{d}S = \frac{r^2 \text{d}\theta}{2}$$
 
-$$ \frac{dS}{dt} = \frac{r^2}{2} \dot{\theta} = \frac{\|\vec{L}\|}{2m}$$
+$$ \frac{\text{d}S}{\text{d}t} = \frac{r^2}{2} \dot{\theta} = \frac{\|\vec{L}\|}{2m}$$
 
-$$ \Delta S = \int \frac{\|\vec{L}\|}{2m} dt = \frac{\|\vec{L}\|}{2m} \Delta t $$
+$$ \Delta S = \int \frac{\|\vec{L}\|}{2m} t = \frac{\|\vec{L}\|}{2m} \Delta t $$
 
 For an ellipse, integrating over a full period gives:
 
@@ -199,7 +204,7 @@ Which is the third Kepler law.
 
 Here comes the most technical aspect of our discussion. Hang on!
 
-In the most general case, thes second Newton law is:
+In the most general case, the second Newton law is:
 
 $$ \vec{F_G} = m \vec{a} $$
 
@@ -271,9 +276,9 @@ $$\boxed{r = \frac{p}{1+e\cos(\theta-\theta_0)}}$$
 
 # Third law for ellipses
 
-$$S= \int dS = \pi ab$$
+$$S= \int \text{d}S = \pi ab$$
 
-$$S = \int_T \frac{\|\vec{L}\|}{2m} dt = \frac{\|\vec{L}\|}{2m}T $$
+$$S = \int_T \frac{\|\vec{L}\|}{2m} \text{d}t = \frac{\|\vec{L}\|}{2m}T $$
 
 $$ T^2 = \frac{4\pi^2 a^2b^2 m^2}{L^2}$$
 
