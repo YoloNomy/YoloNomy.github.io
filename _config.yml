@@ -24,7 +24,7 @@ navbar-links:
   Resources:
     - Codes: "codes/codes"
     - Lecture notes: "lecture_notes/notes"
-    - Maths stuff : "maths_stuff/maths_stuff"
+    - Maths : "maths/maths"
 
 collections:
   codes:
