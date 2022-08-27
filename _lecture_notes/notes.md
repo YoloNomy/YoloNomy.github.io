@@ -3,16 +3,16 @@ layout: page
 title: Lecture Notes
 ---
 
-You will find here some lecture notes we gathered on our favorite subjects:
+You will find here some lecture notes we gathered on our favorite subjects: 
 
-- Cosmology
+- Cosmology (incoming)
 
-- Quantum physics
+- Quantum physics (incoming)
 
-- Newtonian mechanics
+- Newtonian mechanics (incoming)
 
-- Statistical mechanics and thermodynamics
+- Statistical mechanics and thermodynamics (incoming)
 
-- Analytical mechanics
+- Analytical mechanics (incoming)
 
-- Differential geometry and physics
+- Differential geometry and physics (incoming)

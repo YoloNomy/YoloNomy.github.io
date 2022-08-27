@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mathematical stuff
-subtitle: Here you find mathematical stuff
+title: Maths
+subtitle: Pure maths over there!
 ---
 
 
