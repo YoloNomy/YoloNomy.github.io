@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Codes
-subtitle: Here you find python stuff and physical explanation
+subtitle: Here are some small lectures on selected topics with assiated illustrative codes you can play with.
 ---
 
 You will find here some fun python applications to physics with some detailled explanations.
