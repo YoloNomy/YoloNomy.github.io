@@ -119,17 +119,17 @@ $$
 
 Note that as we our light will never reach something behind the event horizon, we will never be able to see what is emitted today behind it. In that sense it is similmar to the other two we presented.
 
-## The $\Lambda$-CMD case 
+## The $\Lambda$-CMD case
 
 In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to do so, you need to find invoque the fundamental equation of cosmology, called the [Friedmann-Lemaître equation]({% link _codes/cosmo/friedmann.md %}), that we will consider in the following form:
 
 $$ \frac{H^2}{H_0^2} = \sum_i \Omega_i a^{-3(1+w_i)}$$
 
 Where $w_i$ are the coefficients of the equations of states.
-Considering the $\Lambda$CDM cosmology using Planck parameters, the evolution of the horizons are given by: 
-%LV: comment faire un lien direct avec le code ?
+Considering the $\Lambda$CDM cosmology using Planck parameters, the evolution of the horizons are given by:    
 
-   ![my image](../images/LCDMhorizons.png "my image") 
+![my image](../images/LCDMhorizons.png "my image") 
+
 
 We can give a value for today horizons : in present time the particle is at ~ 48 Glyrs, the event horizon is at ~ 17 Glyrs and the Hubble horizon is at ~ 14 Glyrs.
 
@@ -166,4 +166,6 @@ $$
 
 That is the definition of the Hubble radius!
 
-Something that can be strange is that our future light-cone seems to cross the envent horizon : How can it be possible we can interact with what is beyond? What we have to remember is that if we emit a photon now it will never reach someone that is at the event horizon now, but the proper distance of the object at the event horizon will evolve during the photon travel and the photon will never reach it!
+Something that can be strange is that our future light-cone seems to cross the event horizon : How can it be possible to interact with what is beyond? 
+
+What we have to remember is that if we emit a photon at a time t it will never reach object that lay at the event horizon at the same time t because the proper distance of these objects will evolve during the photon travel du to the universe expansion !
