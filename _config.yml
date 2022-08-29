@@ -31,7 +31,7 @@ collections:
     output: true
   lecture_notes:
     output: true
-  maths_stuff:
+  maths:
     output: true
   
 ################
