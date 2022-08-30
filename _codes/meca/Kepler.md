@@ -5,7 +5,7 @@ parent: codes
 nav_order: 2
 ---
 
-** PAGE STILL UNDER CONSTRUCTION **
+**PAGE STILL UNDER CONSTRUCTION**
 
 # Kepler laws
 
@@ -15,11 +15,11 @@ Our goal here will be to understand and demonstrate the three Kepler laws from N
 
 Kepler laws are three statements allowing to predict the motion of celestial bodies in the case of a two body system with one much larger than the other. A typical case is then given by the motion of a planet around a star. They can be stated as follow:
 
-- Law 1: trajectories of planets are conics with the star at one of the focci.
+- Law 1: Trajectories of planets are conics with the star at one of the focci.
 - Law 2: A line connecting the planet and its star sweeps out equal areas during equal intervals of time. 
-- Law 3: If the trajectory is an ellipse, the ratio of the period $$T$$ squared and the semi axis $$a$$ cubed is a constant, that is $$T^2/a^3 = \text{cst}$$.
+- Law 3: If the trajectory is an ellipse, the ratio of the period $$T$$ squared and the semi axis $$a$$ cubed is a constant, that is $$T^2/a^3 = \text{cst}$$. Where the period $$T$$ is the time taken by the planet to realize a full orbit around the star and $$a$$ is the maximal distance on the ellipse between the star and the planet.
 
-As we will see, these three laws were first deduced from observations by the german astronomer Joannes Kepler, who understood them as fundamental laws of nature. They were then demonstrated from deeper and more abstract principles by Isaac Newton.
+As we will see, these three laws were first deduced from observations by the german astronomer Joannes Kepler, who understood them as fundamental laws of nature. They were then rederived from deeper and more abstract principles by Isaac Newton.
 
 ## History : from laws to theorem
 
