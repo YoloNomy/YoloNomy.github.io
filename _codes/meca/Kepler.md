@@ -42,7 +42,7 @@ So far we were only using *cartesian coordinates*, that is, perpendicular and fi
 
    ![my image](../images/polar_pyth.png "my image") 
 
-Using Pythagorian theorem
+Using Pythagorian theorem in the red triangle
 
 $$ r = \sqrt{x^2 + y^2} $$
 
@@ -52,7 +52,7 @@ And from basic trigonometry
 
 $$ \theta = \arctan(y/x) $$
 
-Also from basic trigonometry (need figures):
+Also from basic trigonometry in the red triangle
 
 $$x = r \cos\theta $$
 
