@@ -58,7 +58,9 @@ $$x = r \cos\theta $$
 
 $$y = r \sin\theta $$
 
-The unit vectors:
+   ![my image](../images/polar_unitvec.png "my image") 
+
+The unit vectors
 
 $$ \vec{u_r} = \cos\theta \vec{u_x} + \sin\theta \vec{u_y} $$ 
 
