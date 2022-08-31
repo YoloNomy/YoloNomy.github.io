@@ -62,41 +62,49 @@ $$y = r \sin\theta $$
 
    ![my image](../images/polar_unitvec.png "my image") 
 
-The unit vectors
+Similar geometrical considerations allow us to express the new unit vectors in term of the cartesian ones as
 
 $$ \vec{u_r} = \cos\theta \vec{u_x} + \sin\theta \vec{u_y} $$ 
 
 $$ \vec{u_\theta} = -\sin\theta \vec{u_x} + \cos\theta \vec{u_y} $$ 
 
 While cartesian coordinates are fixed $ \dot{u_x}=0$ and $\dot{u_y}=0$ (We use the notation $ \dot{x} = \frac{\text{d}x}{\text{d}t}$.
-). Polar coordinate vectors change with time.
+). Polar coordinate vectors change with time alongs the trajectory of the studies object.
+We can immediatly derive
 
 $$ \frac{ \text{d}\vec{u_r}}{\text{d} \theta } = -\sin\theta \vec{u_x} + \cos\theta \vec{u_y} = \vec{u_\theta}  $$ 
 
 $$ \frac{ \text{d}\vec{u_\theta}}{\text{d} \theta } = -\cos\theta \vec{u_x} - \sin\theta \vec{u_y} = - \vec{u_r} $$ 
 
+Such that
+
 $$ \dot{u_r} = \frac{\text{d} \theta}{\text{d} t}\frac{ \text{d}\vec{u_r}}{\text{d} \theta } = \dot{\theta} \vec{u_\theta}  $$ 
 
 $$ \dot{u_\theta} = \frac{\text{d} \theta}{\text{d} t} \frac{ \text{d}\vec{u_\theta}}{\text{d} \theta } = -\dot{\theta} \vec{u_r}  $$ 
 
-The position:
+Now that we know how to go back and forth between cartesian and polar coordinates, we can look at the relevant quantity for kinematics, that is position, velocity and acceleration.
+The position vector is simply given by
 
 $$ \vec{r} = r \vec{u_r} $$
 
-The velocity:
+The velocity vector is then given by its derivative
 
 $$ \vec{v} = \dot{\vec{r}} = \dot{r}\vec{u_r} + r \dot{\vec{u_r}} =  \dot{r}\vec{u_r} + r \dot{\theta}\vec{u_\theta} $$
 
-The acceleration:
+And we need another derivation to get the acceleration vector
 
 $$ \vec{a} = \dot{\vec{v}} = \dot{r}\vec{u_r} + r \dot{\vec{u_r}} =  \ddot{r}\vec{u_r} + \dot{r}\dot{\theta}\vec{u_\theta} + \dot{r}\dot{\theta}\vec{u_\theta} - r\ddot{\theta}\vec{u_\theta} + r \dot{\theta}^2\vec{u_r} \\
 = (\ddot{r} - r \dot{\theta}^2 )\vec{u_r} + ( r\ddot{\theta}\vec{u_\theta} - 2\dot{r}\dot{\theta})\vec{u_\theta}\\
 = a_r \vec{u_r} + a_\theta\vec{u_\theta}
 $$
 
+We are now equipped with mathematical expression to fully describe the point like motion of any object in polar coordinate as a planet orbitting its star.
+
 # Proof of the second law
 
 ## The wonderfull cross product 
+
+Before moving to the Kepler laws, we still need a bit of patience and introduce a new very powerfull tool. This tool is a new way to multiply two vectors to get a third one that can encompass all the informations about the rotation of an object. It is hence easy to understand why this tool will be so usefull when describing planetary orbits.
 
 Consider two vectors $\vec{u}$ and $\vec{v}$. How could you combine them? You might already be familiar with one way to combine vectors together? Indeed, it is possible to build a number out two vectors using the scalar or dot product $\vec{u}\cdot\vec{v}$. The resulting number tells you how much the two vectors are aligned and allows to calculate lengths. There exist however, another way to multiply two vectors. 
 
