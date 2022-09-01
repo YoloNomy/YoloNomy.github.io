@@ -212,7 +212,7 @@ Over a whole period $T$, the distance is $d= 2\pi R$. Since the volocity is cons
 
 $$v = \frac{d}{T}= \frac{2\pi R}{T}$$
 
-Using the two expressions we get
+Using the two expressions above, we get
 
 $$ \frac{4\pi^2 R^2}{T^2} = \frac{GM}{R} $$
 
@@ -317,6 +317,10 @@ $$ \frac{T^2}{a^3} = \frac{4\pi^2}{GM} $$
 
 Keep the same form even when dropping the assumption that $$M\gg m$$, introducing the *reduced mass* $$\mu$$.
 
+$$ \frac{T^2}{a^3} = \frac{4\pi^2}{G(M+m)} $$
+
 Can only be applied to a two body system.
 
 See three bodies problem.
+
+Assumes Newtonian gravitation, general relativity is required for strong fields.
