@@ -15,9 +15,9 @@ Our goal here will be to understand and demonstrate the three Kepler laws from N
 
 Kepler laws are three statements allowing to predict the motion of celestial bodies in the case of a two body system with one much larger than the other. A typical case is then given by the motion of a planet around a star. They can be stated as follow:
 
-- Law 1: Trajectories of planets are conics with the star at one of the focci.
+- Law 1: Trajectories of planets are conics (circles, ellipses, parabola or hyperbola) with the star at one of the focci.
 - Law 2: A line connecting the planet and its star sweeps out equal areas during equal intervals of time. 
-- Law 3: If the trajectory is an ellipse, the ratio of the period $$T$$ squared and the semi axis $$a$$ cubed is a constant, that is $$T^2/a^3 = \text{cst}$$. Where the period $$T$$ is the time taken by the planet to realize a full orbit around the star and $$a$$ is the maximal distance on the ellipse between the star and the planet.
+- Law 3: If the trajectory is an ellipse, the ratio of the period $$T$$ squared and the semi axis $$a$$ cubed is a constant, that is $$T^2/a^3 = \text{cst} = 4\pi^2/(GM) $$. Where the period $$T$$ is the time taken by the planet to realize a full orbit around the star of mass $$M$$ ($$G$$ is the gravitational constant) and $$a$$ is the maximal distance on the ellipse between the star and the planet.
 
 As we will see, these three laws were first deduced from observations by the german astronomer Joannes Kepler, who understood them as fundamental laws of nature. They were then rederived from deeper and more abstract principles by Isaac Newton.
 
@@ -29,11 +29,11 @@ At the time they were indeed understood as *laws* that is fundamental rules of n
 
 # Why are they so important ?
 
-## Examples
+Despite several technical complexities, the period $$T$$ (time to realize a full orbit) and semi-axis $$a$$ (star-planet maximal distance) of an orbit can be directly measured. Using the third law, $$ a^3/T^2 \propto M$$, one can hence recover the mass $$M$$ of the star which would be otherwise very difficult to measure.
 
-The mass of Sgr A* and the discovery of black holes.
-
-Exoplanets
+- Knowing the moon-earth distance and it's period ($$\sim$$ 1 month), it is hence possible to calculate the mass of our planet!
+- Kepler laws can be used to infer informations about orbits of exoplanets, that is planets orbiting around stars other than the sun.
+- Observing the orbit of stars around our galaxy center allowed us to spot an extremely massive object. This lead to the only possible conclusion that a supermassive blackhole was inhabiting the center of our Milky Way.
 
 # Polar coordinates
 
@@ -135,6 +135,8 @@ $$ \vec{u_r} \wedge \vec{u_\theta} = \vec{u_z}$$
 $$  \vec{u_r} \wedge  \vec{u_r} $$
 
 ## Newton and gravity
+
+We will take here for granted the universal law of gravitation between two bodies of masses $$M$$ and $m$ proposed by Newton in his principas. Let $$M\\gg m$$ be the mass of the star
 
 $$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r} $$
 
@@ -304,10 +306,14 @@ $$ p = \frac{\|\vec{L}\|^2}{GMm^2} $$
 
 $$ \|\vec{L}\|^2 = \frac{GMm^2b^2}{a} $$
 
-And so, we immediatly find back the third Kepler law:
+And so, we immediatly find back the third Kepler law
 
 $$ \frac{T^2}{a^3} = \frac{4\pi^2}{GM} $$
 
 # Limits
+
+Keep the same form even when dropping the assumption that $$M\gg m$$, introducing the *reduced mass* $$\mu$$.
+
+Can only be applied to a two body system.
 
 See three bodies problem.
