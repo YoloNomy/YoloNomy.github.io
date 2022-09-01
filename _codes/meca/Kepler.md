@@ -82,7 +82,7 @@ $$ \dot{u_r} = \frac{\text{d} \theta}{\text{d} t}\frac{ \text{d}\vec{u_r}}{\text
 
 $$ \dot{u_\theta} = \frac{\text{d} \theta}{\text{d} t} \frac{ \text{d}\vec{u_\theta}}{\text{d} \theta } = -\dot{\theta} \vec{u_r}  $$ 
 
-Now that we know how to go back and forth between cartesian and polar coordinates, we can look at the relevant quantity for kinematics, that is position, velocity and acceleration.
+Now that we know how to go back and forth between cartesian and polar coordinates, we can look at the relevant quantity for kinematics, that are position, velocity and acceleration.
 The position vector is simply given by
 
 $$ \vec{r} = r \vec{u_r} $$
@@ -115,17 +115,17 @@ Contrary to the dot product, this product quantifies how perpendicular the two o
 - This third vector is always orthogonal to the plane defined by $\vec{u}$ and $\vec{v}$ and thus always tells you in which plane the two original vectors lies.
 
 - You can find it's direction using the right hand rule. 
-From this, you can see that it is *antisymetric* (or non commutative):
+From this, you can see that it is *antisymetric* (or non commutative)
 
 $$ \vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}$$ 
 
-- It's length gives the area of the parallelogram that can be built out of $\vec{u}$ and $\vec{v}$: 
+- It's length gives the area of the parallelogram that can be built out of $\vec{u}$ and $\vec{v}$ 
 
 $$ \|\vec{w}\|=\|\vec{u}\|\|\vec{v}\|\sin(\langle \vec{u},\vec{v}\rangle)$$
 
 Which is indeed the area of a rectangle $\|\vec{w}\|=S_{\rm rect} = \|\vec{u}\|\|\vec{v}\| $ with $\langle \vec{u},\vec{v}\rangle=90^{\circ}$.
 
-A very useful property coming from this, is that any numbers multiplying the vectors can be put in front of the product:
+A very useful property coming from this, is that any numbers multiplying the vectors can be put in front of the product
 
 $$ (a\vec{u}) \wedge (b\vec{v}) = ab \, (\vec{u} \wedge \vec{v})$$ 
 
@@ -144,7 +144,7 @@ $$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r} $$
 
 $$ \vec{L} = \vec{r} \wedge \vec{p} $$
 
-This quantity can fully describe a rotation since it gives you at any-time:
+This quantity can fully describe a rotation since it gives you at any-time
 - A single plane of rotation
 - A single direction of rotation
 - A "strength of rotation", greater if the speed is orthogonal to the radius $\|\vec{L}\|= \|\vec{r}\|\|\vec{p}\|\sin(\langle \vec{r},\vec{p}\rangle)$
@@ -154,7 +154,7 @@ $$ \frac{\text{d}\vec{L}}{\text{d} t} = \frac{\text{d}\vec{r}}{\text{d} t} \wedg
 
 At every time, $\vec{L}$ defines a single plane of rotation. Since it is conserved, the whole motion remains in a given plane.
 
-We can calculate $\vec{L}$ in terms of the coordinates:
+We can calculate $\vec{L}$ in terms of the coordinates
 
 $$  \vec{L} = \vec{r} \wedge \vec{p} = r m \vec{u_r}\wedge  \vec{v} = mr^2 \dot{\theta}  \vec{u_r}\wedge  \vec{u_\theta} $$ 
 
@@ -172,17 +172,19 @@ $$ \frac{\text{d}S}{\text{d}t} = \frac{r^2}{2} \dot{\theta} = \frac{\|\vec{L}\|}
 
 $$ \Delta S = \int \frac{\|\vec{L}\|}{2m} t = \frac{\|\vec{L}\|}{2m} \Delta t $$
 
-For an ellipse, integrating over a full period gives:
+For an ellipse, integrating over a full period gives
 
 $$ S_{\rm tot} = \pi ab = \frac{\|\vec{L}\|}{2m}  T$$
 
-Giving the relation:
+Giving the relation
 
 $$ \frac{\|\vec{L}\|}{2m} = \frac{\pi ab}{T} $$
 
-So that the second law is simply given by:
+So that the second law is simply given by
 
 $$ \boxed{\Delta S = \frac{\pi ab}{T} \Delta t} $$
+
+On a given orbit, (think for example at the earth motion) $a,b$ and $T$ are constants. Hence in a given time $$\Delta t$$ (say 1 day), the planet covers the same area $$\Delta S$$. One then understands that, in order to do so, the planet needs to go way faster when close to its star than when far away.
 
 # Presenting the first law
 
@@ -190,7 +192,7 @@ $$ \boxed{\Delta S = \frac{\pi ab}{T} \Delta t} $$
 
 Conics are 1D slices of a 2D cone. 
 
-Conic polar equation:
+Conic polar equation
 
 $$r = \frac{p}{1+e\cos(\theta-\theta_0)}$$ 
 
@@ -210,7 +212,7 @@ Over a whole period $T$, the distance is $d= 2\pi R$. Since the volocity is cons
 
 $$v = \frac{d}{T}= \frac{2\pi R}{T}$$
 
-Using the two expressions we get:
+Using the two expressions we get
 
 $$ \frac{4\pi^2 R^2}{T^2} = \frac{GM}{R} $$
 
@@ -222,11 +224,11 @@ Which is the third Kepler law.
 
 Here comes the most technical aspect of our discussion. Hang on!
 
-In the most general case, the second Newton law is:
+In the most general case, the second Newton law is
 
 $$ \vec{F_G} = m \vec{a} $$
 
-That we can project on the two polar basis vectors:
+That we can project on the two polar basis vectors
 
 $$ -\frac{GMm}{r^2}\vec{u_r} = a_r\vec{u_r} $$
 
@@ -238,41 +240,42 @@ $$ \ddot{r} - r\dot{\theta}^2 = -\frac{GM}{r^2}$$
 
 $$ r\ddot{\theta} + 2\dot{r}\dot{\theta}=0$$
 
-The second equation is just the conservation of angular momentum:
+The second equation is just the conservation of angular momentum
 
 $$ \dot{\|\vec{L}\|} = \frac{\text{d}(r^2\dot{\theta})}{\text{d}t} = 0 $$
 
 While the first one really is the equation of motion.
 
-To see more clearly what is happening, we will rewrite this equation in term of $u=1/r$. As we will show this will give us an harmonic oscillator equation that we can solve easily:
+To see more clearly what is happening, we will rewrite this equation in term of $u=1/r$. As we will show this will give us an harmonic oscillator equation that we can solve easily
 
 $$ u'' + u - \frac{1}{p} = 0$$
 
 
-To see this, we first introduce the notation $x'= \frac{\text{d}x}{\text{d}\theta}$. Let's also not forget the cross-derivative relation: $\dot{x}= \frac{\text{d}x}{\text{d}\theta}\frac{\text{d}\theta}{\text{d}t} = x'\dot{\theta}$
+To see this, we first introduce the notation $x'= \frac{\text{d}x}{\text{d}\theta}$. Let's also not forget the cross-derivative relation
+$\dot{x}= \frac{\text{d}x}{\text{d}\theta}\frac{\text{d}\theta}{\text{d}t} = x'\dot{\theta}$
 
-We then have:
+We then have
 
 $$  \dot{u}= \dot{1/r} = -\frac{1}{r^2}\dot{r}
  \Rightarrow \dot{r} = -r^2 \dot{u} = -r^2\dot{\theta}u'$$
 
-That is:
+That is
 
 $$ \boxed{\dot{r} =-\frac{\|\vec{L}\|}{m}u'}$$
 
-Similarly:
+Similarly
 
 $$ \ddot{r} = \frac{\text{d}}{\text{d}t}\left(-\frac{\|\vec{L}\|}{m}u'\right)= -\frac{\|\vec{L}\|}{m}\dot{\theta}u'' = -\frac{\|\vec{L}\|^2}{m^2r^2}u''$$
 
-So that:
+So that
 
 $$ \boxed{\ddot{r} = -\frac{\|\vec{L}\|^2}{m^2}u^2u'}$$
 
-Inserting these expressions in the equation of motion, we have:
+Inserting these expressions in the equation of motion, we have
 
 $$ -\frac{\|\vec{L}\|^2}{m^2}u^2u'-\frac{\|\vec{L}\|^2}{m^2}u^3 + GMu^2 =0$$
 
-That we can finally rerwrite in the suggestive form:
+That we can finally rerwrite in the suggestive form
 
 $$ \boxed{u'' + u - \frac{1}{p} = 0}$$
 
@@ -288,7 +291,7 @@ or
 
 $$ u = \frac{1}{p} + e\cos(\theta - \theta_0) $$
 
-Going back to r, we get:
+Going back to r, we get
 
 $$\boxed{r = \frac{p}{1+e\cos(\theta-\theta_0)}}$$ 
 
