@@ -15,7 +15,7 @@ You will find here some fun python applications to physics with some detailled e
 
 # Chaos
 
-- Game of life
+- [Game of life](chaos/game_of_life.md)
 - [Chaotic attractors]({% link _codes/chaos/Lorenz.pdf %})
 - [3 body system]({% link _codes/chaos/3corps.pdf %})
 - Chaotic pendulum
