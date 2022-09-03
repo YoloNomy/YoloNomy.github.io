@@ -191,7 +191,7 @@ On a given orbit, (think for example at the earth motion) $a,b$ and $T$ are cons
 
 # Presenting the first law
 
-## conics
+## Conics
 
 Conics are 1D slices of a 2D cone. 
 
