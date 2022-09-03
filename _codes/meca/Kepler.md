@@ -129,14 +129,17 @@ A very useful property coming from this, is that any numbers multiplying the vec
 
 $$ (a\vec{u}) \wedge (b\vec{v}) = ab \, (\vec{u} \wedge \vec{v})$$ 
 
-This is especially usefull when expressing vectors in term of unit vectors since
+This is especially usefull when expressing vectors in term of unit vectors. Using the right-hand rule and the above definitions we can get
 
 $$ \vec{u_r} \wedge \vec{u_\theta} = \vec{u_z}$$
-$$  \vec{u_r} \wedge  \vec{u_r} $$
+
+$$ \vec{u_z} \wedge \vec{u_\theta} = -\vec{u_r}$$
+
+$$ \vec{u_z} \wedge \vec{u_r} = -\vec{u_\theta}$$
 
 ## Newton and gravity
 
-We will take here for granted the universal law of gravitation between two bodies of masses $$M$$ and $m$ proposed by Newton in his principas. Let $$M\\gg m$$ be the mass of the star
+We will take here for granted the universal law of gravitation between two bodies of masses $$M$$ and $m$ proposed by Newton in his principias. Let $$M\gg m$$ be the mass of the star
 
 $$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r} $$
 
