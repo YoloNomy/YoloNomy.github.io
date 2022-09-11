@@ -189,6 +189,8 @@ $$ \boxed{\Delta S = \frac{\pi ab}{T} \Delta t} $$
 
 On a given orbit, (think for example at the earth motion) $a,b$ and $T$ are constants. Hence in a given time $$\Delta t$$ (say 1 day), the planet covers the same area $$\Delta S$$. One then understands that, in order to do so, the planet needs to go way faster when close to its star than when far away.
 
+![my image](../images/kepler2.gif  "my image")
+
 # Presenting the first law
 
 ## Conics
