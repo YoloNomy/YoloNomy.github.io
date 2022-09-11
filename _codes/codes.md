@@ -11,13 +11,13 @@ You will find here some fun python applications to physics with some detailled e
 - Newton laws and the reign of parabolas
 - The pendulum and harmonic oscillators
 - A falling ant
-- [Kepler laws]({% link _codes/meca/Kepler.md %})
+- [Kepler laws](meca/Kepler.md)
 
 # Chaos
 
 - [Game of life](chaos/game_of_life.md)
-- [Chaotic attractors]({% link _codes/chaos/Lorenz.pdf %})
-- [3 body system]({% link _codes/chaos/3corps.pdf %})
+- [Chaotic attractors](chaos/Lorenz.pdf)
+- [3 body system](chaos/3corps.pdf)
 - Chaotic pendulum
 - Saturn's ring
 - Sinai's Billiards
@@ -38,11 +38,11 @@ You will find here some fun python applications to physics with some detailled e
 
 # General relativity
 
-- [Black holes]({% link _codes/cosmo/black-holes.md %})
+- [Black holes](cosmo/black-holes.md)
 
 # Cosmology
 
-- [Universe evolution and Friedmann equations](cosmo/friedmann.md})
+- [Universe evolution and Friedmann equations](cosmo/friedmann.md)
 - [Cosmological horizons](cosmo/horizons.md)
 
 
