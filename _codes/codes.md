@@ -4,7 +4,7 @@ title: Codes
 subtitle: Here are some small lectures on selected topics with assiated illustrative codes you can play with.
 ---
 
-You will find here some fun python applications to physics with some detailled explanations.
+You will find here some fun python applications to physics with some detailled explanations. All codes are store in [this repository](https://github.com/YoloNomy)
 
 # Newtonian mechanics
 
