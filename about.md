@@ -10,3 +10,7 @@ Find more about us and our contact infos here:
 
 - [Bastien Carreres](https://bastiencarreres.github.io/)
 - [Léo Vacher](https://leovacher.github.io/)
+
+The 'math' section is lead by our math specialist: 
+
+- Robin Botrel
