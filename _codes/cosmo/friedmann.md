@@ -90,7 +90,7 @@ Inserting FLRW for $g$ and perfect fluids for $T$, one gets the *Friedmann-Lema√
 
 $$ \frac{H^2}{H_0^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2} -\frac{\Lambda}{8 \pi G} $$
 
-and the Raychaudaury or acceleration equation
+and the Raychaudaury or acceleration equation:
 
 $$
 \frac{\ddot{a}}{a} = H^2 + \dot{H} = \frac{4 \pi G}{3}(\rho+3p).
