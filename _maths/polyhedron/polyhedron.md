@@ -243,7 +243,7 @@ On peut voir ci dessous la preuve de Cauchy (un peu simplifiée).
 <a name="cauchy"></a>
 
 <video width="100%" controls>
-    <source src="media/cauchy.mp4" type="video/mp4">
+    <source src="../media/cauchy.mp4" type="video/mp4">
 </video>
 
 > Vidéo 4 : Preuve de Cauchy du théorème d'Euler sur les polyèdres
@@ -257,7 +257,7 @@ Toutefois, cette preuve peut facilement être amendée en explicitant une assomp
 Selon Lakatos cette "analyse critique de la preuve" constitue un passage essentiel du développement de nouvelles mathématiques. Plus encore, comme la vidéo de la [preuve](#cauchy) le suggère, les idées mises en oeuvre par Cauchy dans sa preuve s'avèrent très fécondes. En effet, elles conduisent à préciser des définitions (polyèdre), elles contiennent en germes de nouveaux concepts (graphe planaire) et ouvrent de nouveaux champs de recherche (théorie des graphes). 
 
 <video width="100%" controls>
-    <source src="media/cauchy2.mp4" type="video/mp4">
+    <source src="../media/cauchy2.mp4" type="video/mp4">
 </video>
 
 > Vidéo 5 : Exemple de polyèdre non convexe qui fonctionne dans la preuve de Cauchy
