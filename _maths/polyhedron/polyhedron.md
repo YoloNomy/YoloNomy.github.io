@@ -271,9 +271,9 @@ En 20 ans, de 1794 à 1814, la recherche sur les polyèdres fut principalement f
 
 N'hésitez pas à prendre le temps d'observer comment Von Staudt, avec ce théorème, exclu tous les contre-exemples vus précédement.
 
-Cependant, les recherches ont rapidement dépassé le cadre de la question initiale d'Euler. On peut retrouver maintes fois l'apparition de l'équation d'Euler ou caractéristique d'Euler dans le développement de la topologie[^pont], on pourra cité son utilisation dans l'étude et la classification des surfaces (au moyen de la triangularisation) et aboutissant à l'homologie avec le travail de Poincaré. C'est d'ailleurs Poincaré qui donnera une proposition d'axiomatisation de la notion de polyèdre[^lakatos][^poincare], faisant reculer les difficultés de s'accorder sur une définition de polyèdre. 
+Cependant, les recherches ont rapidement dépassé le cadre de la question initiale d'Euler. On peut retrouver maintes fois l'apparition de l'équation d'Euler ou caractéristique d'Euler dans le développement de la topologie[^pont], on pourra cité son utilisation dans l'étude et la classification des surfaces (au moyen de la triangularisation) et aboutissant à l'homologie avec le travail de Poincaré. C'est d'ailleurs Poincaré qui donnera une proposition d'axiomatisation de la notion de polyèdre[^lakatos] [^poincare], faisant reculer les difficultés de s'accorder sur une définition de polyèdre. 
 
-Finalement, ce morceau de fresque historique se développant autour de la conjecture d'Euler-Descartes rend palpable les tatonements de la science mathématique, à coup d'erreurs, de théorèmes erronées, d'exemples extravagants la science avance.
+Finalement, ce morceau de fresque historique se développant autour de la conjecture d'Euler-Descartes rend palpable les tatonements de la science mathématique, à coup d'erreurs, de théorèmes erronés, d'exemples extravagants, la science avance.
 
 ## References
 
