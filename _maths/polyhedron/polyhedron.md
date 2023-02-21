@@ -184,7 +184,7 @@ Nous allons nous interesser à la seconde partie de cet article, issue de la ré
 
 Trois types d'exceptions sont introduits, qui, il nous semble, sont plutôt au nombre de quatre. 
 
-1. La première exception est la face annulaire ou couronne polygonale, c'est une face qui est comprise entre deux polygones. L'ajout d'une arête (voir [fig.5](#fig5)) ne modifie pas le nombre de face ni le nombre de sommet et vient donc changer la valeur de $S-A+F$. Si n est le nombre de face annulaire du polyèdre, on a $S-A+F=2+n$.
+1 . La première exception est la face annulaire ou couronne polygonale, c'est une face qui est comprise entre deux polygones. L'ajout d'une arête (voir [fig.5](#fig5)) ne modifie pas le nombre de face ni le nombre de sommet et vient donc changer la valeur de $S-A+F$. Si n est le nombre de face annulaire du polyèdre, on a $S-A+F=2+n$.
 
 <a name="fig5"></a>
 
@@ -192,7 +192,7 @@ Trois types d'exceptions sont introduits, qui, il nous semble, sont plutôt au n
 
 > Figure 5 : Exemple de face annulaire et non annulaire
 
-2. Ensuite L'Huilier se propose de pouvoir diminuer le résultat de $S-A+F$ en joignant deux sommets pour n'en former qu'un, sans modifier le nombre de faces ou d'arêtes. Gergonne ne reviendra pas sur cette partie de l'article. [fig.6](#fig6)
+2 . Ensuite L'Huilier se propose de pouvoir diminuer le résultat de $S-A+F$ en joignant deux sommets pour n'en former qu'un, sans modifier le nombre de faces ou d'arêtes. Gergonne ne reviendra pas sur cette partie de l'article. [fig.6](#fig6)
 
 <a name="fig6"></a>
 
@@ -200,7 +200,7 @@ Trois types d'exceptions sont introduits, qui, il nous semble, sont plutôt au n
 
 > Figure 6 : Exemple de solide pour lequel $S-A+F=1$
 
-3. La troisième exception survient quand un polyèdre est traversé de part en part. Pour chaque trou dans le polyèdre la somme $S-A+F$ est alors diminuée de deux unités ([fig.7](#fig7)). Soit n le nombre de trou distinct, on a ainsi $S-A+F=2(1-n)$. Cette équation est très intéressante, et peut faire penser à de nombreux égards au concept de genre en topologie bien que, ici, il soit encore défini de manière primaire et ne permette pas de classifier des polyèdres comme dans la [figure 8](#fig8).
+3 . La troisième exception survient quand un polyèdre est traversé de part en part. Pour chaque trou dans le polyèdre la somme $S-A+F$ est alors diminuée de deux unités ([fig.7](#fig7)). Soit n le nombre de trou distinct, on a ainsi $S-A+F=2(1-n)$. Cette équation est très intéressante, et peut faire penser à de nombreux égards au concept de genre en topologie bien que, ici, il soit encore défini de manière primaire et ne permette pas de classifier des polyèdres comme dans la [figure 8](#fig8).
 
 <a name="fig7"></a>
 
@@ -214,7 +214,7 @@ Trois types d'exceptions sont introduits, qui, il nous semble, sont plutôt au n
 
 > Figure 8 : Exemple de polyèdre non décrit par le modèle de L'Huilier
 
-4. La dernière exception concerne les polyèdres contenant une cavité. Les résultats des équations $S-A+F=2$ pour les deux surfaces du polyèdre s'additionnent. On a alors $S-A+F=4$. Soit n le nombre de cavité d'un polyèdre, on a alors $S-A+F=2(n+1)$. ([fig.9](#fig9))
+4 . La dernière exception concerne les polyèdres contenant une cavité. Les résultats des équations $S-A+F=2$ pour les deux surfaces du polyèdre s'additionnent. On a alors $S-A+F=4$. Soit n le nombre de cavité d'un polyèdre, on a alors $S-A+F=2(n+1)$. ([fig.9](#fig9))
 
 <a name="fig9"></a>
 
@@ -254,7 +254,7 @@ Selon Lakatos cette "analyse critique de la preuve" constitue un passage essenti
     <source src="../media/cauchy2.mp4" type="video/mp4">
 </video>
 
-> Vidéo 5 : Exemple de polyèdre non convexe qui fonctionne dans la preuve de Cauchy
+> Vidéo 5 : Exemple de polyèdre non convexe qui fonctionne dans la preuve de Cauchy (déformable en graphe planaire)
 
 
 ## Conclusion
@@ -275,7 +275,7 @@ L. Euler,
 
 > 1758 'Elementa Doctrinae Solidorum', Novi Commentarii Academiae Scientiiuuni Petropolitanae 4 (1752/53) ppl09-140 427
 
-> (1758b). Elementa doctrinae solidorum. Novi Commentarii Academiae Sci- entiarum Petropolitanae 4, 72–93. Reprinted in Opera Omnia series 1, vol. 26, 71–93.
+> (1758b). Elementa doctrinae solidorum. Novi Commentarii Academiae Scientiarum Petropolitanae 4, 72–93. Reprinted in Opera Omnia series 1, vol. 26, 71–93.
 
 > 1758 'Demonstratio Nonnullarum Insignium Proprietatum Quibus Solida Hedris Planis Inclusa Sunt Praedita', Novi Commentarii Academiae Scientiarum Petropolitanae 4 (1752/53) ppl40-160
 
@@ -287,15 +287,15 @@ L. Euler,
 
 A. M. Legendre,
 
-> 1794 Elements de Geometrie, def p.163, proof p.226, note p.307, Paris ((Euler))
+> 1794 Elements de Geometrie, définition p.163, preuve p.226, notes p.307, Paris
 
 L. Poinsot,
 
-> 1810 'Memoire sur les Polygones et les Polyedres', J. Ecoie Polytechnique 10 (1810) ppl6-48 ((Euler,Legendre))
+> 1810 'Memoire sur les Polygones et les Polyedres', J. Ecole Polytechnique 10 (1810) ppl6-48
 
 S. A. J. L'Huilier,
 
-> 1811 'Demonstration Immediate d'un Theoreme Fondamental d'Euler sur les Polyhedres, et Exceptions dont ce Theoreme est Susceptible', Memoires de VAcademie Imperiale de Saint Petersbourg 4 (1811) pp271-301 ((Euler,Legendre))
+> 1811 'Demonstration Immediate d'un Theoreme Fondamental d'Euler sur les Polyhedres, et Exceptions dont ce Theoreme est Susceptible', Memoires de l'Academie Imperiale de Saint Petersbourg 4 (1811) pp 271-301 
 
 > 1812 'Memoire sur la Polyedrometrie', Annales de Math., Pures et Appliquees 3 (1812/13) ppl68-191 428 Bibliography 
 
@@ -303,53 +303,53 @@ S. A. J. L'Huilier,
 
 A. L. Cauchy,
 
-> 1813 'Recherches sur les Polyedres (first memoire, part 2)', J. Ecolc Polytochnique 9 (1813) pp68-86 ((Euler,Legendre,poinsot))
+> 1813 'Recherches sur les Polyedres (first memoire, part 2)', J. Ecolc Polytochnique 9 (1813) pp68-86 
 
 > 1813 'Sur les Polygones et Polyedres (second memoire)', J. Ecole Polytechnique 9 (1813) pp87-98 
 
 J. C. F. Hessel,
 
-> 1832 'Nachtrag zu dem Euler'schen Lehrsatze von Polyedern', J. fur die Reine und Angewandte Mathematik 8 (1832) ppl3-20 ((Euler,Legendre,(Poinsot),l'Huilier,Cauchy))
+> 1832 'Nachtrag zu dem Euler'schen Lehrsatze von Polyedern', J. fur die Reine und Angewandte Mathematik 8 (1832) ppl3-20 
 
 K. G. C. von Staudt,
 
-> 1847 Geometrie der Lage, Niirnberg :white_check_mark:
+> 1847 Geometrie der Lage, Niirnberg 
 
 J. B. Listing,
 
-> 1848 Vorstudien zur Topologie :white_check_mark:
+> 1848 Vorstudien zur Topologie 
 
-> 1862 'Der Census Raumlicher Complexe oder Verallgemeinerung des Euler'schen Satzes von den Polyedren', Abhandlungen der Koniglichen Gesellschaft der Wissenschaften zu Gottingen 10 (1862) pp97-180 :white_check_mark:
+> 1862 'Der Census Raumlicher Complexe oder Verallgemeinerung des Euler'schen Satzes von den Polyedren', Abhandlungen der Koniglichen Gesellschaft der Wissenschaften zu Gottingen 10 (1862) pp97-180 
 
 L. Poinsot,
 
-> 1858 'Note sur la Theorie des Polyedres', Comptes Rendus des Seances de VAcademie des Sciences 46 (1858) pp65-79 :white_check_mark:
+> 1858 'Note sur la Theorie des Polyedres', Comptes Rendus des Seances de l'Academie des Sciences 46 (1858) pp65-79
 
 A. Cayley,
 
-> 1859 'On Poinsot's Four New Regular Solids', Philosophical Mag. 17 (1859) ppl23-128 431 :white_check_mark:
+> 1859 'On Poinsot's Four New Regular Solids', Philosophical Mag. 17 (1859) ppl23-128 431 
 
-> 1859 'Second Note on Poinsot's Four New Polyhedra', Philosophical Mag. 17 (1859) pp209-210 :white_check_mark: 
+> 1859 'Second Note on Poinsot's Four New Polyhedra', Philosophical Mag. 17 (1859) pp209-210 
 
-> 1866 'Notes on Polyhedra', Quarterly J. of Pure and Applied Math. 7 (1866) pp304-316 :white_check_mark:
+> 1866 'Notes on Polyhedra', Quarterly J. of Pure and Applied Math. 7 (1866) pp304-316 
 
 C. Jordan,
 
-> 1866 'Recherches sur les Polyedres', Comptes Rendus des Seances de VAcademie des Sciences 62 (1866) ppl339-1341 :white_check_mark:
+> 1866 'Recherches sur les Polyedres', Comptes Rendus des Seances de l'Academie des Sciences 62 (1866) ppl339-1341 
 
 E. de Jonquieres,
 
-> (1890a) "Note sur un point fondamental de la théorie des polyèdres." Comptes rendus des séances de l'Académie des Sciences, 110, pp. 110-5. :white_check_mark:
+> (1890a) "Note sur un point fondamental de la théorie des polyèdres." Comptes rendus des séances de l'Académie des Sciences, 110, pp. 110-5.
 
-> (1890b) "Note sur le théorème d'Euler dans la théorie des polyèdres." Comptes rendus des séances de l'Académie des Sciences, 110, pp. 169-73. :white_check_mark:
+> (1890b) "Note sur le théorème d'Euler dans la théorie des polyèdres." Comptes rendus des séances de l'Académie des Sciences, 110, pp. 169-73.
 
 H. Poincaré,
 
 > (1893) "Sur la généralisation d'un théorème d'Euler relatif aux polyèdres." Comptes rendus des séances de l'Académie des Sciences, 117, pp. 144-5.
 
-> (1895) "Analysis situs." Journal de l'École Polytechnique (1), pp. 1-121, et Œuvres 1. VI, pp. 193-288. Paris: Gauthier-Villars, 1953. :white_check_mark:
+> (1895) "Analysis situs." Journal de l'École Polytechnique (1), pp. 1-121, et Œuvres 1. VI, pp. 193-288. Paris: Gauthier-Villars, 1953.
 
-> (1899) "Complément à l'Analysis Situs" Rendiconti dei Circolo Matematico di Palermo, 13, pp. 285-343 et Œuvres t. VI, pp. 290-337. Paris : Gauthier-Villars, 1953. :white_check_mark:
+> (1899) "Complément à l'Analysis Situs" Rendiconti dei Circolo Matematico di Palermo, 13, pp. 285-343 et Œuvres t. VI, pp. 290-337. Paris : Gauthier-Villars, 1953.
 
 ***Pour aller plus loin***
 
@@ -383,14 +383,13 @@ Jean-Claude Pont - La topologie algébrique des origines à Poincaré
 
 [^hon_goldstein]: G. Hon, B. R. Goldstein, Legendre's Revolution (1794): The Definition of Symmetry in Solid Geometry, p. 113
 
-[^lebesgue1]: H. Lebesgue, Remarques sur les deux premières démonstrations du théorème d'Euler, relatif aux polyèdres, Bulletin de la Société mathéma-
-tique de France, t. 52, Paris, 1920, p. 315.336.
+[^lebesgue1]: H. Lebesgue, Remarques sur les deux premières démonstrations du théorème d'Euler, relatif aux polyèdres, Bulletin de la Société mathématique de France, t. 52, Paris, 1920, p.315.336.
 
 [^poinsot]: L. Poinsot, Mémoire sur les Polygones et les Polyèdres, J. École Polytechnique 10 (1810) p.16-48
 
 [^kepler]: J. Kepler, Harmonices Mundi, 1619, p. 58
 
-[^huilier1]: S. A. J. L'Huilier, Démonstration Immédiate d'un Théoreme Fondamental d'Euler sur les Polyèdres et Exceptions dont ce Theoreme est Susceptible, Memoires de l'Academie Imperiale de Saint Petersbourg 4, 1811, p.271-301
+[^huilier1]: S. A. J. L'Huilier, Démonstration Immédiate d'un Théoreme Fondamental d'Euler sur les Polyèdres et Exceptions dont ce théoreme est susceptible, Memoires de l'Academie Imperiale de Saint Petersbourg 4, 1811, p.271-301
 
 [^huilier2]: S. A. J. L'Huilier et J. D. Gergonne, Mémoire sur la Polyèdrométrie, Annales de Math., Pures et Appliquees 3, 1812/13, p.168-191
 
