@@ -7,12 +7,6 @@ nav_order: 5
 
 # Approche historique du théorème d'Euler sur les polyèdres
 
-**En cours d'écriture, de nombreuses erreurs subsistent**
-
-**En cours d'écriture, de nombreuses erreurs subsistent**
-
-**En cours d'écriture, de nombreuses erreurs subsistent**
-
 ## Introduction
 
 ### *Les polyèdres*
@@ -269,13 +263,93 @@ En 20 ans, de 1794 à 1814, la recherche sur les polyèdres fut principalement f
 
 > Si chaque sommet d'un polyhèdre peut être relié à chaque autre sommet par une arête ou par une ligne composée d'arêtes, et si sa surface est divisée en deux parties par toute ligne fermée composée d'arêtes qui ne passe pas plus d'une fois par un même point, alors le nombre E des sommets plus le nombre F des faces est égal au nombre K d'arêtes plus deux. [^vonstaudt]
 
-N'hésitez pas à prendre le temps d'observer comment Von Staudt, avec ce théorème, exclu tous les contre-exemples vus précédement.
+Prenez le temps d'observer comment Von Staudt exclut avec ce théorème tous les contre-exemples vus précédemment.
 
-Cependant, les recherches ont rapidement dépassé le cadre de la question initiale d'Euler. On peut retrouver maintes fois l'apparition de l'équation d'Euler ou caractéristique d'Euler dans le développement de la topologie[^pont], on pourra cité son utilisation dans l'étude et la classification des surfaces (au moyen de la triangularisation) et aboutissant à l'homologie avec le travail de Poincaré. C'est d'ailleurs Poincaré qui donnera une proposition d'axiomatisation de la notion de polyèdre[^lakatos] [^poincare], faisant reculer les difficultés de s'accorder sur une définition de polyèdre. 
+Le théorème de Von Staudt ne marque cependant pas la fin des recherches suscitées par la conjoncture d'Euler. En effet, ces recherches ont rapidement dépassé le cadre de la question initiale d’Euler. Par exemple, avoir la même caractéristique d’Euler est une condition nécessaire pour que deux surfaces soient homéomorphes. Ainsi la question d’Euler conduit-elle naturellement à examiner des questions de nature topologique qui nourriront entre autre les réflexions fécondes de Poincaré et le conduiront à définir un cadre axiomatique fécond [^lakatos] [^poincare].
 
-Finalement, ce morceau de fresque historique se développant autour de la conjecture d'Euler-Descartes rend palpable les tatonements de la science mathématique, à coup d'erreurs, de théorèmes erronés, d'exemples extravagants, la science avance.
+Nous avons aperçu les tâtonnements de Descartes et l’axiomatisation de Poincaré, nous sommes partis de la conjecture d’Euler, nous avons examiné la preuve de Legendre pour les polyèdres convexes, les exemples extravagants de Poinsot, les contre-exemples de L’Huillier et la tentative erronée mais féconde de Cauchy. Ainsi, en remontant aux textes sources et en analysant mathématiquement les démonstrations que l’on y trouve, nous espérons vous avoir donner à voir certains des processus complexes qui conduisent à l’ouverture de nouveaux champs de recherche mathématique.
 
 ## References
+
+L. Euler,
+
+> 1758 'Elementa Doctrinae Solidorum', Novi Commentarii Academiae Scientiiuuni Petropolitanae 4 (1752/53) ppl09-140 427
+
+> (1758b). Elementa doctrinae solidorum. Novi Commentarii Academiae Sci- entiarum Petropolitanae 4, 72–93. Reprinted in Opera Omnia series 1, vol. 26, 71–93.
+
+> 1758 'Demonstratio Nonnullarum Insignium Proprietatum Quibus Solida Hedris Planis Inclusa Sunt Praedita', Novi Commentarii Academiae Scientiarum Petropolitanae 4 (1752/53) ppl40-160
+
+>  (1758a). Demonstratio nonnullarum insignium proprietatum quibus solida hedris planis inclusa sunt praedita. Novi Commentarii Academiae Scientiarum Petropolitanae 4, 94–108. Reprinted in Opera Omnia series 1, vol. 26, 94–108.
+
+> Solutio problematis ad geometriam situs pertinentis. Commentarii Academiae Scientiarum Imperialis Petropolitanae 8, 128–40. Reprinted in Opera Omnia series 1, vol. 7, 1–10.
+
+> Euler Archive, http://www.eulerarchive.org.
+
+A. M. Legendre,
+
+> 1794 Elements de Geometrie, def p.163, proof p.226, note p.307, Paris ((Euler))
+
+L. Poinsot,
+
+> 1810 'Memoire sur les Polygones et les Polyedres', J. Ecoie Polytechnique 10 (1810) ppl6-48 ((Euler,Legendre))
+
+S. A. J. L'Huilier,
+
+> 1811 'Demonstration Immediate d'un Theoreme Fondamental d'Euler sur les Polyhedres, et Exceptions dont ce Theoreme est Susceptible', Memoires de VAcademie Imperiale de Saint Petersbourg 4 (1811) pp271-301 ((Euler,Legendre))
+
+> 1812 'Memoire sur la Polyedrometrie', Annales de Math., Pures et Appliquees 3 (1812/13) ppl68-191 428 Bibliography 
+
+> 1812 'Memoire sur les Solides Reguliers', Annales de Math., Pures et Appliquees 3 (1812/13) pp233-237 
+
+A. L. Cauchy,
+
+> 1813 'Recherches sur les Polyedres (first memoire, part 2)', J. Ecolc Polytochnique 9 (1813) pp68-86 ((Euler,Legendre,poinsot))
+
+> 1813 'Sur les Polygones et Polyedres (second memoire)', J. Ecole Polytechnique 9 (1813) pp87-98 
+
+J. C. F. Hessel,
+
+> 1832 'Nachtrag zu dem Euler'schen Lehrsatze von Polyedern', J. fur die Reine und Angewandte Mathematik 8 (1832) ppl3-20 ((Euler,Legendre,(Poinsot),l'Huilier,Cauchy))
+
+K. G. C. von Staudt,
+
+> 1847 Geometrie der Lage, Niirnberg :white_check_mark:
+
+J. B. Listing,
+
+> 1848 Vorstudien zur Topologie :white_check_mark:
+
+> 1862 'Der Census Raumlicher Complexe oder Verallgemeinerung des Euler'schen Satzes von den Polyedren', Abhandlungen der Koniglichen Gesellschaft der Wissenschaften zu Gottingen 10 (1862) pp97-180 :white_check_mark:
+
+L. Poinsot,
+
+> 1858 'Note sur la Theorie des Polyedres', Comptes Rendus des Seances de VAcademie des Sciences 46 (1858) pp65-79 :white_check_mark:
+
+A. Cayley,
+
+> 1859 'On Poinsot's Four New Regular Solids', Philosophical Mag. 17 (1859) ppl23-128 431 :white_check_mark:
+
+> 1859 'Second Note on Poinsot's Four New Polyhedra', Philosophical Mag. 17 (1859) pp209-210 :white_check_mark: 
+
+> 1866 'Notes on Polyhedra', Quarterly J. of Pure and Applied Math. 7 (1866) pp304-316 :white_check_mark:
+
+C. Jordan,
+
+> 1866 'Recherches sur les Polyedres', Comptes Rendus des Seances de VAcademie des Sciences 62 (1866) ppl339-1341 :white_check_mark:
+
+E. de Jonquieres,
+
+> (1890a) "Note sur un point fondamental de la théorie des polyèdres." Comptes rendus des séances de l'Académie des Sciences, 110, pp. 110-5. :white_check_mark:
+
+> (1890b) "Note sur le théorème d'Euler dans la théorie des polyèdres." Comptes rendus des séances de l'Académie des Sciences, 110, pp. 169-73. :white_check_mark:
+
+H. Poincaré,
+
+> (1893) "Sur la généralisation d'un théorème d'Euler relatif aux polyèdres." Comptes rendus des séances de l'Académie des Sciences, 117, pp. 144-5.
+
+> (1895) "Analysis situs." Journal de l'École Polytechnique (1), pp. 1-121, et Œuvres 1. VI, pp. 193-288. Paris: Gauthier-Villars, 1953. :white_check_mark:
+
+> (1899) "Complément à l'Analysis Situs" Rendiconti dei Circolo Matematico di Palermo, 13, pp. 285-343 et Œuvres t. VI, pp. 290-337. Paris : Gauthier-Villars, 1953. :white_check_mark:
 
 ***Pour aller plus loin***
 
