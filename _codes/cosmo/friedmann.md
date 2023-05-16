@@ -76,9 +76,7 @@ $$
 
 One could think about an [ideal gas](% link_ui) where $w = k_B T$. Note that, due to homogeneity, $\rho$ and $p$ have always the same value at every point in space.
 
-The continuity equation $\nabla_\mu T^{\mu \nu} = 0$
-
-equivalent to fluid mechanics (mass) conservation/continuity equation: $\frac{\partial \rho}{\partial t}= - \vec{\nabla}\cdot\vec{j}$
+The continuity equation $\nabla_\mu T^{\mu \nu} = 0$ is equivalent to fluid mechanics (mass) conservation/continuity equation: $\frac{\partial \rho}{\partial t}= - \vec{\nabla}\cdot\vec{j}$
 
 In the FLRW metric, the continuity equation can be written as:
 $$
