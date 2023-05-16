@@ -166,18 +166,17 @@ As we fixed $a(t)=1$ today, we get the **closure equation** $\Omega_r^0+\Omega_m
 > Figure 2 : Modelisation of Friedmann's equation under Python
 
 
-  So our goal is to plot the evolution of the scale factor $a(t)$ depending on comoving time for different scenarios. We will accomplish it by integrating the equation using the function *odeint* in the **scipy** python module [^virtanen]. After specifying the time range and the proportion of each component $\Omega_{i}$, we'll define a function containing the equation and another to integrate it. The program can be found [here](% link_ui). We obtain [Fig. 2](#fig2). It allows us to observe the impact of each component on Universe's evolution. To discuss our program and to introduce a few models, we'll compare our plots to those given by analytical solution.
+  So our goal is to plot the evolution of the scale factor $a(t)$ depending on comoving time for different scenarios. We will accomplish it by integrating the equation using the function *odeint* in the **scipy** python module [^virtanen]. After specifying the time range and the proportion of each component $\Omega_{i}$, we'll define a function containing the equation and another to integrate it. We obtain [Fig. 2](#fig2). It allows us to observe the impact of each component on Universe's evolution. To discuss our program and to introduce a few models, we'll compare our plots to those given by analytical solution.
 
   *The program can be found here,
- <a href="https://github.com/YoloNomy/Friedmann">here</a>
-[here],  using Jupyter Notebook :* 
+ <a href="https://github.com/YoloNomy/Friedmann">here</a>,  using Jupyter Notebook :* 
 
 
 ### Einstein-De-Sitter model :
 
 <a name="fig3"></a>
 
-![radonly](../images/radonly.png "Solutions comparison for radiation only") 
+![radonly](../images/RadOnly.png "Solutions comparison for radiation only") 
 
 > Figure 3 : Solutions comparison for radiation only
 
@@ -208,7 +207,7 @@ $$w=\frac{1}{3} \Longrightarrow a(t) = \left(\frac{4 H_0 t \sqrt{\Omega_r}}{2}\r
 
 
 
-In both cases, we may report that our Universe would have been born much earlier. Let's take a closer look at the Einstein-De-Sitter Universe [fig. 4](#fig4), corresponding to a case where energy density is equal to the critical one. Proposed in 1932, <a href="https://ui.adsabs.harvard.edu/abs/1932CoMtW...3...51E/abstract/">Einstein and de Sitter, 1932</a> [^einstein_de_sitter] describes a minimalistic Universe with a Euclidian geometry; that contains only baryonic and dark matter ($\Omega_m$=1). To use this model, the autors recall that the cosmological constant $\Lambda$ was introduced to explain the existence of a finite mean density in a static Universe, but that the case of a dynamic Universe can be achieved without $\Lambda$. This model is called  the *SCDM (Standard Cold Dark Matter)*. However, observations indicate that dark matter density is at least 3 times lower than critical density. Some objects in the observable Universe are much older than the 10 Gyr that the SCDM Model suggests as a birth of the Universe. As a result, this model was quickly abandoned in favor of models with a lower dark matter density, such as $\Lambda$ CDM, which adds a proportion of dark energy.\
+In both cases, we may report that our Universe would have been born much earlier. Let's take a closer look at the Einstein-De-Sitter Universe [fig. 4](#fig4), corresponding to a case where energy density is equal to the critical one. Proposed in 1932, <a href="https://ui.adsabs.harvard.edu/abs/1932CoMtW...3...51E/abstract/">Einstein and de Sitter, 1932</a> [^einsteindesitter] describe a minimalistic Universe with a Euclidian geometry; that contains only baryonic and dark matter ($\Omega_m$=1). To use this model, the autors recall that the cosmological constant $\Lambda$ was introduced to explain the existence of a finite mean density in a static Universe, but that the case of a dynamic Universe can be achieved without $\Lambda$. This model is called  the *SCDM (Standard Cold Dark Matter)*. However, observations indicate that dark matter density is at least 3 times lower than critical density. Some objects in the observable Universe are much older than the 10 Gyr that the SCDM Model suggests as a birth of the Universe. As a result, this model was quickly abandoned in favor of models with a lower dark matter density, such as $\Lambda$ CDM, which adds a proportion of dark energy.
 
 
 ### $\Lambda$-CDM model :
@@ -236,7 +235,7 @@ On [Fig.5](#fig5), we compare it with the numeric solution.
 
 <a name="fig6"></a>
 
-![deS](../images/deS.png "Solutions comparison for De-Sitter model") 
+![deS](../images/DeS.png "Solutions comparison for De-Sitter model") 
 
 > Figure 6 : Solutions comparison for De-Sitter model
 
@@ -266,7 +265,7 @@ It may also be useful to plot the scenarios previously enounced on the same grap
 ![complete](../images/complete.png "Modelisation of Friedmann's equation under Python") 
 
 
-> Figure 8 : Modelisation of Friedmann's equation under Python
+> Figure 8 : Modelization of Friedmann's equation under Python
 
 ## Bibliographie 
 
@@ -288,7 +287,7 @@ L., Vielva, P., Villa, F., Vittorio, N., Wandelt, B. D., Wehus, I. K., White, M.
 
 [^virtanen]: Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., Burovski,E., Peterson, P., Weckesser, W., Bright, J., van der Walt, S. J., Brett, M., Wilson, J., Millman, K. J., Mayorov, N.,Nelson, A. R. J., Jones, E., Kern, R., Larson, E., Carey, C. J., Polat,  ̇I., Feng, Y., Moore, E. W., VanderPlas, J., Laxalde, D., Perktold, J., Cimrman, R., Henriksen, I., Quintero, E. A., Harris, C. R., Archibald, A. M., Ribeiro, A. H., Pedregosa,F., van Mulbregt, P., and SciPy 1.0 Contributors (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computingin Python. Nature Methods, 17:261–272.
 
-[^Einstein and de Sitter, 1932]: Einstein, A. and de Sitter, W. (1932). On the Relation between the Expansion and the Mean Density of the Universe. Contributions from the Mount Wilson Observatory, 3:51–52.
+[^einsteindesitter]: Einstein, A. and de Sitter, W. (1932). On the Relation between the Expansion and the Mean Density of the Universe. Contributions from the Mount Wilson Observatory, 3:51–52.
 
 
 
