@@ -14,3 +14,6 @@ Find more about us and our contact infos here:
 The 'math' section is lead by our math specialist: 
 
 - Robin Botrel
+
+With the help of :
+- Jehanne Delhomelle
