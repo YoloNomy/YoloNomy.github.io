@@ -1179,7 +1179,7 @@ $$
 $$</p>
 <p>If you know what the content of the Universe <span class="arithmatex">\(\rho\)</span> is and its geometry <span class="arithmatex">\(k\)</span>, you are entirely able to predict its evolution.</p>
 <p>We can see geometrical elements (<span class="arithmatex">\(k\)</span> for spatial curvature and <span class="arithmatex">\(\Lambda\)</span> for the cosmological constant), and we reformulate them as densities : 
-<span class="arithmatex">\(<span class="arithmatex">\(\rho_{\Lambda}=\frac{\Lambda}{8 \pi G} \text{and}
+<span class="arithmatex">\(<span class="arithmatex">\(\rho_{\Lambda}=\frac{\Lambda}{8 \pi G} \text{ and }
 \rho_k= - \frac{3k}{8 \pi G}\)</span>\)</span></p>
 <p>So one gets :</p>
 <ul>
@@ -1212,13 +1212,12 @@ $$</p>
 <blockquote>
 <p>Figure 2 : Modelisation of Friedmann&rsquo;s equation under Python</p>
 </blockquote>
-<p>So our goal is to plot the evolution of the scale factor <span class="arithmatex">\(a(t)\)</span> depending on comoving time for different scenarios. We will accomplish it by integrating the equation using the function <em>odeint</em> in the <strong>scipy</strong> python module <sup id="fnref:virtanen"><a class="footnote-ref" href="#fn:virtanen">6</a></sup>. After specifying the time range and the proportion of each component <span class="arithmatex">\(\Omega_{i}\)</span>, we&rsquo;ll define a function containing the equation and another to integrate it. The program can be found <a href="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/cosmo/%25%20link_ui">here</a>. We obtain <a href="#fig2">Fig. 2</a>. It allows us to observe the impact of each component on Universe&rsquo;s evolution. To discuss our program and to introduce a few models, we&rsquo;ll compare our plots to those given by analytical solution.</p>
+<p>So our goal is to plot the evolution of the scale factor <span class="arithmatex">\(a(t)\)</span> depending on comoving time for different scenarios. We will accomplish it by integrating the equation using the function <em>odeint</em> in the <strong>scipy</strong> python module <sup id="fnref:virtanen"><a class="footnote-ref" href="#fn:virtanen">6</a></sup>. After specifying the time range and the proportion of each component <span class="arithmatex">\(\Omega_{i}\)</span>, we&rsquo;ll define a function containing the equation and another to integrate it. We obtain <a href="#fig2">Fig. 2</a>. It allows us to observe the impact of each component on Universe&rsquo;s evolution. To discuss our program and to introduce a few models, we&rsquo;ll compare our plots to those given by analytical solution.</p>
 <p><em>The program can be found here,
- <a href="https://github.com/YoloNomy/Friedmann">here</a>
-[here],  using Jupyter Notebook :</em> </p>
+ <a href="https://github.com/YoloNomy/Friedmann">here</a>,  using Jupyter Notebook :</em> </p>
 <h3 id="einstein-de-sitter-model">Einstein-De-Sitter model :<a class="headerlink" href="#einstein-de-sitter-model" title="Permanent link"></a></h3>
 <p><a name="fig3"></a></p>
-<p><img alt="radonly" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/radonly.png" title="Solutions comparison for radiation only" /> </p>
+<p><img alt="radonly" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/RadOnly.png" title="Solutions comparison for radiation only" /> </p>
 <blockquote>
 <p>Figure 3 : Solutions comparison for radiation only</p>
 </blockquote>
@@ -1237,7 +1236,7 @@ $$</p>
 <div class="arithmatex">\[w=0 \Longrightarrow a(t) = \left(\frac{3 H_0 t \sqrt{\Omega_m}}{2}\right)^{\frac{2}{3}} \]</div>
 <p><a name="eq2b"></a></p>
 <div class="arithmatex">\[w=\frac{1}{3} \Longrightarrow a(t) = \left(\frac{4 H_0 t \sqrt{\Omega_r}}{2}\right)^{\frac{1}{2}}\]</div>
-<p>In both cases, we may report that our Universe would have been born much earlier. Let&rsquo;s take a closer look at the Einstein-De-Sitter Universe <a href="#fig4">fig. 4</a>, corresponding to a case where energy density is equal to the critical one. Proposed in 1932, <a href="https://ui.adsabs.harvard.edu/abs/1932CoMtW...3...51E/abstract/">Einstein and de Sitter, 1932</a> [^einstein_de_sitter] describes a minimalistic Universe with a Euclidian geometry; that contains only baryonic and dark matter (<span class="arithmatex">\(\Omega_m\)</span>=1). To use this model, the autors recall that the cosmological constant <span class="arithmatex">\(\Lambda\)</span> was introduced to explain the existence of a finite mean density in a static Universe, but that the case of a dynamic Universe can be achieved without <span class="arithmatex">\(\Lambda\)</span>. This model is called  the <em>SCDM (Standard Cold Dark Matter)</em>. However, observations indicate that dark matter density is at least 3 times lower than critical density. Some objects in the observable Universe are much older than the 10 Gyr that the SCDM Model suggests as a birth of the Universe. As a result, this model was quickly abandoned in favor of models with a lower dark matter density, such as <span class="arithmatex">\(\Lambda\)</span> CDM, which adds a proportion of dark energy.\</p>
+<p>In both cases, we may report that our Universe would have been born much earlier. Let&rsquo;s take a closer look at the Einstein-De-Sitter Universe <a href="#fig4">fig. 4</a>, corresponding to a case where energy density is equal to the critical one. Proposed in 1932, <a href="https://ui.adsabs.harvard.edu/abs/1932CoMtW...3...51E/abstract/">Einstein and de Sitter, 1932</a> <sup id="fnref:einsteindesitter"><a class="footnote-ref" href="#fn:einsteindesitter">7</a></sup> describe a minimalistic Universe with a Euclidian geometry; that contains only baryonic and dark matter (<span class="arithmatex">\(\Omega_m\)</span>=1). To use this model, the autors recall that the cosmological constant <span class="arithmatex">\(\Lambda\)</span> was introduced to explain the existence of a finite mean density in a static Universe, but that the case of a dynamic Universe can be achieved without <span class="arithmatex">\(\Lambda\)</span>. This model is called  the <em>SCDM (Standard Cold Dark Matter)</em>. However, observations indicate that dark matter density is at least 3 times lower than critical density. Some objects in the observable Universe are much older than the 10 Gyr that the SCDM Model suggests as a birth of the Universe. As a result, this model was quickly abandoned in favor of models with a lower dark matter density, such as <span class="arithmatex">\(\Lambda\)</span> CDM, which adds a proportion of dark energy.</p>
 <h3 id="lambda-cdm-model"><span class="arithmatex">\(\Lambda\)</span>-CDM model :<a class="headerlink" href="#lambda-cdm-model" title="Permanent link"></a></h3>
 <p><a name="fig5"></a></p>
 <p><img alt="stdmodel" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/stdmodel.png" title="Solutions comparison for \(\Lambda\) CDM model" /> 
@@ -1252,7 +1251,7 @@ $$</p>
  Graphically, we notice the birth of our Universe to have occurred approximately 14 Gyr ago. We can even extrapolate the evolution of the scale factor (<span class="arithmatex">\(a\)</span>) beyond current observations, which are limited to the Cosmic Microwave Background (CMB). In the beginning, when radiation rules  <span class="arithmatex">\(a\)</span> rapidly increase, as said by the <a href="#eq2a">Eq. 2a</a>. Radiation is quickly diluted due to the <span class="arithmatex">\(a^{-4}\)</span> factor. This is followed by an era dominated by matter, as predicted by <a href="#eq2b">Eq. 2b</a> leading to a more linear expansion. Once matter is sufficiently diluted, the influence of <span class="arithmatex">\(\Lambda\)</span> becomes dominant. Indeed, it&rsquo;ll never dilute (being a constant). It results in an accelerated expansion of the universe that will continue indefinitely. Expansion isn&rsquo;t stopped anymore and <span class="arithmatex">\(a\)</span> is faster and faster. The plot illustrates this dominance around 60 Gyr. It allows us  to predict the future of our Universe. At this moment, it will become a De-Sitter Universe.</p>
 <h3 id="de-sitter-model">De-Sitter model :<a class="headerlink" href="#de-sitter-model" title="Permanent link"></a></h3>
 <p><a name="fig6"></a></p>
-<p><img alt="deS" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/deS.png" title="Solutions comparison for De-Sitter model" /> </p>
+<p><img alt="deS" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/DeS.png" title="Solutions comparison for De-Sitter model" /> </p>
 <blockquote>
 <p>Figure 6 : Solutions comparison for De-Sitter model</p>
 </blockquote>
@@ -1270,7 +1269,7 @@ In this model, <span class="arithmatex">\(a(t)\)</span> increases so rapidly tha
 <p><a name="fig8"></a></p>
 <p><img alt="complete" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/complete.png" title="Modelisation of Friedmann's equation under Python" /> </p>
 <blockquote>
-<p>Figure 8 : Modelisation of Friedmann&rsquo;s equation under Python</p>
+<p>Figure 8 : Modelization of Friedmann&rsquo;s equation under Python</p>
 </blockquote>
 <h2 id="bibliographie">Bibliographie<a class="headerlink" href="#bibliographie" title="Permanent link"></a></h2>
 <blockquote>
@@ -1301,8 +1300,8 @@ L., Vielva, P., Villa, F., Vittorio, N., Wandelt, B. D., Wehus, I. K., White, M.
 <li id="fn:virtanen">
 <p>Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., Burovski,E., Peterson, P., Weckesser, W., Bright, J., van der Walt, S. J., Brett, M., Wilson, J., Millman, K. J., Mayorov, N.,Nelson, A. R. J., Jones, E., Kern, R., Larson, E., Carey, C. J., Polat,  ̇I., Feng, Y., Moore, E. W., VanderPlas, J., Laxalde, D., Perktold, J., Cimrman, R., Henriksen, I., Quintero, E. A., Harris, C. R., Archibald, A. M., Ribeiro, A. H., Pedregosa,F., van Mulbregt, P., and SciPy 1.0 Contributors (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computingin Python. Nature Methods, 17:261–272.&#160;<a class="footnote-backref" href="#fnref:virtanen" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
-<li id="fn:Einstein and de Sitter, 1932">
-<p>Einstein, A. and de Sitter, W. (1932). On the Relation between the Expansion and the Mean Density of the Universe. Contributions from the Mount Wilson Observatory, 3:51–52.&#160;<a class="footnote-backref" href="#fnref:Einstein and de Sitter, 1932" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+<li id="fn:einsteindesitter">
+<p>Einstein, A. and de Sitter, W. (1932). On the Relation between the Expansion and the Mean Density of the Universe. Contributions from the Mount Wilson Observatory, 3:51–52.&#160;<a class="footnote-backref" href="#fnref:einsteindesitter" title="Jump back to footnote 7 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div></article></body></html>

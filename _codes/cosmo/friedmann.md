@@ -20,6 +20,7 @@ Cosmology is a science that studies the universe as a whole, including its origi
 	- *Radiation:* Relativistic matter with little mass (photons, for example), that has low dynamic influence today but was much more significant in the early Universe: $< 1$  %
 	- *Dark Energy:* Energy that fills the Universe and may be responsible for for the "recent" acceleration of its expansion: $\sim$ 70 %
 
+
 3.  **Gravity**: [General relativity]({% link _codes/cosmo/black-holes.md %}) is used to describe the theory of gravity on large scales and the expansion of the Universe is quantified by the non-zero cosmological constant $\Lambda$, which gives us the most simple model of dark energy.
 
 ## The scale factor a(t)
@@ -117,7 +118,7 @@ $$
 If you know what the content of the Universe $\rho$ is and its geometry $k$, you are entirely able to predict its evolution.
 
 We can see geometrical elements ($k$ for spatial curvature and $\Lambda$ for the cosmological constant), and we reformulate them as densities : 
-$$\rho_{\Lambda}=\frac{\Lambda}{8 \pi G} \text{and}
+$$\rho_{\Lambda}=\frac{\Lambda}{8 \pi G} \text{ and }
 \rho_k= - \frac{3k}{8 \pi G}$$
 
 So one gets :
