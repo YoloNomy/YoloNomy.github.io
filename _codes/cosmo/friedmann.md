@@ -10,7 +10,7 @@ nav_order: 3
 
 Cosmology is a science that studies the universe as a whole, including its origin, nature, evolution and structure.  Promoting cosmology as a branch of natural sciences has been made possible only recently with the discovery of the Universe's expansion by Hubble in 
 <a href="https://ui.adsabs.harvard.edu/abs/1926ApJ....64..321H/abstract/">Hubble 1926</a>
-[^Hubble, 1926], showing that it was a dynamic entity (hence it becomes possible to predict its behavior and the discovery of its very first light with the cosmic microwave background (CMB) by <a href="https://ui.adsabs.harvard.edu/abs/1965ApJ...142..419P/abstract/">Penzias and Wilson 1965</a>[^Penzias and Wilson, 1965], implying that its history might have had a beginning. As cosmology depends on our current pieces of knowledge, it may evolve in the near future. The **standard cosmological model**, $\Lambda$-CDM  (Cold Dark Matter with a cosmological constant), has been widely adopted since the end of the 1990s and seems to fit current observations. It's important to define a model to question it in the future, testing its limits is one of the roles of current research. The three building blocks of modern cosmology are the following:
+[^hubble], showing that it was a dynamic entity (hence it becomes possible to predict its behavior and the discovery of its very first light with the cosmic microwave background (CMB) by <a href="https://ui.adsabs.harvard.edu/abs/1965ApJ...142..419P/abstract/">Penzias and Wilson 1965</a>[^penziaswilson], implying that its history might have had a beginning. As cosmology depends on our current pieces of knowledge, it may evolve in the near future. The **standard cosmological model**, $\Lambda$-CDM  (Cold Dark Matter with a cosmological constant), has been widely adopted since the end of the 1990s and seems to fit current observations. It's important to define a model to question it in the future, testing its limits is one of the roles of current research. The three building blocks of modern cosmology are the following:
 
 1. **Cosmological principle**: The Universe is homogeneous (invariant under translation) and isotropic (invariant under rotation, on large scales, everything we observe is similar in every direction). This principle constrains the possible geometry of our Universe.
 
@@ -24,7 +24,7 @@ Cosmology is a science that studies the universe as a whole, including its origi
 
 # The scale factor a(t)
 
-A major turning point for cosmology in the last centuries was the discovery of the expansion of the Universe, which was first modeled by the **Hubble Law** for nearby galaxies: The Universe expands and galaxies are moving away from one another at speed proportional to their distance apart. We define the Hubble constant $H_0$ which is the proportionality factor between the distance and recession speed of galaxies today, as deduced from observations. Its value is still a subject of study and debate among researchers, see <a href="https://ui.adsabs.harvard.edu/abs/2014EPJC...74.3160V/abstract/">Velten et al., 2014</a> [^Velten et al., 2014]. We get $v\sim H_0*d$.
+A major turning point for cosmology in the last centuries was the discovery of the expansion of the Universe, which was first modeled by the **Hubble Law** for nearby galaxies: The Universe expands and galaxies are moving away from one another at speed proportional to their distance apart. We define the Hubble constant $H_0$ which is the proportionality factor between the distance and recession speed of galaxies today, as deduced from observations. Its value is still a subject of study and debate among researchers, see <a href="https://ui.adsabs.harvard.edu/abs/2014EPJC...74.3160V/abstract/">Velten et al., 2014</a> [^velten]. We get $v\sim H_0*d$.
 
 Therefore, we try to model a possible contraction or expansion. We aim to understand how the Universe will evolve with time, from its early instants to its far future. To do so, we fix arbitrarily the coordinates of galaxies, considering they're the same independently of the Universe's evolution. We must make the coordinate system evolve instead. This is done by using the **comoving frame** $r, \theta, \phi, t$., which characterizes the distance between two objects, ignoring expansion. Here, comoving time is the time that would be measured by an observer who is moving along with the expansion and does not experience any local time dilation, as time is relative in relativity. The scale factor, represented by $a$, is used to express the distance between galaxies and is the proportionality factor between the comoving distance and real distance, as $d = a(t) \times r$. By definition, it is fixed nowadays as $a_0 = a(t_0)=1$ where $t_0=13.6$ Gigayears.
 
@@ -58,7 +58,7 @@ $$
 
 
 
-But actually, observations as <a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...641A...6P/abstract/">Planck Collaboration et al., 2020</a> [^Planck Collaboration et al., 2020] suggest that if the Universe is curved, it is so close to being flat that it appears to be, leading to the common assumption of $k=0$. An interesting point is that this assumption is something debated in cosmology, as we can see e.g.  <a href="hhttps://ui.adsabs.harvard.edu/abs/2020NatAs...4..196D/abstract/">Di Valentino et al., 2020</a> [^Di Valentino et al., 2020].
+But actually, observations as <a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...641A...6P/abstract/">Planck Collaboration et al., 2020</a> [^planckcollab] suggest that if the Universe is curved, it is so close to being flat that it appears to be, leading to the common assumption of $k=0$. An interesting point is that this assumption is something debated in cosmology, as we can see e.g.  <a href="hhttps://ui.adsabs.harvard.edu/abs/2020NatAs...4..196D/abstract/">Di Valentino et al., 2020</a> [^divalentino].
 
 # Universe content and perfect fluids
 
@@ -73,7 +73,7 @@ $$
 p=w\rho
 $$
 
-One could think about an ideal gas where $w = k_B T$. Note that, due to homogeneity, $\rho$ and $p$ have always the same value at every point in space.
+One could think about an [ideal gas](% link_ui) where $w = k_B T$. Note that, due to homogeneity, $\rho$ and $p$ have always the same value at every point in space.
 
 The continuity equation $\nabla_\mu T^{\mu \nu} = 0$
 
@@ -90,7 +90,7 @@ $$
 We will assume that:
 
 - All heavy elements are slow and have a null pressure. $w=0$. This includes matter and dark matter.
-- All light and relativistic elements (photons and neutrinos) have $w=1/3$, see [statitical physics](% link_ui)
+- All light and relativistic elements (photons and neutrinos) have $w=1/3$, see [statitical physics](% link_ui).
 - The existence of a cosmological constant is equivalent to an energy vacuum of negative pressure with $w=-1$.
 
 So in the case of a cold and heavy matter, we have  $\rho>>P$. The matter density $\rho_m(t)$ can be represented as the sum of baryonic matter $\rho_b(t)$ and cold dark matter $\rho_{cdm}(t)$, which is equal to $\rho_{0,m}a^{-3}$. The amount of matter remains constant as the Universe expands, and it cannot be created or destroyed. Instead, it becomes diluted in all three dimensions of space, hence the $a^{-3}$  which accounts for the same amount of matter occupying a growing volume. As described by $E=mc^2$, the energy density is proportional to the particle density.
@@ -166,10 +166,10 @@ As we fixed $a(t)=1$ today, we get the **closure equation** $\Omega_r^0+\Omega_m
 > Figure 2 : Modelisation of Friedmann's equation under Python
 
 
-  So our goal is to plot the evolution of the scale factor $a(t)$ depending on comoving time for different scenarios. We will accomplish it by integrating the equation using the function *odeint* in the **scipy** python module [^Virtanen et al., 2020]. After specifying the time range and the proportion of each component $\Omega_{i}$, we'll define a function containing the equation and another to integrate it. The program can be found [here](% link_ui). We obtain [Fig. 2](#fig2). It allows us to observe the impact of each component on Universe's evolution. To discuss our program and to introduce a few models, we'll compare our plots to those given by analytical solution.
+  So our goal is to plot the evolution of the scale factor $a(t)$ depending on comoving time for different scenarios. We will accomplish it by integrating the equation using the function *odeint* in the **scipy** python module [^virtanen]. After specifying the time range and the proportion of each component $\Omega_{i}$, we'll define a function containing the equation and another to integrate it. The program can be found [here](% link_ui). We obtain [Fig. 2](#fig2). It allows us to observe the impact of each component on Universe's evolution. To discuss our program and to introduce a few models, we'll compare our plots to those given by analytical solution.
 
   *The program can be found here,
- <a href="https://github.com/YoloNomy/Friedmann">Hubble 1926</a>
+ <a href="https://github.com/YoloNomy/Friedmann">here</a>
 [here],  using Jupyter Notebook :* 
 
 
@@ -208,7 +208,7 @@ $$w=\frac{1}{3} \Longrightarrow a(t) = \left(\frac{4 H_0 t \sqrt{\Omega_r}}{2}\r
 
 
 
-In both cases, we may report that our Universe would have been born much earlier. Let's take a closer look at the Einstein-De-Sitter Universe [fig. 4](#fig4), corresponding to a case where energy density is equal to the critical one. Proposed in 1932, <a href="https://ui.adsabs.harvard.edu/abs/1932CoMtW...3...51E/abstract/">Einstein and de Sitter, 1932</a> [^Einstein and de Sitter, 1932] describes a minimalistic Universe with a Euclidian geometry; that contains only baryonic and dark matter ($\Omega_m$=1). To use this model, the autors recall that the cosmological constant $\Lambda$ was introduced to explain the existence of a finite mean density in a static Universe, but that the case of a dynamic Universe can be achieved without $\Lambda$. This model is called  the *SCDM (Standard Cold Dark Matter)*. However, observations indicate that dark matter density is at least 3 times lower than critical density. Some objects in the observable Universe are much older than the 10 Gyr that the SCDM Model suggests as a birth of the Universe. As a result, this model was quickly abandoned in favor of models with a lower dark matter density, such as $\Lambda$ CDM, which adds a proportion of dark energy.\
+In both cases, we may report that our Universe would have been born much earlier. Let's take a closer look at the Einstein-De-Sitter Universe [fig. 4](#fig4), corresponding to a case where energy density is equal to the critical one. Proposed in 1932, <a href="https://ui.adsabs.harvard.edu/abs/1932CoMtW...3...51E/abstract/">Einstein and de Sitter, 1932</a> [^einstein_de_sitter] describes a minimalistic Universe with a Euclidian geometry; that contains only baryonic and dark matter ($\Omega_m$=1). To use this model, the autors recall that the cosmological constant $\Lambda$ was introduced to explain the existence of a finite mean density in a static Universe, but that the case of a dynamic Universe can be achieved without $\Lambda$. This model is called  the *SCDM (Standard Cold Dark Matter)*. However, observations indicate that dark matter density is at least 3 times lower than critical density. Some objects in the observable Universe are much older than the 10 Gyr that the SCDM Model suggests as a birth of the Universe. As a result, this model was quickly abandoned in favor of models with a lower dark matter density, such as $\Lambda$ CDM, which adds a proportion of dark energy.\
 
 
 ## $\Lambda$-CDM model :
@@ -222,7 +222,7 @@ In both cases, we may report that our Universe would have been born much earlier
 > Figure 5 : Solutions comparison for $\Lambda$ CDM model
 
 
-According to <a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...641A...6P/abstract}/">Planck Collaboration et al., 2020</a> [^Planck Collaboration et al., 2020] , we can consider with the combination of different cosmological instruments that $\Omega_k \simeq 0$, $\Omega_m \simeq 0.3$,$\Omega_\Lambda \simeq 0.7, \Omega_r \simeq 0$. This case corresponds to the most concordant values with the observations for the $\Lambda$CDM model. $\Omega_r$ value is chosen very small, as we know its weakness nowadays but that she was important in the past. Thus, we can take $\Omega_r$=0 to fit with the analytical solution, even if the standard model describes $\Omega_r=10^{-4}$, as we can see on the purple line of [Fig. 2](#fig2). If we consider that the Universe only contains matter and $\Lambda$, we get: 
+According to <a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...641A...6P/abstract}/">Planck Collaboration et al., 2020</a> [^planckcollab] , we can consider with the combination of different cosmological instruments that $\Omega_k \simeq 0$, $\Omega_m \simeq 0.3$,$\Omega_\Lambda \simeq 0.7, \Omega_r \simeq 0$. This case corresponds to the most concordant values with the observations for the $\Lambda$CDM model. $\Omega_r$ value is chosen very small, as we know its weakness nowadays but that she was important in the past. Thus, we can take $\Omega_r$=0 to fit with the analytical solution, even if the standard model describes $\Omega_r=10^{-4}$, as we can see on the purple line of [Fig. 2](#fig2). If we consider that the Universe only contains matter and $\Lambda$, we get: 
 
 <a name="eqOlOm"></a>
 
@@ -271,25 +271,25 @@ It may also be useful to plot the scenarios previously enounced on the same grap
 # Bibliographie 
 
 
-[^Hubble, 1926]: Hubble, E. P. (1926). Extragalactic nebulae. ApJ, 64:321–369.
+[^hubble]: Hubble, E. P. (1926). Extragalactic nebulae. ApJ, 64:321–369.
 
-[^Penzias and Wilson, 1965]: Penzias, A. A. and Wilson, R. W. (1965). A Measurement of Excess Antenna Temperature at 4080 Mc/s. ApJ, 142:419–421.
+[^penziaswilson]: Penzias, A. A. and Wilson, R. W. (1965). A Measurement of Excess Antenna Temperature at 4080 Mc/s. ApJ, 142:419–421.
 
-[^Velten et al., 2014]: Velten, H. E. S., vom Marttens, R. F., and Zimdahl, W. (2014). Aspects of the cosmological “coincidence problem”. European Physical Journal C, 74:3160.
+[^velten]: Velten, H. E. S., vom Marttens, R. F., and Zimdahl, W. (2014). Aspects of the cosmological “coincidence problem”. European Physical Journal C, 74:3160.
 
-[^Planck Collaboration et al., 2020]: Planck Collaboration, Aghanim, N., Akrami, Y., Ashdown, M., Aumont, J., Baccigalupi, C., Ballardini, M., Banday, A. J., Barreiro, R. B., Bartolo, N., Basak, S., Battye, R., Benabed, K., Bernard, J. P., Bersanelli, M., Bielewicz, P., Bock, J. J., Bond, J. R., Borrill, J., Bouchet, F. R., Boulanger, F., Bucher, M., Burigana, C., Butler, R. C., Calabrese, E., Cardoso, J. F., Carron, J., Challinor, A., Chiang, H. C., Chluba, J., Colombo, L. P. L.,Combet, C., Contreras, D., Crill, B. P., Cuttaia, F., de Bernardis, P., de Zotti, G., Delabrouille, J., Delouis, J. M., Di
+[^planckcollab]: Planck Collaboration, Aghanim, N., Akrami, Y., Ashdown, M., Aumont, J., Baccigalupi, C., Ballardini, M., Banday, A. J., Barreiro, R. B., Bartolo, N., Basak, S., Battye, R., Benabed, K., Bernard, J. P., Bersanelli, M., Bielewicz, P., Bock, J. J., Bond, J. R., Borrill, J., Bouchet, F. R., Boulanger, F., Bucher, M., Burigana, C., Butler, R. C., Calabrese, E., Cardoso, J. F., Carron, J., Challinor, A., Chiang, H. C., Chluba, J., Colombo, L. P. L.,Combet, C., Contreras, D., Crill, B. P., Cuttaia, F., de Bernardis, P., de Zotti, G., Delabrouille, J., Delouis, J. M., Di
 Valentino, E., Diego, J. M., Dor ́e, O., Douspis, M., Ducout, A., Dupac, X., Dusini, S., Efstathiou, G., Elsner, F., Enßlin, T. A., Eriksen, H. K., Fantaye, Y., Farhang, M., Fergusson, J., Fernandez-Cobos, R., Finelli, F., Forastieri, F., Frailis, M., Fraisse, A. A., Franceschi, E., Frolov, A., Galeotta, S., Galli, S., Ganga, K., G ́enova-Santos, R. T., Gerbino, M., Ghosh, T., Gonz ́alez-Nuevo, J., G ́orski, K. M., Gratton, S., Gruppuso, A., Gudmundsson, J. E., Hamann, J., Handley, W., Hansen, F. K., Herranz, D., Hildebrandt, S. R., Hivon, E., Huang, Z., Jaffe, A. H., Jones, W. C., Karakci, A., Keih ̈anen, E., Keskitalo, R., Kiiveri, K., Kim, J., Kisner, T. S., Knox, L., Krachmalnicoff, N., Kunz, M., Kurki-Suonio, H., Lagache,
 G., Lamarre, J. M., Lasenby, A., Lattanzi, M., Lawrence, C. R., Le Jeune, M., Lemos, P., Lesgourgues, J., Levrier, F., Lewis, A., Liguori, M., Lilje, P. B., Lilley, M., Lindholm, V., L ́opez-Caniego, M., Lubin, P. M., Ma, Y. Z., Mac ́ıas-P ́erez,
 J. F., Maggio, G., Maino, D., Mandolesi, N., Mangilli, A., Marcos-Caballero, A., Maris, M., Martin, P. G., Martinelli, M., Mart ́ınez-Gonz ́alez, E., Matarrese, S., Mauri, N., McEwen, J. D., Meinhold, P. R., Melchiorri, A., Mennella, A., Migliaccio, M., Millea, M., Mitra, S., Miville-Deschˆenes, M. A., Molinari, D., Montier, L., Morgante, G., Moss, A., Natoli, P., Nørgaard-Nielsen, H. U., Pagano, L., Paoletti, D., Partridge, B., Patanchon, G., Peiris, H. V., Perrotta, F., Pettorino, V., Piacentini, F., Polastri, L., Polenta, G., Puget, J. L., Rachen, J. P., Reinecke, M., Remazeilles, M., Renzi, A., Rocha, G., Rosset, C., Roudier, G., Rubi ̃no-Mart ́ın, J. A., Ruiz-Granados, B., Salvati, L., Sandri, M., Savelainen, M., Scott, D., Shellard, E. P. S., Sirignano, C., Sirri, G., Spencer, L. D., Sunyaev, R., Suur-Uski, A. S., Tauber, J. A.,Tavagnacco, D., Tenti, M., Toffolatti, L., Tomasi, M., Trombetti, T., Valenziano, L., Valiviita, J., Van Tent, B., Vibert,
 L., Vielva, P., Villa, F., Vittorio, N., Wandelt, B. D., Wehus, I. K., White, M., White, S. D. M., Zacchei, A., and Zonca,A. (2020). Planck 2018 results. VI. Cosmological parameters. A&A, 641:A6.
 
 
-[^Di Valentino et al., 2020]:Di Valentino, E., Melchiorri, A., and Silk, J. (2020). Planck evidence for a closed Universe and a possible crisis for cosmology. Nature Astronomy, 4:196–203.
+[^divalentino]:Di Valentino, E., Melchiorri, A., and Silk, J. (2020). Planck evidence for a closed Universe and a possible crisis for cosmology. Nature Astronomy, 4:196–203.
 
-[^Virtanen et al., 2020]: Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., Burovski,E., Peterson, P., Weckesser, W., Bright, J., van der Walt, S. J., Brett, M., Wilson, J., Millman, K. J., Mayorov, N.,Nelson, A. R. J., Jones, E., Kern, R., Larson, E., Carey, C. J., Polat,  ̇I., Feng, Y., Moore, E. W., VanderPlas, J., Laxalde, D., Perktold, J., Cimrman, R., Henriksen, I., Quintero, E. A., Harris, C. R., Archibald, A. M., Ribeiro, A. H., Pedregosa,F., van Mulbregt, P., and SciPy 1.0 Contributors (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computingin Python. Nature Methods, 17:261–272.
+[^virtanen]: Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., Burovski,E., Peterson, P., Weckesser, W., Bright, J., van der Walt, S. J., Brett, M., Wilson, J., Millman, K. J., Mayorov, N.,Nelson, A. R. J., Jones, E., Kern, R., Larson, E., Carey, C. J., Polat,  ̇I., Feng, Y., Moore, E. W., VanderPlas, J., Laxalde, D., Perktold, J., Cimrman, R., Henriksen, I., Quintero, E. A., Harris, C. R., Archibald, A. M., Ribeiro, A. H., Pedregosa,F., van Mulbregt, P., and SciPy 1.0 Contributors (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computingin Python. Nature Methods, 17:261–272.
 
 [^Einstein and de Sitter, 1932]: Einstein, A. and de Sitter, W. (1932). On the Relation between the Expansion and the Mean Density of the Universe. Contributions from the Mount Wilson Observatory, 3:51–52.
 
 
 
-> Written by Jehanne Delhomelle, 2023
+> Written by Jehanne Delhomelle, Léo Vacher, 2023
