@@ -73,7 +73,7 @@ $$
 p=w\rho
 $$
 
-One could think about an [ideal gas]({% link_codes/ideal_gas}] where $w = k_B T$. Note that, due to homogeneity, $\rho$ and $p$ have always the same value at every point in space.
+One could think about an [ideal gas]({% link_codes/thermo/ideal_gas.md}] where $w = k_B T$. Note that, due to homogeneity, $\rho$ and $p$ have always the same value at every point in space.
 
 The continuity equation $\nabla_\mu T^{\mu \nu} = 0$
 
@@ -168,7 +168,9 @@ As we fixed $a(t)=1$ today, we get the **closure equation** $\Omega_r^0+\Omega_m
 
   So our goal is to plot the evolution of the scale factor $a(t)$ depending on comoving time for different scenarios. We will accomplish it by integrating the equation using the function *odeint* in the **scipy** python module [^Virtanen et al., 2020]. After specifying the time range and the proportion of each component $\Omega_{i}$, we'll define a function containing the equation and another to integrate it. The program can be found [here](% link_ui). We obtain [Fig. 2](#fig2). It allows us to observe the impact of each component on Universe's evolution. To discuss our program and to introduce a few models, we'll compare our plots to those given by analytical solution.
 
-  The program can be found here, using jupyter notebook : 
+  *The program can be found here,
+ <a href="https://github.com/YoloNomy/Friedmann">Hubble 1926</a>
+[here],  using Jupyter Notebook :* 
 
 
 ## Einstein-De-Sitter model :
@@ -290,3 +292,4 @@ L., Vielva, P., Villa, F., Vittorio, N., Wandelt, B. D., Wehus, I. K., White, M.
 
 
 
+> Written by Jehanne Delhomelle, 2023
