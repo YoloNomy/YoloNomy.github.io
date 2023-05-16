@@ -73,7 +73,7 @@ $$
 p=w\rho
 $$
 
-One could think about an [ideal gas]({% link_codes/thermo/ideal_gas.md%}] where $w = k_B T$. Note that, due to homogeneity, $\rho$ and $p$ have always the same value at every point in space.
+One could think about an ideal gas where $w = k_B T$. Note that, due to homogeneity, $\rho$ and $p$ have always the same value at every point in space.
 
 The continuity equation $\nabla_\mu T^{\mu \nu} = 0$
 
