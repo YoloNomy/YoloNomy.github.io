@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Universe evolution and Friedmann equations
+title: Friedmann equations and evolution of the Universe
 parent: codes
 nav_order: 3
 ---
-
-# The building blocks of cosmology
+# Friedmann equations and evolution of the Universe
+## The building blocks of cosmology
 
 
 Cosmology is a science that studies the universe as a whole, including its origin, nature, evolution and structure.  Promoting cosmology as a branch of natural sciences has been made possible only recently with the discovery of the Universe's expansion by Hubble in 
@@ -22,7 +22,7 @@ Cosmology is a science that studies the universe as a whole, including its origi
 
 3.  **Gravity**: [General relativity]({% link _codes/cosmo/black-holes.md %}) is used to describe the theory of gravity on large scales and the expansion of the Universe is quantified by the non-zero cosmological constant $\Lambda$, which gives us the most simple model of dark energy.
 
-# The scale factor a(t)
+## The scale factor a(t)
 
 A major turning point for cosmology in the last centuries was the discovery of the expansion of the Universe, which was first modeled by the **Hubble Law** for nearby galaxies: The Universe expands and galaxies are moving away from one another at speed proportional to their distance apart. We define the Hubble constant $H_0$ which is the proportionality factor between the distance and recession speed of galaxies today, as deduced from observations. Its value is still a subject of study and debate among researchers, see <a href="https://ui.adsabs.harvard.edu/abs/2014EPJC...74.3160V/abstract/">Velten et al., 2014</a> [^velten]. We get $v\sim H_0*d$.
 
@@ -37,7 +37,7 @@ Therefore, we try to model a possible contraction or expansion. We aim to unders
 Let's define $\dot a = \frac{da}{dt}$ as the Universe's expansion speed. $H=\frac{\dot a}{a}$ is the Hubble parameter which quantifies the evolution. Fundamentally, as we consider the Universe homogeneous and isotropic, it will evolve similarly in every direction, so $a$ is independent of spatial coordinates and is only a function of time.
 
 
-# The FLRW metric
+## The FLRW metric
 
 The principal solution of Einstein's equations satisfying the constraints given by the cosmological principle is described by the FLWR-metric. A metric allows us to depict a distance element in space-time like a 4-Dimensions Pythagorean Theorem : 3 space coordinates and one of time. We have : 
 
@@ -60,7 +60,7 @@ $$
 
 But actually, observations as <a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...641A...6P/abstract/">Planck Collaboration et al., 2020</a> [^planckcollab] suggest that if the Universe is curved, it is so close to being flat that it appears to be, leading to the common assumption of $k=0$. An interesting point is that this assumption is something debated in cosmology, as we can see e.g.  <a href="hhttps://ui.adsabs.harvard.edu/abs/2020NatAs...4..196D/abstract/">Di Valentino et al., 2020</a> [^divalentino].
 
-# Universe content and perfect fluids
+## Universe content and perfect fluids
 
 The cosmological principle also gives strong constraints on the possible behavior of the content in the universe. Since no overall preferred direction should exist, the fluids/matter distribution in the universe must itself be homogeneous without any resulting velocity. We talk about perfect fluid. The general form of their stress-energy tensor is given by:
 
@@ -98,7 +98,7 @@ So in the case of a cold and heavy matter, we have  $\rho>>P$. The matter densit
 In the case of radiation, we have $P\sim \rho$ as photons and neutrinos have zero or negligible mass, so we have $\rho_r(t)=\rho_{0,r}a^{-4}$. The energy is described by $E=\frac{hc}{\lambda}$, energy's density is no longer proportional to particle density. It becomes necessary to note that the densities $\rho_i(t)$ represent the energy ones. Radiation also has associated particles (photons, neutrinos) that dilute in  a-3 and an additional factor because radiation also dilutes in space too. Still, it expands with the Universe too due to the increasing wavelength ($\lambda$), leading to a decrease in energy and additional dilution.
 
 
-# The Friedmann equation
+## The Friedmann equation
 
 Cosmology is made by a few fundamental equations. In this part, we interess ourselves at the first Friedmann-Lemaître equation which describes the evolution of the Universe depending on its density, based on the general relativity equations and by application of the cosmological principle :
 
@@ -157,7 +157,7 @@ $$H=\frac{\dot a}{a}=H_0\sqrt{\Omega_r^0 a^{-4}+\Omega_m^0 a^{-3}+\Omega_k^0 a^{
 
 As we fixed $a(t)=1$ today, we get the **closure equation** $\Omega_r^0+\Omega_m^0+\Omega_{\Lambda}^0+\Omega_k^0=1$, which allows us to interpret $\Omega_i^0$ as fractions. We will now numerically integrate this equation to observe the evolution of our Universe depending on its components.
 
-# The evolution of our Universe
+## The evolution of our Universe
 
 <a name="fig2"></a>
 
@@ -173,7 +173,7 @@ As we fixed $a(t)=1$ today, we get the **closure equation** $\Omega_r^0+\Omega_m
 [here],  using Jupyter Notebook :* 
 
 
-## Einstein-De-Sitter model :
+### Einstein-De-Sitter model :
 
 <a name="fig3"></a>
 
@@ -211,7 +211,7 @@ $$w=\frac{1}{3} \Longrightarrow a(t) = \left(\frac{4 H_0 t \sqrt{\Omega_r}}{2}\r
 In both cases, we may report that our Universe would have been born much earlier. Let's take a closer look at the Einstein-De-Sitter Universe [fig. 4](#fig4), corresponding to a case where energy density is equal to the critical one. Proposed in 1932, <a href="https://ui.adsabs.harvard.edu/abs/1932CoMtW...3...51E/abstract/">Einstein and de Sitter, 1932</a> [^einstein_de_sitter] describes a minimalistic Universe with a Euclidian geometry; that contains only baryonic and dark matter ($\Omega_m$=1). To use this model, the autors recall that the cosmological constant $\Lambda$ was introduced to explain the existence of a finite mean density in a static Universe, but that the case of a dynamic Universe can be achieved without $\Lambda$. This model is called  the *SCDM (Standard Cold Dark Matter)*. However, observations indicate that dark matter density is at least 3 times lower than critical density. Some objects in the observable Universe are much older than the 10 Gyr that the SCDM Model suggests as a birth of the Universe. As a result, this model was quickly abandoned in favor of models with a lower dark matter density, such as $\Lambda$ CDM, which adds a proportion of dark energy.\
 
 
-## $\Lambda$-CDM model :
+### $\Lambda$-CDM model :
 
 
 <a name="fig5"></a>
@@ -232,7 +232,7 @@ On [Fig.5](#fig5), we compare it with the numeric solution.
  Graphically, we notice the birth of our Universe to have occurred approximately 14 Gyr ago. We can even extrapolate the evolution of the scale factor ($a$) beyond current observations, which are limited to the Cosmic Microwave Background (CMB). In the beginning, when radiation rules  $a$ rapidly increase, as said by the [Eq. 2a](#eq2a). Radiation is quickly diluted due to the $a^{-4}$ factor. This is followed by an era dominated by matter, as predicted by [Eq. 2b](#eq2b) leading to a more linear expansion. Once matter is sufficiently diluted, the influence of $\Lambda$ becomes dominant. Indeed, it'll never dilute (being a constant). It results in an accelerated expansion of the universe that will continue indefinitely. Expansion isn't stopped anymore and $a$ is faster and faster. The plot illustrates this dominance around 60 Gyr. It allows us  to predict the future of our Universe. At this moment, it will become a De-Sitter Universe.
 
 
-## De-Sitter model :
+### De-Sitter model :
 
 <a name="fig6"></a>
 
@@ -245,7 +245,7 @@ On [Fig.5](#fig5), we compare it with the numeric solution.
 In the scenario where only dark energy sustains, the only contribution to the energy density is the $\Lambda$ one. The Universe is empty of matter, then we have: $$a(t) \propto e^{Hot\sqrt{\Omega_{\Lambda}}}$$
 In this model, $a(t)$ increases so rapidly that no event can have an impact on any location that lies beyond the event horizon, defined as $c*H^{-1}$. This phenomenon can also be observed in the case of inflation.
 
-## Hyperbolic Universe :
+### Hyperbolic Universe :
 
 Until the mid-1990s, we  were considering the hypothesis of the Big Crunch, which wondered if there was enough matter in the Universe to stop its expansion and cause it to contract again. In the case where $\Omega_k < 0$, the spatial curvature is $k=+1$, we're in a hyperbolic space. Depending on parameters, we may observe a crunch of the Universe in the distant future. Friedmann's equation is thus slightly different, as the term under the square root becomes negative. We have to configure our program differently to avoid errors. Therefore, we have : 
 
@@ -256,7 +256,7 @@ Until the mid-1990s, we  were considering the hypothesis of the Big Crunch, whic
 
 > Figure 7 : Modelisation of Friedmann Equation for a Hyperbolic Universe
 
-# Final modelization : 
+## Final modelization : 
 
 It may also be useful to plot the scenarios previously enounced on the same graph for comparison purposes. Depending on parameters, the birth of the Universe can be more or less distant, and its evolution will differ. The future of our Universe is directly impacted by the parameters that determine its density and as a result its expansion, constancy, or crunch.
 
@@ -268,7 +268,7 @@ It may also be useful to plot the scenarios previously enounced on the same grap
 
 > Figure 8 : Modelisation of Friedmann's equation under Python
 
-# Bibliographie 
+## Bibliographie 
 
 
 [^hubble]: Hubble, E. P. (1926). Extragalactic nebulae. ApJ, 64:321–369.
