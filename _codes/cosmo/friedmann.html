@@ -1,0 +1,1302 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="parent" content="codes">
+<meta name="nav_order" content="3">
+<meta name="layout" content="default"><style>body {
+  max-width: 980px;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable,
+.markdown-body .highlighttable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr,
+.markdown-body .highlighttable {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite,
+.markdown-body .highlighttable pre,
+.markdown-body .highlighttable div.highlight {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td,
+.markdown-body .highlighttable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headerlink {
+  font: normal 400 16px fontawesome-mini;
+  vertical-align: middle;
+  margin-left: -16px;
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  color: #333;
+}
+
+.markdown-body .headerlink:focus {
+  outline: none;
+}
+
+.markdown-body h1 .headerlink {
+  margin-top: 0.8rem;
+}
+
+.markdown-body h2 .headerlink,
+.markdown-body h3 .headerlink {
+  margin-top: 0.6rem;
+}
+
+.markdown-body h4 .headerlink {
+  margin-top: 0.2rem;
+}
+
+.markdown-body h5 .headerlink,
+.markdown-body h6 .headerlink {
+  margin-top: 0;
+}
+
+.markdown-body .headerlink:hover,
+.markdown-body h1:hover .headerlink,
+.markdown-body h2:hover .headerlink,
+.markdown-body h3:hover .headerlink,
+.markdown-body h4:hover .headerlink,
+.markdown-body h5:hover .headerlink,
+.markdown-body h6:hover .headerlink {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite,
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* MultiMarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px fontawesome-mini;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\e157';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+.markdown-body diagram-div, .markdown-body div.uml-sequence-diagram, .markdown-body, div.uml-flowchart {
+  overflow: auto;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js'></script><script>MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true,
+    processEnvironments: true,
+    ignoreClass: ".*|",
+    processClass: "arithmatex"
+  },
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"],
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    equationNumbers: {
+      autoNumber: "AMS",
+    },
+    unicode: {
+      fonts: "STIXGeneral,'Arial Unicode MS'"
+    }
+  },
+  showProcessingMessages: false,
+  messageStyle: 'none'
+});
+</script><style>/*GitHub*/
+.highlight {background-color:#fff;color:#333333;}
+.highlight .hll {background-color:#ffffcc;}
+.highlight .c{color:#999988;font-style:italic}
+.highlight .err{color:#a61717;background-color:#e3d2d2}
+.highlight .k{font-weight:bold}
+.highlight .o{font-weight:bold}
+.highlight .cm{color:#999988;font-style:italic}
+.highlight .cp{color:#999999;font-weight:bold}
+.highlight .c1{color:#999988;font-style:italic}
+.highlight .cs{color:#999999;font-weight:bold;font-style:italic}
+.highlight .gd{color:#000000;background-color:#ffdddd}
+.highlight .ge{font-style:italic}
+.highlight .gr{color:#aa0000}
+.highlight .gh{color:#999999}
+.highlight .gi{color:#000000;background-color:#ddffdd}
+.highlight .go{color:#888888}
+.highlight .gp{color:#555555}
+.highlight .gs{font-weight:bold}
+.highlight .gu{color:#800080;font-weight:bold}
+.highlight .gt{color:#aa0000}
+.highlight .kc{font-weight:bold}
+.highlight .kd{font-weight:bold}
+.highlight .kn{font-weight:bold}
+.highlight .kp{font-weight:bold}
+.highlight .kr{font-weight:bold}
+.highlight .kt{color:#445588;font-weight:bold}
+.highlight .m{color:#009999}
+.highlight .s{color:#dd1144}
+.highlight .n{color:#333333}
+.highlight .na{color:teal}
+.highlight .nb{color:#0086b3}
+.highlight .nc{color:#445588;font-weight:bold}
+.highlight .no{color:teal}
+.highlight .ni{color:purple}
+.highlight .ne{color:#990000;font-weight:bold}
+.highlight .nf{color:#990000;font-weight:bold}
+.highlight .nn{color:#555555}
+.highlight .nt{color:navy}
+.highlight .nv{color:teal}
+.highlight .ow{font-weight:bold}
+.highlight .w{color:#bbbbbb}
+.highlight .mf{color:#009999}
+.highlight .mh{color:#009999}
+.highlight .mi{color:#009999}
+.highlight .mo{color:#009999}
+.highlight .sb{color:#dd1144}
+.highlight .sc{color:#dd1144}
+.highlight .sd{color:#dd1144}
+.highlight .s2{color:#dd1144}
+.highlight .se{color:#dd1144}
+.highlight .sh{color:#dd1144}
+.highlight .si{color:#dd1144}
+.highlight .sx{color:#dd1144}
+.highlight .sr{color:#009926}
+.highlight .s1{color:#dd1144}
+.highlight .ss{color:#990073}
+.highlight .bp{color:#999999}
+.highlight .vc{color:teal}
+.highlight .vg{color:teal}
+.highlight .vi{color:teal}
+.highlight .il{color:#009999}
+.highlight .gc{color:#999;background-color:#EAF2F5}
+</style><title>Universe evolution and Friedmann equations</title></head><body><article class="markdown-body"><h1 id="the-building-blocks-of-cosmology">The building blocks of cosmology<a class="headerlink" href="#the-building-blocks-of-cosmology" title="Permanent link"></a></h1>
+<p>Cosmology is a science that studies the universe as a whole, including its origin, nature, evolution and structure.  Promoting cosmology as a branch of natural sciences has been made possible only recently with the discovery of the Universe&rsquo;s expansion by Hubble in 
+<a href="https://ui.adsabs.harvard.edu/abs/1926ApJ....64..321H/abstract/">Hubble 1926</a>
+<sup id="fnref:Hubble, 1926"><a class="footnote-ref" href="#fn:Hubble, 1926">1</a></sup>, showing that it was a dynamic entity (hence it becomes possible to predict its behavior and the discovery of its very first light with the cosmic microwave background (CMB) by <a href="https://ui.adsabs.harvard.edu/abs/1965ApJ...142..419P/abstract/">Penzias and Wilson 1965</a><sup id="fnref:Penzias and Wilson, 1965"><a class="footnote-ref" href="#fn:Penzias and Wilson, 1965">2</a></sup>, implying that its history might have had a beginning. As cosmology depends on our current pieces of knowledge, it may evolve in the near future. The <strong>standard cosmological model</strong>, <span class="arithmatex">\(\Lambda\)</span>-CDM  (Cold Dark Matter with a cosmological constant), has been widely adopted since the end of the 1990s and seems to fit current observations. It&rsquo;s important to define a model to question it in the future, testing its limits is one of the roles of current research. The three building blocks of modern cosmology are the following:</p>
+<ol>
+<li>
+<p><strong>Cosmological principle</strong>: The Universe is homogeneous (invariant under translation) and isotropic (invariant under rotation, on large scales, everything we observe is similar in every direction). This principle constrains the possible geometry of our Universe.</p>
+</li>
+<li>
+<p><strong>Content</strong>: The content of the universe is given by the various species of particle physics and an additional unknown component called cold dark matter (CDM). These species can be sorted into two categories depending on their mass: matter (heavy and cold) and radiation (light and hot). The following are the current proportions of each componant.</p>
+<ul>
+<li><em>Baryonic matter</em>: Contains standard model particles such as fermions and bosons that can be found <a href="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/cosmo/%25%20link_ui">here</a> : <span class="arithmatex">\(\sim\)</span> 5 %</li>
+<li><em>Dark matter:</em> From a non-baryonic origin, composed of massive and cold particles. Currently, its nature is only an hypothesis: <span class="arithmatex">\(\sim\)</span> 25 %</li>
+<li><em>Radiation:</em> Relativistic matter with little mass (photons, for example), that has low dynamic influence today but was much more significant in the early Universe: <span class="arithmatex">\(&lt; 1\)</span>  %</li>
+<li><em>Dark Energy:</em> Energy that fills the Universe and may be responsible for for the &ldquo;recent&rdquo; acceleration of its expansion: <span class="arithmatex">\(\sim\)</span> 70 %</li>
+</ul>
+</li>
+<li>
+<p><strong>Gravity</strong>: <a href="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/cosmo/%25link%20_codes/cosmo/black-holes.md">General relativity</a> is used to describe the theory of gravity on large scales and the expansion of the Universe is quantified by the non-zero cosmological constant <span class="arithmatex">\(\Lambda\)</span>, which gives us the most simple model of dark energy.\</p>
+</li>
+</ol>
+<h1 id="the-scale-factor-at">The scale factor a(t)<a class="headerlink" href="#the-scale-factor-at" title="Permanent link"></a></h1>
+<p>A major turning point for cosmology in the last centuries was the discovery of the expansion of the Universe, which was first modeled by the <strong>Hubble Law</strong> for nearby galaxies: The Universe expands and galaxies are moving away from one another at speed proportional to their distance apart. We define the Hubble constant <span class="arithmatex">\(H_0\)</span> which is the proportionality factor between the distance and recession speed of galaxies today, as deduced from observations. Its value is still a subject of study and debate among researchers, see <a href="https://ui.adsabs.harvard.edu/abs/2014EPJC...74.3160V/abstract/">Velten et al., 2014</a> <sup id="fnref:Velten et al., 2014"><a class="footnote-ref" href="#fn:Velten et al., 2014">3</a></sup>. We get <span class="arithmatex">\(v\sim H_0*d\)</span>.</p>
+<p>Therefore, we try to model a possible contraction or expansion. We aim to understand how the Universe will evolve with time, from its early instants to its far future. To do so, we fix arbitrarily the coordinates of galaxies, considering they&rsquo;re the same independently of the Universe&rsquo;s evolution. We must make the coordinate system evolve instead. This is done by using the <strong>comoving frame</strong> <span class="arithmatex">\(r, \theta, \phi, t\)</span>., which characterizes the distance between two objects, ignoring expansion. Here, comoving time is the time that would be measured by an observer who is moving along with the expansion and does not experience any local time dilation, as time is relative in relativity. The scale factor, represented by <span class="arithmatex">\(a\)</span>, is used to express the distance between galaxies and is the proportionality factor between the comoving distance and real distance, as <span class="arithmatex">\(d = a(t) \times r\)</span>. By definition, it is fixed nowadays as <span class="arithmatex">\(a_0 = a(t_0)=1\)</span> where <span class="arithmatex">\(t_0=13.6\)</span> Gigayears.</p>
+<p><a name="fig1"></a></p>
+<p><img alt="scalefactor" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/scalefactor.png" title="The scale factor a(t)." /> </p>
+<blockquote>
+<p>Figure 1 : The scale factor a(t). Galaxies’ size does not change as opposed to the distance between them.</p>
+</blockquote>
+<p>Let&rsquo;s define <span class="arithmatex">\(\dot a = \frac{da}{dt}\)</span> as the Universe&rsquo;s expansion speed. <span class="arithmatex">\(H=\frac{\dot a}{a}\)</span> is the Hubble parameter which quantifies the evolution. Fundamentally, as we consider the Universe homogeneous and isotropic, it will evolve similarly in every direction, so <span class="arithmatex">\(a\)</span> is independent of spatial coordinates and is only a function of time.</p>
+<h1 id="the-flrw-metric">The FLRW metric<a class="headerlink" href="#the-flrw-metric" title="Permanent link"></a></h1>
+<p>The principal solution of Einstein&rsquo;s equations satisfying the constraints given by the cosmological principle is described by the FLWR-metric. A metric allows us to depict a distance element in space-time like a 4-Dimensions Pythagorean Theorem : 3 space coordinates and one of time. We have : </p>
+<p><a name="eq1"></a></p>
+<div class="arithmatex">\[
+\text{d}s^2 = -c^2\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
+\]</div>
+<ul>
+<li><span class="arithmatex">\(s\)</span> stands as a spacetime interval</li>
+<li><span class="arithmatex">\(c\)</span> is the speed of light in vacuum, hereafter we fix it equal to 1,</li>
+<li><span class="arithmatex">\(\text{d}\Omega^2 = sin^2\theta  \text{d}  \phi  \text{d} \theta\)</span>,</li>
+<li><span class="arithmatex">\(a(t)\)</span> is the <em>scale factor</em>,</li>
+<li><span class="arithmatex">\(k\)</span> stands as <em>spatial curvature</em> which can suits the cosmological principle if it&rsquo;s uniform. Indeed, it seems to impose an additional constraint on the geometry of the Universe. It is important to note that curvature does not prevent homogeneity, as the density of matter is the same everywhere. Only the three following cases projected in 2D suit with the cosmological principle.</li>
+</ul>
+<p><img alt="3univ" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/3univ.PNG" /> </p>
+<p>But actually, observations as <a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...641A...6P/abstract/">Planck Collaboration et al., 2020</a> <sup id="fnref:Planck Collaboration et al., 2020"><a class="footnote-ref" href="#fn:Planck Collaboration et al., 2020">4</a></sup> suggest that if the Universe is curved, it is so close to being flat that it appears to be, leading to the common assumption of <span class="arithmatex">\(k=0\)</span>. An interesting point is that this assumption is something debated in cosmology, as we can see e.g.  <a href="hhttps://ui.adsabs.harvard.edu/abs/2020NatAs...4..196D/abstract/">Di Valentino et al., 2020</a> <sup id="fnref:Di Valentino et al., 2020"><a class="footnote-ref" href="#fn:Di Valentino et al., 2020">5</a></sup>.</p>
+<h1 id="universe-content-and-perfect-fluids">Universe content and perfect fluids<a class="headerlink" href="#universe-content-and-perfect-fluids" title="Permanent link"></a></h1>
+<p>The cosmological principle also gives strong constraints on the possible behavior of the content in the universe. Since no overall preferred direction should exist, the fluids/matter distribution in the universe must itself be homogeneous without any resulting velocity. We talk about perfect fluid. The general form of their stress-energy tensor is given by:</p>
+<div class="arithmatex">\[ T_{\mu \nu}=\rho u_\mu u_\nu + p (g_{\mu\,\nu}+ u_\mu u_\nu)= {\rm diag}(\rho,p,p,p)
+\]</div>
+<p>More simply, such a fluid should obey the equation of state:</p>
+<div class="arithmatex">\[
+p=w\rho
+\]</div>
+<p>One could think about an [ideal gas]({% link_codes/ideal_gas}] where <span class="arithmatex">\(w = k_B T\)</span>. Note that, due to homogeneity, <span class="arithmatex">\(\rho\)</span> and <span class="arithmatex">\(p\)</span> have always the same value at every point in space.</p>
+<p>The continuity equation <span class="arithmatex">\(\nabla_\mu T^{\mu \nu} = 0\)</span></p>
+<p>equivalent to fluid mechanics (mass) conservation/continuity equation: <span class="arithmatex">\(\frac{\partial \rho}{\partial t}= - \vec{\nabla}\cdot\vec{j}\)</span></p>
+<p>In the FLRW metric, the continuity equation can be written as:
+$$
+\frac{\partial\rho}{\partial t} + 3 H(1 + w)\rho =0
+$$
+Integrating it, we obtain the evolution of the density (i.e. the dilution of a given species) through the evolution of the Universe:
+$$
+\rho(a) =  \rho_0 a^{-3(1+w)}
+$$
+We will assume that:</p>
+<ul>
+<li>All heavy elements are slow and have a null pressure. <span class="arithmatex">\(w=0\)</span>. This includes matter and dark matter.</li>
+<li>All light and relativistic elements (photons and neutrinos) have <span class="arithmatex">\(w=1/3\)</span>, see <a href="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/cosmo/%25%20link_ui">statitical physics</a></li>
+<li>The existence of a cosmological constant is equivalent to an energy vacuum of negative pressure with <span class="arithmatex">\(w=-1\)</span>.</li>
+</ul>
+<p>So in the case of a cold and heavy matter, we have  <span class="arithmatex">\(\rho&gt;&gt;P\)</span>. The matter density <span class="arithmatex">\(\rho_m(t)\)</span> can be represented as the sum of baryonic matter <span class="arithmatex">\(\rho_b(t)\)</span> and cold dark matter <span class="arithmatex">\(\rho_{cdm}(t)\)</span>, which is equal to <span class="arithmatex">\(\rho_{0,m}a^{-3}\)</span>. The amount of matter remains constant as the Universe expands, and it cannot be created or destroyed. Instead, it becomes diluted in all three dimensions of space, hence the <span class="arithmatex">\(a^{-3}\)</span>  which accounts for the same amount of matter occupying a growing volume. As described by <span class="arithmatex">\(E=mc^2\)</span>, the energy density is proportional to the particle density.</p>
+<p>In the case of radiation, we have <span class="arithmatex">\(P\sim \rho\)</span> as photons and neutrinos have zero or negligible mass, so we have <span class="arithmatex">\(\rho_r(t)=\rho_{0,r}a^{-4}\)</span>. The energy is described by <span class="arithmatex">\(E=\frac{hc}{\lambda}\)</span>, energy&rsquo;s density is no longer proportional to particle density. It becomes necessary to note that the densities <span class="arithmatex">\(\rho_i(t)\)</span> represent the energy ones. Radiation also has associated particles (photons, neutrinos) that dilute in  a-3 and an additional factor because radiation also dilutes in space too. Still, it expands with the Universe too due to the increasing wavelength (<span class="arithmatex">\(\lambda\)</span>), leading to a decrease in energy and additional dilution.</p>
+<h1 id="the-friedmann-equation">The Friedmann equation<a class="headerlink" href="#the-friedmann-equation" title="Permanent link"></a></h1>
+<p>Cosmology is made by a few fundamental equations. In this part, we interess ourselves at the first Friedmann-Lemaître equation which describes the evolution of the Universe depending on its density, based on the general relativity equations and by application of the cosmological principle :</p>
+<p>The fundamental equation of general relativity is Einstein&rsquo;s equation, which can be rewritten as:
+$$     R^{\mu \nu} = 8 \pi G \left( T^{\mu \nu} - \frac{1}{2}g^{\mu \nu} T_{\ \sigma}^{\sigma}\right) $$</p>
+<p>Inserting FLRW for <span class="arithmatex">\(g\)</span> and perfect fluids for <span class="arithmatex">\(T\)</span>, one gets the <em>Friedmann-Lemaître</em> equation:</p>
+<div class="arithmatex">\[H^2=\frac{8 \pi G}{3} \sum_i \rho_i + \frac{\Lambda}{3} - \frac{k}{a^2} \]</div>
+<p>and the Raychaudaury or acceleration equation:
+$$
+\frac{\ddot{a}}{a} = H^2 + \dot{H} = \frac{4 \pi G}{3}(\rho+3p).
+$$</p>
+<p>If you know what the content of the Universe <span class="arithmatex">\(\rho\)</span> is and its geometry <span class="arithmatex">\(k\)</span>, you are entirely able to predict its evolution.</p>
+<p>We can see geometrical elements (<span class="arithmatex">\(k\)</span> for spatial curvature and <span class="arithmatex">\(\Lambda\)</span> for the cosmological constant), and we reformulate them as densities : 
+<span class="arithmatex">\(<span class="arithmatex">\(\rho_{\Lambda}=\frac{\Lambda}{8 \pi G} \text{and}
+\rho_k= - \frac{3k}{8 \pi G}\)</span>\)</span></p>
+<p>So one gets :</p>
+<ul>
+<li><span class="arithmatex">\(\rho_r(t)=\rho_{0,r}a^{-4}\)</span></li>
+<li><span class="arithmatex">\(\rho_m(t)=\rho_{0,m}a^{-3}\)</span></li>
+<li><span class="arithmatex">\(\rho_k(t)=\rho_{0,k}a^{-2}\)</span></li>
+<li><span class="arithmatex">\(\rho_{\Lambda}=\rho_{0,\Lambda}\)</span></li>
+</ul>
+<p>Rewriting the Friedmann-Lemaître equation treating geometrical terms as densities, we get  :</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(3H^2= 8\pi G \sum_{i} \rho_i\)</span>\)</span></p>
+<p>Introducing critical density <span class="arithmatex">\(\rho_{c}=\frac{3H_0^2}{8\pi G}\)</span> and the <strong>density parameters</strong>: 
+ <span class="arithmatex">\(<span class="arithmatex">\(\Omega_i^0=\frac{\rho_{0,i}}{\rho_{0,c}}=\frac{8\pi G \rho_{0,i}}{3H_0^2}\)</span>\)</span> </p>
+<p>So we&rsquo;ll use :</p>
+<ul>
+<li><span class="arithmatex">\(\Omega_r^0\)</span> the density parameter for radiation</li>
+<li><span class="arithmatex">\(\Omega_m^0\)</span> the density parameter for cold matter</li>
+<li><span class="arithmatex">\(\Omega_{\Lambda}^0\)</span> the density parameter for the cosmological constant</li>
+<li><span class="arithmatex">\(\Omega_k^0\)</span>  the density parameter for spatial curvature</li>
+</ul>
+<p>Using the continuity equation, we can rewrite the equation as:</p>
+<p><a name="eqfriedmann"></a></p>
+<div class="arithmatex">\[\frac{H^2}{H_0^2}=\sum_i \Omega_i a^{-3(1+w_i)}\]</div>
+<p>We obtain:</p>
+<p><a name="eq2"></a></p>
+<div class="arithmatex">\[H=\frac{\dot a}{a}=H_0\sqrt{\Omega_r^0 a^{-4}+\Omega_m^0 a^{-3}+\Omega_k^0 a^{-2}+\Omega_\Lambda^0}\]</div>
+<p>As we fixed <span class="arithmatex">\(a(t)=1\)</span> today, we get the <strong>closure equation</strong> <span class="arithmatex">\(\Omega_r^0+\Omega_m^0+\Omega_{\Lambda}^0+\Omega_k^0=1\)</span>, which allows us to interpret <span class="arithmatex">\(\Omega_i^0\)</span> as fractions. We will now numerically integrate this equation to observe the evolution of our Universe depending on its components.</p>
+<h1 id="the-evolution-of-our-universe">The evolution of our Universe<a class="headerlink" href="#the-evolution-of-our-universe" title="Permanent link"></a></h1>
+<p><a name="fig2"></a></p>
+<p><img alt="EvolUniv" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/EvolUniv.png" title="Modelisation of Friedmann's equation under Python" /> </p>
+<blockquote>
+<p>Figure 2 : Modelisation of Friedmann&rsquo;s equation under Python</p>
+</blockquote>
+<p>So our goal is to plot the evolution of the scale factor <span class="arithmatex">\(a(t)\)</span> depending on comoving time for different scenarios. We will accomplish it by integrating the equation using the function <em>odeint</em> in the <strong>scipy</strong> python module <sup id="fnref:Virtanen et al., 2020"><a class="footnote-ref" href="#fn:Virtanen et al., 2020">6</a></sup>. After specifying the time range and the proportion of each component <span class="arithmatex">\(\Omega_{i}\)</span>, we&rsquo;ll define a function containing the equation and another to integrate it. The program can be found <a href="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/cosmo/%25%20link_ui">here</a>. We obtain <a href="#fig2">Fig. 2</a>. It allows us to observe the impact of each component on Universe&rsquo;s evolution. To discuss our program and to introduce a few models, we&rsquo;ll compare our plots to those given by analytical solution.</p>
+<p>The program can be found here, using jupyter notebook : </p>
+<h2 id="einstein-de-sitter-model">Einstein-De-Sitter model :<a class="headerlink" href="#einstein-de-sitter-model" title="Permanent link"></a></h2>
+<p><a name="fig3"></a></p>
+<p><img alt="radonly" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/radonly.png" title="Solutions comparison for radiation only" /> </p>
+<blockquote>
+<p>Figure 3 : Solutions comparison for radiation only</p>
+</blockquote>
+<p><a name="fig4"></a></p>
+<p><img alt="EdS" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/EdS.png" title="Solutions comparison for Einstein-De-Sitter model" /> </p>
+<blockquote>
+<p>Figure 4 : Solutions comparison for Einstein-De-Sitter model</p>
+</blockquote>
+<p>In the case where only one component appears in the Friedmann equation [Eq. 2] (#eq2) with <span class="arithmatex">\(w&gt;-1\)</span>, we obtain by integration:
+%
+$$
+t = \frac{1}{\sqrt{\Omega_i}H_0} \int_{0}^a a^{\frac{3}{2} (1+w)-1} \d a =  \frac{2a^{\frac{3}{2}(1+w)}}{3(1+w)H_0\sqrt{\Omega_i}} 
+$$</p>
+<p>This occurs when only one component exists or when she clearly dominates the other ones. If our Universe is only composed of radiation or matter, we have the analytical solutions:</p>
+<p><a name="eq2a"></a></p>
+<div class="arithmatex">\[w=0 \Longrightarrow a(t) = \left(\frac{3 H_0 t \sqrt{\Omega_m}}{2}\right)^{\frac{2}{3}} \]</div>
+<p><a name="eq2b"></a></p>
+<div class="arithmatex">\[w=\frac{1}{3} \Longrightarrow a(t) = \left(\frac{4 H_0 t \sqrt{\Omega_r}}{2}\right)^{\frac{1}{2}}\]</div>
+<p>In both cases, we may report that our Universe would have been born much earlier. Let&rsquo;s take a closer look at the Einstein-De-Sitter Universe <a href="#fig4">fig. 4</a>, corresponding to a case where energy density is equal to the critical one. Proposed in 1932, <a href="https://ui.adsabs.harvard.edu/abs/1932CoMtW...3...51E/abstract/">Einstein and de Sitter, 1932</a> <sup id="fnref:Einstein and de Sitter, 1932"><a class="footnote-ref" href="#fn:Einstein and de Sitter, 1932">7</a></sup> describes a minimalistic Universe with a Euclidian geometry; that contains only baryonic and dark matter (<span class="arithmatex">\(\Omega_m\)</span>=1). To use this model, the autors recall that the cosmological constant <span class="arithmatex">\(\Lambda\)</span> was introduced to explain the existence of a finite mean density in a static Universe, but that the case of a dynamic Universe can be achieved without <span class="arithmatex">\(\Lambda\)</span>. This model is called  the <em>SCDM (Standard Cold Dark Matter)</em>. However, observations indicate that dark matter density is at least 3 times lower than critical density. Some objects in the observable Universe are much older than the 10 Gyr that the SCDM Model suggests as a birth of the Universe. As a result, this model was quickly abandoned in favor of models with a lower dark matter density, such as <span class="arithmatex">\(\Lambda\)</span> CDM, which adds a proportion of dark energy.\</p>
+<h2 id="lambda-cdm-model"><span class="arithmatex">\(\Lambda\)</span>-CDM model :<a class="headerlink" href="#lambda-cdm-model" title="Permanent link"></a></h2>
+<p><a name="fig5"></a></p>
+<p><img alt="stdmodel" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/stdmodel.png" title="Solutions comparison for \(\Lambda\) CDM model" /> 
+<img alt="stdmodelex" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/stdmodelex.png" title="Solutions comparison for \(\Lambda\) CDM model, exponential zoom" /> </p>
+<blockquote>
+<p>Figure 5 : Solutions comparison for <span class="arithmatex">\(\Lambda\)</span> CDM model</p>
+</blockquote>
+<p>According to <a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...641A...6P/abstract}/">Planck Collaboration et al., 2020</a> <sup id="fnref2:Planck Collaboration et al., 2020"><a class="footnote-ref" href="#fn:Planck Collaboration et al., 2020">4</a></sup> , we can consider with the combination of different cosmological instruments that <span class="arithmatex">\(\Omega_k \simeq 0\)</span>, <span class="arithmatex">\(\Omega_m \simeq 0.3\)</span>,<span class="arithmatex">\(\Omega_\Lambda \simeq 0.7, \Omega_r \simeq 0\)</span>. This case corresponds to the most concordant values with the observations for the <span class="arithmatex">\(\Lambda\)</span>CDM model. <span class="arithmatex">\(\Omega_r\)</span> value is chosen very small, as we know its weakness nowadays but that she was important in the past. Thus, we can take <span class="arithmatex">\(\Omega_r\)</span>=0 to fit with the analytical solution, even if the standard model describes <span class="arithmatex">\(\Omega_r=10^{-4}\)</span>, as we can see on the purple line of <a href="#fig2">Fig. 2</a>. If we consider that the Universe only contains matter and <span class="arithmatex">\(\Lambda\)</span>, we get: </p>
+<p><a name="eqOlOm"></a></p>
+<p><span class="arithmatex">\(a(t)= \left(\frac{\Omega_m}{\Omega_{\Lambda}} \right)^{\frac{1}{3}}\left(\sinh\left(\frac{3}{2}\sqrt{\Omega_{\Lambda}}H_0t\right)\right)^{\frac{3}{2}}\)</span></p>
+<p>On <a href="#fig5">Fig.5</a>, we compare it with the numeric solution.
+ Graphically, we notice the birth of our Universe to have occurred approximately 14 Gyr ago. We can even extrapolate the evolution of the scale factor (<span class="arithmatex">\(a\)</span>) beyond current observations, which are limited to the Cosmic Microwave Background (CMB). In the beginning, when radiation rules  <span class="arithmatex">\(a\)</span> rapidly increase, as said by the <a href="#eq2a">Eq. 2a</a>. Radiation is quickly diluted due to the <span class="arithmatex">\(a^{-4}\)</span> factor. This is followed by an era dominated by matter, as predicted by <a href="#eq2b">Eq. 2b</a> leading to a more linear expansion. Once matter is sufficiently diluted, the influence of <span class="arithmatex">\(\Lambda\)</span> becomes dominant. Indeed, it&rsquo;ll never dilute (being a constant). It results in an accelerated expansion of the universe that will continue indefinitely. Expansion isn&rsquo;t stopped anymore and <span class="arithmatex">\(a\)</span> is faster and faster. The plot illustrates this dominance around 60 Gyr. It allows us  to predict the future of our Universe. At this moment, it will become a De-Sitter Universe.</p>
+<h2 id="de-sitter-model">De-Sitter model :<a class="headerlink" href="#de-sitter-model" title="Permanent link"></a></h2>
+<p><a name="fig6"></a></p>
+<p><img alt="deS" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/deS.png" title="Solutions comparison for De-Sitter model" /> </p>
+<blockquote>
+<p>Figure 6 : Solutions comparison for De-Sitter model</p>
+</blockquote>
+<p>In the scenario where only dark energy sustains, the only contribution to the energy density is the <span class="arithmatex">\(\Lambda\)</span> one. The Universe is empty of matter, then we have: <span class="arithmatex">\(<span class="arithmatex">\(a(t) \propto e^{Hot\sqrt{\Omega_{\Lambda}}}\)</span>\)</span>
+In this model, <span class="arithmatex">\(a(t)\)</span> increases so rapidly that no event can have an impact on any location that lies beyond the event horizon, defined as <span class="arithmatex">\(c*H^{-1}\)</span>. This phenomenon can also be observed in the case of inflation.</p>
+<h2 id="hyperbolic-universe">Hyperbolic Universe :<a class="headerlink" href="#hyperbolic-universe" title="Permanent link"></a></h2>
+<p>Until the mid-1990s, we  were considering the hypothesis of the Big Crunch, which wondered if there was enough matter in the Universe to stop its expansion and cause it to contract again. In the case where <span class="arithmatex">\(\Omega_k &lt; 0\)</span>, the spatial curvature is <span class="arithmatex">\(k=+1\)</span>, we&rsquo;re in a hyperbolic space. Depending on parameters, we may observe a crunch of the Universe in the distant future. Friedmann&rsquo;s equation is thus slightly different, as the term under the square root becomes negative. We have to configure our program differently to avoid errors. Therefore, we have : </p>
+<p><a name="fig7"></a></p>
+<p><img alt="hyperbolic" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/hyperbolic.png" title="Modelisation of Friedmann Equation for a Hyperbolic Universe" /> </p>
+<blockquote>
+<p>Figure 7 : Modelisation of Friedmann Equation for a Hyperbolic Universe</p>
+</blockquote>
+<h1 id="final-modelization">Final modelization :<a class="headerlink" href="#final-modelization" title="Permanent link"></a></h1>
+<p>It may also be useful to plot the scenarios previously enounced on the same graph for comparison purposes. Depending on parameters, the birth of the Universe can be more or less distant, and its evolution will differ. The future of our Universe is directly impacted by the parameters that determine its density and as a result its expansion, constancy, or crunch.</p>
+<p><a name="fig8"></a></p>
+<p><img alt="complete" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/complete.png" title="Modelisation of Friedmann's equation under Python" /> </p>
+<blockquote>
+<p>Figure 8 : Modelisation of Friedmann&rsquo;s equation under Python</p>
+</blockquote>
+<h1 id="bibliographie">Bibliographie<a class="headerlink" href="#bibliographie" title="Permanent link"></a></h1>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:Hubble, 1926">
+<p>Hubble, E. P. (1926). Extragalactic nebulae. ApJ, 64:321–369.&#160;<a class="footnote-backref" href="#fnref:Hubble, 1926" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:Penzias and Wilson, 1965">
+<p>Penzias, A. A. and Wilson, R. W. (1965). A Measurement of Excess Antenna Temperature at 4080 Mc/s. ApJ, 142:419–421.&#160;<a class="footnote-backref" href="#fnref:Penzias and Wilson, 1965" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:Velten et al., 2014">
+<p>Velten, H. E. S., vom Marttens, R. F., and Zimdahl, W. (2014). Aspects of the cosmological “coincidence problem”. European Physical Journal C, 74:3160.&#160;<a class="footnote-backref" href="#fnref:Velten et al., 2014" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:Planck Collaboration et al., 2020">
+<p>Planck Collaboration, Aghanim, N., Akrami, Y., Ashdown, M., Aumont, J., Baccigalupi, C., Ballardini, M., Banday, A. J., Barreiro, R. B., Bartolo, N., Basak, S., Battye, R., Benabed, K., Bernard, J. P., Bersanelli, M., Bielewicz, P., Bock, J. J., Bond, J. R., Borrill, J., Bouchet, F. R., Boulanger, F., Bucher, M., Burigana, C., Butler, R. C., Calabrese, E., Cardoso, J. F., Carron, J., Challinor, A., Chiang, H. C., Chluba, J., Colombo, L. P. L.,Combet, C., Contreras, D., Crill, B. P., Cuttaia, F., de Bernardis, P., de Zotti, G., Delabrouille, J., Delouis, J. M., Di
+Valentino, E., Diego, J. M., Dor ́e, O., Douspis, M., Ducout, A., Dupac, X., Dusini, S., Efstathiou, G., Elsner, F., Enßlin, T. A., Eriksen, H. K., Fantaye, Y., Farhang, M., Fergusson, J., Fernandez-Cobos, R., Finelli, F., Forastieri, F., Frailis, M., Fraisse, A. A., Franceschi, E., Frolov, A., Galeotta, S., Galli, S., Ganga, K., G ́enova-Santos, R. T., Gerbino, M., Ghosh, T., Gonz ́alez-Nuevo, J., G ́orski, K. M., Gratton, S., Gruppuso, A., Gudmundsson, J. E., Hamann, J., Handley, W., Hansen, F. K., Herranz, D., Hildebrandt, S. R., Hivon, E., Huang, Z., Jaffe, A. H., Jones, W. C., Karakci, A., Keih ̈anen, E., Keskitalo, R., Kiiveri, K., Kim, J., Kisner, T. S., Knox, L., Krachmalnicoff, N., Kunz, M., Kurki-Suonio, H., Lagache,
+G., Lamarre, J. M., Lasenby, A., Lattanzi, M., Lawrence, C. R., Le Jeune, M., Lemos, P., Lesgourgues, J., Levrier, F., Lewis, A., Liguori, M., Lilje, P. B., Lilley, M., Lindholm, V., L ́opez-Caniego, M., Lubin, P. M., Ma, Y. Z., Mac ́ıas-P ́erez,
+J. F., Maggio, G., Maino, D., Mandolesi, N., Mangilli, A., Marcos-Caballero, A., Maris, M., Martin, P. G., Martinelli, M., Mart ́ınez-Gonz ́alez, E., Matarrese, S., Mauri, N., McEwen, J. D., Meinhold, P. R., Melchiorri, A., Mennella, A., Migliaccio, M., Millea, M., Mitra, S., Miville-Deschˆenes, M. A., Molinari, D., Montier, L., Morgante, G., Moss, A., Natoli, P., Nørgaard-Nielsen, H. U., Pagano, L., Paoletti, D., Partridge, B., Patanchon, G., Peiris, H. V., Perrotta, F., Pettorino, V., Piacentini, F., Polastri, L., Polenta, G., Puget, J. L., Rachen, J. P., Reinecke, M., Remazeilles, M., Renzi, A., Rocha, G., Rosset, C., Roudier, G., Rubi ̃no-Mart ́ın, J. A., Ruiz-Granados, B., Salvati, L., Sandri, M., Savelainen, M., Scott, D., Shellard, E. P. S., Sirignano, C., Sirri, G., Spencer, L. D., Sunyaev, R., Suur-Uski, A. S., Tauber, J. A.,Tavagnacco, D., Tenti, M., Toffolatti, L., Tomasi, M., Trombetti, T., Valenziano, L., Valiviita, J., Van Tent, B., Vibert,
+L., Vielva, P., Villa, F., Vittorio, N., Wandelt, B. D., Wehus, I. K., White, M., White, S. D. M., Zacchei, A., and Zonca,A. (2020). Planck 2018 results. VI. Cosmological parameters. A&amp;A, 641:A6.&#160;<a class="footnote-backref" href="#fnref:Planck Collaboration et al., 2020" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:Planck Collaboration et al., 2020" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:Di Valentino et al., 2020">
+<p>Di Valentino, E., Melchiorri, A., and Silk, J. (2020). Planck evidence for a closed Universe and a possible crisis for cosmology. Nature Astronomy, 4:196–203.&#160;<a class="footnote-backref" href="#fnref:Di Valentino et al., 2020" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:Virtanen et al., 2020">
+<p>Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., Burovski,E., Peterson, P., Weckesser, W., Bright, J., van der Walt, S. J., Brett, M., Wilson, J., Millman, K. J., Mayorov, N.,Nelson, A. R. J., Jones, E., Kern, R., Larson, E., Carey, C. J., Polat,  ̇I., Feng, Y., Moore, E. W., VanderPlas, J., Laxalde, D., Perktold, J., Cimrman, R., Henriksen, I., Quintero, E. A., Harris, C. R., Archibald, A. M., Ribeiro, A. H., Pedregosa,F., van Mulbregt, P., and SciPy 1.0 Contributors (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computingin Python. Nature Methods, 17:261–272.&#160;<a class="footnote-backref" href="#fnref:Virtanen et al., 2020" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:Einstein and de Sitter, 1932">
+<p>Einstein, A. and de Sitter, W. (1932). On the Relation between the Expansion and the Mean Density of the Universe. Contributions from the Mount Wilson Observatory, 3:51–52.&#160;<a class="footnote-backref" href="#fnref:Einstein and de Sitter, 1932" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></article></body></html>
