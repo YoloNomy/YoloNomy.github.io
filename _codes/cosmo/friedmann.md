@@ -266,8 +266,6 @@ It may also be useful to plot the scenarios previously enounced on the same grap
 
 > Figure 8 : Modelisation of Friedmann's equation under Python
 
-## Bibliographie 
-
 
 [^hubble]: Hubble, E. P. (1926). Extragalactic nebulae. ApJ, 64:321–369.
 
