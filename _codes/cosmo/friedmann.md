@@ -254,7 +254,7 @@ Until the mid-1990s, we  were considering the hypothesis of the Big Crunch, whic
 
 > Figure 7 : Modelisation of Friedmann Equation for a Spheric Universe
 
-## Final modelization : 
+## Final model : 
 
 It may also be useful to plot the scenarios previously enounced on the same graph for comparison purposes. Depending on parameters, the birth of the Universe can be more or less distant, and its evolution will differ. The future of our Universe is directly impacted by the parameters that determine its density and as a result its expansion, constancy, or crunch.
 
@@ -264,7 +264,7 @@ It may also be useful to plot the scenarios previously enounced on the same grap
 ![complete](../images/complete.png "Modelisation of Friedmann's equation under Python") 
 
 
-> Figure 8 : Modelization of Friedmann's equation under Python
+> Figure 8 : Modelisation of Friedmann's equation under Python
 
 ## Bibliographie 
 
@@ -290,4 +290,4 @@ L., Vielva, P., Villa, F., Vittorio, N., Wandelt, B. D., Wehus, I. K., White, M.
 
 
 
-> Written by Jehanne Delhomelle, Léo Vacher, 2023
+> Written by Jehanne Delhomelle (Université Toulouse III - Paul Sabatier) under the supervision of Léo Vacher (Institut de Recherche en Astrophysique et Planétologie), Mai 2023.
