@@ -245,7 +245,7 @@ In this model, $a(t)$ increases so rapidly that no event can have an impact on a
 
 ### Spheric Universe :
 
-Until the mid-1990s, we  were considering the hypothesis of the Big Crunch, which wondered if there was enough matter in the Universe to stop its expansion and cause it to contract again. In the case where $\Omega_k < 0$, the spatial curvature is $k=+1$, we're in a hyperbolic space. Depending on parameters, we may observe a crunch of the Universe in the distant future. Friedmann's equation is thus slightly different, as the term under the square root becomes negative. We have to configure our program differently to avoid errors. Therefore, we have : 
+Until the mid-1990s, we  were considering the hypothesis of the Big Crunch, which wondered if there was enough matter in the Universe to stop its expansion and cause it to contract again. In the case where $\Omega_k < 0$, the spatial curvature is $k>1$, we're in a spheric space. Depending on parameters, we may observe a crunch of the Universe in the distant future. Friedmann's equation is thus slightly different, as the term under the square root becomes negative. We have to configure our program differently to avoid errors. Therefore, we have : 
 
 
 <a name="fig7"></a>
