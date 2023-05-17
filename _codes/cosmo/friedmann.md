@@ -188,10 +188,10 @@ As we fixed $a(t)=1$ today, we get the **closure equation** $\Omega_r^0+\Omega_m
 
 
 
-In the case where only one component appears in the Friedmann equation [Eq. 2] (#eq2) with $w>-1$, we obtain by integration:
+In the case where only one component appears in the Friedmann equation [Eq. 2](#eq2) with $w>-1$, we obtain by integration:
 %
 $$
-t = \frac{1}{\sqrt{\Omega_i}H_0} \int_{0}^a a^{\frac{3}{2} (1+w)-1} \d a =  \frac{2a^{\frac{3}{2}(1+w)}}{3(1+w)H_0\sqrt{\Omega_i}} 
+t = \frac{1}{\sqrt{\Omega_i}H_0} \int_{0}^a a^{\frac{3}{2} (1+w)-1} \text{d} a =  \frac{2a^{\frac{3}{2}(1+w)}}{3(1+w)H_0\sqrt{\Omega_i}} 
 $$
 
 This occurs when only one component exists or when she clearly dominates the other ones. If our Universe is only composed of radiation or matter, we have the analytical solutions:
@@ -243,16 +243,16 @@ On [Fig.5](#fig5), we compare it with the numeric solution.
 In the scenario where only dark energy sustains, the only contribution to the energy density is the $\Lambda$ one. The Universe is empty of matter, then we have: $$a(t) \propto e^{Hot\sqrt{\Omega_{\Lambda}}}$$
 In this model, $a(t)$ increases so rapidly that no event can have an impact on any location that lies beyond the event horizon, defined as $c*H^{-1}$. This phenomenon can also be observed in the case of inflation.
 
-### Hyperbolic Universe :
+### Spheric Universe :
 
 Until the mid-1990s, we  were considering the hypothesis of the Big Crunch, which wondered if there was enough matter in the Universe to stop its expansion and cause it to contract again. In the case where $\Omega_k < 0$, the spatial curvature is $k=+1$, we're in a hyperbolic space. Depending on parameters, we may observe a crunch of the Universe in the distant future. Friedmann's equation is thus slightly different, as the term under the square root becomes negative. We have to configure our program differently to avoid errors. Therefore, we have : 
 
 
 <a name="fig7"></a>
 
-![hyperbolic](../images/hyperbolic.png "Modelisation of Friedmann Equation for a Hyperbolic Universe") 
+![spheric](../images/spheric.png "Modelisation of Friedmann Equation for a Spheric Universe") 
 
-> Figure 7 : Modelisation of Friedmann Equation for a Hyperbolic Universe
+> Figure 7 : Modelisation of Friedmann Equation for a Spheric Universe
 
 ## Final modelization : 
 
