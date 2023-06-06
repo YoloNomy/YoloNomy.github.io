@@ -241,8 +241,7 @@ On [Fig.5](#fig5), we compare it with the numeric solution.
 
 
 In the scenario where only dark energy sustains, the only contribution to the energy density is the $\Lambda$ one. The Universe is empty of matter, then we have: $$a(t) \propto e^{Hot\sqrt{\Omega_{\Lambda}}}$$
-In this model, $a(t)$ increases so rapidly that no event can have an impact on any location that lies beyond the event horizon, defined as $c*H^{-1}$. This phenomenon can also be observed in the case of inflation.
-
+In cosmology, an event can't have any inluence anymore on every place located beyond $c*H^{-1}$, a distance called event horizon. In the case of de Sitter, it goes down, and the points that where connected before become causaly teared apart. That's typically what occurs in the case of inflation or of the current accelerated expansion.
 ### Spheric Universe :
 
 Until the mid-1990s, we  were considering the hypothesis of the Big Crunch, which wondered if there was enough matter in the Universe to stop its expansion and cause it to contract again. In the case where $\Omega_k < 0$, the spatial curvature is $k>1$, we're in a spheric space. Depending on parameters, we may observe a crunch of the Universe in the distant future. Friedmann's equation is thus slightly different, as the term under the square root becomes negative. We have to configure our program differently to avoid errors. Therefore, we have : 

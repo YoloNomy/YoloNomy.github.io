@@ -1,6 +1,6 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="parent" content="codes">
-<meta name="nav_order" content="3">
-<meta name="layout" content="default"><style>body {
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="layout" content="default">
+<meta name="parent" content="codes">
+<meta name="nav_order" content="3"><style>body {
   max-width: 980px;
   margin: 16px auto;
 }
@@ -1149,8 +1149,7 @@ body .markdown-body
 p=w\rho
 \]</div>
 <p>One could think about an <a href="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/cosmo/%25%20link_ui">ideal gas</a> where <span class="arithmatex">\(w = k_B T\)</span>. Note that, due to homogeneity, <span class="arithmatex">\(\rho\)</span> and <span class="arithmatex">\(p\)</span> have always the same value at every point in space.</p>
-<p>The continuity equation <span class="arithmatex">\(\nabla_\mu T^{\mu \nu} = 0\)</span></p>
-<p>equivalent to fluid mechanics (mass) conservation/continuity equation: <span class="arithmatex">\(\frac{\partial \rho}{\partial t}= - \vec{\nabla}\cdot\vec{j}\)</span></p>
+<p>The continuity equation <span class="arithmatex">\(\nabla_\mu T^{\mu \nu} = 0\)</span> is equivalent to fluid mechanics (mass) conservation/continuity equation: <span class="arithmatex">\(\frac{\partial \rho}{\partial t}= - \vec{\nabla}\cdot\vec{j}\)</span></p>
 <p>In the FLRW metric, the continuity equation can be written as:
 $$
 \frac{\partial\rho}{\partial t} + 3 H(1 + w)\rho =0
@@ -1226,10 +1225,10 @@ $$</p>
 <blockquote>
 <p>Figure 4 : Solutions comparison for Einstein-De-Sitter model</p>
 </blockquote>
-<p>In the case where only one component appears in the Friedmann equation [Eq. 2] (#eq2) with <span class="arithmatex">\(w&gt;-1\)</span>, we obtain by integration:
+<p>In the case where only one component appears in the Friedmann equation <a href="#eq2">Eq. 2</a> with <span class="arithmatex">\(w&gt;-1\)</span>, we obtain by integration:
 %
 $$
-t = \frac{1}{\sqrt{\Omega_i}H_0} \int_{0}^a a^{\frac{3}{2} (1+w)-1} \d a =  \frac{2a^{\frac{3}{2}(1+w)}}{3(1+w)H_0\sqrt{\Omega_i}} 
+t = \frac{1}{\sqrt{\Omega_i}H_0} \int_{0}^a a^{\frac{3}{2} (1+w)-1} \text{d} a =  \frac{2a^{\frac{3}{2}(1+w)}}{3(1+w)H_0\sqrt{\Omega_i}} 
 $$</p>
 <p>This occurs when only one component exists or when she clearly dominates the other ones. If our Universe is only composed of radiation or matter, we have the analytical solutions:</p>
 <p><a name="eq2a"></a></p>
@@ -1256,24 +1255,21 @@ $$</p>
 <p>Figure 6 : Solutions comparison for De-Sitter model</p>
 </blockquote>
 <p>In the scenario where only dark energy sustains, the only contribution to the energy density is the <span class="arithmatex">\(\Lambda\)</span> one. The Universe is empty of matter, then we have: <span class="arithmatex">\(<span class="arithmatex">\(a(t) \propto e^{Hot\sqrt{\Omega_{\Lambda}}}\)</span>\)</span>
-In this model, <span class="arithmatex">\(a(t)\)</span> increases so rapidly that no event can have an impact on any location that lies beyond the event horizon, defined as <span class="arithmatex">\(c*H^{-1}\)</span>. This phenomenon can also be observed in the case of inflation.</p>
-<h3 id="hyperbolic-universe">Hyperbolic Universe :<a class="headerlink" href="#hyperbolic-universe" title="Permanent link"></a></h3>
-<p>Until the mid-1990s, we  were considering the hypothesis of the Big Crunch, which wondered if there was enough matter in the Universe to stop its expansion and cause it to contract again. In the case where <span class="arithmatex">\(\Omega_k &lt; 0\)</span>, the spatial curvature is <span class="arithmatex">\(k=+1\)</span>, we&rsquo;re in a hyperbolic space. Depending on parameters, we may observe a crunch of the Universe in the distant future. Friedmann&rsquo;s equation is thus slightly different, as the term under the square root becomes negative. We have to configure our program differently to avoid errors. Therefore, we have : </p>
+In cosmology, an event can&rsquo;t have any inluence anymore on every place located beyond <span class="arithmatex">\(c*H^{-1}\)</span>, a distance called event horizon. In the case of de Sitter, it goes down, and the points that where connected before become causaly teared apart. That&rsquo;s typically what occurs in the case of inflation or of the current accelerated expansion.</p>
+<h3 id="spheric-universe">Spheric Universe :<a class="headerlink" href="#spheric-universe" title="Permanent link"></a></h3>
+<p>Until the mid-1990s, we  were considering the hypothesis of the Big Crunch, which wondered if there was enough matter in the Universe to stop its expansion and cause it to contract again. In the case where <span class="arithmatex">\(\Omega_k &lt; 0\)</span>, the spatial curvature is <span class="arithmatex">\(k&gt;1\)</span>, we&rsquo;re in a spheric space. Depending on parameters, we may observe a crunch of the Universe in the distant future. Friedmann&rsquo;s equation is thus slightly different, as the term under the square root becomes negative. We have to configure our program differently to avoid errors. Therefore, we have : </p>
 <p><a name="fig7"></a></p>
-<p><img alt="hyperbolic" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/hyperbolic.png" title="Modelisation of Friedmann Equation for a Hyperbolic Universe" /> </p>
+<p><img alt="spheric" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/spheric.png" title="Modelisation of Friedmann Equation for a Spheric Universe" /> </p>
 <blockquote>
-<p>Figure 7 : Modelisation of Friedmann Equation for a Hyperbolic Universe</p>
+<p>Figure 7 : Modelisation of Friedmann Equation for a Spheric Universe</p>
 </blockquote>
-<h2 id="final-modelization">Final modelization :<a class="headerlink" href="#final-modelization" title="Permanent link"></a></h2>
+<h2 id="final-model">Final model :<a class="headerlink" href="#final-model" title="Permanent link"></a></h2>
 <p>It may also be useful to plot the scenarios previously enounced on the same graph for comparison purposes. Depending on parameters, the birth of the Universe can be more or less distant, and its evolution will differ. The future of our Universe is directly impacted by the parameters that determine its density and as a result its expansion, constancy, or crunch.</p>
 <p><a name="fig8"></a></p>
 <p><img alt="complete" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/complete.png" title="Modelisation of Friedmann's equation under Python" /> </p>
 <blockquote>
-<p>Figure 8 : Modelization of Friedmann&rsquo;s equation under Python</p>
-</blockquote>
-<h2 id="bibliographie">Bibliographie<a class="headerlink" href="#bibliographie" title="Permanent link"></a></h2>
-<blockquote>
-<p>Written by Jehanne Delhomelle, Léo Vacher, 2023</p>
+<p>Figure 8 : Modelisation of Friedmann&rsquo;s equation under Python</p>
+<p>Written by Jehanne Delhomelle (Université Toulouse III - Paul Sabatier) under the supervision of Léo Vacher (Institut de Recherche en Astrophysique et Planétologie), Mai 2023.</p>
 </blockquote>
 <div class="footnote">
 <hr />
@@ -1288,11 +1284,7 @@ In this model, <span class="arithmatex">\(a(t)\)</span> increases so rapidly tha
 <p>Velten, H. E. S., vom Marttens, R. F., and Zimdahl, W. (2014). Aspects of the cosmological “coincidence problem”. European Physical Journal C, 74:3160.&#160;<a class="footnote-backref" href="#fnref:velten" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:planckcollab">
-<p>Planck Collaboration, Aghanim, N., Akrami, Y., Ashdown, M., Aumont, J., Baccigalupi, C., Ballardini, M., Banday, A. J., Barreiro, R. B., Bartolo, N., Basak, S., Battye, R., Benabed, K., Bernard, J. P., Bersanelli, M., Bielewicz, P., Bock, J. J., Bond, J. R., Borrill, J., Bouchet, F. R., Boulanger, F., Bucher, M., Burigana, C., Butler, R. C., Calabrese, E., Cardoso, J. F., Carron, J., Challinor, A., Chiang, H. C., Chluba, J., Colombo, L. P. L.,Combet, C., Contreras, D., Crill, B. P., Cuttaia, F., de Bernardis, P., de Zotti, G., Delabrouille, J., Delouis, J. M., Di
-Valentino, E., Diego, J. M., Dor ́e, O., Douspis, M., Ducout, A., Dupac, X., Dusini, S., Efstathiou, G., Elsner, F., Enßlin, T. A., Eriksen, H. K., Fantaye, Y., Farhang, M., Fergusson, J., Fernandez-Cobos, R., Finelli, F., Forastieri, F., Frailis, M., Fraisse, A. A., Franceschi, E., Frolov, A., Galeotta, S., Galli, S., Ganga, K., G ́enova-Santos, R. T., Gerbino, M., Ghosh, T., Gonz ́alez-Nuevo, J., G ́orski, K. M., Gratton, S., Gruppuso, A., Gudmundsson, J. E., Hamann, J., Handley, W., Hansen, F. K., Herranz, D., Hildebrandt, S. R., Hivon, E., Huang, Z., Jaffe, A. H., Jones, W. C., Karakci, A., Keih ̈anen, E., Keskitalo, R., Kiiveri, K., Kim, J., Kisner, T. S., Knox, L., Krachmalnicoff, N., Kunz, M., Kurki-Suonio, H., Lagache,
-G., Lamarre, J. M., Lasenby, A., Lattanzi, M., Lawrence, C. R., Le Jeune, M., Lemos, P., Lesgourgues, J., Levrier, F., Lewis, A., Liguori, M., Lilje, P. B., Lilley, M., Lindholm, V., L ́opez-Caniego, M., Lubin, P. M., Ma, Y. Z., Mac ́ıas-P ́erez,
-J. F., Maggio, G., Maino, D., Mandolesi, N., Mangilli, A., Marcos-Caballero, A., Maris, M., Martin, P. G., Martinelli, M., Mart ́ınez-Gonz ́alez, E., Matarrese, S., Mauri, N., McEwen, J. D., Meinhold, P. R., Melchiorri, A., Mennella, A., Migliaccio, M., Millea, M., Mitra, S., Miville-Deschˆenes, M. A., Molinari, D., Montier, L., Morgante, G., Moss, A., Natoli, P., Nørgaard-Nielsen, H. U., Pagano, L., Paoletti, D., Partridge, B., Patanchon, G., Peiris, H. V., Perrotta, F., Pettorino, V., Piacentini, F., Polastri, L., Polenta, G., Puget, J. L., Rachen, J. P., Reinecke, M., Remazeilles, M., Renzi, A., Rocha, G., Rosset, C., Roudier, G., Rubi ̃no-Mart ́ın, J. A., Ruiz-Granados, B., Salvati, L., Sandri, M., Savelainen, M., Scott, D., Shellard, E. P. S., Sirignano, C., Sirri, G., Spencer, L. D., Sunyaev, R., Suur-Uski, A. S., Tauber, J. A.,Tavagnacco, D., Tenti, M., Toffolatti, L., Tomasi, M., Trombetti, T., Valenziano, L., Valiviita, J., Van Tent, B., Vibert,
-L., Vielva, P., Villa, F., Vittorio, N., Wandelt, B. D., Wehus, I. K., White, M., White, S. D. M., Zacchei, A., and Zonca,A. (2020). Planck 2018 results. VI. Cosmological parameters. A&amp;A, 641:A6.&#160;<a class="footnote-backref" href="#fnref:planckcollab" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:planckcollab" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Planck Collaboration, Aghanim, N., Akrami, Y., Ashdown, M., Aumont, J., Baccigalupi, C., Ballardini, M., Banday, A. J., Barreiro, R. B., Bartolo, N., Basak, S., Battye, R., Benabed, K., Bernard, J. P., Bersanelli, M., Bielewicz, P., Bock, J. J., Bond, J. R., Borrill, J., Bouchet, F. R., Boulanger, F., Bucher, M., Burigana, C., Butler, R. C., Calabrese, E., Cardoso, J. F., Carron, J., Challinor, A., Chiang, H. C., Chluba, J., Colombo, L. P. L.,Combet, C., Contreras, D., Crill, B. P., Cuttaia, F., de Bernardis, P., de Zotti, G., Delabrouille, J., Delouis, J. M., Di Valentino, E., Diego, J. M., Dor ́e, O., Douspis, M., Ducout, A., Dupac, X., Dusini, S., Efstathiou, G., Elsner, F., Enßlin, T. A., Eriksen, H. K., Fantaye, Y., Farhang, M., Fergusson, J., Fernandez-Cobos, R., Finelli, F., Forastieri, F., Frailis, M., Fraisse, A. A., Franceschi, E., Frolov, A., Galeotta, S., Galli, S., Ganga, K., G ́enova-Santos, R. T., Gerbino, M., Ghosh, T., Gonz ́alez-Nuevo, J., G ́orski, K. M., Gratton, S., Gruppuso, A., Gudmundsson, J. E., Hamann, J., Handley, W., Hansen, F. K., Herranz, D., Hildebrandt, S. R., Hivon, E., Huang, Z., Jaffe, A. H., Jones, W. C., Karakci, A., Keih ̈anen, E., Keskitalo, R., Kiiveri, K., Kim, J., Kisner, T. S., Knox, L., Krachmalnicoff, N., Kunz, M., Kurki-Suonio, H., Lagache, G., Lamarre, J. M., Lasenby, A., Lattanzi, M., Lawrence, C. R., Le Jeune, M., Lemos, P., Lesgourgues, J., Levrier, F., Lewis, A., Liguori, M., Lilje, P. B., Lilley, M., Lindholm, V., L ́opez-Caniego, M., Lubin, P. M., Ma, Y. Z., Mac ́ıas-P ́erez, J. F., Maggio, G., Maino, D., Mandolesi, N., Mangilli, A., Marcos-Caballero, A., Maris, M., Martin, P. G., Martinelli, M., Mart ́ınez-Gonz ́alez, E., Matarrese, S., Mauri, N., McEwen, J. D., Meinhold, P. R., Melchiorri, A., Mennella, A., Migliaccio, M., Millea, M., Mitra, S., Miville-Deschˆenes, M. A., Molinari, D., Montier, L., Morgante, G., Moss, A., Natoli, P., Nørgaard-Nielsen, H. U., Pagano, L., Paoletti, D., Partridge, B., Patanchon, G., Peiris, H. V., Perrotta, F., Pettorino, V., Piacentini, F., Polastri, L., Polenta, G., Puget, J. L., Rachen, J. P., Reinecke, M., Remazeilles, M., Renzi, A., Rocha, G., Rosset, C., Roudier, G., Rubi ̃no-Mart ́ın, J. A., Ruiz-Granados, B., Salvati, L., Sandri, M., Savelainen, M., Scott, D., Shellard, E. P. S., Sirignano, C., Sirri, G., Spencer, L. D., Sunyaev, R., Suur-Uski, A. S., Tauber, J. A.,Tavagnacco, D., Tenti, M., Toffolatti, L., Tomasi, M., Trombetti, T., Valenziano, L., Valiviita, J., Van Tent, B., Vibert, L., Vielva, P., Villa, F., Vittorio, N., Wandelt, B. D., Wehus, I. K., White, M., White, S. D. M., Zacchei, A., and Zonca,A. (2020). Planck 2018 results. VI. Cosmological parameters. A&amp;A, 641:A6.&#160;<a class="footnote-backref" href="#fnref:planckcollab" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:planckcollab" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:divalentino">
 <p>Di Valentino, E., Melchiorri, A., and Silk, J. (2020). Planck evidence for a closed Universe and a possible crisis for cosmology. Nature Astronomy, 4:196–203.&#160;<a class="footnote-backref" href="#fnref:divalentino" title="Jump back to footnote 5 in the text">&#8617;</a></p>

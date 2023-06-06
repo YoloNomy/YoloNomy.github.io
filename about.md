@@ -16,4 +16,5 @@ The 'math' section is lead by our math specialist:
 - Robin Botrel
 
 With the help of :
+
 - Jehanne Delhomelle
