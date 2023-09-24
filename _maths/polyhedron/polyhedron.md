@@ -19,7 +19,17 @@ nav_order: 5
 
 Peut on trouver une relation entre le nombre de face d'un polyèdre, son nombre de sommet et son nombre d'arête? 
 La difficulté essentielle de cette simple question tient à la définition même du terme polyhèdre. 
-Dans son essai philosophique Preuves et réfutations, Imre lakatos questionne les influences mutuelles des définitions et des démonstrations en s'appuyant sur des éléments historiques. Notre approche se veut connexe à celle de Lakatos : remonter aux textes sources et analyser mathématiquement les démonstrations que l'on y trouve. Notre objectif premier est d'étudier les relations entre les méthodes mathématiques mises en oeuvre dans ces textes de façon à donner àvoir certains des processus pouvant conduire à l'ouverture de nouveaux champs de recherche mathématique.
+
+En nous basant sur l'ouvrage de référence pour ce qui est de l'histoire 
+de la topologie algébrique publié par Pont en 1974, nous avons consulté 
+les premiers textes rédigés en français traitant de la conjecture 
+d'Euler. Nous nous proposons ici d'exposer de façon originale et 
+accessible, à l'aide d'illustrations et d'animations du contenu 
+mathématiques de ces sources primaires, les preuves et réflexions des 
+mathématiciens qui ont travaillé la question au début du 19ème siècle. 
+En toile de fond nous retrouverons des questionnements évoqués par 
+Imre Lakatos sur les processus pouvant conduire à l’ouverture de nouveaux 
+champs ou sur le concept de preuve mathématique.
 
 ### Qu'est-ce qu'un polyèdre : une véritable question !
 
@@ -114,7 +124,6 @@ En effet, comme le remarque Poinsot dès 1810, la preuve de Legendre peut s'appl
 
 > Je ferai d'abord observer que l'équation précédente n'a pas seulement lieu pour les solides convexes ordinaires, c'est-à-dire, pour ceux dont la surface ne peut être coupée par une droite en plus de deux points elle subsiste encore pour tout polyèdre qui a des angles solides rentrans pourvu qu'on puisse trouver, dans l'intérieur du solide un point qui soit le centre d'une sphère telle que les faces du solide y étant projetées par des lignes menées au centre, il n'y ait sur la sphère aucune duplicature de ces projections je veux dire, pourvu qu'aucune face ne se projette, en tout ou en partie, sur la projection d'une autre ; ce qui convient, comme on voit, à une infinité de polyèdres à angles solides rentrans. [^poinsot]
 
-
 C'est d'ailleurs aux recherches de Poinsot que nous allons maintenant nous intéresser car celui-ci a justement développé sa classification des polyèdres sur la technique de démonstration de Legendre. En applicant sa méthode, Poinsot va ainsi (re)découvrir les polyèdres étoilés qui fourniront un carburant essentiel au dépassement d'une perception restreinte de la notion de polyèdre.
 
 ## Les polyèdres étoilés de Poinsot
@@ -151,12 +160,12 @@ $$e.S-A+H=E.2$$
 
 En fixant des valeurs des paramètres $e$ et $E$, puis en cherchant des solutions de l'équation correspondante, il va ainsi trouver 4 polyèdres réguliers étoilés. Avec les solides de Platon se sont les seules solutions régulières de l'équation.
 
-| Polyèdres Étoilés de Kepler-Poinsot | e    | E    |
-| ----------------------------------- | ---- | ---- |
-| Petit dodécaèdre étoilé             | 1    | 3    |
-| Grand dodécaèdre étoilé             | 1    | 7    |
-| Grand dodécaèdre                    | 2    | 3    |
-| Grand icosaèdre                     | 2    | 7    |
+| Polyèdres Étoilés de Kepler-Poinsot | e   | E   |
+| ----------------------------------- | --- | --- |
+| Petit dodécaèdre étoilé             | 1   | 3   |
+| Grand dodécaèdre étoilé             | 1   | 7   |
+| Grand dodécaèdre                    | 2   | 3   |
+| Grand icosaèdre                     | 2   | 7   |
 
 <a name="fig4"></a>
 
@@ -246,8 +255,6 @@ Bien sûr, les contre-exemples globaux que nous avons vus nous informent sur la 
 
 Toutefois, cette preuve peut facilement être amendée en explicitant une assomption cachée chez Cauchy qui ne regarde que les polyèdres transformables en graphes planaires. On obtient alors un théorème valide : "Tous les polyèdres transformables en graphes planaires sont Euleriens". On a ainsi réussi à montrer le théorème d'Euler sur un ensemble plus grand que celui des seuls polyèdres convexes. 
 
-
-
 Selon Lakatos cette "analyse critique de la preuve" constitue un passage essentiel du développement de nouvelles mathématiques. Plus encore, comme la vidéo de la [preuve](#cauchy) le suggère, les idées mises en oeuvre par Cauchy dans sa preuve s'avèrent très fécondes. En effet, elles conduisent à préciser des définitions (polyèdre), elles contiennent en germes de nouveaux concepts (graphe planaire) et ouvrent de nouveaux champs de recherche (théorie des graphes). 
 
 <video width="100%" controls>
@@ -255,7 +262,6 @@ Selon Lakatos cette "analyse critique de la preuve" constitue un passage essenti
 </video>
 
 > Vidéo 5 : Exemple de polyèdre non convexe qui fonctionne dans la preuve de Cauchy (déformable en graphe planaire)
-
 
 ## Conclusion
 
