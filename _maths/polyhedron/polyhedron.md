@@ -17,18 +17,17 @@ nav_order: 5
 
 > Figure 1 : Polyèdres réguliers et semi-réguliers
 
-Peut on trouver une relation entre le nombre de face d'un polyèdre, son nombre de sommet et son nombre d'arête? 
-La difficulté essentielle de cette simple question tient à la définition même du terme polyhèdre. 
+Peut on trouver une relation entre le nombre de face d'un polyèdre, son nombre de sommet et son nombre d'arête ? La difficulté essentielle de cette simple question tient à la définition même du terme polyhèdre. 
 
 En nous basant sur l'ouvrage de référence pour ce qui est de l'histoire 
-de la topologie algébrique publié par Pont en 1974, nous avons consulté 
+de la topologie algébrique publié par Pont en 1974[^pont], nous avons consulté 
 les premiers textes rédigés en français traitant de la conjecture 
 d'Euler. Nous nous proposons ici d'exposer de façon originale et 
 accessible, à l'aide d'illustrations et d'animations du contenu 
 mathématiques de ces sources primaires, les preuves et réflexions des 
 mathématiciens qui ont travaillé la question au début du 19ème siècle. 
 En toile de fond nous retrouverons des questionnements évoqués par 
-Imre Lakatos sur les processus pouvant conduire à l’ouverture de nouveaux 
+Imre Lakatos[^lakatos] sur les processus pouvant conduire à l’ouverture de nouveaux 
 champs ou sur le concept de preuve mathématique.
 
 ### Qu'est-ce qu'un polyèdre : une véritable question !
