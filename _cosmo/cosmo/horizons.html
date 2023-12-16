@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="parent" content="codes">
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="parent" content="physics">
 <meta name="layout" content="default"><style>body {
   max-width: 980px;
   margin: 16px auto;
@@ -501,8 +501,11 @@ body .markdown-body
   padding-bottom: 0.2em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(0,0,0,0.04);
   border-radius: 3px;
+}
+
+.markdown-body code:not(.highlight):not(.codehilite), .markdown-body samp {
+  background-color: rgba(0,0,0,0.04);
 }
 
 .markdown-body code:before,
@@ -533,8 +536,16 @@ body .markdown-body
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f7f7f7;
+}
+
+.markdown-body .codehilite,
+.markdown-body .highlight,
+.markdown-body pre {
   border-radius: 3px;
+}
+
+.markdown-body :not(.highlight) > pre {
+  background-color: #f7f7f7;
 }
 
 .markdown-body .codehilite pre,
@@ -1003,35 +1014,8 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js'></script><script>MathJax.Hub.Config({
-  config: ["MMLorHTML.js"],
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML"],
-  tex2jax: {
-    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-    processEscapes: true,
-    processEnvironments: true,
-    ignoreClass: ".*|",
-    processClass: "arithmatex"
-  },
-  TeX: {
-    extensions: ["AMSmath.js", "AMSsymbols.js"],
-    TagSide: "right",
-    TagIndent: ".8em",
-    MultLineWidth: "85%",
-    equationNumbers: {
-      autoNumber: "AMS",
-    },
-    unicode: {
-      fonts: "STIXGeneral,'Arial Unicode MS'"
-    }
-  },
-  showProcessingMessages: false,
-  messageStyle: 'none'
-});
-</script><style>/*GitHub*/
-.highlight {background-color:#fff;color:#333333;}
+</style><style>/*GitHub*/
+.highlight {background-color:#f7f7f7;color:#333333;}
 .highlight .hll {background-color:#ffffcc;}
 .highlight .c{color:#999988;font-style:italic}
 .highlight .err{color:#a61717;background-color:#e3d2d2}
@@ -1094,107 +1078,107 @@ body .markdown-body
 .highlight .il{color:#009999}
 .highlight .gc{color:#999;background-color:#EAF2F5}
 </style><title>Cosmological Horizons</title></head><body><article class="markdown-body"><h2 id="horizons-in-cosmology">Horizons in cosmology<a class="headerlink" href="#horizons-in-cosmology" title="Permanent link"></a></h2>
-<p>An Horizon is a virtual region from which no information can travel. The most familiar exemple is given by the event horizons of black holes, from which not even light can espace (if you want to know more on them, go check <a href="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/cosmo/%7B%25%20link%20_codes/cosmo/black-holes.md%20%25%7D">Black holes</a>).</p>
-<p>However, black holes are not the only objects to display such a feature &hellip; the whole universe is! Intuitively, the Hubble-Lemaître law (<span class="arithmatex">\(v = H_0d\)</span>) implies that the speed at which objects are pulled away from us due to expansion increase with their distance. One can then naturally ask the question : what happens when this speed becomes greater than the speed of light? In some sense, this horizon, works like a &lsquo;reversed black hole&rsquo;. This even leads some physicists to assert that &ldquo;we live in a black hole&rdquo;! We&rsquo;ll come back to this &hellip;</p>
+<p>An Horizon is a virtual region from which no information can travel. The most familiar exemple is given by the event horizons of black holes, from which not even light can espace (if you want to know more about them, go check <a href="/Users/leovacher/Documents/GitHub/YoloNomy.github.io/_cosmo/cosmo/%7B%25%20link%20_cosmo/cosmo/black-holes.md%20%25%7D">Black holes</a>).</p>
+<p>However, black holes are not the only objects to display such a feature &hellip; the whole universe is! Intuitively, the Hubble-Lemaître law ($v = H_0d$) implies that the speed at which objects are pulled away from us due to expansion increase with their distance. One can then naturally ask the question : what happens when this speed becomes greater than the speed of light? In some sense, this horizon, works like a &lsquo;reversed black hole&rsquo;. This even leads some physicists to assert that &ldquo;we live in a black hole&rdquo;! We&rsquo;ll come back to this &hellip;</p>
 <p>For horizons at the scale of the universe, we talk about cosmological horizons, and they can be of different kinds. Instead of being localized in a region of space time, like for black holes, we will see that cosmological horizons are defined relatively to an observer.</p>
-<p>When we discussed <a href="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/cosmo/%7B%25%20link%20_codes/cosmo/friedmann.md%20%25%7D">evolutions of the universe</a>, we saw that one of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. This will also be our starting point. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein&rsquo;s equation for the universe.
+<p>When we discussed <a href="/Users/leovacher/Documents/GitHub/YoloNomy.github.io/_cosmo/cosmo/%7B%25%20link%20_cosmo/cosmo/friedmann.md%20%25%7D">evolutions of the universe</a>, we saw that one of the building principles of cosmology is to assume that the universe is homogeneous and isotropic on large scales. This will also be our starting point. From this assumption, one can find the metric i.e. the way to measure distance in a given frame, satisfying the Einstein&rsquo;s equation for the universe.
 The most general result is given by the <em>Friedmann-Lemaître-Robertson-Walker (FLRW) metric</em>:</p>
-<div class="arithmatex">\[
+<p>$$
 \text{d}s^2 = -c^2\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
-\]</div>
-<p>This is in the comoving frame <span class="arithmatex">\((t,r,\theta,\varphi)\)</span> expanding with the expansion. <span class="arithmatex">\(\text{d}\Omega^2 = r^2\sin\theta^2 \text{d}\varphi^2\)</span> is the spherical infinetisimal surface element. <span class="arithmatex">\(a(t)\)</span> is called the <em>scale factor</em> and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with <span class="arithmatex">\(a(t)\)</span>.)). <span class="arithmatex">\(k\)</span> is the <em>spatial curvature</em> of the universe.
+$$</p>
+<p>This is in the comoving frame $(t,r,\theta,\varphi)$ expanding with the expansion. $\text{d}\Omega^2 = r^2\sin\theta^2 \text{d}\varphi^2$ is the spherical infinetisimal surface element. $a(t)$ is called the <em>scale factor</em> and quantify the expansion of the universe and of the coordinate system (i.e. objects always keep the same comoving coordinates but the physical distance between them evolves with $a(t)$.)). $k$ is the <em>spatial curvature</em> of the universe.
 For practical purposes, the whole metric can be rewritten as:</p>
-<div class="arithmatex">\[
+<p>$$
 \text{d}s^2 = -c^2\text{d}t^2 + a(t)^2\left(\text{d}\chi^2 + S_k^2(r) \text{d}\Omega^2\right), 
-\]</div>
+$$</p>
 <p>where</p>
-<div class="arithmatex">\[
-S_k(r) =R_0 \left\{\begin{matrix}\frac{\chi}{R_0} \text{ if } k = 0\\
-                 \sin\left(\frac{\chi}{R_0}\right) \text{ if } k = 1\\
-                  \sinh\left(\frac{\chi}{R_0}\right) \text{ if } k = -1\\
+<p>$$
+S_k(r) =R_0 \left{\begin{matrix}\frac{\chi}{R_0} \text{ if } k = 0\
+                 \sin\left(\frac{\chi}{R_0}\right) \text{ if } k = 1\
+                  \sinh\left(\frac{\chi}{R_0}\right) \text{ if } k = -1\
             \end{matrix}\right. 
-\]</div>
-<p><span class="arithmatex">\(\chi\)</span> is called the <em>comoving distance</em>. One can then recover the physical space distance <span class="arithmatex">\(\ell\)</span> by integration of $\text{d}\ell = \sqrt{a^2(t)\text{d}\chi^2 + S_k^2(r) \text{d}\Omega^2} $.
-If <span class="arithmatex">\(k=0\)</span> then <span class="arithmatex">\(\chi = r\)</span>. </p>
+$$</p>
+<p>$\chi$ is called the <em>comoving distance</em>. One can then recover the physical space distance $\ell$ by integration of $\text{d}\ell = \sqrt{a^2(t)\text{d}\chi^2 + S_k^2(r) \text{d}\Omega^2} $.
+If $k=0$ then $\chi = r$. </p>
 <p>Using this metric, we will be able to define three different types of horizons on cosmological scales: the Hubble, particle and even horizons. Understanding the difference between them is quite subtle, hang on!</p>
 <h2 id="the-hubble-horizon">The Hubble Horizon<a class="headerlink" href="#the-hubble-horizon" title="Permanent link"></a></h2>
 <p>The <em>Hubble Horizon</em> is the most known and easily understandable type cosmological horizon. It is actually the one we discussed in introduction, describing the distance at which galaxies recessed at the speed of light. To every point of the universe one can associate a surface, also called the <em>Hubble sphere</em>, delimited by this horizon. Beyond this horizon, it is de facto impossible to receive any signal and thus observe any galaxy. In a sense, it defines the size of what is commonly called the <em>observable universe</em>.</p>
 <p>As we discussed already, the physical distance from the origin (say earth) to a galaxy is given by:</p>
-<div class="arithmatex">\[
+<p>$$
 d = a(t)\chi 
-\]</div>
+$$</p>
 <p>The recession velocity is given by its time derivative (which gives us  the Hubble-Lemaître law)</p>
-<div class="arithmatex">\[
+<p>$$
 v = \frac{\text{d}d}{\mathrm{dt}} = \dot{a}\chi = aH\chi
-\]</div>
-<p>Where <span class="arithmatex">\(H := \dot{a}/a\)</span> is the <em>Hubble parameter</em>.
-From this, we deduce that the velocity reaches <span class="arithmatex">\(v = c\)</span> at the distance of:</p>
-<div class="arithmatex">\[
+$$</p>
+<p>Where $H := \dot{a}/a$ is the <em>Hubble parameter</em>.
+From this, we deduce that the velocity reaches $v = c$ at the distance of:</p>
+<p>$$
 d_H(t) = a(t)\chi = \frac{c}{H}
-\]</div>
+$$</p>
 <p>This defines the radius of the Hubble sphere around earth.</p>
 <h2 id="particle-horizon">Particle horizon<a class="headerlink" href="#particle-horizon" title="Permanent link"></a></h2>
 <p>The particle horizon around a given point is the surface answering the question:  What is the maximum distance of the object that emits light that we can still receive today despite the expansion? </p>
 <p>Before understanding what we really mean, let&rsquo;s first cover how to calculate the distance travelled by light in a given time.</p>
-<p>The maximal speed at which information can be carried is indeed the speed of light. By definition, light has the physical speed <span class="arithmatex">\(c = \text{d}\ell/\text{d}t\)</span> (This condition is equivalent to ask for <span class="arithmatex">\(\text{d}s^2=0\)</span>).</p>
+<p>The maximal speed at which information can be carried is indeed the speed of light. By definition, light has the physical speed $c = \text{d}\ell/\text{d}t$ (This condition is equivalent to ask for $\text{d}s^2=0$).</p>
 <p>Choosing our coordinate system such that the photons only travel on the radial coordinate, this allows us to write:
 $$
 cdt = \pm a(t) \text{d}\chi 
 $$
-(the two solutions comes from the square root) and the co-moving distance <span class="arithmatex">\(\chi\)</span> between a source that the photon leave at <span class="arithmatex">\(t_0\)</span> and an observer that receive it at <span class="arithmatex">\(t_1\)</span> is given by:
+(the two solutions comes from the square root) and the co-moving distance $\chi$ between a source that the photon leave at $t_0$ and an observer that receive it at $t_1$ is given by:
 $$
 \chi = c \int_{t_0}^{t_1} \frac{\text{d}t}{a(t)} 
 $$</p>
-<p>If a photon is emitted at primordial singularity, <span class="arithmatex">\(t = 0\)</span> the maximal distance it has then been able to travel is:</p>
-<div class="arithmatex">\[
-\chi_p(t) = c \int_{0}^{t} \frac{\text{d}t'}{a(t')} 
-\]</div>
-<p>When setting <span class="arithmatex">\(c=1\)</span>, this distance can be identified with a time usually called <em>conformal time</em> <span class="arithmatex">\(\eta\)</span> (formally <span class="arithmatex">\(\text{d}t = a \text{d}\eta\)</span>).</p>
+<p>If a photon is emitted at primordial singularity, $t = 0$ the maximal distance it has then been able to travel is:</p>
+<p>$$
+\chi_p(t) = c \int_{0}^{t} \frac{\text{d}t&rsquo;}{a(t&rsquo;)} 
+$$</p>
+<p>When setting $c=1$, this distance can be identified with a time usually called <em>conformal time</em> $\eta$ (formally $\text{d}t = a \text{d}\eta$).</p>
 <p>In terms of proper distance we can write </p>
-<div class="arithmatex">\[
+<p>$$
 d_p(t) = a(t)\chi_p(t)
-\]</div>
-<p>Receiving some signals from earth, no light can have been emitted from further away than this physical distance <span class="arithmatex">\(d_p(t)\)</span>. This gives us the radius of the particle horizon which, in principle is different from the Hubble horizon.</p>
+$$</p>
+<p>Receiving some signals from earth, no light can have been emitted from further away than this physical distance $d_p(t)$. This gives us the radius of the particle horizon which, in principle is different from the Hubble horizon.</p>
 <h2 id="event-horizon">Event horizon<a class="headerlink" href="#event-horizon" title="Permanent link"></a></h2>
 <p>This time, we will ask ourselves the following question: If we send a photon today what is the maximum distance it can reach until the end of the Universe?</p>
 <p>Even if the universe is eternal, this question can surprinsingly have a finite answer due to the expansion. However, it can also diverge and be infinite.
-In some sense, the event horizon is a &ldquo;reversed&rdquo; particle horizon but this time the photon is emitted today <span class="arithmatex">\(t_0\)</span> on earth and we let it travel until <span class="arithmatex">\(t_f \to +\infty\)</span>. Contrary to the two other kinds, this horizon does not set a limit on how far we can receive informations from, but on how far we can send informations to.</p>
+In some sense, the event horizon is a &ldquo;reversed&rdquo; particle horizon but this time the photon is emitted today $t_0$ on earth and we let it travel until $t_f \to +\infty$. Contrary to the two other kinds, this horizon does not set a limit on how far we can receive informations from, but on how far we can send informations to.</p>
 <p>From previous considerations it is now straightforward to calculate it&rsquo;s conformal radius as:</p>
-<div class="arithmatex">\[
-\chi_{evt}(t) = c\int_{t}^{+\infty} \frac{\text{d}t'}{a(t')} 
-\]</div>
+<p>$$
+\chi_{evt}(t) = c\int_{t}^{+\infty} \frac{\text{d}t&rsquo;}{a(t&rsquo;)} 
+$$</p>
 <p>From which we calculate the physical distance</p>
-<div class="arithmatex">\[
+<p>$$
 d_{evt}(t) = a(t)\chi_{evt}(t)
-\]</div>
+$$</p>
 <p>Note that as we our light will never reach something behind the event horizon, we will never be able to see what is emitted today behind it. In that sense it is similmar to the other two we presented.</p>
-<h2 id="the-lambda-cmd-case">The <span class="arithmatex">\(\Lambda\)</span>-CMD case<a class="headerlink" href="#the-lambda-cmd-case" title="Permanent link"></a></h2>
-<p>In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict <span class="arithmatex">\(a(t)\)</span>. In order to do so, you need to find invoque the fundamental equation of cosmology, called the <a href="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/cosmo/%7B%25%20link%20_codes/cosmo/friedmann.md%20%25%7D">Friedmann-Lemaître equation</a>, that we will consider in the following form:</p>
-<div class="arithmatex">\[ \frac{H^2}{H_0^2} = \sum_i \Omega_i a^{-3(1+w_i)}\]</div>
-<p>Where <span class="arithmatex">\(w_i\)</span> are the coefficients of the equations of states.
-Considering the <span class="arithmatex">\(\Lambda\)</span>CDM cosmology using Planck parameters, the evolution of the horizons are given by:    </p>
-<p><img alt="my image" src="/C:/Users/jehan/Documents/GitHub/YoloNomy.github.io/_codes/images/LCDMhorizons.png" title="my image" /> </p>
+<h2 id="the-lambda-cmd-case">The $\Lambda$-CMD case<a class="headerlink" href="#the-lambda-cmd-case" title="Permanent link"></a></h2>
+<p>In order to predict the evolution of the horizons through the history of the universe, we need to find a way to predict $a(t)$. In order to do so, you need to find invoque the fundamental equation of cosmology, called the <a href="/Users/leovacher/Documents/GitHub/YoloNomy.github.io/_cosmo/cosmo/%7B%25%20link%20_cosmo/cosmo/friedmann.md%20%25%7D">Friedmann-Lemaître equation</a>, that we will consider in the following form:</p>
+<p>$$ \frac{H^2}{H_0^2} = \sum_i \Omega_i a^{-3(1+w_i)}$$</p>
+<p>Where $w_i$ are the coefficients of the equations of states.
+Considering the $\Lambda$CDM cosmology using Planck parameters, the evolution of the horizons are given by:    </p>
+<p><img alt="my image" src="/Users/leovacher/Documents/GitHub/YoloNomy.github.io/_cosmo/images/LCDMhorizons.png" title="my image" /> </p>
 <p>We can give a value for today horizons : in present time the particle is at ~ 48 Glyrs, the event horizon is at ~ 17 Glyrs and the Hubble horizon is at ~ 14 Glyrs.</p>
 <p>Looking at the particle horizon we can see that due to expansion it&rsquo;s distance increase rapdily, it means that the farthest light we can see was emits by objects that are today at 48 Glyrs of us! In our expansing universe the particle horizon will diverge towards infinity.</p>
 <p>Another remark is that the event horizon is greater than the Hubble distance : photons that lie between the two are currently receeding at supra-light speed but we will finally saw them as they will enter in the Hubble horizon! </p>
 <p>We can prove that the Hubble horizon and the event horizon converge to the same limit:
 the Friedmann equations give us </p>
-<div class="arithmatex">\[
+<p>$$
 \frac{\dot{a}}{a} = H(a) = H_0\sqrt{\Omega_m a^{-3} + \Omega_\Lambda}
-\]</div>
-<p>Then when <span class="arithmatex">\(a \rightarrow +\infty\)</span> we have <span class="arithmatex">\(H \rightarrow \sqrt{\Omega_\Lambda}\)</span></p>
-<p>We can solve the differential equation of <span class="arithmatex">\(a(t)\)</span> in the limit when <span class="arithmatex">\(t \rightarrow +\infty\)</span> :</p>
-<div class="arithmatex">\[
+$$</p>
+<p>Then when $a \rightarrow +\infty$ we have $H \rightarrow \sqrt{\Omega_\Lambda}$</p>
+<p>We can solve the differential equation of $a(t)$ in the limit when $t \rightarrow +\infty$ :</p>
+<p>$$
 a(t) = e^{\sqrt{\Omega_\Lambda} t}
-\]</div>
-<p>With this solution for <span class="arithmatex">\(a(t)\)</span> we can compute the limit of the event horizon :</p>
-<div class="arithmatex">\[
+$$</p>
+<p>With this solution for $a(t)$ we can compute the limit of the event horizon :</p>
+<p>$$
 d_{evt} \sim a(t) c\int_t^{+\infty} e^{-\sqrt{\Omega_\Lambda} t}
-\]</div>
+$$</p>
 <p>That give us :</p>
-<div class="arithmatex">\[
+<p>$$
 d_{evt} \sim a(t) \frac{1}{a(t) \sqrt{\Omega_\Lambda}} = \frac{c}{H} 
-\]</div>
+$$</p>
 <p>That is the definition of the Hubble radius!</p>
 <p>Something that can be strange is that our future light-cone seems to cross the event horizon : How can it be possible to interact with what is beyond? </p>
 <p>What we have to remember is that if we emit a photon at a time t it will never reach object that lay at the event horizon at the same time t because the proper distance of these objects will evolve during the photon travel du to the universe expansion !</p></article></body></html>

@@ -4,3 +4,5 @@ source "https://rubygems.org"
 gem 'jekyll-relative-links'
 gemspec
 
+
+gem "webrick", "~> 1.8"

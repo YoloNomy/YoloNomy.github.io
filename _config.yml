@@ -22,15 +22,24 @@ author: L. Vacher, R. Botrel & B. Carreres
 navbar-links:
   About Us: "about"
   Resources:
-    - Codes: "codes/codes"
-    - Lecture notes: "lecture_notes/notes"
+    - Mechanics: "meca/meca"
+    - Optics: "optics/optics"
+    - Thermo: "thermo/thermo"
+    - Quantum : "quantum/quantum"
+    - Astro/Cosmo : "cosmo/cosmo"
     - Maths : "maths/maths"
 
 collections:
-  codes:
+  meca:
     output: true
-  lecture_notes:
-    output: true
+  optics:
+    optics: true
+  thermo:
+    thermo: true
+  quantum:
+    quantum: true
+  cosmo:
+    cosmo: true
   maths:
     output: true
   

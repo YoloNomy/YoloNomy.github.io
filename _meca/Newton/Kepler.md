@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Kepler laws
-parent: codes
+parent: Newton
 nav_order: 2
 ---
 

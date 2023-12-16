@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Black holes
-parent: codes
+parent: cosmo
 nav_order: 1
 ---
 

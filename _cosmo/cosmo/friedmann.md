@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Friedmann equations and evolution of the Universe
-parent: codes
+parent: cosmo
 nav_order: 3
 ---
 # Friedmann equations and evolution of the Universe
@@ -21,7 +21,7 @@ Cosmology is a science that studies the universe as a whole, including its origi
 	- *Dark Energy:* Energy that fills the Universe and may be responsible for for the "recent" acceleration of its expansion: $\sim$ 70 %
 
 
-3.  **Gravity**: [General relativity]({% link _codes/cosmo/black-holes.md %}) is used to describe the theory of gravity on large scales and the expansion of the Universe is quantified by the non-zero cosmological constant $\Lambda$, which gives us the most simple model of dark energy.
+3.  **Gravity**: General relativity is used to describe the theory of gravity on large scales and the expansion of the Universe is quantified by the non-zero cosmological constant $\Lambda$, which gives us the most simple model of dark energy.
 
 ## The scale factor a(t)
 
