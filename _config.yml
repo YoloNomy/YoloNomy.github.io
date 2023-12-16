@@ -33,13 +33,13 @@ collections:
   meca:
     output: true
   optics:
-    optics: true
+    output: true
   thermo:
-    thermo: true
+    output: true
   quantum:
-    quantum: true
+    output: true
   cosmo:
-    cosmo: true
+    output: true
   maths:
     output: true
   
