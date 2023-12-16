@@ -4,8 +4,9 @@ title: Maths
 subtitle: Pure maths over there!
 ---
 
+# Geometry
 
-- [Polyhedrons](polyhedron/polyhedron.md)
+- [Polyhedrons (french)](polyhedron/polyhedron.md)
 
 
 
