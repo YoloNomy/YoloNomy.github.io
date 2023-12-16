@@ -9,9 +9,10 @@ You will find here some fun python applications to physics with some detailled e
 # Newtonian point mechanics
 
 - Newton laws and the reign of parabolas
-- The pendulum and harmonic oscillators
 - A falling ant
-- [Kepler laws](Newton/Kepler.md)
+- [Work and Energy: integrals and the dot product](Newton/Energy.md)
+- [Kepler laws: cross product and polar coordinates](Newton/Kepler.md)
+- The pendulum and harmonic oscillators
 
 # Dynamical systems and chaos
 

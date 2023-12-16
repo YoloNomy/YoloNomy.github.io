@@ -7,7 +7,7 @@ nav_order: 2
 
 **PAGE STILL UNDER CONSTRUCTION**
 
-# Kepler laws
+# Kepler laws: cross product and polar coordinates
 
 Our goal here will be to understand and demonstrate the three Kepler laws from Newton laws with an increasing level of complexity. Codes will be provided to help you getting familiar.
 
@@ -15,19 +15,19 @@ Our goal here will be to understand and demonstrate the three Kepler laws from N
 
 Kepler laws are three statements allowing to predict the motion of celestial bodies in the case of a two body system with one much larger than the other. A typical case is then given by the motion of a planet around a star. They can be stated as follow:
 
-- Law 1: Trajectories of planets are conics (circles, ellipses, parabola or hyperbola) with the star at one of the focci.
-- Law 2: A line connecting the planet and its star sweeps out equal areas during equal intervals of time. 
-- Law 3: If the trajectory is an ellipse, the ratio of the period $$T$$ squared and the semi axis $$a$$ cubed is a constant, that is $$T^2/a^3 = \text{cst} = 4\pi^2/(GM) $$. Where the period $$T$$ is the time taken by the planet to realize a full orbit around the star of mass $$M$$ ($$G$$ is the gravitational constant) and $$a$$ is the maximal distance on the ellipse between the star and the planet.
+- **Law 1:** Trajectories of planets are conics (circles, ellipses, parabola or hyperbola) with the star at one of the focci.
+- **Law 2:** A line connecting the planet and its star sweeps out equal areas during equal intervals of time. 
+- **Law 3:** If the trajectory is an ellipse, the ratio of the period $$T$$ squared and the semi axis $$a$$ cubed is a constant, that is $$T^2/a^3 = \text{cst} = 4\pi^2/(GM) $$. Where the period $$T$$ is the time taken by the planet to realize a full orbit around the star of mass $$M$$ ($$G$$ is the gravitational constant) and $$a$$ is the maximal distance on the ellipse between the star and the planet.
 
 As we will see, these three laws were first deduced from observations by the german astronomer Joannes Kepler, who understood them as fundamental laws of nature. They were then rederived from deeper and more abstract principles by Isaac Newton.
 
-## History : from laws to theorem
+### History : from laws to theorem
 
 Discovered by Joannes Kepler and published between 1609 and 1619 from Tycho Brahe's measurements. Part of the great changes giving birth to modern astronomy with Galileo's observations (1605) and Copernician's revolution.
 
 At the time they were indeed understood as *laws* that is fundamental rules of nature that can not be proven. However, they can be fully derived from geometrical consideration and Newton *laws* of mechanics. Proven in 1687 by Newton.
 
-# Why are they so important ?
+### Why are they so important ?
 
 Despite several technical complexities, the period $$T$$ (time to realize a full orbit) and semi-axis $$a$$ (star-planet maximal distance) of an orbit can be directly measured. Using the third law, $$ a^3/T^2 \propto M$$, one can hence recover the mass $$M$$ of the star which would be otherwise very difficult to measure.
 
@@ -35,54 +35,68 @@ Despite several technical complexities, the period $$T$$ (time to realize a full
 - Kepler laws can be used to infer informations about orbits of exoplanets, that is planets orbiting around stars other than the sun.
 - Observing the orbit of stars around our galaxy center allowed us to spot an extremely massive object. This lead to the only possible conclusion that a supermassive blackhole was inhabiting the center of our Milky Way.
 
-# Polar coordinates
+## Polar coordinates
 
-   ![my image](../images/polar.png "my image") 
-
+<p align="center">
+<img src="../images/polar.png" alt="image" width="49%" height="auto">
+</p>
 As we discussed already, the first thing to do before studying a motion in mechanics, is to define both a *frame* (otherwise motion is meaningless) and a *coordinate system* (otherwise it is impossible to quantify anything).
 So far we were only using *cartesian coordinates*, that is, perpendicular and fixed axis $(O,x,y,z)$. Cylindrical/Polar coordinates replace $x$ and $y$ by $r$ and $\theta$.
 
-   ![my image](../images/polar_pyth.png "my image") 
+<img src="../images/polar_pyth.png" alt="image" width="49%" height="auto"><img src="../images/polar_trigo.png" alt="image" width="49%" height="auto">
 
 Using Pythagorian theorem in the red triangle
 
 $$ r = \sqrt{x^2 + y^2} $$
 
-   ![my image](../images/polar_trigo.png "my image") 
 
 And from basic trigonometry
 
-$$ \theta = \arctan(y/x) $$
+$$ {\rm tan}(\theta) = y/x \Rightarrow \theta = \arctan(y/x) $$
 
 Also from basic trigonometry in the red triangle
 
-$$x = r \cos\theta $$
+$$\begin{cases} 
+x &= r \cos\theta\\
+y &= r \sin\theta 
+\end{cases}
+$$
 
-$$y = r \sin\theta $$
+<p align="center">
+<img src="../images/polar_unitvec.png" alt="image" width="49%" height="auto"><img src="../images/unit-vectors.png" alt="image" width="20%" height="auto">
+</p>
 
-   ![my image](../images/polar_unitvec.png "my image") 
+Similar geometrical considerations can be done with the units vectors by bringing the two frame at the same point (as done on the right part of the figure above). As such, the new unit vectors in term of the cartesian ones as
 
-Similar geometrical considerations allow us to express the new unit vectors in term of the cartesian ones as
+$$
+\begin{cases}
+\vec{u_r} & = \cos\theta \vec{u_x} + \sin\theta \vec{u_y}\\  
+\vec{u_\theta} &= -\sin\theta \vec{u_x} + \cos\theta \vec{u_y} 
+\end{cases}
+$$ 
 
-$$ \vec{u_r} = \cos\theta \vec{u_x} + \sin\theta \vec{u_y} $$ 
+If you can't find these relations immediately, remember to draw right triangles and look for the trigonometric relations.
 
-$$ \vec{u_\theta} = -\sin\theta \vec{u_x} + \cos\theta \vec{u_y} $$ 
+While cartesian coordinates are fixed, i.e. the units vectors don't change with time: $\dot{\vec{u_x}}=0$ and $\dot{\vec{u_y}}=0$ (We use the notation $\dot{x} = \frac{\text{d}x}{\text{d}t}$), the unit vectors of polar coordinates change with time along the trajectory of the studied object.
+Remembering the rule for the derivative of trigonometric functions, we can immediately derive
 
-While cartesian coordinates are fixed $ \dot{u_x}=0$ and $\dot{u_y}=0$ (We use the notation $ \dot{x} = \frac{\text{d}x}{\text{d}t}$.
-). Polar coordinate vectors change with time alongs the trajectory of the studies object.
-We can immediatly derive
+$$
+\begin{cases}
+\frac{ \text{d}\vec{u_r}}{\text{d} \theta } &= -\sin\theta \vec{u_x} + \cos\theta \vec{u_y} = \vec{u_\theta}  \\
+\frac{ \text{d}\vec{u_\theta}}{\text{d} \theta } &= -\cos\theta \vec{u_x} - \sin\theta \vec{u_y} = - \vec{u_r} 
+\end{cases}
+$$ 
 
-$$ \frac{ \text{d}\vec{u_r}}{\text{d} \theta } = -\sin\theta \vec{u_x} + \cos\theta \vec{u_y} = \vec{u_\theta}  $$ 
+Such that, with the chain rule
 
-$$ \frac{ \text{d}\vec{u_\theta}}{\text{d} \theta } = -\cos\theta \vec{u_x} - \sin\theta \vec{u_y} = - \vec{u_r} $$ 
+$$ 
+\begin{cases}
+\dot{u_r} &= \frac{\text{d} \theta}{\text{d} t}\frac{ \text{d}\vec{u_r}}{\text{d} \theta } = \dot{\theta} \vec{u_\theta}\\ 
+ \dot{u_\theta} &= \frac{\text{d} \theta}{\text{d} t} \frac{ \text{d}\vec{u_\theta}}{\text{d} \theta } = -\dot{\theta} \vec{u_r}  
+\end{cases}
+$$ 
 
-Such that
-
-$$ \dot{u_r} = \frac{\text{d} \theta}{\text{d} t}\frac{ \text{d}\vec{u_r}}{\text{d} \theta } = \dot{\theta} \vec{u_\theta}  $$ 
-
-$$ \dot{u_\theta} = \frac{\text{d} \theta}{\text{d} t} \frac{ \text{d}\vec{u_\theta}}{\text{d} \theta } = -\dot{\theta} \vec{u_r}  $$ 
-
-Now that we know how to go back and forth between cartesian and polar coordinates, we can look at the relevant quantity for kinematics, that are position, velocity and acceleration.
+Now that we know how to go back and forth between cartesian and polar coordinates, we can look at the relevant quantities for kinematics, that are position, velocity and acceleration.
 The position vector is simply given by
 
 $$ \vec{r} = r \vec{u_r} $$
@@ -98,13 +112,13 @@ $$ \vec{a} = \dot{\vec{v}} = \dot{r}\vec{u_r} + r \dot{\vec{u_r}} =  \ddot{r}\ve
 = a_r \vec{u_r} + a_\theta\vec{u_\theta}
 $$
 
-We are now equipped with mathematical expression to fully describe the point like motion of any object in polar coordinate as a planet orbitting its star.
+We are now equipped with mathematical expression to fully describe the point like motion of any object in polar coordinate as a planet orbiting its star.
 
-# Proof of the second law
+## Proof of the second law
 
-## The wonderfull cross product 
+### The wonderful cross product 
 
-Before moving to the Kepler laws, we still need a bit of patience and introduce a new very powerfull tool. This tool is a new way to multiply two vectors to get a third one that can encompass all the informations about the rotation of an object. It is hence easy to understand why this tool will be so usefull when describing planetary orbits.
+Before moving to the Kepler laws, we still need a bit of patience and introduce a new very powerful tool. This tool is a new way to multiply two vectors to get a third one that can encompass all the informations about the rotation of an object. It is hence easy to understand why this tool will be so usefull when describing planetary orbits.
 
 Consider two vectors $\vec{u}$ and $\vec{v}$. How could you combine them? You might already be familiar with one way to combine vectors together? Indeed, it is possible to build a number out two vectors using the scalar or dot product $\vec{u}\cdot\vec{v}$. The resulting number tells you how much the two vectors are aligned and allows to calculate lengths. There exist however, another way to multiply two vectors. 
 
@@ -137,13 +151,13 @@ $$ \vec{u_z} \wedge \vec{u_\theta} = -\vec{u_r}$$
 
 $$ \vec{u_z} \wedge \vec{u_r} = -\vec{u_\theta}$$
 
-## Newton and gravity
+### Newton and gravity
 
-We will take here for granted the universal law of gravitation between two bodies of masses $$M$$ and $m$ proposed by Newton in his principias. Let $$M\gg m$$ be the mass of the star
+We will take here for granted the universal law of gravitation between two bodies of masses $M$ and $m$ proposed by Newton in his principias. Let $M\gg m$ be the mass of the star
 
 $$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r} $$
 
-## The angular momentum 
+### The angular momentum 
 
 $$ \vec{L} = \vec{r} \wedge \vec{p} $$
 
