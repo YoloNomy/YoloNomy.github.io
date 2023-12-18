@@ -40,21 +40,22 @@ Despite several technical complexities, the period $$T$$ (time to realize a full
 <p align="center">
 <img src="../images/polar.png" alt="image" width="49%" height="auto">
 </p>
+
 As we discussed already, the first thing to do before studying a motion in mechanics, is to define both a *frame* (otherwise motion is meaningless) and a *coordinate system* (otherwise it is impossible to quantify anything).
 So far we were only using *cartesian coordinates*, that is, perpendicular and fixed axis $(O,x,y,z)$. Cylindrical/Polar coordinates replace $x$ and $y$ by $r$ and $\theta$.
 
 <img src="../images/polar_pyth.png" alt="image" width="49%" height="auto"><img src="../images/polar_trigo.png" alt="image" width="49%" height="auto">
 
-Using Pythagorian theorem in the red triangle
+Using [Pythagorian theorem](extra-maths/right-triangles.md) in the red triangle
 
 $$ r = \sqrt{x^2 + y^2} $$
 
 
-And from basic trigonometry
+And from [basic trigonometry](extra-maths/right-triangles.md)
 
 $$ {\rm tan}(\theta) = y/x \Rightarrow \theta = \arctan(y/x) $$
 
-Also from basic trigonometry in the red triangle
+Also from [basic trigonometry](extra-maths/right-triangles.md) in the red triangle
 
 $$\begin{cases} 
 x &= r \cos\theta\\
@@ -87,7 +88,7 @@ $$
 \end{cases}
 $$ 
 
-Such that, with the chain rule
+Such that, with the [chain rule](extra-maths/derivatives.md)
 
 $$ 
 \begin{cases}
@@ -105,7 +106,7 @@ The velocity vector is then given by its derivative
 
 $$ \vec{v} = \dot{\vec{r}} = \dot{r}\vec{u_r} + r \dot{\vec{u_r}} =  \dot{r}\vec{u_r} + r \dot{\theta}\vec{u_\theta} $$
 
-And we need another derivation to get the acceleration vector
+And we need to derive another time to get the acceleration vector
 
 $$ \vec{a} = \dot{\vec{v}} = \dot{r}\vec{u_r} + r \dot{\vec{u_r}} =  \ddot{r}\vec{u_r} + \dot{r}\dot{\theta}\vec{u_\theta} + \dot{r}\dot{\theta}\vec{u_\theta} - r\ddot{\theta}\vec{u_\theta} + r \dot{\theta}^2\vec{u_r} \\
 = (\ddot{r} - r \dot{\theta}^2 )\vec{u_r} + ( r\ddot{\theta}\vec{u_\theta} - 2\dot{r}\dot{\theta})\vec{u_\theta}\\
@@ -137,7 +138,7 @@ $$ \vec{u} \wedge \vec{v} = - \vec{v} \wedge \vec{u}$$
 
 $$ \|\vec{w}\|=\|\vec{u}\|\|\vec{v}\|\sin(\langle \vec{u},\vec{v}\rangle)$$
 
-Which is indeed the area of a rectangle $\|\vec{w}\|=S_{\rm rect} = \|\vec{u}\|\|\vec{v}\| $ with $\langle \vec{u},\vec{v}\rangle=90^{\circ}$.
+Which is indeed the area of a rectangle $\|\vec{w}\|=S_{\rm rect} = \|\vec{u}\|\|\vec{v}\|$ with $\langle \vec{u},\vec{v}\rangle=90^{\circ}$.
 
 A very useful property coming from this, is that any numbers multiplying the vectors can be put in front of the product
 
@@ -243,15 +244,22 @@ Which is the third Kepler law.
 
 Here comes the most technical aspect of our discussion. Hang on!
 
-In the most general case, the second Newton law is
+For a general orbit, the second Newton law implying only gravity can be written as
 
 $$ \vec{F_G} = m \vec{a} $$
 
-That we can project on the two polar basis vectors
+Writing again $\vec{F_G}= -\frac{GMm}{r^2} \vec{u_r}$ and $\vec{a}=a_r \vec{u_r}+a_\theta \vec{u}_\theta$, we can project on the two polar basis vectors
 
-$$ -\frac{GMm}{r^2}\vec{u_r} = a_r\vec{u_r} $$
+$$
+\begin{cases}
+\vec{F_G}_r &= m a_r \\
+\vec{F_G}_\theta &= a_\theta
+\end{cases}$$
 
-$$ 0 = a_\theta \vec{u_\theta}$$
+$$\begin{cases}
+ -\frac{GM}{r^2}&= a_r \\
+ 0 &= a_\theta 
+\end{cases}$$
 
 Using the general expression for the accelaration in polar coordinates, one gets the system
 
