@@ -154,12 +154,13 @@ $$ \vec{u_z} \wedge \vec{u_r} = -\vec{u_\theta}$$
 
 ### Newton and gravity
 
-We will take here for granted the universal law of gravitation between two bodies of masses $M$ and $m$ proposed by Newton in his principias. Let $M\gg m$ be the mass of the star
+We will take here for granted the universal law of gravitation between two bodies of masses $M$ and $m$ proposed by Newton in his principias. Let $M\gg m$ be the mass of the star, then
 
 $$ \vec{F_G} = -\frac{GMm}{r^2}\vec{u_r} $$
 
 ### The angular momentum 
 
+We now make use of the new tool of cross product to define the *angular momentum* as the vector given by
 $$ \vec{L} = \vec{r} \wedge \vec{p} $$
 
 This quantity can fully describe a rotation since it gives you at any-time
@@ -167,38 +168,47 @@ This quantity can fully describe a rotation since it gives you at any-time
 - A single direction of rotation
 - A "strength of rotation", greater if the speed is orthogonal to the radius $\|\vec{L}\|= \|\vec{r}\|\|\vec{p}\|\sin(\langle \vec{r},\vec{p}\rangle)$
 
+Now let us look at how this quantity changes with time for a planet under the influence of gravity:
+
 $$ \frac{\text{d}\vec{L}}{\text{d} t} = \frac{\text{d}\vec{r}}{\text{d} t} \wedge \vec{p} + \vec{r} \wedge \frac{\text{d}\vec{p}}{\text{d} t} \\
  = m \vec{v} \wedge \vec{v} + \vec{r} \wedge \sum \vec{F} = \frac{GMm}{r}\vec{u_r} \wedge \vec{u_r}  = \vec{0} $$
 
-At every time, $\vec{L}$ defines a single plane of rotation. Since it is conserved, the whole motion remains in a given plane.
+This is a wonderful result! $$\vec{L}$$ does not change with time: it is a conserved quantity. As such, when other effects as tidal forces or interactions with other planets are neglected, the planet will always rotate identically, with a constant value of $$\vec{L}$$[^1]. As $\vec{L}$ defines a single plane of rotation, this implies that the planet's motion must remain in a given plane.
 
-We can calculate $\vec{L}$ in terms of the coordinates
+[^1]: Note that in practice, this is never the cases. As planets are not ideal point particles but have a volume, they loose energy due to tidal forces, leading to a change of $$\vec{L}$$. As such, the moon is getting further and further away from us at about 3-4 cm/yr while the rotation of earth on itself is slowing down (by about one second every 50,000 years) due to their moon/earth interactions. In remote past, as e.g. the Cambrian when the first large animals were roaming in our oceans, the moon was thus bigger in the sky and the days were shorter! This process ends when bodies have syncroneous rotations i.e. both have the same period and are constantly facing one another, as this is the case of Pluton and its large moon Charon for example.
 
-$$  \vec{L} = \vec{r} \wedge \vec{p} = r m \vec{u_r}\wedge  \vec{v} = mr^2 \dot{\theta}  \vec{u_r}\wedge  \vec{u_\theta} $$ 
+For convinience, we can express $\vec{L}$ in terms of the polar coordinates defined before as
 
-$$ \vec{L} = mr^2 \dot{\theta} \vec{u_z} $$
+$$  \vec{L} = \vec{r} \wedge \vec{p} = r m \vec{u_r}\wedge  \vec{v} = mr^2 \dot{\theta}  \vec{u_r}\wedge  \vec{u_\theta}= mr^2 \dot{\theta} \vec{u_z} $$ 
+
+In which we used all the properties of the cross product defined above. As such, the length of the angular momentum vector is simply given by
 
 $$ \|\vec{L}\| = mr^2 \dot{\theta} $$
 
 ## Proof of the second law
 
-Remember that for a circle of radius $r$, the perimeter is $\ell=2\pi r$, corresponding to a full turn of the circle in radian $\theta=2\pi$. We conclude that for a small angle $d\theta$, $d \ell = Rd \theta$. Following the same logic, we know that for a disk, the full area is $S=\pi r^2$ and so an infinitesimal area is given by
+We now have all the tools required to proof the second Kepler law!
+Remember that for a circle of radius $r$, the perimeter (i.e. the total length) is $\ell=2\pi r$, corresponding to a full turn of the circle in radian $\theta=2\pi$. We conclude that for a general angle $\theta$, the associated perimeter must be $\ell=r\theta$, recovering the correct expression for a full turn $\theta=2\pi$. Following the same logic, we know that for a disk, the full area is $S=\pi r^2$, such that the area of a slice of angle $\theta$ must be given by $S=\theta r^2/2$ in order to recover the correct expression for the full circle ($\theta=2\pi$). As such an infinitesimal area covered by $\vec{OM}$ on an orbit, associated with a small rotation $\text{d}\theta$ and approximated locally as a circle of radius $r$, can be written as
 
-$$ \text{d}S = \frac{r^2 \text{d}\theta}{2}$$
+$$ \text{d}S = \frac{r^2 \text{d}\theta}{2},$$
 
-$$ \frac{\text{d}S}{\text{d}t} = \frac{r^2}{2} \dot{\theta} = \frac{\|\vec{L}\|}{2m}$$
+which can also be find by considering the area of a small triangle on the orbit. Dividing by $\text{d}t$, we deduce that
+
+$$ \frac{\text{d}S}{\text{d}t} = \frac{r^2}{2} \frac{\text{d}\theta}{\text{d} t} = \frac{r^2}{2} \dot{\theta} = \frac{\|\vec{L}\|}{2m}$$
+
+Since $m$ is a constant and $\vec{L}$ is a conserved quantity, we already proved the second law! Since the derivative of the area $S$ with respect to time is constant, it means that $S$ always changes identically with time no matter where we are on the orbit. 
+To see this more clearly, let us integrate this equation as
 
 $$ \Delta S = \int \frac{\|\vec{L}\|}{2m} t = \frac{\|\vec{L}\|}{2m} \Delta t $$
 
-For an ellipse, integrating over a full period gives
+For an ellipse, integrating over a full period ($\Delta t=T$ and $\Delta S=\pi ab$) gives
 
 $$ S_{\rm tot} = \pi ab = \frac{\|\vec{L}\|}{2m}  T$$
 
-Giving the relation
-
+Such that
 $$ \frac{\|\vec{L}\|}{2m} = \frac{\pi ab}{T} $$
 
-So that the second law is simply given by
+The second law can thus be expressed as
 
 $$ \boxed{\Delta S = \frac{\pi ab}{T} \Delta t} $$
 
