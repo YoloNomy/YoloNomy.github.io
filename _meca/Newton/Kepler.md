@@ -242,7 +242,7 @@ Over a whole period $T$, the distance travelled by the planet is $d= 2\pi R$. Si
 
 $$v = \frac{d}{T}= \frac{2\pi R}{T}$$
 
-Combining the two expressions for $v$, we can deriveget
+Combining the two expressions for $v$, we can derive
 
 $$ \frac{4\pi^2 R^2}{T^2} = \frac{GM}{R} $$
 
@@ -254,11 +254,17 @@ Which is the third Kepler law in the particular case of circular orbits.
 
 ## Conics
 
-Conics are 1D slices of a 2D cone. 
+The first law states that the orbit of astronomical objects bounded by gravity are conics. To better understand this, we should thus first understand more fully what are conics. Conics are obtained from 1D slices of a 2D cone. 
 
-Conic polar equation
+**Add picture Blender?**
 
-$$r = \frac{p}{1+e\cos(\theta-\theta_0)}$$ 
+They are defined in the 2D plane by the following equation in polar coordinates
+
+$$r(\theta) = \frac{p}{1+e\cos(\theta-\theta_0)}$$ 
+
+In which $e$ is called the *eccentricity* and $p$ has the sweet name of semi-latus rectum.
+
+**Add plot conics python + code**
 
 # General proof of the first law
 
