@@ -266,11 +266,15 @@ In which $e$ is called the *eccentricity* and $p$ has the sweet name of semi-lat
 
 **Add plot conics python + code**
 
+## More on the ellipses
+
+$$ S=\pi ab$$
+
+$$p = \frac{b^2}{a}$$
+
 # General proof of the first law
 
-Here comes the most technical aspect of our discussion. Hang on!
-
-For a general orbit, the second Newton law implying only gravity can be written as
+Here comes the most technical aspect of our discussion. Hang on! For a general orbit, the second Newton law involving only the gravitational force can be as always as
 
 $$ \vec{F_G} = m \vec{a} $$
 
@@ -287,22 +291,24 @@ $$\begin{cases}
  0 &= a_\theta 
 \end{cases}$$
 
-Using the general expression for the accelaration in polar coordinates, one gets the system
+Now, contrarily to the circular case, we need to use the general expression for the acceleration in polar coordinates, getting the system
 
-$$ \ddot{r} - r\dot{\theta}^2 = -\frac{GM}{r^2}$$ 
+$$ 
+\begin{cases}
+&\ddot{r} - r\dot{\theta}^2 = -\frac{GM}{r^2}\\
+&r\ddot{\theta} + 2\dot{r}\dot{\theta}=0
+\end{cases}
+$$
 
-$$ r\ddot{\theta} + 2\dot{r}\dot{\theta}=0$$
+A bit of thinking allow us to see that the second equation is just the conservation of the angular momentum
 
-The second equation is just the conservation of angular momentum
-
-$$ \dot{\|\vec{L}\|} = \frac{\text{d}(r^2\dot{\theta})}{\text{d}t} = 0 $$
+$$ \dot{\|\vec{L}\|} = \frac{\text{d}(r^2\dot{\theta})}{\text{d}t} = 0, $$
 
 While the first one really is the equation of motion.
 
-To see more clearly what is happening, we will rewrite this equation in term of $u=1/r$. As we will show this will give us an harmonic oscillator equation that we can solve easily
+To see more clearly what is happening, we will rewrite this equation in term of a new variable $u=1/r$. Changes of variable like these tend to be confusing when you start doing physics, but they often reveal to be powerful. In fact, doing so will give us an harmonic oscillator equation that we know how to solve easily
 
 $$ u'' + u - \frac{1}{p} = 0$$
-
 
 To see this, we first introduce the notation $x'= \frac{\text{d}x}{\text{d}\theta}$. Let's also not forget the cross-derivative relation
 $\dot{x}= \frac{\text{d}x}{\text{d}\theta}\frac{\text{d}\theta}{\text{d}t} = x'\dot{\theta}$
