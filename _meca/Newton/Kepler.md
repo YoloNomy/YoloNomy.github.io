@@ -216,6 +216,40 @@ On a given orbit, (think for example at the earth motion) $a,b$ and $T$ are cons
 
 ![my image](../images/kepler2.gif  "my image")
 
+# A warm-up: third law for spherical orbits
+
+For a spherical orbit $r=R$ is a constant (thus $\dot{r} = 0$) and the angular velocity is a constant ($\ddot{\theta}=0$). This allow us to simplify drastically the expression for the speed and the acceleration in polar coordinates as
+
+$$ \vec{v} = R \dot{\theta} \vec{u_\theta}$$
+
+and
+
+$$ \vec{a} = -R\dot{\theta}^2 \vec{u_r}= -\frac{v^2}{R} \vec{u_r} $$
+
+Note that you can of course recover these expressions from scratch by deriving the position vector $\vec{OM}=R \vec{u_r}$, or more lengthly in cartesian coordinates by deriving with respect to time the pair $x=R\cos(\theta)$ and $y=R\sin(\theta)$. This is a good exercice to check your understanding of the mathematical tools we have been using!
+
+As such, the second Newton law $\vec{F}_G=m\vec{a}$ takes the form
+
+$$ -\frac{GmM}{R^2} \vec{u_r} =  m \vec{a} = -\frac{m v^2}{R} \vec{u_r}$$
+
+there is thus no component along $\theta$, $a_\theta=0$. Rearanging the terms, one find the important relationship
+
+$$ v = \sqrt{\frac{GM}{R}} $$
+
+As such, for a circular orbit, knowing the altitude $R$ and the mass of the orbiting object is enough to know its speed.
+
+Over a whole period $T$, the distance travelled by the planet is $d= 2\pi R$. Since the volocity is constant, we can use the elementary definition of the velocity as 
+
+$$v = \frac{d}{T}= \frac{2\pi R}{T}$$
+
+Combining the two expressions for $v$, we can deriveget
+
+$$ \frac{4\pi^2 R^2}{T^2} = \frac{GM}{R} $$
+
+$$ \frac{T^2}{R^3} = \frac{4\pi^2}{GM} $$
+
+Which is the third Kepler law in the particular case of circular orbits.
+
 # Presenting the first law
 
 ## Conics
@@ -225,30 +259,6 @@ Conics are 1D slices of a 2D cone.
 Conic polar equation
 
 $$r = \frac{p}{1+e\cos(\theta-\theta_0)}$$ 
-
-# A warm-up: third law for spherical orbits
-
-For a spherical orbit $r=R$ is a constant (thus $\dot{r} = 0$) and the angular velocity is a constant ($\ddot{\theta}=0$).
-
-$$ \vec{v} = R \dot{\theta} \vec{u_\theta}$$
-
-$$ \vec{a} = -R\dot{\theta}^2 \vec{u_r}= -\frac{v^2}{R} \vec{u_r} $$
-
-$$ -\frac{GmM}{R^2} \vec{u_r} =  m \vec{a} = -\frac{m v^2}{R} \vec{u_r}$$
-
-$$ v = \sqrt{\frac{GM}{R}} $$
-
-Over a whole period $T$, the distance is $d= 2\pi R$. Since the volocity is constant 
-
-$$v = \frac{d}{T}= \frac{2\pi R}{T}$$
-
-Using the two expressions above, we get
-
-$$ \frac{4\pi^2 R^2}{T^2} = \frac{GM}{R} $$
-
-$$ \frac{T^2}{R^3} = \frac{4\pi^2}{GM} $$
-
-Which is the third Kepler law.
 
 # General proof of the first law
 
