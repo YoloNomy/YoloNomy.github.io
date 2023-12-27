@@ -268,9 +268,11 @@ In which $e$ is called the *eccentricity* and $p$ has the sweet name of semi-lat
 
 ## More on the ellipses
 
+The special case of a conic with $0<e<1$ is called an $ellipse$. It is characterized by two length $a$ and $b$, which are respectively semi-major and semi-minor axis. 
+For what follows we will simply need to know the following:
+- The surface of an ellipse can be showed to be given by
 $$ S=\pi ab$$
-
-$$p = \frac{b^2}{a}$$
+- The semi-latus rectum $p$ of the ellipse, is linked to $a$ and $b$ as $p = \frac{b^2}{a}$$
 
 # General proof of the first law
 
@@ -352,23 +354,37 @@ $$ u = \frac{1}{p} + e\cos(\theta - \theta_0) $$
 
 Going back to r, we get
 
-$$\boxed{r = \frac{p}{1+e\cos(\theta-\theta_0)}}$$ 
+$$\boxed{r = \frac{p}{1+e\cos(\theta-\theta_0)}}$$
+
+which is exactly the expression we gave above as defining a conic. We hence demonstrated rigorously that the orbit of gravitationnaly bound objects are conics (1st Kepler law)!
 
 # Third law for ellipses
 
+We are now ready to prove the third Kepler law for elliptic orbits. Recall that, on one hand, the area of an ellipse is given by
+
 $$S= \int \text{d}S = \pi ab$$
+
+and on the second hand, this same area $S$ can be related to the angular momentum of the planet using the second law as
 
 $$S = \int_T \frac{\|\vec{L}\|}{2m} \text{d}t = \frac{\|\vec{L}\|}{2m}T $$
 
-$$ T^2 = \frac{4\pi^2 a^2b^2 m^2}{L^2}$$
+Equating these two equations for $S$ and looking for the period $T$, we obtain
+
+$$ T^2 = \frac{4\pi^2 a^2b^2 m^2}{\|\vec{L}\|^2}$$
+
+Now, recalling that the semi-latus rectum $p$ of the ellipse is 
 
 $$ p = \frac{b^2}{a} $$
 
+and that, from our proof of the first law, it should also be equal to
+
 $$ p = \frac{\|\vec{L}\|^2}{GMm^2} $$
+
+equating these two equations for $p$ and looking for the angular momentum's norm $\|\vec{L}\|$, we obtain
 
 $$ \|\vec{L}\|^2 = \frac{GMm^2b^2}{a} $$
 
-And so, we immediatly find back the third Kepler law
+We can now insert this expression of $\|\vec{L}\|^2$ in the previously obtained equation for $T^2$. Doing so and massaging a bit, we proove the third Kepler law in the case of ellipsis:
 
 $$ \frac{T^2}{a^3} = \frac{4\pi^2}{GM} $$
 
