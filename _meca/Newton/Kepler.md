@@ -390,12 +390,19 @@ $$ \frac{T^2}{a^3} = \frac{4\pi^2}{GM} $$
 
 # Limits
 
-Keep the same form even when dropping the assumption that $$M\gg m$$, introducing the *reduced mass* $$\mu$$.
+The three Keper laws keep a similar form for two body systems even when dropping the assumption that $$M\gg m$$. To show this, one introduces the *reduced mass* $$\mu$$ defined as
 
-$$ \frac{T^2}{a^3} = \frac{4\pi^2}{G(M+m)} $$
+$$ \mu = \frac{mM}{m+M}$$
 
-Can only be applied to a two body system.
+Taking all the steps above without neglecting the motion of the large mass,
+the second Kepler law becomes
 
-See three bodies problem.
+$${\rm d S}= \frac{L}{2\mu}{\rm d}t $$
 
-Assumes Newtonian gravitation, general relativity is required for strong fields.
+From which one can derive that the third law takes the form
+
+$$ \frac{T^2}{a^3} = \frac{4\pi^2}{G(M+m)}.$$
+
+Note however that these laws can only be applied to two body systems. For more interacting bodies, the dynamics becomes much more complicated and highly chaotic (see future page on the three bodies problem).
+
+Another limit of Kepler laws is that it sssumes Newtonian gravitation. For strong fields (large masses), general relativity is required and adds some corrections to the laws.
