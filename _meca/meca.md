@@ -11,8 +11,8 @@ You will find here some fun python applications to physics with some detailled e
 - Newton laws and the reign of parabolas
 - A falling ant
 - [Work and Energy: integrals and the dot product](Newton/Energy.md)
-- [Kepler laws: cross product and polar coordinates](Newton/Kepler.md)
 - The pendulum and harmonic oscillators
+- [Kepler laws: cross product and polar coordinates](Newton/Kepler.md)
 
 # Dynamical systems and chaos
 
