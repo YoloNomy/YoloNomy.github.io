@@ -44,7 +44,7 @@ $$
     a = \frac{1}{1 + z}.
 $$
 
-# The comoving distance
+# The (line of sight) comoving distance
 
 The comoving distance correspond to the distance between two objects if we could freeze the universe expansion today. It is equivalent to the distance between two events $A$ and $B$ in the frame where they occurs at the same time. The comoving distance could be computed as the variation along the path of a photon (a null geodesic) emitted at $t_e$ and receive by us at $t_0$. From the FLRW metric, for a null geodesic we get the relation
 
@@ -70,3 +70,6 @@ The transverse comoving distance $D_A$ is define such that the distance $D_\perp
 $$
     D_A(z) = S_k(\chi(z)).
 $$
+
+For a flat Universe the transverse and the line of sight comoving distances are equals.
+ 
