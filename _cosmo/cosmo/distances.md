@@ -46,7 +46,7 @@ $$
 
 # The comoving distance
 
-The comoving distance correspond to the distance between two objects if we could freeze the universe expansion today. It could be computed as the variation along the path of a photon (a null geodesic) emitted at $t_e$ and receive by us at $t_0$. From the FLRW metric we get the relation
+The comoving distance correspond to the distance between two objects if we could freeze the universe expansion today. It is equivalent to the distance between two events $A$ and $B$ in the frame where they occurs at the same time. The comoving distance could be computed as the variation along the path of a photon (a null geodesic) emitted at $t_e$ and receive by us at $t_0$. From the FLRW metric, for a null geodesic we get the relation
 
 $$
     d\chi = -\frac{dt}{a}.
@@ -55,11 +55,18 @@ $$
 We change the $t$ variable to $a$ by using $dt = \frac{da}{aH}$ to get the integral
 
 $$
-    \chi(a) = - \int_{a}^{1} \frac{da'}{a'^2 H(a)} =  \int_{1}^{a} \frac{da'}{a'^2 H(a')}
+    \chi(a) = - \int_{a}^{1} \frac{da'}{a'^2 H(a)} =  \int_{1}^{a} \frac{da'}{a'^2 H(a')},
 $$
 
-we generally prefer to express the distance in terms of redshift. By using the relation $da = -a^2dz$ one could obtain
+where $a(t_e)\equiv a$ and $a(t_0) \equiv 1$. We generally prefer to express the distance in terms of redshift. By using the relation $da = -a^2dz$ one could obtain
 
 $$
     \chi(z) = \int_{0}^{z} \frac{dz'}{H(z')}.
+$$
+
+# The transverse comoving distance
+The transverse comoving distance $D_A$ is define such that the distance $D_\perp$ measured today (at $a=1$) between two objects at the same comoving distance $\chi$ and separate by an infinitessimal angle $\delta\alpha$ is given by $D_\perp = D_A \delta\alpha$. From the FLRW metric we could see that it correspond to the case where $dt=0$, $d\chi=0$ and $a=1$. By identifying $D_\perp \equiv ds$ and $\delta\alpha \equiv \sqrt{d\theta^2 + \sin^2\theta d\phi^2}$ we are left with the expression for the transverse comoving distance
+
+$$
+    D_A(z) = S_k(\chi(z)).
 $$
