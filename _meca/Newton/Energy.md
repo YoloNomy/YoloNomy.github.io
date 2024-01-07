@@ -8,7 +8,28 @@ nav_order: 2
 
 The apprently very practical notion of *work*, defining how "efficient" a force is to move a body, will lead us to the very abstract notion of *energy*, which is one of the most important notion of all physics.
 
+
+
 ## "Multiplying vectors" : the dot product
+
+Chosing a basis in which to express two vectors
+
+$$\vec{A}=\begin{pmatrix}x_A\\y_A\end{pmatrix} \qquad \qquad \vec{B}=\begin{pmatrix}x_B\\y_B\end{pmatrix}$$
+
+Is defined as
+
+$$\vec{A}\cdot\vec{B}= x_Ax_B + y_Ay_B $$
+
+Can be proven to be independent of the choice of basis.
+can be proven to be equal to
+
+$$\vec{A}\cdot\vec{B}=|\vec{A}||\vec{B}|\cos(\theta)$$
+
+the length 
+
+$$\left|\vec{A}\right|=\sqrt{\vec{A}\cdot\vec{A}}$$
+
+We often simply write $A=\left\|\vec{A}\right\|$ and $A^2$ or $\vec{A}^2=\vec{A}\cdot\vec{A}$.
 
 ## Work
 
