@@ -14,6 +14,8 @@ You will find here some fun python applications to physics with some detailled e
 - The pendulum and harmonic oscillators
 - [Kepler laws: cross product and polar coordinates](Newton/Kepler.md)
 
+# Analytical mechanics
+
 # Dynamical systems and chaos
 
 - [Game of life](chaos/game_of_life.md)

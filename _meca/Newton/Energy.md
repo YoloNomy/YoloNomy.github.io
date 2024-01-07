@@ -131,18 +131,27 @@ You can simply show that the proove olds in 3D using partial derivatives.
 
 ## Application: Escaping the black hole!
 
-The total energy of a body moving only under the influence of gravity is
 
-$$ 
-E=\frac{1}{2}mv^2 - \frac{GmM}{r}
-$$
+The idea of black holes is already hidden in Newtonian mechanics. 
 
-and is conserved as shown above. 
-Now assume that the velocity $v$ is exactly enough for the body to escape towards infinity.
+Indeed, imagine you are in a starship of mass $m$, on the surface of a planet of mass $M$ and radius $R$. If you want to leave the planet, you will have to go fast enough to escape gravity. To do so, you will need a kinetic energy $T$ that is large enough to compensate the gravitational potential energy $V$ of the planet. That is $ T \geq -V  $.
+Using the corresponding mathematical expressions, you have the condition:
 
-$$
-v = \sqrt{\frac{2GM}{R}}
-$$
+$$ \frac{1}{2}mv^2 \geq \frac{GMm}{R}  $$
+
+The minimal speed satisfying this is condition $v_l$, is called the escape velocity
+
+$$ v_l = \sqrt{\frac{2GM}{R}}$$
+
+On earth it is $\sim 11$ km/s and this is the speed at which rockets are launched in space. The value will change depending on the ratio $M/R$ of the planet i.e. its density. On the moon it is 2,4 km/s while escaping from the sun would require a speed of 617,5 km/s (even though you would probably have other problems being on the surface of the sun ...).
+
+Now, a natural question arise: what if $v \geq c$, that is, what if light itself could not be fast enough to escape the gravity of the planet?
+
+Such a strange star, called a "black star" would have a radius given by
+
+$$r_s = \frac{2GM}{c^2}$$
+
+The french astronomer Pierre-Simon de Laplace asked himself this question in 1796.
 
 
 ## Application: Forming a star

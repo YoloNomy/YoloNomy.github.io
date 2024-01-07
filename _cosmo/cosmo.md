@@ -17,6 +17,7 @@ You will find here some fun python applications to physics with some detailled e
 - [Friedmann equations and evolution of the Universe](cosmo/friedmann.md)
 - [Distances in cosmology](cosmo/distances.md)
 - [Cosmological horizons](cosmo/horizons.md)
+- The cosmic microwave background
 
 
 
