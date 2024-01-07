@@ -24,7 +24,7 @@ $$
 
 You might know that the kinetic energy of a body going at velocity $v$ is given by the "famous" formula:
 
-$$E=\frac{1}{2}mv^2$$
+$$E_C=\frac{1}{2}mv^2$$
 
 Let us now understand why and where this comes from. It actually is nothing else but work!
 
@@ -53,13 +53,13 @@ Putting this in our calculation for the work, we get
 
 $$
 \begin{aligned}
-W= &\int_A^Bm\vec{a}\cdot\text{d}\vec{\ell}\\
+W= &m\int_A^B\frac{\text{d}\vec{v}}{\text{d}t}\cdot\text{d}\vec{\ell}\\
 =&m\int_{t_A}^{t_B}\frac{\text{d}\vec{v}}{\text{d}t}\cdot\vec{v}\,\text{d} t\\
 =&m\int_{v_A}^{v_B}\text{d}\vec{v}\cdot\vec{v}
 \end{aligned}
 $$
 
-In which we "simplified" the $\text{d} t$ as is allowed by the rules of derivatives. Now, there are several ways to think about this integral, but let us detail it fully to be sure to understand as we are not yet familiar with the properties of the dot product  (even though this is might be a bit overkill!). To do so, we compute completly the dot product by decomposing the vectors in a coordinate basis $(x,y,z)$, such that $\vec{v}=(v_x,v_y,v_z)$ and hence $\text{d}\vec{v}=(\text{d}v_x,\text{d}v_y,\text{d}v_z)$. As such, using the rule of the dot product, we obtain
+In which we "simplified" the $\text{d} t$ as is allowed by the rules of derivatives. Now, there are several ways to think about this integral, but let us detail it fully to be sure to understand as we are not yet familiar with the properties of the dot product  (even though this might be a bit overkill!). To do so, we compute completly the dot product by decomposing the vectors in a coordinate basis $(x,y,z)$, such that $\vec{v}=(v_x,v_y,v_z)$ and hence $\text{d}\vec{v}=(\text{d}v_x,\text{d}v_y,\text{d}v_z)$. As such, using the rule of the dot product, we obtain
 
 $$
 \begin{aligned}
@@ -80,8 +80,7 @@ Now things are much easier than what you might think! These are just integrals o
 
 $$
 \begin{aligned}
-W= 
-&=m \left([v_x^2/2]_A^B+ [v_y^2/2]_A^B+ [v_z^2/2]_A^B\right)
+W= m \left([v_x^2/2]_A^B+ [v_y^2/2]_A^B+ [v_z^2/2]_A^B\right)
 \end{aligned}
 $$
 
@@ -89,10 +88,26 @@ in which we recognize the dot product of $\vec{v}$ with itself $\vec{v}^2=\vec{v
 
 $$
 \begin{aligned}
-W= 
-&=\frac{m}{2}[\vec{v}^2]_A^B
+W=\frac{m}{2}[\vec{v}^2]_A^B= \frac{m}{2}(v_B^2-v_A^2)
 \end{aligned}
 $$
+
+We thus define the kinetic energy $E_C$ of a moving body as
+
+$$
+E_C= \frac{1}{2}mv^2
+$$
+
+This is a quantity that can be associated to a moving body of mass $m$ and velocity $v$ at any point of its trajectory. We will see that it turns out to be a crucial quantity for all of physics as we know it! So far, it is just a 
+convinient trick to rewrite the work between two points $A$ and $B$ as
+
+$$ W = E_C^A - E_C^B = \Delta E_C $$
+
+Remembering that the linear momentum $p=mv$ is an important quantity (as we discussed in lesson 1), $E_C$ can also be expressed as
+
+$$ E_C = \frac{\vec{p}^2}{2m} $$
+
+We saw that in the abscence of forces, $\vec{p}$ was a conserved quantity. As such, $E_C$ is also conserved in that case. This is our first glimps at the overwhelmingly important conservation of energy.
 
 ## Potential energy and gradient
 
@@ -115,5 +130,19 @@ $$
 You can simply show that the proove olds in 3D using partial derivatives.
 
 ## Application: Escaping the black hole!
+
+The total energy of a body moving only under the influence of gravity is
+
+$$ 
+E=\frac{1}{2}mv^2 - \frac{GmM}{r}
+$$
+
+and is conserved as shown above. 
+Now assume that the velocity $v$ is exactly enough for the body to escape towards infinity.
+
+$$
+v = \sqrt{\frac{2GM}{R}}
+$$
+
 
 ## Application: Forming a star
