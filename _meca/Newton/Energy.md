@@ -8,7 +8,28 @@ nav_order: 2
 
 The apprently very practical notion of *work*, defining how "efficient" a force is to move a body, will lead us to the very abstract notion of *energy*, which is one of the most important notion of all physics.
 
+
+
 ## "Multiplying vectors" : the dot product
+
+Chosing a basis in which to express two vectors
+
+$$\vec{A}=\begin{pmatrix}x_A\\y_A\end{pmatrix} \qquad \qquad \vec{B}=\begin{pmatrix}x_B\\y_B\end{pmatrix}$$
+
+Is defined as
+
+$$\vec{A}\cdot\vec{B}= x_Ax_B + y_Ay_B $$
+
+Can be proven to be independent of the choice of basis.
+can be proven to be equal to
+
+$$\vec{A}\cdot\vec{B}=|\vec{A}||\vec{B}|\cos(\theta)$$
+
+the length 
+
+$$\left|\vec{A}\right|=\sqrt{\vec{A}\cdot\vec{A}}$$
+
+We often simply write $A=\left\|\vec{A}\right\|$ and $A^2$ or $\vec{A}^2=\vec{A}\cdot\vec{A}$.
 
 ## Work
 
@@ -24,7 +45,7 @@ $$
 
 You might know that the kinetic energy of a body going at velocity $v$ is given by the "famous" formula:
 
-$$E=\frac{1}{2}mv^2$$
+$$E_C=\frac{1}{2}mv^2$$
 
 Let us now understand why and where this comes from. It actually is nothing else but work!
 
@@ -53,13 +74,13 @@ Putting this in our calculation for the work, we get
 
 $$
 \begin{aligned}
-W= &\int_A^Bm\vec{a}\cdot\text{d}\vec{\ell}\\
+W= &m\int_A^B\frac{\text{d}\vec{v}}{\text{d}t}\cdot\text{d}\vec{\ell}\\
 =&m\int_{t_A}^{t_B}\frac{\text{d}\vec{v}}{\text{d}t}\cdot\vec{v}\,\text{d} t\\
 =&m\int_{v_A}^{v_B}\text{d}\vec{v}\cdot\vec{v}
 \end{aligned}
 $$
 
-In which we "simplified" the $\text{d} t$ as is allowed by the rules of derivatives. Now, there are several ways to think about this integral, but let us detail it fully to be sure to understand as we are not yet familiar with the properties of the dot product  (even though this is might be a bit overkill!). To do so, we compute completly the dot product by decomposing the vectors in a coordinate basis $(x,y,z)$, such that $\vec{v}=(v_x,v_y,v_z)$ and hence $\text{d}\vec{v}=(\text{d}v_x,\text{d}v_y,\text{d}v_z)$. As such, using the rule of the dot product, we obtain
+In which we "simplified" the $\text{d} t$ as is allowed by the rules of derivatives. Now, there are several ways to think about this integral, but let us detail it fully to be sure to understand as we are not yet familiar with the properties of the dot product  (even though this might be a bit overkill!). To do so, we compute completly the dot product by decomposing the vectors in a coordinate basis $(x,y,z)$, such that $\vec{v}=(v_x,v_y,v_z)$ and hence $\text{d}\vec{v}=(\text{d}v_x,\text{d}v_y,\text{d}v_z)$. As such, using the rule of the dot product, we obtain
 
 $$
 \begin{aligned}
@@ -80,8 +101,7 @@ Now things are much easier than what you might think! These are just integrals o
 
 $$
 \begin{aligned}
-W= 
-&=m \left([v_x^2/2]_A^B+ [v_y^2/2]_A^B+ [v_z^2/2]_A^B\right)
+W= m \left([v_x^2/2]_A^B+ [v_y^2/2]_A^B+ [v_z^2/2]_A^B\right)
 \end{aligned}
 $$
 
@@ -89,10 +109,26 @@ in which we recognize the dot product of $\vec{v}$ with itself $\vec{v}^2=\vec{v
 
 $$
 \begin{aligned}
-W= 
-&=\frac{m}{2}[\vec{v}^2]_A^B
+W=\frac{m}{2}[\vec{v}^2]_A^B= \frac{m}{2}(v_B^2-v_A^2)
 \end{aligned}
 $$
+
+We thus define the kinetic energy $E_C$ of a moving body as
+
+$$
+E_C= \frac{1}{2}mv^2
+$$
+
+This is a quantity that can be associated to a moving body of mass $m$ and velocity $v$ at any point of its trajectory. We will see that it turns out to be a crucial quantity for all of physics as we know it! So far, it is just a 
+convinient trick to rewrite the work between two points $A$ and $B$ as
+
+$$ W = E_C^A - E_C^B = \Delta E_C $$
+
+Remembering that the linear momentum $p=mv$ is an important quantity (as we discussed in lesson 1), $E_C$ can also be expressed as
+
+$$ E_C = \frac{\vec{p}^2}{2m} $$
+
+We saw that in the abscence of forces, $\vec{p}$ was a conserved quantity. As such, $E_C$ is also conserved in that case. This is our first glimps at the overwhelmingly important conservation of energy.
 
 ## Potential energy and gradient
 
@@ -115,5 +151,28 @@ $$
 You can simply show that the proove olds in 3D using partial derivatives.
 
 ## Application: Escaping the black hole!
+
+
+The idea of black holes is already hidden in Newtonian mechanics. 
+
+Indeed, imagine you are in a starship of mass $m$, on the surface of a planet of mass $M$ and radius $R$. If you want to leave the planet, you will have to go fast enough to escape gravity. To do so, you will need a kinetic energy $T$ that is large enough to compensate the gravitational potential energy $V$ of the planet. That is $ T \geq -V  $.
+Using the corresponding mathematical expressions, you have the condition:
+
+$$ \frac{1}{2}mv^2 \geq \frac{GMm}{R}  $$
+
+The minimal speed satisfying this is condition $v_l$, is called the escape velocity
+
+$$ v_l = \sqrt{\frac{2GM}{R}}$$
+
+On earth it is $\sim 11$ km/s and this is the speed at which rockets are launched in space. The value will change depending on the ratio $M/R$ of the planet i.e. its density. On the moon it is 2,4 km/s while escaping from the sun would require a speed of 617,5 km/s (even though you would probably have other problems being on the surface of the sun ...).
+
+Now, a natural question arise: what if $v \geq c$, that is, what if light itself could not be fast enough to escape the gravity of the planet?
+
+Such a strange star, called a "black star" would have a radius given by
+
+$$r_s = \frac{2GM}{c^2}$$
+
+The french astronomer Pierre-Simon de Laplace asked himself this question in 1796.
+
 
 ## Application: Forming a star
