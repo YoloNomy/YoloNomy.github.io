@@ -72,4 +72,19 @@ $$
 $$
 
 For a flat Universe the transverse and the line of sight comoving distances are equals.
- 
+
+# The proper distance
+The proper distance is the distance between two object at any time $t$. It means that this distance increase when the universe expand, it is simply defined as
+
+$$
+    d_p = a\chi = \frac{\chi(z)}{1 + z}.
+$$
+
+# The anglar diameter distance
+The angular diameter distance $d_A$ is defined similarly to the transverse comoving distance. It is defined as the ratio between the proper distance $d_\perp=aD_\perp$ measured at the moment of the emission of the light we observe and the angular separation $\delta_\theta$, thus we have
+
+$$
+    d_A(z) = a\frac{D_\perp}{\delta_\theta} = \frac{D_A(z)}{1 + z}=\frac{S_k\left(\chi(z)\right)}{1 + z}.
+$$
+
+# The luminosity distance
