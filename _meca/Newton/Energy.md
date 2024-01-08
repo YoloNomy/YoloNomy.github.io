@@ -8,28 +8,48 @@ nav_order: 2
 
 The apprently very practical notion of *work*, defining how "efficient" a force is to move a body, will lead us to the very abstract notion of *energy*, which is one of the most important notion of all physics.
 
-
-
 ## "Multiplying vectors" : the dot product
 
-Chosing a basis in which to express two vectors
+We will now define a way to take any two vectors, say $\vec{A}$ and $\vec{B}$ and "multiply" them in order to obtain a number, noted $\vec{A}\cdot \vec{B}$. Why on earth would be want to do that? What is of interest for us as physicist, will be to find a way to measure how aligned or "perpendicular vectors are.
 
-$$\vec{A}=\begin{pmatrix}x_A\\y_A\end{pmatrix} \qquad \qquad \vec{B}=\begin{pmatrix}x_B\\y_B\end{pmatrix}$$
+- It is minimal and equal to zero when the two vectors are perpendicular. Hence, if you obtain $\vec{A}\cdot \vec{B}=0$, you can safely conclude that there is a right angle between $\vec{A}$ and $\vec{B}$.
+
+- It is maximal and equal to the product of the lengths $\|\vec{A}\|\|\vec{B}\|$ when the two vectors are aligned i.e. pointing in the same or opposite direction.
+
+It allows to compute the lenght of the vectors and basically how a vector "project" to another. 
+
+Chosing a 3 dimensional basis of space in which to express two vectors
+
+$$\vec{A}=\begin{pmatrix}x_A\\y_A\\z_A\end{pmatrix} \qquad \qquad \vec{B}=\begin{pmatrix}x_B\\y_B\\z_C\end{pmatrix}$$
 
 Is defined as
 
-$$\vec{A}\cdot\vec{B}= x_Ax_B + y_Ay_B $$
+$$\vec{A}\cdot\vec{B}= x_Ax_B + y_Ay_B + z_Az_C $$
 
 Can be proven to be independent of the choice of basis.
 can be proven to be equal to
 
 $$\vec{A}\cdot\vec{B}=|\vec{A}||\vec{B}|\cos(\theta)$$
 
+<details>
+  <summary>Proof</summary>
+
+For simplicity let's start by assuming that the geometrical definition is true and try to recover the original definition from it.
+Choosing an orthonormal basis of vectors $(\vec{e}_x,\vec{e}_y, ...)$, in which to express the two vectors with basis at the same point as $\vec{A}=\sum_i A^i\vec{e}_i$ and $\vec{B}=\sum_i B^i\vec{e}_i$. Then, we have, by the geometrical definition
+$$\vec{A}\cdot\vec{e}_i = |\vec{A}||\vec{e}_i|\cos(\theta_i)=A^i$$, where $|\vec{e}_i|=1$ because the basis is orthonormal and $|\vec{A}|\cos(\theta_i)=A^i$ using trigonometry in a right triangle (add figure).
+
+Then, we can re-express the total dot product between $\vec{A}$ and $\vec{B}$ as
+$$ \vec{A}\cdot\vec{B}= \sum_i B^i\vec{A}\cdot\vec{e_i}=\sum_i B^iA^i$$.
+In which we used the property of the dot product $\vec{A}\cdot(a\vec{B})=a\vec{A}\cdot\vec{B}$, where $a\in \mathbb{R}$ is a number.
+</details>
+
 the length 
 
 $$\left|\vec{A}\right|=\sqrt{\vec{A}\cdot\vec{A}}$$
 
-We often simply write $A=\left\|\vec{A}\right\|$ and $A^2$ or $\vec{A}^2=\vec{A}\cdot\vec{A}$.
+We often simply write $A=\left\|\vec{A}\right\|$ and $A^2$ or $\vec{A}^2=\vec{A}\cdot\vec{A}$. As such,  
+
+Another reason why the dot product is so much needed, is that, while we know how to derivate a vector, we still haven't define what it could mean to "integrate" a vector.
 
 ## Work
 
