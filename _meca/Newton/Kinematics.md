@@ -15,8 +15,7 @@ nav_order: 2
 
 ## Basis and vector coordinates
 
-## Rate of change of quantities and derivativation
+## Rate of change of vectors and derivativation
 
 ## Velocity and acceleration
 
-## Summing quantities and integrals

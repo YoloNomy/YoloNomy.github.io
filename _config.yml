@@ -22,9 +22,9 @@ author: L. Vacher, R. Botrel & B. Carreres
 navbar-links:
   About Us: "about"
   Resources:
-    - Mechanics: "meca/meca"
-    - Optics: "optics/optics"
     - Thermo: "thermo/thermo"
+    - Optics: "optics/optics"
+    - Mechanics: "meca/meca"
     - Quantum : "quantum/quantum"
     - Astro/Cosmo : "cosmo/cosmo"
     - Maths : "maths/maths"

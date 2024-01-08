@@ -8,10 +8,11 @@ You will find here some fun python applications to physics with some detailled e
 
 # Thermodynamics
 
+- Studying a system
 - The ideal gas
 - Van der Waals gas
-
-# Fluid mechanics
+- Studying change: derivative and integrals
+- Second law and entropy
 
 
 
