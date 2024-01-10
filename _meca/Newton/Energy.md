@@ -6,7 +6,7 @@ nav_order: 2
 ---
 # Work and Energy: integrals and the dot product
 
-The apprently very practical notion of *work*, defining how "efficient" a force is to move a body, will lead us to the very abstract notion of *energy*, which is one of the most important notion of all physics.
+The apparently very practical notion of *work*, defining how "efficient" a force is to move a body, will lead us to the very abstract notion of *energy*, which is one of the most important notion of all physics. In order to introduce the work quantity, we however need a new tool: the dot product, which allows to multiply two vectors to obtain a number.
 
 ## "Multiplying vectors" : the dot product
 
@@ -16,9 +16,9 @@ We will now define a way to take any two vectors, say $\vec{A}$ and $\vec{B}$ an
 
 - It is maximal and equal to the product of the lengths $\|\vec{A}\|\|\vec{B}\|$ when the two vectors are aligned i.e. pointing in the same or opposite direction.
 
-It allows to compute the lenght of the vectors and basically how a vector "project" to another. 
+It allows to compute the length of the vectors and basically how a vector "project" to another. 
 
-Chosing a 3 dimensional basis of space in which to express two vectors
+Choosing a 3 dimensional orthonormal basis of space in which to express two vectors as
 
 $$\vec{A}=\begin{pmatrix}x_A\\y_A\\z_A\end{pmatrix} \qquad \qquad \vec{B}=\begin{pmatrix}x_B\\y_B\\z_C\end{pmatrix}$$
 
@@ -26,13 +26,28 @@ Is defined as
 
 $$\vec{A}\cdot\vec{B}= x_Ax_B + y_Ay_B + z_Az_C $$
 
-Can be proven to be independent of the choice of basis.
-can be proven to be equal to
+While this definition requires the choices of an orthonormal basis $(x,y,z)$ in which to decompose the vectors, however, it can be proven to be independent of the choice of orthonormal basis i.e. it doesn't change if you rotate your basis.
+
+<details>
+  <summary>Proof of the basis independence of the dot product</summary>
+
+Let $(x,y,z)$ be a choice of basis in which the two vectors $\vec{A}$ and $\vec{B}$ are expressed by the triplets $(x_A,y_A,z_A)$ and $(x_B,y_B,z_B)$. Consider another basis, $(x',y',z')$ rotated from the first one by an angle $\theta$ in which the two vectors $\vec{A}$ and $\vec{B}$ are expressed by the triplets $(x'_A,y'_A,z'_A)$ and $(x'_B,y'_B,z'_B)$.
+
+Then:
+$$\vec{A}\cdot\vec{B}= x_Ax_B + y_Ay_B + z_Az_C $$
+
+</details>
+
+However it requires that the coordinates are necessarily expressed in an orthonormal basis to be properly defined.
+
+Another way to define the dot product, is given by the geometric definition:
 
 $$\vec{A}\cdot\vec{B}=|\vec{A}||\vec{B}|\cos(\theta)$$
 
+where $\theta$ is the angle between $\vec{A}$ and $\vec{B}$ when there bases are brought to the same point in order to compare them. This geometric definition can be proven to be equivalent to the coordinate one.
+
 <details>
-  <summary>Proof</summary>
+  <summary>Proof of the equivalence of the two definitions</summary>
 
 For simplicity let's start by assuming that the geometrical definition is true and try to recover the original definition from it.
 Choosing an orthonormal basis of vectors $(\vec{e}_x,\vec{e}_y, ...)$, in which to express the two vectors with basis at the same point as $\vec{A}=\sum_i A^i\vec{e}_i$ and $\vec{B}=\sum_i B^i\vec{e}_i$. Then, we have, by the geometrical definition
@@ -43,19 +58,22 @@ $$ \vec{A}\cdot\vec{B}= \sum_i B^i\vec{A}\cdot\vec{e_i}=\sum_i B^iA^i$$.
 In which we used the property of the dot product $\vec{A}\cdot(a\vec{B})=a\vec{A}\cdot\vec{B}$, where $a\in \mathbb{R}$ is a number.
 </details>
 
-the length 
+The length of a vector is actually properly defined by using the dot product as
 
 $$\left|\vec{A}\right|=\sqrt{\vec{A}\cdot\vec{A}}$$
 
-We often simply write $A=\left\|\vec{A}\right\|$ and $A^2$ or $\vec{A}^2=\vec{A}\cdot\vec{A}$. As such,  
+From which we recover easily what pythagorian theorem would give you, that is $\left\|\vec{A}\right\|=\sqrt{x_A^2+y_A^2+z_A^2}$. We often simply write $A=\left\|\vec{A}\right\|$ and $A^2$ or $\vec{A}^2=\vec{A}\cdot\vec{A}$.   
 
 Another reason why the dot product is so much needed, is that, while we know how to derivate a vector, we still haven't define what it could mean to "integrate" a vector.
 
 ## Work
 
+The *work* produced by a constant force $\vec{F}$ on a straight distance $\vec{AB}$ is defined as
+
 $$
 W_{AB} = \vec{F}\cdot\vec{AB}  
 $$
+
 
 $$
 \delta W=\vec{F}\cdot\text{d}\vec{\ell}
