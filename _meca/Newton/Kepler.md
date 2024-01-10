@@ -13,7 +13,7 @@ Our goal here will be to understand and demonstrate the three Kepler laws from N
 
 ## The laws
 
-Kepler laws are three statements allowing to predict the motion of celestial bodies in the case of a two body system with one much larger than the other. A typical case is then given by the motion of a planet around a star. They can be stated as follow:
+Kepler laws are three statements allowing to predict the motion of celestial bodies in the case of a two body system bounded only by gravity with one much larger than the other. A typical case is then given by the motion of a planet like Earth around a star like the Sun. They can be stated as follow:
 
 - **Law 1:** Trajectories of planets are conics (circles, ellipses, parabola or hyperbola) with the star at one of the focci.
 - **Law 2:** A line connecting the planet and its star sweeps out equal areas during equal intervals of time. 
