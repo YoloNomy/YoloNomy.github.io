@@ -4,6 +4,7 @@ title: Kinematics
 parent: Newton
 nav_order: 2
 ---
+**PAGE STILL UNDER CONSTRUCTION**
 
 # Kinematics: vector and derivatives
 

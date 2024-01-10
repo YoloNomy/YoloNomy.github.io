@@ -4,6 +4,8 @@ title: Work and Energy
 parent: Newton
 nav_order: 2
 ---
+**PAGE STILL UNDER CONSTRUCTION**
+
 # Work and Energy: integrals and the dot product
 
 The apparently very practical notion of *work*, defining how "efficient" a force is to move a body, will lead us to the very abstract notion of *energy*, which is one of the most important notion of all physics. In order to introduce the work quantity, we however need a new tool: the dot product, which allows to multiply two vectors to obtain a number.

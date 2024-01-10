@@ -23,9 +23,9 @@ As we will see, these three laws were first deduced from observations by the ger
 
 ### History : from laws to theorem
 
-Discovered by Joannes Kepler and published between 1609 and 1619 from Tycho Brahe's measurements. Part of the great changes giving birth to modern astronomy with Galileo's observations (1605) and Copernician's revolution.
+These laws were discovered by Joannes Kepler and published between 1609 and 1619. They were inspired from Tycho Brahe's measurements of the planet's motion in the sky. They are part of the great changes giving birth to modern astronomy starting from Galileo's first observations of the sky with a telescope (1605) and the Copernician's revolution putting the Sun and not earth at the center of the Universe.
 
-At the time they were indeed understood as *laws* that is fundamental rules of nature that can not be proven. However, they can be fully derived from geometrical consideration and Newton *laws* of mechanics. Proven in 1687 by Newton.
+As their name clearly states, at the time they were understood as *laws* that is fundamental rules of nature that can not be proven within the current theories. However, they can now be fully derived from geometrical consideration and Newton *laws* of mechanics as we will do here. They were proven in 1687 by Newton himself.
 
 ### Why are they so important ?
 
