@@ -10,11 +10,22 @@ nav_order: 2
 
 ## The laws
 
-Dynamics
+The goal of Newton, in its book  "
+Philosophiæ naturalis principia mathematica", written in 1687, was to find some simple laws allowing to explain the motion of bodies. In physics, a law is the building block of a theory. It is a statement, often mathematical, which can not be proven from other blocks but can be used to make predictions. A theory is treated as correct as long as its law does not lead to predictions which contradicts experiment. It is quite astonishing that, accepting the three relatively simple laws of Newton, we will be able to explain and predict almost all of the simple case of motions we see around us. For exemple, we will be able to understood very well the orbit of the planets around the Sun.
 
-- First law (principle of inertia):
-- Second law (fundamental principle of dynamics):
-- Third law (action/reaction principle):
+The whole understanding of Newton's theory relies under the notion of *forces*. In his laws, Newton defines the forces and states that forces are what drives the motions of all the bodies in the Universe. The three laws can then be stated as follows:
+
+- **First law (principle of inertia):** A body under the influence of no forces moves in straight uniform motion that is whith a constant velocity vector $\vec{v}$. We say that the body is *free*. 
+
+- **Second law (fundamental principle of dynamics):** If a body stops being free, its accelerates $\vec{a}=\dot{\vec{v}}\neq0$. This acceleration is due to the presence of forces, which are vectors $\vec{F}_i$. The sum of all the forces act to accelerate the body such that $\vec{a}=\sum_i\vec{F}_i/m$.
+
+- **Third law (action/reaction principle):** If  $$\vec{F}_{A\to B}= -\vec{F}_{B\to A}$$
+
+
+
+While we saw what was kinematics before, as the tools used to describe the motions, Newton laws talk about the dynamics i.e. they allow to predict how the motions will be or were in the past.
+
+Let us now explore the laws and their consequences in greater detail. 
 
 ### First law
 
