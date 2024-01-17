@@ -10,6 +10,7 @@ You will find here some fun python applications to physics with some detailled e
 
 # General relativity
 
+- [Stars](cosmo/stars.md)
 - [Black holes](cosmo/black-holes.md)
 
 # Cosmology

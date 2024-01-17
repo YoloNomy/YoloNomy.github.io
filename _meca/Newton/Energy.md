@@ -214,5 +214,6 @@ $$r_s = \frac{2GM}{c^2}$$
 
 The french astronomer Pierre-Simon de Laplace asked himself this question in 1796.
 
+## Applications: astrophysics
 
-## Application: Forming a star
+If you are curious, you habe now the very basics to have a look at some applications to astrophysics in the dedicated section!
