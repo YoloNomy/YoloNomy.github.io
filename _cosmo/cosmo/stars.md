@@ -11,9 +11,24 @@ By trying to answer the vast question "what is a star?", we will apply most of t
 
 ## The birth: Jean's parameters
 
-$-V\geq E_T$
+Star form inside large clouds called molecular clouds. 
 
-$$\frac{GM^2}{R} \geq k_B T \frac{M}{\mu}$$
+Formation can happen when the potential energy becomes greater than the thermal energy, that is
+
+$$-V\geq E_T$$
+
+The gravitational energy:
+
+$$V = \frac{GM^2}{R} $$
+
+The thermal energy, energy of a monoatomic gas $3k_B T/2$ per atom:
+
+$$E_T = N\frac{3 k_B T}{2}= \frac{M}{\mu}\frac{3k_B T}{2}$$
+
+where $\mu$ is the mean mass of an atom in the cloud.
+Such that
+
+$$\frac{GM^2}{R} \geq \frac{3 k_B T}{2} \frac{M}{\mu}$$
 
 By using $\rho = M/V$ and $V=\frac{4}{3}\pi R^3$.
 
@@ -28,13 +43,13 @@ $$M_J \propto \left(\frac{T}{\mu}\right)^{3/2}\frac{1}{\sqrt{\rho}}$$
 
 Starting from the inequality 
 
-$$\frac{GM^2}{R} \geq k_B T \frac{M}{\mu}$$
+$$\frac{GM^2}{R} \geq \frac{3k_B T}{2} \frac{M}{\mu}$$
 
 We can simply isolate $M$ as
 
-$$M^2 \geq R k_B T \frac{M}{G\mu}$$
+$$M^2 \geq  \frac{3k_B T}{2} \frac{RM}{G\mu}$$
 
-$$M \geq \frac{R k_B T}{G\mu}$$
+$$M \geq \frac{3k_B T}{2}\frac{R}{G\mu}$$
 
 Now consider the density 
 
@@ -46,15 +61,15 @@ $$ 1/R^3 = \frac{4 \pi \rho}{3M} \Rightarrow R = \left(\frac{3M}{4 \pi \rho}\rig
 
 Puting this in the above equation on $M$, we have
 
-$$M \geq \frac{(3M)^{1/3} k_B T}{(4\pi \rho)^{1/3}G\mu}$$
+$$M \geq \frac{(3M)^{1/3} 3k_B T}{2(4\pi \rho)^{1/3}G\mu}$$
 
-$$M^{2/3} \geq \frac{(3)^{1/3} k_B T}{(4\pi \rho)^{1/3}G\mu}$$
+$$M^{2/3} \geq \frac{3(3)^{1/3} k_B T}{2(4\pi \rho)^{1/3}G\mu}$$
 
-$$M \geq \left(\frac{(3)^{1/3} k_B T}{(4\pi \rho)^{1/3}G\mu}\right)^{3/2}$$
+$$M \geq \left(3\frac{(3)^{1/3} k_B T}{2(4\pi \rho)^{1/3}G\mu}\right)^{3/2}$$
 
-$$ M\geq \frac{(3)^{1/2} (k_B T)^{3/2}}{(4\pi \rho)^{1/2}(G\mu)^{3/2}}$$
+$$ M\geq \frac{3^{3/2}(3)^{1/2} (k_B T)^{3/2}}{2^{3/2}(4\pi \rho)^{1/2}(G\mu)^{3/2}}$$
 
-$$ M\geq \frac{\sqrt{3}k_B^{3/2}}{\sqrt{4\pi}G^{3/2}} \left(\frac{T}{\mu}\right)^{3/2}\frac{1}{\sqrt{\rho}}=M_J$$
+$$ M\geq \left(\frac{3k_B}{2G}\right)^{3/2}\sqrt{\frac{3}{4\pi}} \left(\frac{T}{\mu}\right)^{3/2}\frac{1}{\sqrt{\rho}}=M_J$$
 </details>
 
 free fall time and turbulence
