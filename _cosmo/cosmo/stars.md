@@ -5,11 +5,17 @@ parent: cosmo
 nav_order: 1
 ---
 
-By trying to answer the vast question "what is a star?", we will apply most of the things we have learn in our physics class in an exciting context. We will hence discover one of the multiple reasons why astrophysics is so exciting : it involves many different branches of physics!
-
 # Stars: formation and structure
 
+
+By trying to answer the vast question "what is a star?", we will apply most of the things we have learn in our physics class in an exciting context. We will hence discover one of the multiple reasons why astrophysics is so exciting : it involves many different branches of physics!
+
+
 ## The birth: Jean's parameters
+
+![image](../images/Tarantula-HST-ESO-Webb-LL.jpg){: width="80%"}
+
+*Caption*
 
 Star form inside large clouds called molecular clouds. 
 
