@@ -25,12 +25,15 @@ navbar-links:
     - Thermo: "thermo/thermo"
     - Optics: "optics/optics"
     - Mechanics: "meca/meca"
+    - Electromag: "EM/EM"
     - Quantum : "quantum/quantum"
     - Astro/Cosmo : "cosmo/cosmo"
     - Maths : "maths/maths"
 
 collections:
   meca:
+    output: true
+  EM:
     output: true
   optics:
     output: true

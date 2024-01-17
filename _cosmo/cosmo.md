@@ -11,6 +11,8 @@ You will find here some fun python applications to physics with some detailled e
 # General relativity
 
 - [Stars](cosmo/stars.md)
+- [Observing the stars](cosmo/astro-obs.md)
+
 - [Black holes](cosmo/black-holes.md)
 
 # Cosmology

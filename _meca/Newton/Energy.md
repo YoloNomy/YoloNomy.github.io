@@ -172,6 +172,14 @@ We saw that in the abscence of forces, $\vec{p}$ was a conserved quantity. As su
 
 ## Potential energy and gradient
 
+$$ \vec{F}=-\vec{\nabla}V $$
+
+$\vec{\nabla}$ will be further explored in electromagnetism.
+
+Along a single direction
+
+$$ \vec{F}= -\frac{\partial V}{\partial x}\vec{u}_x $$
+
 
 ## Energy conservation
 
