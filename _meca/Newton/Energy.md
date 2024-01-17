@@ -172,6 +172,8 @@ We saw that in the abscence of forces, $\vec{p}$ was a conserved quantity. As su
 
 ## Potential energy and gradient
 
+Some forces can be written as
+
 $$ \vec{F}=-\vec{\nabla}V $$
 
 $\vec{\nabla}$ will be further explored in electromagnetism.
@@ -180,6 +182,13 @@ Along a single direction
 
 $$ \vec{F}= -\frac{\partial V}{\partial x}\vec{u}_x $$
 
+
+These forces, are said to be "conservative" meaning that work is independent of the path.
+
+This is the case of gravity
+$$ \vec{F}= -\frac{\partial}{\partial z}(mgz)\vec{u}_z$$
+
+$$ \vec{F}= -\frac{\partial}{\partial r}\left(-\frac{GmM}{r}\right)\vec{u}_r$$
 
 ## Energy conservation
 
