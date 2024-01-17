@@ -174,21 +174,32 @@ We saw that in the abscence of forces, $\vec{p}$ was a conserved quantity. As su
 
 Some forces can be written as
 
-$$ \vec{F}=-\vec{\nabla}V $$
+$$\vec{F}=-\vec{\nabla}V$$
 
-$\vec{\nabla}$ will be further explored in electromagnetism.
+$\vec{\nabla}$ will be further explored in electromagnetism. All you need to know for now, is that it reads, in a Cartesian frame
 
-Along a single direction
+$$\vec{\nabla}V = \frac{\partial V}{\partial x}\vec{u}_x+ \frac{\partial V}{\partial y}\vec{u}_y+\frac{\partial V}{\partial z}\vec{u}_z$$
+
+Hence it creates a vector $\vec{\nabla}V(x,y,z)$ associated to each point $(x,y,z)$ from a function $V(x,y,z)$. We talk about a vector field. The length of these vectors indicate how strongly $V(x,y,z)$ varies in space, and the direction points towards the increasing values of $V$.
+
+Along a single direction things are simpler:
 
 $$ \vec{F}= -\frac{\partial V}{\partial x}\vec{u}_x $$
 
 
-These forces, are said to be "conservative" meaning that work is independent of the path.
-
 This is the case of gravity
+
 $$ \vec{F}= -\frac{\partial}{\partial z}(mgz)\vec{u}_z$$
 
+In polar coordinates ..., such that
+
 $$ \vec{F}= -\frac{\partial}{\partial r}\left(-\frac{GmM}{r}\right)\vec{u}_r$$
+
+$$W=\int \vec{F}\cdot{\rm d}\vec{\ell}$$
+
+$$W=\int \vec{F}\cdot{\rm d}\vec{\ell}$$
+
+These forces, are said to be "conservative" meaning that work is independent of the path.
 
 ## Energy conservation
 
