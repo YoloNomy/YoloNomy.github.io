@@ -7,6 +7,7 @@ nav_order: 1
 
 # Observing the stars
 
+
 ## Magnitudes
 
 ## Colors

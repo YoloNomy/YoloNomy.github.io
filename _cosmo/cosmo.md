@@ -11,8 +11,8 @@ You will find here some fun python applications to physics with some detailled e
 # General relativity
 
 - [Stars: formation](cosmo/stars-form.md)
-- [Stars: structure](cosmo/stars-struc.md)
 - [Observing the stars](cosmo/astro-obs.md)
+- [Stars: structure](cosmo/stars-struc.md)
 - Compact objects
 - [Black holes](cosmo/black-holes.md)
 - [Kepler laws](../../meca/Newton/Kepler/) (copied from the mechanics class)

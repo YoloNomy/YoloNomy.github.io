@@ -230,47 +230,20 @@ Turbulence, magnetic field and structure formation, fractal, filaments, clumps
 
 ## The source of stellar energy
 
-### Under pressure : hydrostatic equilibrium
+Let's assume we end up having a star.
+It's no surprise they are spherical in the end, due to the law of gravitation. 
 
-If one assumes that the proto-star has constant density
+If one assumes again that the proto-star has constant density, it is possible to infer the pressure at its center to be
 
 $$ P_c = \frac{3}{8\pi}\frac{GM^2}{R^4}$$
-
-<details>
-  <summary>Proof</summary>
-
-Consider a point located at a radius $r\leq R$ inside the homogeneous sphere.
-Using Gauss's law for gravitation, it is possible to proof that only the mass $M_{\text{int}}$ inside the ball of radius $r$ contributes to gravitational field at $r$, while the field of the shell contained between $r$ and $R$ cancels out. As such, at the point $r$, the graviational field is given by
-
-$$ \vec{g}= -\frac{GM_{\text{int}}}{r^2}\vec{u}_r $$
-
-The density in the sphere is constant, and is given by $M_{\text{int}}=\rho V_{\text{int}}= 4\pi r^3/3$.
-
-Hence 
-$$ \vec{g}= -\frac{4\pi G\rho r}{3}\vec{u}_r $$
-
-Thus the equation of equilibrium becomes
-
-$$ \frac{\text{d} P}{\text{d}r}\vec{u}_r= -\rho\vec{g} = \frac{4\pi G\rho^2 r}{3}\vec{u}_r $$
-
-The central pressure is computed by integrating 
-
-$$ P_c = \int_0^R\frac{4\pi G\rho^2 r}{3}\text{d}r  $$
-
-$$ P_c = \frac{4\pi G\rho^2}{3} GM\int_0^Rr\text{d}r $$
-
-$$ P_c= \frac{4\pi G\rho^2}{3} \frac{R^2}{2}$$
-
-Now using $\rho = M/V=3M/(4\pi R^3)$, we get 
-
-$$ P_c = \frac{3GM^2}{8\pi R^4}$$
-
-</details>
 
 ### Thermal?
 
 ### Nuclear!
 
-# Going further: recommanded readings
+
+## Minimal mass to pretend at the star title
+
+## Going further: recommanded readings
 
 - An introduction to Star Formation - D. Ward-Thompson and A. P. Whitworth - Cambdrige University Press - 2011

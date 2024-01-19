@@ -170,9 +170,47 @@ $$ E_C = \frac{\vec{p}^2}{2m} $$
 
 We saw that in the abscence of forces, $\vec{p}$ was a conserved quantity. As such, $E_C$ is also conserved in that case. This is our first glimps at the overwhelmingly important conservation of energy.
 
-## Potential energy and gradient
+## Potential energy and conservative forces
 
-Some forces can be written as
+### Weight
+
+Let us now consider the work done by the force of gravity. Assume for now that we are close to earth, and that a body of mass $m$ moves on a path from $A$ to $B$ while being subject to the action of its own weight $\vec{P}=-m\vec{g}\vec{u}_z$. What will the work done by $\vec{P}$ along that path?
+
+$$
+\begin{aligned}
+W_{A\to B}&= \int_A^B \vec{P}\cdot\text{d}\vec{\ell}\\
+& = \int_A^B \begin{pmatrix}0\\0\\-mg\end{pmatrix}\cdot \begin{pmatrix}\text{d} x\\\text{d} y\\ \text{d} z\end{pmatrix}\\
+&=  -\int_A^B mg \text{d} z\\
+&= -mg(z_B - z_A)
+\end{aligned}
+$$
+
+Curious! So the work does not depend at all on the choice of path but simply on the difference of altitude. 
+Defining the function $V=mgz$, we can simply write
+
+$$W_{A\to B}=V(z_A)-V(z_B)= -\Delta V$$
+
+Just as $E_c$, $V$ can be interpreted as a form of energy, called the potential energy of weight.
+It is easy to see that the force $\vec{P}$, can be derived from $V$ as
+
+$$\vec{P}=-\frac{\text{d}V}{\text{d}z}\vec{u}_z$$
+
+Now how to interpret all of this?
+
+![image](../images/weight-energy.png){: width="100%"}
+*Left: gravitational potential $V$, Middle: $\frac{\text{d}V}{\text{d}z}$, Right: $\vec{P}$. Done using a simple [code](../codes/energy.py).*
+
+### Gravitational force
+
+$$ \vec{F}= -\frac{\partial}{\partial r}\left(-\frac{GmM}{r}\right)\vec{u}_r$$
+
+
+![image](../images/grav-energy.png){: width="100%"}
+*Left: gravitational potential $V$, Middle: $\frac{\text{d}V}{\text{d}z}$, Right: $\vec{F_G}$. (the $\log_{10}$ value of the vector's lenght has been taken). Done using a simple [code](../codes/energy.py).*
+
+### Conservative forces
+
+Some forces, called conservatives, can be derived from a potential energy $V$ as
 
 $$\vec{F}=-\vec{\nabla}V$$
 
@@ -186,24 +224,14 @@ Along a single direction things are simpler:
 
 $$ \vec{F}= -\frac{\partial V}{\partial x}\vec{u}_x $$
 
-
-This is the case of gravity
-
-$$ \vec{F}= -\frac{\partial}{\partial z}(mgz)\vec{u}_z$$
-
-In polar coordinates ..., such that
-
-$$ \vec{F}= -\frac{\partial}{\partial r}\left(-\frac{GmM}{r}\right)\vec{u}_r$$
-
-$$W=\int \vec{F}\cdot{\rm d}\vec{\ell}$$
-
-$$W=\int \vec{F}\cdot{\rm d}\vec{\ell}$$
-
-These forces, are said to be "conservative" meaning that work is independent of the path.
+For conservative forces, work is independent of the trajectory.
 
 ## Energy conservation
 
-$W=\Delta E_c=-\Delta V$ and hence $\Delta E = \Delta E_c+ \Delta V =0$. Just to practice a bit, let us demonstrate this in a more general fashion. Considering motion only in one dimension $x$:
+They are called conservative as the total energy $E= E_c + V$ is a conserved quantity when they are acting. 
+
+We saw this already as $W=\Delta E_c=-\Delta V$ and hence $\Delta E = \Delta E_c+ \Delta V =0$.
+Just to practice a bit, let us demonstrate this in a more general fashion. Considering motion only in one dimension $x$:
 
 $$\begin{aligned}
 \frac{\text{d}E}{\text{d}t}&=\frac{\text{d}}{\text{d}t}(E_c+V)\\
@@ -219,7 +247,6 @@ $$
 You can simply show that the proove olds in 3D using partial derivatives.
 
 ## Application: Escaping the black hole!
-
 
 The idea of black holes is already hidden in Newtonian mechanics. 
 
