@@ -81,6 +81,8 @@ $$
 \delta W=\vec{F}\cdot\text{d}\vec{\ell}
 $$
 
+$$W_{A\to B} = \int_A^B\delta W$$
+
 ## Kinetic energy
 
 You might know that the kinetic energy of a body going at velocity $v$ is given by the "famous" formula:
@@ -93,7 +95,7 @@ To do so, let us consider what is the total work made by all the forces acting o
 
 $$
 \begin{aligned}
-W= &\int_A^B\delta W=\int_A^B\sum\vec{F}\cdot\text{d}\vec{\ell}
+W_{A\to B}= &\int_A^B\delta W=\int_A^B\sum\vec{F}\cdot\text{d}\vec{\ell}
 \end{aligned}
 $$
 
@@ -101,7 +103,7 @@ Now, we can use Newton's second law defining what a force is as $\sum\vec{F}=m\v
 
 $$
 \begin{aligned}
-W= &\int_A^Bm\vec{a}\cdot\text{d}\vec{\ell}\\
+W_{A\to B}= &\int_A^Bm\vec{a}\cdot\text{d}\vec{\ell}\\
 =&m\int_A^B\frac{\text{d}\vec{v}}{\text{d}t}\cdot\text{d}\vec{\ell}
 \end{aligned}
 $$
@@ -114,7 +116,7 @@ Putting this in our calculation for the work, we get
 
 $$
 \begin{aligned}
-W= &m\int_A^B\frac{\text{d}\vec{v}}{\text{d}t}\cdot\text{d}\vec{\ell}\\
+W_{A\to B}= &m\int_A^B\frac{\text{d}\vec{v}}{\text{d}t}\cdot\text{d}\vec{\ell}\\
 =&m\int_{t_A}^{t_B}\frac{\text{d}\vec{v}}{\text{d}t}\cdot\vec{v}\,\text{d} t\\
 =&m\int_{v_A}^{v_B}\text{d}\vec{v}\cdot\vec{v}
 \end{aligned}
@@ -124,7 +126,7 @@ In which we "simplified" the $\text{d} t$ as is allowed by the rules of derivati
 
 $$
 \begin{aligned}
-W= m\int_{v_A}^{v_B}v_x\text{d}v_x+ v_y\text{d}v_y+ v_z\text{d}v_z
+W_{A\to B}= m\int_{v_A}^{v_B}v_x\text{d}v_x+ v_y\text{d}v_y+ v_z\text{d}v_z
 \end{aligned}
 $$
 
@@ -132,7 +134,7 @@ which we can split in three integrals
 
 $$
 \begin{aligned}
-W= 
+W_{A\to B}= 
 &=m\left(\int_{v_{x,A}}^{v_{x,B}}v_x\text{d}v_x+ \int_{v_{y,A}}^{v_{y,B}}v_y\text{d}v_y+ \int_{v_{z,A}}^{v_{z,B}}v_z\text{d}v_z\right)
 \end{aligned}
 $$
@@ -141,7 +143,7 @@ Now things are much easier than what you might think! These are just integrals o
 
 $$
 \begin{aligned}
-W= m \left([v_x^2/2]_A^B+ [v_y^2/2]_A^B+ [v_z^2/2]_A^B\right)
+W_{A\to B}= m \left([v_x^2/2]_A^B+ [v_y^2/2]_A^B+ [v_z^2/2]_A^B\right)
 \end{aligned}
 $$
 
@@ -149,7 +151,7 @@ in which we recognize the dot product of $\vec{v}$ with itself $\vec{v}^2=\vec{v
 
 $$
 \begin{aligned}
-W=\frac{m}{2}[\vec{v}^2]_A^B= \frac{m}{2}(v_B^2-v_A^2)
+W_{A\to B}=\frac{m}{2}[\vec{v}^2]_A^B= \frac{m}{2}(v_B^2-v_A^2)
 \end{aligned}
 $$
 
@@ -162,7 +164,7 @@ $$
 This is a quantity that can be associated to a moving body of mass $m$ and velocity $v$ at any point of its trajectory. We will see that it turns out to be a crucial quantity for all of physics as we know it! So far, it is just a 
 convinient trick to rewrite the work between two points $A$ and $B$ as
 
-$$ W = E_C^A - E_C^B = \Delta E_C $$
+$$ W_{A\to B} = E_C^A - E_C^B = \Delta E_C $$
 
 Remembering that the linear momentum $p=mv$ is an important quantity (as we discussed in lesson 1), $E_C$ can also be expressed as
 
@@ -215,6 +217,18 @@ W_{A\to B}&= \int_A^B -\frac{GmM}{r^2}\vec{u}_r\cdot {\rm d}\vec{\ell}\\
 &= GmM\left(\frac{1}{r_B} -  \frac{1}{r_A}\right)
 \end{aligned}
 $$
+
+Introducing again 
+
+$$V=-\frac{GMm}{r},$$
+
+allow us to write 
+
+$$W_{A\to B}=-\Delta V$$
+
+and 
+
+$$F_G= -\frac{\text{d} V}{\text{d} r}\vec{u_r}$$
 
 ![image](../images/grav-energy.png){: width="100%"}
 *Left: gravitational potential $V$, Middle: $\frac{\text{d}V}{\text{d}z}$, Right: $\vec{F_G}$. (the $\log_{10}$ value of the vector's lenght has been taken). Done using a simple [code](../codes/energy.py).*
