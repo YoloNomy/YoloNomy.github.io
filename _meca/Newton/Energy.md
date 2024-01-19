@@ -202,8 +202,19 @@ Now how to interpret all of this?
 
 ### Gravitational force
 
-$$ \vec{F}= -\frac{\partial}{\partial r}\left(-\frac{GmM}{r}\right)\vec{u}_r$$
+$$ \vec{F}_G= -\frac{GmM}{r^2}\vec{u}_r$$
 
+Polar coordinates $(r,\theta,z)$ such that $\text{d}\vec{\ell}=(\text{d}r,r\text{d}\theta,\text{d}z)$.
+
+$$
+\begin{aligned}
+W_{A\to B}&= \int_A^B -\frac{GmM}{r^2}\vec{u}_r\cdot {\rm d}\vec{\ell}\\
+&=\int_A^B -\frac{GmM}{r^2}\begin{pmatrix}1\\0\\0\end{pmatrix}\cdot \begin{pmatrix}\text{d} r\\r\text{d} \theta\\ \text{d} z\end{pmatrix}\\
+&=\int_A^B -\frac{GmM}{r^2}\text{d} r\\
+&= -GmM \int_A^B r^{-2}\text{d} r\\
+&= GmM\left(\frac{1}{r_B} -  \frac{1}{r_A}\right)
+\end{aligned}
+$$
 
 ![image](../images/grav-energy.png){: width="100%"}
 *Left: gravitational potential $V$, Middle: $\frac{\text{d}V}{\text{d}z}$, Right: $\vec{F_G}$. (the $\log_{10}$ value of the vector's lenght has been taken). Done using a simple [code](../codes/energy.py).*
@@ -237,10 +248,10 @@ $$\begin{aligned}
 \frac{\text{d}E}{\text{d}t}&=\frac{\text{d}}{\text{d}t}(E_c+V)\\
 &=\frac{\text{d}E_c}{\text{d}t}+ \frac{\text{d}V}{\text{d}t}\\
 &=\frac{\text{d}}{\text{d}t}\left(\frac{mv^2}{2}\right)+ \frac{\text{d}x}{\text{d}t}\frac{\text{d}V}{\text{d}x} \qquad \qquad \qquad {\rm chain\,rule}\\
-&= \frac{m}{2}\frac{\text{d}v^2}{\text{d}t} - vF\\
+&= \frac{m}{2}\frac{\text{d}v^2}{\text{d}t} - vF \qquad \qquad \qquad \qquad F:=-\text{d}V/\text{d}x\\
 &= \frac{m}{2}2v\frac{\text{d}v}{\text{d}t}- vF \qquad \qquad \qquad \qquad  (u^2)'=2u'u\\
 &= mva - vF\\
-&= vF - vF =0
+&= vF - vF =0 
 \end{aligned}
 $$
 

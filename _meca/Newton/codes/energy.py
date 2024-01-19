@@ -41,6 +41,8 @@ r= np.sqrt(xx**2+yy**2)
 
 Vg= -1/r**2
 
+#take the log to avoid gigantic arrows
+
 dY, dX = np.gradient(np.log10(-Vg))
 
 plt.contourf(xx, yy, Vg,cmap='plasma_r')
