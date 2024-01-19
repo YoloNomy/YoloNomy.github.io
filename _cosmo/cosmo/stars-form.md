@@ -154,11 +154,11 @@ This time suppose that nothing is stopping the cloud while it collapse on itself
 <details>
   <summary>Proof</summary>
 
-Consider a a chunk of mass $m$ located at the edge of the collapsing cloud. We label its position by the radial distance $r$. The chunk starts at $r=R$ and collapses until it reaches the center of the cloud at $r=0$. The second laws of dynamics for this chunks becomes
+Consider a a particle of mass $m$ located at the edge of the collapsing cloud. We label its position by the radial distance $r$. The particle starts at $r=R$ and fall freely until it reaches the center of the cloud at $r=0$. The second laws of dynamics for this particle becomes
 
 $$ m\frac{\text{d}^2r}{\text{d}t^2}=\frac{-GMm}{r^2} $$
 
-in which $m$ simplifies on both sides. Hence all little chunks of mass $m$ part of the outer spherical shell of the cloud will fall identically and in the same time (under our simplifying assumptions).
+in which $m$ simplifies on both sides. Hence all little particles of mass $m$ part of the outer spherical shell of the cloud will fall identically and in the same time (under our simplifying assumptions), always attracted by the whole mass $M$ of the cloud contained within the outter shell.
 
 First, we integrated this equation from $R$ to $r$, and work out the right hand side until we obtain (remember again that $\int_a^b r^n \text{d}r=[r^{n+1}/n+1]^b_a$)
 
