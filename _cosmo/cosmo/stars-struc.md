@@ -12,3 +12,8 @@ nav_order: 1
 ## The hydrostatic equilibrium
 
 $$ \frac{\text{d} P}{\text{d}r}= -\frac{\rho GM}{r^2} $$
+
+# Going further: recommanded readings
+
+
+- Stellar Structure and Evolution -  R. Kippenhahn, A. Weigert - Spriner - 1996

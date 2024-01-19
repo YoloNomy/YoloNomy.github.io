@@ -41,25 +41,25 @@ You can recognize here the $GM^2/R$ contribution from Newtonian mechanics (link)
 
 The trick is to write the total potential of the sphere as the integral
 
-$$ V = -\int_0^M \frac{G m(r)}{r}{\rm d}m $$
+$$ V = -\int_0^M \frac{G m(r)}{r}\text{d}m $$
 
-which sums all the contributions between a sphere of mass $m(r)$ (and $r<R$) and a thin shell of mass ${\rm d}m$ located between $r$ and $r+{\rm d}r$.
+which sums all the contributions between a sphere of mass $m(r)$ (and $r<R$) and a thin shell of mass $\text{d}m$ located between $r$ and $r+\text{d}r$.
 
 The infinitesimal mass can then be expressed as
 
-$${\rm d}m = \rho {\rm d}\mathcal{V}=4\pi \rho r^2 {\rm d}r $$
+$$\text{d}m = \rho \text{d}\mathcal{V}=4\pi \rho r^2 \text{d}r $$
 
-where $\mathcal{V}=4\pi r^3/3$ is the volume of the sphere of mass $m(r)$ and ${\rm d}\mathcal{V}$ is the volume of the shell between $r$ and $r+{\rm d}r$, given by the differential ${\rm d}\mathcal{V}=(\partial \mathcal{V}/\partial r) {\rm d}r$. We will assume here and in the rest of the derivation that the gas is homogeneous, that is $\rho={\rm cst}$. This is of course a simplifying hypothesis, and we could have derived something more fancy using a $rho(r)$ function.
-Inserting the expression of ${\rm d}m$ in the equation for $V$, we get
+where $\mathcal{V}=4\pi r^3/3$ is the volume of the sphere of mass $m(r)$ and $\text{d}\mathcal{V}$ is the volume of the shell between $r$ and $r+\text{d}r$, given by the differential $\text{d}\mathcal{V}=(\partial \mathcal{V}/\partial r) \text{d}r$. We will assume here and in the rest of the derivation that the gas is homogeneous, that is $\rho={\rm cst}$. This is of course a simplifying hypothesis, and we could have derived something more fancy using a $rho(r)$ function.
+Inserting the expression of $\text{d}m$ in the equation for $V$, we get (remember that $\int_a^b r^n \text{d}r=[r^{n+1}/n+1]^b_a$)
 
 $$ V = -\int_0^R 4\pi\frac{G m(r)}{r}\rho r^2{\rm dr} $$
 
 
 $$ V = -\int_0^R 4\pi G m(r)r\rho{\rm dr} $$
 
-Now we can also express $\rho=\frac{m(r)}{4\pi r^3/3}$ (which is has the same value regardless of $r$, under the assumption of homogeneity) and thus $m(r)=\frac{4}{3}\rho \pi r^3$. Inserting this in $V$, we have
+Now we can also express $\rho=\frac{m(r)}{4\pi r^3/3}$ (which is has the same value regardless of $r$, under the assumption of homogeneity) and thus $m(r)=\frac{4}{3}\rho \pi r^3$. Inserting this in $V$, we have ()
 
-$$ V = - \frac{16\pi^2}{3}\int_0^R G \rho^2 r^{4}{\rm d}r $$
+$$ V = - \frac{16\pi^2}{3}\int_0^R G \rho^2 r^{4}\text{d}r $$
 
 $$ V= - \frac{16\pi^2}{3}G\rho^2 \frac{R^5}{5}$$
 
@@ -145,18 +145,97 @@ This all explains why the stars are born in clusters of thousands of stars insid
 
 *Left: The iconic "Pillars of Creation" nebula as seen by the JWST. It provides another caracteristic example of star forming region within a nebular cloud. Credit: [NASA, ESA, CSA, and STScI](https://esawebb.org/images/pillarsofcreation_composite/). Right: Portio of the Orion nebula. In both images, notice the complex patern made by the interstellar medium. Credit: [ESA/Webb, NASA, CSA, PDRs4All ERS Team](https://esawebb.org/images/weic2315b/)*
 
+Under the same assumptions used before, we can estimate that the cloud should collapse on itself under its own gravity in a free-fall time of
+
 $$ t_f = \sqrt{\frac{3\pi}{32 G \rho}} $$
+
+This time suppose that nothing is stopping the cloud while it collapse on itself. 
 
 <details>
   <summary>Proof</summary>
 
+Consider a a chunk of mass $m$ located at the edge of the collapsing cloud. We label its position by the radial distance $r$. The chunk starts at $r=R$ and collapses until it reaches the center of the cloud at $r=0$. The second laws of dynamics for this chunks becomes
+
+$$ m\frac{\text{d}^2r}{\text{d}t^2}=\frac{-GMm}{r^2} $$
+
+in which $m$ simplifies on both sides. Hence all little chunks of mass $m$ part of the outer spherical shell of the cloud will fall identically and in the same time (under our simplifying assumptions).
+
+First, we integrated this equation from $R$ to $r$, and work out the right hand side until we obtain (remember again that $\int_a^b r^n \text{d}r=[r^{n+1}/n+1]^b_a$)
+
+$$ 
+\begin{aligned}
+\int_R^0\frac{\text{d}^2r}{\text{d}t^2}\text{d}r&=-\int_R^r GM\frac{1}{r^2}\text{d}r\\
+&=-GM\int_R^r r^{-2}\text{d}r\\
+&=GM[r^{-1}]_R^r\\
+&=-\frac{GM}{R}+\frac{GM}{r}\\
+&= \frac{GM}{R}\left(-1+\frac{R}{r}\right)\\
+&= \frac{GM}{R}\left(-\frac{r}{r}+\frac{R}{r}\right)\\
+&=\frac{GM}{R}\left(\frac{R-r}{r}\right)
+\end{aligned}
+$$
+
+Similarly to what we did to derive the kinetic energy in Newtonian mechanics, the left hand side can be rewriten as an integral over time as
+
+$$
+\begin{aligned}
+\int_{0}^{t(r)}\frac{\text{d}^2r}{\text{d}t^2}\frac{\text{d}r}{\text{d}t}\text{d}t=\frac{GM}{R}\left(\frac{R-r}{r}\right)
+\end{aligned}
+$$
+
+where $t(r)$ is the time it takes for the cloud to collapse from a radius of $R$ to a radius of $r$.
+
+Remembering that $2\int_a^bu'u\text{d}x=[u'^2]_a^b$ and stating that the velocity at initial time $t_R$ should be $0$, we obtain
+
+$$\frac{1}{2}\left(\frac{\text{d}r}{\text{d}t}\right)^2= \frac{GM}{R}\left(\frac{R-r}{r}\right) $$
+
+that is (remember that a square root comes with two solutions positive and negative)
+
+$$\frac{\text{d}r}{\text{d}t}= \pm\sqrt{2\frac{GM}{R}}\sqrt{\frac{R-r}{r}}$$
+
+The negative solution $(-)$ will be of interest here, as it is the one with decreasing $r$, that is the collapsing case. Taking this solution and rearanging the expression such that we separate $r$ on the left hand side and $t$ on the right hande side, we get, after integrating
+
+$$\int_R^0 \sqrt{\frac{r}{R-r}}\text{d}r = -\int_{0}^{t(r)}\sqrt{2\frac{GM}{R}} \text{d}t$$
+
+The right hand side of this integral is tricky to compute, so we will accept here the following result:
+
+$$ \int_a^b \sqrt{\frac{x}{x_0-x}}{\rm d}x =  \left[x_0 \arcsin\left(\sqrt{\frac{x}{x_0}}\right) - \sqrt{x(x_0-x)}\right]^b_a$$
+
+You can try to prove it yourself or look for a derivation in a mathematical textbook!
+
+Computing the integral on both sides, we then get
+
+$$R \arcsin\left(\sqrt{\frac{r}{R}}\right) - \sqrt{r(R-r)}-\frac{\pi R}{2}= -\sqrt{\frac{2GM}{R}}t(r)$$,
+
+using $\arcsin(1)=\pi/2$.
+We can then isolate
+
+$$t(r)= R \sqrt{\frac{R}{2GM}}\left(-\arcsin\left(\sqrt{\frac{r}{R}}\right) + \sqrt{r(R-r)}+\frac{\pi R}{2}\right)$$
+
+Now, it is really easy to obtain the time of free fall for the cloud to collapse. Remember that $t(r)$ is the time it takes for the cloud to collapse from a radius $R$ to a radius $r$. The total free fall time is then given by this expression for $r=0$. We then get
+
+$$t_f= t(0)= \pi \sqrt{\frac{R^3}{8GM}}$$ 
+
+much simpler! Now remembering that $\rho = M/V=3M/(4\pi R^3)$ i.e. $R^3=3M/(\rho 4\pi)$, we obtain 
+
+$$ t_f =\pi \sqrt{\frac{3M}{8GM\times 4\pi}} = \frac{3\pi}{32G\rho}$$
+
+as desired! ($\pi/\sqrt{\pi}=\sqrt{\pi\pi}/\sqrt{\pi}=\sqrt{\pi}$).
+
 </details>
 
-free fall time and turbulence magnetic field and structure formation
+Assuming the cloud is made of hydrogen only, we obtain a time of free fall of $\sim 300 000$ years. This might seems like a long time for something to free-fall, but remember that our Galaxy is $~13.5$ billion years old, and hence it is a very short time on astrophysical scales!  From observations : clouds live for $15 000 0000$ years. Hence it is clear that the clouds are not free-falling, but something must stop them.
 
-fractal filaments, clumps
+
+Turbulence, magnetic field and structure formation, fractal, filaments, clumps
+
+## The source of stellar energy
+
+### A lot of pressure : hydrostatic equilibrium
+
+### Thermal?
+
+### Nuclear!
 
 # Going further: recommanded readings
 
 - An introduction to Star Formation - D. Ward-Thompson and A. P. Whitworth - Cambdrige University Press - 2011
-- Stellar Structure and Evolution -  R. Kippenhahn, A. Weigert - Spriner - 1996
