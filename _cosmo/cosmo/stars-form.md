@@ -230,7 +230,7 @@ Turbulence, magnetic field and structure formation, fractal, filaments, clumps
 
 ## The source of stellar energy
 
-### A lot of pressure : hydrostatic equilibrium
+### Under pressure : hydrostatic equilibrium
 
 ### Thermal?
 
