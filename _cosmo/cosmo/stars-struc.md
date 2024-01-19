@@ -9,9 +9,11 @@ nav_order: 1
 
 ## What is a star?
 
+## Equations of structure
+
 ## The hydrostatic equilibrium
 
-$$ \frac{\text{d} P}{\text{d}r}= -\frac{\rho GM}{r^2} $$
+$$ \frac{\text{d} P}{\text{d}r}= -\frac{\rho(r) GM}{r^2} $$
 
 # Going further: recommanded readings
 
