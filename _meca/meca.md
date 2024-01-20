@@ -10,7 +10,7 @@ You will find here some fun python applications to physics with some detailled e
 
 - [Kinematics: frame and vectors](Newton/Kinematics.md)
 - [Dynamics: Newton laws and the reign of parabolas](Newton/Laws.md)
-- [Work and Energy: integrals and the dot product](Newton/Energy.md)
+- [Work and Energy: the dot product](Newton/Energy.md)
 - [The pendulum and harmonic oscillators](Newton/Pendulum.md)
 - Lorentz force
 - [Kepler laws: cross product and polar coordinates](Newton/Kepler.md)

@@ -139,7 +139,7 @@ W_{A\to B}=
 \end{aligned}
 $$
 
-Now things are much easier than what you might think! These are just integrals of the type $\int_A^B x \,\text{d}x$ which each gives $[x^2/2]_A^B$. You can find this either by remembering the simple rule $(x^2)'=2x$ and that the integral is sort of the "opposite" of the derivate, or if you know by heart the very important and always useful rule for integrals $\int_A^Bx^n\,\text{d}x=[x^{n+1}/(n+1)]_A^B$. Computing the integrals in the expression of $W$, we thus obtain
+Now things are much easier than what you might think! These are just integrals of the type $\int_A^B x \,\text{d}x$ which each gives $[x^2/2]_A^B$. You can find this either by remembering the simple rule $(x^2)'=2x$ and that the integral is sort of the "opposite" of the derivate, or if you know by heart the very important and always useful rule for integrals $\int_A^Bx^n\,\text{d}x=[x^{n+1}/(n+1)]_A^B$. Computing the integrals in the expression of $$W_{A\to B}$$, we thus obtain
 
 $$
 \begin{aligned}
@@ -147,7 +147,7 @@ W_{A\to B}= m \left([v_x^2/2]_A^B+ [v_y^2/2]_A^B+ [v_z^2/2]_A^B\right)
 \end{aligned}
 $$
 
-in which we recognize the dot product of $\vec{v}$ with itself $\vec{v}^2=\vec{v}\cdot\vec{v}=v_x^2+v_y^2+v_z^2$. After all these derivations, we can find that $W$ is simply given by
+in which we recognize the dot product of $\vec{v}$ with itself $\vec{v}^2=\vec{v}\cdot\vec{v}=v_x^2+v_y^2+v_z^2$. After all these derivations, we can find that $$W_{A\to B}$$ is simply given by
 
 $$
 \begin{aligned}
@@ -164,7 +164,7 @@ $$
 This is a quantity that can be associated to a moving body of mass $m$ and velocity $v$ at any point of its trajectory. We will see that it turns out to be a crucial quantity for all of physics as we know it! So far, it is just a 
 convinient trick to rewrite the work between two points $A$ and $B$ as
 
-$$ W_{A\to B} = E_C^A - E_C^B = \Delta E_C $$
+$$ W_{A\to B} = E_C^B - E_C^A = \Delta E_C $$
 
 Remembering that the linear momentum $p=mv$ is an important quantity (as we discussed in lesson 1), $E_C$ can also be expressed as
 
@@ -176,7 +176,7 @@ We saw that in the abscence of forces, $\vec{p}$ was a conserved quantity. As su
 
 ### Weight
 
-Let us now consider the work done by the force of gravity. Assume for now that we are close to earth, and that a body of mass $m$ moves on a path from $A$ to $B$ while being subject to the action of its own weight $\vec{P}=-m\vec{g}\vec{u}_z$. What will the work done by $\vec{P}$ along that path?
+Let us now consider the work done by the force of gravity. Assume for now that we are close to earth, and that a body of mass $m$ moves on a path from $A$ to $B$ while being subject to the action of its own weight $\vec{P}=-mg\vec{u}_z$. What will the work done by $\vec{P}$ along that path?
 
 $$
 \begin{aligned}

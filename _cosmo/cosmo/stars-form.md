@@ -230,8 +230,8 @@ Turbulence, magnetic field and structure formation, fractal, filaments, clumps
 
 ## The source of stellar energy
 
-Let's assume we end up having a star.
-It's no surprise they are spherical in the end, due to the law of gravitation. 
+Eventually, clusters of stars light up within the cloud.
+As they are the end product of gravitational collapse, it is no surprise that they appear as spherical objects. The spherical shape of heavenly bodies is indeed the direct consequence of the law of gravitation, from which smaller masses are attracted towards larger mass, with a radial symmetry (Putting a large mass at the centre of a frame, acts only and identically along $\vec{u_r}$). 
 
 If one assumes again that the proto-star has constant density, it is possible to infer the pressure at its center to be
 
