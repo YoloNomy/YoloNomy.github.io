@@ -68,6 +68,9 @@ $$ P_c = \frac{3GM^2}{8\pi R^4}$$
 
 </details>
 
+## Mass-luminosity relationship
+
+## Lifetime
 
 ## Going further: recommanded readings
 
