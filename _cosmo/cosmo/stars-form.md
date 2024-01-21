@@ -32,7 +32,7 @@ traducing that the negative contribution of the gravitational potential energy $
 
 Let us roughly estimate when this condition is met in a cloud. Assuming that the cloud is an homogenous sphere, its total [gravitational energy](../../../meca/Newton/energy/) can be expressed as:
 
-$$V = -\frac{3}{5}\frac{GM^2}{R} $$
+$$\boxed{V = -\frac{3}{5}\frac{GM^2}{R}}$$
 
 You can recognize here the $GM^2/R$ contribution from Newtonian mechanics (link), which is the energy of gravitation of two masses $M$ separated by a distance $R$. The factor of $3/5$ asks for a bit of extra work. The proof is detailed below, but if you don't want to face the trouble, you can just assume it for now.
 
@@ -89,7 +89,11 @@ $$M \geq M_{J}$$
 
 with
 
-$$M_J \propto \left(\frac{T}{\mu}\right)^{3/2}\frac{1}{\sqrt{\rho}}$$
+$$\boxed{M_J = \mathcal{C}\left(\frac{T}{\mu}\right)^{3/2}\frac{1}{\sqrt{\rho}}}$$
+
+with the proportionality constant
+
+$$\mathcal{C}= \left(\frac{5k_B}{2G}\right)^{3/2}\sqrt{\frac{3}{4\pi}}$$
 
 <details>
   <summary>Proof</summary>
@@ -131,9 +135,13 @@ Hence, the hotter the gas, the higher the mass required for collapse, and the de
 
 Assuming the gas is molecular hydrogen ($\mu=m_p$) and computing the factors (using $\rho = n m_p$), we get
 
-$$ M_J \sim 6 \times 10^{4}\sqrt{\frac{T^3}{n}} M_{\odot}$$
+$$ \boxed{M_J \sim 6 \times 10^{4}\sqrt{\frac{T^3}{n}} M_{\odot}}$$
 
 where $n$ is the density of hydrogen atoms. We hence see something exciting here: a cascading effect is hidden in this formula. When the cloud will start contracting, its density $n$ will automatically increase, leading $M_J$ to decrease. Hence independent subparts of the cloud will reach the condition $M\leq M_J$ and collapse, such that the cloud will fragment in smaller clouds, over and over again during the gravitational collapse. 
+
+<details>
+  <summary>Proof</summary>
+</details>
 
 
 <!-- This collapsing is also helped due to the increasing rotation speed of the collapsing cloud.  -->
@@ -149,7 +157,7 @@ This all explains why the stars are born in clusters of thousands of stars insid
 
 Under the same assumptions used before, we can estimate that the cloud should collapse on itself under its own gravity in a free-fall time of
 
-$$ t_f = \sqrt{\frac{3\pi}{32 G \rho}} $$
+$$ \boxed{t_f = \sqrt{\frac{3\pi}{32 G \rho}}}$$
 
 This time suppose that nothing is stopping the cloud while it collapse on itself. 
 
@@ -253,7 +261,7 @@ We will demonstrate this equation in the next class on [stellar structure](../st
 
 Now, making the *very* rough assumption that the gas at center of the star is an [ideal gas](../../../thermo/thermo/idealgas/), it must obey the famous relationship $$PV=n\mathcal{R}T$$. From this, we can estimate the central temperature to be
 
-$$T_c\sim\frac{1}{2}\frac{GM\mu}{k_BR}$$ 
+$$\boxed{T_c\sim\frac{1}{2}\frac{GM\mu}{k_BR}}$$ 
 
 <details>
   <summary>Proof</summary>

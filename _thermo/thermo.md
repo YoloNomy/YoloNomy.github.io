@@ -9,10 +9,13 @@ You will find here some fun python applications to physics with some detailled e
 # Thermodynamics
 
 - Studying a system
-- The ideal gas
+- [The ideal gas](../thermo/idealgas/)
 - Van der Waals gas
 - Studying change: derivative and integrals
 - Second law and entropy
 
 
+# Statistical physics
 
+- [Maximizing the entropy](../statistical/entropy/)
+- [Stat notes](../statistical/stat/) (old stat notes to be included in proper lectures)

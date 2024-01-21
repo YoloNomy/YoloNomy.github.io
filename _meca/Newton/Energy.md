@@ -26,7 +26,7 @@ $$\vec{A}=\begin{pmatrix}x_A\\y_A\\z_A\end{pmatrix} \qquad \qquad \vec{B}=\begin
 
 Is defined as
 
-$$\vec{A}\cdot\vec{B}= x_Ax_B + y_Ay_B + z_Az_C $$
+$$\boxed{\vec{A}\cdot\vec{B}= x_Ax_B + y_Ay_B + z_Az_C}$$
 
 While this definition requires the choices of an orthonormal basis $(x,y,z)$ in which to decompose the vectors, however, it can be proven to be independent of the choice of orthonormal basis i.e. it doesn't change if you rotate your basis.
 
