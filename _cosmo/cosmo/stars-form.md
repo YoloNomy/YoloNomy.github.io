@@ -252,7 +252,7 @@ $$ P_c = \frac{3}{8\pi}\frac{GM^2}{R^4}$$
 
 For a star like the sun, we obtain $P_c\sim$. This enormous pressure needs to be balanced or the star will shrink again and can not appear as the "eternal" spheres we are observing in the sky.
 
-We will demonstrate this equation in the next class on [stellar structure](../stars-struc/). 
+We will demonstrate this equation in the next lecture on [stellar structure](../stars-struc/). 
 
 Now, making the *very* rough assumption that the gas at center of the star is an [ideal gas](../../../thermo/thermo/idealgas/), it must obey the famous relationship $$PV=n\mathcal{R}T$$. From this, we can estimate the central temperature to be
 

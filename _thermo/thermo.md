@@ -8,14 +8,20 @@ You will find here some fun python applications to physics with some detailled e
 
 # Thermodynamics
 
-- Studying a system
+- [Studying a system](../thermo/system/)
+- First law of thermodynamics: energy
 - [The ideal gas](../thermo/idealgas/)
 - Van der Waals gas
 - Studying change: derivative and integrals
-- Second law and entropy
+- Second law of thermodynamics: entropy
 
 
 # Statistical physics
 
-- [Maximizing the entropy](../statistical/entropy/)
-- [Stat notes](../statistical/stat/) (old stat notes to be included in proper lectures)
+
+- Maximizing the entropy
+- The ideal gas, part II
+- Grand ensemble and more
+- Quantum statistics: fermions and bosons
+- The blackbody radiation
+- [Notes of statistical physics](../statistical/stat/) (notes covering the plan above, to be included later in proper lectures)

@@ -210,40 +210,56 @@ S = \beta \langle E \rangle + \ln Z
 $$
 </details>
 
-We can now express $\beta$ with respect to the temperature. First noticing that: 
-
-$$
-dS = \beta d\langle E\rangle + \langle E\rangle d\beta + \frac{\partial \ln Z}{\partial \beta}d\beta
-$$
-
-(using Eq.\ref{eq:entropy-of-E} and the fact that $Z$ is a function of only one independant variable $\beta$ or $\langle E \rangle$ since both are not independant because of Eq.\ref{eq:E-of-Z}. Now using Eq.\ref{eq:E-of-Z}, we can see that the two last terms cancels out to give simply: $dS = \beta d\langle E\rangle$. We now define the temperature $T$ as (more on this definition later):
+We can now express $\beta$ with respect to the temperature. To do so, we define the temperature as the change of energy associated with a change of entropy:
 
 $$
 \boxed{T := \frac{\partial \langle E \rangle}{\partial S}} 
 \label{eq:defTemp}
 $$
 
-
-Which leads to $dS = \frac{1}{T}d\langle E\rangle$, allowing us to conclude that:
+The next section will discuss why this definition is deep and connects with the intuitions you might have about temperature. With this definition
 
 $$
 \boxed{\beta = \frac{1}{T}}
 $$
 
+<details>
+  <summary>Proof</summary>
+ 
+
+$$
+dS = \beta d\langle E\rangle + \langle E\rangle d\beta + \frac{\partial \ln Z}{\partial \beta}d\beta
+$$
+
+(using Eq.\ref{eq:entropy-of-E} and the fact that $Z$ is a function of only one independant variable $\beta$ or $\langle E \rangle$ since both are not independant because of Eq.\ref{eq:E-of-Z}. Now using Eq.\ref{eq:E-of-Z}, we can see that the two last terms cancels out to give simply: $dS = \beta d\langle E\rangle$. With the definition of $T$:
+
+$$
+T = \frac{\partial \langle E \rangle}{\partial S}
+$$
+
+Whe have $dS = \frac{1}{T}d\langle E\rangle$, allowing us to conclude that:
+
+$$
+\beta = \frac{1}{T}
+$$
+</details>
+
 
 ### On the definition of temperature
 
-The temperature is above by Eq.\ref{eq:defTemp}.
+The temperature is defined above by Eq.\ref{eq:defTemp}.
 
 Why is it a good definition:
 - direction of heatflows
 - broadening of $p(E)$ with increasing $\langle E \rangle$
 
-### Pressure
+### Defining Pressure
 
 Pressure is not only a force over a surface but also a energy per unit of volume!
 
 $$ P = \frac{\partial{E}}{\partial{V}}\Bigg|_S$$
+
+Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to derive all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the mean energy $E$, the entropy $S$...) through the partition function $Z$, simply by asking for the maximization of the entropy.
 
 ### Classical ideal gas.
 
@@ -321,7 +337,7 @@ $$
 With $\beta=1/T$ and $Z$ the partition function defined as:
 
 $$
-Z = \sum_i e^{-\beta E_i + \mu N_i}
+\boxed{Z = \sum_i e^{-\beta E_i + \mu N_i}}
 $$
 
 <details>
@@ -333,7 +349,6 @@ $$
 Note that allowing other constraints as Eq.\ref{eq:constraintsGrandCano} would add new lagrange multipliers appearing in the exponential of the expression of $p_i$.
 
 ### Volumes in phase space
-
 
 The probability $dP$ of a given element of the phase space is given by:
 

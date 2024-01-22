@@ -9,7 +9,7 @@ nav_order: 1
 
 ## The fundamental equations
 
-State equation:
+State equation (experimental):
 
 $$ PV = n\mathcal{R}T$$
 
@@ -21,6 +21,74 @@ $$U=U(n,T)$$
 
 ## Microscopic model
 
-$$PV = \frac{1}{3}n\mathcal{R}T$$
+Note that all the laws about the ideal gas stated above where derived experimentally, without the need to understand gas as made up of subparticles. However, it is amazing that all these laws can be demonstrated simply by assuming that the gas is made of non interacting particles obeing Newton mechanics! The proper derivation will be done in the statistical mechanics lectures, but let us give an introduction here, to have a feeling.
 
-$$ U = \frac{3}{2}n\mathcal{R}T=\frac{3}{2}Nk_BT$$
+Let us assume that the gas can be understood microscopically as follows: 
+Consider a square box filled with free particles moving randomly and constantly bouncing off the walls. We assume particles are not interacting with one another and that they bounce elastically with the walls meaning that they do not loose energy when bouncing. As such, the [total momentum](../../../meca/Newton/laws/) and [energy](../../../meca/Newton/energy/) is conserved. All these approximations are valid, at least at low pressure and intermediate temperatures, as the gas particles are extremely small and separated from one another by gigantic distances. 
+
+In this framework, the pressure that the gas exert on the walls, can be expressed as
+
+$$\boxed{P = \frac{Nm}{3V} \langle v^2\rangle,}$$
+
+where $\langle v^2\rangle$ is the mean velocity squared of the particles in the box.
+
+<details>
+  <summary>Proof</summary>
+
+When particles bounce on the walls, the collisions are supposed to be elastic, which mean that they do not loose energy and hence the length of their velocity vector remains the same. However, they direction of their velocity changes.
+
+To get to the pressure, which is the force exerted by the particle over the wall's surface $(P=\|\vec{F}\|/S)$, we need to express the linear momentum they transfer to the walls as $\vec{F}=d\vec{p}/dt$.
+
+The problem can be treated in full generality, which is a bit more complicated, so let us simplify it maximally in order to get an intuition of what is happening. A full satisfying treatment will be delayed to the statistical mechanics class. Consider then a single particle of velocity $\vec{v}=v_x \vec{u}_x$ bouncing back and forth between two walls of surface $S=L\times L$ in the $(y,z)$ plane, while the particle is moving in the single dimension $x$.
+
+When it bounce of the wall, the length of the velocity will not change, but it's derection will, such that it goes from $\vec{v}$ before the collision, to $-\vec{v}$ after the collision. The total change of linear momentum is thus $\Delta \vec{p} = m\Delta \vec{v}= m(\vec{v}-(-\vec{v}))=2mv_x\vec{u}_x$ (you can convince yourself that this is true in general, even if the particle moves with a general velocity vector).
+
+Let's assume that the particle is moving in a cubic box of length $L$, then the typical time between two collision is given by the time for the particle to go back and forth between two opposite walls. It will move a total distance of $2L$ at a velocity $v$, such that $v_x=2L/\Delta t \Rightarrow \Delta t=2L/v_x$.
+
+The total force it will exert on a single wall, will hence be
+
+$$\|\vec{F}\|=\frac{\| \Delta \vec{p}\|}{\Delta t} = \frac{2mv_x}{2L/v_x}= \frac{mv_x^2}{L}$$
+
+Now, the pressure exerted by this single particle on the wall is
+
+$$P_x= \frac{\|\vec{F}\|}{S}=\frac{mv_x^2}{L^3}=\frac{mv_x^2}{V}$$
+
+Now assume we have a big number $N$ of particles doing the same thing in the 3 dimensions of space and in all random directions. Hence, each particle will exert a pressure $p$ on each wall, with mean velocity distributed along the 3 directions of space. As there is no reason why the particles should move faster in a direction than another, we have $\langle v_x^2 \rangle=\langle v_y^2\rangle=\langle v_z^2\rangle$. The length of the mean total velocity should then be $\langle v\rangle=(\langle v_x^2\rangle+\langle v_y^2\rangle+\langle v_z^2\rangle)=3\langle v_x^2\rangle$. Hence, $\langle v_x^2\rangle=\langle v^2\rangle/3$ and the total pressure $P$ exerted by all the particles on the wall is given by
+
+$$P= N\langle p\rangle=\frac{N m\langle v_x^2\rangle}{V}=\frac{N m\langle v^2\rangle}{3V}$$
+
+</details>
+
+Now, we will assume that the law of ideal gas is true. We can think of it as an experimental verified fact. We will re-demonstrate it from first principles in the classical mechanics class.
+
+Using it and our expression for the pressure, we can derive that the total energy of the particles (and hence the gas) is
+
+$$\boxed{U = \frac{3}{2}n\mathcal{R}T=\frac{3}{2}Nk_BT},$$
+
+Such that the average kinetic energy per particle is directly related to the temperature as
+
+$$\boxed{\frac{1}{2}m\langle v^2\rangle = \frac{3}{2}k_B T}$$
+
+Hence, when you feel that something is warm, it is nothing else but the "kinetic energy" of the microscoping particles bouncing on your hand!
+
+The above expression also demonstrates Joule's second law, stating that $U$ depends solely of $n$ and $T$ for an ideal gas.
+
+<details>
+  <summary>Proof</summary>
+  
+The total mean kinetic energy is 
+
+$$U=E_C =  \frac{N}{2}m \langle v^2\rangle$$
+
+Multiplying the expression we obtained above for $P$ by the volume $V$, we have
+
+$$PV =  \frac{N}{3} m \langle v^2\rangle$$
+
+$$ PV = \frac{2}{3} \left(\frac{N}{2}m\langle v^2\rangle\right) = \frac{2}{3} U$$
+
+Adding the ideal gas law
+
+$$\frac{3}{2} n\mathcal{R}T = U$$
+
+</details>
+
