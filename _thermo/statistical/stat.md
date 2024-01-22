@@ -157,7 +157,16 @@ $$
 \boxed{Z = \sum_ie^{-\beta E_i}}
 $$
 
+The energy of the system can then be re-expressed from $Z$ as
 
+$$
+\boxed{\langle E \rangle = -\frac{1}{Z}\frac{\partial Z}{\partial \beta} = -\frac{\partial{\ln Z}}{\partial \beta}}
+\label{eq:E-of-Z}
+$$
+
+<details>
+  <summary>Proof</summary>
+ 
 Using the second constraints, we can relate $\langle E \rangle$ to $Z$ as:
 
 $$
@@ -173,13 +182,19 @@ $$
 and so:
 
 $$
-\boxed{\langle E \rangle = -\frac{1}{Z}\frac{\partial Z}{\partial \beta} = -\frac{\partial{\ln Z}}{\partial \beta}}
-\label{eq:E-of-Z}
+\langle E \rangle = -\frac{1}{Z}\frac{\partial Z}{\partial \beta} = -\frac{\partial{\ln Z}}{\partial \beta}
+$$
+</details>
+
+The entropy $S$ can also be rederived in terms of $Z$ as:
+
+$$
+\boxed{S = \beta \langle E \rangle + \ln Z}
 $$
 
-
-The entropy $S$ can also be rederived in terms of $Z$:
-
+<details>
+  <summary>Proof</summary>
+ 
 $$
 \begin{aligned}
 S &= -\sum_i p_i \ln(p_i) \\
@@ -191,9 +206,9 @@ $$
 And so:
 
 $$
-\boxed{S = \beta \langle E \rangle + \ln Z}
-\label{eq:entropy-of-E}
+S = \beta \langle E \rangle + \ln Z
 $$
+</details>
 
 We can now express $\beta$ with respect to the temperature. First noticing that: 
 
@@ -224,17 +239,65 @@ Why is it a good definition:
 - direction of heatflows
 - broadening of $p(E)$ with increasing $\langle E \rangle$
 
+### Pressure
+
+Pressure is not only a force over a surface but also a energy per unit of volume!
+
+$$ P = \frac{\partial{E}}{\partial{V}}\Bigg|_S$$
+
 ### Classical ideal gas.
 
 What has been calculated previously to look at the states of a single particle can be generalized to the states of the entire box of particles.
 
-$$E_i=\frac{1}{2m}\sum_i^{3N}{p^i_n}^2$$
+$$E=\frac{1}{2m}\sum_i^{3N}{p_n}^2$$
 
-$$Z=$$
+$$Z=\int e^{-\frac{\beta}{2m}\sum_n p_n^2} d^{3N}x d^{3N}p$$
+
+
+$$ \boxed{Z=\left(\frac{e}{\rho}\right)^N\left(\frac{2m\pi}{\beta}\right)^{\frac{3N}{2}}}$$
+
+<details>
+  <summary>Proof</summary>
+ 
+$$\int dx^{3N}=\frac{V^N}{N!}$$
+
+$$Z=\frac{V}{N!}\left(\frac{2m\pi}{\beta}\right)^{\frac{3N}{2}}$$
+</details>
+
+$$ \boxed{E = -\frac{\partial \ln(Z)}{\partial \beta} = \frac{3}{2}Nk_B T}$$
+
+<details>
+ <summary>Proof</summary>
+
+$$\begin{aligned}
+\ln(Z)&=\ln\left(\left(\frac{e}{\rho}\right)^N\left(\frac{2m\pi}{\beta}\right)^{\frac{3N}{2}}\right) \\
+&= N\ln\left(\frac{e}{\rho}\right)+\frac{3N}{2}\left(\ln(2m\pi)-\ln(\beta)\right)\\
+\end{aligned}
+$$
+
+$$\begin{aligned}
+-\frac{\partial \ln(Z)}{\partial \beta}&= -\frac{3N}{2}\frac{\partial}{\partial \beta}\left(-\ln(\beta)\right) \\
+&= \frac{3N}{2} \frac{1}{\beta}\\
+&= \frac{3N}{2} k_B T
+\end{aligned}
+$$
+
+</details>
+
+$$ P = \frac{\partial{E}}{\partial{V}}\Bigg|_S= \rho k_B T$$
+
+that is, we derived back the ideal gas law
+
+$$ \boxed{P =\frac{n\mathcal{R}T}{V}}$$
+
+and thus, only by assuming that particles were not interacting $E=E_c$, and asking for the entropy to be maximal! 
+
+<details>
+  <summary>Proof</summary>
+
+</details>
 
 ### Varying number of particles, grand canonical ensemble
-
-For single particles with 
 
 Consider a system with accessible microstates caracterised by an energy $E_i$ and a number of particle $N_i$. Then maximizing the entropy $S$ of the system in the grand cononcial ensemble, letting the system exchange energy and particles with the exterior and asking for the constraints:
 
@@ -337,7 +400,6 @@ $$
 \Xi = {\rm Tr}(e^{-\beta(\hat{H} - \mu \hat{N})}) 
 $$
 
-### Quantum ideal gas.
 
 ## Quantum statistics
 
@@ -407,6 +469,8 @@ $$
 $$
 \langle n^{FD}_\lambda \rangle = \frac{1}{e^{\beta(\epsilon_\lambda - \mu)}+1}
 $$
+
+## Quantum ideal gas
 
 
 ## Radiation pressure and the black-body

@@ -133,16 +133,11 @@ which is the result given above.
 
 Hence, the hotter the gas, the higher the mass required for collapse, and the denser the gas, the smaller the mass.
 
-Assuming the gas is molecular hydrogen ($\mu=m_p$) and computing the factors (using $\rho = n m_p$), we get
+Assuming the gas is molecular hydrogen ($\mu=m_p$) and computing the constants factors (using $\rho = n m_p$), we obtain
 
-$$ \boxed{M_J \sim 6 \times 10^{4}\sqrt{\frac{T^3}{n}} M_{\odot}}$$
+$$ M_J \sim 6 \times 10^{4}\sqrt{\frac{T^3}{n}} M_{\odot},$$
 
 where $n$ is the density of hydrogen atoms. We hence see something exciting here: a cascading effect is hidden in this formula. When the cloud will start contracting, its density $n$ will automatically increase, leading $M_J$ to decrease. Hence independent subparts of the cloud will reach the condition $M\leq M_J$ and collapse, such that the cloud will fragment in smaller clouds, over and over again during the gravitational collapse. 
-
-<details>
-  <summary>Proof</summary>
-</details>
-
 
 <!-- This collapsing is also helped due to the increasing rotation speed of the collapsing cloud.  -->
 <!-- Indeed, to keep things simple and hand waving for now, consider the angular momentum $\vec{L}$ of a particle rotating at the edge of the collapsing cloud. We saw in the classical mecanics class that it was given by $\vec{L}=r\wedge m\vec{v}$ and that it was conserved if we consider only the gravitational force. Now, as the cloud contracts after having overpassed Jean's mass, the radius $r$ will decrease. In order for $\vec{L}$ to be conserved when $r$ decreases, $\vec{v}$ must increase. At some point, the speed will then be large enough to thorn apart the cloud in smaller patches (a proper account of this would have been to use the moment of inertia of the cloud, treating it as a solid sphere). -->
