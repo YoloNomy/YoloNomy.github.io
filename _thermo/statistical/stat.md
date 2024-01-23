@@ -257,7 +257,7 @@ Why is it a good definition:
 
 Pressure is not only a force over a surface but also a energy per unit of volume!
 
-$$ P = \frac{\partial{E}}{\partial{V}}\Bigg|_S$$
+$$ P = -\frac{\partial{E}}{\partial{V}}\Bigg|_S$$
 
 Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to derive all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the mean energy $E$, the entropy $S$...) through the partition function $Z$, simply by asking for the maximization of the entropy.
 
@@ -310,6 +310,13 @@ and thus, only by assuming that particles were not interacting $E=E_c$, and aski
 
 <details>
   <summary>Proof</summary>
+As
+
+$$P= -\frac{\partial E}{\partial V}\Bigg|_{S}$$
+
+and 
+
+$$ E= \frac{3N}{2} k_B T= \frac{3N}{2}k_B $$
 
 </details>
 

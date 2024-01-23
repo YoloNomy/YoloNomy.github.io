@@ -133,7 +133,7 @@ which is the result given above.
 
 Hence, the hotter the gas, the higher the mass required for collapse, and the denser the gas, the smaller the mass.
 
-Assuming the gas is molecular hydrogen ($\mu=m_p$) and computing the constants factors (using $\rho = n m_p$), we obtain
+Assuming the gas is made only of molecular hydrogen ($\mu=m_p$) -- which made up $\sim90\%$ of the interstellar medium -- and computing the constants factors (using $\rho = n m_p$), we obtain
 
 $$ M_J \sim 6 \times 10^{4}\sqrt{\frac{T^3}{n}} M_{\odot},$$
 
@@ -228,25 +228,26 @@ as desired! ($\pi/\sqrt{\pi}=\sqrt{\pi\pi}/\sqrt{\pi}=\sqrt{\pi}$).
 
 </details>
 
-Assuming the cloud is made of hydrogen only, we obtain a time of free fall of $\sim 300 000$ years. This might seems like a long time for something to free-fall, but remember that our Galaxy is $~13.5$ billion years old, and hence it is a very short time on astrophysical scales!  From observations : clouds live for $15 000 0000$ years. Hence it is clear that the clouds are not free-falling, but something must stop them.
+Assuming the cloud is made of hydrogen only, we obtain a time of free fall of $\sim 3\times10^{5}$ years. This might seems like a long time for something to free-fall, but remember that our Galaxy is $~13.5$ billion years old, and hence it is a very short time on astrophysical scales!  From observations : clouds live for $1.5\times10^{7}$ years. Hence it is clear that the clouds are not free-falling, but something must stop them.
 
-Rotation accelerates when the cloud shrinks, which gives some significant amount of energy preventing the collapse. Magnetic fields slow down this rotation (known as magnetic breaking).
+The collapsing of molecular clouds leading to star formation is actually a very complex process involving more than free-fall.
+Due to the conservation of angular momentum, the rotation of the cloud on itself accelerates dramatically when the cloud shrinks, giving some significant amount of rotational energy preventing the collapse. In the meanwhile, magnetic fields lines of the cloud are twisted in the spiraling process and they tend to slow down this rotation and allow for the collapse (known as magnetic breaking).
 
-The study of molecular clouds is hence a whole exciting field by itself. Turbulence, magnetic field and structure formation, fractal, filaments, clumps. + complex chemistry on dust grains --> life.
+The study of molecular clouds is a whole exciting field by itself. The highly complex coupling of turbulence in the gas and magnetic field lead to the formations of multiple structures within the cloud. The coupling of different scales together lead structures to fractal behaviors and the apparition of filaments, veiling, clumps and ultimately protostars. The insides of cold molecular clouds also witness complex chemistry which happends on the surface of dust grains. We think that this complex chemestry is crucial for the formation of organic molecules in our Universe, and is most certainly a crucial step for the appearence of life as we know it.
 
 ## The source of stellar energy
 
 Eventually, clusters of stars will light up within the cloud.
 As they are the end product of gravitational collapse, it is no surprise that they appear as spherical objects. The spherical shape of heavenly bodies is indeed the direct consequence of the law of gravitation, from which smaller masses are attracted towards larger mass, with a radial symmetry (Putting a large mass at the center of a frame, acts only and identically along $\vec{u_r}$). 
 
-The very first stage of a star's life, is called a protostar.
+The very first stage of a star's life, is called a *protostar*.
 
 ![image](../images/HL_Tau_protoplanetary_disk.jpg){: width="53.5%"}
 
 
-*Credit: HL-$\tau$ protostar [Credit: ALMA (/NRAO/ESO/NAOJ)](https://www.almaobservatory.org/en/press-releases/revolutionary-alma-image-reveals-planetary-genesis/)* 
+*Credit: HL-$\tau$ protostar surrounded by its acccretion disc in which the future planets will form [Credit: ALMA (/NRAO/ESO/NAOJ)](https://www.almaobservatory.org/en/press-releases/revolutionary-alma-image-reveals-planetary-genesis/).* 
 
-If one assumes again that the proto-star has constant density, it is possible to infer the pressure at its center to be
+If one assumes again that the proto-star has a constant density, it is possible to infer the pressure at its center to be
 
 $$ P_c = \frac{3}{8\pi}\frac{GM^2}{R^4}$$
 
@@ -292,7 +293,6 @@ $$T_c\sim\frac{1}{2}\frac{GM\mu}{k_BR}$$
 ### Thermal?
 
 ### Nuclear!
-
 
 ## Minimal mass to pretend at the star title
 
