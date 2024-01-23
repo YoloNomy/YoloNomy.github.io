@@ -9,15 +9,20 @@ nav_order: 1
 
 ## The fundamental equations
 
-State equation (experimental):
+An ideal gas is a gas which satisfies the state equation:
 
-$$ PV = n\mathcal{R}T$$
+$$\boxed{PV = n\mathcal{R}T}$$
 
-Second's Joule's law:
+This state's equation is motivated from experiments made on gases. An ideal gas also follows the second's Joule's law, which states that it's internal energy only depends on the quantity of matter $n$ and the temperature $T$:
 
-$$U=U(n,T)$$
+$$\boxed{U=U(n,T)}$$
+
+All these equations should be understood as verified experimental relationships that intruiged physicist which where trying to understand the behavior of gases. They can however be retrieved by assuming that the gas is made of point particles bouncing randomly and not interacting between them. As such, the ideal gas assumption breaks when considering high pressures, when particles are able to interact between one another, or when quantum effects come into play.
 
 ## Applications
+
+Can be used to model roughly stars and interstellar clouds in which they form.
+For more, see Jean's mass in the astrophysics lectures.
 
 ## Microscopic model
 
