@@ -62,9 +62,11 @@ As such, if there is a single microstate $N=1$ explaining the whole macrostate, 
 
 ### Derivation of the probabilities of maximal entropy in the canonical ensemble ($N$ fixed).
 
-Let's now traduce this idea in term of the familiar problem of particles in a box. Consider then a system of made of $N$ distinguishable particles in thermal equilibrium with a heat bath. Let's consider a single macrostate with mean energy $N\langle E\rangle$ and study all the possible microstates that can be associated with it.
+Let's now traduce this idea in term of the familiar problem of particles in a box. Consider then a system, like a gas, with mean energy $\langle E\rangle$ (its macrostate). Assume that there exist $N$ distinguishable possible ways to re-arange the particles inside the box to give the same mean energy ($N$ possible microstate associated with the macrostate).
 
-Let's label by $i$ the possible states in which a particle can be. To each microstate is associated an energy $E_i$. For simplicity, we now assume that these energy levels are discrete. It will be straightforward to generalize this to the continuous case by replacing sums with integrals and taking limits toward infinity. Let $n_i$ be the occupation number that is the number of particles that can be with energy $E_i$ at a given time. We have:
+Let's label by $i$ the possible microstates, that is the possible particle configurations giving back the mean energy $\langle E\rangle$. To each microstate is associated an energy $E_i$. Some can be very weird, as e.g. all the particles being located in one corner of the box, or half having very high energies and the other half having very low energies. However, the great majority of these microstates are made of particles being distributed everywhere in the box with average temperatures. As such, these states will contribute much more to the entropy calculation and will be incredibly more probable.
+
+For simplicity, we now assume that the accessible energy levels of the microstates $E_i$ are discrete. It will be straightforward to generalize this to the continuous case by replacing sums with integrals and taking limits toward infinity. Let $n_i$ be the occupation number that is the number of possible microstates (particle configurations) associated with the energy $E_i$. We have:
 
 $$
 \sum_i n_i = N
@@ -83,13 +85,13 @@ $$
 $$
 
 
-The average energy of a particle is then:
+The average energy of the macrostate is then expressed in term of the microstates as:
 
 $$
 \langle E \rangle  = \sum_i p_i E_i = \sum_i \frac{n_i}{N} E_i
 $$
 
-The number of possible ways to rearange the $N$ particles into the possible energy states with occupation numbers $n_i$ is given by:
+The number of possible ways to rearange the $N$ microstates into the possible allowed energy states with occupation numbers $n_i$ is given by:
 
 $$
 C^n_N = \frac{N!}{\prod_i n_i!}
@@ -97,7 +99,7 @@ $$
 
 Maximizing $C^n_N$ will give us the most probable configuration of the $n_i$. It can be shown that this maximum is very sharp, making other configurations almost impossible.
 
-If $N$ and $n_i \to \infty$, we can use the *Stirling approximation*:
+If $N$ and $n_i \to \infty$, which is clearly the case here, we can use the *Stirling approximation*:
 
 $$ N! \sim N^N e^{-N} $$
 
@@ -121,7 +123,7 @@ $$
 
 </details>
 
-This approximation allows us to calculate:
+This approximation allows us to bring the entropy as:
 
 $$ 
 \ln(C^n_N)= NS
@@ -142,7 +144,9 @@ $$
 $$
 </details>
 
-Maximizing $C^n_N$ is thus equivalent to maximizing $S$. We will now do this maximization using the so-called *Lagrange multipliers* and asking for the following constraints:
+Maximizing $C^n_N$ is thus equivalent to maximizing $S$. This will give us the most probable particle configurations within the box associated to the most probable $n_i$ combinations amongst the $N$ possible macrostates. As all this is very abstract, let us rephrase again exactly what we are doing here. You are having a gas and say that you are measuring one way or another that its mean energy is $\langle E\rangle$. Then you are thinking of the gas as made of particles, and you consider what are the most probable ways that these particles are arranged within the box. Particle configurations are classified by their energy $E_i$ and a number of corresponding configurations $n_i$ leading to this energy. If you could know it perfectly, the probability $p_i$ for the microstate of your particle box to be associate with the exact energy $E_i$ can be found by maximizing the entropy.
+
+We will now do the entropy maximization using the so-called *Lagrange multipliers* and asking for the following constraints:
 
 $$
 \begin{cases}
@@ -292,24 +296,39 @@ Hence, knowing only the expression of the energy $E_i$ of each microstate, we ar
 
 ### Classical ideal gas.
 
-What has been calculated previously to look at the states of a single particle can be generalized to the states of the entire box of particles.
+## The equation of states and energy
 
-$$\langle E \rangle=\frac{1}{2m}\sum_i^{3N}{p_n}^2$$
+Let us now apply the above equations to rederive the ideal gas properties. Consider a box filled with $\mathcal{N}$ particles. These particles are free and non interacting, hence their energy is given by $\vec{p}^2/2m$. The energy of a microstate, i.e. a particle configuration in the box is given by
 
-$$Z=\int e^{-\frac{\beta}{2m}\sum_n p_n^2} d^{3N}x d^{3N}p$$
+$$E(i)=\frac{1}{2m}\sum_i^{3\mathcal{N}}{p_n}^2$$
 
+where we sum over all $\mathcal{N}$ particles and the 3 configurations of space.
 
-$$ \boxed{Z=\left(\frac{e}{\rho}\right)^N\left(\frac{2m\pi}{\beta}\right)^{\frac{3N}{2}}}$$
+The partition function associated to the maximisation of enetropy is hence  
+
+$$Z=\int e^{-\frac{\beta}{2m}\sum_n p_n^2} d^{3\mathcal{N}}x d^{3\mathcal{N}}p$$
+
+Where we replaced the sums over the $N$ possible microstates associated to the macrostate by continuous integrals over momentum and space.
+
+Develloping this integral simply gives
+
+$$ \boxed{Z=\left(\frac{e}{\rho}\right)^\mathcal{N}\left(\frac{2m\pi}{\beta}\right)^{\frac{3\mathcal{N}}{2}}}$$
 
 <details>
   <summary>Proof</summary>
  
-$$\int dx^{3N}=\frac{V^N}{N!}$$
+The integral over space gives
 
-$$Z=\frac{V}{N!}\left(\frac{2m\pi}{\beta}\right)^{\frac{3N}{2}}$$
+$$\int dx^{3\mathcal{N}}=\frac{V^\mathcal{N}}{\mathcal{N}!}$$
+
+where the $\mathcal{N}!$ is here to traduce the fact that particles are distinguishable and avoid double conting same particle configurations with different labeling.
+
+$$Z=\frac{V}{\mathcal{N}!}\left(\frac{2m\pi}{\beta}\right)^{\frac{3\mathcal{N}}{2}}$$
 </details>
 
-$$ \boxed{E = -\frac{\partial \ln(Z)}{\partial \beta} = \frac{3}{2}Nk_B T}$$
+From $Z$, one can find back the mean energy of the macrostate under consideration to be
+
+$$ \boxed{E = -\frac{\partial \ln(Z)}{\partial \beta} = \frac{3}{2}\mathcal{N}k_B T}$$
 
 <details>
  <summary>Proof</summary>
@@ -321,13 +340,15 @@ $$\begin{aligned}
 $$
 
 $$\begin{aligned}
--\frac{\partial \ln(Z)}{\partial \beta}&= -\frac{3N}{2}\frac{\partial}{\partial \beta}\left(-\ln(\beta)\right) \\
-&= \frac{3N}{2} \frac{1}{\beta}\\
-&= \frac{3N}{2} k_B T
+-\frac{\partial \ln(Z)}{\partial \beta}&= -\frac{3\mathcal{N}}{2}\frac{\partial}{\partial \beta}\left(-\ln(\beta)\right) \\
+&= \frac{3\mathcal{N}}{2} \frac{1}{\beta}\\
+&= \frac{3\mathcal{N}}{2} k_B T
 \end{aligned}
 $$
 
 </details>
+
+Similarly, we can compute the pressure of the macrostate to be
 
 $$ P = \frac{\partial{E}}{\partial{V}}\Bigg|_S= \rho k_B T$$
 
@@ -345,9 +366,11 @@ $$P= -\frac{\partial E}{\partial V}\Bigg|_{S}$$
 
 and 
 
-$$ E= \frac{3N}{2} k_B T= \frac{3N}{2}k_B $$
+$$ E= \frac{3N}{2} k_B T= \frac{3\mathcal{N}}{2}k_B $$
 
 </details>
+
+## The Maxwell-Boltzmann speed distribution
 
 ### Varying number of particles, grand canonical ensemble
 
