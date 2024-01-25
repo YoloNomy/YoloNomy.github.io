@@ -48,6 +48,9 @@ Where $\nu_{\text{max}}$ is the frequency at which the star emits the most energ
 <details>
   <summary>Proof</summary>
 
+
+*Add a code that proves it graphically*
+
 To find the maximum $\nu_{\text{max}}$ of the blackbody law $B_\nu$, we need to derivate it with respect to $\nu$ and set this derivative equal to zero, that is, we must solve
 
 $$\frac{\text{d} B_\nu(T)}{\text{d}\nu}=0$$
@@ -64,7 +67,7 @@ $$ L = 4\pi R^2\sigma T^4,$$
 
 where 
 
-$$\sigma=\frac{2\pi^5k_B^4}{15h^3c^2}$$.
+$$\sigma=\frac{2\pi^5k_B^4}{15h^3c^2}.$$
 
 This is known as Stefan's Boltzmann's law.
 
@@ -75,5 +78,9 @@ This is known as Stefan's Boltzmann's law.
 
 
 
-## The Hertzprung Russel diagramms
+## The Hertzprung-Russel diagramms
+
+## Going further: recommended readings
+
+
 

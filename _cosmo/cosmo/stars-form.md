@@ -296,6 +296,6 @@ $$T_c\sim\frac{1}{2}\frac{GM\mu}{k_BR}$$
 
 ## Minimal mass to pretend at the star title
 
-## Going further: recommanded readings
+## Going further: recommended readings
 
 - An introduction to Star Formation - D. Ward-Thompson and A. P. Whitworth - Cambdrige University Press - 2011
