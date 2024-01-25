@@ -294,7 +294,7 @@ $$ P = -\frac{\partial{E}}{\partial{V}}\Bigg|_S$$
 
 Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to derive all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the mean energy $E$, the entropy $S$...) through the partition function $Z$, simply by asking for the maximization of the entropy.
 
-### Classical ideal gas.
+# Classical ideal gas.
 
 ## The equation of states and energy
 
@@ -370,9 +370,13 @@ $$ E= \frac{3N}{2} k_B T= \frac{3\mathcal{N}}{2}k_B $$
 
 </details>
 
-## The Maxwell-Boltzmann speed distribution
+### The Maxwell-Boltzmann speed distribution
 
-### Varying number of particles, grand canonical ensemble
+We can use the partition function to associate a probability to a given microstate
+
+$$p_i = \frac{1}{Z}e^{-\beta E_i} $$
+
+## Varying number of particles, grand canonical ensemble
 
 Consider a system with accessible microstates caracterised by an energy $E_i$ and a number of particle $N_i$. Then maximizing the entropy $S$ of the system in the grand cononcial ensemble, letting the system exchange energy and particles with the exterior and asking for the constraints:
 

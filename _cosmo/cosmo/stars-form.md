@@ -278,7 +278,7 @@ Putting
 
 $$P=\frac{N kT}{\mu V}=\frac{3Mk_BT}{4\pi R^3\mu}$$ 
 
-Now looking for the pressure at the center $T_c$, we get
+Now looking for the pressure at the center $T_c$. For this, we assume roughly that the whole star is at temperature $T_c$ and pressure $P_c$ (computed above). This lead us to write
 
 $$\frac{3}{8\pi}\frac{GM^2}{R^4}=\frac{3Mk_BT_c}{4\pi R^3 \mu}$$
 
