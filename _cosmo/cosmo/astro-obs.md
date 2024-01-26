@@ -74,6 +74,18 @@ This is known as Stefan's Boltzmann's law.
 <details>
   <summary>Proof</summary>
 
+The total luminosity of the star is the integral of the Boltzmann law over the surface of the star, the total solid angle and the frequency
+
+$$L = \int \int B_\nu(T) \text{d}S\text{d}\Omega\text{d}\nu $$
+
+As $B_\nu$ is only a function of $\nu$, it becomes the product of three integrals
+
+$$L = \int \int B_\nu(T)\text{d}\nu \int \text{d}S \int \text{d}\Omega $$
+
+Assuming that a star is a sphere, then
+
+$$\int \text{d}S = 4\pi R^2 $$
+
 </details>
 
 
