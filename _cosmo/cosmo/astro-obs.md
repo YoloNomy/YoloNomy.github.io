@@ -57,7 +57,7 @@ $$\frac{\text{d} B_\nu(T)}{\text{d}\nu}=0$$
 
 that is
 
-$$\frac{\text{d}}{\text{d}\nu}(\frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{k_BT}}-1})=0$$
+$$\frac{\text{d}}{\text{d}\nu}\left(\frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{k_BT}}-1}\right)=0$$
 
 </details>
 

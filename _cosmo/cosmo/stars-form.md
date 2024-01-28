@@ -288,13 +288,41 @@ $$T_c\sim\frac{1}{2}\frac{GM\mu}{k_BR}$$
 
 </details>
 
-### Chemical?
+Numerical applications leads to huge numbers both for the pressure inside the star and for the temperature at its core. Now, the newborn must find a source of energy to counter-act the brutality of the gravitational collapse.
 
-### Thermal?
+## How to explain the energy of stars?
 
-### Nuclear!
+### Gravitational contraction: Kevin-Helmotz mechanism
+ 
+As hot and bright bodies, protostars and stars radiate away their energy into space with a total luminosity $L$. As long as they are contracting due to gravity, they are heated by this contraction, which provides a source of energy that can be radiated. As protostars try to cool down, they heat up!
 
-## Minimal mass to pretend at the star title
+To show this, we will use the so-called "virial theorem", stating that for a stable system bound by gravity, the total energy $E$ is related to the gravitational potential as
+
+$$\boxed{E= \frac{V}{2}}$$
+
+<details>
+  <summary>Virial theorem</summary>
+
+</details>
+
+Assuming again that the protostar is an homogeneous sphere of gas, its energy is thus
+
+$$E= -\frac{3}{10}\frac{GM^2}{R}$$
+
+And hence, its luminosity given by the change of energy with time
+
+$$L = -\dot{E} = -\frac{3}{10}\frac{GM^2}{R^2}\dot{R},$$
+
+From which it is possible to find the change of radius due to contraction
+
+$$\boxed{\dot{R} = -\frac{10}{3}\frac{LR^2}{GM^2}}$$
+
+### Nuclear energy!
+
+### Degeneracy pressure: Minimal mass to pretend at the star title
+
+
+## Eddington limit: Maximal mass before implosion
 
 ## Going further: recommended readings
 

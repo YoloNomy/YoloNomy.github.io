@@ -11,7 +11,9 @@ nav_order: 1
 
 Quantities to describe a star : $\rho$, $T$, $R$, $M$, $P$, $L$.
 
-## Equations of structure
+
+
+# Equations of structure
 
 $$ \frac{\text{d} P}{\text{d}r}= -\rho(r)\frac{GM_r(r)}{r^2} $$
 
@@ -70,9 +72,14 @@ $$ P_c = \frac{3GM^2}{8\pi R^4}$$
 
 ## Mass-luminosity relationship
 
-$$L=4\pi R^2\sigma T^4$$
+$$\boxed{L\propto M^3}$$
+
 
 ## Lifetime
+
+$$\boxed{\tau\propto \frac{1}{M^{2}}}$$
+
+# Stellar evolution
 
 ## Going further: recommanded readings
 
