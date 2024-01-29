@@ -292,6 +292,16 @@ Pressure is not only a force over a surface but also a energy per unit of volume
 
 $$ P = -\frac{\partial{E}}{\partial{V}}\Bigg|_S$$
 
+This is equivalent (but more convinient) that the the usual definition. Indeed, to convince yourself, imagine a small infinitessimal box of size $\text{d}x$,$\text{d}y$ and $\text{d}z$. The pressure exerted on the surface $\mathcal{S}=\text{d}y\text{d}z$ is 
+
+$$P=\frac{\text{d} \vec{F}\cdot \vec{n}}{\text{d} \mathcal{S}}= \frac{\text{d} \vec{F}\cdot \vec{n}}{\text{d} \mathcal{S}}=\frac{\text{d}\vec{F}\cdot \vec{n}}{ \text{d}y\text{d}z}= \frac{\text{d} \vec{F}\cdot \text{d}\vec{x}}{ \text{d}y\text{d}z\text{d}x}=\frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} $$
+
+. On the other hand, the energy transfered to a wall of the box due to the kinetic motion of the particle within the box, can be written $\text{d} E= - \delta W=-\vec{F}\cdot\text{d}\vec{x}$.
+
+From which 
+
+$$ P = \frac{\text{d} \vec{F}\text{d}\vec{x}}{\text{d}V} =-\frac{\partial{E}}{\partial{V}}\Bigg|_S$$
+
 Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to derive all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the mean energy $E$, the entropy $S$...) through the partition function $Z$, simply by asking for the maximization of the entropy.
 
 # Classical ideal gas.
@@ -452,8 +462,8 @@ The normalization of all probabilities and the mean value of an observable $\hat
 
 $$
 \begin{aligned}
-&{\rm Tr}{\hat{\rho}}=1\\
-&{\rm Tr}{\hat{\rho}\hat{X_i}}= \langle X_i \rangle
+&\text{Tr}{\hat{\rho}}=1\\
+&\text{Tr}{\hat{\rho}\hat{X_i}}= \langle X_i \rangle
 \end{aligned}
 \label{eq:densitymatrixproperties}
 $$
@@ -472,10 +482,10 @@ $$
 $$
 
 
-The lagrange multiplier can be showned to be equal to $\beta= (k_{\rm B} T)^{-1}$ and $\mu$ the chemical potential. $\Xi$ is the partition function: 
+The lagrange multiplier can be showned to be equal to $\beta= (k_\text{B} T)^{-1}$ and $\mu$ the chemical potential. $\Xi$ is the partition function: 
 
 $$
-\Xi = {\rm Tr}(e^{-\beta(\hat{H} - \mu \hat{N})}) 
+\Xi = \text{Tr}(e^{-\beta(\hat{H} - \mu \hat{N})}) 
 $$
 
 
@@ -566,7 +576,7 @@ $$
 g(\omega)= \frac{V}{\pi^2 c^3}\omega^2
 $$
 
-$$$
+$$
 u(\omega)= \frac{1}{V}\frac{dE}{d\omega}=\frac{1}{\pi^2c^3}\frac{\hbar \omega^3}{e^{\beta \hbar \omega}-1}
 $$
 

@@ -11,7 +11,7 @@ nav_order: 2
 ## The laws
 
 The goal of Newton, in its book  "
-Philosophiæ naturalis principia mathematica", written in 1687, was to find some simple laws allowing to explain the motion of bodies. In physics, a law is the building block of a theory. It is a statement, often mathematical, which can not be proven from other blocks but can be used to make predictions. A theory is treated as correct as long as its law does not lead to predictions which contradicts experiment. It is quite astonishing that, accepting the three relatively simple laws of Newton, we will be able to explain and predict almost all of the simple case of motions we see around us. For exemple, we will be able to understood very well the orbit of the planets around the Sun.
+Philosophiæ naturalis principia mathematica", written in 1687, was to find some simple laws allowing to explain the motion of bodies. In physics, a law is the building block of a theory. It is a statement, often mathematical, which can not be proven from other parts of the theory but can be used to make predictions. A theory is treated as correct as long as its building laws do not lead to predictions which contradicts experiment. It is quite astonishing that, accepting the three relatively simple laws of Newton, we will be able to explain and predict almost all of the simple case of motions we see around us. For exemple, we will be able to understood very well the orbit of the planets around the Sun.
 
 The whole understanding of Newton's theory relies under the notion of *forces*. In his laws, Newton defines the forces and states that forces are what drives the motions of all the bodies in the Universe. The three laws can then be stated as follows:
 

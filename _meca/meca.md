@@ -8,7 +8,7 @@ You will find here some fun python applications to physics with some detailled e
 
 # Newtonian point mechanics
 
-- [Kinematics: frame and vectors](Newton/Kinematics.md)
+- [Kinematics: frames and vectors](Newton/Kinematics.md)
 - [Dynamics: Newton laws and the reign of parabolas](Newton/Laws.md)
 - [Work and Energy: the dot product](Newton/Energy.md)
 - [The pendulum and harmonic oscillators](Newton/Pendulum.md)
