@@ -21,6 +21,12 @@ All these equations should be understood as verified experimental relationships 
 
 ## Applications
 
+### Work done
+
+### Heat
+
+### More!
+
 Can be used to model roughly stars and interstellar clouds in which they form.
 For more, see Jean's mass in the astrophysics lectures.
 

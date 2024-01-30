@@ -7,9 +7,18 @@ nav_order: 1
 
 # First law of thermodynamics: energy
 
-$$ \Delta U = Q+ W $$
+## The law
 
-$$ \text{d}U = \delta Q + \delta W$$
+$$\boxed{\Delta U = Q+ W}$$
+
+$$\boxed{\text{d}U = \delta Q + \delta W}$$
+
+$$ Q= \int \delta Q$$
+
+$$ W = \int \delta W$$
+
+## The difference between $d$ and $\delta$
+
 
 
 ## Work
