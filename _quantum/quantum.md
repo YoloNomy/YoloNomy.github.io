@@ -8,6 +8,7 @@ You will find here some fun python applications to physics with some detailled e
 
 # Quantum physics
 
+- Qubits 101
 - Particle in a box
 - De Broglie-Bohm trajectories
 

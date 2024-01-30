@@ -19,7 +19,7 @@ Defining which object we are studying the motion is called a *choice of frame*. 
 
 ## Axis/coordinates: quantifying motion
 
-Once you defined a frame, you a way to quantify the position of a moving body relative to that frame. This is done by choosing some axis, which are like gigantic rulers on which you can measure the position. For objects moving in the three dimensional space, three axis are required to label the object (see the wonderful picture of the kiwi).
+Once you defined a frame, you a way to quantify the position of a moving body relative to that frame. This is done by choosing some axis, which are like gigantic rulers on which you can measure the position. For objects moving in the three dimensional space, three axis (i.e. three rulers) are required to completely label the object (see the wonderful picture of the kiwi below).
 
 <p align="center">
 <img src="../images/frame.png" alt="image" width="49%" height="auto">
