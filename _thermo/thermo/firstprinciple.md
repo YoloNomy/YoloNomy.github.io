@@ -19,8 +19,27 @@ $$ W = \int \delta W$$
 
 ## The difference between $d$ and $\delta$
 
-
-
 ## Work
+
+$$\delta W = -P {\rm d}V$$
+
+
+$$ \delta W = \vec{F}\cdot\text{d}\vec{\ell}$$
+
+<details>
+  <summary>Correspondance with mechanics</summary>
+
+$$P=-\frac{F}{S}=\frac{F \text{d}x}{\text{d}x\text{d}y\text{d}z}= $$
+
+$$ {\rm d}V= {\text{d}x\text{d}y\text{d}z $$
+
+hence 
+$$ \delta W = \vec{F}\cdot\text{d}\vec{x}$$
+
+as in mechanics.
+</details>
+
+- volume increase --> $\text{d}U =\delta W<0$, loss of energy
+- volume decrease --> $\text{d}U =\delta W>0$ gain of energy
 
 ## Heat
