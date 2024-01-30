@@ -9,7 +9,7 @@ You will find here some fun python applications to physics with some detailled e
 # Thermodynamics
 
 - [Studying a system](../thermo/system/)
-- Studying change: derivative, integrals, differentials
+- [Studying change: derivative, integrals, differentials](../thermo/calculus/)
 - [First law of thermodynamics: energy](../thermo/firstprinciple/)
 - [The ideal gas, part I](../thermo/idealgas/)
 - Van der Waals gas
@@ -17,7 +17,6 @@ You will find here some fun python applications to physics with some detailled e
 
 
 # Statistical physics
-
 
 - [Maximizing the entropy](../statistical/entropy/)
 - [The ideal gas, part II](../statistical/idealgas/)

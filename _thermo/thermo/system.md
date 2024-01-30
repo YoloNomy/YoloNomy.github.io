@@ -41,7 +41,7 @@ For example, we will see in the next class that the energy of a system, noted $U
 
 ![image](../images/sun.png){: width="80%"}
 
-*The sun as an open system, which can exchange both matter and energy with the exterior (space). It is characterized by its state variables and the state functions one can build from them*
+*The sun as an open system, which can exchange both matter and energy with the exterior (space). It is characterized by its state variables and the state functions one can build from them.*
 
 ## Equation of state
 
