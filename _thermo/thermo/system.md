@@ -5,16 +5,19 @@ parent: thermo
 nav_order: 1
 ---
 
-# Thermodynamics: why should you care?
-
 # Studying a system
 
 ## State variables and state functions
 
+
 We call a *system* any general object of study in thermodynamics. It could be a box of gas, a star, a thermal engine ...
 What will interest us is how this system evolves and possibly interact with what surrounds it. The surrounding of a system is called the *exterior* or the *environment*.
 
-Isolated system.
+Depending on how they interact with the exterior, we can distinguish three types of system:
+
+- *Open systems*: which can exchange particles and energy with the exterior. For exemple a lake or a bathtub that can be filled or emptied.
+- *Closed systems*: which can exchange only energy with the exterior. For example a mug of coffee which cools down or a star exchanging energy only by radiating into space.
+- *Isolated systems*: which can not exchange anything with the exterior. As such they are idealisations and can not truely exist in nature, except perhaps for the Universe as a whole! 
 
 In classical thermodynamics, a system is caracterized by the mesurable quantities called *state variables*. The more common states variables are:
 
@@ -36,9 +39,18 @@ Once you have find state variables to describe your system, it is possible to cr
 
 For example, we will see in the next class that the energy of a system, noted $U$, is a state function $U(n,T,V,P)$ which can be expressed in term of the other *state variables*.
 
+![image](../images/sun.png){: width="80%"}
+
+*The sun as an open system, which can exchange both matter and energy with the exterior (space). It is characterized by its state variables and the state functions one can build from them*
+
 ## Equation of state
 
-The equation you will see over and over again, called the ideal gas equation, relates all the state variables of the system as
+Equation of states are equations that relates all the state variables of the system together. They are sort of "rules" that dictates the behavior of a given system. They can be derived experimentally, by quantifying how changing a state variable correspondingly change the values of the others.
+
+A typical exemple of equation of state, that you will see over and over again, is called the ideal gas equation:
 
 $$ PV = n\mathcal{R}T $$
+
+As we will see, this equation describes with a great accuracy the behavior of gases in "normal" conditions.
+
 
