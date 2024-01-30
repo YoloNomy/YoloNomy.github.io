@@ -49,7 +49,7 @@ If you found all of these, good job! Here is the exact plot of the derivative:
 
 *Left: $\frac{\text{d}T}{\text{d}x}$ for the case illustrated above Right: comparison between $\frac{\text{d}T}{\text{d}x}$ and $T(x)$*
 
-Its value also inform us on how brutally or not $T$ changes as a given $x$. A closer comparison between the two curve allow you to interpret it exactly as such.
+Its value also inform us on how brutally or not $T$ changes as a given $x$. A closer comparison between the two curve allow you to interpret it exactly as such. Try any function $T(x)$ you want with [this code](../codes/metalbar.py) in order to train your intuition of derivatives!
 
 ### Formalism of derivatives
 
