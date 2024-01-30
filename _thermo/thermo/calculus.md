@@ -15,8 +15,8 @@ $$ \boxed{Q = \frac{\text{d} f}{\text{d} x}} $$
 
 In your brain, you should immediately think "Oh, $Q$ is a function that tells me how does $f$ changes if $x$ changes". It works as follows:
 
-- If $Q>0$, then $f$ increases with $x$. The stronger the ingrease, the bigger the value of $Q$.
-- If $Q<0$, then $f$ decreases with $x$. The stronger the ingrease, the bigger the absolute value of $Q$.
+- If $Q>0$, then $f$ increases with $x$. The stronger the increase, the bigger the value of $Q$.
+- If $Q<0$, then $f$ decreases with $x$. The stronger the increase, the bigger the absolute value of $Q$.
 - If you find that $Q=0$, it means that $Q$ is a constant with respect to $x$: $x$ can take whatever value, $f$ will always give the same number.
 
 Velocity, is how much the position $x$ of a body change with time $t$, hence it should be no surprise that we can write
