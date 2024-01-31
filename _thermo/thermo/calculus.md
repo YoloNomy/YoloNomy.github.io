@@ -55,7 +55,7 @@ Its value also inform us on how brutally or not $T$ changes as a given $x$. A cl
 
 Derivation is defined formally as
 
-$$\frac{\text{d} f}{\text{d} x} = \lim_{\epsilon\to0}\frac{f(x+\epsilon)-f(x)}{\epsilon}$$
+$$\boxed{\frac{\text{d} f}{\text{d} x} = \lim_{\epsilon\to0}\frac{f(x+\epsilon)-f(x)}{\epsilon}}$$
 
 This definition makes sense for the notation $\frac{\text{d} f}{\text{d} x}$, as it is the computation of a tangent $\Delta y/\Delta x$ to a curve at a given point, by taking the limit $\Delta y\to 0$ and $\Delta x\to 0$. Hence it explains why the derivative is informing us on the rate of change of a function at a given point.
 
@@ -91,31 +91,90 @@ Luckily, there are plenty of formulas you can learn that allows imediately to co
 | $e^{x}$ | $e^{x}$ |
 | $\ln(x)$ | $\frac{1}{x}$ |
 
-As long as we encounter some examples in physics, you will become familiar with these rules.
+As long as we encounter some examples in physics, you will become familiar with these rules. If you feel like training, try to proove them from the definition of the derivative.
 
-Chain rule:
+To clear a bit the notation, let us write derivatives with a prime, i.e. $f'=\frac{\text{d} f}{\text{d} x}$.
 
-$$ \boxed{\frac{\text{d} f}{\text{d} y} = \frac{\text{d} f}{\text{d} x}\frac{\text{d} x}{\text{d} y}}$$
+Regarding summation, derivatives are very easy. Indeed, the derivative of a sum is the sum of the derivatives:
 
-Product rule:
+$$ \boxed{(f+g)' = f' + g'} $$
 
-$$ (uv)' = u'v + v'u $$
+Hence, for example, if $f=x^2+\ln(x) + 3$, then by taking the derivative of each term of the sum, we obtain $f'=2x+\frac{1}{x}$.
 
-| $f(u(x))$   |      $\frac{\partial f}{\partial x}$ |
-|----------|:-------------:|
-| $au+b$ |  $au'$ |
-| $u^n$ |    $nu'u^{n+1}$   | 
-| $\sqrt{u}$ |   $\frac{u'}{2\sqrt{u}}$| 
-| $\cos(u)$ | $-u'\sin(u)$ |
-| $\sin(u)$ | $u'\cos(u)$ |
-| $e^{u}$ | $u'e^{u}$ |
-| $\ln(u)$ | $\frac{u'}{u}$ |
+For a product, things are a bit more complicated and the *product rule* is:
+
+$$ \boxed{(fg)' = f'g + g'f} $$
+
+Hence, for another example, if $f=x^3\sqrt{x}$, then $f'=3x^2\sqrt{x}+\frac{x^3}{2\sqrt{x}}$.
+
+Imagine that $f$ is a function of another function $g(x)$ such that $f=f(g(x))$.
+In such case, we will use an important rule named the so called *chain rule*:
+
+$$ \boxed{\frac{\text{d} f}{\text{d} x} = \frac{\text{d} f}{\text{d} g}\frac{\text{d} g}{\text{d} x}}$$
+
+From this, we are able to derive the following relations:
+
+| $f(g(x))$   |      $\frac{\partial f}{\partial x}$ | Example 
+|----------|:-------------:|:-------------:|
+| $ag+b$ |  $ag'$ |$f=3(x^4)+2$,$f'=12x^3$|
+| $g^n$ |    $ng'g^{n-1}$   | $f=(3x+1)^4$,$f'=12(3x+1)^3$
+| $\sqrt{g}$ |   $\frac{g'}{2\sqrt{u}}$| $f=\sqrt{x^3+1}$, $f'=\frac{3x^2}{2\sqrt{x^3+1}}$
+| $\cos(g)$ | $-g'\sin(g)$ | $f=\cos(3x)$,$f'=-3\sin(3x)$
+| $\sin(g)$ | $g'\cos(g)$ |$f=\sin(x^2)$,$f'=2x\cos(x^2)$
+| $e^{g}$ | $g'e^{g}$ | $f=e^{\cos(x)}$,$f'=-\sin(x)e^{\cos(x)}$
+| $\ln(g)$ | $\frac{g'}{g}$ | $f=\ln(x^5)$, $f'=\frac{5x^4}{x^5}$
+
+Try to rederive the examples to see if you understand them!
+
+$$ \boxed{\left(\frac{f}{g}\right)' = \frac{f'g - g'f}{g^2}} $$
+
+<details>
+  <summary>Proof</summary>
+
+This one is a bit intricate but it is a good training! 
+The trick is to rewrite 
+
+$$ \left(\frac{f}{g}\right)=f g^{-1}$$
+
+Hence, from the product rule
+
+$$\left(\frac{f}{g}\right)'=(f g^{-1})'=f'g^{-1}+ f(g^{-1})'$$
+
+Now, you should use the rule for the derivative of a power, to get
+
+$$(g^{-1})'=-1 g' g^{-2}=-\frac{g'}{g^2}$$
+
+Hence, we can rewrite
+
+$$\left(\frac{f}{g}\right)'=\frac{f'}{g}-\frac{fg'}{g^2} = \frac{f'g-g'f}{g^2}$$
+
+</details>
 
 ### Partial derivatives
 
+A function can depend on several variables $f(x,y,z,...)$. In that case, we can define the partial derivative with respect to $x$ as
+
+$$\frac{\partial f}{\partial x}$$
+
+which consist of derivating with respect to $x$ and treating all the other variables ($y,z...$) as if they where constants. The same rules for the derivative discussed above apply identically to compute the partial derivatives.
+
+One can obtain the total derivative from the partial derivatives, using the chain rule in order to explicit all the possible dependence in $x$ of the other variables as
+
+$$\frac{\text{d} f}{\text{d} x}=\frac{\partial f}{\partial x} + \frac{\partial f}{\partial y}\frac{\partial y}{\partial x}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial x} + ... $$
+
 ### Differentials
 
+$\text{d}f$, the differential of $f$ is a small variation of $f$. $f(x,y,z)$
+
+$$\boxed{\text{d}f = \frac{\partial f}{\partial x}\text{d}x  + \frac{\partial f}{\partial y}\text{d}y + \frac{\partial f}{\partial z}\text{d}z + ... }$$
+
 ## Integrals
+
+$$ \boxed{I = \int_{x_A}^{x_B} f(x) \text{d}x} $$
+
+
+$$ f(x_B)-f(x_A) = \int_A^B f'(x) \text{d}x $$
+
 
 ### Illustration: getting position from velocity 
 
