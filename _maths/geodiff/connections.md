@@ -289,9 +289,67 @@ Hence, affine connections are just a special case of Koszul connections defined 
 
 ## Connection on a principal bundle (Ehresman connection)
 
-$$\boxed{T_pP = H_pP+ V_pP}$$
+Let $P$ be a principal bundle $P\xrightarrow{\pi} M$ with structural group $G$. For all the discussion that will follow, it is useful to think of $P$ as the bundle of all the possible frames of a vector space at every point of $M$. Each frame is connected to another by a transformation of the Lie group $G$. For the tangent bundle, $P=LM$ is the set of all the bases $e_\mu$ on which the vectors can be expressed, linked to one another by transformations of the group $G={\rm GL}(n)$. Locally, a point $p=(e,x)\in P$ is a set $e$ above a point $x\in M$. 
 
+Let $\mathfrak{g}$ be the Lie algebra of $G$. Let $T_pP$ be the tangent space of $P$ at $p$. The tangent vectors $X_p\in T_pP$ can be thought as infinitesimal frame transformations. The projection map $\pi: P\to M$, $\pi(p)=x$ gives back the point $x\in M$ to which the frame $e$ is associated. Identically, $\pi$ can be used to obtain a vector $v\in TM$ above $x$ from the vector $X_p \in T_pP$ as $\pi_*(X_p)=v\in TM$ using the pushforward.
+
+<details>
+  <summary>Reminder: pullback and pushforwards</summary>
+
+</details>
+
+Using this map, it is possible to define the vertical subspace $V_pP\subseteq T_pP$ at the point $p$ as
+
+$$
+\begin{aligned}
+V_pP&= {\rm ker}((\pi_*)_p)\\
+&=\{X^\xi\in T_pP \, /\, (\pi_*)_p(X_p)=0\}
+\end{aligned}
+$$
+
+In our "frame bundle" reading, $V_pP$ corresponds to all the frame transformations which are "pure rotations" (vertical motions in the fiber $G$), which are not associated to translation of the frame over $M$. For each $X^\xi\in V_pP$, we can associate an element of the Lie algebra $\xi$ of $\mathfrak{g}=T_eG$ acting on functions on $P$ as
+
+$$
+X^\xi_pf=\frac{\text{d}}{\text{d}t}(f(pe^{t\xi}))\Bigg|_{t=0} = \mathbb{I}(\xi)(f)
+$$
+
+where we defined the map $\mathbb{I}:\mathfrak{g}\to T_pP$, $\xi\to X^\xi_p$.
+
+A *Ehresmann connection* on $P$ at $p$ is the choice of an horizontal subspace $H_p\subset T_pP$ such that
+
+$$\boxed{T_pP = H_pP+ V_pP,}$$
+
+and satisfying $\forall g\in G, p\in P$ and $X_p \in H_pP$: $g_* X_p \in H_{pg}P$, i.e. acting with $g$ on an horizontal vector $X_p$ at the point $p$ gives back an horizontal vector at the point $pg$. Once such a choice is made, every vector $X_p\in T_pP$ can be written as
+
+$$X_p = {\rm Ver}(X_p)+ {\rm Hor}(X_p)$$
+
+with ${\rm Ver}(X_p)\in V_pP$ and ${\rm Hor}(X_p)\in H_pP$. A word of caution here, even if $V_pP$ is given by $\pi$ and does not depend on the connection choice, the value of ${\rm Ver}(X_p)$ and ${\rm Hor}(X_p)$ both depends on the connection choice. 
+
+As such, defining a connection defines the notion of horizontality associated to the translations of frames over $M$ and their parallel transport, by identifying locally points of infinitely close nearby fibers. The notion of verticality being intrinsically defined on $P$ by the group action i.e. the "rotations" of the frames on themselves at a given point of $M$.
+ 
 ## Connection 1-form on a principal bundle (Cartan connection)
+
+A *Cartan connection* is a 1-form valued in $\mathfrak{g}$, $\omega:TP\to \mathfrak{g}$ satisfying
+
+- $\forall p\in P, \omega_p: T_pP\to \mathfrak{g}$ is an isomorphism of vector spaces.
+- $\forall g \in G\,:\, g^*\omega = {\rm Ad}(g^{-1})\omega$.
+- $\forall \xi\in \mathfrak{g}, \omega(X^\xi)=\xi$.
+
+with the adjoint application defined as the action of the group on itself as ${\rm Ad}(g):G\to G, h\to ghg^{-1}$.
+
+From an Ehresmann connection, it is possible to associate a Cartan connection as the $\mathfrak{g}$-valued 1-form satisfying 
+
+- $\omega(X^\xi)=\xi$ si $X^\xi\in V_pP$
+- $\omega(X)=0$ si $X\in H_pP$
+
+
+or by using the application $\mathbb{I}: \mathfrak{g}\to T_pP$, $\mathbb{I}(\xi)\to X_p^\xi$ introduced above:
+
+$$
+\omega_p(X_p) = \mathbb{I}^{-1}({\rm Ver}(X_p))$$
+
+$H_pP$ can be recovered from $\omega$ as $H_pP={\rm ker}(\omega_p)$.
+
 
 ## Connection on a vector bundle inherited from a principal bundle
 
