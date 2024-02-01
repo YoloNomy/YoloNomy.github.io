@@ -62,7 +62,7 @@ $$
 Taking now $w$ to be a basis vector $w=e_\nu=\partial_\nu$, using the shorthand notation $\nabla_{\partial_\mu}=\nabla_\mu$ and considering only the coordinates in the $\partial_\nu$ frame, $\nabla_\mu v^\nu=(\nabla_\mu v)^\nu$:
 
 $$
-\nabla_\mu v^\nu = \partial_\mu v^\nu+\Gamma^\nu_{\,\,\mu\lambda}v^\lambda
+\boxed{\nabla_\mu v^\nu = \partial_\mu v^\nu+\Gamma^\nu_{\,\,\mu\lambda}v^\lambda}
 $$
 
 which is the famous formula for the covariant derivative, often used as a definition in general relativity.
@@ -73,7 +73,7 @@ The Levi-Civita connection, central object of general relativity, is a special c
  
 #### Metric preserving
 
-An affine connection $\nabla$ is said to be *metric preserving* if $\forall v,w,z \in TM$
+An affine connection $\nabla$ is said to be *metric preserving* if $\forall v,w,z \in TM$ if
 
 $$v(g(w,z))=g(\nabla_vw,z)+g(w,\nabla_v z)$$
 
@@ -81,7 +81,7 @@ A metric satisfying this condition preserve the length of the vectors.
 
 #### Torsion free
 
-An affine connection $\nabla$ is said to be *torsion-free* $\forall v,w \in TM$
+An affine connection $\nabla$ is said to be *torsion-free* $\forall v,w \in TM$ if
 
 $$\nabla_vw-\nabla_wv=[v,w]$$
 
@@ -99,6 +99,7 @@ Choosing again a natural frame $e_\mu=\partial_\mu$, we must have $[e_\mu,e_\nu]
 $$[e_\mu,e_\nu](f)=\partial_\mu f\partial_\nu f-\partial_\nu f\partial_\mu f=0$$.
 
 Hence, the torsion-free condition becomes
+
 $$
 \begin{aligned}
 &\nabla_{e_\mu}e_\nu-\nabla_{e_\nu}e_\mu=0\\
@@ -113,11 +114,13 @@ $$
 
 ### Uniqueness and expression in coordinates
 
-The Levi-Civita connection is unique and can be expressed solely in term of the metric and its derivatives as
+The Levi-Civita connection is unique and can be expressed in a natural frame solely in term of the metric and its derivatives as
 
 $$
-\Gamma^\lambda_{\,\,\mu\nu}= \frac{1}{2}g^{\lambda \kappa}(\partial_\mu g_{\nu\kappa} + \partial_{\nu}g_{\mu\kappa}-\partial_\kappa g_{\mu \nu})
+\boxed{\Gamma^\lambda_{\,\,\mu\nu}= \frac{1}{2}g^{\lambda \kappa}(\partial_\mu g_{\nu\kappa} + \partial_{\nu}g_{\mu\kappa}-\partial_\kappa g_{\mu \nu}),}
 $$
+
+which is again a familiar formula for the physicist.
 
 <details>
   <summary>Proof</summary>
@@ -171,6 +174,16 @@ $$
 &=\left(\partial_\tau^2 x^\lambda+ \partial_\tau x^\nu\partial_\tau x^\mu \Gamma^\lambda_{\nu \mu} \right)\partial_\lambda 
 \end{aligned}
 $$
+
+Hence 
+
+$$
+\begin{aligned}
+&\nabla_u u = 0\\
+&\partial_\tau^2 x^\lambda+ \Gamma^\lambda_{\nu \mu}\partial_\tau x^\nu\partial_\tau x^\mu=0\\
+&\frac{\partial^2 x^\lambda}{\partial \tau^2} = - \Gamma^{\lambda}_{\mu \nu}\frac{\partial x^\mu}{\partial \tau}\frac{\partial x^\nu}{\partial \tau}
+\end{aligned}
+$$
 </details>
 
 Torsion does not impact geodesic equations.
@@ -219,6 +232,8 @@ A = A^i_{\mu j} \text{d} x^\mu \otimes e_i \otimes e^j
 $$
 
 ## Connection on a principal bundle (Ehresman connection)
+
+$$\boxed{T_pP = H_pP+ V_pP}$$
 
 ## Connexion 1-form on a principal bundle (Cartan connection)
 
