@@ -7,9 +7,11 @@ nav_order: 5
 
 # Connections
 
-Connections are certainly one of the most important notion of fundamental physics, as they allow to describe all the fundamental interactions that we know so far. These objects are rich, and can be defined in multiple ways. We will try to introduce them gradually here, with an increasing level of abstraction and shed some light on their importance in physics.
+Connections are certainly one of the most important notion of fundamental physics, as they allow to describe all the fundamental interactions that we know so far. These objects are rich, and can be defined in multiple ways. We will try to introduce them gradually here, with an increasing level of abstraction and shed some light on their importance in physics. For an history of the notion of connection, you can also have a look at the french essay here.
 
 ## Affine connections and Levi-Civita's connection
+
+### Definition of the affine connections
 
 Perhaps the most familiar connection for physicists is the so-called "Levi-Civita" connection $\Gamma$, appearing in general relativity. This connection, which can be expressed in term of the metric tensor $g$, can be used to compute the geodesic equations and the curvature of space-time which describes respectively the motion of particles in a gravitational field and the tidal forces due to gravity itself. As we will discuss here $\Gamma$ is the special case of an object called an "affine connection", which is itself a special case of the more general notion of connection. Let us start with rather abstract and formal definitions and try to put some intuition on it in the next sections.
 
@@ -62,17 +64,66 @@ $$
 
 which is the famous formula for the covariant derivative, often used as a definition in general relativity.
 
+### Levi-Civita connection
 
+The Levi-Civita connection, central object of general relativity, is a special case of affine connection. It is the unique metric preserving and torsion free connection. Note that our above definition of an affine connection does not require at all the presence of a metric $g$ on the manifold, while the Levi-Civita connection does.
+ 
+#### metric preserving
 
-## Levi-Civita connection
+$\forall v,w,z \in TM$
 
-### metric preserving
+$$v(g(w,z))=g(\nabla_vw,z)+g(w,\nabla_v z)$$
 
-### Torsion free
+#### Torsion free
+
+$\forall v,w \in TM$
+
+$$\nabla_vw-\nabla_wv=v(w(f))-w(v(f))$$
+
+### Uniqueness and expression in coordinates
+
+The Levi-Civita connection is unique and can be expressed solely in term of the metric and its derivatives as
+
+$$
+\Gamma^\lambda_{\,\,\mu\nu}= \frac{1}{2}g^{\lambda \kappa}(\partial_\mu g_{\nu\kappa} + \partial_{\nu}g_{\mu\kappa}-\partial_\kappa g_{\mu \nu})
+$$
 
 ### The parallel transporter, parallel transport and projectors 
 
 ### Geodesics
+
+Another notion which comes over and over in general relativity, is the notion of geodesic. Particles in a gravitational field follows geodesics of the Levi-Civita connexion.
+
+A curve $\gamma(\tau)$ is sayed to be a geodesic of an affine connexion if it's tangent $u$ vector satisfies 
+
+$$\nabla_u u=0$$
+
+$u$ is then said to be autoparallel.
+
+in each point of the curve. We will see why this definition makes sense later on
+
+$$
+\frac{\partial^2 x^\lambda}{\partial \tau^2} = - \Gamma^{\lambda}_{\mu \nu}\frac{\partial x^\mu}{\partial \tau}\frac{\partial x^\nu}{\partial \tau}
+$$
+
+<details>
+  <summary>Proof</summary>
+
+In a given chart $u = \partial_\tau x^\mu \partial_\mu$ such that 
+
+$$
+\begin{aligned}
+\nabla_u u &= 
+\nabla_{(\partial_\tau x^\nu \partial_\nu)} (\partial_\tau x^\mu \partial_\mu) 
+\\
+&=\partial_\tau x^\nu\nabla_{\partial_\nu} (\partial_\tau x^\mu \partial_\mu) \\
+&=\partial_\tau x^\nu\left(\partial_\nu\partial_\tau x^\mu \partial_\mu + \partial_\tau x^\mu \nabla(\partial_\mu) \right) \\
+&=\partial_\tau x^\nu\left(\partial_\nu\partial_\tau x^\mu \partial_\mu + \partial_\tau x^\mu \Gamma^\lambda_{\nu \mu}\partial_\lambda \right) \\
+&=\partial_\tau^2 x^\mu \partial_\mu + \partial_\tau x^\nu\partial_\tau x^\mu \Gamma^\lambda_{\nu \mu}\partial_\lambda \\
+&=\left(\partial_\tau^2 x^\lambda+ \partial_\tau x^\nu\partial_\tau x^\mu \Gamma^\lambda_{\nu \mu} \right)\partial_\lambda 
+\end{aligned}
+$$
+</details>
 
 ### Levi-Civita as a gauge connexion
 
