@@ -154,8 +154,6 @@ $$\Gamma^\lambda_{\,\,\mu\nu}= \frac{1}{2}g^{\lambda \kappa}(\partial_\mu g_{\nu
 
 </details>
 
-### The parallel transporter, parallel transport and projectors 
-
 ### Geodesics
 
 Another notion which comes over and over in general relativity, is the notion of geodesic. Particles in a gravitational field follows geodesics of the Levi-Civita connexion.
@@ -207,7 +205,7 @@ Geodesics of the Levi-Civita connection are curves which extremalize the length 
 
  $$\mathcal{S}=\int \text{d}s = \int \sqrt{g(u,u)}\text{d}\tau$$
 
-where $u=\gamma'$ is the tangent vector of the curve. In a coordinate frame, the length interval $\text{d}s$ in the above expression takes back the familiar expression used in General relativity:
+where $u=\gamma'$ is the tangent vector of the curve. In a coordinate frame, the length interval $\text{d}s$ in the above expression can be directly linked to the familiar expression used in General relativity:
 
 $$ \text{d}s^2=g_{\mu\nu}\text{d}x^\mu\text{d}x^\nu$$
 
@@ -242,6 +240,8 @@ Extremalizing $\mathcal{S}$ thus correspond to find the path $\gamma(\tau)$ extr
   <summary>Proof</summary>
 
 </details>
+
+### The parallel transporter, parallel transport and projectors 
 
 ### Levi-Civita as a gauge connexion
 
