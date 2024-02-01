@@ -54,7 +54,7 @@ $$
 &=w^\mu\left(\text{d} v^\nu(e_\mu)e_\nu + \nabla_{e_\mu}(e_\nu)\right)  &&\text{Leibniz rule}\\
 &=w^\mu\left(\partial_\mu v^\nu e_\nu + \nabla_{e_\mu}(e_\nu)\right) && \text{d}f=v(f)=v^\mu\partial_\mu f, \text{here $f=v^\nu$ and $v=e_\mu = \partial_\mu$} \\
 &=w^\mu\left(\partial_\mu v^\nu e_\nu  + \Gamma^\lambda_{\,\,\mu \nu}e_\lambda\right)  &&\text{Definition of $\Gamma$}\\
-&= w^\mu\left(\partial_\mu v^\nu + \Gamma^\nu_{\,\,\mu \lambda}\right)e_\nu && \text{Renaming the sommation indices $\lambda \to \nu$}
+&= w^\mu\left(\partial_\mu v^\nu + \Gamma^\nu_{\,\,\mu \lambda}\right)e_\nu && \text{Renaming the summation indices $\lambda \to \nu$}
 \end{aligned}
 $$
 </details>
@@ -83,13 +83,33 @@ A metric satisfying this condition preserve the length of the vectors.
 
 An affine connection $\nabla$ is said to be *torsion-free* $\forall v,w \in TM$
 
-$$\nabla_vw-\nabla_wv=vw-wv$$
+$$\nabla_vw-\nabla_wv=[v,w]$$
 
-Symmetry over the indices:
+where $[v,w]$ is the Lie bracket for vectors, acting on functions as $\[v,w\](f)=v(f)w(f)-w(f)v(f)$.
 
-$$\Gamma^\lambda_{\,\,\mu \nu}=\Gamma^\lambda_{\,\,\mu \nu}$$
+When applying this condition on basis vectors, we find that $\Gamma$ must respect a symmetry condition on its indices:
 
-Does not impact geodesic equations.
+$$\Gamma^\lambda_{\,\,\mu \nu}=\Gamma^\lambda_{\,\,\nu \mu}$$
+
+<details>
+  <summary>Proof</summary>
+
+Choosing again a natural frame $e_\mu=\partial_\mu$, we must have $[e_\mu,e_\nu]=0$ as 
+
+$$[e_\mu,e_\nu](f)=\partial_\mu f\partial_\nu f-\partial_\nu f\partial_\mu f=0$$.
+
+Hence, the torsion-free condition becomes
+$$
+\begin{aligned}
+&\nabla_{e_\mu}e_\nu-\nabla_{e_\nu}e_\mu=0\\
+&\Gamma^{\lambda}_{\,\,\mu\nu}e_\lambda - \Gamma^{\lambda}_{\,\,\nu\mu}e_\lambda=0\\
+&\Gamma^{\lambda}_{\,\,\mu\nu}-\Gamma^{\lambda}_{\,\,\nu\mu}=0\\
+&\Gamma^\lambda_{\,\,\mu \nu}=\Gamma^\lambda_{\,\,\nu \mu}
+\end{aligned}
+$$
+
+</details>
+
 
 ### Uniqueness and expression in coordinates
 
@@ -102,14 +122,16 @@ $$
 <details>
   <summary>Proof</summary>
 
+Consider three vector fields $v,w,z\in TM$. Under the action of the Levi-Civita connection, they must satisfy the six conditions
+
 $$
 \begin{aligned}
-\nabla_wv &=\nabla_{w^\mu e_\mu}(v^\nu e_\nu) \qquad && \text{Vector decomposition in a basis}\\
-&=w^\mu \nabla_{e_\mu}(v^\nu e_\nu)  &&\text{Linearity in the first entry}\\
-&=w^\mu\left(\text{d} v^\nu(e_\mu)e_\nu + \nabla_{e_\mu}(e_\nu)\right)  &&\text{Leibniz rule}\\
-&=w^\mu\left(\partial_\mu v^\nu e_\nu + \nabla_{e_\mu}(e_\nu)\right) && \text{d}f=v(f)=v^\mu\partial_\mu f, \text{here $f=v^\nu$ and $v=e_\mu = \partial_\mu$} \\
-&=w^\mu\left(\partial_\mu v^\nu e_\nu  + \Gamma^\lambda_{\,\,\mu \nu}e_\lambda\right)  &&\text{Definition of $\Gamma$}\\
-&= w^\mu\left(\partial_\mu v^\nu + \Gamma^\nu_{\,\,\mu \lambda}\right)e_\nu && \text{Renaming the sommation indices $\lambda \to \nu$}
+&v(g(w,z))=g(\nabla_vw,z)+g(w,\nabla_v z)\\
+&w(g(z,v))=g(\nabla_wz,v)+g(z,\nabla_w v)\\
+&z(g(v,w))=g(\nabla_zv,w)+g(v,\nabla_z w)\\
+&\nabla_vw-\nabla_wv=[v,w]\\
+&\nabla_wz-\nabla_zw=[w,z]\\
+&\nabla_zv-\nabla_vz=[z,v]\\
 \end{aligned}
 $$
 </details>
@@ -150,6 +172,8 @@ $$
 \end{aligned}
 $$
 </details>
+
+Torsion does not impact geodesic equations.
 
 Geodesics of the Levi-Civita connection are curves which extremalzie the length on a Riemannian manifold.
 
