@@ -70,15 +70,23 @@ The Levi-Civita connection, central object of general relativity, is a special c
  
 #### metric preserving
 
-$\forall v,w,z \in TM$
+An affine connection $\nabla$ is said to be *metric preserving* if $\forall v,w,z \in TM$
 
 $$v(g(w,z))=g(\nabla_vw,z)+g(w,\nabla_v z)$$
 
+A metric satisfying this condition preserve the length of the vectors.
+
 #### Torsion free
 
-$\forall v,w \in TM$
+An affine connection $\nabla$ is said to be *torsion-free* $\forall v,w \in TM$
 
-$$\nabla_vw-\nabla_wv=v(w(f))-w(v(f))$$
+$$\nabla_vw-\nabla_wv=vw-wv$$
+
+Symmetry over the indices:
+
+$$\Gamma^\lambda_{\mu \nu}=\Gamma^\lambda_{\mu \nu}$$
+
+Does not impact geodesic equations.
 
 ### Uniqueness and expression in coordinates
 
@@ -94,13 +102,13 @@ $$
 
 Another notion which comes over and over in general relativity, is the notion of geodesic. Particles in a gravitational field follows geodesics of the Levi-Civita connexion.
 
-A curve $\gamma(\tau)$ is sayed to be a geodesic of an affine connexion if it's tangent $u$ vector satisfies 
+A curve $\gamma(\tau)$ is sayed to be a geodesic of an affine connexion if it's tangent $u$ vector always satisfies 
 
 $$\nabla_u u=0$$
 
 $u$ is then said to be autoparallel.
 
-in each point of the curve. We will see why this definition makes sense later on
+With this definition, in a given coordinate chart $x^\mu$, we are able to recover the usual geodesic equation
 
 $$
 \frac{\partial^2 x^\lambda}{\partial \tau^2} = - \Gamma^{\lambda}_{\mu \nu}\frac{\partial x^\mu}{\partial \tau}\frac{\partial x^\nu}{\partial \tau}
