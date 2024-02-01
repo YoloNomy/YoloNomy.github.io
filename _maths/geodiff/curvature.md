@@ -10,3 +10,8 @@ nav_order: 5
 ## Covariant exterior derivative
 
 $$ d^{\nabla}s(v)=\nabla_v(s)$$
+
+
+$$ F = (d^{\nabla})^2$$
+
+$$ F=D\omega$$

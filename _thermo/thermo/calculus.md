@@ -126,6 +126,8 @@ From this, we are able to derive the following relations:
 
 Try to rederive the examples to see if you understand them!
 
+Combining all these rules, you can also find the expression for the derivative of a ratio as:
+
 $$ \boxed{\left(\frac{f}{g}\right)' = \frac{f'g - g'f}{g^2}} $$
 
 <details>
@@ -164,18 +166,49 @@ $$\frac{\text{d} f}{\text{d} x}=\frac{\partial f}{\partial x} + \frac{\partial f
 
 ### Differentials
 
-$\text{d}f$, the differential of $f$ is a small variation of $f$. $f(x,y,z)$
+The quantity $\text{d}f$ is called the differential of $f$ and represents a small variation of $f(x,y,z,...)$ when all its variable are changed by a small amount $\text{d}x$,$\text{d}y$,$\text{d}z$...
+It is expressed with the partial derivatives as 
 
 $$\boxed{\text{d}f = \frac{\partial f}{\partial x}\text{d}x  + \frac{\partial f}{\partial y}\text{d}y + \frac{\partial f}{\partial z}\text{d}z + ... }$$
 
 ## Integrals
 
+Another critical operation is given by $integrals$ of functions. They are noted as such 
+
 $$ \boxed{I = \int_{x_A}^{x_B} f(x) \text{d}x} $$
 
+They are a bit harder to compute and to get familiar with, but it will soon become a second nature through examples!
+Here, you should think that "$I$ is the "sum of the function $f(x)$ between the values $x_A$ and $x_B$". Indeed the symbol $\int$ represent as "continuous" summation and $\text{d}x$ is the differential of $x$, hence it is a small variation of $x$. We will try to clarify what we mean by that in the next section.
 
-$$ f(x_B)-f(x_A) = \int_A^B f'(x) \text{d}x $$
+Another import aspect of integrals, is that they are the "reverse" operation of the derivative:
+
+$$ \int_{x_A}^{x_B} f'(x) \text{d}x = f(x_B)-f(x_A) $$
 
 
-### Illustration: getting position from velocity 
+### Illustration: back to the metal bar 
+
+Integrals alows to compute the total change of a quantity between two points, from knowing the value of its rate of change. 
+
+Going back to the metal bar example, imagine that you know only the value of $\frac{\text{d}T}{\text{d}x}$, that is, you know how much the temperature change at every point of the metal bar. Now imagine that, from this, you want to know the difference of temperature between two points $x_A$ and $x_B$, you will obtain it from the integral
+
+$$\Delta T = T_B - T_A = \int_{x_A}^{x_B} \frac{\text{d}T}{\text{d}x}\text{d}x $$
+
+This means that, the total change of temperature $\Delta T$ is obtained by summing the value of the rate of change of the temperature $\frac{\text{d}T}{\text{d}x}$ on each small portion of the metal bar $\text{d}x$ between $x_A$ and $x_B$.
+As we said earlier, the formula for the integrals are "reverse" derivatives. Imagine then that $\frac{\text{d}T}{\text{d}x}=2x$. You migh remember that $(x^2)'=2x$. Hence, you will have
+
+$$\Delta T = T_B - T_A = \int_{x_A}^{x_B} \frac{\text{d}T}{\text{d}x}\text{d}x = \int_{x_A}^{x_B}2x\text{d}x= x_B^2 - x_A^2$$
+
 
 ### Tables of integrals
+
+Just take the table of derivatives and reverse it!
+
+| $f$   |      $\int_{x_A}^{x_B} f(x) \text{d}x$ |
+|----------|:-------------:|
+| $a$ |  $[ax]_{x_A}^{x_B}$ |
+| $x^n$ |  $[\frac{x^{n+1}}{n+1}]_{x_A}^{x_B}$ |
+| $\cos(x)$ | $[\sin(x)]_{x_A}^{x_B}$ |
+| $\sin(x)$ | $[-\cos(x)]_{x_A}^{x_B}$ |
+| $e^{x}$ | $[e^{x}]_{x_A}^{x_B}$ |
+| $\frac{1}{x}$ | $[\ln(x)]_{x_A}^{x_B}$ |
+
