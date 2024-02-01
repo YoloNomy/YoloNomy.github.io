@@ -112,9 +112,6 @@ $$
 </details>
 
 
-$$\mathcal{S}=\int \text{d}s =  $$
-
-
 ### Uniqueness and expression in coordinates
 
 The Levi-Civita connection is uniquely determined by the metric $g$ and can be expressed in a natural frame solely in term of the metric and its derivatives as
@@ -154,21 +151,6 @@ $$
 which can be inverted to find
 
 $$\Gamma^\lambda_{\,\,\mu\nu}= \frac{1}{2}g^{\lambda \kappa}(\partial_\mu g_{\nu\kappa} + \partial_{\nu}g_{\mu\kappa}-\partial_\kappa g_{\mu \nu})$$
-
-
-<!-- Consider three vector fields $v,w,z\in TM$. Under the action of the Levi-Civita connection, they must satisfy the six conditions
-
-$$
-\begin{aligned}
-&v(g(w,z))=g(\nabla_vw,z)+g(w,\nabla_v z)\\
-&w(g(z,v))=g(\nabla_wz,v)+g(z,\nabla_w v)\\
-&z(g(v,w))=g(\nabla_zv,w)+g(v,\nabla_z w)\\
-&\nabla_vw-\nabla_wv=[v,w]\\
-&\nabla_wz-\nabla_zw=[w,z]\\
-&\nabla_zv-\nabla_vz=[z,v]\\
-\end{aligned}
-$$
- -->
 
 </details>
 
@@ -221,7 +203,40 @@ $$
 
 Torsion does not impact geodesic equations.
 
-Geodesics of the Levi-Civita connection are curves which extremalzie the length on a Riemannian manifold.
+Geodesics of the Levi-Civita connection are curves which extremalize the length on a Riemannian manifold. Indeed consider the total length $\mathcal{S}$ of a curve $\gamma(\tau)$ relating two points on the manifold defined as
+
+ $$\mathcal{S}=\int \text{d}s = \int \sqrt{g(u,u)}\text{d}\tau$$
+
+where $u=\gamma'$ is the tangent vector of the curve. In a coordinate frame, the length interval $\text{d}s$ in the above expression takes back the familiar expression used in General relativity:
+
+$$ \text{d}s^2=g_{\mu\nu}\text{d}x^\mu\text{d}x^\nu$$
+
+<details>
+  <summary>Proof</summary>
+
+From the above integral:
+
+$$ \text{d}s^2 = g(u,u)\text{d}\tau^2$$
+
+Now, in a local natural frame $u=\partial_\tau x^\mu\partial_\mu$. Hence
+
+$$ 
+\begin{aligned}
+\text{d}s^2 &= g(\partial_\tau x^\mu\partial_\mu,\partial_\tau x^\nu\partial_\nu)\text{d}\tau^2\\
+&= \partial_\tau x^\mu \partial_\tau x^\nu g(\partial_\mu,\partial_\nu)\text{d}\tau^2\\
+&=g_{\mu \nu}\partial_\tau x^\mu \partial_\tau x^\nu \text{d}\tau\text{d}\tau\\
+&=g_{\mu\nu}\text{d}x^\mu\text{d}x^\nu
+\end{aligned}
+$$
+
+where we used the sloppy shortcut
+
+$$\text{d}x^\mu=\partial_\tau x^\mu \text{d}\tau = \frac{\partial x^\mu}{\partial \tau}\text{d}\tau $$
+
+</details>
+
+
+Extremalizing $\mathcal{S}$ thus correspond to find the path $\gamma(\tau)$ extramalizing the metric distance between two points, which is commonly defined as a geodesic curve. We can show that doing this extremalization gives back the geodesic equation above associated with the definition of $\Gamma$ in term of $g$ as the Levi-Civita connection.
 
 <details>
   <summary>Proof</summary>
@@ -258,7 +273,7 @@ $$
 \nabla_vs = v^\mu((\partial_\mu s^i)+A^i_{\mu j}s^j)e_i
 $$
 
-$A$ can be thaught as a $\text{End}(E)$ valued 1-form over $U$: $$A \in \text{End}(E\|_U)\otimes T^*U$$(that is a map $E\times TM \to E$):
+$A$ can be thaught as a $\text{End}(E)$ valued 1-form over $U$: $$A \in \text{End}(E\|_U)\otimes T^*U$$ (that is a map $E\times TM \to E$):
 
 $$
 A = A^i_{\mu j} \text{d} x^\mu \otimes e_i \otimes e^j
