@@ -75,7 +75,7 @@ The Levi-Civita connection, central object of general relativity, is a special c
 
 An affine connection $\nabla$ is said to be *metric preserving* if $\forall v,w,z \in TM$ if
 
-$$v(g(w,z))=g(\nabla_vw,z)+g(w,\nabla_v z)$$
+$$\boxed{v(g(w,z))=g(\nabla_vw,z)+g(w,\nabla_v z)}$$
 
 A metric satisfying this condition preserve the length of the vectors.
 
@@ -83,7 +83,7 @@ A metric satisfying this condition preserve the length of the vectors.
 
 An affine connection $\nabla$ is said to be *torsion-free* $\forall v,w \in TM$ if
 
-$$\nabla_vw-\nabla_wv=[v,w]$$
+$$\boxed{\nabla_vw-\nabla_wv=[v,w]}$$
 
 where $[v,w]$ is the Lie bracket for vectors, acting on functions as $\[v,w\](f)=v(f)w(f)-w(f)v(f)$.
 
@@ -147,7 +147,7 @@ Another notion which comes over and over in general relativity, is the notion of
 
 A curve $\gamma(\tau)$ is sayed to be a geodesic of an affine connexion if it's tangent $u$ vector always satisfies 
 
-$$\nabla_u u=0$$
+$$\boxed{\nabla_u u=0}$$
 
 $u$ is then said to be autoparallel.
 
