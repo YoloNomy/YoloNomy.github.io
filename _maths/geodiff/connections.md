@@ -7,15 +7,18 @@ nav_order: 5
 
 # Connections
 
-Connections are certainly one of the most important notion of fundamental physics, as they allow to describe all the fundamental interactions that we know so far. These objects are rich, and can be defined in multiple ways. We will try to introduce them gradually here, with an increasing level of abstraction and shed some light on their importance in physics. For an history of the notion of connection, you can also have a look at the french essay here.
+Connections are certainly one of the most important notion of fundamental physics, as they allow to describe all the fundamental interactions that we know so far. These objects are rich, and can be defined in multiple ways. We will try to introduce them gradually here, with an increasing level of abstraction and shed some light on their importance in physics. For an history of the notion of connection, you can also have a look at the french essay [here](https://leovacher.github.io/).
+
+Connections are introduced to solve the following major problem: in order to define the derivative of geometrical objects such as vectors or tensors, we should be able compare two such objects living at different points of the manifold, to be able to quantify how much they changed. But there are no immediate way to do so. In principle, two tangent spaces are independent vector spaces, and there are no canonical way to say that two vectors associated to different points are "the same" or "different in such a way" (the same reasoning applies for any fiber on a fiber bundle). Connections hence define an identification between different points in nearby tangent spaces (or fibers). Hence their names: they "connect" different spaces living at different points of a manifold.
 
 ## Affine connections and Levi-Civita's connection
 
 ### Definition of the affine connections
 
-Perhaps the most familiar connection for physicists is the so-called "Levi-Civita" connection $\Gamma$, appearing in general relativity. This connection, which can be expressed in term of the metric tensor $g$, can be used to compute the geodesic equations and the curvature of space-time which describes respectively the motion of particles in a gravitational field and the tidal forces due to gravity itself. As we will discuss here $\Gamma$ is the special case of an object called an "affine connection", which is itself a special case of the more general notion of connection. Let us start with rather abstract and formal definitions and try to put some intuition on it in the next sections.
+Perhaps the most familiar connection for physicists is the so-called "Levi-Civita" connection, appearing in general relativity. This connection, which can be expressed in term of the metric tensor $g$, can be used to compute the geodesic equations and the curvature of space-time which describes respectively the motion of particles in a gravitational field and the tidal forces due to gravity itself. As we will discuss here, this connection is the special case of an object called an "affine connection", which is itself a special case of the more general notion of connection. Let us start with rather abstract and formal definitions and try to put some intuition on it in the next sections.
 
-An affine connection $\gamma$ on a manifold $M$ allows to define the derivation of vector fields $v\in TM$, living on the tangent bundle of a manifold $M$. $\nabla$ is a map which takes two vector fields $v,w\in TM$ and return a vector field $\nabla \to \nabla_wv: TM \times TM\to TM$ (Hence $\nabla \in TM^*\otimes {\rm End}(TM)$). The resulting vector field $\nabla_wv$ is called the covariant derivative of $v$ in the direction $w$.
+An affine connection $\Gamma$ on a manifold $M$ allows to define the derivation of vector fields $v\in TM$, living on the tangent bundle of a manifold $M$. $\nabla$ is a map which takes two vector fields $v,w\in TM$ and return a vector field $\nabla \to \nabla_wv: TM \times TM\to TM$ (Hence $\nabla \in TM^*\otimes {\rm End}(TM)$). The resulting vector field $\nabla_wv$ is called the covariant derivative of $v$ in the direction $w$.
+
 Let $v,w,z \in TM$ be three vector fields, $f\in C^{\infty}(M)$ be a function on $M$ and $\alpha\in\mathbb{R}$ a real number. $\nabla$ is defined as a map satisfying the following properties:
 
 - $\nabla_{fw}v= f\nabla_wv$ 
@@ -68,7 +71,7 @@ which is the famous formula for the covariant derivative, often used as a defini
 
 The Levi-Civita connection, central object of general relativity, is a special case of affine connection. It is the unique metric preserving and torsion free connection. Note that our above definition of an affine connection does not require at all the presence of a metric $g$ on the manifold, while the Levi-Civita connection does.
  
-#### metric preserving
+#### Metric preserving
 
 An affine connection $\nabla$ is said to be *metric preserving* if $\forall v,w,z \in TM$
 
@@ -84,7 +87,7 @@ $$\nabla_vw-\nabla_wv=vw-wv$$
 
 Symmetry over the indices:
 
-$$\Gamma^\lambda_{\mu \nu}=\Gamma^\lambda_{\mu \nu}$$
+$$\Gamma^\lambda_{\,\,\mu \nu}=\Gamma^\lambda_{\,\,\mu \nu}$$
 
 Does not impact geodesic equations.
 
@@ -95,6 +98,21 @@ The Levi-Civita connection is unique and can be expressed solely in term of the 
 $$
 \Gamma^\lambda_{\,\,\mu\nu}= \frac{1}{2}g^{\lambda \kappa}(\partial_\mu g_{\nu\kappa} + \partial_{\nu}g_{\mu\kappa}-\partial_\kappa g_{\mu \nu})
 $$
+
+<details>
+  <summary>Proof</summary>
+
+$$
+\begin{aligned}
+\nabla_wv &=\nabla_{w^\mu e_\mu}(v^\nu e_\nu) \qquad && \text{Vector decomposition in a basis}\\
+&=w^\mu \nabla_{e_\mu}(v^\nu e_\nu)  &&\text{Linearity in the first entry}\\
+&=w^\mu\left(\text{d} v^\nu(e_\mu)e_\nu + \nabla_{e_\mu}(e_\nu)\right)  &&\text{Leibniz rule}\\
+&=w^\mu\left(\partial_\mu v^\nu e_\nu + \nabla_{e_\mu}(e_\nu)\right) && \text{d}f=v(f)=v^\mu\partial_\mu f, \text{here $f=v^\nu$ and $v=e_\mu = \partial_\mu$} \\
+&=w^\mu\left(\partial_\mu v^\nu e_\nu  + \Gamma^\lambda_{\,\,\mu \nu}e_\lambda\right)  &&\text{Definition of $\Gamma$}\\
+&= w^\mu\left(\partial_\mu v^\nu + \Gamma^\nu_{\,\,\mu \lambda}\right)e_\nu && \text{Renaming the sommation indices $\lambda \to \nu$}
+\end{aligned}
+$$
+</details>
 
 ### The parallel transporter, parallel transport and projectors 
 
@@ -131,6 +149,13 @@ $$
 &=\left(\partial_\tau^2 x^\lambda+ \partial_\tau x^\nu\partial_\tau x^\mu \Gamma^\lambda_{\nu \mu} \right)\partial_\lambda 
 \end{aligned}
 $$
+</details>
+
+Geodesics of the Levi-Civita connection are curves which extremalzie the length on a Riemannian manifold.
+
+<details>
+  <summary>Proof</summary>
+
 </details>
 
 ### Levi-Civita as a gauge connexion
