@@ -173,7 +173,7 @@ $$
 <details>
   <summary>Proof</summary>
 
-In a given chart $u = \partial_\tau x^\mu \partial_\mu$ such that 
+In a given chart $u = \partial_\tau x^\mu \partial_\mu$, where $x^\mu(\tau)$ is the coordinate expression of $\gamma(\tau)$, such that 
 
 $$
 \begin{aligned}
@@ -216,7 +216,7 @@ From the above integral:
 
 $$ \text{d}s^2 = g(u,u)\text{d}\tau^2$$
 
-Now, in a local natural frame $u=\partial_\tau x^\mu\partial_\mu$. Hence
+Now, in a local natural frame $u=\partial_\tau x^\mu\partial_\mu$, where $x^\mu(\tau)$ is the coordinate expression of $\gamma(\tau)$. Hence
 
 $$ 
 \begin{aligned}
@@ -227,9 +227,11 @@ $$
 \end{aligned}
 $$
 
-where we used the sloppy shortcut
+where we used the shortcut
 
 $$\text{d}x^\mu=\partial_\tau x^\mu \text{d}\tau = \frac{\partial x^\mu}{\partial \tau}\text{d}\tau $$
+
+correct as here $x$ is not the general coordinate frame but the expression of the coordinates of $\gamma(\tau)$. It hence depends only on $\tau$.
 
 </details>
 
@@ -242,6 +244,10 @@ Extremalizing $\mathcal{S}$ thus correspond to find the path $\gamma(\tau)$ extr
 </details>
 
 ### The parallel transporter, parallel transport and projectors 
+
+Let us now better understand the links between the connections just defined and the standard derivative of vectors.
+
+$$\nabla_u u =\frac{\nabla u}{\text{d} \tau} = P_{\gamma(\tau)}\frac{\text{d}u}{\text{d}\tau}$$
 
 ### Levi-Civita as a gauge connexion
 
@@ -257,29 +263,27 @@ Let $E$ be a $\mathcal{F}$-vector (associated) bundle over $M$. A *connection* $
 - $\nabla_v(s+t)= \nabla_vs + \nabla_vt$  
 - $\nabla_v(fs)= v(f)s + f\nabla_vs$ 
 
-$\forall v,w \in  TM$, $s,t \in \Gamma(E)$, $f\in C^\infty(M)$ and $\alpha \in \mathcal{F}$. The four first properties simply states that $\nabla$ is a linear and distributive map with respect to both of its entry. The last rule is the more interesting, as it generalizes the Leibniz's law of derivatives. As such, defining $\nabla$ allows to define a proper way to do derivations on $E$. We will interpret $\nabla_vs$ as the derivative of the section $s$ in the direction pointed by the vector $v$. In fact, $\nabla_vs$ is called the *covariant derivative* of $s$ in the direction $v$.
+$\forall v,w \in  TM$, $s,t \in \Gamma(E)$, $f\in C^\infty(M)$ and $\alpha \in \mathcal{F}$. As such, defining $\nabla$ allows to define a proper way to do derivations on $E$. We will again interpret $\nabla_vs$ as the derivative of the section $s$ in the direction pointed by the vector $v$. $\nabla_vs$ is again called the *covariant derivative* of $s$ in the direction $v$ and $\nabla$ is sometimes called a *Koszul connection*.
 
-Now, locally, we can choose a basis of the tangent space and of the vector bundle, such that we can write $v=v^\mu\partial_\mu$ and $s=s^ie_i$.
-
-Let $\partial_\mu$ be a basis of $TM$, we use the standard notation: $\nabla_{\mu}=\nabla_{\partial_\mu}$. Let $e_i$ be a local basis of sections of $E$ over $U \subseteq M$. $\nabla_\mu e_j$ is also a section of $E$ and can then be expressed as:
+Let $\partial_\mu$ be a basis of $TM$, we use the standard notation: $\nabla_{\mu}=\nabla_{\partial_\mu}$. Let $e_i$ be a local basis of sections of $E$ over $U \subseteq M$. As $\nabla_\mu e_j$ is also a section of $E$, it can be expressed as:
 
 $$
-\nabla_\mu e_j = A^i_{\mu j}e_i
+\nabla_\mu e_j = A^i_{\,\,\mu j}e_i
 $$ 
 
 $A^i_{\mu j}$ are then the coordinates of $\nabla_\mu e_j$ in the $e_i$ basis. $A$ is called the *vector potential*. Using the properties listed above, we can then express the coordinates of the covariant derivative of any section $s=s^ie_i$ along $v=v^\mu\partial_\mu$ over $U$:
 
 $$
-\nabla_vs = v^\mu((\partial_\mu s^i)+A^i_{\mu j}s^j)e_i
+\nabla_vs = v^\mu(\partial_\mu s^i+A^i_{\,\,\mu j}s^j)e_i
 $$
 
-$A$ can be thaught as a $\text{End}(E)$ valued 1-form over $U$: $$A \in \text{End}(E\|_U)\otimes T^*U$$ (that is a map $E\times TM \to E$):
+$A$ can be thaught as a $\text{End}(E)$ valued 1-form over $U$: $$A \in \text{End}(E\|_U)\otimes T^*U$$ (that is a map $E\times TM \to E$). In a basis, it can be decomposed as
 
 $$
-A = A^i_{\mu j} \text{d} x^\mu \otimes e_i \otimes e^j
+A = A^i_{\,\,\mu j} \text{d} x^\mu \otimes e_i \otimes e^j
 $$
 
-### Spin connection and spinors
+Hence, affine connections are just a special case of Koszul connections defined on the tangent bundle.  
 
 ### Gauge/Yang-Mills fields: gauge invariance
 
@@ -290,6 +294,10 @@ $$\boxed{T_pP = H_pP+ V_pP}$$
 ## Connection 1-form on a principal bundle (Cartan connection)
 
 ## Connection on a vector bundle inherited from a principal bundle
+
+### Spin connection and spinors
+
+### Gauge/Yang-Mills fields: gauge invariance
 
 ### Shortcut: using representations
 
