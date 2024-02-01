@@ -7,7 +7,7 @@ nav_order: 5
 
 # Connections: general relativity and gauge theories
 
-Connections are certainly one of the most important notion of fundamental physics, as they allow to describe all the fundamental interactions that we know so far. These objects are rich, and can be defined in multiple ways. We will try to introduce them gradually here, with an increasing level of abstraction and shed some light on their importance in physics. For an history of the notion of connection, you can also have a look at the french essay [here](https://leovacher.github.io/).
+Connections are certainly one of the most important notion of fundamental physics, as they allow to describe all the fundamental interactions that we know so far. These objects are rich, and can be defined in multiple ways. We will try to introduce them gradually here, with an increasing level of abstraction and shed some light on their importance in physics. For an history of the notion of connection in maths and in physics, you can also have a look at the essay in french available [here](https://leovacher.github.io/).
 
 Connections are introduced to solve the following major problem: in order to define the derivative of geometrical objects such as vectors or tensors, we should be able compare two such objects living at different points of the manifold, to be able to quantify how much they changed. But there are no immediate way to do so. In principle, two tangent spaces are independent vector spaces, and there are no canonical way to say that two vectors associated to different points are "the same" or "different in such a way" (the same reasoning applies between two fibers on a fiber bundle). Connections hence define an identification between different points in nearby tangent spaces (or fibers). Hence their names: they "connect" different spaces living at different points of a manifold.
 
@@ -363,7 +363,7 @@ $H_pP$ can be recovered from $\omega$ as $H_pP={\rm ker}(\omega_p)$.
 
 # Further readings
 
-### For french speaker:
+### For french speakers:
 
 - F. Faure (2022) - [Introduction à la géométrie et la topologie des espaces
 fibrés en physique](https://www-fourier.ujf-grenoble.fr/~faure/enseignement/geometrie_topologie_M2/cours.pdf)
