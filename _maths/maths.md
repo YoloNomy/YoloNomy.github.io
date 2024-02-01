@@ -8,7 +8,7 @@ subtitle: Pure maths over there!
 
 - [Polyhedrons (french)](polyhedron/polyhedron.md)
 
-# Differential geometry
+# Differential geometry for physics
 
-- [Connections](geodiff/connections.md)
-- [Curvature](geodiff/curvature.md)
+- [Connections: general relativity and gauge theories](geodiff/connections.md)
+- [Curvature: general relativity and gauge theories](geodiff/curvature.md)

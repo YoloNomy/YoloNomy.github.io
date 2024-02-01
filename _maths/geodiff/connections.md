@@ -5,7 +5,7 @@ has_children: False
 nav_order: 5
 ---
 
-# Connections
+# Connections: general relativity and gauge theories
 
 Connections are certainly one of the most important notion of fundamental physics, as they allow to describe all the fundamental interactions that we know so far. These objects are rich, and can be defined in multiple ways. We will try to introduce them gradually here, with an increasing level of abstraction and shed some light on their importance in physics. For an history of the notion of connection, you can also have a look at the french essay [here](https://leovacher.github.io/).
 
@@ -112,9 +112,12 @@ $$
 </details>
 
 
+$$\mathcal{S}=\int \text{d}s =  $$
+
+
 ### Uniqueness and expression in coordinates
 
-The Levi-Civita connection is unique and can be expressed in a natural frame solely in term of the metric and its derivatives as
+The Levi-Civita connection is uniquely determined by the metric $g$ and can be expressed in a natural frame solely in term of the metric and its derivatives as
 
 $$
 \boxed{\Gamma^\lambda_{\,\,\mu\nu}= \frac{1}{2}g^{\lambda \kappa}(\partial_\mu g_{\nu\kappa} + \partial_{\nu}g_{\mu\kappa}-\partial_\kappa g_{\mu \nu}),}
@@ -125,7 +128,35 @@ which is again a familiar formula for the physicist.
 <details>
   <summary>Proof</summary>
 
-Consider three vector fields $v,w,z\in TM$. Under the action of the Levi-Civita connection, they must satisfy the six conditions
+Consider again a natural frame $e_\mu$ in which the metric compatibility condition reads
+
+$$\begin{aligned}
+&e_\mu(g(e_\nu,e_\lambda))=g(\nabla_{e_\mu}e_\nu,e_\lambda)+g(e_\nu,\nabla_{e_\mu} e_\lambda)\\
+&\partial_\mu g_{\nu\lambda}= g(\Gamma^\kappa_{\mu\nu}e_\kappa,e_\lambda)+ g(e_\nu,\Gamma^\sigma_{\mu\lambda}e_\sigma)\\
+&\partial_\mu g_{\nu\lambda}= \Gamma^\kappa_{\,\,\mu\nu}g_{\kappa\lambda}+\Gamma^\sigma_{\,\,\mu\lambda} g_{\lambda\sigma}
+\end{aligned}
+$$
+
+From this, and using the symmetry property $\Gamma^\lambda_{\,\,\mu\nu}=\Gamma^\lambda_{\,\,\nu\mu}$, it is possible to derive that:
+
+$$\begin{aligned}
+\partial_\mu g_{\nu\kappa} + \partial_{\nu}g_{\mu\kappa}-\partial_\kappa g_{\mu \nu} &= 
+g_{\lambda \kappa }\Gamma^{\lambda}_{\,\, \mu \nu}
++g_{\nu \lambda }\Gamma^{\lambda}_{\,\, \mu \kappa}
++g_{\lambda \nu }\Gamma^{\lambda}_{\,\, \nu \mu}
+g_{\mu \lambda }\Gamma^{\lambda}_{\,\, \nu \kappa}
+-g_{\lambda \nu }\Gamma^{\lambda}_{\,\, \kappa \mu}
+-g_{\mu \lambda }\Gamma^{\lambda}_{\,\, \kappa \nu}\\
+&=2g_{\lambda \kappa }\Gamma^{\lambda}_{\,\, \mu \nu}
+\end{aligned}
+$$
+
+which can be inverted to find
+
+$$\Gamma^\lambda_{\,\,\mu\nu}= \frac{1}{2}g^{\lambda \kappa}(\partial_\mu g_{\nu\kappa} + \partial_{\nu}g_{\mu\kappa}-\partial_\kappa g_{\mu \nu})$$
+
+
+<!-- Consider three vector fields $v,w,z\in TM$. Under the action of the Levi-Civita connection, they must satisfy the six conditions
 
 $$
 \begin{aligned}
@@ -137,6 +168,8 @@ $$
 &\nabla_zv-\nabla_vz=[z,v]\\
 \end{aligned}
 $$
+ -->
+
 </details>
 
 ### The parallel transporter, parallel transport and projectors 
@@ -199,7 +232,7 @@ Geodesics of the Levi-Civita connection are curves which extremalzie the length 
 
 ## Connection on a vector bundle (Koszul connexion)
 
-Recall here that a vector bundle attaches $E$ a vector space, of dimension $d$ and field $\mathcal{F}\in\{\mathbb{R},\mathbb{C}\}$, at every point of a manifold $M$. A point of $E$ is given locally by a pair $(x,s)$, where $x\in M$ is a point of space-time and $s\in V$ is a vector associated to $x$.  The tangent bundle is hence a special case of vector bundle, associating $\mathbb{R}^d$ to each point of a manifold of dimension $d$.
+Recall here that a vector bundle $E$ attaches a vector space $V$, of dimension $d$ and field $\mathcal{F}\in\{\mathbb{R},\mathbb{C}\}$, at every point of a manifold $M$. A point of $E$ is given locally by a pair $(x,s)$, where $x\in M$ is a point of space-time and $s\in V$ is a vector associated to the point $x\in M$. The tangent bundle is hence a special case of vector bundle, associating $\mathbb{R}^d$ to each point of a manifold of dimension $d$. As such, we can generalize the notion of the affine connection on the tangent bundle to a connection on any vector bundle.
 
 Let $E$ be a $\mathcal{F}$-vector (associated) bundle over $M$. A *connection* $\nabla$ can be defined as a map: $TM \times \Gamma(E) \to\Gamma(E)$, that associate $\nabla_v s \in \Gamma(E)$ to the pair $v \in TM$ and $s \in \Gamma(E)$, obeying the following properties:
 
@@ -231,22 +264,33 @@ $$
 A = A^i_{\mu j} \text{d} x^\mu \otimes e_i \otimes e^j
 $$
 
+### Spin connection and spinors
+
+### Gauge/Yang-Mills fields: gauge invariance
+
 ## Connection on a principal bundle (Ehresman connection)
 
 $$\boxed{T_pP = H_pP+ V_pP}$$
 
-## Connexion 1-form on a principal bundle (Cartan connection)
+## Connection 1-form on a principal bundle (Cartan connection)
 
-## connection inherited from a principal bundle
+## Connection on a vector bundle inherited from a principal bundle
 
-### Simple approach
+### Shortcut: using representations
 
-### Horizontal lift and covariant derivative
+### Longer path: horizontal lift and covariant derivative
 
 # Further readings
 
-- Faure
-- Baez
-- Coqueraux
-- Nakahara
-- Kobayashi Nomizu
+### For french speaker:
+
+- F. Faure (2022) - [Introduction à la géométrie et la topologie des espaces
+fibrés en physique](https://www-fourier.ujf-grenoble.fr/~faure/enseignement/geometrie_topologie_M2/cours.pdf)
+- R. Coqueraux (2016) - [Espaces fibrés et connexions](https://www.cpt.univ-mrs.fr/~coque/EspacesFibresCoquereaux.pdf)
+
+### In english:
+
+- J.C. Baez and J.P. Munian (1994) - Gauge Fields, Knots and Gravity - World Scientific Publishing Company
+- M. Nakahara (2003) - [Geometry topology and physics](http://alpha.sinp.msu.ru/~panov/LibBooks/GRAV/(Graduate_Student_Series_in_Physics)Mikio_Nakahara-Geometry,_Topology_and_Physics,_Second_Edition_(Graduate_Student_Series_in_Physics)-Institute_of_Physics_Publishing(2003).pdf) - IOP
+- T. Frankel (2011) - The Geometry of Physics: An Introduction - Cambridge University Press
+- S. Kobayashi and K. Nomizu (1996) - Foundations of Differential Geometry - John Wiley & Sons
