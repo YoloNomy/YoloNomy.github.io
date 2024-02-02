@@ -235,13 +235,7 @@ correct as here $x$ is not the general coordinate frame but the expression of th
 
 </details>
 
-
-Extremalizing $\mathcal{S}$ thus correspond to find the path $\gamma(\tau)$ extramalizing the metric distance between two points, which is commonly defined as a geodesic curve. We can show that doing this extremalization gives back the geodesic equation above associated with the definition of $\Gamma$ in term of $g$ as the Levi-Civita connection.
-
-<details>
-  <summary>Proof</summary>
-
-</details>
+Extremalizing $\mathcal{S}$ thus correspond to find the path $\gamma(\tau)$ extramalizing the metric distance between two points, which is commonly defined as a geodesic curve. We can show that doing this extremalization gives back the geodesic equation above associated with the definition of $\Gamma$ in term of $g$ as the Levi-Civita connection. Hence, the geodesics of the Levi-Civita connection are curves which extremalize the length in a Riemannian manifold. 
 
 ### The parallel transporter, parallel transport and projectors 
 
@@ -249,7 +243,10 @@ Let us now better understand the links between the connections just defined and 
 
 $$\nabla_u u =\frac{\nabla u}{\text{d} \tau} = P_{\gamma(\tau)}\frac{\text{d}u}{\text{d}\tau}$$
 
-### Levi-Civita as a gauge connexion
+with $P_{\gamma(\tau)}:\mathbb{R}^D\to TM$ the orthogonal projector from the embedding Euclidian space to the tangent space.
+
+### Link between affine connections and gauge connections
+
 
 ## Connection on a vector bundle (Koszul connexion)
 
@@ -303,7 +300,7 @@ Using this map, it is possible to define the vertical subspace $V_pP\subseteq T_
 $$
 \begin{aligned}
 V_pP&= {\rm ker}((\pi_*)_p)\\
-&=\{X^\xi\in T_pP \, /\, (\pi_*)_p(X_p)=0\}
+&=\{X^\xi\in T_pP \, \text{such that}\, (\pi_*)_p(X_p)=0\}
 \end{aligned}
 $$
 
@@ -353,13 +350,17 @@ $H_pP$ can be recovered from $\omega$ as $H_pP={\rm ker}(\omega_p)$.
 
 ## Connection on a vector bundle inherited from a principal bundle
 
-### Spin connection and spinors
-
-### Gauge/Yang-Mills fields: gauge invariance
+Finally, it is possible to use the connections defined above on a principal bundle to define a Koszul connection on a vector bundle.
 
 ### Shortcut: using representations
 
 ### Longer path: horizontal lift and covariant derivative
+
+# Applications in physics
+
+## Spin connection and spinors
+
+## Gauge/Yang-Mills fields: gauge invariance
 
 # Further readings
 
