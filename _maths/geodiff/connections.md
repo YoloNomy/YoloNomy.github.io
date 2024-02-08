@@ -243,11 +243,11 @@ Extremalizing $\mathcal{S}$ thus correspond to find the path $\gamma(\tau)$ extr
 
 Let us now better understand the links between the connections just defined and the standard derivative of vectors.
 
-In 1917, Levi-Civita understood that, assuming that it was always possible to embed a manifold $M_d$ of dimension $d$ in a larger Euclidian space $\mathbb{R}^D$ of dimension $D>d$, the covariant derivative could be expressed as
+In 1917, Levi-Civita understood that, assuming that it was always possible to embed a manifold $M_d$ of dimension $d$ in a larger Euclidian space $\mathbb{R}^D$ of dimension $D>d$, the covariant derivative of a vector $v$ along a curve $\gamma(\tau)$ could be expressed as
 
-$$\nabla = P_x \text{d}$$
+$$\nabla_{\gamma'}v = P_{\gamma(\tau)}\frac{\text{d}v}{\text{d}\tau}$$
 
-Where $P_x$ is the orthogonal projector $P_x: (\mathbb{R}^D)_x\to (TM_d)_x$ which takes a vector in the larger Euclidian space $\mathbb{R}^D$ and project it perpendicularly with the Euclidian dot product on the tangent space of the manifold $M_d$.
+where $\gamma'$ is the tangent vector to the curve and $P_x$ is the orthogonal projector $P_x: (\mathbb{R}^D)_x\to (TM_d)_x$ which takes a vector in the larger Euclidian space $\mathbb{R}^D$ and project it perpendicularly with the Euclidian dot product on the tangent space of the manifold $M_d$.
 
 **add drawing**
 
@@ -255,9 +255,37 @@ The term appearing in the geodesic equation thus becomes
 
 $$\nabla_u u =\frac{\nabla u}{\text{d} \tau} = P_{\gamma(\tau)}\frac{\text{d}u}{\text{d}\tau}$$
 
-with $P_{\gamma(\tau)}:\mathbb{R}^D\to TM$ the orthogonal projector from the embedding Euclidian space to the tangent space.
+Hence, $\nabla_wv$ states how a vector $v$ can be transported in the direction given by $w$ as "parallel" as possible, without inducing any spurious rotation to it. We see here that $\nabla$ actually *defines* the notion of parallelism and horizontality on a manifold $M_d$ by stating how to transport a vector horizontally.
 
-(Marsh 2016) (Faure 2021)
+We can now show that the torsion free and metric preserving properties of $\nabla$ are direct consequences of the definition given above.
+
+<details>
+  <summary>Proof</summary>
+
+$$
+\begin{aligned}
+g(\nabla_{\gamma'(\tau)} w,z)+g(w,\nabla_{\gamma'(\tau)}z)&=g(P_{\gamma} \frac{\text{d}w}{\text{d}\tau},z)+g(w,P_{\gamma}\frac{\text{d}z}{\text{d}\tau})
+\end{aligned}
+$$
+
+Choosing a local chart, $\gamma'=\partial_\tau x^\mu \partial_\mu$
+and $g(w,z)=g_{\alpha\beta}w^\alpha z^\beta$ hence
+
+$$
+\begin{aligned}
+\gamma'(g(w,z))&= \partial_\tau x^\mu \partial_\mu(g_{\alpha\beta}w^\alpha z^\beta)\\
+&=
+\end{aligned}
+$$
+
+</details>
+
+For multiple illustrations on how the Levi-Civita connection acts on surfaces as well as examples in physics, see [Faure 2022](https://www-fourier.ujf-grenoble.fr/~faure/enseignement/geometrie_topologie_M2/cours.pdf).
+
+The parallel transporter $\Pi_\gamma$ (Marsh 2016).
+
+$$\nabla_wv = \lim_{\epsilon \to 0}\left(\frac{v_{p+\epsilon v} - \Pi_{\gamma} v_p}{\epsilon}\right)$$
+
 
 ### Link between affine connections and gauge connections
 

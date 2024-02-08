@@ -28,7 +28,9 @@ In classical thermodynamics, a system is caracterized by the mesurable quantitie
 
 As we will further discuss later, for the typical case of a gas in a box, pressure can be interpreted as the transfer of momentum when particles hit the walls, temperature as the kinetic energy of the particles. However, thermodyanmics intend to be able to treat very general systems, far beyond the simple examples of gases.
 
-The whole goal of thermodynamics is then to predict the evolution of these variables and understand how they are related to one another. The consequences can be gigantic, especially regarding applications, as this understanding can be used to build machines as motors or fridges!
+The data of all these variables at a given time, is simply called the *state* of the system.
+
+The whole goal of thermodynamics is then to predict the evolution of these variables and understand how they are related to one another. This understanding can lead to a wide range of applications and can be used to build machines as motors or fridges aswell as finding the temperature inside of the Sun!
 
 State variables can be ranked in two categories: the *extensive* ones and the *intensive* ones.
  
@@ -51,6 +53,6 @@ A typical exemple of equation of state, that you will see over and over again, i
 
 $$ PV = n\mathcal{R}T $$
 
-As we will see, this equation describes with a great accuracy the behavior of gases in "normal" conditions.
+As we will see, this equation describes with a great accuracy the behavior of gases as we can find them on earth.
 
 
