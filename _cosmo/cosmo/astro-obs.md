@@ -20,15 +20,7 @@ You might come up with this idea: their brightness! Indeed, all the stars are no
 
 With a bit of experience, you might also come with something else: their colors! Indeed, even if it's not always easy to see, all stars does not have the same colors. Some are pretty reds, some blue and some more yellow. Now what could this possibly tell us? Turns out that the color of a star is directly related to its temperature, as we will further discuss here.
 
-As we will see in the next class, brightness and temperature are ultimately linked with two properties of stars: their masses and how evolved they are.
-
-## Brightness: Magnitudes
-
-## Infering the distances
-
-A star is characterized by its intrinsic luminosity $L$, which is how much energy it is releasing into space per unit of time.
-
-$$ L_d = \frac{L}{4\pi d^2}$$
+As we will see in the next class, temperature and brightness are ultimately linked with two properties of stars: their masses and how evolved they are.
 
 ## Colors: Temperatures
 
@@ -88,6 +80,29 @@ $$\int \text{d}S = 4\pi R^2 $$
 
 </details>
 
+## Brightness: Magnitudes
+
+The brightness of a star, as seen in the sky, is called its *apparent magnitude* $m$. It is defined as
+
+$$m = -2.5 \log\left(\frac{F}{F_0}\right)$$
+
+where $F$ is the received flux of the star.
+
+*absolute magnitude* $M$
+
+$$ \mu = M-m$$
+
+## Infering the distances
+
+A star is characterized by its intrinsic luminosity $L$, which is how much energy it is releasing into space per unit of time.
+
+$$ L_d = \frac{L}{4\pi d^2}$$
+
+Hence, as stated earlier, the brightness of a star is indeed linked to its radius, its temperature as well as it's distance to us
+
+$$ L_d = \frac{4\pi R^2 \sigma T^4}{4\pi d^2} + C$$
+
+For distances on larger (cosmological) scales, have a look [here](../distances/).
 
 
 ## The Hertzprung-Russel diagramms

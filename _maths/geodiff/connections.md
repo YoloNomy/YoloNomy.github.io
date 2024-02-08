@@ -11,6 +11,8 @@ Connections are certainly one of the most important notion of fundamental physic
 
 Connections are introduced to solve the following major problem: in order to define the derivative of geometrical objects such as vectors or tensors, we should be able compare two such objects living at different points of the manifold, to be able to quantify how much they changed. But there are no immediate way to do so. In principle, two tangent spaces are independent vector spaces, and there are no canonical way to say that two vectors associated to different points are "the same" or "different in such a way" (the same reasoning applies between two fibers on a fiber bundle). Connections hence define an identification between different points in nearby tangent spaces (or fibers). Hence their names: they "connect" different spaces living at different points of a manifold.
 
+**add drawing**
+
 ## Affine connections and Levi-Civita's connection
 
 ### Definition of the affine connections
@@ -158,7 +160,7 @@ $$\Gamma^\lambda_{\,\,\mu\nu}= \frac{1}{2}g^{\lambda \kappa}(\partial_\mu g_{\nu
 
 Another notion which comes over and over in general relativity, is the notion of geodesic. Particles in a gravitational field follows geodesics of the Levi-Civita connexion.
 
-A curve $\gamma(\tau)$ is sayed to be a geodesic of an affine connexion if it's tangent $u$ vector always satisfies 
+A curve $\gamma(\tau)$ is sayed to be a geodesic of an affine connexion if its tangent $u$ vector always satisfies 
 
 $$\boxed{\nabla_u u=0}$$
 
@@ -239,12 +241,23 @@ Extremalizing $\mathcal{S}$ thus correspond to find the path $\gamma(\tau)$ extr
 
 ### The parallel transporter, parallel transport and projectors 
 
-(Marsh 2016) (Levi-Civita 2017) (Faure 2021)
 Let us now better understand the links between the connections just defined and the standard derivative of vectors.
+
+In 1917, Levi-Civita understood that, assuming that it was always possible to embed a manifold $M_d$ of dimension $d$ in a larger Euclidian space $\mathbb{R}^D$ of dimension $D>d$, the covariant derivative could be expressed as
+
+$$\nabla = P_x \text{d}$$
+
+Where $P_x$ is the orthogonal projector $P_x: (\mathbb{R}^D)_x\to (TM_d)_x$ which takes a vector in the larger Euclidian space $\mathbb{R}^D$ and project it perpendicularly with the Euclidian dot product on the tangent space of the manifold $M_d$.
+
+**add drawing**
+
+The term appearing in the geodesic equation thus becomes
 
 $$\nabla_u u =\frac{\nabla u}{\text{d} \tau} = P_{\gamma(\tau)}\frac{\text{d}u}{\text{d}\tau}$$
 
 with $P_{\gamma(\tau)}:\mathbb{R}^D\to TM$ the orthogonal projector from the embedding Euclidian space to the tangent space.
+
+(Marsh 2016) (Faure 2021)
 
 ### Link between affine connections and gauge connections
 
