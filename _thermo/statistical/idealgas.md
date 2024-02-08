@@ -85,4 +85,8 @@ $$ E= \frac{3N}{2} k_B T= \frac{3\mathcal{N}}{2}k_B $$
 
 We can use the partition function to associate a probability to a given microstate
 
-$$p_i = \frac{1}{Z}e^{-\beta E_i} $$
+$$p_i = \frac{1}{Z}e^{-\beta E_i}$$
+
+$$p(E)\text{d}E = \frac{1}{Z}e^{-\beta E_i} $$
+
+Single particle 

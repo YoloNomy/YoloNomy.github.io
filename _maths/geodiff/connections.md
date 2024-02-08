@@ -7,7 +7,7 @@ nav_order: 5
 
 # Connections: general relativity and gauge theories
 
-Connections are certainly one of the most important notion of fundamental physics, as they allow to describe all the fundamental interactions that we know so far. These objects are rich, and can be defined in multiple ways. We will try to introduce them gradually here, with an increasing level of abstraction and shed some light on their importance in physics. For an history of the notion of connection in maths and in physics, you can also have a look at the essay in french available [here](https://leovacher.github.io/).
+Connections are certainly one of the most important notion of fundamental physics, as they allow to describe all the fundamental interactions that we know so far. These objects are rich, and can be defined in multiple ways. We will try to introduce them gradually here, with an increasing level of abstraction and shed some light on their importance in physics. For an history of the notion of connection in maths and in physics, you can also have a look at the essay in french available [here](https://leovacher.github.io/connexion-Vacher.pdf).
 
 Connections are introduced to solve the following major problem: in order to define the derivative of geometrical objects such as vectors or tensors, we should be able compare two such objects living at different points of the manifold, to be able to quantify how much they changed. But there are no immediate way to do so. In principle, two tangent spaces are independent vector spaces, and there are no canonical way to say that two vectors associated to different points are "the same" or "different in such a way" (the same reasoning applies between two fibers on a fiber bundle). Connections hence define an identification between different points in nearby tangent spaces (or fibers). Hence their names: they "connect" different spaces living at different points of a manifold.
 
@@ -17,7 +17,7 @@ Connections are introduced to solve the following major problem: in order to def
 
 Perhaps the most familiar connection for physicists is the so-called "Levi-Civita" connection, appearing in general relativity. This connection, which can be expressed in term of the metric tensor $g$, can be used to compute the geodesic equations and the curvature of space-time which describes respectively the motion of particles in a gravitational field and the tidal forces due to gravity itself. As we will discuss here, this connection is the special case of an object called an "affine connection", which is itself a special case of the more general notion of connection. Let us start with rather abstract and formal definitions and try to put some intuition on it in the next sections.
 
-An affine connection $\Gamma$ on a manifold $M$ allows to define the derivation of vector fields $v\in TM$, living on the tangent bundle of a manifold $M$. $\nabla$ is a map which takes two vector fields $v,w\in TM$ and return a vector field $\nabla \to \nabla_wv: TM \times TM\to TM$ (Hence $\nabla \in TM^*\otimes {\rm End}(TM)$). The resulting vector field $\nabla_wv$ is called the covariant derivative of $v$ in the direction $w$.
+An affine connection $\Gamma$ on a manifold $M$ allows to define the derivation of vector fields $v\in TM$, living on the tangent bundle of a manifold $M$. $\nabla$ is a map which takes two vector fields $v,w\in TM$ and return a vector field $\nabla \to \nabla_wv: TM \times TM\to TM$ (Hence $\nabla \in TM^*\otimes \text{ End}(TM)$). The resulting vector field $\nabla_wv$ is called the covariant derivative of $v$ in the direction $w$.
 
 Let $v,w,z \in TM$ be three vector fields, $f\in C^{\infty}(M)$ be a function on $M$ and $\alpha\in\mathbb{R}$ a real number. $\nabla$ is defined as a map satisfying the following properties:
 
@@ -35,7 +35,7 @@ $$
 \nabla_{e_\mu} e_\nu = \Gamma^\lambda_{\,\,\mu \nu}e_\lambda
 $$ 
 
-which define the coefficients $\Gamma^\lambda_{\,\,\mu \nu}$ called the *connection's coefficients* or the *christoffel symbols*.  $\Gamma^\lambda_{\,\,\mu \nu}$ are then the coordinates of the vector $\nabla_\mu e_\nu$ in the $e_\lambda$ basis. Put differently: $\Gamma^\lambda_{\,\,\mu \nu}$ express how to derivate the vector basis $e_\nu$ in the direction $e_\mu$.
+which defines the coefficients $\Gamma^\lambda_{\,\,\mu \nu}$ called the *connection's coefficients* or the *christoffel symbols*.  $\Gamma^\lambda_{\,\,\mu \nu}$ are then the coordinates of the vector $\nabla_\mu e_\nu$ in the $e_\lambda$ basis. Put differently: $\Gamma^\lambda_{\,\,\mu \nu}$ express how to derivate the vector basis $e_\nu$ in the direction $e_\mu$.
 
 Using all the properties above, we can express $\nabla_wv$ in a basis as
 
@@ -239,6 +239,7 @@ Extremalizing $\mathcal{S}$ thus correspond to find the path $\gamma(\tau)$ extr
 
 ### The parallel transporter, parallel transport and projectors 
 
+(Marsh 2016) (Levi-Civita 2017) (Faure 2021)
 Let us now better understand the links between the connections just defined and the standard derivative of vectors.
 
 $$\nabla_u u =\frac{\nabla u}{\text{d} \tau} = P_{\gamma(\tau)}\frac{\text{d}u}{\text{d}\tau}$$
@@ -280,13 +281,14 @@ $$
 A = A^i_{\,\,\mu j} \text{d} x^\mu \otimes e_i \otimes e^j
 $$
 
-Hence, affine connections are just a special case of Koszul connections defined on the tangent bundle.  
+Hence, affine connections are just a special case of Koszul connections defined on the tangent bundle. 
+
 
 ### Gauge/Yang-Mills fields: gauge invariance
 
 ## Connection on a principal bundle (Ehresman connection)
 
-Let $P$ be a principal bundle $P\xrightarrow{\pi} M$ with structural group $G$. For all the discussion that will follow, it is useful to think of $P$ as the bundle of all the possible frames of a vector space at every point of $M$. Each frame is connected to another by a transformation of the Lie group $G$. For the tangent bundle, $P=LM$ is the set of all the bases $e_\mu$ on which the vectors can be expressed, linked to one another by transformations of the group $G={\rm GL}(n)$. Locally, a point $p=(e,x)\in P$ is a set $e$ above a point $x\in M$. 
+Let $P$ be a principal bundle $P\xrightarrow{\pi} M$ with structural group $G$. For all the discussion that will follow, it is useful to think of $P$ as the bundle of all the possible frames of a vector space at every point of $M$. Each frame is connected to another by a transformation of the Lie group $G$. For the tangent bundle, $P=LM$ is the set of all the bases $e_\mu$ on which the vectors can be expressed, linked to one another by transformations of the group $G=\text{ GL}(n)$. Locally, a point $p=(e,x)\in P$ is a set $e$ above a point $x\in M$. 
 
 Let $\mathfrak{g}$ be the Lie algebra of $G$. Let $T_pP$ be the tangent space of $P$ at $p$. The tangent vectors $X_p\in T_pP$ can be thought as infinitesimal frame transformations. The projection map $\pi: P\to M$, $\pi(p)=x$ gives back the point $x\in M$ to which the frame $e$ is associated. Identically, $\pi$ can be used to obtain a vector $v\in TM$ above $x$ from the vector $X_p \in T_pP$ as $\pi_*(X_p)=v\in TM$ using the pushforward.
 
@@ -299,7 +301,7 @@ Using this map, it is possible to define the vertical subspace $V_pP\subseteq T_
 
 $$
 \begin{aligned}
-V_pP&= {\rm ker}((\pi_*)_p)\\
+V_pP&= \text{ ker}((\pi_*)_p)\\
 &=\{X^\xi\in T_pP \, \text{such that}\, (\pi_*)_p(X_p)=0\}
 \end{aligned}
 $$
@@ -318,9 +320,9 @@ $$\boxed{T_pP = H_pP+ V_pP,}$$
 
 and satisfying $\forall g\in G, p\in P$ and $X_p \in H_pP$: $g_* X_p \in H_{pg}P$, i.e. acting with $g$ on an horizontal vector $X_p$ at the point $p$ gives back an horizontal vector at the point $pg$. Once such a choice is made, every vector $X_p\in T_pP$ can be written as
 
-$$X_p = {\rm Ver}(X_p)+ {\rm Hor}(X_p)$$
+$$X_p = \text{ Ver}(X_p)+ \text{ Hor}(X_p)$$
 
-with ${\rm Ver}(X_p)\in V_pP$ and ${\rm Hor}(X_p)\in H_pP$. A word of caution here, even if $V_pP$ is given by $\pi$ and does not depend on the connection choice, the value of ${\rm Ver}(X_p)$ and ${\rm Hor}(X_p)$ both depends on the connection choice. 
+with $\text{ Ver}(X_p)\in V_pP$ and $\text{ Hor}(X_p)\in H_pP$. A word of caution here, even if $V_pP$ is given by $\pi$ and does not depend on the connection choice, the value of $\text{ Ver}(X_p)$ and $\text{ Hor}(X_p)$ both depends on the connection choice. 
 
 As such, defining a connection defines the notion of horizontality associated to the translations of frames over $M$ and their parallel transport, by identifying locally points of infinitely close nearby fibers. The notion of verticality being intrinsically defined on $P$ by the group action i.e. the "rotations" of the frames on themselves at a given point of $M$.
  
@@ -329,10 +331,10 @@ As such, defining a connection defines the notion of horizontality associated to
 A *Cartan connection* is a 1-form valued in $\mathfrak{g}$, $\omega:TP\to \mathfrak{g}$ satisfying
 
 - $\forall p\in P, \omega_p: T_pP\to \mathfrak{g}$ is an isomorphism of vector spaces.
-- $\forall g \in G\,:\, g^*\omega = {\rm Ad}(g^{-1})\omega$.
+- $\forall g \in G\,:\, g^*\omega = \text{ Ad}(g^{-1})\omega$.
 - $\forall \xi\in \mathfrak{g}, \omega(X^\xi)=\xi$.
 
-with the adjoint application defined as the action of the group on itself as ${\rm Ad}(g):G\to G, h\to ghg^{-1}$.
+with the adjoint application defined as the action of the group on itself as $\text{ Ad}(g):G\to G, h\to ghg^{-1}$.
 
 From an Ehresmann connection, it is possible to associate a Cartan connection as the $\mathfrak{g}$-valued 1-form satisfying 
 
@@ -343,9 +345,9 @@ From an Ehresmann connection, it is possible to associate a Cartan connection as
 or by using the application $\mathbb{I}: \mathfrak{g}\to T_pP$, $\mathbb{I}(\xi)\to X_p^\xi$ introduced above:
 
 $$
-\omega_p(X_p) = \mathbb{I}^{-1}({\rm Ver}(X_p))$$
+\omega_p(X_p) = \mathbb{I}^{-1}(\text{ Ver}(X_p))$$
 
-$H_pP$ can be recovered from $\omega$ as $H_pP={\rm ker}(\omega_p)$.
+$H_pP$ can be recovered from $\omega$ as $H_pP=\text{ ker}(\omega_p)$.
 
 
 ## Connection on a vector bundle inherited from a principal bundle
@@ -354,13 +356,48 @@ Finally, it is possible to use the connections defined above on a principal bund
 
 ### Shortcut: using representations
 
+
+As we saw earlier, a choice of Ehresmann connection on a principal bundle $P$ can be expressed by the given of a Cartan connection $\omega \in \Omega^1(P)\times \mathfrak{g}$. Let us now see how $\omega$ can be used to define a Koszul connection on a vector bundle $E$ associated to $P$.
+
+Let $E$ be an associated vector bundle of fiber $V$ associated to $P$ ($E=P\times_\rho V\to M$). $E$ associate in each point of $M$ a vector space $V$ (fibre) such that at each point of $M$, $u\in E$ is defined locally by the pair $u=(e,\psi) \in P \times V$ satisfying the equivalence relation $(e,\psi) \sim (eg,\rho(g^{-1})\psi)$, where $\rho$ is a choice of representation of $G$ acting on $V$.
+
+Let $e: U \to P$ be a local section of $P$ (such that $\pi \circ e = \text{ Id}$).  $e$ can be thought as a choice of frames in each point of a region $U \subset M$.
+From $e$, we can project down $\omega$ on $M$ using a pullback by defining $\mathcal{A}=e^*\omega$, that is
+
+$$
+\mathcal{A}(v)= \omega(e_*(v))
+$$
+
+$\mathcal{A}$ is thus a $\mathfrak{g}$ valued 1-form on $M$, expressable in a basis as $\mathcal{A}= \mathcal{A}^\alpha_\mu \text{ d}x^\mu \otimes \xi_\alpha$ (where $\xi_\alpha$ is a generator basis of $\mathfrak{g}$).  
+
+$\mathcal{A}$ will then act on an associated bundle $E$ through the representation $\rho$ as
+
+$$\rho(\mathcal{A})=(\mathcal{A}^\alpha_{\,\,\mu})^i_{\,\,j} \text{ d}x^\mu\otimes \rho(\xi_\alpha)^j_{\,\,i} 
+$$
+
+to build from it a Koszul connection $\nabla$, we can simply impose the relation
+
+$$\nabla_{e_\mu} e_i = e_j \mathcal{A}^j_{\,\, \mu i}
+$$
+
+with $\mathcal{A}^j_{\,\,\mu i}= (\mathcal{A}^\alpha_{\,\,\mu})^i_{\,\,j}\rho(\xi_\alpha)^j_{\,\,i}$. This approach is straightforward but hides part of the geometrical interpretation of how the notion of horizontality on a frame bundle can be inherited to a vector bundle. To do see this more clearly, we will have to dig a little deeper.
+
 ### Longer path: horizontal lift and covariant derivative
+
+We define the operator $D$ on $P$  and generalizing the exterior derivative $\text{d}$ such that it gives forms  $\Omega^{p+1}(P)$ by acting on forms $\Omega^{p}(P)$ as
+
+ $$D\psi(v)=\text{d}\psi(\text{Hor}(v))$$
+
+where $v\in T_pP$ and $\psi \in \Omega^p(P)$.
+
+Now, let $s$ be a section of a vector bundle $s\in \Gamma(E)$. $s$ can be described 
 
 # Applications in physics
 
-## Spin connection and spinors
-
 ## Gauge/Yang-Mills fields: gauge invariance
+
+## Spin connection, spinors and Dirac equation in curved space-time
+
 
 # Further readings
 
