@@ -251,9 +251,9 @@ where $\gamma'$ is the tangent vector to the curve and $P_x$ is the orthogonal p
 
 **add drawing**
 
-The term appearing in the geodesic equation thus becomes
+The geodesic equation thus becomes
 
-$$\nabla_u u =\frac{\nabla u}{\text{d} \tau} = P_{\gamma(\tau)}\frac{\text{d}u}{\text{d}\tau}$$
+$$\nabla_u u = P_{\gamma(\tau)}\frac{\text{d}u}{\text{d}\tau}=0$$
 
 Hence, $\nabla_wv$ states how a vector $v$ can be transported in the direction given by $w$ as "parallel" as possible, without inducing any spurious rotation to it. We see here that $\nabla$ actually *defines* the notion of parallelism and horizontality on a manifold $M_d$ by stating how to transport a vector horizontally.
 
@@ -262,25 +262,48 @@ We can now show that the torsion free and metric preserving properties of $\nabl
 <details>
   <summary>Proof</summary>
 
-$$
-\begin{aligned}
-g(\nabla_{\gamma'(\tau)} w,z)+g(w,\nabla_{\gamma'(\tau)}z)&=g(P_{\gamma} \frac{\text{d}w}{\text{d}\tau},z)+g(w,P_{\gamma}\frac{\text{d}z}{\text{d}\tau})
-\end{aligned}
-$$
-
-Choosing a local chart, $\gamma'=\partial_\tau x^\mu \partial_\mu$
-and $g(w,z)=g_{\alpha\beta}w^\alpha z^\beta$ hence
+First, looking at $w,z\in \mathbb{R}^D$ 
 
 $$
 \begin{aligned}
-\gamma'(g(w,z))&= \partial_\tau x^\mu \partial_\mu(g_{\alpha\beta}w^\alpha z^\beta)\\
-&=
+\gamma'(\delta(w,z))&= \frac{\text{d}}{\text{d}\tau}(\delta(w,z))\\
+&= \delta\left(\frac{\text{d} w}{\text{d}\tau},z\right)+ \delta\left(w,\frac{\text{d}z}{\text{d}\tau}\right)
 \end{aligned}
 $$
+
+where $\delta$ is the Euclidian metric in $\mathbb{R}^D$.
+
+If you don't see it immediately, just write $\delta(v,w)$ in a local chart and use Leibniz rule for derivatives:
+
+$$\begin{aligned}
+\frac{\text{d}}{\text{d}\tau}(\delta(w,z))&= \frac{\text{d}}{\text{d}\tau}\left(\delta_{\alpha\beta}w^\alpha z^\beta\right)\\
+&= \frac{\text{d}\delta_{\alpha\beta}}{\text{d}\tau}w^\alpha z^\beta + \delta_{\alpha\beta}\frac{\text{d}v^{\alpha}}{\text{d}\tau} w^\beta +\delta_{\alpha\beta}w^\alpha \frac{\text{d}z^{\beta}}{\text{d}\tau}   \\
+\end{aligned}
+$$
+
+As the Euclidian metric $\delta$ does not change in the Euclidian space, the first term is zero and the two last terms give the equation above.
+
+We now use the projector $P_\gamma$ to write the push down this equation on $M_d$. The metric $g$ on $M_d$ is the induced metric from $\delta$ as $g(v_\tau,w_\tau)=P_\gamma \delta(v,w)$, where we distinguish here a vector $v\in \mathbb{R}^D$ from its projection $v_\tau=P_\gamma v$.
+Hence we have
+
+$$
+\begin{aligned}
+\gamma'(g(w_\tau,z_\tau))&= P_\gamma(\gamma'(\delta(w,z))\\
+&= P_\gamma\left(g\left(\frac{\text{d} w}{\text{d}\tau},z\right)+ g\left(w,\frac{\text{d}z}{\text{d}\tau}\right)\right)\\
+&= g\left(\nabla_{\gamma'}w_\tau,z_\tau\right)+ g\left(w_\tau, \nabla_{\gamma'}z\right)
+\end{aligned}
+$$
+
+as wanted.
 
 </details>
 
-For multiple illustrations on how the Levi-Civita connection acts on surfaces as well as examples in physics, see [Faure 2022](https://www-fourier.ujf-grenoble.fr/~faure/enseignement/geometrie_topologie_M2/cours.pdf).
+$$ \frac{\text{d}}{\text{d}\tau}g(v,w)=0$$
+
+Angle between vector is preserved.
+
+For multiple illustrations on how 
+the Levi-Civita connection acts on surfaces as well as examples in physics, see [Faure 2022](https://www-fourier.ujf-grenoble.fr/~faure/enseignement/geometrie_topologie_M2/cours.pdf).
 
 The parallel transporter $\Pi_\gamma$ (Marsh 2016).
 
