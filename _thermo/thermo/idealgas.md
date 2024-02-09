@@ -21,11 +21,12 @@ All these equations should be understood as verified experimental relationships 
 
 ## Laplace law
 
-An ideal gas satisfies the Laplace law: during an adiabatic transformation
+An ideal gas satisfies the relation
 
 $$ \boxed{PV^\gamma=\text{cst}}$$
 
-where $\gamma=C_P/C_V$ is called the adiabatic index.
+during an adiabatic ($Q=0$) transformation at constant $n$.
+Here $\gamma=C_P/C_V$ is called the adiabatic index. This relation is known as the Laplace law.
 
 <details>
   <summary>Proof</summary>
