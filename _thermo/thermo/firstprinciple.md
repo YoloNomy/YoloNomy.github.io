@@ -14,23 +14,23 @@ In physics, "laws" or "principles" are comparable to "axioms" in mathematics. Th
 The thermodynamic theory that we will study here, is built on three such laws. 
 
 Consider for now a closed system, which can only exchange energy with the exterior.
-The first law of thermodynamics state that, there exist a state function called the *internal energy* $U$ that can be associated to this system. Under a transformation from a state $A$ to $B$, $U$ can change only through two processes as
+The first law of thermodynamics state that, there exist a state function called the *internal energy* $U$ that can be associated to this system. Under a transformation from a state $A$ to a state $B$, $U$ can change only through two processes as
 
 $$\boxed{\Delta U = U_B-U_A= Q+ W}$$
 
-where $Q$ is called a *heat transfer* and $W$ is called the *work*. 
+where $Q$ is called a *heat transfer* and $W$ is called the *work*. $Q$ can be understood as the variations of energy due to the random motion of the particles within the body, as the cool down of a cup of coffee. $W$ is to be understood as a mechanical change of energy, as a system which would be squeezed.
 
 This law can be expressed using the differential of the state function $U$ as
 
 $$\boxed{\text{d}U = \delta Q + \delta W}$$
 
-where
+where $W$ and $Q$ can then be computed by integration (sum) of the small $\delta Q$ and $\delta W$ between the states $A$ and $B$, that is
 
-$$ Q= \int \delta Q$$
+$$ Q= \int_A^B \delta Q$$
 
 and 
 
-$$ W = \int \delta W$$
+$$ W = \int_A^B \delta W$$
 
 ## The difference between $d$ and $\delta$
 
@@ -40,10 +40,18 @@ $Q$ and $W$ are not state functions from which you can take the differential!
 
 The bank account analogy: 
 
+
+# Various types of transformations
+
+- compression
+- isobaric 
+- adiabatic
+- isochore
+- isothermal
+
 ## Work
 
 $$\delta W = -P {\rm d}V$$
-
 
 $$ \delta W = \vec{F}\cdot\text{d}\vec{\ell}$$
 
@@ -52,15 +60,47 @@ $$ \delta W = \vec{F}\cdot\text{d}\vec{\ell}$$
 
 $$P=-\frac{F}{S}=\frac{F \text{d}x}{\text{d}x\text{d}y\text{d}z}= $$
 
-$$ {\rm d}V= {\text{d}x\text{d}y\text{d}z $$
+$$ {\rm d}V= \text{d}x\text{d}y\text{d}z $$
 
 hence 
 $$ \delta W = \vec{F}\cdot\text{d}\vec{x}$$
 
 as in mechanics.
+
 </details>
 
 - volume increase --> $\text{d}U =\delta W<0$, loss of energy
 - volume decrease --> $\text{d}U =\delta W>0$ gain of energy
 
+### Application: Work for an isothermal transformation of a perfect gas
+
+Now consider
+
+$$ PV=nRT $$
+
+Try to show that 
+
+$$W= n\mathcal{R}\ln\left(\frac{V_B}{V_A}\right)$$
+
+<details>
+  <summary>Solution</summary>
+
+$$ \begin{aligned}
+W &= -\int_A^B P \text{d}V\qquad \qquad && \text{definition of work}\\
+&= -\int_A^B \frac{nRT}{V} \text{d}V && \text{ideal gas law}\\
+&= - nRT\int_A^B \frac{1}{V} \text{d}V && \text{isothermal transformation}\\
+&= - nRT [\ln(V)]^B_A && \text{integral of $1/x$}\\
+&= - nRT\left(\ln(V_B)-\ln(V_A)\right)\\
+&= nRT\left(\ln(V_A)-\ln(V_B)\right)\\
+&= nRT \ln\left(\frac{V_B}{V_A}\right) && \text{property of log: $\ln(a)-\ln(b)=\ln(a/b)$}
+\end{aligned}
+$$
+
+</details>
+
+
 ## Heat
+
+
+
+

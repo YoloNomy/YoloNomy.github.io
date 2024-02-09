@@ -182,8 +182,9 @@ Here, you should think that "$I$ is the "sum of the function $f(x)$ between the 
 
 Another import aspect of integrals, is that they are the "reverse" operation of the derivative:
 
-$$ \int_{x_A}^{x_B} f'(x) \text{d}x = f(x_B)-f(x_A) $$
+$$ \int_{x_A}^{x_B} f'(x) \text{d}x = [f(x)]_{x_A}^{x_B}= f(x_B)-f(x_A) $$
 
+where the notation $[...]_{x_A}^{x_B}$ means that we take the difference of the function under the brackets between the value at $x_B$ and the value at $x_A$.
 
 ### Illustration: back to the metal bar 
 

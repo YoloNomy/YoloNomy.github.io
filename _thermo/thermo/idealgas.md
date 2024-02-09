@@ -19,11 +19,49 @@ $$\boxed{U=U(n,T)}$$
 
 All these equations should be understood as verified experimental relationships that intruiged physicist which where trying to understand the behavior of gases. They can however be retrieved by assuming that the gas is made of point particles bouncing randomly and not interacting between them. As such, the ideal gas assumption breaks when considering high pressures, when particles are able to interact between one another, or when quantum effects come into play.
 
-## Applications
+## Laplace law
 
-### Work done
+An ideal gas satisfies the Laplace law: during an adiabatic transformation
 
-### Heat
+$$ \boxed{PV^\gamma=\text{cst}}$$
+
+where $\gamma=C_P/C_V$ is called the adiabatic index.
+
+<details>
+  <summary>Proof</summary>
+</details>
+
+Depending on why you need it, this law can be re-expressed as
+
+$$TV^{\gamma-1}=\text{cst}\qquad\text{or}\qquad T^\gamma P^{1-\gamma}=\text{cst}$$
+
+
+<details>
+  <summary>Proof</summary>
+
+Starting from Laplace's law 
+$PV^\gamma= \text{cst}$ and using the ideal gas law $P=\frac{n\mathcal{R}T}{V}$, one finds
+
+$$ n\mathcal{R}T\frac{V^\gamma}{V} = n\mathcal{R}T V^{\gamma-1} = \text{cst}$$
+
+as $n\mathcal{R}=\text{cst}$, 
+
+$$T V^{\gamma-1} = \text{cst}$$
+
+Now, we can use again the ideal gas law in this expression to replace $P$ and obtain
+
+$$
+\begin{aligned}
+&T \left(\frac{n\mathcal{R}T}{P}\right)^{\gamma-1} = \text{cst}\\
+&TT^{\gamma-1}(n\mathcal{R})^{\gamma-1} \frac{1}{P^{\gamma-1}} = \text{cst}\\
+&T^{\gamma}P^{-(\gamma-1)} =\text{cst}\\
+&T^{\gamma}P^{1-\gamma} =\text{cst}
+\end{aligned}
+$$
+
+</details>
+
+### Application
 
 ### More!
 
