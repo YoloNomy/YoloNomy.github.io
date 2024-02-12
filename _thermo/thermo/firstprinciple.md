@@ -32,31 +32,44 @@ and
 
 $$ W = \int_A^B \delta W$$
 
-## The difference between $d$ and $\delta$
+## The difference between $\text{d}$ and $\delta$
 
 You might have noted that we used the symbol $\delta$ to describe the small variations of $Q$ and $W$ while we reserved the symbol $\text{d}$ for $U$. 
 
-$Q$ and $W$ are not state functions from which you can take the differential!
+Let us try to explain intuitively why we make such a distinction here. A more rigourous mathematical explanation can be found in any good textbook.
 
-The bank account analogy: 
+As a general rule, the differential $\text{d}$ *can only be computed for state functions*. As they represent exchanges, $Q$ and $W$ are not state functions from which you can take the differential.
 
+A useful analogy, is to compare the energy of a system with your bank account: 
+
+- $U$ is the total money on your account. It can be defined at any time. If I am indiscrete, I can ask you "How much is your $U$ right now?" It makes sense to ask how much did it change over a period of time $\Delta U$ or consider very small amount of time given by the differential $\text{d}U$.
+- $Q$ and $W$, being energy exchanges with the exterior, would be two different forms of bank transfers. They can change the amount of $U$ but it makes no sense to ask you what is the value of your bank transfer right now and how much did it change in the last minutes. $\delta Q$ and $\delta W$ correspond to bank transfers associated with the small change of total money $\text{d}U$.
 
 # Various types of transformations
 
-- compression
-- isobaric 
-- adiabatic
-- isochore
-- isothermal
+The internal energy $U$ of a system can change during various types of transformations. Let us here define some of them in order to introduce some of the thermodynamical jargon you might encounter everywhere:
+
+- *compression*
+- *isobaric transformation*
+- *adiabatic transformation*
+- *isochore transformation*
+- *isothermal transformation*
 
 ## Work
 
 $$\delta W = -P {\rm d}V$$
 
-$$ \delta W = \vec{F}\cdot\text{d}\vec{\ell}$$
+
+We will encounter the work again in [mechanics](../../../meca/Newton/energy), where it is again deeply linked with energy. The definition will be a bit different and we explain below to the curious reader why they are the same.
 
 <details>
   <summary>Correspondance with mechanics</summary>
+
+In mechanics, work is defined as
+
+$$ \delta W = \vec{F}\cdot\text{d}\vec{\ell}$$
+
+
 
 $$P=-\frac{F}{S}=\frac{F \text{d}x}{\text{d}x\text{d}y\text{d}z}= $$
 
