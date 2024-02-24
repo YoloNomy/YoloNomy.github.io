@@ -1,6 +1,6 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="layout" content="default">
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="nav_order" content="1">
 <meta name="parent" content="cosmo">
-<meta name="nav_order" content="1"><style>body {
+<meta name="layout" content="default"><style>body {
   max-width: 980px;
   margin: 16px auto;
 }
@@ -1079,7 +1079,7 @@ body .markdown-body
 .highlight .il{color:#009999}
 .highlight .gc{color:#999;background-color:#EAF2F5}
 </style><title>Stars, formation</title></head><body><article class="markdown-body"><h1 id="the-birth-of-stars">The birth of stars<a class="headerlink" href="#the-birth-of-stars" title="Permanent link"></a></h1>
-<p>By trying to answer the vast question &ldquo;what is a star?&rdquo;, we will apply most of the things we have learn in our physics classes in an exciting context. We will hence discover one of the multiple reasons why astrophysics is so exciting : it involves many different branches of physics and put them in a cosmic perspective! If you don&rsquo;t master yet all of the concepts here, but are excited about astrophysics, you can still try to follow these notes. Hopefully, it should give you motivation to dig deeper the other classes. </p>
+<p>By trying to answer the vast question &ldquo;what is a star?&rdquo;, we will apply most of the things we have learn in our physics lectures in an exciting context. We will hence discover one of the multiple reasons why astrophysics is so exciting : it involves many different branches of physics and put them in a cosmic perspective! If you don&rsquo;t master yet all of the concepts here, but are excited about astrophysics, you can still try to follow these notes. Hopefully, it should give you motivation to dig deeper the other lectures. </p>
 <h2 id="jeans-mass">Jeans mass<a class="headerlink" href="#jeans-mass" title="Permanent link"></a></h2>
 <!-- ![image](../images/Tarantula-HST-ESO-Webb-LL.jpg){: width="80%"} -->
 
@@ -1092,8 +1092,8 @@ body .markdown-body
 <p>This condition can be written as $E_T+V\leq 0$, that is</p>
 <p>$$-V\geq E_T$$</p>
 <p>traducing that the negative contribution of the gravitational potential energy $V$ overcomes the contribution of the thermal energy $E_T$, which would make the sphere expand.</p>
-<p>Let us roughly estimate when this condition is met in a cloud. Assuming that the cloud is an homogenous sphere, its total gravitational energy can be expressed as:</p>
-<p>$$V = -\frac{3}{5}\frac{GM^2}{R} $$</p>
+<p>Let us roughly estimate when this condition is met in a cloud. Assuming that the cloud is an homogenous sphere, its total <a href="/Users/leovacher/Documents/GitHub/meca/Newton/energy">gravitational energy</a> can be expressed as:</p>
+<p>$$\boxed{V = -\frac{3}{5}\frac{GM^2}{R}}$$</p>
 <p>You can recognize here the $GM^2/R$ contribution from Newtonian mechanics (link), which is the energy of gravitation of two masses $M$ separated by a distance $R$. The factor of $3/5$ asks for a bit of extra work. The proof is detailed below, but if you don&rsquo;t want to face the trouble, you can just assume it for now.</p>
 <details>
   <summary>Proof</summary>
@@ -1128,7 +1128,7 @@ $$ V=  -\frac{3}{5}\frac{GM^2}{R}$$
 
 </details>
 
-<p>The thermal energy, can be understood as the kinetic energy due to the constituant of the gas. It can be shown that, for a monoatomic ideal gas, the mean kinetic energy per particle is given by $\langle mv^2/2 \rangle = 3k_B T/2$, where $k_B$ is the Boltzmann constant, allowing to translate temperatures into energy. If you do not know this formula, you can also take it for granted for now. The total thermal energy of our sphere of gas is then given by</p>
+<p>The thermal energy, can be understood as the kinetic energy due to the constituant of the gas. It can be shown that, for a monoatomic <a href="/Users/leovacher/Documents/GitHub/thermo/thermo/idealgas">ideal gas</a>, the mean kinetic energy per particle is given by $\langle mv^2/2 \rangle = 3k_B T/2$, where $k_B$ is the Boltzmann constant, allowing to translate temperatures into energy. If you do not know this formula, you can also take it for granted for now. The total thermal energy of our sphere of gas is then given by</p>
 <p>$$E_T = N\frac{3 k_B T}{2}= \frac{M}{\mu}\frac{3k_B T}{2}$$</p>
 <p>where $N=M/\mu$ is the total number of particles in the sphere of gas and $\mu$ is the mean mass of an atom in the cloud.</p>
 <p>Using the two formulas above, our condition for gravitational collapse becomes</p>
@@ -1137,7 +1137,9 @@ $$ V=  -\frac{3}{5}\frac{GM^2}{R}$$
 <p>Isolating the mass in this expression, we are able to find the limit mass $M_J$, called the <em>Jeans mass</em>, at which the cloud will start to collapse under its own gravity. The condition for collapse hence becomes</p>
 <p>$$M \geq M_{J}$$</p>
 <p>with</p>
-<p>$$M_J \propto \left(\frac{T}{\mu}\right)^{3/2}\frac{1}{\sqrt{\rho}}$$</p>
+<p>$$\boxed{M_J = \mathcal{C}\left(\frac{T}{\mu}\right)^{3/2}\frac{1}{\sqrt{\rho}}}$$</p>
+<p>with the proportionality constant</p>
+<p>$$\mathcal{C}= \left(\frac{5k_B}{2G}\right)^{3/2}\sqrt{\frac{3}{4\pi}}$$</p>
 <details>
   <summary>Proof</summary>
 
@@ -1159,7 +1161,7 @@ such that the radius is
 
 $$ 1/R^3 = \frac{4 \pi \rho}{3M} \Rightarrow R = \left(\frac{3M}{4 \pi \rho}\right)^{1/3} $$
 
-Puting this in the above equation on $M$ and brute forcing our way through the equations, we obtain
+Putting this in the above equation on $M$ and brute forcing our way through the equations, we obtain
 
 $$M \geq \frac{(3M)^{1/3} 5k_B T}{2(4\pi \rho)^{1/3}G\mu}$$
 
@@ -1175,25 +1177,28 @@ which is the result given above.
 </details>
 
 <p>Hence, the hotter the gas, the higher the mass required for collapse, and the denser the gas, the smaller the mass.</p>
-<p>Assuming the gas is molecular hydrogen ($\mu=m_p$) and computing the factors (using $\rho = n m_p$), we get</p>
-<p>$$ M_J \sim 6 \times 10^{4}\sqrt{\frac{T^3}{n}} M_{\odot}$$</p>
-<p>where $n$ is the density of hydrogen atoms. We hence see something exciting here: a cascading effect is hidden in this formula. When the cloud will start contracting, its density $n$ will automatically increase, leading $M_J$ to decrease. Hence the cloud will fragment itself in smaller clouds, over and over again during the gravitational collapse. This collapsing is also due to the increasing rotation speed of the collapsing cloud. </p>
-<p>Indeed, to keep things simple and hand waving for now, consider the angular momentum $\vec{L}$ of a particle rotating at the edge of the collapsing cloud. We saw in the classical mecanics class that it was given by $\vec{L}=r\wedge m\vec{v}$ and that it was conserved if we consider only the gravitational force. Now, as the cloud contracts after having overpassed Jean&rsquo;s mass, the radius $r$ will decrease. In order for $\vec{L}$ to be conserved when $r$ decreases, $\vec{v}$ must increase. At some point, the speed will then be large enough to thorn apart the cloud in smaller patches (a proper account of this would have been to use the moment of inertia of the cloud, treating it as a solid sphere).</p>
+<p>Assuming the gas is made only of molecular hydrogen ($\mu=m_p$) &ndash; which made up $\sim90\%$ of the interstellar medium &ndash; and computing the constants factors (using $\rho = n m_p$), we obtain</p>
+<p>$$ M_J \sim 6 \times 10^{4}\sqrt{\frac{T^3}{n}} M_{\odot},$$</p>
+<p>where $n$ is the density of hydrogen atoms. We hence see something exciting here: a cascading effect is hidden in this formula. When the cloud will start contracting, its density $n$ will automatically increase, leading $M_J$ to decrease. Hence independent subparts of the cloud will reach the condition $M\leq M_J$ and collapse, such that the cloud will fragment in smaller clouds, over and over again during the gravitational collapse. </p>
+<!-- This collapsing is also helped due to the increasing rotation speed of the collapsing cloud.  -->
+
+<!-- Indeed, to keep things simple and hand waving for now, consider the angular momentum $\vec{L}$ of a particle rotating at the edge of the collapsing cloud. We saw in the classical mecanics class that it was given by $\vec{L}=r\wedge m\vec{v}$ and that it was conserved if we consider only the gravitational force. Now, as the cloud contracts after having overpassed Jean's mass, the radius $r$ will decrease. In order for $\vec{L}$ to be conserved when $r$ decreases, $\vec{v}$ must increase. At some point, the speed will then be large enough to thorn apart the cloud in smaller patches (a proper account of this would have been to use the moment of inertia of the cloud, treating it as a solid sphere). -->
+
 <p>This all explains why the stars are born in clusters of thousands of stars inside large clouds instead of obtaining a single large star. After some time, all these stars are separated and spread apart in the Galaxy along their rotation around the Galactic center.</p>
 <h2 id="closer-to-reality-turbulence-and-magnetic-fields">Closer to reality: turbulence and magnetic fields<a class="headerlink" href="#closer-to-reality-turbulence-and-magnetic-fields" title="Permanent link"></a></h2>
 <p><img alt="image" src="/Users/leovacher/Documents/GitHub/YoloNomy.github.io/_cosmo/images/pillarsofcreation.jpg" width="53.5%" /><img alt="image" src="/Users/leovacher/Documents/GitHub/YoloNomy.github.io/_cosmo/images/orion.jpg" width="45%" /></p>
-<p><em>Left: The iconic &ldquo;Pillars of Creation&rdquo; nebula as seen by the JWST. It provides another caracteristic example of star forming region within a nebular cloud. Credit: <a href="https://esawebb.org/images/pillarsofcreation_composite/">NASA, ESA, CSA, and STScI</a>. Right: Portio of the Orion nebula. In both images, notice the complex patern made by the interstellar medium. Credit: <a href="https://esawebb.org/images/weic2315b/">ESA/Webb, NASA, CSA, PDRs4All ERS Team</a></em></p>
+<p><em>Left: The iconic &ldquo;Pillars of Creation&rdquo; nebula as seen by the JWST. It provides another characteristic example of star forming region within a nebular cloud. Credit: <a href="https://esawebb.org/images/pillarsofcreation_composite/">NASA, ESA, CSA, and STScI</a>. Right: Portio of the Orion nebula. In both images, notice the complex patern made by the interstellar medium. Credit: <a href="https://esawebb.org/images/weic2315b/">ESA/Webb, NASA, CSA, PDRs4All ERS Team</a></em></p>
 <p>Under the same assumptions used before, we can estimate that the cloud should collapse on itself under its own gravity in a free-fall time of</p>
-<p>$$ t_f = \sqrt{\frac{3\pi}{32 G \rho}} $$</p>
+<p>$$ \boxed{t_f = \sqrt{\frac{3\pi}{32 G \rho}}}$$</p>
 <p>This time suppose that nothing is stopping the cloud while it collapse on itself. </p>
 <details>
   <summary>Proof</summary>
 
-Consider a a particle of mass $m$ located at the edge of the collapsing cloud. We label its position by the radial distance $r$. The particle starts at $r=R$ and fall freely until it reaches the center of the cloud at $r=0$. The second laws of dynamics for this particle becomes
+Consider a a particle of mass $m$ located at the edge of the collapsing cloud. We label its position by the radial distance $r$. The particle starts at $r=R$ and fall freely until it reaches the center of the cloud at $r=0$. The [second law of dynamics](../../../meca/Newton/laws/) for this particle becomes
 
 $$ m\frac{\text{d}^2r}{\text{d}t^2}=\frac{-GMm}{r^2} $$
 
-in which $m$ simplifies on both sides. Hence all little particles of mass $m$ part of the outer spherical shell of the cloud will fall identically and in the same time (under our simplifying assumptions), always attracted by the whole mass $M$ of the cloud contained within the outter shell.
+in which $m$ simplifies on both sides. Hence all little particles of mass $m$ part of the outer spherical shell of the cloud will fall identically and in the same time (under our simplifying assumptions), always attracted by the whole mass $M$ of the cloud contained within the outer shell.
 
 First, we integrated this equation from $R$ to $r$, and work out the right hand side until we obtain (remember again that $\int_a^b r^n \text{d}r=[r^{n+1}/n+1]^b_a$)
 
@@ -1209,7 +1214,7 @@ $$
 \end{aligned}
 $$
 
-Similarly to what we did to derive the kinetic energy in Newtonian mechanics, the left hand side can be rewriten as an integral over time as
+Similarly to what we did to derive the kinetic energy in Newtonian mechanics, the left hand side can be rewritten as an integral over time as
 
 $$
 \begin{aligned}
@@ -1227,7 +1232,7 @@ that is (remember that a square root comes with two solutions positive and negat
 
 $$\frac{\text{d}r}{\text{d}t}= \pm\sqrt{2\frac{GM}{R}}\sqrt{\frac{R-r}{r}}$$
 
-The negative solution $(-)$ will be of interest here, as it is the one with decreasing $r$, that is the collapsing case. Taking this solution and rearanging the expression such that we separate $r$ on the left hand side and $t$ on the right hande side, we get, after integrating
+The negative solution $(-)$ will be of interest here, as it is the one with decreasing $r$, that is the collapsing case. Taking this solution and rearranging the expression such that we separate $r$ on the left hand side and $t$ on the right hand side, we get, after integrating
 
 $$\int_R^0 \sqrt{\frac{r}{R-r}}\text{d}r = -\int_{0}^{t(r)}\sqrt{2\frac{GM}{R}} \text{d}t$$
 
@@ -1258,17 +1263,70 @@ as desired! ($\pi/\sqrt{\pi}=\sqrt{\pi\pi}/\sqrt{\pi}=\sqrt{\pi}$).
 
 </details>
 
-<p>Assuming the cloud is made of hydrogen only, we obtain a time of free fall of $\sim 300 000$ years. This might seems like a long time for something to free-fall, but remember that our Galaxy is $~13.5$ billion years old, and hence it is a very short time on astrophysical scales!  From observations : clouds live for $15 000 0000$ years. Hence it is clear that the clouds are not free-falling, but something must stop them.</p>
-<p>Turbulence, magnetic field and structure formation, fractal, filaments, clumps</p>
+<p>Assuming the cloud is made of hydrogen only, we obtain a time of free fall of $\sim 3\times10^{5}$ years. This might seems like a long time for something to free-fall, but remember that our Galaxy is $~13.5$ billion years old, and hence it is a very short time on astrophysical scales!  From observations : clouds live for $1.5\times10^{7}$ years. Hence it is clear that the clouds are not free-falling, but something must stop them.</p>
+<p>The collapsing of molecular clouds leading to star formation is actually a very complex process involving more than free-fall.
+Due to the conservation of angular momentum, the rotation of the cloud on itself accelerates dramatically when the cloud shrinks, giving some significant amount of rotational energy preventing the collapse. In the meanwhile, magnetic fields lines of the cloud are twisted in the spiraling process and they tend to slow down this rotation and allow for the collapse (known as magnetic breaking).</p>
+<p>The study of molecular clouds is a whole exciting field by itself. The highly complex coupling of turbulence in the gas and magnetic field lead to the formations of multiple structures within the cloud. The coupling of different scales together lead structures to fractal behaviors and the apparition of filaments, veiling, clumps and ultimately protostars. The insides of cold molecular clouds also witness complex chemistry which happends on the surface of dust grains. We think that this complex chemestry is crucial for the formation of organic molecules in our Universe, and is most certainly a crucial step for the appearence of life as we know it.</p>
 <h2 id="the-source-of-stellar-energy">The source of stellar energy<a class="headerlink" href="#the-source-of-stellar-energy" title="Permanent link"></a></h2>
-<p>Let&rsquo;s assume we end up having a star.
-It&rsquo;s no surprise they are spherical in the end, due to the law of gravitation. </p>
-<p>If one assumes again that the proto-star has constant density, it is possible to infer the pressure at its center to be</p>
+<p>Eventually, clusters of stars will light up within the cloud.
+As they are the end product of gravitational collapse, it is no surprise that they appear as spherical objects. The spherical shape of heavenly bodies is indeed the direct consequence of the law of gravitation, from which smaller masses are attracted towards larger mass, with a radial symmetry (Putting a large mass at the center of a frame, acts only and identically along $\vec{u_r}$). </p>
+<p>The very first stage of a star&rsquo;s life, is called a <em>protostar</em>.</p>
+<p><img alt="image" src="/Users/leovacher/Documents/GitHub/YoloNomy.github.io/_cosmo/images/HL_Tau_protoplanetary_disk.jpg" width="53.5%" /></p>
+<p><em>Credit: HL-$\tau$ protostar surrounded by its acccretion disc in which the future planets will form <a href="https://www.almaobservatory.org/en/press-releases/revolutionary-alma-image-reveals-planetary-genesis/">Credit: ALMA (/NRAO/ESO/NAOJ)</a>.</em> </p>
+<p>If one assumes again that the proto-star has a constant density, it is possible to infer the pressure at its center to be</p>
 <p>$$ P_c = \frac{3}{8\pi}\frac{GM^2}{R^4}$$</p>
-<h3 id="thermal">Thermal?<a class="headerlink" href="#thermal" title="Permanent link"></a></h3>
-<h3 id="nuclear">Nuclear!<a class="headerlink" href="#nuclear" title="Permanent link"></a></h3>
-<h2 id="minimal-mass-to-pretend-at-the-star-title">Minimal mass to pretend at the star title<a class="headerlink" href="#minimal-mass-to-pretend-at-the-star-title" title="Permanent link"></a></h2>
-<h2 id="going-further-recommanded-readings">Going further: recommanded readings<a class="headerlink" href="#going-further-recommanded-readings" title="Permanent link"></a></h2>
+<p>For a star like the sun, we obtain $P_c\sim$. This enormous pressure needs to be balanced or the star will shrink again and can not appear as the &ldquo;eternal&rdquo; spheres we are observing in the sky.</p>
+<p>We will demonstrate this equation in the next lecture on <a href="/Users/leovacher/Documents/GitHub/YoloNomy.github.io/_cosmo/stars-struc">stellar structure</a>. </p>
+<p>Now, making the <em>very</em> rough assumption that the gas at center of the star is an <a href="/Users/leovacher/Documents/GitHub/thermo/thermo/idealgas">ideal gas</a>, it must obey the famous relationship $$PV=n\mathcal{R}T$$. From this, we can estimate the central temperature to be</p>
+<p>$$\boxed{T_c\sim\frac{1}{2}\frac{GM\mu}{k_BR}}$$ </p>
+<details>
+  <summary>Proof</summary>
+
+The ideal gas law reads:
+
+$$P=\frac{nRT}{V}$$ 
+
+Now, you have to remember that $n=N/N_A$ is the number of moles of particles in the gas (with $N$ the number of particles). Hence:
+
+$$P=\frac{N\mathcal{R}T}{N_AV}$$
+
+Now, we can introduce the boltzmann constant $k_B=\mathcal{R}/N_A$ and write $N=M/\mu$, as we did for the cloud, where $\mu$ is the mean mass of a particle in the star. The ideal gas law now reads
+
+$$P=\frac{N k_BT}{V\mu}$$
+
+Putting 
+
+$$P=\frac{N kT}{\mu V}=\frac{3Mk_BT}{4\pi R^3\mu}$$ 
+
+Now looking for the pressure at the center $T_c$. For this, we assume roughly that the whole star is at temperature $T_c$ and pressure $P_c$ (computed above). This lead us to write
+
+$$\frac{3}{8\pi}\frac{GM^2}{R^4}=\frac{3Mk_BT_c}{4\pi R^3 \mu}$$
+
+which becomes after simplification:
+
+$$T_c\sim\frac{1}{2}\frac{GM\mu}{k_BR}$$
+
+</details>
+
+<p>Numerical applications leads to huge numbers both for the pressure inside the star and for the temperature at its core. Now, the newborn must find a source of energy to counter-act the brutality of the gravitational collapse.</p>
+<h2 id="how-to-explain-the-energy-of-stars">How to explain the energy of stars?<a class="headerlink" href="#how-to-explain-the-energy-of-stars" title="Permanent link"></a></h2>
+<h3 id="gravitational-contraction">Gravitational contraction<a class="headerlink" href="#gravitational-contraction" title="Permanent link"></a></h3>
+<p>As hot and bright bodies, protostars and stars radiate away their energy into space with a total luminosity $L$. As long as they are contracting due to gravity, they are heated by this contraction, which provides a source of energy that can be radiated.</p>
+<details>
+  <summary>Virial theorem</summary>
+
+$$E= E_T + V= \frac{3}{2}k_B T - \frac{3}{5}\frac{GM^2}{R^2}$$
+
+Assuming that the protostar is a sphere of perfect gas, then 
+
+$$ T= \frac{PV}{N k_B}= \frac{\mu P 4\pi R^2/3}{M k_B} $$ 
+
+</details>
+
+<h3 id="nuclear-energy">Nuclear energy!<a class="headerlink" href="#nuclear-energy" title="Permanent link"></a></h3>
+<h3 id="degeneracy-pressure-minimal-mass-to-pretend-at-the-star-title">Degeneracy pressure: Minimal mass to pretend at the star title<a class="headerlink" href="#degeneracy-pressure-minimal-mass-to-pretend-at-the-star-title" title="Permanent link"></a></h3>
+<h2 id="eddington-limit-maximal-mass-before-implosion">Eddington limit: Maximal mass before implosion<a class="headerlink" href="#eddington-limit-maximal-mass-before-implosion" title="Permanent link"></a></h2>
+<h2 id="going-further-recommended-readings">Going further: recommended readings<a class="headerlink" href="#going-further-recommended-readings" title="Permanent link"></a></h2>
 <ul>
 <li>An introduction to Star Formation - D. Ward-Thompson and A. P. Whitworth - Cambdrige University Press - 2011</li>
 </ul>

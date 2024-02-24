@@ -298,9 +298,25 @@ as wanted.
 
 </details>
 
-$$ \frac{\text{d}}{\text{d}\tau}g(v,w)=0$$
+From the metric compatibility condition, we can immediately derive that the length of vector $v$ which is parallel transported by $\nabla$ along a curve is conserved, that is
 
-Angle between vector is preserved.
+$$ \frac{\text{d}}{\text{d}\tau}g(v,v)=0$$
+
+<details>
+  <summary>Proof</summary>
+
+For a single vector $v$, the metric compatibility condition is
+
+$$
+\frac{\text{d}}{\text{d}\tau}g(v,v)= g\left(\nabla_{\gamma'}v,v\right)+ g\left(v, \nabla_{\gamma'}v\right)= 2g\left(\nabla_{\gamma'}v,v\right)
+$$
+
+If this vector is parallel transported along a curve, then $\nabla_{\gamma'} v=0$. From which
+
+$$ \frac{\text{d}}{\text{d}\tau}g(v,v)=0$$
+
+
+</details>
 
 For multiple illustrations on how 
 the Levi-Civita connection acts on surfaces as well as examples in physics, see [Faure 2022](https://www-fourier.ujf-grenoble.fr/~faure/enseignement/geometrie_topologie_M2/cours.pdf).

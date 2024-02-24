@@ -1,6 +1,6 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="nav_order" content="2">
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="layout" content="default">
 <meta name="parent" content="Newton">
-<meta name="layout" content="default"><style>body {
+<meta name="nav_order" content="2"><style>body {
   max-width: 980px;
   margin: 16px auto;
 }
@@ -1079,7 +1079,8 @@ body .markdown-body
 .highlight .il{color:#009999}
 .highlight .gc{color:#999;background-color:#EAF2F5}
 </style><title>Kepler laws</title></head><body><article class="markdown-body"><p><strong>PAGE STILL UNDER CONSTRUCTION</strong></p>
-<h1 id="kepler-laws">Kepler laws<a class="headerlink" href="#kepler-laws" title="Permanent link"></a></h1>
+<h1 id="kepler-laws-cross-product-and-polar-coordinates">Kepler laws: cross product and polar coordinates<a class="headerlink" href="#kepler-laws-cross-product-and-polar-coordinates" title="Permanent link"></a></h1>
+<p>bla </p>
 <p>Our goal here will be to understand and demonstrate the three Kepler laws from Newton laws with an increasing level of complexity. Codes will be provided to help you getting familiar.</p>
 <h2 id="the-laws">The laws<a class="headerlink" href="#the-laws" title="Permanent link"></a></h2>
 <p>Kepler laws are three statements allowing to predict the motion of celestial bodies in the case of a two body system with one much larger than the other. A typical case is then given by the motion of a planet around a star. They can be stated as follow:</p>
@@ -1144,12 +1145,12 @@ $$ </p>
  \dot{u_\theta} &amp;= \frac{\text{d} \theta}{\text{d} t} \frac{ \text{d}\vec{u_\theta}}{\text{d} \theta } = -\dot{\theta} \vec{u_r}<br />
 \end{cases}
 $$ </p>
-<p>Now that we know how to go back and forth between cartesian and polar coordinates, we can look at the relevant quantity for kinematics, that are position, velocity and acceleration.
+<p>Now that we know how to go back and forth between cartesian and polar coordinates, we can look at the relevant quantities for kinematics, that are position, velocity and acceleration.
 The position vector is simply given by</p>
 <p>$$ \vec{r} = r \vec{u_r} $$</p>
 <p>The velocity vector is then given by its derivative</p>
 <p>$$ \vec{v} = \dot{\vec{r}} = \dot{r}\vec{u_r} + r \dot{\vec{u_r}} =  \dot{r}\vec{u_r} + r \dot{\theta}\vec{u_\theta} $$</p>
-<p>And we need another derivation to get the acceleration vector</p>
+<p>And we need to derive another time to get the acceleration vector</p>
 <p>$$ \vec{a} = \dot{\vec{v}} = \dot{r}\vec{u_r} + r \dot{\vec{u_r}} =  \ddot{r}\vec{u_r} + \dot{r}\dot{\theta}\vec{u_\theta} + \dot{r}\dot{\theta}\vec{u_\theta} - r\ddot{\theta}\vec{u_\theta} + r \dot{\theta}^2\vec{u_r} \
 = (\ddot{r} - r \dot{\theta}^2 )\vec{u_r} + ( r\ddot{\theta}\vec{u_\theta} - 2\dot{r}\dot{\theta})\vec{u_\theta}\
 = a_r \vec{u_r} + a_\theta\vec{u_\theta}
@@ -1175,7 +1176,7 @@ From this, you can see that it is <em>antisymetric</em> (or non commutative)</p>
 <li>It&rsquo;s length gives the area of the parallelogram that can be built out of $\vec{u}$ and $\vec{v}$ </li>
 </ul>
 <p>$$ |\vec{w}|=|\vec{u}||\vec{v}|\sin(\langle \vec{u},\vec{v}\rangle)$$</p>
-<p>Which is indeed the area of a rectangle $|\vec{w}|=S_{\rm rect} = |\vec{u}||\vec{v}| $ with $\langle \vec{u},\vec{v}\rangle=90^{\circ}$.</p>
+<p>Which is indeed the area of a rectangle $|\vec{w}|=S_{\rm rect} = |\vec{u}||\vec{v}|$ with $\langle \vec{u},\vec{v}\rangle=90^{\circ}$.</p>
 <p>A very useful property coming from this, is that any numbers multiplying the vectors can be put in front of the product</p>
 <p>$$ (a\vec{u}) \wedge (b\vec{v}) = ab \, (\vec{u} \wedge \vec{v})$$ </p>
 <p>This is especially usefull when expressing vectors in term of unit vectors. Using the right-hand rule and the above definitions we can get</p>
@@ -1230,11 +1231,18 @@ From this, you can see that it is <em>antisymetric</em> (or non commutative)</p>
 <p>Which is the third Kepler law.</p>
 <h1 id="general-proof-of-the-first-law">General proof of the first law<a class="headerlink" href="#general-proof-of-the-first-law" title="Permanent link"></a></h1>
 <p>Here comes the most technical aspect of our discussion. Hang on!</p>
-<p>In the most general case, the second Newton law is</p>
+<p>For a general orbit, the second Newton law implying only gravity can be written as</p>
 <p>$$ \vec{F_G} = m \vec{a} $$</p>
-<p>That we can project on the two polar basis vectors</p>
-<p>$$ -\frac{GMm}{r^2}\vec{u_r} = a_r\vec{u_r} $$</p>
-<p>$$ 0 = a_\theta \vec{u_\theta}$$</p>
+<p>Writing again $\vec{F_G}= -\frac{GMm}{r^2} \vec{u_r}$ and $\vec{a}=a_r \vec{u_r}+a_\theta \vec{u}_\theta$, we can project on the two polar basis vectors</p>
+<p>$$
+\begin{cases}
+\vec{F_G}<em>r &amp;= m a_r \
+\vec{F_G}</em>\theta &amp;= a_\theta
+\end{cases}$$</p>
+<p>$$\begin{cases}
+ -\frac{GM}{r^2}&amp;= a_r \
+ 0 &amp;= a_\theta 
+\end{cases}$$</p>
 <p>Using the general expression for the accelaration in polar coordinates, one gets the system</p>
 <p>$$ \ddot{r} - r\dot{\theta}^2 = -\frac{GM}{r^2}$$ </p>
 <p>$$ r\ddot{\theta} + 2\dot{r}\dot{\theta}=0$$</p>

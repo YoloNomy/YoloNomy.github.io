@@ -36,7 +36,6 @@ Depending on why you need it, this law can be re-expressed as
 
 $$TV^{\gamma-1}=\text{cst}\qquad\text{or}\qquad T^\gamma P^{1-\gamma}=\text{cst}$$
 
-
 <details>
   <summary>Proof</summary>
 
@@ -61,6 +60,14 @@ $$
 $$
 
 </details>
+
+Hence in an adiabatic transformation, the work becomes
+
+$$\boxed{W = -n c_V \Delta T}$$
+
+but also
+
+$$\boxed{W = \frac{n\mathcal{R}\kappa}{\gamma-A}\Delta V^{\gamma-1}}$$
 
 ### Application
 
