@@ -50,6 +50,7 @@ A useful analogy, is to compare the energy of a system with your bank account:
 The internal energy $U$ of a system can change during various types of transformations. Let us here define some of them in order to introduce some of the thermodynamical jargon you might encounter everywhere:
 
 - *compression*
+- *reversible/quasi-static transformation*
 - *isobaric transformation*
 - *adiabatic transformation*
 - *isochore transformation*
@@ -87,7 +88,7 @@ as in mechanics.
 
 ### Application: Work for an isothermal transformation of a perfect gas
 
-Now consider
+Now consider an ideal gas, obeying the relation
 
 $$ PV=nRT $$
 
@@ -114,6 +115,24 @@ $$
 
 ## Heat
 
+Three types of heat transfers
 
+- *Conduction*
+- *Convection*
+- *Radiation*
 
+$P,V,T$ are related by an equation of state so it's enough to know the heat induced by a change in two of them.
+
+In a reversible transformation
+
+$$\begin{cases}
+\begin{aligned}
+\delta Q &= C_p \text{d} T + h \text{d}P\\
+\delta Q &=C_v \text{d} T + \ell \text{d}V\\
+\delta Q &=\mu \text{d} V + \lambda \text{d}P
+\end{aligned}
+\end{cases}
+$$
+
+### Application: heat for an ideal gas
 

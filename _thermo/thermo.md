@@ -15,7 +15,6 @@ You will find here some fun python applications to physics with some detailled e
 - Van der Waals gas
 - Second law of thermodynamics: entropy
 
-
 # Statistical physics
 
 - [Maximizing the entropy](../statistical/entropy/)

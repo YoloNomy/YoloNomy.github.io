@@ -67,7 +67,7 @@ $$\boxed{W = -n c_V \Delta T}$$
 
 but also
 
-$$\boxed{W = \frac{n\mathcal{R}\kappa}{\gamma-A}\Delta V^{\gamma-1}}$$
+$$\boxed{W = \frac{n\mathcal{R}\kappa}{\gamma-1}\Delta V^{\gamma-1}}$$
 
 ### Application
 
