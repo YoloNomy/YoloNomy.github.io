@@ -6,19 +6,29 @@ import scipy.constants as constants
 import scipy.special as ss
 
 def blackbody(T, nu):
-
+    """
+    blackbody function in term of frequency
+    :param T: temperature in Kelvin
+    :param nu: frequency in Hertz. 
+    """
     A = 2*constants.h*nu**3/constants.c**2
     x = constants.h*nu/constants.k/T
     intensity = A/(np.exp(x) - 1)
     return intensity
 
 def wien(T):
+    """
+    Derive nu_max associated to a given temperature T using Wien's displacement law.
+    :param T: temperature in Kelvin
+    """
     a=3+ss.lambertw(-3*np.exp(-3))
     b=a.real*constants.k/constants.h
     return b*T
 
+# frequency
 nu = np.linspace(1e13, 3e15, 1000)  
 
+# list of surface temperatures for some stars:
 star_Ts = {
     "Proxima Centauri": 3050,
     "Betelgeuse": 3500,
@@ -28,6 +38,7 @@ star_Ts = {
     "Rigel": 12000,
 }
 
+# plot figure
 plt.figure(figsize=(10, 6))
 norm = Normalize(vmin=min(star_Ts.values()), vmax=max(star_Ts.values()))
 cmap = plt.cm.rainbow.reversed()
