@@ -11,47 +11,66 @@ nav_order: 1
 
 *The NGC 4833 globular cluster as seen by Hubble. Credit: [ESA/Hubble and NASA](https://esahubble.org/images/potw1631a/)*
 
+Picture a clear night sky in the countryside. Stars appear as a myriad of shining points covering the whole sky. How could they be distinguished?
+Sure, they are not all located at the same point of the sky, but that does not tell us anything about their physical properties. What else?
 
+One obvious characteristic comes to mind: their brightness! Indeed, all the stars do not appear as bright. Now what can the brightness of a star teach us? If a star is very bright, it can be for two reasons: either it is intrinsically very bright, because it is big and/or powerful, or because it is very close to us. The brightness of stars thus contain entangled information about both their luminosity and their distance.
 
-Picture a clear night sky in the countryside and think carefully about the stars (exercie: do it!). They appear as a myriad of shining points covering the whole sky. Now, how could you distinguish them from one another?
-Sure, they are not all located at the same points of the sky, but that does not tell us much about what is going on up there. What else?
+Another property distinguishes the stars: their color. Indeed, even if it's not always easy to see, stars do not have the same colors. With a careful eye, it is possible to note that some appear as red, some blue and some more yellow. Now what could this possibly tell us? It turns out that the color of a star is directly related to its temperature, as we will further discuss below.
 
-You might come up with this idea: their brightness! Indeed, all the stars are not appearing as bright. Now what can the brightness of a star teach us about it? If a star is very bright, it can be for two reasons: either it is intrinsically very bright, because it is big and/or powerfull, or because it is very close to us. So brightness of stars tells us both about their luminosity and about their distance.
-
-With a bit of experience, you might also come with something else: their colors! Indeed, even if it's not always easy to see, all stars does not have the same colors. Some are pretty reds, some blue and some more yellow. Now what could this possibly tell us? Turns out that the color of a star is directly related to its temperature, as we will further discuss here.
-
-As we will see in the next class, temperature and brightness are ultimately linked with two properties of stars: their masses and how evolved they are.
+These two measurable characteristics of stars are fundamental, as temperature and brightness can be ultimately linked with two physical properties of a star: its mass and the stage of its evolution.
 
 ## Colors: Temperatures
 
-Assuming that the star is at thermal equilbrium, it should radiate as a blackbody. We derived this law in the lecture of statistical mechanics, but once again if you don't know it you can assume it as an experimental fact. It is writen as
+![image](../images/blackbody.png){: width="80%"}
 
-$$B_\nu(T)= \frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{k_BT}}-1}$$
+*Black-body spectra for some specific stars and illustration of Wien's law. Generated with this [python code](../codes/blackbody.py).*
 
-where $B_\nu$ is the energy radiated by the star per unit of surface of the body, per unit time, per solid angle and per frequency $\nu$. $T$ is the temperature.
+Assuming that the star is in thermal equilibrium, it should radiate as a blackbody. We derived this law in the lecture of statistical mechanics, but for now it can also be assumed as an experimental fact. The blackbody law of emission is written as
 
-As such, the radiation of a star is closely linked to its temperature (or at least the temperature of its surface). More exactly, we can infer the surface temperature of a star from its color!
-From the blackbody law, we can infer that 
+$$B_\nu(T)= \frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{k_bT}}-1}$$
 
-$$T = \frac{h\nu_{\text{max}}}{3k_b}$$
+where $B_\nu$ is the energy radiated by the star per unit of surface of the body, per unit time, per solid angle and per frequency $\nu$. $T$ is the temperature of the radiating body, which in our case corresponds to the surface temperature of the star. $h$, $k_b$ and $c$ are respectively Planck and Boltzmann's constants and the speed of light in vacuum.
 
-Where $\nu_{\text{max}}$ is the frequency at which the star emits the most energy. This is known as "Wien's law". From which we can conclude that, the redder the star, the colder its temperature and the bluer the hotter.
+The radiation of a star is thus closely linked to the temperature of its surface. It is thus possible to infer the surface temperature of a star from its "color" i.e. from its spectrum.
+From the blackbody law, it is possible to obtain 
+
+$$T = \frac{\nu_{\text{max}}}{b},$$
+
+where $\nu_{\text{max}}$ is the frequency at which the star emits the most energy and $b\simeq 0.0588$ THz.K$^{-1}$ is known as Wien's constant. This relation is known as "Wien's displacement law". As such, the redder is a star, the colder it is and the bluer is a star the hotter it is.
 
 <details>
   <summary>Proof</summary>
 
-
-*Add a code that proves it graphically*
-
-To find the maximum $\nu_{\text{max}}$ of the blackbody law $B_\nu$, we need to derivate it with respect to $\nu$ and set this derivative equal to zero, that is, we must solve
+To find the maximum $\nu_{\text{max}}$ of the blackbody law $B_\nu$, we need to compute its derivative with respect to $\nu$ and set this derivative equal to zero, that is, we must solve
 
 $$\frac{\text{d} B_\nu(T)}{\text{d}\nu}=0$$
 
-that is
+Since
 
-$$\frac{\text{d}}{\text{d}\nu}\left(\frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{k_BT}}-1}\right)=0$$
+$$\frac{\text{d} }{\text{d}\nu}\left(\frac{2h\nu^3}{c^2}\right)= \frac{6h\nu^2}{c^2}$$
+
+and 
+
+$$\frac{\text{d}}{\text{d}\nu}\left(\frac{1}{e^{\frac{h\nu}{k_bT}}-1}\right)=\frac{h}{k_bT}\frac{e^{\frac{h\nu}{k_bT}}}{\left(e^{\frac{h\nu}{k_bT}}-1\right)^2} $$
+
+Using the product rule, one finds that
+
+$$\frac{\text{d} B_\nu(T)}{\text{d}\nu}= \frac{2h}{c^3}\left(\frac{3\nu^2}{e^{\frac{h\nu}{k_bT}}-1} - \frac{h\nu^3}{k_bT}\frac{e^{\frac{h\nu}{k_bT}}}{\left(e^{\frac{h\nu}{k_bT}}-1\right)^2}\right)$$
+
+Writing $x=\frac{h\nu}{k_bT}$ and setting this equation to zero, one obtains
+
+$$ 3(e^{x}-1)-xe^x=0 $$
+
+This equation is tricky to solve and requires to use the involved concept of "Lambert's W-functions" noted $W_0(z)$ (for the principal mode).
+
+$$\frac{h\nu_{\rm max}}{k_bT}=3+ W_0(-3e^{-3})$$
+
+Thankfully, this can be computed numerically using scipy's function "lambertw".
 
 </details>
+
+In the above figure, we have computed the blackbody spectrum of different iconic stars. You can easily spot some of these stars in the night sky, with the help of softwares as [Stellarium](https://stellarium.org). We can clearly see that, the hotter the star, the more energy it emits (i.e. the bigger the peak of the curve). Furthermore, the hotter the star, the more blue its spectra is i.e. the more it is shifted to the right in frequency space (remember that higher frequencies mean shorter wavelengths). This figure allow us to verify the validity of Wien's law. We also note that our Sun is an "average" star, which is not so bright compared to other bluer (and bigger) stars as Rigel.
 
 From the blackbody law, we can also infer a link between the intrinsic luminosity of the star $L$ -- that is the energy the star radiates in space per unit of time -- and its size (radius) $R$ and temperature $T$ as
 

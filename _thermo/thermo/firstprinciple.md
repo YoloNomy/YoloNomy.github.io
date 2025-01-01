@@ -49,7 +49,7 @@ A useful analogy, is to compare the energy of a system with your bank account:
 
 The internal energy $U$ of a system can change during various types of transformations. Let us here define some of them in order to introduce some of the thermodynamical jargon you might encounter everywhere:
 
-- *compression*
+- *(de)compression* 
 - *reversible/quasi-static transformation*
 - *isobaric transformation*
 - *adiabatic transformation*
@@ -123,7 +123,7 @@ Three types of heat transfers
 
 $P,V,T$ are related by an equation of state so it's enough to know the heat induced by a change in two of them.
 
-In a reversible transformation
+In a reversible transformation, the heat transformation can be decomposed in three different equivalent ways as
 
 $$\begin{cases}
 \begin{aligned}
