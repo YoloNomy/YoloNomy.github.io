@@ -72,7 +72,7 @@ Thankfully, this can be computed numerically using scipy's function "lambertw".
 
 In the above figure, we have computed the blackbody spectrum of different iconic stars. You can easily spot some of these stars in the night sky, with the help of softwares as [Stellarium](https://stellarium.org). We can clearly see that, the hotter the star, the more energy it emits (i.e. the bigger the peak of the curve). Furthermore, the hotter the star, the more blue its spectra is i.e. the more it is shifted to the right in frequency space (remember that higher frequencies mean shorter wavelengths). This figure allow us to verify the validity of Wien's law. We also note that our Sun is an "average" star, which is not so bright compared to other bluer (and bigger) stars as Rigel.
 
-From the blackbody law, we can also infer a link between the intrinsic luminosity of the star $L$ -- that is the energy the star radiates in space per unit of time -- and its size (radius) $R$ and temperature $T$ as
+From the blackbody law, we can also infer a link between the intrinsic luminosity of the star $L$ -- that is the total energy the star radiates in space per unit of time -- and its size (radius) $R$ and temperature $T$ as
 
 $$ L = 4\pi R^2\sigma T^4,$$
 
@@ -87,7 +87,9 @@ This is known as the Stefan-Boltzmann law.
 
 The total luminosity of the star is the integral of the Boltzmann law over the surface of the star, the total solid angle and the frequency
 
-$$L = \iiint B_\nu(T) \text{d}S\text{d}\Omega\text{d}\nu $$
+$$L = \iiint B_\nu(T) \text{d}S \cos(\theta)\text{d}\Omega\text{d}\nu $$
+
+The additional and perhaps strange $\cos(\theta)$ factor will be explained below.
 
 As $B_\nu$ is only a function of $\nu$, it becomes the product of three integrals
 
@@ -97,9 +99,11 @@ Assuming that a star is a sphere, then
 
 $$\int \text{d}S = 4\pi R^2 $$
  
-The solid angle integral
+The solid angle integral is 
 
-$$\int \text{d}\Omega = \pi $$
+$$\int \cos(\theta)\text{d}\Omega = \int_0^{2\pi}\int_0^{\pi/2} \cos(\theta) \sin(\theta)\d\varphi \d \theta=\pi $$
+
+It takes this form with an additional $\cos(\theta)$ because of Lambert's cosine law for the blackbody emission, saying that the intensity is smaller when looking the surface at an angle. We integrate only over the half sphere as we are considering here the emission of an infinitesimal element of surface around itself.  
  
 Now we must compute the final (and hardest) integral
 
@@ -107,7 +111,7 @@ $$ \int B_\nu(T)\text{d}\nu =\int \frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{k_b
 
 Posing $x=\frac{h\nu}{k_b T}$ and thus $\text{d}x=\frac{h}{k_b T}\text{d}\nu$, the integral becomes
 
-$$ \int B_\nu(T)\text{d}\nu = \left(\frac{k_b T}{h}\right)^4\int_0^\infty \frac{x^3}{e^{x}-1} \text{d}x$$
+$$ \int B_\nu(T)\text{d}\nu = \frac{2h}{c^2}\left(\frac{k_b T}{h}\right)^4\int_0^\infty \frac{x^3}{e^{x}-1} \text{d}x$$
 
 The integral is the Riemann zeta function and can be shown to be equal to $\frac{\pi^4}{15}$.
 
