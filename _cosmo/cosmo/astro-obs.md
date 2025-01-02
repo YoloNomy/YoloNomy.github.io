@@ -80,7 +80,7 @@ where
 
 $$\sigma=\frac{2\pi^5k_B^4}{15h^3c^2}.$$
 
-This is known as Stefan's Boltzmann's law.
+This is known as the Stefan-Boltzmann law.
 
 <details>
   <summary>Proof</summary>
@@ -104,6 +104,12 @@ $$\int \text{d}\Omega = \pi $$
 Now we must compute the final (and hardest) integral
 
 $$ \int B_\nu(T)\text{d}\nu =\int \frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{k_bT}}-1} \text{d}\nu$$
+
+Posing $x=\frac{h\nu}{k_b T}$ and thus $\text{d}x=\frac{h}{k_b T}\text{d}\nu$, the integral becomes
+
+$$ \int B_\nu(T)\text{d}\nu = \left(\frac{k_b T}{h}\right)^4\int_0^\infty \frac{x^3}{e^{x}-1} \text{d}x$$
+
+The integral is the Riemann zeta function and can be shown to be equal to $\frac{\pi^4}{15}$.
 
 </details>
 
