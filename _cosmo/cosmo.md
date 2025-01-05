@@ -15,6 +15,7 @@ You will find here some fun python applications to physics with some detailled e
 - Compact objects
 - Black holes, part I
 - [Kepler laws](../../meca/Newton/Kepler/) (copied from the mechanics class)
+- Nebulae and cosmic dust
 
 # Special and general relativity
 

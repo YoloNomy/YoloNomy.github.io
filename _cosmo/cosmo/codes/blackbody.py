@@ -30,7 +30,6 @@ nu = np.linspace(1e13, 3e15, 1000)
 
 # list of surface temperatures for some stars:
 star_Ts = {
-    "Proxima Centauri": 3050,
     "Betelgeuse": 3500,
     "Aldebaran": 4300,
     "Sun": 5778,
