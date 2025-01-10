@@ -9,7 +9,7 @@ nav_order: 1
 
 ## The law
 
-In physics, "laws" or "principles" are comparable to "axioms" in mathematics. They are "rules" which seems to describe the world around us and from which a theory can be built by deriving their consequences and confront them with experiments. There are now way to derive the laws from more fundamental principles with a theory, but if an observational consequence of a law is not verified, then the theory is simply wrong, or out of its domain of validity. 
+In physics, "laws" or "principles" are comparable to "axioms" in mathematics. They are "rules" which seem to describe the world around us and from which a theory can be built by deriving their consequences and confront them with experiments. There are no way to derive the laws from more fundamental principles with a theory, but if an observational consequence of a law is not verified, then the theory is simply wrong, or out of its domain of validity. 
 
 The thermodynamic theory that we will study here, is built on three such laws. 
 
@@ -49,14 +49,16 @@ A useful analogy, is to compare the energy of a system with your bank account:
 
 The internal energy $U$ of a system can change during various types of transformations. Let us here define some of them in order to introduce some of the thermodynamical jargon you might encounter everywhere:
 
-- *(de)compression* 
-- *reversible/quasi-static transformation*
-- *isobaric transformation*
-- *adiabatic transformation*
-- *isochore transformation*
-- *isothermal transformation*
+- *(de)compression*: the volume of the system is changed.
+- *reversible/quasi-static transformation*: a transformation is performed very slowly on the state of the system.
+- *isobaric transformation*: transformation at constant pressure.
+- *adiabatic transformation*: transformation for which $\delta Q=0$.
+- *isochore transformation*: transformation at constant volume.
+- *isothermal transformation*: transformation at constant temperature.
 
 ## Work
+
+Work is the energy exchanged by the system when a constant mechanical force is exerted on it. 
 
 $$\delta W = -P {\rm d}V$$
 
@@ -66,35 +68,32 @@ We will encounter the work again in [mechanics](../../../meca/Newton/energy), wh
 <details>
   <summary>Correspondance with mechanics</summary>
 
-In mechanics, work is defined as
+In mechanics, the infinitesimal work $\delta W$ of a force $\vec{F}$ associated to the infinitesimal displacement $\text{d}\vec{\ell}$ of a body is defined as
 
 $$ \delta W = \vec{F}\cdot\text{d}\vec{\ell}$$
 
+where $\cdot$ is the dot product.
+Furthermore, the pressure is defined as the force exerted over a surface. For a constant force $\vec{F}$ applied uniformly on a surface $S$, we have:
 
+$$P = -\frac{\vec{F}}{S}\cdot \vec{n}$$
 
-$$P=-\frac{F}{S}=\frac{F \text{d}x}{\text{d}x\text{d}y\text{d}z}= $$
+Where $\vec{n}$ is the normal to the surface.
+The minus sign is a convention allowing to define that a positive pressure pushes a surface while a negative pressure pulls a surface.
+Consider now an infinitesimal volume element $\text{d}x, \text{d}y, \text{d}z$. Apply a constant force $F\vec{e}_x$ along the $x$ direction on the surface $\text{d}x\text{d}y$ of normal $\vec{e}_x$. This would "pull out" the surface, as the pressure of a gas would push outward on the walls of its container.
+ 
+The pressure in that case becomes 
 
-$$ {\rm d}V= \text{d}x\text{d}y\text{d}z $$
+$$P=-\frac{F}{\text{d}y\text{d}z}= \frac{F \text{d}x}{\text{d}x\text{d}y\text{d}z} = -\frac{\delta W}{\text{d} V} $$
 
-hence 
-$$ \delta W = \vec{F}\cdot\text{d}\vec{x}$$
-
-as in mechanics.
-
+where we recognize the infinitesimal volume
+$$ {\rm d}V= \text{d}x\text{d}y\text{d}z $$ and the work of the force on the infinitesimal surface. Hence pressure is not only a force per unit of surface, it is also an energy per unit of volume!
 </details>
 
-- volume increase --> $\text{d}U =\delta W<0$, loss of energy
-- volume decrease --> $\text{d}U =\delta W>0$ gain of energy
+- If the volume increased by the force, then $\text{d}V>0$ and hence $\text{d}U =\delta W<0$. Thus the system losses energy when it expends.
+- If the volume decrease $\text{d}V<0$ and hence $\text{d}U =\delta W>0$. Thus the system gain energy when it contracts.
 
-### Application: Work for an isothermal transformation of a perfect gas
 
-Now consider an ideal gas, obeying the relation
-
-$$ PV=nRT $$
-
-Try to show that 
-
-$$W= n\mathcal{R}\ln\left(\frac{V_B}{V_A}\right)$$
+**Exercice: Consider an ideal gas, thus obeying the relation $PV=nRT$. Show that, if its volume is changed from $V_A$ to $V_B$, the corresponding work is $W= n\mathcal{R}\ln\left(\frac{V_B}{V_A}\right)$.**
 
 <details>
   <summary>Solution</summary>

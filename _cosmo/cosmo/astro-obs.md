@@ -21,7 +21,9 @@ Another property distinguishes the stars: their color. Indeed, even if it's not 
 
 These two measurable characteristics of stars are fundamental, as temperature and brightness can be ultimately linked with two physical properties of a star: its mass and the stage of its evolution.
 
-## Colors: Temperatures
+## The blackbody radition
+
+### Colors and temperatures
 
 ![image](../images/blackbody.png){: width="80%"}
 
@@ -67,11 +69,13 @@ This equation is tricky to solve and requires to use the involved concept of "La
  
 $$\frac{h\nu_{\rm max}}{k_bT}=3+ W_0(-3e^{-3})$$
 
-Thankfully, this can be computed numerically using scipy's function "lambertw". This (check the joined python code) allows us to obtain the value of $b\simeq 0.0588$ THz.K$^{-1}$ for Wien's constant.
+Thankfully, this can be computed numerically using scipy's function "lambertw". Using this  <a href="../codes/blackbody.py" target="_blank">python code </a> , you can easily obtain the value of $b\simeq 0.0588$ THz.K$^{-1}$ for Wien's constant.
 
 </details>
 
 In the above figure, we have computed the blackbody spectrum of different iconic stars of the winter night sky.  We can clearly see that, the hotter the star, the more energy it emits (i.e. the bigger the peak of the curve). Furthermore, the hotter the star, the more blue its spectra is i.e. the more it is shifted to the right in frequency space (remember that higher frequencies mean shorter wavelengths). This figure allow us to verify the validity of Wien's law. We also note that our Sun is an "average" star, which is not so bright compared to other bluer (and bigger) stars as Rigel. We also find back the colors observable with the naked eye : red for Betelgeuse and Aldebaran and blue for Sirius and Rigel.
+
+### Brightness:  temperature, radius and distance
 
 From the blackbody law, we can also infer a link between the intrinsic luminosity of the star $L$ -- that is the total energy the star radiates in space per unit of time -- and its size (radius) $R$ and temperature $T$ as
 
@@ -122,7 +126,6 @@ $$L =  \frac{2\pi^5k_B^4}{15h^3c^2} 4\pi R^2 T^4$$
 
 </details>
 
-## Distance and luminosity
 
 As we said above, a star is characterized by its intrinsic luminosity $L$, which is how much energy it is releasing into space per unit of time.
 
@@ -131,11 +134,29 @@ $$ F = \frac{L}{4\pi d^2}$$
 You will recognize here the surface of a sphere $4\pi d^2$, which means that while the radiation of a star is emitted into space, the total energy emitted is diluted -- and equally distributed -- over a sphere of radius $d$ centered on the star.
 Hence, as stated earlier, the brightness of a star is indeed linked to its radius, its temperature as well as it's distance to us
 
-$$ F = \frac{4\pi R^2 \sigma T^4}{4\pi d^2} + C$$
+$$ F = \frac{\sigma R^2 T^4}{d^2}$$
 
-The distance $d$ here is called the 'luminosity distance'. It can be estimated using the *parallax* method. In practice this concept can not be used for objects too far from us. For distances on larger (cosmological) scales, have a look [here](../distances/).
+The distance $d$ here is called the 'luminosity distance'. It can be estimated using the *parallax* method as explained below. In practice this concept can not be used for objects too far from us. For distances on larger (cosmological) scales, have a look [here](../distances/).
 
-## Brightness: Magnitudes
+So overall, stars are rather simple objects, which can be (in first approximation) charaterized fully by 4 numbers : their temperature $T$, their radius $R$, their luminosity $L$ and their distance $d$.
+Let's now see how we can infer these four properties from concrete measurements with telescopes.
+
+**Exercice: try to list all the hypothesis we assumed in order to fully describe a star with these four parameters. For each hypothesis, discuss what could be their limits.**
+<details>
+  <summary>Solution</summary>
+  We assumed the following:
+  <ul>
+  <li>Stars are in <strong>thermal equilibrium</strong>. This assumption is crucial and is required to define the temperature $T$, constant for the whole star and that its radiation behaves as a blackbody. Clearly, the temperature varies inside of stars, moreover, as they are open systems, radiating into space, stars are clearly not in thermal equilibrium. This is even worse fort out-of main sequences/pulsating stars which evolve quickly and are not in hydrostatic equlibrum (see next lectures).  However, stars are more corectly understood to be in local thermal equilbrium, meaning that small regions are in equilibrium with their surroundings. From observation of stars, we know that they radiate largely as  blackbody, which garantees that this assumption is largely verified. Additionaly other features are imposed on there spectra beyond the modified black body (as absorption lines from the stellar atmosphere), but still this will not have any impact on the underlying blackbody assumption.</li> 
+  <li>Furthermore, we assumed that stars were <strong>perfect spheres</strong> characterized by a radius $R$. Stars are formed and bounded together by gravitation, which is radially symetric (see next lectures). As such, sphere is indeed the natural shape they are expected to take. However, due to rotation, stars can be flattened at the poles. This effect is small for most stars but can take incredible proportions for some stars. For example, the star Achenar is rotating so fast (75$\%$ of the centrifugal limit), that it present itself as a flatten ellipsoid with the equator being 1.5 larger than the distance joining the poles.</li>
+
+  <li> This one is trickier to see, but in order to define the distance $d$ we assumed that our Universe is an <strong>Euclidian space</strong>, that is: flat, static and obeing Galilean relativity. While this is true for stars close to us, it is not so simple to define a distance for objects further away from us like stars in other Galaxies. This has to be done in the context of General relativity, in which space can be curved and expanding. For this, see our lecture <a href="../distances/" target="_blank">there</a>.</li>
+</ul>
+</details>
+
+
+## Observable properties of the stars
+
+### Brightness: Magnitudes
 
 The brightness of a star, as seen in the sky, is quantified by its *apparent magnitude* $m$. $m$ is a unitless number defined as
 
@@ -188,18 +209,37 @@ $$5\log_{10}\left(d\right)-5$$
 
 </details>
 
-## Color: B-V
+### Color indices
 
 Now, trickier question: how to quantify the observed color of a star?
 
 The flux $F$ is dependent on frequency, such that $F=\int_{0}^\infty F_\nu \text{d}\nu$.
 
-The $B-V$ magnitude.
+The $B-V$ magnitude or **color index**.
 
-$$m_B - m_V $$
+$$B-V = m_B - m_V $$
 
+Other color indices exist as $U-B$ or $I-R$!
 
-## The Hertzprung-Russel diagramms
+### Distance Parallaxes and standard candles
+
+## From observable quantities to physical properties of stars
+
+$$L = $$
+
+Ballesteros' formula: 
+
+$$ T = 4600 K \left(\frac{1}{0.92(B-V)+1.7}+ \frac{1}{0.92(B-V)+0.62}\right) $$ 
+
+Direct measurements of the radius of a star is very difficult to obtain. However it can be deduced as
+
+$$ R =\sqrt{\frac{L}{4 \pi \sigma T^4}}$$
+
+## The Hertzsprung-Russell diagramms
+
+![image](../images/Hertzsprung-Russell.png){: width="80%"}
+
+*Hertzsprung-Russel diagram using the v.4.1. of [hygdata](http://www.astronexus.com/projects/hyg). Generated with this [python code](../codes/HR-diagramm.py), inspired from this [code](https://github.com/RobertoIA/Hertzsprung-Russell/blob/master/Hertzsprung-Russell.ipynb).*
 
 ## Going further: recommended readings
 

@@ -28,7 +28,7 @@ In classical thermodynamics, a system is caracterized by the mesurable quantitie
 
 As we will further discuss later, for the typical case of a gas in a box, pressure can be interpreted as the transfer of momentum when particles hit the walls, temperature as the kinetic energy of the particles. However, thermodyanmics intend to be able to treat very general systems, far beyond the simple examples of gases.
 
-The data of all these variables at a given time, is simply called the *state* of the system.
+The data of all these variables at a given time, is simply called the *state* of the system. For now, we will assume that the system we consider is described entierly by a single temperature (thermal equilibrium) and a single pressure.
 
 The whole goal of thermodynamics is then to predict the evolution of these variables and understand how they are related to one another. This understanding can lead to a wide range of applications and can be used to build machines as motors or fridges aswell as finding the temperature inside of the Sun!
 
