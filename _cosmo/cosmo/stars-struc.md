@@ -81,7 +81,8 @@ $$\boxed{\tau\propto \frac{1}{M^{2}}}$$
 
 # Stellar evolution
 
-## Going further: recommanded readings
+# Evolutionary tracks on the HR diagramm
 
+## Going further: recommanded readings
 
 - Stellar Structure and Evolution -  R. Kippenhahn, A. Weigert - Spriner - 1996

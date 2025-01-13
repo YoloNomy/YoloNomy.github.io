@@ -296,4 +296,4 @@ The french astronomer Pierre-Simon de Laplace asked himself this question in 179
 
 ## Applications: astrophysics
 
-If you are curious, you habe now the very basics to have a look at some applications to astrophysics in the dedicated section!
+If you are curious, you have now the very basics to have a look at some applications to astrophysics in the dedicated section, as [there](../../_cosmo/cosmo/stars-form.md)!

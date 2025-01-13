@@ -29,7 +29,7 @@ These two measurable characteristics of stars are fundamental, as temperature an
 
 *Black-body spectra for some specific stars and illustration of Wien's law. Generated with this [python code](../codes/blackbody.py).*
 
-Assuming that the star is in thermal equilibrium, it should radiate as a blackbody. We derived this law in the lecture of statistical mechanics, but for now it can also be assumed as an experimental fact. The blackbody law of emission is written as
+Assuming that the star is in thermal equilibrium, it should radiate as a blackbody. We derived and discussed this law in the lecture of [statistical mechanics](../../_thermo/statistical/BB.md), but for now it can also be assumed as an experimental fact. The blackbody law of emission is written as
 
 $$B_\nu(T)= \frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{k_bT}}-1}$$
 
@@ -138,10 +138,10 @@ $$ F = \frac{\sigma R^2 T^4}{d^2}$$
 
 The distance $d$ here is called the 'luminosity distance'. It can be estimated using the *parallax* method as explained below. In practice this concept can not be used for objects too far from us. For distances on larger (cosmological) scales, have a look [here](../distances/).
 
-So overall, stars are rather simple objects, which can be (in first approximation) charaterized fully by 4 numbers : their temperature $T$, their radius $R$, their luminosity $L$ and their distance $d$.
+So overall, stars are rather simple objects, as their observable properties can be (in first approximation) charaterized by 4 numbers : their temperature $T$, their radius $R$, their luminosity $L$ and their distance $d$.
 Let's now see how we can infer these four properties from concrete measurements with telescopes.
 
-**Exercice: try to list all the hypothesis we assumed in order to fully describe a star with these four parameters. For each hypothesis, discuss what could be their limits.**
+**Exercice: try to list all the hypothesis we assumed in order to  describe stars with these four parameters. For each hypothesis, discuss what could be their limits.**
 <details>
   <summary>Solution</summary>
   We assumed the following:
@@ -219,7 +219,15 @@ The $B-V$ magnitude or **color index**.
 
 $$B-V = m_B - m_V $$
 
-Other color indices exist as $U-B$ or $I-R$!
+Other color indices exist as $U-B$ or $R-I$ !
+
+| Stars | U-B | B-V|R-I
+|----------|:-------------:|------:|
+| Sun |  −27 | 4,83 | |
+| Sirius |    −1   |   1,43 | |
+| Aldebaran | +0,87  | -0,641| 
+| Rigel | −0,66 | -0.03 | -0.02|
+| Betelgeuse |2,06 | 1,86| 1,28 |
 
 ### Distance Parallaxes and standard candles
 
@@ -240,6 +248,29 @@ $$ R =\sqrt{\frac{L}{4 \pi \sigma T^4}}$$
 ![image](../images/Hertzsprung-Russell.png){: width="80%"}
 
 *Hertzsprung-Russel diagram using the v.4.1. of [hygdata](http://www.astronexus.com/projects/hyg). Generated with this [python code](../codes/HR-diagramm.py), inspired from this [code](https://github.com/RobertoIA/Hertzsprung-Russell/blob/master/Hertzsprung-Russell.ipynb).*
+
+## Spectral classification
+
+Harvard spectral classification, Morgan-Keenan
+
+- O,B,A,F,G,K,M
+- 0,Ia, Iab, II,III,IV,V,VI, VII 
+
+W, S, C, L, T, Y.
+
+| Stars | Spectral type | $T$ [K] | $R/R_{\odot}$ | $L/L_{\odot}$ | $d$ [Ly] |
+|----------|:-------------:|------:|
+| Sun |  G2V | 5 772 | $R_{\odot}$ = 696 342 km | $L_{\odot}$ 3.846$\times 10^{26}$ W | 1,58$\times 10^{-5}$ | 
+| Sirius |  A1V | 9845 | 1,714 | 24,74 | 8,601 |
+| Aldebaran | K5III | 3 910 | 45,1 | 518 | 66 |
+| Rigel (A) |   B8Ia | $\sim$ 10 000 | 78,9 | 40 000 | 863,|
+| Betelgeuse | M1Ia | $\sim$ 3 600 | $\sim$ 1000 | 108 900 | 643|
+
+
+![image](../images/Hertzsprung-Russell-2.png){: width="80%"}
+
+*Hertzsprung-Russel diagram using the v.4.1. of [hygdata](http://www.astronexus.com/projects/hyg). Generated with this [python code](../codes/HR-diagramm.py), inspired from this [code](https://github.com/RobertoIA/Hertzsprung-Russell/blob/master/Hertzsprung-Russell.ipynb).*
+
 
 ## Going further: recommended readings
 

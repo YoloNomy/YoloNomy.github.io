@@ -53,7 +53,7 @@ color = df['ci'].apply(bv2rgb)
 fig = plt.figure(
     figsize=(10, 12),
     facecolor='black',
-    dpi=72)
+    dpi=100)
 ax = fig.add_axes([.1, .1, .85, .8])
 
 ax.set_facecolor('black')
@@ -91,29 +91,28 @@ ax.set_ylim(18, -16)
 ax.set_yticks(np.linspace(20, -10, 3, endpoint=True))
 ax.tick_params(top=False, right=False, direction='out', colors='white')
 
-# Annoter les différentes régions du diagramme
-ax.annotate(
-    'main sequence', xy=(.6, 6.5), xycoords='data',
-    fontsize='small', color='white',
-    xytext=(-40, -30), textcoords='offset points',
-    arrowprops=dict(
-        arrowstyle="->",
-        connectionstyle="arc3,rad=-.2",
-        color='white'))
-ax.annotate(
-    'giants', xy=(1.8, -1), xycoords='data',
-    fontsize='small', color='white',
-    xytext=(30, 7), textcoords='offset points',
-    arrowprops=dict(
-        arrowstyle="->",
-        connectionstyle="arc3,rad=.2",
-        color='white'))
-ax.annotate(
-    'supergiants', xy=(.5, -14), xycoords='data',
-    fontsize='small', color='white')
-ax.annotate(
-    'white dwarfs', xy=(0, 16), xycoords='data',
-    fontsize='small', color='white')
+# ax.annotate(
+#     'main sequence (V)', xy=(.6, 6.5), xycoords='data',
+#     fontsize='small', color='white',
+#     xytext=(-40, -30), textcoords='offset points',
+#     arrowprops=dict(
+#         arrowstyle="->",
+#         connectionstyle="arc3,rad=-.2",
+#         color='white'))
+# ax.annotate(
+#     'giants (II-IV)', xy=(1.8, -1), xycoords='data',
+#     fontsize='small', color='white',
+#     xytext=(30, 7), textcoords='offset points',
+#     arrowprops=dict(
+#         arrowstyle="->",
+#         connectionstyle="arc3,rad=.2",
+#         color='white'))
+# ax.annotate(
+#     'supergiants (I)', xy=(.5, -14), xycoords='data',
+#     fontsize='small', color='white')
+# ax.annotate(
+#     'white dwarfs (VII)', xy=(0, 16), xycoords='data',
+#     fontsize='small', color='white')
 
 # Ajouter une légende pour les étoiles
 legend = ax.legend(loc='upper left', fontsize='small', facecolor='black', edgecolor='white')
