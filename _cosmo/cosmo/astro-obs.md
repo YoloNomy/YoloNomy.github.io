@@ -5,7 +5,7 @@ parent: cosmo
 nav_order: 1
 ---
 
-# Observing the stars
+# Observing and classifying the stars
 
 ![image](../images/stellarium.png){: width="100%"}
 
@@ -184,6 +184,7 @@ In the table below, you can find the values of $m$ and $M$ for our iconic stars:
 
 We see that the Sun, which is obviously the brightest star visible from Earth (during the day!!!), has a greatly negative magnitude of -27. However, its absolute magnitude is of 4.83, which is rather high, making it the least "absolutely" bright star of the table!
 
+<!---
 It can also be useful to define the distance modulus, which is the difference between the absolute and apparent magnitude:
 
 $$ \mu = M-m$$
@@ -208,6 +209,7 @@ $$5\left( \log_{10}\left(d\right)-\log_{10}\left(10\right) \right) $$
 $$5\log_{10}\left(d\right)-5$$
 
 </details>
+-->
 
 ### Color indices
 
@@ -215,19 +217,25 @@ Now, trickier question: how to quantify the observed color of a star?
 
 The flux $F$ is dependent on frequency, such that $F=\int_{0}^\infty F_\nu \text{d}\nu$.
 
+824 THz (364 nm) for U, 678 THz (442 nm) for B, 555 THz (540 nm) for V (to do the conversion, recall that $\nu=c/\lambda$). Other filters exist as R, I.
+
 The $B-V$ magnitude or **color index**.
 
 $$B-V = m_B - m_V $$
 
+$$U-B = m_U - m_B $$
+
 Other color indices exist as $U-B$ or $R-I$ !
 
-| Stars | U-B | B-V|R-I
-|----------|:-------------:|------:|
-| Sun |  −27 | 4,83 | |
-| Sirius |    −1   |   1,43 | |
+Without absorption, these are independent of the distance
+
+| Stars | U-B | B-V|
+|----------|:-------------:
+| Sun |  −27 | 4,83 |
+| Sirius |    −1   |   1,43 |
 | Aldebaran | +0,87  | -0,641| 
-| Rigel | −0,66 | -0.03 | -0.02|
-| Betelgeuse |2,06 | 1,86| 1,28 |
+| Rigel | −0,66 | -0.03 |
+| Betelgeuse |2,06 | 1,86 |
 
 ### Distance Parallaxes and standard candles
 
@@ -273,6 +281,4 @@ W, S, C, L, T, Y.
 
 
 ## Going further: recommended readings
-
-
 

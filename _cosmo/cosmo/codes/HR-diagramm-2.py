@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Rectangle
 import matplotlib.patheffects as path_effects
+from matplotlib.patches import Ellipse
 
-# Données pour les étoiles (inchangées)
 stars = {
     'Sun': {'ci': 0.656, 'absmag': 4.83, 'color': 'yellow'},
     'Rigel': {'ci': -0.03, 'absmag': -6.69, 'color': 'purple'},
@@ -13,7 +13,6 @@ stars = {
     'Sirius': {'ci': -0.01, 'absmag': 1.43, 'color': 'blue'}
 }
 
-# Données spectrales
 spectral_types = {
     'O': {'color': '#9bb0ff', 'range': (-0.4, -0.2)},
     'B': {'color': '#aabfff', 'range': (-0.2, 0)},
@@ -24,15 +23,23 @@ spectral_types = {
     'M': {'color': '#ffcc6f', 'range': (1.4, 2.5)}
 }
 
-# Similaire à votre code existant pour charger les données
+zones = {
+    "0: Hypergiants": {"center": (0.75, -12), "width": 2, "height": 2, "angle": 0},
+    "I: Supergiants": {"center": (0.75, -7), "width": 2, "height": 3, "angle": 0},
+    "II: Bright Giants": {"center": (0.75, -4), "width": 2, "height": 2.5, "angle": 0},
+    "III: Giants": {"center": (1.40, -0.5), "width": 1.5, "height": 4, "angle": 0},
+    "IV: Subgiants": {"center": (1.25, 3), "width": 0.5, "height": 1.5, "angle": -10},
+    "V: Main Sequence": {"center": (0.75, 5), "width": 1.0, "height": 15, "angle": -8},
+    "VI: Subdwarfs": {"center": (-0.1, 7), "width": 0.6, "height": 2, "angle": 0},
+    "VII: White Dwarfs": {"center": (-0.1, 13), "width": 2, "height": 2, "angle": -40},
+}
+
 download="False"
 if download=="True":
     !curl -O http://www.astronexus.com/downloads/catalogs/hygdata_v41.csv.gz
     !ls -l | grep hyg
 df = pd.read_csv('hygdata_v41.csv.gz')[['absmag', 'ci']]
 df.dropna(inplace=True)
-
-color = df['ci'].apply(bv2rgb)
 
 # Tracer le diagramme HR (inchangé)
 fig = plt.figure(
@@ -66,6 +73,13 @@ ax.scatter(
     s=[5] * len(df),
     facecolors='white',
     linewidth=0)
+
+for label, props in zones.items():
+    ellipse = Ellipse(xy=props["center"], width=props["width"], height=props["height"],
+                      angle=props["angle"], edgecolor='red', facecolor='red', alpha=0.5,
+                      linestyle='dashed', linewidth=1.5)
+    ax.add_patch(ellipse)
+    ax.text(props["center"][0], props["center"][1], label, ha='center', va='center', color='white', fontsize=10)
 
 for star, data in stars.items():
     ax.scatter(
