@@ -260,6 +260,39 @@ $$= -2.5 \log_{10}\left(\frac{L^a}{L^b}\right) m_0^a -m_0^b $$
 
 ### Distance Parallaxes and standard candles
 
+Now, how to infer the distance $d$ of a star?
+For nearby stars, there exists two robust methods known as parallax and standard candles.
+The distance of stars within our Galaxy is commonly expressed in parsecs, or light-years.
+
+- **a parsec**:
+- **a lightyear**:
+
+#### Parallaxes
+
+![image](../images/parallaxe.png){: width="80%"}
+
+$\tan(\alpha)=\frac{d}{L}$
+
+$$d = L \tan(\alpha) $$
+
+$\tan(\alpha)\simeq \alpha$
+
+**Exercice: The parallaxe of Sirius is measured to be 374 milli arcseconds (mas). Infer its distance in meters, parsec and light years.**
+<details>
+  <summary>Solution</summary>
+A arcsecond is $1^{\circ}/(60\times 60)=$
+For Sirius $\alpha=$. $\tan(\alpha)=$, so  the small angle approximation is valid.
+
+</details>
+#### Standard candles
+
+Cepheids and supernovae.
+Rearanging the equation relating $m$ and $M$, we can express the distance as
+
+$$d=  10^{1+\frac{m-M}{5}}$$
+
+**Exercice:**
+
 ## From observable quantities to physical properties of stars
 
 Assuming the distance $d$ can be found from parallax or using standard candles.
@@ -305,7 +338,6 @@ W, S, C, L, T, Y.
 | Aldebaran | K5III | 3 910 | 45,1 | 518 | 66 |
 | Rigel (A) |   B8Ia | $\sim$ 10 000 | 78,9 | 40 000 | 863 |
 | Betelgeuse | M1Ia | $\sim$ 3 600 | $\sim$ 1000 | 108 900 | 643|
-
 
 ![image](../images/Hertzsprung-Russell-2.png){: width="80%"}
 
