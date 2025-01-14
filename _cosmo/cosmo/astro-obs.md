@@ -126,12 +126,13 @@ $$L =  \frac{2\pi^5k_B^4}{15h^3c^2} 4\pi R^2 T^4$$
 
 </details>
 
+As such, in order to be bright, a star has to be hot and/or large. It is possible to imagine a star which is as bright as the sun, but much smaller, as long as it is hotter. For exemple, as star of radius two times smaller than the sun $(R/2)$ would have to be $\sqrt[\textstyle4]{4}\sim 40\%$ hotter -- i.e. going from $\sim 5700$ K to $\sim 8000$ K of surface temperature -- in order to keep the same luminosity. With the same logic, it is also possible to have the same luminosity with a cooler but larger star. Some giant stars, as Betelgeuse can thus be extremely bright ($\sim 100 000  L_{\odot}$) while having a relatively low temperature ($\sim 3500$ K), by being incredibely large ($\sim1000 R_{\odot}$) (Here and in the rest of this work, the index $\odot$ indicates that the value are those of the sun).
 
-As we said above, a star is characterized by its intrinsic luminosity $L$, which is how much energy it is releasing into space per unit of time.
+When observed from a distance $d$, the star appears dimmer, because its energy dilutes into space. The received flux $F$ at a distance $d$, that is the energy received from the star by unit time and surface, is given by
 
 $$ F = \frac{L}{4\pi d^2}$$
 
-You will recognize here the surface of a sphere $4\pi d^2$, which means that while the radiation of a star is emitted into space, the total energy emitted is diluted -- and equally distributed -- over a sphere of radius $d$ centered on the star.
+You can recognize here the surface of a sphere $4\pi d^2$, which means that while the radiation of a star is emitted into space, the total energy emitted is diluted -- and equally distributed -- over a sphere of radius $d$ centered on the star.
 Hence, as stated earlier, the brightness of a star is indeed linked to its radius, its temperature as well as it's distance to us
 
 $$ F = \frac{\sigma R^2 T^4}{d^2}$$
@@ -162,9 +163,12 @@ The brightness of a star, as seen in the sky, is quantified by its *apparent mag
 
 $$m = -2.5 \log_{10}\left(F\right) + m_0$$
 
-where $F$ is the received flux of the star that is its luminosity as measured on Earth. $m_0$ is the arbitrary magnitude $0$ which defines the origin of the magnitude system.
-The use of a logarithm function here is to match the sensitivity of the human eye.
+where $F$ is the received flux of the star that is its luminosity as measured on Earth. $m_0$ is the arbitrary magnitude which defines the origin of the magnitude system. It is usually set such that the star Vega -- a blue star iconic of the northern summer nights -- has an apparent magnitude of zero.
+
+The use of a logarithm function here is to match the sensitivity of the human eye. It curiously ressemble the definition of sounds intensity in acoustic. Indeed, quite curiously, our human senses work on logarithmic scales: the more physical signal we receive, the more we .
 The brighter the star, the more negative will be $m$.
+
+In real conditions, $m$ can have a different value depending on the absorption by the atmosphere and the interstellar matter present between Earth and the star.
 
 The *absolute magnitude* $M$ is its apparent magnitude observed at a distance of 10 parsecs, that is
 
@@ -184,14 +188,11 @@ In the table below, you can find the values of $m$ and $M$ for our iconic stars:
 
 We see that the Sun, which is obviously the brightest star visible from Earth (during the day!!!), has a greatly negative magnitude of -27. However, its absolute magnitude is of 4.83, which is rather high, making it the least "absolutely" bright star of the table!
 
-<!---
-It can also be useful to define the distance modulus, which is the difference between the absolute and apparent magnitude:
+The absolute magnitude can be infered from the relative magnitude, if the distance $d$ is known.
 
-$$ \mu = M-m$$
+Indeed, it is possible to show that these two quantities are related by
 
-It is a useful quantity as it can be related to the distance as
-
-$$\mu = 5\log_{10}(d/\text{pc}) - 5$$
+$$M = m- 5\log_{10}(d/\text{pc}) + 5$$
 
 **Exercice: proove this!**
 <details>
@@ -199,69 +200,100 @@ $$\mu = 5\log_{10}(d/\text{pc}) - 5$$
 
 Remember, as always, the usual log properties: $\log_{10}(a^b)=b\log_{10}(a)$, $\log_{10}(a\times b)=\log_{10}(a)+\log_{10}(b)$ and $\log_{10}(a/b)=\log_{10}(a)-\log_{10}(b)$. Note also that $\log_{10}(10)=1$.
 
-From these properties:
-$$ \mu = M-m $$
+From these properties, the trick is to compute the quantity $m-M$, also known as the distance modulus.
+
+We find
+
+$$ m-M $$
 $$ = -2.5 \log_{10}\left(\frac{L}{4\pi d^2}\right) - 2.5 \log_{10}\left(\frac{L}{4\pi (10 \text{ pc})^2}\right)$$
 $$= -2.5 \log_{10}\left(\frac{(10 \text{ pc})^2}{d^2}\right) $$
 $$= -5 \log_{10}\left(\frac{(10 \text{ pc})}{d}\right) $$
 $$= 5 \log_{10}\left(\frac{d}{(10 \text{ pc})}\right) $$
-$$5\left( \log_{10}\left(d\right)-\log_{10}\left(10\right) \right) $$
-$$5\log_{10}\left(d\right)-5$$
+$$=5\left( \log_{10}\left(d\right)-\log_{10}\left(10\right) \right) $$
+$$=5\left(\log_{10}\left(d\right)-1\right)$$
+$$=5\log_{10}\left(d\right)-5$$
+and thus 
+
+$$M = m-5\log_{10}(d/\text{pc}) + 5 $$
 
 </details>
--->
 
-### Color indices
+### The B-V color index
 
 Now, trickier question: how to quantify the observed color of a star?
 
-The flux $F$ is dependent on frequency, such that $F=\int_{0}^\infty F_\nu \text{d}\nu$.
+The flux $F$ is actually a quantity which is dependent on frequency. Indeed, as stars emit as blackbodies, they are not as bright depending on the frequency at which they are observed.
 
-824 THz (364 nm) for U, 678 THz (442 nm) for B, 555 THz (540 nm) for V (to do the conversion, recall that $\nu=c/\lambda$). Other filters exist as R, I.
+As such, $m_\nu$ should actually be defined as a function of the frequency or in a given frequency band.
 
-The $B-V$ magnitude or **color index**.
+It is common for astrophysicist to use standards blue (B) and visible (V), which are centered 678 THz (442 nm) for B, 555 THz (540 nm) for V. Other filters exist as ultraviolet (U), red (R) and infrared (I). 
+
+By default and if no further detail is given, the magnitudes  are given in the V bands. This is the case for the ones listed in the previous tables.
+
+The **color indices** are defined as the difference of magnitude in two differentz filters.
+
+Particularly, we introduce the $B-V$ color index defined as
 
 $$B-V = m_B - m_V $$
 
-$$U-B = m_U - m_B $$
+Its value is listed for our iconic stars in the table below
 
-Other color indices exist as $U-B$ or $R-I$ !
+| Stars | Rigel | Sirius | Sun | Aldebaran |  Betelgeuse |
+|----------|:-------------: 
+| B-V |-0.03 |-0.01 | 0.656 | 1.54 | 1.86| 
 
-Without absorption, these are independent of the distance
+The $B-V$ index tells us if a star is more blue (negative) or more 'red' (positive) than Vega. We see that the value of this index matches our observations with the naked eye, ranking our stars from blue to red in the above table.
 
-| Stars | U-B | B-V|
-|----------|:-------------:
-| Sun |  −27 | 4,83 |
-| Sirius |    −1   |   1,43 |
-| Aldebaran | +0,87  | -0,641| 
-| Rigel | −0,66 | -0.03 |
-| Betelgeuse |2,06 | 1,86 |
+Without absorption, the color indices are independent of the distance.
+
+**Exercice: proove this!**
+<details>
+  <summary>Solution</summary>
+
+Remember, as always, the usual log properties: $\log_{10}(a^b)=b\log_{10}(a)$, $\log_{10}(a\times b)=\log_{10}(a)+\log_{10}(b)$ and $\log_{10}(a/b)=\log_{10}(a)-\log_{10}(b)$. Note also that $\log_{10}(10)=1$.
+
+Noting $a$ and $b$ the two filters, we derive:
+$$ a-b = m_a-m_b $$
+$$ = -2.5 \log_{10}\left(\frac{L^a}{4\pi d^2}\right) + 2.5 \log_{10}\left(\frac{L^b}{4\pi d^2}\right) + m_0^a -m_0^b$$
+$$= -2.5 \log_{10}\left(\frac{L^a}{L^b}\right) m_0^a -m_0^b $$
+</details>
 
 ### Distance Parallaxes and standard candles
 
 ## From observable quantities to physical properties of stars
 
-$$L = $$
+Assuming the distance $d$ can be found from parallax or using standard candles.
 
-Ballesteros' formula: 
+Reversing the formula from the magnitude, one can recover the total luminosity
 
-$$ T = 4600 K \left(\frac{1}{0.92(B-V)+1.7}+ \frac{1}{0.92(B-V)+0.62}\right) $$ 
+$$L = 4\pi d^2 10^{\frac{m_0-m}{2.5}}$$
+
+The temperature can be recovered from the $B-V$ index using Ballesteros' formula: 
+
+$$ T = 4600 \text{K} \left(\frac{1}{0.92(B-V)+1.7}+ \frac{1}{0.92(B-V)+0.62}\right) $$ 
 
 Direct measurements of the radius of a star is very difficult to obtain. However it can be deduced as
 
-$$ R =\sqrt{\frac{L}{4 \pi \sigma T^4}}$$
+$$R =\sqrt{\frac{L}{4 \pi \sigma T^4}}$$
+
+As we will see in the next lectures, another key parameter -- perhaps the most important -- is given by the mass of the star. We will discuss later how to obtain it and how it can be linked with observable properties of the stars.
 
 ## The Hertzsprung-Russell diagramms
+
+It is very instructing to sort the observed stars by their value $B-V$ and $M$ or equivalently their values of $T$ and $L$.
+Doing so using a catalogue of thousands of measured star properties in our Galaxy, we obtain the following figure, known as a **Hertzsprung-Russell (HR) diagramm**
 
 ![image](../images/Hertzsprung-Russell.png){: width="80%"}
 
 *Hertzsprung-Russel diagram using the v.4.1. of [hygdata](http://www.astronexus.com/projects/hyg). Generated with this [python code](../codes/HR-diagramm.py), inspired from this [code](https://github.com/RobertoIA/Hertzsprung-Russell/blob/master/Hertzsprung-Russell.ipynb).*
 
+Quite amazingly, we see that the stars are not just randomly distributed in the HR diagramm, but some structure is visible. This structure is deeply linked with the evolution of stars and can be used to classify them in relevant categories.
+
 ## Spectral classification
 
 Harvard spectral classification, Morgan-Keenan
 
-- O,B,A,F,G,K,M
+- O,B,A,F,G,K,M (Oh be a fine Guy/Girl kiss me!)
 - 0,Ia, Iab, II,III,IV,V,VI, VII 
 
 W, S, C, L, T, Y.
@@ -271,7 +303,7 @@ W, S, C, L, T, Y.
 | Sun |  G2V | 5 772 | $R_{\odot}$ = 696 342 km | $L_{\odot}$ 3.846$\times 10^{26}$ W | 1,58$\times 10^{-5}$ | 
 | Sirius |  A1V | 9845 | 1,714 | 24,74 | 8,601 |
 | Aldebaran | K5III | 3 910 | 45,1 | 518 | 66 |
-| Rigel (A) |   B8Ia | $\sim$ 10 000 | 78,9 | 40 000 | 863,|
+| Rigel (A) |   B8Ia | $\sim$ 10 000 | 78,9 | 40 000 | 863 |
 | Betelgeuse | M1Ia | $\sim$ 3 600 | $\sim$ 1000 | 108 900 | 643|
 
 
