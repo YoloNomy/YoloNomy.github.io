@@ -262,31 +262,47 @@ $$= -2.5 \log_{10}\left(\frac{L^a}{L^b}\right) m_0^a -m_0^b $$
 
 Now, how to infer the distance $d$ of a star?
 For nearby stars, there exists two robust methods known as parallax and standard candles.
-The distance of stars within our Galaxy is commonly expressed in parsecs, or light-years.
-
-- **a parsec**:
-- **a lightyear**:
 
 #### Parallaxes
 
-![image](../images/parallaxe.png){: width="80%"}
+![image](../images/parallax.png){: width="80%"}
 
-$\tan(\alpha)=\frac{d}{L}$
+Our Earth is orbiting around the Sun on a well characterized elliptic orbit. We can use this fact to estimate the distance of nearby star as illustrated on the above figure. 
+
+The situation is very similar to pointing your finger in front of you and closing the left eye and then the right eye. The finger will appear as motionless while the background will seems to "shift".
+
+Comparing the position of the orange star relatively to the other background stars (blue, red and yellow).
+Using the usual trigonometric relations, we find
+
+$$\tan(\alpha)=\frac{d}{L}$$
+
+and thus the distance of the star can be expressed as 
 
 $$d = L \tan(\alpha) $$
 
-$\tan(\alpha)\simeq \alpha$
+$L$ is the radius of earth's orbit, which is on average worth one astronomical unit (ua).
+The angle $\alpha$ is measured considering that a great circle on the celestial sphere is $360^{\circ}$. The angles are thus very small and it is common to use the approximation $\tan(\alpha)\simeq \alpha$. We also use units which are fractions of the degree like the arcsecond ($"$).
+
+The distance of stars within our Galaxy is commonly expressed in parsecs, or light-years.
+
+- **a parsec (pc)**: parallax second. 
+- **a lightyear (Ly)**: $1 {\rm Ly} = c \times 1{\rm yr}$.
+
+The parallax method can be used only for nearby star (otherwise the effect is too small to be seen and the star becomes a "background star"), with an upper limit of $\sim 400 Ly$.
 
 **Exercice: The parallaxe of Sirius is measured to be 374 milli arcseconds (mas). Infer its distance in meters, parsec and light years.**
 <details>
   <summary>Solution</summary>
-A arcsecond is $1^{\circ}/(60\times 60)=$
+
 For Sirius $\alpha=$. $\tan(\alpha)=$, so  the small angle approximation is valid.
 
 </details>
+
 #### Standard candles
 
-Cepheids and supernovae.
+Some objects are expected to have a universal luminosity.
+- Cepheids: Period-luminosity relation ($M \simeq -2.43(\log_{10}P-1)- 4.05$).
+- supernovae: Chandrasekar mass.
 Rearanging the equation relating $m$ and $M$, we can express the distance as
 
 $$d=  10^{1+\frac{m-M}{5}}$$
