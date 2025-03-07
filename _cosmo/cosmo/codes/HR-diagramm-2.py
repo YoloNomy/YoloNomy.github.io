@@ -31,7 +31,7 @@ zones = {
     "IV: Subgiants": {"center": (1.25, 3), "width": 0.5, "height": 1.5, "angle": -10},
     "V: Main Sequence": {"center": (0.75, 5), "width": 1.0, "height": 15, "angle": -8},
     "VI: Subdwarfs": {"center": (-0.1, 7), "width": 0.6, "height": 2, "angle": 0},
-    "VII: White Dwarfs": {"center": (-0.1, 13), "width": 2, "height": 2, "angle": -40},
+    "VII: White Dwarfs": {"center": (0.5, 13.5), "width": 1.5, "height": 2, "angle": -15},
 }
 
 download="False"

@@ -6,7 +6,7 @@ parent: cosmo
 
 ## Horizons in cosmology
 
-An Horizon is a virtual region from which no information can travel. The most familiar exemple is given by the event horizons of black holes, from which not even light can espace (if you want to know more about them, go check the Black holes page.
+An Horizon is a virtual region from which no information can travel. The most familiar exemple is given by the event horizons of black holes, from which not even light can espace (if you want to know more about them, go check the Black holes page).
 
 However, black holes are not the only objects to display such a feature ... the whole universe is! Intuitively, the Hubble-Lemaître law ($v = H_0d$) implies that the speed at which objects are pulled away from us due to expansion increase with their distance. One can then naturally ask the question : what happens when this speed becomes greater than the speed of light? In some sense, this horizon, works like a 'reversed black hole'. This even leads some physicists to assert that "we live in a black hole"! We'll come back to this ...
 
