@@ -9,30 +9,30 @@ nav_order: 1
 
 ## Statistical physics, microstates and macrostates
 
-The idea laying behind statistical mechanics will be to explain the observed behavior of large systems as the result of underlying microscopic subsystem. For exemple, we will be able to retrieve quite easily the ideal gas law by decomposing it as made of a gigantic number of free bouncing microscopic particles.
+The idea laying behind statistical mechanics will be to explain the observed behavior of large systems as the result of underlying microscopic subsystems. For exemple, we will be able to retrieve quite elegantly the ideal gas law, which was central in our first thermodynamics class, by interpreting a volume of gas as being composed of a large number of free bouncing microscopic particles.
 
-All of statistical mechanics lies on the distinction between macrostates and microstates:
+Statistical mechanics lies on the distinction between macrostates and microstates:
 
-- The *macrostate* of a system correspond to the state as described in classical thermodynamics. It is what you will measure about the system here and now: its temperature, pressure, volume etc
+- The *macrostate* of a system corresponds to the state as described in classical thermodynamics. It is what you would measure about the system here and now: its temperature, pressure, volume etc
 
 - The *microstate* of a system is the complete description of the system in term of its microscopic constituents.
 
 As such, **several *microstates* can correspond to the same *macrostate***: you can think of an infinite amount of different ways to put particles of gas in a box which will give you the same measured pressure, temperature and volume.
 
-Each microstate $i$ can be associated with a probability of occuring $p_i$. The entierty of statistical mechanics lies on the following statistical law: **The macrostate you will observe will be the more probable** that is the the macrostate which is associated with the highest number of probable microstates.
+Each microstate $i$ can be associated with a probability of occuring $p_i$. The entierty of statistical mechanics lies on the following statistical law: **The macrostate you will observe will be the most probable** that is the the macrostate which is associated with the highest number of probable microstates.
 
-A way to quantify the likelihood of a macrostate is given by the *entropy*. The higher the entropy of a macrostate, the more microstates with high probabilities are associated with it, and hence the higher are the chances you will observe it.
+A way to quantify the likelihood of a macrostate is given by the so-called *statistical entropy* which we will define. The higher the entropy of a macrostate, the more microstates with high probabilities are associated with it, and hence the higher are the chances you will observe it. We will see later on how this notion of entropy connects with the one used in our previous thermodynamics class.
 
 <details>
   <summary>Basic probability theory</summary>
    
-
 The sum of all probabilities 
 $$\sum p_i=1$$
 
 The average of the quantity $X$ is
 
 $$\langle X \rangle = \sum_i p_i X_i$$
+
 </details>
 
 ## Maximizing the entropy

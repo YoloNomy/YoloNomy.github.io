@@ -23,3 +23,5 @@ You will find here some fun python applications to physics with some detailled e
 - [Quantum statistics: fermions and bosons](../statistical/quantumstat/)
 - [Fermi gas](../statistical/fermigas/)
 - [The blackbody radiation](../statistical/BB/)
+
+# Fluid mechanics

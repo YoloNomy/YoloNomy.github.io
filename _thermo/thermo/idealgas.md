@@ -116,7 +116,7 @@ $$P= N\langle p\rangle=\frac{N m\langle v_x^2\rangle}{V}=\frac{N m\langle v^2\ra
 
 </details>
 
-Now, we will assume that the law of ideal gas is true. We can think of it as an experimental verified fact. We will re-demonstrate it from first principles in the classical mechanics class.
+Now, we will assume that the law of ideal gas is true. We can think of it as an experimental verified fact. We will re-demonstrate it from first principles in the statistical mechanics class.
 
 Using it and our expression for the pressure, we can derive that the total energy of the particles (and hence the gas) is
 

@@ -7,21 +7,30 @@ nav_order: 1
 
 # Studying change
 
-Disclaimer: this is not a proper class on derivatives and integrals. Go grab a book before or after reading this page.
+Some extremely important tools for all kind of physics are the notions of "derivative" and "integral". They are very general concepts used to study and quantify the notion of change. There exist several type of derivatives, which can sometimes be very subtle to understand.
+
+Derivative and integrals will be absolutely necessary to study the changes occuring in thermodynamic systems and every kind of physics. As such, there is no way to escape them! 
+
+As for every mathematical object, there exist different levels of abstraction and subtelty which you can use to approach and understand them. We will present here the simplest possible approach, presenting only the very absolute basics. Clearly, this is not a proper class on derivatives and integrals. To know more, you should go grab a book reading this page and become as expert as you can on these concepts. If you are already an expert, just skip this lecture!
 
 ## Derivatives
 
+Consider a quantity $f$ which can change when a variable $x$ change. It could be for example the temperature $T$ at different point $x$ in a room or the position of something with respect to time. As such, it is described by a function $f(x)$.
+
+The **derivative** $Q$ of $f$ with respect to $x$ is another function noted as:
+
 $$ \boxed{Q = \frac{\text{d} f}{\text{d} x}} $$
 
-In your brain, you should immediately think "Oh, $Q$ is a function that tells me how does $f$ changes if $x$ changes". It works as follows:
+Do not be (yet) too impressed with the d and the fraction. Just consider this as a fancy notation.
+Seeing such a quantity, you should immediately think "Oh, $Q$ is a function that tells me how does $f$ changes if $x$ changes". It works as follows:
 
 - If $Q>0$, then $f$ increases with $x$. The stronger the increase, the bigger the value of $Q$.
 - If $Q<0$, then $f$ decreases with $x$. The stronger the increase, the bigger the absolute value of $Q$.
 - If you find that $Q=0$, it means that $Q$ is a constant with respect to $x$: $x$ can take whatever value, $f$ will always give the same number.
 
-Velocity, is how much the position $x$ of a body change with time $t$, hence it should be no surprise that we can write
+Velocity, is how much the position $p$ of a body change with time $t$, hence it should be no surprise that we can write
 
-$$v = \frac{\text{d} x}{\text{d} t}$$
+$$v = \frac{\text{d} p}{\text{d} t}$$
 
 ### Illustration: temperature along a bar of metal
 

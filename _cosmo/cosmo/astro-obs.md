@@ -255,7 +255,7 @@ Remember, as always, the usual log properties: $\log_{10}(a^b)=b\log_{10}(a)$, $
 Noting $a$ and $b$ the two filters, we derive:
 $$ a-b = m_a-m_b $$
 $$ = -2.5 \log_{10}\left(\frac{L^a}{4\pi d^2}\right) + 2.5 \log_{10}\left(\frac{L^b}{4\pi d^2}\right) + m_0^a -m_0^b$$
-$$= -2.5 \log_{10}\left(\frac{L^a}{L^b}\right) m_0^a -m_0^b $$
+$$= -2.5 \log_{10}\left(\frac{L^a}{L^b}\right)+ m_0^a -m_0^b $$
 </details>
 
 ### Distance Parallaxes and standard candles
@@ -288,7 +288,7 @@ The distance of stars within our Galaxy is commonly expressed in parsecs, or lig
 - **a parsec (pc)**: parallax second. 
 - **a lightyear (Ly)**: $1 {\rm Ly} = c \times 1{\rm yr}$.
 
-The parallax method can be used only for nearby star (otherwise the effect is too small to be seen and the star becomes a "background star"), with an upper limit of $\sim 400 Ly$.
+The parallax method can be used only for nearby star (otherwise the effect is too small to be seen and the star becomes a "background star"), with an upper limit of $\sim 400 \text{ Ly}$.
 
 **Exercice: The parallaxe of Sirius is measured to be 374 milli arcseconds (mas). Infer its distance in meters, parsec and light years.**
 <details>
@@ -321,7 +321,7 @@ The temperature can be recovered from the $B-V$ index using Ballesteros' formula
 
 $$ T = 4600 \text{K} \left(\frac{1}{0.92(B-V)+1.7}+ \frac{1}{0.92(B-V)+0.62}\right) $$ 
 
-Direct measurements of the radius of a star is very difficult to obtain. However it can be deduced as
+Direct measurements of the radius of a star is very difficult to obtain. However it can be infered from other observables as
 
 $$R =\sqrt{\frac{L}{4 \pi \sigma T^4}}$$
 
@@ -340,9 +340,9 @@ Quite amazingly, we see that the stars are not just randomly distributed in the 
 
 ## Spectral classification
 
-Harvard spectral classification, Morgan-Keenan
+Harvard spectral classification, Morgan-Keenan 
 
-- O,B,A,F,G,K,M (Oh be a fine Guy/Girl kiss me!)
+- O,B,A,F,G,K,M (Oh, be a fine Guy/Girl kiss me!)
 - 0,Ia, Iab, II,III,IV,V,VI, VII 
 
 W, S, C, L, T, Y.
@@ -359,6 +359,7 @@ W, S, C, L, T, Y.
 
 *Hertzsprung-Russel diagram using the v.4.1. of [hygdata](http://www.astronexus.com/projects/hyg). Generated with this [python code](../codes/HR-diagramm.py), inspired from this [code](https://github.com/RobertoIA/Hertzsprung-Russell/blob/master/Hertzsprung-Russell.ipynb).*
 
+The HR diagramm, gives us another way to estimate the distance of stars in our Galaxy. By measuring their their temperature, and using information about spectral lines to identifiy more precisely the stage of their evolution, it is possible to locate them on the HR diagram and thus infer their absolute magnitude. Comparing with their apparent magnitude, we can thus infer their distance. This method is known as **Main sequence fitting** or **Spectroscopic parallax**
 
 ## Going further: recommended readings
 
