@@ -5,21 +5,21 @@ parent: thermo
 nav_order: 1
 ---
 
-# Classical ideal gas.
+# Classical ideal gas
 
 ## The equation of states and energy
 
-Let us now apply the above equations to rederive the ideal gas properties. Consider a box filled with $\mathcal{N}$ particles. These particles are free and non interacting, hence their energy is given by $\vec{p}^2/2m$. The energy of a microstate, i.e. a particle configuration in the box is given by
+Let us now apply the above equations to rederive the ideal gas properties. Consider a box filled with $\mathcal{N}$ particles. These particles are free and non interacting. Treating them classicaly in the context of Newtonian mechanics, we can write the energy of each particle as $\vec{p}^2/2m$ (See the [classical mechanics](../../_meca/Newton/Energy.md) lecture on this topic). As such, the energy of a microstate, i.e. a particle configuration in the box is given by
 
-$$E(i)=\frac{1}{2m}\sum_i^{3\mathcal{N}}{p_n}^2$$
+$$E(i)=\frac{1}{2m}\sum_n^{\mathcal{N}}{\vec{p}_n}^2$$
 
-where we sum over all $\mathcal{N}$ particles and the 3 configurations of space.
+where we sum over all $\mathcal{N}$ independent particles.
 
 The partition function associated to the maximisation of enetropy is hence  
 
 $$Z=\int e^{-\frac{\beta}{2m}\sum_n p_n^2} d^{3\mathcal{N}}x d^{3\mathcal{N}}p$$
 
-Where we replaced the sums over the $N$ possible microstates associated to the macrostate by continuous integrals over momentum and space.
+Where we replaced the sums over the $N$ possible microstates associated to the macrostate by continuous integrals over momentum and space, as discussed in the previous lecture.
 
 Develloping this integral simply gives
 

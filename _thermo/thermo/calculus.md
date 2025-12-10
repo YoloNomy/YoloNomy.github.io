@@ -28,17 +28,22 @@ Seeing such a quantity, you should immediately think "Oh, $Q$ is a function that
 - If $Q<0$, then $f$ decreases with $x$. The stronger the increase, the bigger the absolute value of $Q$.
 - If you find that $Q=0$, it means that $Q$ is a constant with respect to $x$: $x$ can take whatever value, $f$ will always give the same number.
 
-Velocity, is how much the position $p$ of a body change with time $t$, hence it should be no surprise that we can write
+Let's look at a simple example. If you think about it, the velocity of an object is encoded in the change of its position. As such, you may have the intuition that the derivative is a good concept to describe velocity. Indeed, consider a moving object with position labelled by a number $X$ (for exemple the distance you could measure with a ruler between you and the object). If this object moves, the position $X$ will depend on time $t$ i.e. it will be different at different time. It is thus a function $X(t)$. The velocity $v$ is defined as being the derivative of $X$ with respect to $t$:
 
-$$v = \frac{\text{d} p}{\text{d} t}$$
+$$v = \frac{\text{d} X}{\text{d} t}$$
 
-### Illustration: temperature along a bar of metal
+We can now understand why derivatives are so important for physics! 
 
-Unfortunately I am not talking here about a place where you can drink and listen to heavy music but about a long stick made of metal which can be heated. Now consider such a stick, and imagine that for some reason, its temperature changes along its lenght. I choose here a (non-realistic) way to model it such that it can be easily understood.
+### An illustration: temperature along a bar of metal
 
-To be a bit fancy, consider a 30 cm bar with a $x$ axis labelling the position on the bar. Now one can measure the temperature $T$ at each point $x$, in order to obtain $T(x)$. Such a function will give us the temperature, say in degrees Celsius, all along the bar. Let us imagine that this temperature varies as a Gaussian curve, i.e. as on the figure below:
+Consider a long stick made of metal which can be heated (I agree that this might not be the most exciting exemple, but it is simple enough). Now consider such a stick, and imagine that, for some reason, its temperature changes along its lenght. It could be for exemple be heated only in some place by a candle.
+
+To be a bit fancy, consider a 30 cm bar with a $x$ axis labelling the position on the bar. Now one can measure the temperature $T$, in whatever unit you prefer, at each point $x$, in order to obtain $T(x)$. Such a function will give us the temperature all along the bar. 
+Imagine that by doing such a measurement, you obtain this curve:
 
 ![image](../images/temperature.png){: width="60%"}
+
+This shape is called a Gaussian curve, and it is adminitedly not a realistic model for temperature of a bar of metal, but we that's not the point here!
 
 Now what would tell us the quantity
 
@@ -62,7 +67,7 @@ Its value also inform us on how brutally or not $T$ changes as a given $x$. A cl
 
 ### Formalism of derivatives
 
-Derivation is defined formally as
+We can define derivative a bit more formally as
 
 $$\boxed{\frac{\text{d} f}{\text{d} x} = \lim_{\epsilon\to0}\frac{f(x+\epsilon)-f(x)}{\epsilon}}$$
 

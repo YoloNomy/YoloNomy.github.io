@@ -49,12 +49,12 @@ A useful analogy, is to compare the energy of a system with your bank account:
 
 The internal energy $U$ of a system can change during various types of transformations. Let us here define some of them in order to introduce some of the thermodynamical jargon you might encounter everywhere:
 
-- *(de)compression*: the volume of the system is changed.
-- *reversible/quasi-static transformation*: a transformation is performed very slowly on the state of the system.
-- *isobaric transformation*: transformation at constant pressure.
-- *adiabatic transformation*: transformation for which $\delta Q=0$.
-- *isochore transformation*: transformation at constant volume.
-- *isothermal transformation*: transformation at constant temperature.
+- **(de)compression**: the volume of the system is changed.
+- **reversible/quasi-static transformation**: a transformation is performed very slowly on the state of the system.
+- **isobaric transformation**: transformation at constant pressure.
+- **adiabatic transformation**: transformation for which $\delta Q=0$.
+- **isochore transformation**: transformation at constant volume.
+- **isothermal transformation**: transformation at constant temperature.
 
 ## Work
 
@@ -93,19 +93,19 @@ $$ {\rm d}V= \text{d}x\text{d}y\text{d}z $$ and the work of the force on the inf
 - If the volume decrease $\text{d}V<0$ and hence $\text{d}U =\delta W>0$. Thus the system gain energy when it contracts.
 
 
-**Exercice: Consider an ideal gas, thus obeying the relation $PV=nRT$. Show that, if its volume is changed from $V_A$ to $V_B$, the corresponding work is $W= n\mathcal{R}\ln\left(\frac{V_B}{V_A}\right)$.**
+**Exercice: Consider an ideal gas, thus obeying the equation of state $PV=n\mathcal{R}T$. Show that, if its volume is changed from $V_A$ to $V_B$, the corresponding work is $W= n\mathcal{R}\ln\left(\frac{V_B}{V_A}\right)$.**
 
 <details>
   <summary>Solution</summary>
 
 $$ \begin{aligned}
 W &= -\int_A^B P \text{d}V\qquad \qquad && \text{definition of work}\\
-&= -\int_A^B \frac{nRT}{V} \text{d}V && \text{ideal gas law}\\
-&= - nRT\int_A^B \frac{1}{V} \text{d}V && \text{isothermal transformation}\\
-&= - nRT [\ln(V)]^B_A && \text{integral of $1/x$}\\
-&= - nRT\left(\ln(V_B)-\ln(V_A)\right)\\
-&= nRT\left(\ln(V_A)-\ln(V_B)\right)\\
-&= nRT \ln\left(\frac{V_B}{V_A}\right) && \text{property of log: $\ln(a)-\ln(b)=\ln(a/b)$}
+&= -\int_A^B \frac{n\mathcal{R}T}{V} \text{d}V && \text{ideal gas law}\\
+&= - n\mathcal{R}T\int_A^B \frac{1}{V} \text{d}V && \text{isothermal transformation}\\
+&= - n\mathcal{R}T [\ln(V)]^B_A && \text{integral of $1/x$}\\
+&= - n\mathcal{R}T\left(\ln(V_B)-\ln(V_A)\right)\\
+&= n\mathcal{R}T\left(\ln(V_A)-\ln(V_B)\right)\\
+&= n\mathcal{R}T \ln\left(\frac{V_B}{V_A}\right) && \text{property of log: $\ln(a)-\ln(b)=\ln(a/b)$}
 \end{aligned}
 $$
 
@@ -116,9 +116,9 @@ $$
 
 Three types of heat transfers
 
-- *Conduction*
-- *Convection*
-- *Radiation*
+- **Conduction**
+- **Convection**
+- **Radiation**
 
 $P,V,T$ are related by an equation of state so it's enough to know the heat induced by a change in two of them.
 
@@ -128,10 +128,13 @@ $$\begin{cases}
 \begin{aligned}
 \delta Q &= C_p \text{d} T + h \text{d}P\\
 \delta Q &=C_v \text{d} T + \ell \text{d}V\\
-\delta Q &=\mu \text{d} V + \lambda \text{d}P
+\delta Q &=\tilde{\mu} \text{d} V + \lambda \text{d}P
 \end{aligned}
 \end{cases}
 $$
 
 ### Application: heat for an ideal gas
 
+### Generalisation for open system
+
+$$\boxed{\text{d}U = \delta Q + \delta W + \mu \text{d}N}$$

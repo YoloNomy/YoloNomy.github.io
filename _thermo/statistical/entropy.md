@@ -5,7 +5,7 @@ parent: thermo
 nav_order: 1
 ---
 
-# Statistical physics in general
+# Maximizing the entropy
 
 ## Statistical physics, microstates and macrostates
 
@@ -17,19 +17,18 @@ Statistical mechanics lies on the distinction between macrostates and microstate
 
 - The *microstate* of a system is the complete description of the system in term of its microscopic constituents.
 
-As such, **several *microstates* can correspond to the same *macrostate***: you can think of an infinite amount of different ways to put particles of gas in a box which will give you the same measured pressure, temperature and volume.
+As such, **several *microstates* can correspond to the same *macrostate***: you can think of an infinite amount of different ways to put particles of gas in a box which will give you the same measured pressure, temperature and volume. As time passes, the system will explore different microstates while remaining in the same macrostate.
 
-Each microstate $i$ can be associated with a probability of occuring $p_i$. The entierty of statistical mechanics lies on the following statistical law: **The macrostate you will observe will be the most probable** that is the the macrostate which is associated with the highest number of probable microstates.
-
-A way to quantify the likelihood of a macrostate is given by the so-called *statistical entropy* which we will define. The higher the entropy of a macrostate, the more microstates with high probabilities are associated with it, and hence the higher are the chances you will observe it. We will see later on how this notion of entropy connects with the one used in our previous thermodynamics class.
+Each microstate $i$ can be associated with a probability of occuring $p_i$. The challenge of statistical mechanics is to find the right way to estimate this probability. This will be done by realizing maximizing a quantity, known as the statistical entropy $S$. We will see that $S$ can be identified with the quantity appearing in the second principle of thermodynamics considered in our previous thermodynamics class. The entropy can easily be treated as one of the most profound and most subtle concept of modern physics.
 
 <details>
-  <summary>Basic probability theory</summary>
+  <summary>Preliminary review of basic probability theory for the discrete case</summary>
    
-The sum of all probabilities 
+The sum of all probabilities
+
 $$\sum p_i=1$$
 
-The average of the quantity $X$ is
+The **average** of the quantity $X$ is
 
 $$\langle X \rangle = \sum_i p_i X_i$$
 
@@ -37,7 +36,9 @@ $$\langle X \rangle = \sum_i p_i X_i$$
 
 ## Maximizing the entropy
 
-Let $i$ label a discrete number of $N$ possible microstates associated with a macrostate of a system. Let $p_i$ be the probability for the system to be in the microstate $i$, such that $\sum_i p_i = 1$. We define the entropy of the macrostate $S$ as:
+ *Statistical entropy*  can thus be used to quantify the likelihood of a microstate $p_i$. The higher the entropy of a macrostate, the more microstates with high probabilities are associated with it, and hence the higher are the chances you will have to observe it.
+
+Let $i$ label a discrete number of $N$ possible microstates associated with a macrostate of a system. Let $p_i$ be the probability for the system to be in the microstate $i$, such that $\sum_i p_i = 1$. We define the entropy $S$ of the macrostate as:
 
 $$
 \boxed{
@@ -54,17 +55,21 @@ As such, if there is a single microstate $N=1$ explaining the whole macrostate, 
 
 ## Derivation of the probabilities of maximal entropy in the canonical ensemble ($N$ fixed).
 
-Let's now traduce this idea in term of the familiar problem of particles in a box. Consider then a system, like a gas, with mean energy $\langle E\rangle$ (its macrostate). Assume that there exist $N$ distinguishable possible ways to re-arange the particles inside the box to give the same mean energy ($N$ possible microstate associated with the macrostate).
+Let's now traduce this idea in term of the familiar problem of particles in a box. Consider then a closed system, like a gas, with mean energy $\langle E\rangle$ (its macrostate). The system is "forced" to keep this mean energy, for exemple by being emmerged in a larger exterior with this energy. We call such an exterior a heat bath. 
 
-Let's label by $i$ the possible microstates, that is the possible particle configurations giving back the mean energy $\langle E\rangle$. To each microstate is associated an energy $E_i$. Some can be very weird, as e.g. all the particles being located in one corner of the box, or half having very high energies and the other half having very low energies. However, the great majority of these microstates are made of particles being distributed everywhere in the box with average temperatures. As such, these states will contribute much more to the entropy calculation and will be incredibly more probable.
+Assume that there exist $N$ distinguishable possible ways to re-arange the particles inside the box to give the same mean energy ($N$ possible microstate associated with the macrostate). For simplicity, we assume here that the number of microstates is discrete and finite. It will be straightforward to generalize this to the continuous case by replacing sums with integrals and taking limits toward infinity but the discrete picture is much easier to understand.
 
-For simplicity, we now assume that the accessible energy levels of the microstates $E_i$ are discrete. It will be straightforward to generalize this to the continuous case by replacing sums with integrals and taking limits toward infinity. Let $n_i$ be the occupation number that is the number of possible microstates (particle configurations) associated with the energy $E_i$. We have:
+Let's label by $i$ the possible microstates, that is the possible particle configurations giving back the mean energy $\langle E\rangle$. To each microstate is associated a specific energy $E_i$. As time goes by, the system goes from one microstate to another. It's energy can thus vary slightly, but the mean will always remain the same. Some microstate could be very weird, as e.g. all the particles being located in one corner of the box, or half having very high energies and the other half having very low energies. However, the great majority of these microstates are made of particles being distributed randomly everywhere in the box with average energies. As such, these states will contribute much more to the entropy calculation and will be incredibly more probable.
+
+Let $n_i$ be the occupation number that is the number of possible microstates (particle configurations) associated with the same energy $E_i$.
+
+We have:
 
 $$
 \sum_i n_i = N
 $$
 
-The probability of a particle to be in the state $i$ is then simply:
+The probability of the configuration of particles to be in the state $i$ is then simply:
 
 $$
 p_i = \frac{n_i}{N}
@@ -75,7 +80,6 @@ Leading naturally from the above equation to
 $$
 \sum_i p_i = \sum_i \frac{n_i}{N} = 1
 $$
-
 
 The average energy of the macrostate is then expressed in term of the microstates as:
 
@@ -182,7 +186,7 @@ $$
 \boxed{Z = \sum_ie^{-\beta E_i}}
 $$
 
-The mean energy of the particle can then be re-expressed from $Z$ as
+The mean energy of our gas can then be re-expressed from $Z$ as
 
 $$
 \boxed{\langle E \rangle = -\frac{1}{Z}\frac{\partial Z}{\partial \beta} = -\frac{\partial{\ln Z}}{\partial \beta}}
@@ -295,3 +299,5 @@ From which
 $$ P = \frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} =-\frac{\partial{E}}{\partial{V}}\Bigg|_S$$
 
 Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to derive all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the mean energy $E$, the entropy $S$...) through the partition function $Z$, simply by asking for the maximization of the entropy.
+
+## The continuous case
