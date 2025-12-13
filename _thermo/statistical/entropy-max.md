@@ -216,16 +216,16 @@ $$
  
 
 $$
-dS = \beta d\langle E\rangle + \langle E\rangle d\beta + \frac{\partial \ln Z}{\partial \beta}d\beta
+\text{d}S = \beta \text{d}\langle E\rangle + \langle E\rangle\text{d}\beta + \frac{\partial \ln Z}{\partial \beta}d\beta
 $$
 
-using the relation between $\langle E \rangle$ and the entropy aswell as the fact that $Z$ is a function of only one independant variable $\beta$ or $\langle E \rangle$ since both are not independant because of $\langle E \rangle$ can be expressed in terms of $Z$. Now using the expression of $\langle E \rangle$ in term of $Z$, we can see that the two last terms cancels out to give simply: $dS = \beta d\langle E\rangle$. With the definition of $T$:
+using the relation between $\langle E \rangle$ and the entropy aswell as the fact that $Z$ is a function of only one independant variable $\beta$ or $\langle E \rangle$ since both are not independant because of $\langle E \rangle$ can be expressed in terms of $Z$. Now using the expression of $\langle E \rangle$ in term of $Z$, we can see that the two last terms cancels out to give simply: $\text{d}S = \beta \text{d}\langle E\rangle$. With the definition of $T$:
 
 $$
 T = \frac{\partial \langle E \rangle}{\partial S}
 $$
 
-Whe have $dS = \frac{1}{T}d\langle E\rangle$, allowing us to conclude that:
+Whe have $\text{d}S = \frac{1}{T}\text{d}\langle E\rangle$, allowing us to conclude that:
 
 $$
 \beta = \frac{1}{T}
