@@ -40,15 +40,20 @@ $$
 \langle E \rangle  = \sum_i p_i E_i = \sum_i \frac{n_i}{N} E_i
 $$
 
-## Maximizing the entropy 
+## Expressing the entropy 
 
-The number of possible ways to rearange the $N$ microstates into the possible allowed energy states with occupation numbers $n_i$ is given by:
+Recall from the [previous lecture](../entropy/), that the entropy $S$ of a probability distribution $p_i$ is 
+
+$$ S= \sum_i p_i \ln(p_i)$$
+
+Let's try to compute it for the case at hand here.
+To do so, we consider the number of possible ways to rearange the $N$ microstates into the possible allowed energy states with occupation numbers $n_i$ is given by:
 
 $$
 C^n_N = \frac{N!}{\prod_i n_i!}
 $$
 
-Maximizing $C^n_N$ will give us the most probable configuration of the $n_i$. It can be shown that this maximum is very sharp, making other configurations almost impossible.
+Maximizing $C^n_N$ will give us the most probable configuration of the $n_i$. It can be shown that this maximum is very sharp, making other configurations almost impossible. 
 
 If $N$ and $n_i \to \infty$, which is clearly the case for physical systems made of atoms, we can use the so called **Stirling approximation**:
 
@@ -57,16 +62,20 @@ $$ N! \sim N^N e^{-N} $$
 <details>
   <summary>Proof</summary>
   
+Recall first that $N! = 1\times 2 \times 3 ... \times N$ and that for two number $a$ and $b$, $ln(a \times b)=\ln(a)+\ln(b)$. Then $\ln(N!)= \ln(1\times 2 \times 3 ... \times N) = \ln(1)+ \ln(2) + ...+\ln(N)$. As such:
+
 $$
 \begin{aligned}
 \ln(N!) &= \sum_{x=1}^N \ln(x)
-\\ &\sim \int_1^N dx \ln(x) \qquad (N\to \infty)\\
+\\ &\sim \int_1^N \ln(x) \qquad (N\to \infty) \text{d}x\\
 &= [x \ln(x)-x ]_1^N \\
 &= N\ln N -N
 \end{aligned}
 $$
 
-(One can verify easily that $\frac{d}{dx}(x\ln(x)-x=\ln(x)$). And then:
+If you do not recall the primitive of $\ln(x)$ ised in the above derivation, you can at least verify convince yourself that $\frac{d}{dx}(x\ln(x)-x = \frac{d}{dx}(x\ln(x)) - 1 = \ln(x) - \frac{x}{x} -1  = \ln(x)$. 
+
+Then, one can recover $N!$ from the previous expression by taking its exponential, that is:
 
 $$
 N! \sim e^{N\ln N -N} = e^{\ln(N^N)}e^{-N} = N^N e^{-N}
@@ -74,10 +83,10 @@ $$
 
 </details>
 
-This approximation allows us to bring the entropy as:
+This approximation allows us to write the entropy $S$ in terms of $C^n_N$ as 
 
 $$ 
-\ln(C^n_N)= NS
+S= \ln(C^n_N)/N
 $$
 
 <details>
@@ -85,7 +94,7 @@ $$
 
 $$
 \begin{aligned}
-\ln(C)&= N\ln(N)- \sum_i n_i \ln(n_i)\\
+\ln(C^n_N)&= N\ln(N)- \sum_i n_i \ln(n_i)\\
 &= Nln(N) - \sum_i p_i N \ln(p_iN)\\
 & =  Nln(N) - \sum_i p_i N(\ln(p_i)+ \ln(N))\\
 &= Nln(N) - \sum_i N p_i\ln(p_i)+ \sum_i N p_i\ln(N))\\
@@ -95,7 +104,9 @@ $$
 $$
 </details>
 
-Maximizing $C^n_N$ is thus equivalent to maximizing $S$. This will give us the most probable particle configurations within the box associated to the most probable $n_i$ combinations amongst the $N$ possible macrostates. As all this is very abstract, let us rephrase again exactly what we are doing here. You are having a gas and say that you are measuring one way or another that its mean energy is $\langle E\rangle$. Then you are thinking of the gas as made of particles, and you consider what are the most probable ways that these particles are arranged within the box. Particle configurations are classified by their energy $E_i$ and a number of corresponding configurations $n_i$ leading to this energy. Now in order to find the probability $p_i$, we will maximize the entropy, under constraints.
+## Maximizing the entropy 
+
+From the previous expression, we understand that maximizing $C^n_N$ is equivalent to maximizing $S$ (as $N$ is fixed). This will give us the most probable particle configurations within the box associated to the most probable $n_i$ combinations amongst the $N$ possible macrostates. As all this is very abstract, let us rephrase again exactly what we are doing here. You are having a gas and say that you are measuring one way or another that its mean energy is $\langle E\rangle$. Then you are thinking of the gas as made of particles, and you consider what are the most probable ways that these particles are arranged within the box. Particle configurations are classified by their energy $E_i$ and a number of corresponding configurations $n_i$ leading to this energy. Now in order to find the probability $p_i$, we will maximize the entropy, under constraints.
 
 We will now do the entropy maximization using the so-called **Lagrange multipliers** and asking for the following constraints:
 

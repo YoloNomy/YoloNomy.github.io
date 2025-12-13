@@ -20,6 +20,10 @@ $$ U = \langle E \rangle = \sum_i p_i E_i $$
 
 $$\text{d} U = \sum_i E_i\text{d}p_i + \sum_i p_i \text{d}E_i $$
 
+$$\boxed{\delta Q = \sum_i E_i\text{d}p_i }$$
+
+$$\boxed{\delta W =  \sum_i p_i \text{d}E_i}$$
+
 ## Second principle
 
 ## Third principle
