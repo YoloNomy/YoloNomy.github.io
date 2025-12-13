@@ -4,6 +4,10 @@ title: Maths
 subtitle: Pure maths over there!
 ---
 
+# A bit of logic
+
+- propositional logic
+
 # Geometry
 
 - [Polyhedrons (french)](polyhedron/polyhedron.md)

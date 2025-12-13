@@ -17,7 +17,7 @@ where we sum over all $\mathcal{N}$ independent particles.
 
 The partition function associated to the maximisation of enetropy is hence  
 
-$$Z=\int e^{-\frac{\beta}{2m}\sum_n p_n^2} d^{3\mathcal{N}}x d^{3\mathcal{N}}p$$
+$$Z=\int e^{-\frac{\beta}{2m}\sum_n \vec{p}_n^2} d^{3\mathcal{N}}x d^{3\mathcal{N}}p$$
 
 Where we replaced the sums over the $N$ possible microstates associated to the macrostate by continuous integrals over momentum and space, as discussed in the previous lecture.
 
