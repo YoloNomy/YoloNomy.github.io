@@ -5,6 +5,6 @@ parent: thermo
 nav_order: 1
 ---
 
-# Defining equilibrium
+## Defining equilibrium
 
-# Principle zero of thermodynamics
+## The principle zero of thermodynamics

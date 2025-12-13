@@ -4,15 +4,17 @@ title: Statistical physics
 parent: thermo
 nav_order: 1
 ---
-# Derivation of the probabilities of maximal entropy in the canonical ensemble.
+# Derivation of the probability of microstates by maximizing the entropy in the canonical ensemble.
 
 Let's now traduce the principle of maximum entropy in term of the familiar problem of particles in a box. Consider then a closed system, like a gas, with mean energy $\langle E\rangle$ (its macrostate). The system is "forced" to keep this mean energy, for exemple by being emmerged in a larger exterior with this energy. We call such an exterior a heat bath. A good example would then be a glass of water standing in your kitchen. 
+
+## Microstates and occupation number
 
 Assume that there exist $N$ distinguishable possible ways to re-arange the particles inside the box to give the same mean energy ($N$ possible microstate associated with the macrostate). For simplicity, we assume here that the number of microstates is discrete and finite (which is of course only a gross representation of a glass of water). It will be straightforward to generalize this to the continuous case by replacing sums with integrals and taking limits toward infinity but the discrete picture is much easier to understand.
 
 Let's label by $i$ the possible microstates, that is the possible particle configurations giving back the mean energy $\langle E\rangle$. To each microstate is associated a specific energy $E_i$. As time goes by, the system might go from one microstate to another. It's energy can thus vary slightly, but the mean will always remain the same. Some microstate could be very weird, as e.g. all the particles being located in one corner of the box, or half having very high energies and the other half having very low energies. However, the great majority of these microstates are made of particles being distributed randomly everywhere in the box with average energies. As such, these states will contribute much more to the entropy calculation and will be incredibly more probable.
 
-Let $n_i$ be the occupation number that is the number of possible microstates (particle configurations) associated with the same energy $E_i$.
+Let $n_i$ be the **occupation number** that is the number of possible microstates (particle configurations) associated with the same energy $E_i$.
 
 We have:
 
@@ -37,6 +39,8 @@ The average energy of the macrostate is then expressed in term of the microstate
 $$
 \langle E \rangle  = \sum_i p_i E_i = \sum_i \frac{n_i}{N} E_i
 $$
+
+## Maximizing the entropy 
 
 The number of possible ways to rearange the $N$ microstates into the possible allowed energy states with occupation numbers $n_i$ is given by:
 
@@ -117,7 +121,7 @@ $$
 \boxed{p_i = \frac{1}{Z}e^{-\beta E_i}}
 $$
 
-With $Z$ the *partition function*:
+With $Z$ the **partition function**:
 
 $$
 Z := e^{1+\alpha}
@@ -134,8 +138,12 @@ $$
 Leading to:
 
 $$
-\boxed{Z = \sum_ie^{-\beta E_i}}
+\boxed{Z = \sum_i e^{-\beta E_i}}
 $$
+
+We have now been able to express the probability of each configuration of particles $p_i$ solely in term of its energy $E_i$. The only missing part is to find what could be this mysterious constant $\beta$, which was forced upon us as a Lagrange multiplier for the constraint that we know the mean energy of the system. We are about to show that $\beta =1/T$, and is the inverse of the temperature of the system. This already tells us something profound about the nature of what temperature is. But what exactly? 
+
+## Finding back physical quantities from $Z$
 
 The mean energy of our gas can then be re-expressed from $Z$ as
 
@@ -211,7 +219,7 @@ $$
 dS = \beta d\langle E\rangle + \langle E\rangle d\beta + \frac{\partial \ln Z}{\partial \beta}d\beta
 $$
 
-(using Eq.\ref{eq:entropy-of-E} and the fact that $Z$ is a function of only one independant variable $\beta$ or $\langle E \rangle$ since both are not independant because of Eq.\ref{eq:E-of-Z}. Now using Eq.\ref{eq:E-of-Z}, we can see that the two last terms cancels out to give simply: $dS = \beta d\langle E\rangle$. With the definition of $T$:
+using the relation between $\langle E \rangle$ and the entropy aswell as the fact that $Z$ is a function of only one independant variable $\beta$ or $\langle E \rangle$ since both are not independant because of $\langle E \rangle$ can be expressed in terms of $Z$. Now using the expression of $\langle E \rangle$ in term of $Z$, we can see that the two last terms cancels out to give simply: $dS = \beta d\langle E\rangle$. With the definition of $T$:
 
 $$
 T = \frac{\partial \langle E \rangle}{\partial S}
@@ -224,11 +232,18 @@ $$
 $$
 </details>
 
+Similarly, we define the pressure to be 
+
+$$\boxed{P := -\frac{\partial{\langle E \rangle}}{\partial{V}}\Bigg|_S}$$
+
+Similarly, we will justify such a definition in the next section.
+As such, knowing $Z$ allows us to express all our state variable and state functions and relate them to the microscopic behaviour of the system. 
+
 # Crossing the bridge with standard thermodynamics
 
 ## On the definition of temperature
 
-The temperature is defined above by Eq.\ref{eq:defTemp}.
+The temperature is defined above. As such $T$ is not just a measurable variable, as it was in classical thermodynamics, but it becomes a quantity emmerging from the underlying behaviour.
 
 Why is it a good definition:
 - direction of heatflows

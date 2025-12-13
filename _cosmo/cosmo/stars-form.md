@@ -10,7 +10,7 @@ nav_order: 1
 By trying to answer the vast question "what is a star?", we will apply most of the things we have learn in our physics lectures in an exciting context. We will hence discover one of the multiple reasons why astrophysics is so exciting : it involves many different branches of physics and put them in a cosmic perspective! If you don't master yet all of the concepts here, but are excited about astrophysics, you can still try to follow these notes. Hopefully, it should give you motivation to dig deeper the other lectures. 
 
 
-There is much more in the sky than what your eyes can see! Have a look for exemple [here](https://volskiy.smugmug.com/Nebulas/i-8dZ6DdL/A) or [here](https://apod.nasa.gov/apod/ap190821.html), to have an idea of what the constellation of Orion -- discussed in the [previous lecture](../astro-obs) -- would look like if your eyes were able to collect photons like a photo camera can. Space is thus full of invisible stuffs! Among these stuffs are interstellar clouds, made mostly of gas and a bit $~1\%$ of dust grains. These clouds often appear red on the photographies due to a characteristic emission of Hydrogen when they are heated by nearby stars.
+There is much more in the sky than what your eyes can see! Have a look for exemple [here](https://volskiy.smugmug.com/Nebulas/i-8dZ6DdL/A) or [here](https://apod.nasa.gov/apod/ap190821.html), to have an idea of what the constellation of Orion -- discussed in the [previous lecture](../astro-obs) -- would look like if your eyes were able to collect light as a camera. There is thus much more happening in the sky than the naked eye can see. Particularly, there is a large amount of interstellar clouds, made mostly of gas and a bit $~1\%$ of dust grains. These clouds often appear red on the photos due to a characteristic emission of Hydrogen when they are heated by nearby stars.
 
 
 ## Jeans mass
@@ -321,7 +321,7 @@ $$\boxed{\dot{R} = -\frac{10}{3}\frac{LR^2}{GM^2}}$$
 
 ### Nuclear energy!
 
-### Degeneracy pressure: Minimal mass to pretend at the star title
+## Degeneracy pressure: Minimal mass to pretend at the star title
 
 
 ## Eddington limit: Maximal mass before implosion
