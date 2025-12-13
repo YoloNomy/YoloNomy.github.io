@@ -252,18 +252,6 @@ $$ P = \frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} =-\frac{\partial{E
 
 Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to derive all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the mean energy $E$, the entropy $S$...) through the partition function $Z$, simply by asking for the maximization of the entropy.
 
-## The three principles of thermodynamics in a statistical context
-
-### First principle 
-
-$$ U = \langle E \rangle = \sum_i p_i E_i $$ 
-
-$$\text{d} U = \sum_i E_i\text{d}p_i + \sum_i p_i \text{d}E_i $$
-
-### Second principle
-
-### Third principle
-
 ## Taking the continuous limit
 
 ## Going further: recommended readings and watching
