@@ -9,3 +9,5 @@ You will find here some fun python applications to physics with some detailled e
 # Electro and magnetostatics
 
 # Maxwell's equations
+
+# Electromagnetism in media

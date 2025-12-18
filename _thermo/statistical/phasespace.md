@@ -17,4 +17,3 @@ $$
 
 ## Entropy in phase space
 
-

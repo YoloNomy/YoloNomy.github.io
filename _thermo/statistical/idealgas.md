@@ -9,7 +9,7 @@ nav_order: 1
 
 ## The equation of states and energy
 
-Let us now apply the above equations to rederive the ideal gas properties. Consider a box filled with $\mathcal{N}$ particles. These particles are free and non interacting. Treating them classicaly in the context of Newtonian mechanics, we can write the energy of each particle as $\vec{p}^2/2m$ (See the [classical mechanics](../../_meca/Newton/Energy.md) lecture on this topic). As such, the energy of a microstate, i.e. a particle configuration in the box is given by
+Let us now apply the above equations to rederive the ideal gas properties. Consider a box filled with $\mathcal{N}$ particles. These particles are free and non interacting. Treating them classicaly in the context of Newtonian mechanics, we can write the energy of each particle as $mv^2/2 = \vec{p}^2/2m$ (See the [classical mechanics](../../_meca/Newton/Energy.md) lecture on this topic). As such, the energy of a microstate, i.e. a particle configuration in the box is given by
 
 $$E(i)=\frac{1}{2m}\sum_n^{\mathcal{N}}{\vec{p}_n}^2$$
 
@@ -37,9 +37,9 @@ where the $\mathcal{N}!$ is here to traduce the fact that particles are distingu
 $$Z=\frac{V}{\mathcal{N}!}\left(\frac{2m\pi}{\beta}\right)^{\frac{3\mathcal{N}}{2}}$$
 </details>
 
-From $Z$, one can find back the mean energy of the macrostate under consideration to be
+From $\langle E\rangle$, one can find back the mean energy of the macrostate under consideration to be
 
-$$ \boxed{E = -\frac{\partial \ln(Z)}{\partial \beta} = \frac{3}{2}\mathcal{N}k_B T}$$
+$$ \boxed{U = \langle E \rangle = -\frac{\partial \ln(Z)}{\partial \beta} = \frac{3}{2}\mathcal{N}k_B T}$$
 
 <details>
  <summary>Proof</summary>
@@ -67,7 +67,7 @@ that is, we derived back the ideal gas law
 
 $$ \boxed{P =\frac{n\mathcal{R}T}{V}}$$
 
-and thus, only by assuming that particles were not interacting $E=E_c$, and asking for the entropy to be maximal! 
+and thus, only by assuming that particles were not interacting i.e. that the energy of a microstate is given by the sum of the kinetic energy of each particle $E(i)=\sum^{\mathcal{N}}_k E_c(k)$, and asking for the entropy to be maximal! 
 
 <details>
   <summary>Proof</summary>

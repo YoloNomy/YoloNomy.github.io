@@ -21,17 +21,33 @@ $$\boxed{\text{d}S \geq 0}$$
 
 This fact has very proufound roots, but for now we just need to accept it, as something that is always verified and that we can use to understand systems. 
 
-## A consequence: heat flows from hot to cold 
+## A consequence: heat flows from hot regions to cold regions
 
 A consequence of the second principle, is that energy flows from hot to cold systems. To convince yourself, consider two systems $A$ and $B$ in contact with each others with different temperature $T_A$ and $T_B$. $A$ and $B$ can exchange energy. We expect them to gradually reach thermal equilibrium such that, after a while $T_A=T_B$.
 
 
-During the transformation, we expect Entropies to be additives $S = S_A + S_B$ and energy is conserved  $\text{d}U_A + \text{d}U_B=0$. 
+During the transformation, we expect Entropies to be additives $S = S_A + S_B$. We also expect energy to be additive $U= U_A + U_B$ and energy is conserved through the transformation  $\text{d} U = \text{d}U_A + \text{d}U_B=0$, such that, for a transfer of energy solely through heat for two systems in contact: $\delta Q_A = -\delta Q_B$. 
 
 Adding on top of that the second law, which we will assume to be true $\text{d}S_A + \text{d}S_B\geq0$.
 
-$$$\text{d}S_A + \text{d}S_B\geq0 $$
-$$$\text{d}S_A + \text{d}S_B\geq0 $$
+$$ \text{d}S_A + \text{d}S_B\geq0 $$
 
+$$ \frac{\delta Q_A}{T_A} + \frac{\delta Q_B}{T_B} \geq0 $$
+
+$$ \frac{\delta Q_A}{T_A} - \frac{\delta Q_A}{T_B} \geq0 $$
+
+Now, let's assume that the heat transfer goes from $B$ to $A$, that is, $A$ is receiving the heat ($\delta Q_A \geq 0$) and $B$ is loosing it ($\delta Q_B \leq 0$). As such:
+
+$$ \frac{1}{T_A} - \frac{1}{T_B} \geq0 $$
+
+$$ \frac{T_B-T_A}{T_A T_B} \geq 0$$
+
+$T_A$ and $T_B$ are temperatures, as such $T_A, T_B \geq 0$ and hence
+
+$$ T_B - T_A \geq 0 $$
+
+$$ T_B \geq T_A $$
+
+Hence, the heat transfer must go from the hot object $B$ to the colder one $A$!
 
 ## A consequence: irreversibility 

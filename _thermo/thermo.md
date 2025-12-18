@@ -12,17 +12,18 @@ You will find here some fun python applications to physics with some detailled e
 - [Studying change: derivative, integrals, differentials](../thermo/calculus/)
 - [First law of thermodynamics: energy](../thermo/firstprinciple/)
 - [But what is equilibrium?](../thermo/equilibrium/)
-- [The ideal gas, part I](../thermo/idealgas/)
+- [The ideal gas: the thermodynamics perspective](../thermo/idealgas/)
 - Van der Waals gas
 - [Second law of thermodynamics: entropy](../thermo/secondprinciple/)
+- thermodynamical potentials and phase transitions
 
 # Statistical physics
 
 - [Introducing the statistical entropy](../statistical/entropy/)
 - [Maximizing the entropy: the canonical ensemble](../statistical/entropy-max/)
-- [The ideal gas, part II](../statistical/idealgas/)
-- [Grand canonical ensemble](../statistical/grandcanonical/)
 - [Thinking in phase space](../statistical/phasespace/)
+- [The ideal gas: the statistical perspective](../statistical/idealgas/)
+- [Grand canonical ensemble](../statistical/grandcanonical/)
 - [The three principles of thermodynamics](../statistical/principles/)
 - [Quantum statistics: fermions and bosons](../statistical/quantumstat/)
 - [Fermi gas](../statistical/fermigas/)

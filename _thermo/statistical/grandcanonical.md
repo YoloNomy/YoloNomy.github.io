@@ -45,7 +45,6 @@ with $\alpha=\mu\beta$.
 
 Note that allowing other constraints as Eq.\ref{eq:constraintsGrandCano} would add new lagrange multipliers appearing in the exponential of the expression of $p_i$.
 
-
 ### Ideal gas, again
 
 

@@ -177,3 +177,5 @@ $$ \langle v \rangle = 510 m/s$$
 </details>
 
 The above expression also demonstrates Joule's second law, stating that $U$ depends solely of $n$ and $T$ for an ideal gas.
+
+## Beyond the ideal gas

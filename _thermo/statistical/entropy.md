@@ -82,7 +82,7 @@ Entopy is often reffered to as a quantification of the **uncertainty** or of the
 
 Consider a system in a given macrostate associated with many possible microstates of probabilities $p_i$. There is a strong sense, rooted in information theory, in which $S$ quantifies the amount of things we do not know about the system.
 
-While we will not prove it now (that's an exercice for later), maximizing $S$ assuming that we have $N$ accessible microstates and under the only constraints that $\sum_i p_i=1$ leads to 
+It is possible to show (and we will in the next lecture) that maximizing $S$ assuming that we have $N$ accessible microstates and under the only constraints that $\sum_i p_i=1$ leads to 
 
 $$p_i = \frac{1}{N}$$
 

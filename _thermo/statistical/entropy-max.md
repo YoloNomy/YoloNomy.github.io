@@ -8,21 +8,23 @@ nav_order: 1
 
 Let's now traduce the principle of maximum entropy in term of the familiar problem of particles in a box. Consider then a system, like a gas, with average energy $\langle E\rangle$ (its macrostate). The system is "forced" to keep this average energy, for exemple by being emmerged in a larger exterior with this energy. In other word, it is in thermal equilibrium with it as defined in this [lecture](../../thermo/equilibrium). We call such an exterior a heat bath. A good example would then be a glass of water standing in your kitchen. For now, the exact physical system is not important, and the equations we will derive will be very general. The only thing that matters is that our system can access multiple microstates with different energy levels, under the constraint of having a given average energy.
 
+<!---
+
 ## Microstates and occupation number
 
 Assume that there exist $N$ distinguishable possible ways to re-arange the particles inside the box to give the same average energy ($N$ possible microstate associated with the macrostate). For simplicity, we assume here that the number of microstates is discrete and finite (which is of course only a gross representation of a glass of water). It will be straightforward to generalize this to the continuous case by replacing sums with integrals and taking limits toward infinity but the discrete picture is much easier to understand.
 
-Let's label by $i$ the possible microstates, that is the possible particle configurations giving back the average energy $\langle E\rangle$. To each microstate is associated a specific energy $E_i$. As time goes by, the system might go from one microstate to another. It's energy can thus vary slightly, but the mean will always remain the same. Some microstate could be very weird, as e.g. all the particles being located in one corner of the box, or half having very high energies and the other half having very low energies. However, the great majority of these microstates are made of particles being distributed randomly everywhere in the box with average energies. As such, these states will contribute much more to the entropy calculation and will be incredibly more probable.
+Let's label by $i$ the possible microstates, that is the possible particle configurations in our box of gas. To each microstate is associated a specific energy $E_i$. As time goes by, the system might go from one microstate to another, and some are possible but will never be explored. In particular, we have the constraint imposed by the heat bath that the average energy (e.g. in time) should be $\langle E \rangle$. The energy of the system can thus varies (fluctuate) slightly, but the average will always remain the same. Some microstate could be very weird, as e.g. all the particles being located in one corner of the box, or half having very high energies and the other half having very low energies. However, the great majority of these microstates are made of particles being distributed randomly everywhere in the box with reasonable velocities. As such, these states will   will be incredibly more probable and contribute much more to the value of the entropy.
 
-Let $n_i$ be the **occupation number** that is the number of possible microstates (particle configurations) associated with the same energy $E_i$.
+Let $n_i$ be the **occupation number** that is the number of possible microstates (particle configurations) amongst the $N$ associated with the same energy $E_i$.
 
-We have:
+We have, by construction:
 
 $$
 \sum_i n_i = N
 $$
 
-The probability of the configuration of particles to be in a state $i$ of energy $E_i$ can be then simply written as:
+The probability of the configuration of particles to be found in a state $i$ of energy $E_i$ can be then simply written as:
 
 $$
 p_i = \frac{n_i}{N}
@@ -92,6 +94,22 @@ $$
 <details>
   <summary>Proof</summary>
 
+Using Stirling's approximation:
+
+$$
+C^n_N =  \frac{N!}{\prod_i n_i!} \sim \frac{N^N e^{-N}}{\prod_i n_i^{n_i}e^{-n_i}}
+$$
+
+Now $$\prod_i n_i^{n_i}e^{-n_i}= e^{-\sum_k n_i}\prod_i n_i^{n_i}$$, since $e^{-n_1}e^{-n_2}...= e^{-n_1-n_2-...}$. And since $\sum_k n_k =N$, we find that $\prod_i n_i^{n_i}e^{-n_i}= e^{-N}\prod_i n_i^{n_i}$. 
+
+Thus:
+
+$$
+C^n_N \sim \frac{N^N}{\prod_i n_i^{n_i}}
+$$
+
+Taking now the logarithm (and recalling that $ln(a/b)=ln(a)-ln(b)$):
+
 $$
 \begin{aligned}
 \ln(C^n_N)&= N\ln(N)- \sum_i n_i \ln(n_i)\\
@@ -106,6 +124,7 @@ $$
 
 
 From the previous expression, we understand that maximizing $C^n_N$ is equivalent to maximizing $S$ (as $N$ is fixed). Following our discussion of the [previous lecture](../entropy), doing so with the additional constraint that $\langle E \rangle$ is known is a powerful inference tool which will allow us to get the probability of each microstate $p_i$ while being fair and accounting for what we don't know. Thanks to our previous derivation, we also see that, since $S$ is proportional to $C^n_N$, doing so will give us the most probable particle configurations within the box associated to the most probable $n_i$ combinations amongst the $N$ possible macrostates.
+--->
 
 ## Maximizing the entropy 
 
@@ -160,7 +179,6 @@ We have now been able to express the probability of each configuration of partic
 
 Now that we introuced Lagrange multipliers, we will prove the claim made in our [first lecture](.//entropy) that, without any information on the system, maximizing the entropy leads to equiprobable probability distributions.
 
-
 </details>
 
 <details markdown="1">
@@ -171,6 +189,8 @@ We will now see how the previous derivation change in the case of a biased dice.
 
 </details>
 
+- Maximizing the entropy for the microcanonical case gives equal probabilities
+- Maximizing the entropy for the canonical case is equivalent to maximize the free energy $F$
 
 ## Finding back physical quantities from $Z$
 
@@ -288,7 +308,7 @@ On the above figure, we see indeed that probability distributions for the micros
 
 Quantitatively, considering a transformation which change the average energy of the heat bath by a small amout $\text{d}\langle E\rangle$ (for exemple heating it somehow, at fixed volume and number of particle, which we always assumed here).The change of average energy can be associated with a change of entropy of the probability distribution such as
 
-$$ \text{d}\langle E\rangle = \frac{\partial \langle E\rangle}{\partial S}\Bigg|_{n,V} \text{d}S= T\text{d}S$$
+$$ \text{d}\langle E\rangle = \frac{\partial \langle E\rangle}{\partial S}\Bigg|_{n,V} \text{d}S= T\text{d}S $$
 
 You might recognize here some flavour of the definition of entropy variations used to introduce the [second principle of thermodynamics](../../thermo/secondprinciple/)!
 
@@ -296,27 +316,30 @@ On the above numerical exemple, we see that $S$ seems to always increase when $\
 
 A consequence of this, is that $T$ thus defined will seemingly always be a positive quantity. This is also a good news for our proposition of definition. What sense could we make of a negative temperature anyway? Well, this interesting question will has a very nice answer: negative temperature systems can exists, and our definition allows for it. They are known as "forced systems", in which the entropy of the system dicreases when we imput more energy (i.e. the system becomes more organized when we inject energy in them). Such systems rarely exist spontaneously in nature and we'll discuss them and their importance later on.
 
-With this definition, we also get the important property that hot flows from hot system to cold sytem, under the addition of the second principle of thermodynamics as discussed [here](../../thermo/secondprinciple/). We will come back to the second principle in the context of statistical physics [here](../principles/).
+With this definition, we also get the important property that hot flows from hot system to cold sytem, under the addition of the second principle of thermodynamics as discussed [here](../../thermo/secondprinciple/). We will come back to the second principle in the context of statistical physics [later](../principles/).
 
 ## On the definition of pressure
 
-Pressure is not only a force over a surface but also a energy per unit of volume!
+While we redefined the temperature to be the increase of energy when entropy changes, we also proposed above an alternative definition for the pressure of the system we are considering. 
+Indeed, pressure is not only a force over a surface but it is equivalent, and more useful to think of it as an energy per unit of volume! Or as stated above:
 
-$$ P = -\frac{\partial{E}}{\partial{V}}\Bigg|_S$$
+$$ P = -\frac{\partial{\langle E\rangle}}{\partial{V}}\Bigg|_S$$
 
 This is equivalent (but more convinient) that the the usual definition. Indeed, to convince yourself, imagine a small infinitessimal box of size $\text{d}x$,$\text{d}y$ and $\text{d}z$. The pressure exerted on the surface $\mathcal{S}=\text{d}y\text{d}z$ is 
 
 $$P=\frac{\text{d} \vec{F}\cdot \vec{n}}{\text{d} \mathcal{S}}= \frac{\text{d} \vec{F}\cdot \vec{n}}{\text{d} \mathcal{S}}=\frac{\text{d}\vec{F}\cdot \vec{n}}{ \text{d}y\text{d}z}= \frac{\text{d} \vec{F}\cdot \text{d}\vec{x}}{ \text{d}y\text{d}z\text{d}x}=\frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} $$
 
-On the other hand, the energy transfered to a wall of the box due to the kinetic motion of the particle within the box, can be written $\text{d} E= - \delta W=-\vec{F}\cdot\text{d}\vec{x}$.
+On the other hand, the energy transfered to a wall of the box due to the kinetic motion of the particle within the box, can be written $\text{d} \langle E \rangle= - \delta W=-\vec{F}\cdot\text{d}\vec{x}$.
 
 From which 
 
-$$ P = \frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} =-\frac{\partial{E}}{\partial{V}}\Bigg|_S$$
+$$ P = \frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} =-\frac{\partial{ \langle E \rangle}}{\partial{V}}\Bigg|_S$$
 
 Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to derive all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the average energy $E$, the entropy $S$...) through the partition function $Z$, simply by asking for the maximization of the entropy.
 
-## Taking the continuous limit
+### Taking the continuous limit
+
+Now, before we move on, we should understand how everything that we discussed here can be generalised in the case where there is not a countable number of microstates, but a continuous infinity.
 
 ## Going further: recommended readings and watching
 
