@@ -9,7 +9,7 @@ nav_order: 1
 
 ## Statistical physics, microstates and macrostates
 
-The idea laying behind statistical mechanics will be to explain the observed behavior of large systems as the result of underlying microscopic subsystems. For exemple, we will be able to retrieve quite elegantly the ideal gas law, which was central in our first thermodynamics class, by interpreting a volume of gas as being composed of a large number of free bouncing microscopic particles.
+The idea laying behind statistical mechanics will be to explain the observed behavior of macroscopic systems as the result of a large number underlying microscopic subsystems. For exemple, we will be able to retrieve quite elegantly the ideal gas law, which was central in our first thermodynamics class, by interpreting a volume of gas as being composed of a large number of free bouncing microscopic particles.
 
 Statistical mechanics lies on the distinction between macrostates and microstates:
 
@@ -21,12 +21,11 @@ As such, **several *microstates* can correspond to the same *macrostate***: you 
 
 Each microstate $i$ can be associated with a probability of occuring $p_i$. The challenge of statistical mechanics is to find the right way to estimate this probability. This will be done by  maximizing a quantity, known as the statistical entropy $S$. We will see that $S$ can be identified with the quantity appearing in the second principle of thermodynamics discussed in the [thermodynamics class](../../thermo/secondprinciple/). The entropy can easily be treated as one of the most profound and most subtle concept of modern physics.
 
-
 ## Preliminary review of basic probability theory for the discrete case and the challenge of statistical mechanics
    
-As a very simple reminder, recall that for a discrete set of possible events, which we will label by the index $i$, the probabilties represent the "chance" for this event to occur, expressed in percentage ($p_i \leq 1$). For exemple, considering rolling a dice, the possible results would be $i=\{1,2,3,4,5,6}$ and $p_i = 1/6$, for each $i$. 
+As a very simple reminder, recall that for a discrete set of possible events, which we will label by the index $i$, the probabilties represent the "chance" for this event to occur, expressed in as fractions of one ($0 \leq p_i \leq 1$). For exemple, considering rolling a dice, the possible results would be $i\in \Omega = \{1,2,3,4,5,6}$ and $p_i = 1/6 \simeq 0.1667$, for each $i$ (in a more fancy way, we can call $\Omega$  can say that $p$, is a function, and more precisely as a measure, such that $p:\Omega \to [0,1]$, $i \to p_i$).
 
-Probability is also a highly subtle concept, which can be defined and introduced in a great number of way, with different level of abstraction and fundamental depth. Perhaps the simplest and most intuitive way to think of them, is the so-called **frequentist approach**, stating that if one could repeat a very large number of time $N$ a specific event (like rolling a dice), the probability of $i$ would be the fraction of the number of time $n_i$ that $i$ occured over $N$ that is:
+Probability is also a highly subtle concept, which can be defined and introduced in a great number of way, with different level of abstraction and fundamental depth. For a in depth introduction of this concept, you can have a look at our [measure theory lectures](../../maths/measure_theory/probability_space). For For now, perhaps the simplest and most intuitive way to think of them, is the so-called **frequentist approach**, stating that if one could repeat a very large number of time $N$ a specific event (like rolling a dice), the probability of $i$ would be the fraction of the number of time $n_i$ that $i$ occured over $N$ that is:
 
 $$p_i = \frac{n_i}{N}$$
 
@@ -38,11 +37,24 @@ Considering all the possible outcome of an event, the sum of all probabilities s
 
 $$\sum_i p_i=1$$
 
-Suppose that a quantity can be associated to each event $i$. For exemple, this could be the value appearing on the dice for each roll. The **average** of the quantity $X_i$ is defined as
+Suppose that a quantity $X$ can be associated to each event $i$ to give a number $X_i= X(i)$ (That is there is a function $X: \Omega \to \mathbb{R}$). For exemple, this could be the value appearing on the dice for each roll. The **average** of the quantity $X$ is defined as
 
-$$\langle X \rangle = \sum_i p_i X_i$$
+$$\langle X \rangle = \sum_i p_i X_i,$$
 
 For the dice, we would thus get the average number appearing of the dice to be $\langle X \rangle = 3.5 $. All these are very basic ideas, but that is all we will need for now in order to move forward.
+
+<details markdown="1">
+  <summary>A sidenote on the empirical mean value </summary>
+
+To connect that with perhaps more familiar concepts, if an experiment was repeated a large number of times $N$, one would obtain a sequence of experimental results $x_n$ (that is $x_n: \mathbb{N}\to \Omega$). For exemple by rolling a dice, one could obtain $x_n= 4,2,4,1,5 ...$. The **mean** of this experiment would be defined as 
+
+$$\overline{X} = \frac{\sum_i^N X(x_n)}{N} = \frac{\sum_i^N n_i X_i}{N}$$ 
+
+where $n_i$ is the number of time that $i$ occurs. When $N\to \infty$, we expect that $\overline{X}=\langle X \rangle$, translating that our experiment and  $\overline{X}$ reflects the underlying probability distribution, in agreement with our "frequentist approach":
+
+$$\langle X \rangle = \lim_{N\to \infty}\overline{X} = \lim_{N\to \infty}\frac{\sum_i^N n_i X_i}{N} \to \sum_i^N p_i X_i$$ 
+
+</details>
 
 Let us repeat and rephrase again the challenge of statistical physics here. Imagine that we have a physical system (e.g. a box of gas or a star), from which we observe a given macrostate, by operating some measure on it. This observation could lead us to know the average value of some quantities for example the mean energy $\langle E \rangle$ or mean number of particles $\langle N \rangle$, as well as some physical properties as the volume $V$. Now, we know that this object is composed of a very large number of particles, which could be arranged in multiple different ways to explain the mactostate we observe. These configurations are all the different microstates $i$ that can be associated to our macrostate. Reasonably, if we believe in "reductionism", we have hope that our macrostate must emmerge from the properties of these microstates i.e. we should be able to understand and interpret the macroscopic/observable properties of our system from its microscopic properties.
 Now the challenge is this one, can we estimate the probability $p_i$ associated to each specific configuration (microstate) without knowing anything else than some average values?
@@ -55,7 +67,7 @@ Let $i$ label a discrete number of $N$ possible microstates associated with the 
 
 $$
 \boxed{
-S = -\sum_i^N p_i\ln{p_i} = -\langle \ln(p_i)\rangle}
+S = -\sum_i^N p_i\ln{p_i} = \langle \ln(1/p)\rangle}
 $$
 
 The fundamental principle of statistical mechanics, which will be at the core of all this lecture, is that when analysing a system we should always take $S$ to be maximum. This is the **maximum entropy principle**. From this principle, it becomes possible to obtain the expression of the probability $p_i$ for each possible microstate $i$, such that $S$ is maximum in the above expression.
@@ -87,6 +99,8 @@ As such, if there is a single microstate $N=1$ explaining the whole macrostate, 
 As such, we can convince ourselves that $S$ quantifies the information we have about the system.
 In practice, there could be different ways to define $S$ and quantify this knowledge. In fact, the definition above is Shanon entropy, but other types of entropy exist. Besides being 0 when the system is perfectly known and growing with our ignorance, it can be showed that Shanon entropy is the only such function satisfying some specific and desirable mathematical properties. 
 
+One important property which justifies the use of logarithms is that entropies become **additive**. That is, if we have two systems with entropies $S_1$ and $S_2$, and we consider the larger system made by their union, this larger system will have a total entropy $S_1+S_2$. Intuitively, this property emmerges directly from probabilities. It is a basic probability rule that, when combining two different events, the probability for both to occur is their product. In other words: probabilities multiply. Since $S$ is constructed from the logarithm of probabilities, and since $\ln(ab)= \ln(a)+\ln(b)$, entropies must add (a more rigorous proof can be found in the following note).
+
 <details markdown="1">
   <summary>The properties of the entropy function</summary>
 
@@ -117,7 +131,7 @@ There are usually two lines of thought in order to justify the effectiveness of 
 - **The subjective approach**: when approaching a problem in statistical physics, we should try to infer the probability of the microstates $p_i$ by considering only what is known about the system. Maximizing the entropy gives us the most agnostic way to do so, without introducing any biais. We thus make the most honest possible thinking: maximizing our uncertainty, considering only what we know for certain. The additional constraints are then additional informations we must account for. 
 - **The objective approach**: in a system, the particles can be re-arranged in a very large number of ways.  Statistically, nature will almost always occupy the state with the largest number of possible microstate, hence it will sponteneously evolve towards the larger value of $S$. The additional constraints are physical constraints forced upon the system, limiting the possible available configurations. 
 
-These two points are in fact complementary and do not contradict one another. The first one justifies the methodology we will use to study systems, the seconds tells us about how systems evolve, why they are generally found in larger entropy states and is more linked to dynamical considerations. We will come back to all of this later. For now, it might be preferable to think of the (maybe less appealing) subjective approach for the next classes, and we will gradually understand why and how the objective approach is sensible and how it connects with the first.
+These two points are in fact complementary and do not contradict one another. The first one justifies the methodology we will use to study systems, the seconds tells us about how systems evolve, why they are generally found in larger entropy states and is more linked to dynamical considerations. We will come back to all of this again and again in the class. For now, it might be preferable to bear in mind the (maybe less appealing) subjective approach, especially for the next classes. We will gradually understand why and how the objective approach is sensible and how it connects with the first.
 Understanding all the consequences and meaning of entropy maximisation is a difficult and subtle task, and numerous open questions are still not resolve about it. You can find many more discussions of this topic in the litterature of physics, as well as of philosophy of physics, mathematics and information theory. Some recommanded references can be found at the bottom of this page.
 
 ## Going further: recommended readings

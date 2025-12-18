@@ -27,6 +27,6 @@ You will find here some fun python applications to physics with some detailled e
 - [Distances in cosmology](cosmo/distances.md)
 - [Cosmological horizons](cosmo/horizons.md)
 - The cosmic microwave background
-
+- Boltzmann equations in the expanding Universe
 
 

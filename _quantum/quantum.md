@@ -16,3 +16,5 @@ You will find here some fun python applications to physics with some detailled e
 # Relativistic quantum theory
 
 # Quantum field theory
+
+# The standard model of particle physics

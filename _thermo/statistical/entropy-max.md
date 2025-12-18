@@ -6,13 +6,13 @@ nav_order: 1
 ---
 # Derivation of the probability of microstates by maximizing the entropy in the canonical ensemble.
 
-Let's now traduce the principle of maximum entropy in term of the familiar problem of particles in a box. Consider then a closed system, like a gas, with mean energy $\langle E\rangle$ (its macrostate). The system is "forced" to keep this mean energy, for exemple by being emmerged in a larger exterior with this energy. We call such an exterior a heat bath. A good example would then be a glass of water standing in your kitchen. 
+Let's now traduce the principle of maximum entropy in term of the familiar problem of particles in a box. Consider then a system, like a gas, with average energy $\langle E\rangle$ (its macrostate). The system is "forced" to keep this average energy, for exemple by being emmerged in a larger exterior with this energy. In other word, it is in thermal equilibrium with it as defined in this [lecture](../../thermo/equilibrium). We call such an exterior a heat bath. A good example would then be a glass of water standing in your kitchen. For now, the exact physical system is not important, and the equations we will derive will be very general. The only thing that matters is that our system can access multiple microstates with different energy levels, under the constraint of having a given average energy.
 
 ## Microstates and occupation number
 
-Assume that there exist $N$ distinguishable possible ways to re-arange the particles inside the box to give the same mean energy ($N$ possible microstate associated with the macrostate). For simplicity, we assume here that the number of microstates is discrete and finite (which is of course only a gross representation of a glass of water). It will be straightforward to generalize this to the continuous case by replacing sums with integrals and taking limits toward infinity but the discrete picture is much easier to understand.
+Assume that there exist $N$ distinguishable possible ways to re-arange the particles inside the box to give the same average energy ($N$ possible microstate associated with the macrostate). For simplicity, we assume here that the number of microstates is discrete and finite (which is of course only a gross representation of a glass of water). It will be straightforward to generalize this to the continuous case by replacing sums with integrals and taking limits toward infinity but the discrete picture is much easier to understand.
 
-Let's label by $i$ the possible microstates, that is the possible particle configurations giving back the mean energy $\langle E\rangle$. To each microstate is associated a specific energy $E_i$. As time goes by, the system might go from one microstate to another. It's energy can thus vary slightly, but the mean will always remain the same. Some microstate could be very weird, as e.g. all the particles being located in one corner of the box, or half having very high energies and the other half having very low energies. However, the great majority of these microstates are made of particles being distributed randomly everywhere in the box with average energies. As such, these states will contribute much more to the entropy calculation and will be incredibly more probable.
+Let's label by $i$ the possible microstates, that is the possible particle configurations giving back the average energy $\langle E\rangle$. To each microstate is associated a specific energy $E_i$. As time goes by, the system might go from one microstate to another. It's energy can thus vary slightly, but the mean will always remain the same. Some microstate could be very weird, as e.g. all the particles being located in one corner of the box, or half having very high energies and the other half having very low energies. However, the great majority of these microstates are made of particles being distributed randomly everywhere in the box with average energies. As such, these states will contribute much more to the entropy calculation and will be incredibly more probable.
 
 Let $n_i$ be the **occupation number** that is the number of possible microstates (particle configurations) associated with the same energy $E_i$.
 
@@ -40,11 +40,11 @@ $$
 \langle E \rangle  = \sum_i p_i E_i = \sum_i \frac{n_i}{N} E_i
 $$
 
-## Expressing the entropy 
+## Expressing and interpreting the entropy 
 
 Recall from the [previous lecture](../entropy/), that the entropy $S$ of a probability distribution $p_i$ is 
 
-$$ S= \sum_i p_i \ln(p_i)$$
+$$ S= -\sum_i p_i \ln(p_i)$$
 
 Let's try to compute it for the case at hand here.
 To do so, we consider the number of possible ways to rearange the $N$ microstates into the possible allowed energy states with occupation numbers $n_i$ is given by:
@@ -98,17 +98,18 @@ $$
 &= Nln(N) - \sum_i p_i N \ln(p_iN)\\
 & =  Nln(N) - \sum_i p_i N(\ln(p_i)+ \ln(N))\\
 &= Nln(N) - \sum_i N p_i\ln(p_i)+ \sum_i N p_i\ln(N))\\
-&= Nln(N) - \sum_i N p_i\ln(p_i) - N\ln(N))\\
+&= Nln(N) - \sum_i N p_i\ln(p_i) - N\ln(N)\\
 & = N S
 \end{aligned}
 $$
 </details>
 
+
+From the previous expression, we understand that maximizing $C^n_N$ is equivalent to maximizing $S$ (as $N$ is fixed). Following our discussion of the [previous lecture](../entropy), doing so with the additional constraint that $\langle E \rangle$ is known is a powerful inference tool which will allow us to get the probability of each microstate $p_i$ while being fair and accounting for what we don't know. Thanks to our previous derivation, we also see that, since $S$ is proportional to $C^n_N$, doing so will give us the most probable particle configurations within the box associated to the most probable $n_i$ combinations amongst the $N$ possible macrostates.
+
 ## Maximizing the entropy 
 
-From the previous expression, we understand that maximizing $C^n_N$ is equivalent to maximizing $S$ (as $N$ is fixed). This will give us the most probable particle configurations within the box associated to the most probable $n_i$ combinations amongst the $N$ possible macrostates. As all this is very abstract, let us rephrase again exactly what we are doing here. You are having a gas and say that you are measuring one way or another that its mean energy is $\langle E\rangle$. Then you are thinking of the gas as made of particles, and you consider what are the most probable ways that these particles are arranged within the box. Particle configurations are classified by their energy $E_i$ and a number of corresponding configurations $n_i$ leading to this energy. Now in order to find the probability $p_i$, we will maximize the entropy, under constraints.
-
-We will now do the entropy maximization using the so-called **Lagrange multipliers** and asking for the following constraints:
+We will now do the entropy maximization in order to find the probability of each microstates $p_i$. For this, we will not need anything else than the defintion of the entropy (the previous combinatorics was just here to give us some intuition). To maximizes $S$, we use the so-called technique of **Lagrange multipliers** and force on the maximisation the following constraints:
 
 $$
 \begin{cases}
@@ -119,10 +120,10 @@ $$
 \end{cases}
 $$
 
-asking respectively for the mean energy of a particle to be given by $\langle E \rangle$ and the sum of probabilities to be conserved.
+that is, we are only asking respectively for the average energy of a particle to be given by $\langle E \rangle$ and the sum of probabilities to be equal to one.
 
 <details>
-  <summary>Lagrange multipliers</summary>
+  <summary>The technique of Lagrange multipliers</summary>
   
 </details>
 
@@ -138,7 +139,7 @@ $$
 Z := e^{1+\alpha}
 $$
 
-and $\alpha$ and $\beta$ are the two Lagrange multipliers associated to our two constraints.
+and $\alpha$ and $\beta$ are the two Lagrange multipliers associated to our two constraints (normalisation of probabilities for $\alpha$ and average energy for $\beta$).
 
 $Z$ can be simplified by re-inserting it again in the normalization of probabilities:
 
@@ -152,11 +153,28 @@ $$
 \boxed{Z = \sum_i e^{-\beta E_i}}
 $$
 
-We have now been able to express the probability of each configuration of particles $p_i$ solely in term of its energy $E_i$. The only missing part is to find what could be this mysterious constant $\beta$, which was forced upon us as a Lagrange multiplier for the constraint that we know the mean energy of the system. We are about to show that $\beta =1/T$, and is the inverse of the temperature of the system. This already tells us something profound about the nature of what temperature is. But what exactly? 
+We have now been able to express the probability of each configuration of particles $p_i$ solely in term of its energy $E_i$. The only missing part is to find what could be this mysterious constant $\beta$, which was forced upon us as a Lagrange multiplier for the constraint that we know the average energy of the system. We are about to show that $\beta =1/T$, and is the inverse of the temperature of the system. This already tells us something profound about the nature of what temperature is. But what exactly? 
+
+<details markdown="1">
+  <summary>Exercice: use the Lagrange multipliers to find probability of a fair dice</summary>
+
+Now that we introuced Lagrange multipliers, we will prove the claim made in our [first lecture](.//entropy) that, without any information on the system, maximizing the entropy leads to equiprobable probability distributions.
+
+
+</details>
+
+<details markdown="1">
+  <summary>Exercice: use the Lagrange multipliers to find probability of a biased dice</summary>
+
+We will now see how the previous derivation change in the case of a biased dice.
+
+
+</details>
+
 
 ## Finding back physical quantities from $Z$
 
-The mean energy of our gas can then be re-expressed from $Z$ as
+The average energy of our gas can then be re-expressed from $Z$ as
 
 $$
 \boxed{\langle E \rangle = -\frac{1}{Z}\frac{\partial Z}{\partial \beta} = -\frac{\partial{\ln Z}}{\partial \beta}}
@@ -212,7 +230,7 @@ $$
 While we got rid of $\alpha$, the second Lagrange multiplier $\beta$ can be expressed with respect to the temperature. To do so, we define the temperature as the change of energy associated with a change of entropy:
 
 $$
-\boxed{T := \frac{\partial \langle E \rangle}{\partial S}} 
+\boxed{T := \frac{\partial \langle E \rangle}{\partial S}_{n,V}} 
 \label{eq:defTemp}
 $$
 
@@ -224,7 +242,6 @@ $$
 
 <details>
   <summary>Proof</summary>
- 
 
 $$
 \text{d}S = \beta \text{d}\langle E\rangle + \langle E\rangle\text{d}\beta + \frac{\partial \ln Z}{\partial \beta}d\beta
@@ -233,7 +250,7 @@ $$
 using the relation between $\langle E \rangle$ and the entropy aswell as the fact that $Z$ is a function of only one independant variable $\beta$ or $\langle E \rangle$ since both are not independant because of $\langle E \rangle$ can be expressed in terms of $Z$. Now using the expression of $\langle E \rangle$ in term of $Z$, we can see that the two last terms cancels out to give simply: $\text{d}S = \beta \text{d}\langle E\rangle$. With the definition of $T$:
 
 $$
-T = \frac{\partial \langle E \rangle}{\partial S}
+T = \frac{\partial \langle E \rangle}{\partial S}_{n,V}
 $$
 
 Whe have $\text{d}S = \frac{1}{T}\text{d}\langle E\rangle$, allowing us to conclude that:
@@ -247,18 +264,39 @@ Similarly, we define the pressure to be
 
 $$\boxed{P := -\frac{\partial{\langle E \rangle}}{\partial{V}}\Bigg|_S}$$
 
-Similarly, we will justify such a definition in the next section.
-As such, knowing $Z$ allows us to express all our state variable and state functions and relate them to the microscopic behaviour of the system. 
+We will also justify such a definition in the next section.
+As such, knowing $Z$ allows us to express all our state variable and state functions and relate them to the microscopic behaviour of the system. Note that we operate here a change of point of view compared to classical thermodynamics, where quantities such as $P,T$ are not only considered only as state variables which can be measured and of which we try to keep track of the evolution. They are clearly considered as emerging from the underlying microscopic probability distribution of the constituents of the system.
+
+Let's now clarify all of this with an illustration: On the following figure, we represented some examples of $p_i(E)$ computed using all the formula we just derived.
+
+![image](../images/canonical_boltzmann_beta_derived.png){: width="80%"}
+
+*Example of distributions of $p_i(E)$ associated with different average energy, temperature and entropy (arbitrary units). Computed with [this code](../codes/Plot_boltzmann.py)*.
+
+We can see on the graph the probability of each microstates of the system -- i.e. of each configuration of particles -- associated to each energy $p_i$. As such, $p_i=n_i/N$, that is the fraction of particle configuration with energy $E_i$. Each curve on the figure is associated with a different average energy $\langle E \rangle$, imposed to the system by the heat bath with which it is at thermal equilibrium. Each curve is also associated to a value of the entropy $S$, which is maximum (and more exactly, each $p_i$ curve is constructed such that $S$ is maximum under the constraint that the average energy should be $\langle E\rangle$ as we did above).
+To each curve, one can associate a temperature $T$ by computing the derivative of $E$ with respect to $S$. We will explain this more in the next section. However, we see immediately that the macrostates with the biggest average energy (in red) are associated with the highest energy, as we would expected. They are also associated with the highest value for the entropy, which is something that we can understand as they becomre flatter and flatter as the entropy increased (i.e. less peaked on small values of $E_i$). States of high temperature are thus states which are more spread over the axis $E_i$, hence less known and more disordered, attributes which we understand as associated to larger values of $S$. 
 
 # Crossing the bridge with standard thermodynamics
 
 ## On the definition of temperature
 
-The temperature is defined above. As such $T$ is not just a measurable variable, as it was in classical thermodynamics, but it becomes a quantity emmerging from the underlying behaviour.
+The temperature is defined above as the variation of energy with respect to entropy. While it is totally possible (and easy) to derive such an equation from the second principle in the context of classical thermodynamics, it is usually not considered as a definition of $T$ itself, but rather as a definition of $S$.
 
-Why is it a good definition:
-- direction of heatflows
-- broadening of $p(E)$ with increasing $\langle E \rangle$
+By reversing the order and defining $T$ in such a way, we change its status and consider it as a quantity emmerging from the underlying microscopic properties of our system. Doing so also provides us with a very general definition of $T$, which can virtually be assigned to any physical system which can be associated with a average energy and an entropy. Let's try to understand better the significance of such a definition.
+
+On the above figure, we see indeed that probability distributions for the microstates are different depending only on the mean energy $\langle E \rangle$. As the average energy increase, the entropy of the macrostate also changes, traducing the fact that the probability distribution are getting more spread. By our definition, the temperature quantifies precisely how much an increase in the entropy of the macrostate can be associated with a change of the mean energy.
+
+Quantitatively, considering a transformation which change the average energy of the heat bath by a small amout $\text{d}\langle E\rangle$ (for exemple heating it somehow, at fixed volume and number of particle, which we always assumed here).The change of average energy can be associated with a change of entropy of the probability distribution such as
+
+$$ \text{d}\langle E\rangle = \frac{\partial \langle E\rangle}{\partial S}\Bigg|_{n,V} \text{d}S= T\text{d}S$$
+
+You might recognize here some flavour of the definition of entropy variations used to introduce the [second principle of thermodynamics](../../thermo/secondprinciple/)!
+
+On the above numerical exemple, we see that $S$ seems to always increase when $\langle E \rangle$ increases. This seems coherent intuitively, as states with more energy are understood as more "agitated" and hence more chaotic or disogranised, thus being able to explore more possibilities for their energies $E_i$ (Entropy also has to do with predictability of the evolution of the states, and hence chaos in a deeper rigorous sense, we will come back to it).
+
+A consequence of this, is that $T$ thus defined will seemingly always be a positive quantity. This is also a good news for our proposition of definition. What sense could we make of a negative temperature anyway? Well, this interesting question will has a very nice answer: negative temperature systems can exists, and our definition allows for it. They are known as "forced systems", in which the entropy of the system dicreases when we imput more energy (i.e. the system becomes more organized when we inject energy in them). Such systems rarely exist spontaneously in nature and we'll discuss them and their importance later on.
+
+With this definition, we also get the important property that hot flows from hot system to cold sytem, under the addition of the second principle of thermodynamics as discussed [here](../../thermo/secondprinciple/). We will come back to the second principle in the context of statistical physics [here](../principles/).
 
 ## On the definition of pressure
 
@@ -270,17 +308,18 @@ This is equivalent (but more convinient) that the the usual definition. Indeed, 
 
 $$P=\frac{\text{d} \vec{F}\cdot \vec{n}}{\text{d} \mathcal{S}}= \frac{\text{d} \vec{F}\cdot \vec{n}}{\text{d} \mathcal{S}}=\frac{\text{d}\vec{F}\cdot \vec{n}}{ \text{d}y\text{d}z}= \frac{\text{d} \vec{F}\cdot \text{d}\vec{x}}{ \text{d}y\text{d}z\text{d}x}=\frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} $$
 
-. On the other hand, the energy transfered to a wall of the box due to the kinetic motion of the particle within the box, can be written $\text{d} E= - \delta W=-\vec{F}\cdot\text{d}\vec{x}$.
+On the other hand, the energy transfered to a wall of the box due to the kinetic motion of the particle within the box, can be written $\text{d} E= - \delta W=-\vec{F}\cdot\text{d}\vec{x}$.
 
 From which 
 
 $$ P = \frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} =-\frac{\partial{E}}{\partial{V}}\Bigg|_S$$
 
-Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to derive all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the mean energy $E$, the entropy $S$...) through the partition function $Z$, simply by asking for the maximization of the entropy.
+Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to derive all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the average energy $E$, the entropy $S$...) through the partition function $Z$, simply by asking for the maximization of the entropy.
 
 ## Taking the continuous limit
 
 ## Going further: recommended readings and watching
 
 - [Statistical mechanics, theoretical minimum lectures - L. Susskind (2013)](https://theoreticalminimum.com/courses/statistical-mechanics/2013/spring)
+- An introduction to thermal physics - D. V. Schroeder (2000) - Addison-Wesley 
 - Statistical physics Part 1 and 2 - L.D. Landau and E.M. Lifshitz (1995) - (several editions available)

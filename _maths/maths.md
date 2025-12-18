@@ -14,7 +14,15 @@ subtitle: Maths and mathematical physics
 
 # Differential geometry and foundations of general relativity
 
+- Topology
+- Vector spaces
+
 # Measure theory and foundations of quantum mechanics
+
+- Sigma algebras and measured spaces
+- [Probability spaces](./measure_theory/probability_space.md)
+- Banach spaces
+- Hilbert spaces
 
 # Geometric/Clifford algebra for physics
 

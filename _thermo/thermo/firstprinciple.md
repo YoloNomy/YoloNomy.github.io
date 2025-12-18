@@ -5,20 +5,22 @@ parent: thermo
 nav_order: 1
 ---
 
-# First law of thermodynamics: energy
+# First principle of thermodynamics: energy
 
-## The law
+## Internal energy and the first principle
 
-In physics, "laws" or "principles" are comparable to "axioms" in mathematics. They are "rules" which seem to describe the world around us and from which a theory can be built by deriving their consequences and confront them with experiments. There are no way to derive the laws from more fundamental principles with a theory, but if an observational consequence of a law is not verified, then the theory is simply wrong, or out of its domain of validity. 
+In physics, "laws" or "principles" are comparable to "axioms" in mathematics. They are "rules" which seem to describe the world around us and from which a theory can be built by deriving their consequences and confront them with experiments. There are no way to derive the laws from more fundamental principles with a theory, but if an observational consequence of a law is not verified, then the theory is simply wrong, or out of its domain of validity. The thermodynamic theory that we will study here, is built on three such laws. 
 
-The thermodynamic theory that we will study here, is built on three such laws. 
+The first law or principle of thermodynamics, focuses on the energy of a system and how energy can be exchanged between systems. Even if you do not know anything about thermodynamics, you might be easily ready to accept that systems can be associated with an energy. You might also have the intuition that hot boiling water had more energy than cool room temperature water and that energy associated somehow with the temperature $T$, which is a state variable of the system as introduced in [our first lecture](../system). As in every branch of physics, energy plays a key and fundamental role and it is both very familiar with our intuition and extremely deep and abstract. 
+The first principle thus provides a proposition to tame this abstractness by introducing energy as a quantity associated to each system, through the introduction of a state function, $U$ which can depend as expected of the temperature $T$, as well as other variables in more general cases.  
 
 Consider for now a closed system, which can only exchange energy with the exterior.
-The first law of thermodynamics state that, there exist a state function called the *internal energy* $U$ that can be associated to this system. Under a transformation from a state $A$ to a state $B$, $U$ can change only through two processes as
+The first law of thermodynamics state that, there exist a state function called the **internal energy** $U$ that can be associated to this system. Without any more information on the system, we can expect that $U$ depends on all the states variables of the system, that is $U(T,V,P,n)$. Unfortunately, there is no literal expression of this function which would be valid for every scenario. However, there are rules that govern how energy is exchanged, and they appear to be extremely general. These rules will form our **first principle of thermodynamics** and should be considered as an indirect defintion of $U$. They go as follows:
+Under a transformation from a state $A$ to a state $B$, $U$ can change in two ways as
 
 $$\boxed{\Delta U = U_B-U_A= Q+ W}$$
 
-where $Q$ is called a *heat transfer* and $W$ is called the *work*. $Q$ can be understood as the variations of energy due to the random motion of the particles within the body, as the cool down of a cup of coffee. $W$ is to be understood as a mechanical change of energy, as a system which would be squeezed.
+where $Q$ is called a **heat transfer** and $W$ is called the **work**. $Q$ can be understood as the variations of energy due to the random motion of the particles within the body, as the cool down of a cup of coffee. $W$ is to be understood as a mechanical change of energy, as a system which would be squeezed.
 
 This law can be expressed using the differential of the state function $U$ as
 
