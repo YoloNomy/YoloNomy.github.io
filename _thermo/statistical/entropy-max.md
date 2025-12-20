@@ -4,345 +4,238 @@ title: Statistical physics
 parent: thermo
 nav_order: 1
 ---
-# Derivation of the probability of microstates by maximizing the entropy in the canonical ensemble.
+# Derivation of the probability of microstates by maximizing the entropy
 
-Let's now traduce the principle of maximum entropy in term of the familiar problem of particles in a box. Consider then a system, like a gas, with average energy $\langle E\rangle$ (its macrostate). The system is "forced" to keep this average energy, for exemple by being emmerged in a larger exterior with this energy. In other word, it is in thermal equilibrium with it as defined in this [lecture](../../thermo/equilibrium). We call such an exterior a heat bath. A good example would then be a glass of water standing in your kitchen. For now, the exact physical system is not important, and the equations we will derive will be very general. The only thing that matters is that our system can access multiple microstates with different energy levels, under the constraint of having a given average energy.
+We now want to justify that the principle of maximum entropy is a powerful tool to find the probability distribution associated to microstates of a system. To do so, we will introduce the Lagrange multiplier technique, which is a powerful mathematical tool to find the $p_i$ associated to the maximal value of $S$, under some additional constraints. We will illustrate this principle and this tool on the case of fair dice and of a biased die.
 
-<!---
+## Maximising the entropy: the Lagrange multipliers
 
-## Microstates and occupation number
-
-Assume that there exist $N$ distinguishable possible ways to re-arange the particles inside the box to give the same average energy ($N$ possible microstate associated with the macrostate). For simplicity, we assume here that the number of microstates is discrete and finite (which is of course only a gross representation of a glass of water). It will be straightforward to generalize this to the continuous case by replacing sums with integrals and taking limits toward infinity but the discrete picture is much easier to understand.
-
-Let's label by $i$ the possible microstates, that is the possible particle configurations in our box of gas. To each microstate is associated a specific energy $E_i$. As time goes by, the system might go from one microstate to another, and some are possible but will never be explored. In particular, we have the constraint imposed by the heat bath that the average energy (e.g. in time) should be $\langle E \rangle$. The energy of the system can thus varies (fluctuate) slightly, but the average will always remain the same. Some microstate could be very weird, as e.g. all the particles being located in one corner of the box, or half having very high energies and the other half having very low energies. However, the great majority of these microstates are made of particles being distributed randomly everywhere in the box with reasonable velocities. As such, these states will   will be incredibly more probable and contribute much more to the value of the entropy.
-
-Let $n_i$ be the **occupation number** that is the number of possible microstates (particle configurations) amongst the $N$ associated with the same energy $E_i$.
-
-We have, by construction:
-
-$$
-\sum_i n_i = N
-$$
-
-The probability of the configuration of particles to be found in a state $i$ of energy $E_i$ can be then simply written as:
-
-$$
-p_i = \frac{n_i}{N}
-$$
-
-Leading naturally from the above equation to
-
-$$
-\sum_i p_i = \sum_i \frac{n_i}{N} = 1
-$$
-
-The average energy of the macrostate is then expressed in term of the microstates as:
-
-$$
-\langle E \rangle  = \sum_i p_i E_i = \sum_i \frac{n_i}{N} E_i
-$$
-
-## Expressing and interpreting the entropy 
-
-Recall from the [previous lecture](../entropy/), that the entropy $S$ of a probability distribution $p_i$ is 
+Recall from the [previous lecture](../entropy/), that the entropy $S$ of a probability distribution $p_i$ is given by
 
 $$ S= -\sum_i p_i \ln(p_i)$$
 
-Let's try to compute it for the case at hand here.
-To do so, we consider the number of possible ways to rearange the $N$ microstates into the possible allowed energy states with occupation numbers $n_i$ is given by:
+$S$ quantifies our ignorence about the system. For example, if our system is a box of gas, $i$ can label all the possible microscopic configurations of the large number of particles contained in the box. $p_i$ would be the probability that, at this exact moment, the particles are in this exact configuration. In theory, we could measure many many times $N$ the system, write down the number of times that it was observed in a given configuration $n_i$, and estimate these probabilities in a frequentist way using $p_i=n_i/N$ as described in the previous lecture. Unfortunately, most of the time this is simply impossible. For exemple, there is something like $10^{25}$ particles of water in a glass. It would simply be impossible to measure the position and velocity of each of them, not even a single time.
 
-$$
-C^n_N = \frac{N!}{\prod_i n_i!}
-$$
+We argued in the previous lecture that a powerful way to estimate $p_i$ is to find the configuration (that is all the values $p_1$,$p_2$ ...) which maximizes $S$. Doing so, we maximizes our ignorance and find the most agnostic probability distribution given what we know. This will reveal to be an extremely powerful tool.
 
-Maximizing $C^n_N$ will give us the most probable configuration of the $n_i$. It can be shown that this maximum is very sharp, making other configurations almost impossible. 
+Now, we might know some things about the system. For exemple, we might do some measurements, or infer something from the physics of the system. This will provide us with some informations about mean quantities, like average energy, or average number of particles. If we want a fair estimation of the $p_i$, one that is as close as possible to what we would obtain if we could estimate these probabilities from measures, we should take these informations into account. 
 
-If $N$ and $n_i \to \infty$, which is clearly the case for physical systems made of atoms, we can use the so called **Stirling approximation**:
+The proper way to do so, is to maximize the entropy under some constraints. That is, maximize the entropy but asking for some specific conditions to be satisfied. The proper way to do so is to use the so called **Lagrange multipliers**. These are rather advanced -- but unavoidable -- tools.
 
-$$ N! \sim N^N e^{-N} $$
+We will present them here only as a general receipt in order to maximize the entropy under constraints, without further justifications. More details about the justification and the mathematics of lagrange multipliers can be found in the following note.
 
-<details>
-  <summary>Proof</summary>
-  
-Recall first that $N! = 1\times 2 \times 3 ... \times N$ and that for two number $a$ and $b$, $ln(a \times b)=\ln(a)+\ln(b)$. Then $\ln(N!)= \ln(1\times 2 \times 3 ... \times N) = \ln(1)+ \ln(2) + ...+\ln(N)$. As such:
+The receipe goes as follows: let say that we want to maximize $S(p_i)$ under some constraint $C(p_i)$. We should write the constraint $C(p_i)$ in the form of an equation that is equal to zero. For exemple, we can (and should!) ask as a constraint that the sum of the probabilities adds up to one: $\sum_i p_i =1$. As a constraint, this would become $C(p_i)=\sum_i p_i -1= 0$.  We can also ask for other constraints, such as constraints on measured mean values. Each constraint will be labeled as $C_k$.
 
-$$
-\begin{aligned}
-\ln(N!) &= \sum_{x=1}^N \ln(x)
-\\ &\sim \int_1^N \ln(x) \qquad (N\to \infty) \text{d}x\\
-&= [x \ln(x)-x ]_1^N \\
-&= N\ln N -N
-\end{aligned}
-$$
+Then, we consider the function:
 
-If you do not recall the primitive of $\ln(x)$ ised in the above derivation, you can at least verify convince yourself that $\frac{d}{dx}(x\ln(x)-x = \frac{d}{dx}(x\ln(x)) - 1 = \ln(x) - \frac{x}{x} -1  = \ln(x)$. 
+$$\mathcal{L}(p_i) = S(p_i) + \sum_k\lambda_k C_k(p_i)$$
 
-Then, one can recover $N!$ from the previous expression by taking its exponential, that is:
+where $C_k$ are our different constraints and $\lambda_k$ are some undefined constants, one per constraint, called the **Lagrange multipliers**.
 
-$$
-N! \sim e^{N\ln N -N} = e^{\ln(N^N)}e^{-N} = N^N e^{-N}
-$$
-
-</details>
-
-This approximation allows us to write the entropy $S$ in terms of $C^n_N$ as 
-
-$$ 
-S= \ln(C^n_N)/N
-$$
-
-<details>
-  <summary>Proof</summary>
-
-Using Stirling's approximation:
-
-$$
-C^n_N =  \frac{N!}{\prod_i n_i!} \sim \frac{N^N e^{-N}}{\prod_i n_i^{n_i}e^{-n_i}}
-$$
-
-Now $$\prod_i n_i^{n_i}e^{-n_i}= e^{-\sum_k n_i}\prod_i n_i^{n_i}$$, since $e^{-n_1}e^{-n_2}...= e^{-n_1-n_2-...}$. And since $\sum_k n_k =N$, we find that $\prod_i n_i^{n_i}e^{-n_i}= e^{-N}\prod_i n_i^{n_i}$. 
-
-Thus:
-
-$$
-C^n_N \sim \frac{N^N}{\prod_i n_i^{n_i}}
-$$
-
-Taking now the logarithm (and recalling that $ln(a/b)=ln(a)-ln(b)$):
-
-$$
-\begin{aligned}
-\ln(C^n_N)&= N\ln(N)- \sum_i n_i \ln(n_i)\\
-&= Nln(N) - \sum_i p_i N \ln(p_iN)\\
-& =  Nln(N) - \sum_i p_i N(\ln(p_i)+ \ln(N))\\
-&= Nln(N) - \sum_i N p_i\ln(p_i)+ \sum_i N p_i\ln(N))\\
-&= Nln(N) - \sum_i N p_i\ln(p_i) - N\ln(N)\\
-& = N S
-\end{aligned}
-$$
-</details>
-
-
-From the previous expression, we understand that maximizing $C^n_N$ is equivalent to maximizing $S$ (as $N$ is fixed). Following our discussion of the [previous lecture](../entropy), doing so with the additional constraint that $\langle E \rangle$ is known is a powerful inference tool which will allow us to get the probability of each microstate $p_i$ while being fair and accounting for what we don't know. Thanks to our previous derivation, we also see that, since $S$ is proportional to $C^n_N$, doing so will give us the most probable particle configurations within the box associated to the most probable $n_i$ combinations amongst the $N$ possible macrostates.
---->
-
-## Maximizing the entropy 
-
-We will now do the entropy maximization in order to find the probability of each microstates $p_i$. For this, we will not need anything else than the defintion of the entropy (the previous combinatorics was just here to give us some intuition). To maximizes $S$, we use the so-called technique of **Lagrange multipliers** and force on the maximisation the following constraints:
+The way to obtain the distribution $p_i$ which maximizes the entropy $S$ under the constraints $C_i$, is to write the two equations:
 
 $$
 \begin{cases}
 \begin{aligned}
-&\sum_i p_i E_i &= \langle E \rangle \\
-& \sum_i p_i  &= 1
+&\frac{\partial \mathcal{L}}{\partial p_i}=0 \\
+&\frac{\partial \mathcal{L}}{\partial \lambda_k}=0
 \end{aligned}
 \end{cases}
 $$
 
-that is, we are only asking respectively for the average energy of a particle to be given by $\langle E \rangle$ and the sum of probabilities to be equal to one.
-
-<details>
-  <summary>The technique of Lagrange multipliers</summary>
-  
-</details>
-
-Once $S$ is maximized, we can obtain the probability for the microstate to have the energy $E_i$:
-
-$$
-\boxed{p_i = \frac{1}{Z}e^{-\beta E_i}}
-$$
-
-With $Z$ the **partition function**:
-
-$$
-Z := e^{1+\alpha}
-$$
-
-and $\alpha$ and $\beta$ are the two Lagrange multipliers associated to our two constraints (normalisation of probabilities for $\alpha$ and average energy for $\beta$).
-
-$Z$ can be simplified by re-inserting it again in the normalization of probabilities:
-
-$$
-\sum_i p_i = \sum_i \frac{1}{Z}e^{-\beta E_i} =1 
-$$
-
-Leading to:
-
-$$
-\boxed{Z = \sum_i e^{-\beta E_i}}
-$$
-
-We have now been able to express the probability of each configuration of particles $p_i$ solely in term of its energy $E_i$. The only missing part is to find what could be this mysterious constant $\beta$, which was forced upon us as a Lagrange multiplier for the constraint that we know the average energy of the system. We are about to show that $\beta =1/T$, and is the inverse of the temperature of the system. This already tells us something profound about the nature of what temperature is. But what exactly? 
+compute explicitely the derivatives and isolate $p_i$. Note here that the first equation should be interpreted as one equation for each variable $p_i$ ($p_1,p_2,p_3 ...$).
+The numbers $\lambda_k$ can be re-expressed in term of the relevant quantities using the second equation (which just give back the constraints $C_k=0$). This receipe might seem very abstract and unjustified for now, but we will illustrate it on many exemple below! 
 
 <details markdown="1">
-  <summary>Exercice: use the Lagrange multipliers to find probability of a fair dice</summary>
+  <summary> Remarks, justification and details about Lagrange multipliers</summary>
+
+In generality the extremums of a function $f(x_i)$ consist of solving together the equations 
+
+$$\frac{\partial f(x_i)}{\partial x_i}=0$$
+
+The nature of this extremum (maximum, minimum or saddle point) is given by the value of the second derivatives.
+
+</details>
+
+### Compute the probabilities for a fair die
 
 Now that we introuced Lagrange multipliers, we will prove the claim made in our [first lecture](.//entropy) that, without any information on the system, maximizing the entropy leads to equiprobable probability distributions.
 
-</details>
+Consider for this a dice with six faces. All the microstates $i$ are within the set $\Omega=\\{1,2,3,4,5,6\\}$ of length $N=6$. You can roll it as many times as you want, and you will always get one of these states $i\in X$. Now, how to obtain the probability $p_i$ associated with each $i$?
+
+First, as claimed earlier, we should maximize the entropy in order to be as fair as possible about our ignorance. What else do we know? Well not much. All the faces seems to play an identical role in the system. None is favored. We say that they are related by a symmetry transformation.
+
+The only thing that we know is that:
+
+$$\sum_i p_i=1$$ 
+
+This can be written 
+
+$$C(p_i) = \sum_i p_i - 1 =0$$
+
+Applying the procedure described in the above section, we obtain
+
+$$\boxed{p_i =  \frac{1}{6}}$$
 
 <details markdown="1">
-  <summary>Exercice: use the Lagrange multipliers to find probability of a biased dice</summary>
+  <summary>Proof</summary>
 
-We will now see how the previous derivation change in the case of a biased dice.
+We write: 
 
+$$
+\begin{align}
+\mathcal{L} &=  S(p_i) - \lambda C(p_i)\\
+&= -\sum^6_i p_i \ln(p_i) - \lambda (\sum^6_i p_i -1)
+\end{align}
+$$
 
+Now the derivatives are:
+
+$$
+\begin{align}
+&\frac{\partial \mathcal{L}}{\partial p_i} = -\ln(p_i) - \frac{1}{p_i}p_i - \lambda = - \ln(p_i) - 1 - \lambda \\
+&\frac{\partial \mathcal{L}}{\partial \lambda} =  -(\sum^6_i p_i -1) 
+\end{align}
+$$
+
+In case this might be unclear: the first equation should be understood as 6 different equations $\partial \mathcal{L}/\partial p_1, \partial \mathcal{L}/\partial p_2 ... \partial \mathcal{L}/\partial p_6$. As such, terms as $\sum^6_i p_i = p_1 + p_2 + ... + p_6$ are derivated six times with respect to the six values of $p_i$, always leading to 1.
+
+Now we must set these two equations to zero. The second equation is just giving back that the sum of probabilities are equal to one. Isolating $p_i$ in the first equation, we obtain
+
+$$
+\begin{align}
+-&\ln(p_i) - 1 - \lambda =0\\
+-&\ln(p_i) = \lambda + 1\\
+&\ln(p_i) = -\lambda - 1\\
+& p_i = e^{-\lambda - 1}
+\end{align}
+$$
+
+So, we found that each microstate $i$ has the same probability (since $\lambda$ is a constant). Now, how could we get rid of this $\lambda$? To do so, we re-apply the condition on the sum of probabilities (our second equation), and we obtain 
+
+$$
+\begin{align}
+\sum_i^6 p_i &= 1\\
+\sum_i^6  e^{-\lambda - 1} &= 1\\
+ 6 e^{-\lambda - 1} &= 1\\
+e^{-\lambda - 1} = \frac{1}{6}
+\end{align}
+$$
+
+Since the summing six times a constant gives ... six times that constant! Replacing this expression in the expression for $p_i$, we get
+
+$$
+p_i= \frac{1}{6} 
+$$
+
+Obviously, we considered here a dice with six faces, but quite obviously, for a dice with $N$ faces, we would have obtained $p_i=1/N$. We found that all microstates are equiprobable.
 </details>
 
-- Maximizing the entropy for the microcanonical case gives equal probabilities
-- Maximizing the entropy for the canonical case is equivalent to maximize the free energy $F$
+Note that the constant $\lambda$ which was used to do this trick completely disapeared from the final result.
 
-## Finding back physical quantities from $Z$
+This is indeed the best we can say about our dice, for which all the faces are equivalent (i.e. they are related by a symmetry transformation) for which there is no reason to prefer one face over the other.
 
-The average energy of our gas can then be re-expressed from $Z$ as
 
-$$
-\boxed{\langle E \rangle = -\frac{1}{Z}\frac{\partial Z}{\partial \beta} = -\frac{\partial{\ln Z}}{\partial \beta}}
-\label{eq:E-of-Z}
-$$
+### Compute the probabilities for a biased die
 
-<details>
-  <summary>Proof</summary>
- 
-Using the second constraints, we can relate $\langle E \rangle$ to $Z$ as:
+Now assume that someone gave you a dice and when throwing it a few time, it does not seem quite right. It looks like some numbers appear more often than other. It is biased. $p_i=1/6$ seemed like a reasonable assumption, but clearly it doesn't match the reality of your system. What could you do?
+
+The answer, you guessed it, is to maximise the entropy, but with some additional constraint. The additional conditions we want to impose are now
 
 $$
-\sum_i p_i E_i = \sum_i \frac{1}{Z}e^{-\beta E_i}E_i= \langle E \rangle
-$$
-
-Seeing that:
-
-$$
--\frac{1}{Z}\frac{\partial Z}{\partial\beta}= \sum_i \frac{E_i}{Z}e^{-\beta E_i}
-$$
-
-and so:
-
-$$
-\langle E \rangle = -\frac{1}{Z}\frac{\partial Z}{\partial \beta} = -\frac{\partial{\ln Z}}{\partial \beta}
-$$
-</details>
-
-The entropy $S$ can also be rederived in terms of $Z$ as:
-
-$$
-\boxed{S = \beta \langle E \rangle + \ln Z}
-$$
-
-<details>
-  <summary>Proof</summary>
- 
-$$
+\begin{cases}
 \begin{aligned}
-S &= -\sum_i p_i \ln(p_i) \\
-&= \sum_i\frac{1}{Z}e^{-\beta E_i}\left[ \beta E_i + \ln (Z)\right]\\
-&= \beta \langle E \rangle + \ln (Z)\sum_i e^{-\beta E_i}
+&\sum_i p_i i &= \langle i \rangle \\
+&\sum_i p_i  &= 1
 \end{aligned}
+\end{cases}
 $$
 
-And so:
+Where $\langle i \rangle$ is the mean value of $i$ that can be obtained by a large number of measurements (in this case, we thus consider that our empricial mean is a good approximation of the statistical average, that is $\bar{i}=\langle i \rangle$). As discussed in our [previous lecture](../entropy), $\langle i \rangle=3.5$ for a fair die, so we expect here the value to be anything different.
+
+Our conditions translate in terms of constraints as:
 
 $$
-S = \beta \langle E \rangle + \ln Z
-$$
-</details>
-
-While we got rid of $\alpha$, the second Lagrange multiplier $\beta$ can be expressed with respect to the temperature. To do so, we define the temperature as the change of energy associated with a change of entropy:
-
-$$
-\boxed{T := \frac{\partial \langle E \rangle}{\partial S}_{n,V}} 
-\label{eq:defTemp}
+\begin{cases}
+\begin{aligned}
+&C_1 = \sum_i^6 p_i i -\langle i \rangle \\
+&C_2 = \sum_i^6 p_i-1
+\end{aligned}
+\end{cases}
 $$
 
-The next section will discuss why this definition is deep and connects with the intuitions you might have about temperature. With this definition
+Using the Lagrange multiplier technique, we obtain
 
-$$
-\boxed{\beta = \frac{1}{T}}
+$$ 
+\boxed{p_i = \frac{e^{-\lambda_1 i}}{\sum_i^6 e^{-\lambda_1 i}}}
 $$
 
-<details>
+<details markdown="1">
   <summary>Proof</summary>
+We write: 
 
 $$
-\text{d}S = \beta \text{d}\langle E\rangle + \langle E\rangle\text{d}\beta + \frac{\partial \ln Z}{\partial \beta}d\beta
+\begin{align}
+\mathcal{L} &=  S(p_i) - \lambda_1 C_1(p_i)- \lambda_2 C_2(p_i)\\
+&= -\sum^6_i p_i \ln(p_i) - \lambda_1 (\sum^6_i i p_i - \langle i \rangle)  - \lambda_2 (\sum^6_i p_i -1)
+\end{align}
 $$
 
-using the relation between $\langle E \rangle$ and the entropy aswell as the fact that $Z$ is a function of only one independant variable $\beta$ or $\langle E \rangle$ since both are not independant because of $\langle E \rangle$ can be expressed in terms of $Z$. Now using the expression of $\langle E \rangle$ in term of $Z$, we can see that the two last terms cancels out to give simply: $\text{d}S = \beta \text{d}\langle E\rangle$. With the definition of $T$:
+Now the derivatives are:
 
 $$
-T = \frac{\partial \langle E \rangle}{\partial S}_{n,V}
+\begin{align}
+&\frac{\partial \mathcal{L}}{\partial p_i} = - \ln(p_i) - 1 - \lambda_1 i - \lambda_2    \\
+&\frac{\partial \mathcal{L}}{\partial \lambda_1} =  -(\sum^6_i i p_i - \langle i \rangle)
+&\frac{\partial \mathcal{L}}{\partial \lambda_2} =  -(\sum^6_i p_i -1) 
+\end{align}
 $$
 
-Whe have $\text{d}S = \frac{1}{T}\text{d}\langle E\rangle$, allowing us to conclude that:
+Setting the first equation to 0, we get
 
 $$
-\beta = \frac{1}{T}
+\begin{align}
+&- \ln(p_i) - 1 - \lambda_1 i - \lambda_2 =0 \\
+&p_i= e^{- 1 - \lambda_1 i - \lambda_2} \\
+&p_i = e^{- 1 - \lambda_2}e^{-\lambda_1 i}
+\end{align}
 $$
+
+The sum of probabilities equal to one leads to 
+
+$$
+\begin{align}
+&\sum_i^6 e^{- 1 - \lambda_2}e^{-\lambda_1 i}=1 \\
+&e^{- 1 - \lambda_2} = \frac{1}{\sum_i e^{-\lambda_1 i}}
+\end{align}
+$$
+
+Re-injecting in the expression of $p_i$, we get
+
+$$p_i = \frac{1}{\sum_i^6 e^{-\lambda_1 i}}e^{-\lambda_1 i} $$
+
 </details>
 
-Similarly, we define the pressure to be 
+We realise now that the probability of the state depends on $i$. Thus, by asking for our constraints, we are not in a state of equiprobability anymore: some states will be more probable and some less.
 
-$$\boxed{P := -\frac{\partial{\langle E \rangle}}{\partial{V}}\Bigg|_S}$$
+We also see that we could not get rid easily of the Lagrange multiplier $\lambda_1$ associated with our constraint on the mean $C_1$, as it still appear in our expression. Replacing the value of $p_i$ in the mean value constraint, we obtain:
 
-We will also justify such a definition in the next section.
-As such, knowing $Z$ allows us to express all our state variable and state functions and relate them to the microscopic behaviour of the system. Note that we operate here a change of point of view compared to classical thermodynamics, where quantities such as $P,T$ are not only considered only as state variables which can be measured and of which we try to keep track of the evolution. They are clearly considered as emerging from the underlying microscopic probability distribution of the constituents of the system.
+$$\langle i \rangle =  \frac{\sum^6_i i e^{-\lambda_1 i}}{\sum_i^6 e^{-\lambda_1 i}}$$
 
-Let's now clarify all of this with an illustration: On the following figure, we represented some examples of $p_i(E)$ computed using all the formula we just derived.
+This equation fully determines $\lambda_1$ but is quite difficult to solve! There are several ways to do it. Here we propose to simply use a numerical function of scipy to obtain it, based on a method named "Brent’s method". We will not explain it in detail here (check online if you are curious). You can find a code obtaining $\lambda_1$ for any value of $\langle i \rangle$ [here](../codes/biased_dice.py). Note that in the case where $\lambda_1=0$, we obtain:
 
-![image](../images/canonical_boltzmann_beta_derived.png){: width="80%"}
+$$\langle i \rangle =  \frac{\sum_i^6 i}{\sum_i^6 1} = \frac{1+2+3+4+5+6}{6} = 3.5$$
 
-*Example of distributions of $p_i(E)$ associated with different average energy, temperature and entropy (arbitrary units). Computed with [this code](../codes/Plot_boltzmann.py)*.
+recovering the case of the fair dice.
 
-We can see on the graph the probability of each microstates of the system -- i.e. of each configuration of particles -- associated to each energy $p_i$. As such, $p_i=n_i/N$, that is the fraction of particle configuration with energy $E_i$. Each curve on the figure is associated with a different average energy $\langle E \rangle$, imposed to the system by the heat bath with which it is at thermal equilibrium. Each curve is also associated to a value of the entropy $S$, which is maximum (and more exactly, each $p_i$ curve is constructed such that $S$ is maximum under the constraint that the average energy should be $\langle E\rangle$ as we did above).
-To each curve, one can associate a temperature $T$ by computing the derivative of $E$ with respect to $S$. We will explain this more in the next section. However, we see immediately that the macrostates with the biggest average energy (in red) are associated with the highest energy, as we would expected. They are also associated with the highest value for the entropy, which is something that we can understand as they becomre flatter and flatter as the entropy increased (i.e. less peaked on small values of $E_i$). States of high temperature are thus states which are more spread over the axis $E_i$, hence less known and more disordered, attributes which we understand as associated to larger values of $S$. 
+Once $\lambda_1$ is obtained, we have all the informations to get $p_i$ for each state $i$.
+We plotted below the probability distribution maximizing the entropy with the constraint that $\langle i \rangle=4.5$. We see, as expected, that the dice is biased and prefers higher values. Our probability distribution reflects this fact. For $\langle i \rangle = 3.5$, we obtain exactly $\lambda_1=0$, thus finding back the case of the fair die. As such, this new probability distribution encompases and generalizes the one of the fair die. Try other values of $\langle i \rangle$ and see for yourself! 
 
-# Crossing the bridge with standard thermodynamics
+![image](../images/biased_dice.png){: width="80%"}
 
-## On the definition of temperature
-
-The temperature is defined above as the variation of energy with respect to entropy. While it is totally possible (and easy) to derive such an equation from the second principle in the context of classical thermodynamics, it is usually not considered as a definition of $T$ itself, but rather as a definition of $S$.
-
-By reversing the order and defining $T$ in such a way, we change its status and consider it as a quantity emmerging from the underlying microscopic properties of our system. Doing so also provides us with a very general definition of $T$, which can virtually be assigned to any physical system which can be associated with a average energy and an entropy. Let's try to understand better the significance of such a definition.
-
-On the above figure, we see indeed that probability distributions for the microstates are different depending only on the mean energy $\langle E \rangle$. As the average energy increase, the entropy of the macrostate also changes, traducing the fact that the probability distribution are getting more spread. By our definition, the temperature quantifies precisely how much an increase in the entropy of the macrostate can be associated with a change of the mean energy.
-
-Quantitatively, considering a transformation which change the average energy of the heat bath by a small amout $\text{d}\langle E\rangle$ (for exemple heating it somehow, at fixed volume and number of particle, which we always assumed here).The change of average energy can be associated with a change of entropy of the probability distribution such as
-
-$$ \text{d}\langle E\rangle = \frac{\partial \langle E\rangle}{\partial S}\Bigg|_{n,V} \text{d}S= T\text{d}S $$
-
-You might recognize here some flavour of the definition of entropy variations used to introduce the [second principle of thermodynamics](../../thermo/secondprinciple/)!
-
-On the above numerical exemple, we see that $S$ seems to always increase when $\langle E \rangle$ increases. This seems coherent intuitively, as states with more energy are understood as more "agitated" and hence more chaotic or disogranised, thus being able to explore more possibilities for their energies $E_i$ (Entropy also has to do with predictability of the evolution of the states, and hence chaos in a deeper rigorous sense, we will come back to it).
-
-A consequence of this, is that $T$ thus defined will seemingly always be a positive quantity. This is also a good news for our proposition of definition. What sense could we make of a negative temperature anyway? Well, this interesting question will has a very nice answer: negative temperature systems can exists, and our definition allows for it. They are known as "forced systems", in which the entropy of the system dicreases when we imput more energy (i.e. the system becomes more organized when we inject energy in them). Such systems rarely exist spontaneously in nature and we'll discuss them and their importance later on.
-
-With this definition, we also get the important property that hot flows from hot system to cold sytem, under the addition of the second principle of thermodynamics as discussed [here](../../thermo/secondprinciple/). We will come back to the second principle in the context of statistical physics [later](../principles/).
-
-## On the definition of pressure
-
-While we redefined the temperature to be the increase of energy when entropy changes, we also proposed above an alternative definition for the pressure of the system we are considering. 
-Indeed, pressure is not only a force over a surface but it is equivalent, and more useful to think of it as an energy per unit of volume! Or as stated above:
-
-$$ P = -\frac{\partial{\langle E\rangle}}{\partial{V}}\Bigg|_S$$
-
-This is equivalent (but more convinient) that the the usual definition. Indeed, to convince yourself, imagine a small infinitessimal box of size $\text{d}x$,$\text{d}y$ and $\text{d}z$. The pressure exerted on the surface $\mathcal{S}=\text{d}y\text{d}z$ is 
-
-$$P=\frac{\text{d} \vec{F}\cdot \vec{n}}{\text{d} \mathcal{S}}= \frac{\text{d} \vec{F}\cdot \vec{n}}{\text{d} \mathcal{S}}=\frac{\text{d}\vec{F}\cdot \vec{n}}{ \text{d}y\text{d}z}= \frac{\text{d} \vec{F}\cdot \text{d}\vec{x}}{ \text{d}y\text{d}z\text{d}x}=\frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} $$
-
-On the other hand, the energy transfered to a wall of the box due to the kinetic motion of the particle within the box, can be written $\text{d} \langle E \rangle= - \delta W=-\vec{F}\cdot\text{d}\vec{x}$.
-
-From which 
-
-$$ P = \frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} =-\frac{\partial{ \langle E \rangle}}{\partial{V}}\Bigg|_S$$
-
-Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to derive all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the average energy $E$, the entropy $S$...) through the partition function $Z$, simply by asking for the maximization of the entropy.
-
-### Taking the continuous limit
-
-Now, before we move on, we should understand how everything that we discussed here can be generalised in the case where there is not a countable number of microstates, but a continuous infinity.
+*Maximum entropy solution for the biased die problem with a mean of 4.5. Plotted using [this code](../codes/biased_dice.py).*
 
 ## Going further: recommended readings and watching
 
-- [Statistical mechanics, theoretical minimum lectures - L. Susskind (2013)](https://theoreticalminimum.com/courses/statistical-mechanics/2013/spring)
-- An introduction to thermal physics - D. V. Schroeder (2000) - Addison-Wesley 
-- Statistical physics Part 1 and 2 - L.D. Landau and E.M. Lifshitz (1995) - (several editions available)
+- [Probability distributions and maximum entropy - K. Konrad (2010)](https://kconrad.math.uconn.edu/blurbs/analysis/entropypost.pdf)
+- [Entropic inference: Some pitfalls and paradoxes we can avoid - A. Caticha (2012) - arXiv:1212.6967](https://arxiv.org/abs/1212.6967)

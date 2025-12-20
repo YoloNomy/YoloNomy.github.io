@@ -23,7 +23,7 @@ Each microstate $i$ can be associated with a probability of occuring $p_i$. The 
 
 ## Preliminary review of basic probability theory for the discrete case and the challenge of statistical mechanics
    
-As a very simple reminder, recall that for a discrete set of possible events, which we will label by the index $i$, the probabilties represent the "chance" for this event to occur, expressed in as fractions of one ($0 \leq p_i \leq 1$). For exemple, considering rolling a dice, the possible results would be $i\in \Omega = \{1,2,3,4,5,6}$ and $p_i = 1/6 \simeq 0.1667$, for each $i$ (in a more fancy way, we can call $\Omega$  can say that $p$, is a function, and more precisely as a measure, such that $p:\Omega \to [0,1]$, $i \to p_i$).
+As a very simple reminder, recall that for a discrete set of possible events, which we will label by the index $i$, the probabilties represent the "chance" for this event to occur, expressed in as fractions of one ($0 \leq p_i \leq 1$). For exemple, considering rolling a dice, the possible results would be $i\in \Omega = \\{1,2,3,4,5,6\\}$ and $p_i = 1/6 \simeq 0.1667$, for each $i$ (in a more fancy way, we can call $\Omega$  can say that $p$, is a function, and more precisely as a measure, such that $p:\Omega \to [0,1]$, $i \to p_i$).
 
 Probability is also a highly subtle concept, which can be defined and introduced in a great number of way, with different level of abstraction and fundamental depth. For a in depth introduction of this concept, you can have a look at our [measure theory lectures](../../maths/measure_theory/probability_space). For For now, perhaps the simplest and most intuitive way to think of them, is the so-called **frequentist approach**, stating that if one could repeat a very large number of time $N$ a specific event (like rolling a dice), the probability of $i$ would be the fraction of the number of time $n_i$ that $i$ occured over $N$ that is:
 
@@ -37,11 +37,11 @@ Considering all the possible outcome of an event, the sum of all probabilities s
 
 $$\sum_i p_i=1$$
 
-Suppose that a quantity $X$ can be associated to each event $i$ to give a number $X_i= X(i)$ (That is there is a function $X: \Omega \to \mathbb{R}$). For exemple, this could be the value appearing on the dice for each roll. The **average** of the quantity $X$ is defined as
+Suppose that a quantity $f$ can be associated to each event $i$ to give a number $f_i= f(i)$ (That is there is a function $f: \Omega \to \mathbb{R}$). For exemple, this could be the energy $E_i$ of the microstate $i$, or the value of the dice, which would be simply $i$ itself. The **average** of the quantity $f$ is defined as
 
-$$\langle X \rangle = \sum_i p_i X_i,$$
+$$\langle f \rangle = \sum_i p_i f_i,$$
 
-For the dice, we would thus get the average number appearing of the dice to be $\langle X \rangle = 3.5 $. All these are very basic ideas, but that is all we will need for now in order to move forward.
+For the dice, we simply have $f=i$ and we would thus get the average number appearing after a roll to be $\langle i \rangle = 3.5 $. All these are very basic ideas, but that is all we will need for now in order to move forward.
 
 <details markdown="1">
   <summary>A sidenote on the empirical mean value </summary>

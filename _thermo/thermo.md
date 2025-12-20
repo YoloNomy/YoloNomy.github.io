@@ -20,7 +20,8 @@ You will find here some fun python applications to physics with some detailled e
 # Statistical physics
 
 - [Introducing the statistical entropy](../statistical/entropy/)
-- [Maximizing the entropy: the canonical ensemble](../statistical/entropy-max/)
+- [Maximizing the entropy: the Lagrange multipliers](../statistical/entropy-max/)
+- [Maximizing the entropy: the canonical ensemble](../statistical/canonical/)
 - [Thinking in phase space](../statistical/phasespace/)
 - [The ideal gas: the statistical perspective](../statistical/idealgas/)
 - [Grand canonical ensemble](../statistical/grandcanonical/)
