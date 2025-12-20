@@ -7,43 +7,34 @@ nav_order: 1
 
 Let's now traduce the principle of maximum entropy in term of more familiar problems, as a large number of particles boucing in a box. We will be interested here in a system, like a gas, which has a discrete number of distinguishable microstates. For now, the exact physical system is not important, and the equations we will derive will be very general. The only thing that matters is that our system can access multiple microstates with different energy levels.
 
-## The fair dice of nature: The microcanonical model for isolated systems
+## The fair dice of nature: The microcanonical ensemble for isolated systems
 
-Consider then a system, like a box of gas. All the atoms can be arranged in this box in a large number of different distinguishable configurations. Each configuration, labelled by the index $i$, is made of the data of all the positions and momentum of the particles. To each such configuration, one can associate an energy $E_i$. For simplicity, we assume here that the number of accessible microstates is discrete and finite (which is of course only a gross representation of a glass of water). It will be straightforward to generalize this to the continuous case in the next lectures by replacing sums with integrals and taking limits toward infinity but the discrete picture is much easier to understand. We will also gloss over several subtelties in order to remain as clear as possible. Clarifications will be provided in the following lectures.
+Consider then a system, like a box of gas. All the atoms can be arranged in this box in a large number of different distinguishable configurations. Each configuration, labelled by the index $i$, is made of the data of all the positions and momentum of the particles. To each such configuration, one can associate an energy $E_i$. For simplicity, we assume here that the number of accessible microstates is discrete and finite (which is of course only a gross representation of a glass of water). It will be straightforward to generalize this to the continuous case in the next lectures by replacing sums with integrals and taking limits toward infinity but the discrete picture is much easier to understand. It will also prove to be very useful in the case of quantum systems, as you can probably imagine.
 
-For now, you can think of this box of gas as a dice with an extremely large number of faces (all the configurations of the particles). As times goes by, nature "rolls" the dice again and again, and the system jumps from one microstate to another. The question is the following: what is the chance that, when I will observe it, the dice will be in a given state $i$.
+For now, you can think of this box of gas as a die with an extremely large number of faces (all the configurations of the particles). As times goes by, nature "rolls" automatically for you the dice again and again, and the system jumps from one microstate to another. The question is the following: what is the chance that, when you will observe it, the die will be in a given state $i$.
 
 ## Microstates and degeneracies
 
-Assume that there exist $N$ distinguishable possible ways to re-arange the particles inside the box to give the same average energy ($N$ possible microstate associated with the macrostate). For simplicity, we assume here that the number of microstates is discrete and finite (which is of course only a gross representation of a glass of water). It will be straightforward to generalize this to the continuous case by replacing sums with integrals and taking limits toward infinity but the discrete picture is much easier to understand.
+In the case where either nothing special is known about the system, or all of its properties are strictly fixed (for example imagine an isolated system of perfectly known properties: $T$, $V$, $n$) all possible microstates are equally accessible and none are prefered. This would simply be a generalisation of the fair dice.
 
-Let's label by $i$ the possible microstates, that is the possible particle configurations in our box of gas. To each microstate is associated a specific energy $E_i$. As time goes by, the system might go from one microstate to another, and some are possible but will never be explored. In particular, we have the constraint imposed by the heat bath that the average energy (e.g. in time) should be $\langle E \rangle$. The energy of the system can thus varies (fluctuate) slightly, but the average will always remain the same. Some microstate could be very weird, as e.g. all the particles being located in one corner of the box, or half having very high energies and the other half having very low energies. However, the great majority of these microstates are made of particles being distributed randomly everywhere in the box with reasonable velocities. As such, these states will   will be incredibly more probable and contribute much more to the value of the entropy.
+In this case, all possible particle configuration are equally probable, and thus, by maximizing the entropy, we would obtain:
 
-Let $g_i$ be the **degeneracy** that is the number of possible microstates (particle configurations) amongst the $N$ associated with the same energy $E_i$.
+$$\boxed{p_i = \frac{1}{N}}$$
 
-We have, by construction:
+associated with a single value for the entropy $$S = \ln(N)$$. 
+As $N$ is extremely large, each configuration of particle is treated equally and has an extremely probability of occuring. What else is there to say for this very specific case?
+
+Imagine still, that the microstates can be distinguished by some property. They could have different energy $E_i$ or be associated with different observed colors or anything you might want.
+Let $g_i$ be the **degeneracy** that is the number of possible microstates (particle configurations) amongst the $N$ associated with the same property, say the energy $E_i$. That is, for example $g(E_2)=3$ would mean that there exist three different particle configurations in the box with the same energy state $E_2$.
+
+We have then, by construction:
 
 $$
 \sum_i g_i = N
 $$
 
-The probability of the configuration of particles to be found in a state $i$ of energy $E_i$ can be then simply written as:
-
-$$
-p_i = \frac{g_i}{N}
-$$
-
-Leading naturally from the above equation to
-
-$$
-\sum_i p_i = \sum_i \frac{g_i}{N} = 1
-$$
-
-The average energy of the macrostate is then expressed in term of the microstates as:
-
-$$
-\langle E \rangle  = \sum_i g_i E_i = \sum_i \frac{g_i}{N} E_i
-$$
+where, as a reminder, $N$ is the total number of microstates (which for the case of possible particle configurations could be extremely large, and even infinite).
+Now, can we write the entropy of such system in an interesting way?
 
 ## Expressing and interpreting the entropy 
 
@@ -51,12 +42,14 @@ Recall from the [first lecture](../entropy/), that the entropy $S$ of a probabil
 
 $$ S= -\sum_i p_i \ln(p_i)$$
 
-Let's try to compute it for the case at hand here.
-To do so, we consider the number of possible ways to rearange the $N$ microstates into the possible allowed energy states with occupation numbers $g_i$ is given by:
+Let's try to re-express it term of the degeneracy $g_i$.
+To do so, we consider the number of possible ways to rearange the $N$ microstates into the possible allowed energy states with occupation numbers $g_i$, given by:
 
 $$
-C^g_N = \frac{N!}{\prod_i g_i!}
+C^g_N = C^{g_1,g_2,...}_N = \frac{N!}{\prod_i g_i!}
 $$
+
+$C^{g}_N$ thus tells you how you could redistribute $g_i$ degeneracies amongst the $N$ microstates.
 
 Maximizing $C^g_N$ will give us the most probable configuration of the $g_i$. It can be shown that this maximum is very sharp, making other configurations almost impossible. 
 
@@ -125,8 +118,15 @@ $$
 $$
 </details>
 
-
 From the previous expression, we understand that maximizing $C^g_N$ is equivalent to maximizing $S$ (as $N$ is fixed). Following our discussion of the [previous lecture](../entropy), doing so with the additional constraint that $\langle E \rangle$ is known is a powerful inference tool which will allow us to get the probability of each microstate $p_i$ while being fair and accounting for what we don't know. Thanks to our previous derivation, we also see that, since $S$ is proportional to $C^g_N$, doing so will give us the most probable particle configurations within the box associated to the most probable $g_i$ combinations amongst the $N$ possible macrostates.
+
+Maximizing the entropy and adding the condition $\sum_i g_i=N$, we obtain the probability of the configuration of particles to be found in a state $i$ of energy $E_i$, which can be then simply written as:
+
+$$
+\bosed{p_i = \frac{g_i}{N}}
+$$
+
+It solely depends on how frequently in time the system will be in a state of energy $E_i$ by randomly bouncing between all the configurations.
 
 ## The biased dice of nature: The canonical model and equilibrium with a heat bath
 
@@ -183,7 +183,7 @@ $$
 Seeing that:
 
 $$
--\frac{1}{Z}\frac{\partial Z}{\partial\beta}= \sum_i \frac{E_i}{Z}e^{-\beta E_i}
+-\frac{1}{Z}\frac{\partial Z}{\partial\beta} = \sum_i \frac{E_i}{Z}e^{-\beta E_i}
 $$
 
 and so:
@@ -257,7 +257,7 @@ $$\boxed{P := -\frac{\partial{\langle E \rangle}}{\partial{V}}\Bigg|_S}$$
 We will also justify such a definition in the next section.
 As such, knowing $Z$ allows us to express all our state variable and state functions and relate them to the microscopic behaviour of the system. Note that we operate here a change of point of view compared to classical thermodynamics, where quantities such as $P,T$ are not only considered only as state variables which can be measured and of which we try to keep track of the evolution. They are clearly considered as emerging from the underlying microscopic probability distribution of the constituents of the system.
 
-Let's now clarify all of this with an illustration: On the following figure, we represented some examples of $p_i(E)$ computed using all the formula we just derived.
+Let's now clarify all of this with an illustration: On the following figure, we represented some examples of $_p_i(E_i)$ computed using all the formula we just derived.
 
 ![image](../images/canonical_boltzmann_beta_derived.png){: width="80%"}
 
@@ -324,6 +324,13 @@ When $T\to \infty$, $\beta = 1/T\to 0$ and
 $$ p(E_n)= \frac{g_n}{N}$$
 
 We find back the microcanonical model !
+
+Assuming that $S$ and $E$ are suitable functions for the inverse derivative theorem (link), we can write
+
+$$ \beta =  \frac{\partial S}{\partial E}$$
+
+we see that at very high energy, $\beta=0$ and thus changing the energy does not impact the entropy anymore.
+All the states become equally accessible and energy of the heat bath can not discriminate and prefer some states anymore. 
 
 ### Taking the continuous limit
 
