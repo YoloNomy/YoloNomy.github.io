@@ -66,16 +66,34 @@ $$
 
 simply condensed in a single equation as
 
-$$ \frac{\partial f(x_i)}{\partial x_i}= 0 $$
+$$ \frac{\partial f(x_i)}{\partial x_i}= 0$$
 
 Finding the $x_i$ solution of these equations gives us point where the derivative cancels in all directions, that is the function behaves locally as a constant function in all directions at that point. This extremum point can be a maximum or minimum of the function. Its exact nature is given by the sign of the second derivatives, which quantifies the curvature of the function at that point.
 
+The previous equation can also be interpreted as the cancellation of all the components of the [gradient vector](../../../meca/Newton/Energy/) of $f$ in the $x_i$ space:
+
+$$ \vec{\nabla}f= 0$$
+
 Now, what if we want to add on top of this the constraint that some other function $g$ on the same space must be null i.e. $g(x_i)=0$? That is, we want to find the maximum value of $f$, but staying on the region in the space where the condition $g(x_i)=0$ is true.
+
+![image](../images/LagrangeMultipliers2D.svg){: width="80%"}
+
+*Countours level of some function f(x,y) (dashed ellipses), with gradients (dashed arrows). The maximum of $f$ is found when the gradient is zero (where all gradient vectors meet). An additional constraint is required by asking to find the maximum of $f$ within a specific region where another function, $g(x,y)$ obeys a specific condition $g(x,y)=c$ (red curve). The gradient of the red curve is drawn with dashed red arrows. This point is found where the gradient of $f$ is inversely proportional to the gradient of $g$ (in opposite direction). [From author Nexcis, contribution to Wikimedia commons](https://en.wikipedia.org/wiki/Lagrange_multiplier#/media/File:LagrangeMultipliers2D.svg).*
+
 
 The way to do so, is to consider the new function $\mathcal{L}$:
 
 $\mathcal{L}(x_i) = f(x_i)-\lambda g(x_i)$
 
+And looking for the point satisfying the condition:
+
+$$ \vec{\nabla}\mathcal{L}=0$$
+
+Which can be explicited as:
+
+$$\vec{\nabla}f = -\lambda\vec{\nabla}g$$
+
+As sketched on the figure above, this means that the gradient of $g$ is inversely proportional to the gradient of $f$. As such, we are located on a point in space satisfying $g=0$ and $f$ has its maximum value. Perhaps the figure is enough to convince you that this is the case.
 
 </details>
 
