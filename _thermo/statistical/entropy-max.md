@@ -49,11 +49,33 @@ The numbers $\lambda_k$ can be re-expressed in term of the relevant quantities u
 <details markdown="1">
   <summary> Remarks, justification and details about Lagrange multipliers</summary>
 
-In generality the extremums of a function $f(x_i)$ consist of solving together the equations 
+Consider a function $f$ on a multidimentional space of dimension $N$, as e.g. $f:\mathbb{R}^N\to \mathbb{R}, x_i \to f(x_i)$. Here again, we should understand the $x_i$ as a list dimensions like $x,y,z$ if $f$ was a function over space, that is $f(x_i)= f(x_1,x_2,x_3..., x_N)$.
 
-$$\frac{\partial f(x_i)}{\partial x_i}=0$$
+In generality finding the extremums of a function $f(x_i)$ consist of solving together the equations 
 
-The nature of this extremum (maximum, minimum or saddle point) is given by the value of the second derivatives.
+$$
+\begin{cases}
+\begin{aligned}
+&\frac{\partial f(x_i)}{\partial x_1}= 0\\
+&\frac{\partial f(x_i)}{\partial x_2}= 0\\
+& \dots\\
+& \frac{\partial f(x_i)}{\partial x_N}= 0
+\end{aligned}
+\end{cases}
+$$
+
+simply condensed in a single equation as
+
+$$ \frac{\partial f(x_i)}{\partial x_i}= 0 $$
+
+Finding the $x_i$ solution of these equations gives us point where the derivative cancels in all directions, that is the function behaves locally as a constant function in all directions at that point. This extremum point can be a maximum or minimum of the function. Its exact nature is given by the sign of the second derivatives, which quantifies the curvature of the function at that point.
+
+Now, what if we want to add on top of this the constraint that some other function $g$ on the same space must be null i.e. $g(x_i)=0$? That is, we want to find the maximum value of $f$, but staying on the region in the space where the condition $g(x_i)=0$ is true.
+
+The way to do so, is to consider the new function $\mathcal{L}$:
+
+$\mathcal{L}(x_i) = f(x_i)-\lambda g(x_i)$
+
 
 </details>
 

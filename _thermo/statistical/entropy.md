@@ -48,11 +48,11 @@ For the dice, we simply have $f=i$ and we would thus get the average number appe
 
 To connect that with perhaps more familiar concepts, if an experiment was repeated a large number of times $N$, one would obtain a sequence of experimental results $x_n$ (that is $x_n: \mathbb{N}\to \Omega$). For exemple by rolling a dice, one could obtain $x_n= 4,2,4,1,5 ...$. The **mean** of this experiment would be defined as 
 
-$$\overline{X} = \frac{\sum_i^N X(x_n)}{N} = \frac{\sum_i^N n_i X_i}{N}$$ 
+$$\overline{f} = \frac{\sum_i^N f(x_n)}{N} = \frac{\sum_i^N n_i f_i}{N}$$ 
 
-where $n_i$ is the number of time that $i$ occurs. When $N\to \infty$, we expect that $\overline{X}=\langle X \rangle$, translating that our experiment and  $\overline{X}$ reflects the underlying probability distribution, in agreement with our "frequentist approach":
+where $n_i$ is the number of time that $i$ occurs. When $N\to \infty$, we expect that $\overline{f}=\langle f \rangle$, translating that our experiment and  $\overline{f}$ reflects the underlying probability distribution, in agreement with our "frequentist approach":
 
-$$\langle X \rangle = \lim_{N\to \infty}\overline{X} = \lim_{N\to \infty}\frac{\sum_i^N n_i X_i}{N} \to \sum_i^N p_i X_i$$ 
+$$\langle f \rangle = \lim_{N\to \infty}\overline{f} = \lim_{N\to \infty}\frac{\sum_i^N n_i f_i}{N} \to \sum_i^N p_i f_i$$ 
 
 </details>
 
@@ -128,7 +128,7 @@ When facing a problem in statistical mechanics, we will always resolve it by max
 
 There are usually two lines of thought in order to justify the effectiveness of this approach:
 
-- **The subjective approach**: when approaching a problem in statistical physics, we should try to infer the probability of the microstates $p_i$ by considering only what is known about the system. Maximizing the entropy gives us the most agnostic way to do so, without introducing any biais. We thus make the most honest possible thinking: maximizing our uncertainty, considering only what we know for certain. The additional constraints are then additional informations we must account for. 
+- **The subjective approach**: when approaching a problem in statistical physics, we should try to infer the probability of the microstates $p_i$ by considering only what is known about the system. Maximizing the entropy gives us the most agnostic way to do so, without introducing any biais. We thus make the most honest possible thinking: maximizing our uncertainty, considering only what we know for certain. The additional constraints are then additional informations we must account for. It is commonly considered that such an approach -- proposed and largely discussed by the physicist E.T. James -- is justified at least for the study of system in [thermal equilibrium](../../thermo/equilibrium), which we will discuss extensively in this class. 
 - **The objective approach**: in a system, the particles can be re-arranged in a very large number of ways.  Statistically, nature will almost always occupy the state with the largest number of possible microstate, hence it will sponteneously evolve towards the larger value of $S$. The additional constraints are physical constraints forced upon the system, limiting the possible available configurations. 
 
 These two points are in fact complementary and do not contradict one another. The first one justifies the methodology we will use to study systems, the seconds tells us about how systems evolve, why they are generally found in larger entropy states and is more linked to dynamical considerations. We will come back to all of this again and again in the class. For now, it might be preferable to bear in mind the (maybe less appealing) subjective approach, especially for the next classes. We will gradually understand why and how the objective approach is sensible and how it connects with the first.
@@ -137,6 +137,7 @@ Understanding all the consequences and meaning of entropy maximisation is a diff
 ## Going further: recommended readings
 
 - [Information Theory and Statistical Mechanics - E.T. James (1957) - P.R. Vol 106, N. 4. 620-630 ](https://bayes.wustl.edu/etj/articles/theory.1.pdf)
+- [Where do we stand on maximum entropy? - E.T. James (1978)](https://bayes.wustl.edu/etj/articles/stand.on.entropy.pdf)
 - [Interpretations of Probability - A. Hájek (2023) - The Standford encyclopedia of philosophy](https://plato.stanford.edu/entries/probability-interpret/)
 - [Philosophy of Statistical Mechanics - R. Frigg and C. Werndl (2024) - The Standford encyclopedia of philosophy](plato.stanford.edu/entries/information-entropy/). (See also all related entries contained in this page.)
 - [A Mathematical Theory of Communication - C.E. Shannon (1948) - The Bell System Technical Journal,Vol. 27, pp. 379–423, 623–656](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)

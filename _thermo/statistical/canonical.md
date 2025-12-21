@@ -123,7 +123,7 @@ From the previous expression, we understand that maximizing $C^g_N$ is equivalen
 Maximizing the entropy and adding the condition $\sum_i g_i=N$, we obtain the probability of the configuration of particles to be found in a state $i$ of energy $E_i$, which can be then simply written as:
 
 $$
-\bosed{p_i = \frac{g_i}{N}}
+\boxed{p_i = \frac{g_i}{N}}
 $$
 
 It solely depends on how frequently in time the system will be in a state of energy $E_i$ by randomly bouncing between all the configurations.
@@ -257,7 +257,7 @@ $$\boxed{P := -\frac{\partial{\langle E \rangle}}{\partial{V}}\Bigg|_S}$$
 We will also justify such a definition in the next section.
 As such, knowing $Z$ allows us to express all our state variable and state functions and relate them to the microscopic behaviour of the system. Note that we operate here a change of point of view compared to classical thermodynamics, where quantities such as $P,T$ are not only considered only as state variables which can be measured and of which we try to keep track of the evolution. They are clearly considered as emerging from the underlying microscopic probability distribution of the constituents of the system.
 
-Let's now clarify all of this with an illustration: On the following figure, we represented some examples of $_p_i(E_i)$ computed using all the formula we just derived.
+Let's now clarify all of this with an illustration: On the following figure, we represented some examples of $p_i(E_i)$ computed using all the formula we just derived.
 
 ![image](../images/canonical_boltzmann_beta_derived.png){: width="80%"}
 
