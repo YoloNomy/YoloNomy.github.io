@@ -44,7 +44,7 @@ $$\langle f \rangle = \sum_i p_i f_i,$$
 For the dice, we simply have $f=i$ and we would thus get the average number appearing after a roll to be $\langle i \rangle = 3.5 $. All these are very basic ideas, but that is all we will need for now in order to move forward.
 
 <details markdown="1">
-  <summary>A sidenote on the empirical mean value </summary>
+  <summary><strong>Supplement:</strong> A sidenote on the empirical mean value </summary>
 
 To connect that with perhaps more familiar concepts, if an experiment was repeated a large number of times $N$, one would obtain a sequence of experimental results $x_n$ (that is $x_n: \mathbb{N}\to \Omega$). For exemple by rolling a dice, one could obtain $x_n= 4,2,4,1,5 ...$. The **mean** of this experiment would be defined as 
 
@@ -102,7 +102,7 @@ In practice, there could be different ways to define $S$ and quantify this knowl
 One important property which justifies the use of logarithms is that entropies become **additive**. That is, if we have two systems with entropies $S_1$ and $S_2$, and we consider the larger system made by their union, this larger system will have a total entropy $S_1+S_2$. Intuitively, this property emmerges directly from probabilities. It is a basic probability rule that, when combining two different events, the probability for both to occur is their product. In other words: probabilities multiply. Since $S$ is constructed from the logarithm of probabilities, and since $\ln(ab)= \ln(a)+\ln(b)$, entropies must add (a more rigorous proof can be found in the following note).
 
 <details markdown="1">
-  <summary>The properties of the entropy function</summary>
+  <summary><strong>Supplement:</strong> The properties of the entropy function</summary>
 
 Here is a discussion of the mathematical properties that must satisfy $S$ as suggested by
 [Shannon (1948)](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf). Feel free to ignore this part for now, which is quite technical, if you are not interested by these details.

@@ -30,4 +30,3 @@ You will find here some fun python applications to physics with some detailled e
 - Boltzmann equations in the expanding Universe
 - On inflation and scalar fields on cosmic scales
 
-

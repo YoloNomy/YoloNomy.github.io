@@ -15,16 +15,16 @@ For now, you can think of this box of gas as a die with an extremely large numbe
 
 ## Microstates and degeneracies
 
-In the case where either nothing special is known about the system, or all of its properties are strictly fixed (for example imagine an isolated system of perfectly known properties: $T$, $V$, $n$) all possible microstates are equally accessible and none are prefered. This would simply be a generalisation of the fair dice.
+In the case where either nothing special is known about the system, or all of its properties are strictly fixed (for example imagine an isolated system of perfectly known properties: $T$, $V$, $n$) all possible microstates are equally accessible and none are prefered. This would simply be a generalisation of the fair die.
 
-In this case, all possible particle configuration are equally probable, and thus, by maximizing the entropy, we would obtain:
+In this case, all possible particle configuration are equally probable, and thus, by maximizing the entropy, we would obtain, as in the previous lecture for the fair die:
 
 $$\boxed{p_i = \frac{1}{N}}$$
 
-associated with a single value for the entropy $$S = \ln(N)$$. 
-As $N$ is extremely large, each configuration of particle is treated equally and has an extremely probability of occuring. What else is there to say for this very specific case?
+associated with a single value for the entropy $$S = \ln(N)$$.
+As $N$ is extremely large, each configuration of particle is treated equally and has an extremely low probability of occuring. What else is there to say for this very specific case?
 
-Imagine still, that the microstates can be distinguished by some property. They could have different energy $E_i$ or be associated with different observed colors or anything you might want.
+Imagine that we have no informations at all about the system, but that the microstates can be distinguished by some property. They could have different energy $E_i$ or be associated with different observed colors or anything you might want.
 Let $g_i$ be the **degeneracy** that is the number of possible microstates (particle configurations) amongst the $N$ associated with the same property, say the energy $E_i$. That is, for example $g(E_2)=3$ would mean that there exist three different particle configurations in the box with the same energy state $E_2$.
 
 We have then, by construction:
@@ -33,7 +33,14 @@ $$
 \sum_i g_i = N
 $$
 
-where, as a reminder, $N$ is the total number of microstates (which for the case of possible particle configurations could be extremely large, and even infinite).
+where, as a reminder, $N$ is the total number of microstates (which for the case of possible particle configurations could be extremely large, and even infinite) and $g_i$ is the number of such configurations with energy $E_i$.
+
+It is clear now, that the probability $p(E_i)$ that the observed microstate has the energy $E_i$ should be $p(E_i)=p_i g_i$. Since $p_i=1/N$, we have:
+
+$$\boxed{p(E_i) = \frac{g_i}{N}}$$
+
+Note that even though they have similar names, $p_i$ and $p(E_i)$ are different quantities. The first is the probability that the system will be observed in the specific and unique configuration $i$, while the second is the probability that the state will be one of possibly many with energy $E_i$. Clearly, the more configurations (microstates) are associated with a specific energy state, the more probable this energy state will be.
+
 Now, can we write the entropy of such system in an interesting way?
 
 ## Expressing and interpreting the entropy 
@@ -118,15 +125,7 @@ $$
 $$
 </details>
 
-From the previous expression, we understand that maximizing $C^g_N$ is equivalent to maximizing $S$ (as $N$ is fixed). Following our discussion of the [previous lecture](../entropy), doing so with the additional constraint that $\langle E \rangle$ is known is a powerful inference tool which will allow us to get the probability of each microstate $p_i$ while being fair and accounting for what we don't know. Thanks to our previous derivation, we also see that, since $S$ is proportional to $C^g_N$, doing so will give us the most probable particle configurations within the box associated to the most probable $g_i$ combinations amongst the $N$ possible macrostates.
-
-Maximizing the entropy and adding the condition $\sum_i g_i=N$, we obtain the probability of the configuration of particles to be found in a state $i$ of energy $E_i$, which can be then simply written as:
-
-$$
-\boxed{p_i = \frac{g_i}{N}}
-$$
-
-It solely depends on how frequently in time the system will be in a state of energy $E_i$ by randomly bouncing between all the configurations.
+From the previous expression, we understand that maximizing $C^g_N$ is equivalent to maximizing $S$ (as $N$ is fixed). Following our discussion of the [previous lecture](../entropy), doing so with the additional constraint that $\langle E \rangle$ is known is a powerful inference tool which will allow us to get the probability of each microstate $p_i$ while being fair and accounting for what we don't know. Thanks to our previous derivation, we also see that, since $S$ is proportional to $C^g_N$, doing so will give us the most probable particle configurations within the box associated to the most probable $g_i$ combinations amongst the $N$ possible macrostates. It solely depends on how frequently in time the system will be in a state of energy $E_i$ by randomly bouncing between all the configurations.
 
 ## The biased dice of nature: The canonical model and equilibrium with a heat bath
 

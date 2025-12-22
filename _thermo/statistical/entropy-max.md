@@ -47,7 +47,7 @@ compute explicitely the derivatives and isolate $p_i$. Note here that the first 
 The numbers $\lambda_k$ can be re-expressed in term of the relevant quantities using the second equation (which just give back the constraints $C_k=0$). This receipe might seem very abstract and unjustified for now, but we will illustrate it on many exemple below! 
 
 <details markdown="1">
-  <summary> Remarks, justification and details about Lagrange multipliers</summary>
+  <summary> <strong>Supplements:</strong> Remarks, justification and details about Lagrange multipliers</summary>
 
 Consider a function $f$ on a multidimentional space of dimension $N$, as e.g. $f:\mathbb{R}^N\to \mathbb{R}, x_i \to f(x_i)$. Here again, we should understand the $x_i$ as a list dimensions like $x,y,z$ if $f$ was a function over space, that is $f(x_i)= f(x_1,x_2,x_3..., x_N)$.
 
@@ -118,7 +118,7 @@ Applying the procedure described in the above section, we obtain
 $$\boxed{p_i =  \frac{1}{6}}$$
 
 <details markdown="1">
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
 
 We write: 
 
@@ -211,7 +211,7 @@ $$
 $$
 
 <details markdown="1">
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
 We write: 
 
 $$
@@ -274,6 +274,40 @@ We plotted below the probability distribution maximizing the entropy with the co
 ![image](../images/biased_dice.png){: width="80%"}
 
 *Maximum entropy solution for the biased die problem with a mean of 4.5. Plotted using [this code](../codes/biased_dice.py).*
+
+
+<details markdown="1">
+<summary><strong>Exercice :</strong> think about other observational constraints you could add to the biased die to refine the estimation of it's probability distribution. Try to add them in the code and see how it changes the figure of $p_i$  </summary>
+
+For the case of a biased die, we can not look at other observables than $i$ to constraint their average value. 
+
+The statistical variance of the observable $i$, with mean $\langle i \rangle$, can be computed as:
+
+$$
+\begin{aligned}
+ {\rm Var}(i)&= \langle i^2\rangle - \langle i \rangle^2\\
+ &= \sum_i p_i i^2 - \langle i \rangle^2
+ \end{aligned}
+$$
+
+The variance quantifies the average deviation of $i$ around it's average value. In other word, it quantifies the scatter of $i$ around $\langle i \rangle$.
+
+Adding the constraint on the variance with it's own Lagrange multiplier can be done and further specify the shape of $p_i$ as done in [this code](../codes/biased_dice_var.py).
+However, one should be careful, as doing so might force the probability distribution to look like a bell curve. It should thus be done only when justified, in order to avoid biaising what we think $p_i$ look like with unjustified a priori.
+
+![image](../images/biased_dice_var.png){: width="80%"}
+
+*Maximum entropy solution for the biased die problem with a mean of 4.5 and a variance of 0.5. Plotted using [this code](../codes/biased_dice_var.py).*
+
+</details>
+
+<details markdown="1">
+  <summary><strong>Exercice :</strong> Consider the same exercice for the sum of two dice, fair and biased. </summary>
+
+
+*Maximum entropy solution for the biased die problem with a mean of 4.5 and a variance of 0.5. Plotted using [this code](../codes/biased_dice_var.py).*
+
+</details>
 
 ## Going further: recommended readings and watching
 
