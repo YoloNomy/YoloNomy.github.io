@@ -5,6 +5,8 @@ parent: thermo
 nav_order: 1
 ---
 
+Physical system are continuous variables.
+
 ## Volumes in phase space
 
 The probability $d\mathcal{P}$ of a given element of the phase space is given by:

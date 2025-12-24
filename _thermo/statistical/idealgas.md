@@ -26,7 +26,7 @@ Develloping this integral simply gives
 $$ \boxed{Z=\left(\frac{e}{\rho}\right)^\mathcal{N}\left(\frac{2m\pi}{\beta}\right)^{\frac{3\mathcal{N}}{2}}}$$
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
  
 The integral over space gives
 
@@ -42,7 +42,7 @@ From $\langle E\rangle$, one can find back the mean energy of the macrostate und
 $$ \boxed{U = \langle E \rangle = -\frac{\partial \ln(Z)}{\partial \beta} = \frac{3}{2}\mathcal{N}k_B T}$$
 
 <details>
- <summary>Proof</summary>
+ <summary><strong>Proof</strong></summary>
 
 $$\begin{aligned}
 \ln(Z)&=\ln\left(\left(\frac{e}{\rho}\right)^N\left(\frac{2m\pi}{\beta}\right)^{\frac{3N}{2}}\right) \\
@@ -70,7 +70,7 @@ $$ \boxed{P =\frac{n\mathcal{R}T}{V}}$$
 and thus, only by assuming that particles were not interacting i.e. that the energy of a microstate is given by the sum of the kinetic energy of each particle $E(i)=\sum^{\mathcal{N}}_k E_c(k)$, and asking for the entropy to be maximal! 
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
 As
 
 $$P= -\frac{\partial E}{\partial V}\Bigg|_{S}$$

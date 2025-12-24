@@ -16,6 +16,7 @@ You will find here some fun python applications to physics with some detailled e
 - Van der Waals gas
 - [Second law of thermodynamics: entropy](../thermo/secondprinciple/)
 - thermodynamical potentials and phase transitions
+- [Heat transfer equations](../thermo/heat_transfer/)
 
 # Statistical physics
 

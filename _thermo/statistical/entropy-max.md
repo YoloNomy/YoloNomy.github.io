@@ -6,13 +6,13 @@ nav_order: 1
 ---
 # Derivation of the probability of microstates by maximizing the entropy
 
-We now want to justify that the principle of maximum entropy is a powerful tool to find the probability distribution associated to microstates of a system. To do so, we will introduce the Lagrange multiplier technique, which is a powerful mathematical tool to find the $p_i$ associated to the maximal value of $S$, under some additional constraints. We will illustrate this principle and this tool on the case of fair dice and of a biased die.
+We now want to justify that the principle of maximum entropy is a powerful tool to find the probability distribution associated to microstates of a system. To do so, we will introduce the Lagrange multiplier technique, which is a powerful mathematical tool to find the $p_i$ associated to the maximal value of $S$, under some additional constraints. We will illustrate this principle and this tool on the case of fair die and of a biased die.
 
 ## Maximising the entropy: the Lagrange multipliers
 
 Recall from the [previous lecture](../entropy/), that the entropy $S$ of a probability distribution $p_i$ is given by
 
-$$ S= -\sum_i p_i \ln(p_i)$$
+$$S= -\sum_i p_i \ln(p_i)$$
 
 $S$ quantifies our ignorence about the system. For example, if our system is a box of gas, $i$ can label all the possible microscopic configurations of the large number of particles contained in the box. $p_i$ would be the probability that, at this exact moment, the particles are in this exact configuration. In theory, we could measure many many times $N$ the system, write down the number of times that it was observed in a given configuration $n_i$, and estimate these probabilities in a frequentist way using $p_i=n_i/N$ as described in the previous lecture. Unfortunately, most of the time this is simply impossible. For exemple, there is something like $10^{25}$ particles of water in a glass. It would simply be impossible to measure the position and velocity of each of them, not even a single time.
 
@@ -83,7 +83,7 @@ Now, what if we want to add on top of this the constraint that some other functi
 
 The way to do so, is to consider the new function $\mathcal{L}$:
 
-$\mathcal{L}(x_i) = f(x_i)-\lambda g(x_i)$
+$$ \mathcal{L}(x_i) = f(x_i)-\lambda g(x_i)$$ 
 
 And looking for the point satisfying the condition:
 
@@ -96,6 +96,61 @@ $$\vec{\nabla}f = -\lambda\vec{\nabla}g$$
 As sketched on the figure above, this means that the gradient of $g$ is inversely proportional to the gradient of $f$. As such, we are located on a point in space satisfying $g=0$ and $f$ has its maximum value. Perhaps the figure is enough to convince you that this is the case.
 
 </details>
+
+<details markdown="1">
+<summary><strong> Exercice:</strong> Let $f(x,y)=3x^2+y^2$ be a function in the plane. And the constraints $x+2y=3$. Using Lagrange multipliers, find the point $(x_m,y_m)$ which extremalizes $f$ under the constraint.</summary>
+
+First, we can draw the contour lines of $f$ and the line satisfying the constraint $x+2y=3$ that is $y=(3-x)/2$. We did so using [this code](./codes/exercice_lagrange_mult.py). We see clearly that $f$ contours are ellipses and that the constraint is a straight line (where the orange star is). Our guess is that the point we are looking for will be where the smallest possible ellipse meets to the line. We already guess that our problem is a minimization, i.e. we will find a minimum value for $f$ satisfying the constraint.
+
+![image](../images/exercice_lagrange_mult.png){: width="80%"}
+
+*Illustration for the exercice using [this code](./codes/exercice_lagrange_mult.py).*
+
+We write the constraint 
+
+$$ C = x+2y-3=0 $$ 
+
+and 
+
+$$\mathcal{L}= 3x^2+y^2 - \lambda(x+2y-3)$$
+
+Then:
+
+$$\frac{\partial \mathcal{L}}{\partial x} = 6x - \lambda $$
+
+$$\frac{\partial \mathcal{L}}{\partial y} = 2y - 2\lambda $$
+
+Setting these two equations to zero to find $x_m$ and $y_m$, we get:
+
+$$x_m = \frac{\lambda}{6}$$
+
+$$y_m = \lambda $$
+
+and as such:
+
+$$x_m =  \frac{y_m}{6}$$
+
+Now, by taking $\frac{\partial L}{\partial \lambda}=0$, we recover our constraint $x+2y-3=0$, so:
+
+$$x_m +2y_m -3 =0$$
+
+Inserting $y_m$:
+
+$$\frac{y_m}{6} + 2y_m = 3 $$
+
+$$\frac{13}{6}y_m = 3 $$
+
+$$y_m = \frac{18}{13}$$
+
+and 
+
+$$x_m =  \frac{y_m}{6}= \frac{3}{13}$$
+
+So the point solving the equation is $$(3/13,18/13)$$. The point is marked on the figure by an orange star and satisfying the intuition we had.
+
+</details>
+
+
 
 ### Compute the probabilities for a fair die
 
@@ -303,7 +358,6 @@ However, one should be careful, as doing so might force the probability distribu
 
 <details markdown="1">
   <summary><strong>Exercice :</strong> Consider the same exercice for the sum of two dice, fair and biased. </summary>
-
 
 *Maximum entropy solution for the biased die problem with a mean of 4.5 and a variance of 0.5. Plotted using [this code](../codes/biased_dice_var.py).*
 

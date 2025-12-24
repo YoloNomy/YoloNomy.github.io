@@ -68,7 +68,7 @@ $$\delta W = -P {\rm d}V$$
 We will encounter the work again in [mechanics](../../../meca/Newton/energy), where it is again deeply linked with energy. The definition will be a bit different and we explain below to the curious reader why they are the same.
 
 <details>
-  <summary>Correspondance with mechanics</summary>
+  <summary><strong>Supplement:</strong> Correspondance with mechanics</summary>
 
 In mechanics, the infinitesimal work $\delta W$ of a force $\vec{F}$ associated to the infinitesimal displacement $\text{d}\vec{\ell}$ of a body is defined as
 
@@ -91,14 +91,14 @@ where we recognize the infinitesimal volume
 $$ {\rm d}V= \text{d}x\text{d}y\text{d}z $$ and the work of the force on the infinitesimal surface. Hence pressure is not only a force per unit of surface, it is also an energy per unit of volume!
 </details>
 
-- If the volume increased by the force, then $\text{d}V>0$ and hence $\text{d}U =\delta W<0$. Thus the system losses energy when it expends.
-- If the volume decrease $\text{d}V<0$ and hence $\text{d}U =\delta W>0$. Thus the system gain energy when it contracts.
+Work is thus the change of internal energy $U$ induce by the action of a force which induces a change in volume. We see that: 
 
-
-**Exercice: Consider an ideal gas, thus obeying the equation of state $PV=n\mathcal{R}T$. Show that, if its volume is changed from $V_A$ to $V_B$, the corresponding work is $W= n\mathcal{R}\ln\left(\frac{V_B}{V_A}\right)$.**
+- If the volume is increased by the force, then $\text{d}V>0$ and hence $\text{d}U =\delta W<0$. Thus the system looses energy when it expends.
+- If the volume decrease, $\text{d}V<0$ and hence $\text{d}U =\delta W>0$. Thus the system gains energy when it contracts.
 
 <details>
-  <summary>Solution</summary>
+  <summary><strong>Exercice</strong>: Consider an ideal gas, thus obeying the equation of state $PV=n\mathcal{R}T$. Show that, if its volume is changed from $V_A$ to $V_B$, the corresponding work is $W= n\mathcal{R}\ln\left(\frac{V_B}{V_A}\right)$.
+</summary>
 
 $$ \begin{aligned}
 W &= -\int_A^B P \text{d}V\qquad \qquad && \text{definition of work}\\
@@ -116,11 +116,12 @@ $$
 
 ## Heat
 
-Three types of heat transfers
+Heat is more associated to a change of the energy $U$ due to the contact with another system with a different temperature.
+There are three types of heat transfers:
 
-- **Conduction**
-- **Convection**
-- **Radiation**
+- **Conduction:** energy transfered by direct contact with another system.
+- **Convection:** energy transfered by the flow of matter.
+- **Radiation:** energy transferred by electromagnetic raditation.
 
 $P,V,T$ are related by an equation of state so it's enough to know the heat induced by a change in two of them.
 

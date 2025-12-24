@@ -20,12 +20,12 @@ $$\boxed{U=U(n,T)}$$
 All these equations should be understood as verified experimental relationships that intruiged physicist which where trying to understand the behavior of gases. They can however be retrieved by assuming that the gas is made of point particles bouncing randomly and not interacting between them. As such, the ideal gas assumption breaks when considering high pressures, when particles are able to interact between one another, or when some quantum effects come into play.
 
 <details  markdown="1">
-  <summary>Exercice: Temperature of a room</summary>
+  <summary><strong>Exercice:</strong> Temperature of a room</summary>
 
 </details>
 
 <details  markdown="1">
-  <summary>Exercice: Temperature of a molecular gas</summary>
+  <summary><strong>Exercice:</strong> Temperature of a molecular gas</summary>
 
 Can be used to model roughly stars and interstellar clouds in which they form. For more, see Jean's mass in the [astrophysics lectures](../../../cosmo/cosmo/stars-form/).
 
@@ -48,7 +48,7 @@ during an adiabatic ($Q=0$) transformation at constant $n$.
 Here $\gamma=C_P/C_V$ is called the adiabatic index. This relation is known as the Laplace law.
 
 <details>
-  <summary>Exercice: proove it!</summary>
+  <summary><strong>Exercice:</strong> proove it!</summary>
 
 </details>
 
@@ -57,7 +57,7 @@ Depending on why you need it, this law can be re-expressed as
 $$TV^{\gamma-1}=\text{cst}\qquad\text{or}\qquad T^\gamma P^{1-\gamma}=\text{cst}$$
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
 
 Starting from Laplace's law 
 $PV^\gamma= \text{cst}$ and using the ideal gas law $P=\frac{n\mathcal{R}T}{V}$, one finds
@@ -89,8 +89,22 @@ but also
 
 $$\boxed{W = \frac{n\mathcal{R}\kappa}{\gamma-1}\Delta V^{\gamma-1}}$$
 
-### Applications
+### Application: change of temperature and pressure under a compression
 
+Imagine a balloon containing some gas. If the volume increases or dicresases we expect intuitively that the temperature and pression will increase and dicrease.
+
+Change of temperature and pressure under a compression for an adiabatic transformation
+
+Using Laplace's law, you can find that:
+
+$$ T \propto V^{3/2} $$
+
+Figure:
+
+<details>
+  <summary><strong>Proof</strong></summary>
+
+</details>
 
 ## Microscopic model
 
@@ -143,7 +157,7 @@ Such that the average kinetic energy per particle is directly related to the tem
 $$\boxed{\frac{1}{2}m\langle v^2\rangle = \frac{3}{2}k_B T}$$
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
   
 The total mean kinetic energy is 
 
@@ -153,7 +167,7 @@ Multiplying the expression we obtained above for $P$ by the volume $V$, we have
 
 $$PV =  \frac{N}{3} m \langle v^2\rangle$$
 
-$$ PV = \frac{2}{3} \left(\frac{N}{2}m\langle v^2\rangle\right) = \frac{2}{3} U$$
+$$PV = \frac{2}{3} \left(\frac{N}{2}m\langle v^2\rangle\right) = \frac{2}{3} U$$
 
 Adding the ideal gas law
 
@@ -164,7 +178,7 @@ $$\frac{3}{2} n\mathcal{R}T = U$$
 Hence, when you feel that something is warm, it is nothing else but the "kinetic energy" of the microscoping particles bouncing on your hand! We can even use this expression to estimate the mean velocity of a particle in a room to be $v\sim$ 500 m/s = 1836 km/h!
 
 <details>
-  <summary>Exercice: estimate the mean velocity for the air in a room </summary>
+  <summary><strong>Exercice:</strong> estimate the mean velocity for the air in a room </summary>
   
 Isolating $v$ in the above equation, and ussiming extremely grossly that $\langle v\rangle ~ \sqrt{\langle v^2\rangle}$, we obtain:
 
@@ -177,5 +191,7 @@ $$ \langle v \rangle = 510 m/s$$
 </details>
 
 The above expression also demonstrates Joule's second law, stating that $U$ depends solely of $n$ and $T$ for an ideal gas.
+
+## Application: temperature change in the atmosphere
 
 ## Beyond the ideal gas
