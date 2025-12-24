@@ -17,17 +17,77 @@ Mathematics and informatics built on the philosopher's logic to build the fundat
 
 ## Unary operations
 
+
+Not $\lnot$.
+
+There are four unary operations.
+
+Summarised in a **truth table**:
+
 | $p$     | $\lnot p$ |
 |-------|------------|
 | T  | F      |
 | F | T       |
 
 
-| $p$     | $Id(p)$ |
+Identity:
+
+| $p$     | Id($p$) |
 |-------|------------|
 | T  | T      |
 | F | F      |
 
+Tautology:
 
+| $p$     | $\top(p)$ |
+|-------|------------|
+| T  | T      |
+| F | T      |
+
+
+Antilogy/contradiction:
+
+| $p$     | $\bot(p)$ |
+|-------|------------|
+| T  | F      |
+| F | F      |
 
 ## Binary operations
+
+There are 16 binary operations.
+
+and:
+
+| $p$     | $q$ | $p \wedge q$ |
+|-------|------------|
+| T  | T      | T
+| F | F      | F
+| T | F      | F
+| F | T     | F
+
+or: 
+
+| $p$     | $q$ | $p \lor q$ |
+|-------|------------|
+| T  | T      | T
+| F | F      | F
+| T | F      | T
+| F | T     |  T
+
+implication:
+
+| $p$     | $q$ | $p \to q$ |
+|-------|------------|
+| T  | T      | T
+| F | F      | T
+| T | F      | T
+| F | T     |  F
+
+equivalence:
+
+| $p$     | $q$ | $p \leftrightarrow q$ |
+|-------|------------|
+| T  | T      | T
+| F | F      | T
+| T | F      | F
+| F | T     |  F
