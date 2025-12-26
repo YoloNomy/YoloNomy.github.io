@@ -6,10 +6,10 @@ subtitle: Maths and mathematical physics
 
 # A bit of logic
 
-- [propositional logic](./logic/propositional_logic.md)
+- [propositional logic: operations](./logic/propositional_logic.md)
+- propositional logic: proofs
 - first order logic
-- going beyond: a glimpse at modal logic
-- going beyond: a glimpse at quantum logic
+- [going beyond: a glimpse at alternative logics](./logic/alternative_logic.md)
 
 # Set theory
 
