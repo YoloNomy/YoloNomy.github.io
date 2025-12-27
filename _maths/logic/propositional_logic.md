@@ -152,8 +152,9 @@ This is exactly the table we proposed for $\oplus$. We just prooved that the two
 </details>
 
 
-Another extremely important binary operation is the **implication**, noted $\to$. The proposition $p\to q$ is an attempt to formalize sentences as "**if** it rains, **then** the ground is wet". We can understand why this operation is so important, as it try encompass logical implication. 
-The consensus is to define implication by asking the only following condition: "something true can not imply something false". Indeed, a sentence like "If it rains, unicorns exist" will seem incorrect.
+Another extremely important binary operation is the **implication**, noted $\to$. The proposition $p\to q$ is an attempt to formalize sentences as "**if** it rains, **then** the ground is wet". We can understand why this operation is so important, as it try encompass logical implication, at the heart of reasoning and explanations. The notion of implication is deeply linked with the notion of validity or correctness of an argument, which is one of the main original motivation for logic.
+
+The consensus is to define implication by asking for the only following condition: "something true can not imply something false". Indeed, a sentence like "If it rains, unicorns exist" will seem incorrect. 
 
 | $p$     | $q$ | $p \to q$ |
 |-------|------------|
@@ -162,7 +163,7 @@ The consensus is to define implication by asking the only following condition: "
 | T | F      | T
 | F | T     |  F
 
-
+Debates of intuitionist logic etc.
 
 Just as for $\oplus$, it is possible to rewrite $\to$ in term of other binary operations. Indeed, it is possible to show that $p \to q$ is the same operation as $ \lnot p \lor q$.
 
@@ -180,13 +181,12 @@ Just as for $\oplus$, it is possible to rewrite $\to$ in term of other binary op
 | F | T     |  F
 
 
-
-
 ## A bit more formality
 
 Propositions are variables over the space $\Omega=\\{0,1\\}$. $N$-arry operations are maps $\Omega \times \Omega ...$($N$ times)$... \times \Omega \to \Omega$.
 
 ## Further reading
 
+- Logic: A very short introduction - G. Priest (2017, 2nd ed)- Oxford university press
 - [Franks, Curtis, "Propositional Logic", The Stanford Encyclopedia of Philosophy (Winter 2024 Edition), Edward N. Zalta & Uri Nodelman (eds.)](https://plato.stanford.edu/archives/win2024/entries/logic-propositional/)
 - [Truth table page of wikipedia](https://en.wikipedia.org/wiki/Truth_table#Binary_operations)

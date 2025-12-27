@@ -7,7 +7,7 @@ subtitle: Maths and mathematical physics
 # A bit of logic
 
 - [propositional logic: operations](./logic/propositional_logic.md)
-- propositional logic: proofs
+- [propositional logic: proofs and inferences](./logic/proofs.md)
 - first order logic
 - [going beyond: a glimpse at alternative logics](./logic/alternative_logic.md)
 
