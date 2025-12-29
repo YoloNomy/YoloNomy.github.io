@@ -73,12 +73,50 @@ $$\boxed{\frac{\text{d} f}{\text{d} x} = \lim_{\epsilon\to0}\frac{f(x+\epsilon)-
 
 This definition makes sense for the notation $\frac{\text{d} f}{\text{d} x}$, as it is the computation of a tangent $\Delta y/\Delta x$ to a curve at a given point, by taking the limit $\Delta y\to 0$ and $\Delta x\to 0$. Hence it explains why the derivative is informing us on the rate of change of a function at a given point.
 
-From this definition, you can for exemple compute the derivative of any functions, as for example $f(x)=x^2$. Doing so, you would find:
+From this definition, you can for exemple compute the derivative of any functions. Try the two following exercices:
+
+<details markdown="1">
+  <summary><strong>Exercice:</strong> Using the definition of the derivative, proove that the derivative of $f=x+1$ is $\text{d}f/\text{d}x=1$.
+</summary>
+
+
+$$
+\begin{aligned}
+\frac{\text{d} f}{\text{d} x}
+&=  \lim_{\epsilon\to0}\frac{(x+1+\epsilon)-(x+1)}{\epsilon}\\
+&= \lim_{\epsilon\to0}\frac{x+1+\epsilon - x-1}{\epsilon} \\
+&= \lim_{\epsilon\to0}\frac{\epsilon}{\epsilon} \\
+&= \lim_{\epsilon\to0}1\\
+&=1
+\end{aligned}
+$$
+
+</details>
+
+<details markdown="1">
+  <summary><strong>Exercice:</strong> Using the definition of the derivative, proove that the derivative of $f=2x$ is $\text{d}f/\text{d}x=2$.
+</summary>
+
+
+$$
+\begin{aligned}
+\frac{\text{d} f}{\text{d} x}
+&=  \lim_{\epsilon\to0}\frac{2(x+\epsilon)-2x}{\epsilon}\\
+&\lim_{\epsilon\to0}\frac{2x+ 2\epsilon-2x}{\epsilon}\\
+&\lim_{\epsilon\to0}\frac{2\epsilon}{\epsilon}\\
+&\lim_{\epsilon\to0}2\\
+&=2
+\end{aligned}
+$$
+
+</details>
+
+Another important example is $f(x)=x^2$. This would lead to:
 
 $$\frac{\text{d}(f=x^2)}{\text{d} x}=2x$$
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Exercice:</strong> Proove the above formula </summary>
 
 $$
 \begin{aligned}
@@ -115,11 +153,52 @@ $$ \boxed{(f+g)' = f' + g'} $$
 
 Hence, for example, if $f=x^2+\ln(x) + 3$, then by taking the derivative of each term of the sum, we obtain $f'=2x+\frac{1}{x}$.
 
+<details markdown="1">
+  <summary><strong>Proof:</strong> Prooving the sum rule
+</summary>
+
+
+$$
+\begin{aligned}
+\frac{\text{d}(f + g)}{\text{d} x}
+&=  \lim_{\epsilon\to0}\frac{f(x+\epsilon) + g(x+\epsilon)-(f(x)+g(x))}{\epsilon}\\
+&= \lim_{\epsilon\to0}\frac{f(x+\epsilon) + g(x+\epsilon)- f(x)+g(x)}{\epsilon}\\
+&= \lim_{\epsilon\to0}\left(\frac{f(x+\epsilon) - f(x)}{\epsilon} + \frac{g(x+\epsilon) - g(x)}{\epsilon}\right)\\
+&= \lim_{\epsilon\to0}\frac{f(x+\epsilon) - f(x)}{\epsilon} + \lim_{\epsilon\to0}\frac{g(x+\epsilon) - g(x)}{\epsilon}\\
+&= \frac{\text{d}f}{\text{d}x} + \frac{\text{d}g}{\text{d}x} 
+\end{aligned}
+$$
+
+Where we used here some properties that we did not yet proove but that might seem natural (as for example, the fact that the limit of a sum is the sum of limits).
+
+</details>
+
 For a product, things are a bit more complicated and the *product rule* is:
 
 $$ \boxed{(fg)' = f'g + g'f} $$
 
 Hence, for another example, if $f=x^3\sqrt{x}$, then $f'=3x^2\sqrt{x}+\frac{x^3}{2\sqrt{x}}$.
+
+<details markdown="1">
+  <summary><strong>Proof:</strong> Prooving the product rule
+</summary>
+
+
+$$
+\begin{aligned}
+\frac{\text{d} (fg)}{\text{d} x}
+&=  \lim_{\epsilon\to0}\frac{f(x+\epsilon)g(x+\epsilon)-f(x)g(x)}{\epsilon}\\
+&=  \lim_{\epsilon\to0}\frac{f(x+\epsilon)g(x+\epsilon) + f(x)g(x+\epsilon) - f(x)g(x+\epsilon) -f(x)g(x)}{\epsilon}\\
+&=  \lim_{\epsilon\to0}\frac{f(x+\epsilon)g(x+\epsilon) -  f(x)g(x+\epsilon) + f(x)g(x+\epsilon)-f(x)g(x)}{\epsilon}\\
+&=  \lim_{\epsilon\to0}\frac{f(x+\epsilon)g(x+\epsilon) -  f(x)g(x+\epsilon)}{\epsilon} +\lim_{\epsilon\to0}\frac{f(x)g(x+\epsilon)-f(x)g(x)}{\epsilon} \\
+&=\lim_{\epsilon\to0}g(x+\epsilon)\lim_{\epsilon\to0}\frac{f(x+\epsilon) -  f(x)}{\epsilon} + \lim_{\epsilon\to0}f(x)\frac{g(x+\epsilon)-f(x)g(x)}{\epsilon}\\
+&=g(x)\frac{\text{d}f}{\text{d}x} + f(x)\frac{\text{d}g}{\text{d}x} 
+\end{aligned}
+$$
+
+Where we used implicitly again some simple properties of the limits that we will not proove here.
+
+</details>
 
 Imagine that $f$ is a function of another function $g(x)$ such that $f=f(g(x))$.
 In such case, we will use an important rule named the so called *chain rule*:
@@ -145,7 +224,7 @@ Combining all these rules, you can also find the expression for the derivative o
 $$ \boxed{\left(\frac{f}{g}\right)' = \frac{f'g - g'f}{g^2}} $$
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Proof:</strong> prooving the ratio rule </summary>
 
 This one is a bit intricate but it is a good training! 
 The trick is to rewrite 
