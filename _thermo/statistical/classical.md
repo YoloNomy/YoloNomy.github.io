@@ -38,35 +38,63 @@ In reading all this, one should keep in mind that:
 
 - Entropy maximisation here is not yet related to 2nd principle. It is a way to derive $p_i$, coming from information theory. If you are skeptical about this, we will look much later at at other ways to derive $p_i$ without using $S$.
 - We assumed a discrete set of accessible energy level which is of course a simplification. We will gradually go beyond this simplification in the next lectures. However, the logic and the formula we derive above will remain extremely important.
+- In this class, we are now exclusively concerned with systems in thermal equilibrium. This is translated here by the fact that the probability distribution $p_i$ does not change with time. The system moves around its microstates, but the probability of each microstate always remain the same. After a long enough time, it will have explored all of it's accessible microstates.
 
-### Putting back units
+### Restoring physical units
 
-So far, we implicitely assumed $k_B = 1$. 
+Up to this point, we have deliberately ignored physical units. This implicitly corresponds to working in natural units where the Boltzmann constant is set to unity, $k_B = 1$.
 
-$$k_B = 1.3806490\times 10^{-23} $$ J/K
+The Boltzmann constant is defined as
+$$
+k_B = 1.380\,649 \times 10^{-23}\ \mathrm{J\,K^{-1}},
+$$
+and acts as a conversion factor between temperature, measured in kelvin, and energy, measured in joules. Thermal energies (per particle and degree of freedom)are therefore typically written as (see our classical thermodynamics class on [ideal gas](../thermo/idealgas.md))
+$$
+E_{\mathrm{th}} \sim k_B T.
+$$
+Because $k_B$ is numerically very small, the energy associated with thermal excitation is usually a small quantity when expressed in joules.
 
-allows to translate temperature into energy through:
-$$E_{th} \propto k_B T$$
+The constant $k_B$ also fixes the physical units of entropy. In statistical mechanics, entropy is first introduced as a dimensionless quantity derived from a probability distribution,
 
-And also allows to associate units to entropy,
+$$
+S = - \sum_i p_i \ln p_i
+$$
 
-$$S_{\rm th}  = k_B S$$
+The corresponding thermodynamic entropy is obtained by
 
-in order to match the defintion of the second principle $\text{d}S=\delta Q /T$.
+$$
+S_{\mathrm{th}} = k_B\, S,
+$$
 
-Another way to re-introduce units is through the Lagrange multiplier $\beta$:
+which has units of $\mathrm{J\,K^{-1}}$. This is the entropy that appears in classical thermodynamics, for instance in the second law written (for reversible processes) as
 
-$$\beta=\frac{1}{k_B T}$$
+$$
+\mathrm{d}S_{\mathrm{th}} = \frac{\delta Q_{\mathrm{rev}}}{T}.
+$$
+
+Another ubiquitous appearance of $k_B$ is in the Lagrange multiplier $\beta$ associated with the energy constraint in equilibrium statistical mechanics:
+
+$$\beta = \frac{1}{k_B T}.$$
+
+In what follows, we will freely alternate between expressions written in thermodynamic units and those written in units where $k_B = 1$. With the relations summarized above, it should always be straightforward to reinstate physical units when needed.
 
 ## Zeroth principle and equilibrium
 
 ## Energy conservation and the first principle 
 
+The mean energy $\langle E \rangle$ of the system, is nothing else than the internal energy $U$ in the context of classical thermodynamics. As such, and from now on, we will use the two notations interchangably. As a reminder:
+
 $$ U = \langle E \rangle = \sum_i p_i E_i $$ 
+
+Now, it is instructive to look at the differential of $U$:
 
 $$\text{d} U = \sum_i E_i\text{d}p_i + \sum_i p_i \text{d}E_i $$
 
+We see a first term corresponding to how the mean energy change if the probability associated to each microstate were to change, keeping each energy level fixed. This correspond to what we define as a heat injection:
+
 $$\boxed{\delta Q = \sum_i E_i\text{d}p_i }$$
 
-$$\boxed{\delta W =  \sum_i p_i \text{d}E_i}$$
+and a second term corresponding to how the mean energy change if the energy level associated to each microstate were to change, keeping the probabilities fixed. This correspond to what we define as work:
 
+
+$$\boxed{\delta W =  \sum_i p_i \text{d}E_i}$$

@@ -168,6 +168,7 @@ The only missing part is to find what could be this mysterious constant $\beta$,
 
 ## Finding back physical quantities from $Z$
 
+First, let's notice that many crucial physical quantities can be re-expressed in term of the partition function $Z$.
 The average energy of our gas can then be re-expressed from $Z$ as
 
 $$
@@ -287,7 +288,7 @@ Here are some example of conjugate variables:
 
 </details>
 
-Let's now clarify all of this with an illustration: On the following figure, we represented some examples of $p_i(E_i)$ computed using all the formula we just derived (and assuming that each microstate $i$ is associated with a different energy $E_i$).
+Let's now clarify all of this with an illustration: on the following figure, we represented some examples of $p_i(E_i)$ computed using all the formula we just derived (and assuming that each microstate $i$ is associated with a different energy $E_i$).
 
 ![image](../images/canonical_boltzmann_beta_derived.png){: width="80%"}
 
@@ -318,7 +319,7 @@ A consequence of this, is that $T$ thus defined will seemingly always be a posit
 
 With this definition, we also get the important property that hot flows from hot system to cold sytem, under the addition of the second principle of thermodynamics as discussed [here](../../thermo/secondprinciple/). We will come back to the second principle in the context of statistical physics [later](../principles/).
 
-## On degeneracies and the return of the microcanonical model at high temperatures
+## On degeneracies and the reappearance of the microcanonical model at high temperatures
 
 Now, let's consider what happens if different microstates $i$ are associated with the same energy $E_n$, with degeneracy $g_n$. Using the fact that $p(E_n) = p_n g_n$, we obtain:
 
@@ -356,7 +357,7 @@ Indeed, pressure is not only a force over a surface but it is equivalent, and mo
 
 $$ P = -\frac{\partial{\langle E\rangle}}{\partial{V}}\Bigg|_S$$ 
 
-This is equivalent (but more convinient) that the the usual definition. Indeed, to convince yourself, imagine a small infinitessimal box of size $\text{d}x$,$\text{d}y$ and $\text{d}z$. The pressure exerted on the surface $\mathcal{S}=\text{d}y\text{d}z$ is 
+This is equivalent (but more convinient) that the the usual definition. Indeed, to convince yourself, imagine a small infinitessimal box of size $\text{d}x$,$\text{d}y$ and $\text{d}z$. The pressure exerted on the surface $\mathcal{S}=\text{d}y\,\text{d}z$ is 
 
 $$P=\frac{\text{d} \vec{F}\cdot \vec{n}}{\text{d} \mathcal{S}}= \frac{\text{d} \vec{F}\cdot \vec{n}}{\text{d} \mathcal{S}}=\frac{\text{d}\vec{F}\cdot \vec{n}}{ \text{d}y\text{d}z}= \frac{\text{d} \vec{F}\cdot \text{d}\vec{x}}{ \text{d}y\text{d}z\text{d}x}=\frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} $$ 
 
@@ -450,7 +451,6 @@ $$A = - \log(Z)/\beta$$
 </details>
 
 Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to express the partition function $Z$, from which we can infer all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the average energy $E$, the entropy $S$...). This is done only under the assumption that the statistical entropy is maximum, reflecting our knowledge of the system in the most unbiased way.
-
 
 
 ## Going further: recommended readings and watching
