@@ -8,14 +8,14 @@ You will find here some fun python applications to physics with some detailled e
 
 # Astrophysics
 
-
 - [Observing the stars](cosmo/astro-obs.md)
 - [Stars: formation](cosmo/stars-form.md)
 - [Stars: structure](cosmo/stars-struc.md)
 - Compact objects
 - Black holes, part I
 - [Kepler laws](../../meca/Newton/Kepler/) (copied from the mechanics class)
-- Nebulae and cosmic dust
+- [Molecular clouds and cosmic dust](cosmo/dust.md)
+- Nebulae and synchrotron emission
 
 # Special and general relativity
 
@@ -29,4 +29,4 @@ You will find here some fun python applications to physics with some detailled e
 - The cosmic microwave background
 - Boltzmann equations in the expanding Universe
 - On inflation and scalar fields on cosmic scales
-
+- Varying fundamental constants

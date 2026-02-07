@@ -12,6 +12,8 @@ $$
 \newcommand{\braket}[2]{ \langle #1 | #2 \rangle} 
 $$
 
+# Phase space, the quantum approach
+
 # Quantum statistics: bosons, fermions and blackbody
 
 A quantum system is described by a *wave-vector* $\ket{\phi}$, element of a complex Hilbert space. *Observables* are described by Hermitian operators $\hat{X}$ on this Hilbert space. The wavevector can always be written as a linear decomposition on the basis of the eigenvectors $\ket{x_i}$ of $\hat{X}$ as:

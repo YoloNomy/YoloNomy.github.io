@@ -15,7 +15,7 @@ You will find here some fun python applications to physics with some detailled e
 - [The ideal gas: the thermodynamics perspective](../thermo/idealgas/)
 - Van der Waals gas
 - [Second law of thermodynamics: entropy](../thermo/secondprinciple/)
-- thermodynamical potentials and phase transitions
+- [thermodynamical potentials and phase transitions](../thermo/potentials/)
 - [Heat transfer equations](../thermo/heat_transfer/)
 
 # Statistical physics
@@ -23,11 +23,17 @@ You will find here some fun python applications to physics with some detailled e
 - [Introducing the statistical entropy](../statistical/entropy/)
 - [Maximizing the entropy: the Lagrange multipliers](../statistical/entropy-max/)
 - [Maximizing the entropy: the canonical ensemble](../statistical/canonical/)
-- [Thinking in phase space](../statistical/phasespace/)
+- [One step towards classical thermodynamics](../statistical/classical/)
+- [Continous distributions: Thinking in phase space](../statistical/phasespace/)
 - [The ideal gas: the statistical perspective](../statistical/idealgas/)
+- [Bonus: A new take on $Z$ and ensembles: Generating functions and other derivations](../statistical/generating_function/)
 - [Grand canonical ensemble](../statistical/grandcanonical/)
-- [The three principles of thermodynamics](../statistical/principles/)
+<!---- [The three principles of thermodynamics](../statistical/principles/)-->
 - [Quantum statistics: fermions and bosons](../statistical/quantumstat/)
 - [Fermi gas](../statistical/fermigas/)
 - [The blackbody radiation](../statistical/BB/)
 - [Out of equilibrium: The Boltzmann equations](../statistical/boltzmann/)
+
+# Radiative transfer
+
+- [Radiative transfer equations](../radiation/transfer-equations/)

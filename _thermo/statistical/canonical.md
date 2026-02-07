@@ -160,8 +160,11 @@ where we also introduce the **partition function**:
 
 $$Z = \sum_i  e^{-\beta E_i}$$
 
+We will see [later](../generating_function) that $Z$ is associated with an advanced concept of statistics: the so-called **generating function** of the probability distribution. For now, we can simply consider $Z$ as a normalisation appearing in the expression of $p_i$, without further interpretation.
+
 We have now been able to express the probability of each configuration of particles $p_i$ solely in term of its energy $E_i$. Note that the sum over $i$ here goes over all accessible configuration, regardless of the fact that some can have the same energy level $E_i$. We will go back on degeneracies and the connections with the microcanonical model at the end of this page.
 The only missing part is to find what could be this mysterious constant $\beta$, which was forced upon us as a Lagrange multiplier for the constraint that we know the average energy of the system. $\beta$ could be obtained numerically using Brent's method as we did in the [previous lecture](../entropy-max/) for $\lambda_1$. We will instead find a deeper meaning to this quantity and show that $\beta =1/T$, i.e. it is the inverse of the temperature of the system. This already tells us something profound about the nature of what temperature is. But what exactly? 
+
 
 ## Finding back physical quantities from $Z$
 
@@ -181,13 +184,13 @@ $$
 \sum_i p_i E_i = \sum_i \frac{1}{Z}e^{-\beta E_i}E_i= \langle E \rangle
 $$
 
-Seeing that:
+Seeing that (with fixed energy levels $E_i$ with respect to $\beta$):
 
 $$
 -\frac{1}{Z}\frac{\partial Z}{\partial\beta} = \sum_i \frac{E_i}{Z}e^{-\beta E_i}
 $$
 
-and so:
+we get:
 
 $$
 \langle E \rangle = -\frac{1}{Z}\frac{\partial Z}{\partial \beta} = -\frac{\partial{\ln Z}}{\partial \beta}
@@ -207,7 +210,7 @@ $$
 \begin{aligned}
 S &= -\sum_i p_i \ln(p_i) \\
 &= \sum_i\frac{1}{Z}e^{-\beta E_i}\left[ \beta E_i + \ln (Z)\right]\\
-&= \beta \langle E \rangle + \ln (Z)\sum_i e^{-\beta E_i}
+&= \beta \langle E \rangle + \frac{1}{Z}\ln (Z)\sum_i e^{-\beta E_i}
 \end{aligned}
 $$
 
@@ -241,10 +244,14 @@ $$
 using the relation between $\langle E \rangle$ and the entropy aswell as the fact that $Z$ is a function of only one independant variable $\beta$ or $\langle E \rangle$ since both are not independant because of $\langle E \rangle$ can be expressed in terms of $Z$. Now using the expression of $\langle E \rangle$ in term of $Z$, we can see that the two last terms cancels out to give simply: $\text{d}S = \beta \text{d}\langle E\rangle$. With the definition of $T$:
 
 $$
-T = \frac{\partial \langle E \rangle}{\partial S}_{n,V}
+T = \frac{\partial \langle E \rangle}{\partial S}\Bigg|_{n,V}
 $$
 
-Whe have $\text{d}S = \frac{1}{T}\text{d}\langle E\rangle$, allowing us to conclude that:
+we have, at fixed volume and particle number and assuming that $T$ obeys the inverse derivative rule:
+
+$$\text{d}S =\frac{\partial S}{\partial \langle E \rangle}\Bigg|_{n,V} \text{d} \langle E \rangle = \frac{1}{T}\text{d}\langle E\rangle,$$
+
+allowing us to conclude that:
 
 $$
 \beta = \frac{1}{T}
@@ -258,6 +265,28 @@ $$\boxed{P := -\frac{\partial{\langle E \rangle}}{\partial{V}}\Bigg|_S}$$
 We will also justify such a definition in the next section.
 As such, knowing $Z$ allows us to express all our state variable and state functions and relate them to the microscopic behaviour of the system. Note that we operate here a change of point of view compared to classical thermodynamics, where quantities such as $P,T$ are not only considered only as state variables which can be measured and of which we try to keep track of the evolution. They are clearly considered as emerging from the underlying microscopic probability distribution of the constituents of the system and reflect the transformation of these probability distributions when some physical transformation is applied on the system (respectively a change of mean energy for the temperature and a change of volume for the pressure).
 
+<details>
+  <summary><strong>Sidenote: on thermodynamical conjugate variables</strong></summary>
+
+We see a common structure in the definition of $T$ and $P$ above in the sense that they are both defined as the rate of change of the mean energy with respect to under some fixed conditions. That is, both definition follows the structure:
+
+$$ X = -\frac{\partial{\langle E\rangle}}{\partial{Y}}\Bigg|_Z$$ 
+
+If two variables $X$ and $Y$ are related in such a way, they are say to be **conjugate variables** in the sense of thermodynamics. $X$ is **intensive** while $Y$, sometimes called the **control parameter** is **extensive** (see classical thermodynamics class).
+This is the case of many relevant quantities that appear in thermodynamics. All these quantities appear in the first principle of thermodynamics as products in the form of:
+
+$$\text{d} U = X \text{d}Y$$
+
+that is, changing the control parameter $Y$ a little adds $X\text{d}Y$ to the internal energy of the system.
+
+Here are some example of conjugate variables:
+
+- $T$ and $S$ (temperature and entropy)
+- $p$ and $V$ (pressure and volume)
+- $\mu$ and $N$ (chemical potential and number of particles)
+
+</details>
+
 Let's now clarify all of this with an illustration: On the following figure, we represented some examples of $p_i(E_i)$ computed using all the formula we just derived (and assuming that each microstate $i$ is associated with a different energy $E_i$).
 
 ![image](../images/canonical_boltzmann_beta_derived.png){: width="80%"}
@@ -265,7 +294,7 @@ Let's now clarify all of this with an illustration: On the following figure, we 
 *Example of distributions of $p_i(E_i)$ associated with different average energy, temperature and entropy (arbitrary units). Computed with [this code](../codes/Plot_boltzmann.py)*.
 
 We can see on the graph the probability of each microstates of the system -- i.e. of each configuration of particles -- associated to each energy $E_i$. Each curve on the figure is associated with a different average energy $\langle E \rangle$, imposed to the system by the heat bath with which it is at thermal equilibrium. Each curve is also associated to a value of the entropy $S$, which is maximum (and more exactly, each $p_i$ curve is constructed such that $S$ is maximum under the constraint that the average energy should be $\langle E\rangle$).
-To each curve, one can associate a temperature $T$ by computing the derivative of $E$ with respect to $S$. We will explain this more in the next section. However, we see immediately that the macrostates with the biggest average energy (in red) are associated with the highest energy, as we would expected. They are also associated with the highest value for the entropy, which is something that we can understand as they becomre flatter and flatter as the entropy increased (i.e. less peaked on small values of $E_i$). States of high temperature are thus states which are more spread over the axis $E_i$, hence less known and more disordered, attributes which we understand as associated to larger values of $S$. 
+To each curve, one can associate a temperature $T$ by computing the derivative of $E$ with respect to $S$. We will explain this more in the next section. However, we see immediately that the macrostates with the biggest average energy (in red) are associated with the highest energy, as we would expected. They are also associated with the highest value for the entropy, which is something that we can understand as they become flatter and flatter as the entropy increased (i.e. less peaked on small values of $E_i$). States of high temperature are thus states which are more spread over the axis $E_i$, hence less known and more disordered, attributes which we understand as associated to larger values of $S$. 
 
 # Crossing the bridge with standard thermodynamics
 
@@ -314,7 +343,7 @@ At very high temperatures, we thus find back the microcanonical model for which 
 
 This can be understand again by looking at the above figure $p_i(E_i)$. With increasing values of $\langle E\rangle$ (and thus of $T$), we see that the $p_i$ curves become flatter and flatter, getting closer and closer to an equiprobable distribution (which would be a flat line). At high temperature, all energy state (very high and very low) become equally accessible. The lack of information, disorder and lack of predibility are thus maximum, which correspond to a high entropy state. 
  
-Another way to see this is as follows. Assuming that $S$ and $E$ are suitable functions for the inverse derivative theorem (link), we can express 
+Another way to see this is as follows. Assuming that $S$ and $\langle E \rangle$ are suitable functions for the inverse derivative theorem (link), we can express 
 
 $$ \beta =  \frac{\partial S}{\partial \langle E \rangle}$$ 
 
@@ -337,13 +366,92 @@ From which
 
 $$ P = \frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} =-\frac{\partial{ \langle E \rangle}}{\partial{V}}\Bigg|_S$$ 
 
-Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to derive all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the average energy $E$, the entropy $S$...) through the partition function $Z$, simply by asking for the maximization of the entropy. 
+The condition of fixed $\mathcal{S}$ is here simply to ensure that we are considering the mechanical change of energy (work) due to pressure without considering any possible contribution coming from other energy transfer, such as heat (which would be the case if the transformation considered is **adiabatic**, as defined in the classical thermodynamics class).
 
-## On thermodynamical potentials
+
+The definition above for pressure is very nice, but difficult to use in practice, as it is not easy to express simply the condition of constant entropy. A much convinient formula that we can find for $p$ is given by
+
+$$\boxed{
+P=\frac{1}{\beta}\frac{\partial \ln(Z)}{\partial V}\Bigg|_{T}
+}
+$$
+
+which is obtained after a bit of gymnastic with partial derivatives.
+
+<details>
+  <summary><strong>Proof</strong></summary>
+
+We want to re-express
+
+$$P= -\frac{\partial \langle E \rangle}{\partial V}\Bigg|_{S}$$
+
+in a nicer way. Now, the trick will be to re-express the condition of constant entropy into something we can use. Unfortunately, this is not so straightforward and will require a bit of gymnastic with the partial derivatives.
+
+We consider a system for which $\mathcal{N}$ is fixed. $U$ and $S$ are state functions which can depend on the state variables $T$ and $V$ ($P$ is not an independent state variable as it is found from the derivative of $U$ with $V$).
+The differential of $\langle E \rangle$ is:
+
+$$\text{d} \langle E \rangle =\frac{\partial \langle E \rangle}{\partial V}\Bigg|_{T}\text{d}V +  \frac{\partial \langle E \rangle}{\partial T}\Bigg|_{V}\text{d}T  $$
+
+from which: 
+
+$$\frac{\text{d} \langle E \rangle}{\text{d}V} =\frac{\partial \langle E \rangle}{\partial V}\Bigg|_{T} +  \frac{\partial \langle E \rangle}{\partial T}\Bigg|_{V}\frac{\text{d}T}{\text{d}V}  $$
+
+Now, writing the differential of entropy in the same fashion, we get:
+
+$$\frac{\text{d}S}{\text{d}V} =\frac{\partial S}{\partial V}\Bigg|_{T} +  \frac{\partial S}{\partial T}\Bigg|_{V}\frac{\text{d}T}{\text{d}V} $$
+
+The condition for us to evaluate a derivative with fixed $S$ is to consider a transformation where $\text{d}S=0$. We thus set the above equation to zero, to get the condition:
+
+$$\frac{\text{d}T}{\text{d}V}\Bigg|_S= -\frac{\partial S}{\partial V}\Bigg|_{T} / \frac{\partial S}{\partial T}\Bigg|_{V} $$
+
+Now, going back to the condition obtained from the differential of $\langle E \rangle$. We can make the entropy appear using the chain rule as:
+
+$$\frac{\text{d} \langle E \rangle}{\text{d}V} =\frac{\partial \langle E \rangle}{\partial V}\Bigg|_{T} +  \frac{\partial \langle E \rangle}{\partial S}\Bigg|_{V}\frac{\partial S}{\partial T}\Bigg|_{V}\frac{\text{d}T}{\text{d}V}  $$
+
+Now replacing $\text{d}T/\text{d}V$ with the condition we obtained from $\text{d}S=0$, we get immediately: 
+
+$$\frac{\partial \langle E \rangle}{\partial V}\Bigg|_{S} = \frac{\partial \langle E \rangle}{\partial V}\Bigg|_{T} - \frac{\partial S}{\partial V}\Bigg|_{T}\frac{\partial \langle E \rangle}{\partial S}\Bigg|_{V} $$
+
+Now we recognize $\frac{\partial \langle E \rangle}{\partial S}\Bigg|_{V}$ to be what we defined as the temperature:  
+
+$$\frac{\partial \langle E \rangle}{\partial V}\Bigg|_{S} = \frac{\partial \langle E \rangle}{\partial V}\Bigg|_{T} - \frac{\partial S}{\partial V}\Bigg|_{T}T $$
+
+Recalling that $P=-\frac{\partial \langle E \rangle}{\partial V}\Bigg|_{S}$, we get
+
+$$
+P=-\frac{\partial }{\partial V}(\langle E \rangle-TS)\Bigg|_{T}
+$$
+
+We can recognize here the Helmotz free energy $A=\langle E \rangle - T S$ (under the identification $\langle E \rangle=U$)! Hence:
+
+$$
+P=-\frac{\partial A}{\partial V}\Bigg|_{T}
+$$
+
+We found before that $S=\beta\langle E \rangle+ \ln(Z)$ as such $A= \langle E \rangle - T\beta\langle E\rangle -  T\ln(Z) = -  T\ln(Z)$, that is $A=-\ln(Z)/\beta$ and
+
+$$
+P=T\frac{\partial \ln(Z)}{\partial V}\Bigg|_{T}
+$$
+
+</details>
+
+<details>
+  <summary><strong>Sidenote: on thermodynamical potentials</strong></summary>
 
 We note here that maximising the entropy for the canonical case is equivalent to maximize the Helmholtz free energy $F$.
 
-$$F = \langle E \rangle - T S $$
+$$A = \langle E \rangle - T S $$
+
+from our previous derivations:
+
+$$A = - \log(Z)/\beta$$
+
+</details>
+
+Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to express the partition function $Z$, from which we can infer all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the average energy $E$, the entropy $S$...). This is done only under the assumption that the statistical entropy is maximum, reflecting our knowledge of the system in the most unbiased way.
+
+
 
 ## Going further: recommended readings and watching
 

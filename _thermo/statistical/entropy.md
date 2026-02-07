@@ -54,6 +54,8 @@ where $n_i$ is the number of time that $i$ occurs. When $N\to \infty$, we expect
 
 $$\langle f \rangle = \lim_{N\to \infty}\overline{f} = \lim_{N\to \infty}\frac{\sum_i^N n_i f_i}{N} \to \sum_i^N p_i f_i$$ 
 
+Such property ($\overline{f}=\langle f \rangle$) is called **ergodicity** and is not always satisfied, as we shall discussed later.
+
 </details>
 
 Let us repeat and rephrase again the challenge of statistical physics here. Imagine that we have a physical system (e.g. a box of gas or a star), from which we observe a given macrostate, by operating some measure on it. This observation could lead us to know the average value of some quantities for example the mean energy $\langle E \rangle$ or mean number of particles $\langle N \rangle$, as well as some physical properties as the volume $V$. Now, we know that this object is composed of a very large number of particles, which could be arranged in multiple different ways to explain the mactostate we observe. These configurations are all the different microstates $i$ that can be associated to our macrostate. Reasonably, if we believe in "reductionism", we have hope that our macrostate must emmerge from the properties of these microstates i.e. we should be able to understand and interpret the macroscopic/observable properties of our system from its microscopic properties.

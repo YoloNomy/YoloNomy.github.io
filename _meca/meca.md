@@ -19,6 +19,10 @@ You will find here some fun python applications to physics with some detailled e
 
 # Analytical mechanics
 
+- Lagrangian mechanics
+- Phase space
+- Hamiltonian mechanics
+
 # Dynamical systems and chaos
 
 - [Game of life](chaos/game_of_life.md)

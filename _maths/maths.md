@@ -37,6 +37,7 @@ subtitle: Maths and mathematical physics
 - Fiber bundles
 - [Connections: general relativity and gauge theories](./gauge/connections.md)
 - [Curvature: general relativity and gauge theories](./gauge/curvature.md)
+- Symplectic geometry: Phase space
 
 # Complex analysis and quantum field theory
 
