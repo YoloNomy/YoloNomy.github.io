@@ -326,6 +326,24 @@ $$\boxed{\langle \vec{v} \rangle =0 }$$
 <details>
  <summary><strong>Proof</strong></summary>
 
+The mean velocity vector is:
+
+$$
+\langle \vec{v} \rangle = \int_{\mathbb{R}^3} \vec{v} \, \rho(\vec{v}) \, \text{d}^3 v
+$$
+
+Since $f(\vec{v})$ is isotropic (depends only on $|\vec{v}|$) and each component $v_i$ is an odd function:
+
+$$
+\int_{-\infty}^{\infty} v_i \, e^{- m v_i^2 / 2 k_B T} \, \text{d} v_i = 0
+$$
+
+because the integrand is odd. By symmetry, this holds for all components \(i = x, y, z\). Therefore:
+
+$$
+\boxed{\langle \vec{v} \rangle = 0}
+$$
+
 
 </details>
 
@@ -337,21 +355,78 @@ This curve is known as a **Maxwellian curve** and give us the probability distri
 
 <details>
  <summary><strong>Proof</strong></summary>
-Here again, we should remind ourselves that
+
+Start from the 3D Maxwell-Boltzmann velocity distribution:
+
+$$
+\rho(\vec{v}) = \left( \frac{m}{2 \pi k_B T} \right)^{3/2} \exp\Big(-\frac{m |\vec{v}|^2}{2 k_B T}\Big)
+$$
+
+The probability density for \(v = |\vec{v}|\) is obtained by integrating over the angular directions when expressing the velocity vector in spherical coordinates:
+
+$$
+\rho(v) = \int_{|\vec{v}|=v} \rho(\vec{v}) \, \sin(\theta)\text{d}\theta \text{d}\phi \, v^2 = \rho(\vec{v}) \cdot 4 \pi v^2
+$$
+
+Substituting \( \rho(\vec{v}) \):
+
+$$
+\rho(v) = \left( \frac{m}{2 \pi k_B T} \right)^{3/2} 4 \pi v^2 \exp\Big(-\frac{m v^2}{2 k_B T}\Big)
+$$
+
+\[
+\boxed{\rho(v) = \left(\frac{m}{2\pi k_B T}\right)^{3/2} 4\pi v^2 e^{- \frac{m v^2}{2 k_B T}}}
+\]
 
 
 </details>
+
+The Maxwellian is plotted below for different temperatures in the case of N$_2$ molecules, which are the main constituent of earth's atmosphere. The flattening of the curve with $T$ is symptomatic of the increase of the entropy, as discussed when we presented the [canonical ensemble](../statistical/canonical.md). 
+
+![image](../images/Maxwell_Boltzmann.png){: width="100%"}
+*Example of probability density for the speed of a single particle in the gas $\rho(v)$ associated with different temperatures. Computed with [this code](../codes/Maxwell_Boltzmann.py)*.
+
+
+We also notice that, for usual room temperature ($\sim$ 300 K), we have a peak of the speed distribution around $\sim$ 300 m/s, which is close to the sound velocity. The peak of the curve can be recovered using the expression for the mean velocity:
 
 $$ \boxed{\langle v \rangle = \sqrt{\frac{8k_B T}{\pi m}}}$$
 
 <details>
  <summary><strong>Proof</strong></summary>
-We know that
+
+The Maxwell-Boltzmann speed distribution is:
 
 $$
-\begin{aligned}
-\langle v \rangle = \int v \rho(v) \text{d}v}
-\end{aligned}
+\rho(v) = 4 \pi \left( \frac{m}{2 \pi k_B T} \right)^{3/2} v^2 \exp\left(-\frac{m v^2}{2 k_B T}\right)
 $$
+
+The mean speed is:
+
+$$
+\langle v \rangle = \int_0^\infty v \rho(v) \, \text{d} v = 4 \pi \left( \frac{m}{2 \pi k_B T} \right)^{3/2} \int_0^\infty v^3 e^{-m v^2 / 2 k_B T} \, \text{d} v
+$$
+
+Using the substitution \(x = \frac{m v^2}{2 k_B T}\), \(dx = \frac{m v}{k_B T} \text{d} v\), we get:
+
+$$
+\int_0^\infty v^3 e^{-m v^2 / 2 k_B T} \text{d} v = \frac{2 (k_B T)^2}{m^2} \int_0^\infty x e^{-x} dx = \frac{2 (k_B T)^2}{m^2} \cdot 1!
+$$
+
+where we recognized the $\Gamma$ function:
+
+$$ \Gamma(t) = \int_0^\infty x^{t-1}e^{-x}\text{d}x$$
+
+
+for $t=2$, $\Gamma(2)=1$ (whish we shall admit here).
+
+Multiplying by the prefactor:
+
+$$
+\langle v \rangle = 4 \pi \left( \frac{m}{2 \pi k_B T} \right)^{3/2} \frac{2 (k_B T)^2}{m^2} = \sqrt{\frac{8 k_B T}{\pi m}}
+$$
+
 
 </details>
+
+As discussed in one the proof for $\rho(\vec{v})$, this result is much more general than the case of the ideal gas, and would be true for any classical gas with interactions dependent only on the position (because the integrals over $q$ disapear when marginalizing, in the proofs above).
+
