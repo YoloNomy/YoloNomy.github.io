@@ -89,9 +89,9 @@ Such a property is called **ergodicity**, which is characteristic of system at t
 
 One way to consider the time evolution of microstates, is that it is dictated by a very special observable, the Hamiltonian $H$. $H(\Gamma)$ can be identified with what was called $E_i$ in the discrete case. It is the total energy of a microstate, and hence of a particle configuration.
 
-As discussed in the analytical mechanics class, Hamiltonian defines the time evolution of any observable. It is done through the very important concept of Poisson bracket $\{.,.\}$, which encodes a lot about the geometry and symmetries of phase space.
+As discussed in the analytical mechanics class, Hamiltonian defines the time evolution of any observable. It is done through the very important concept of Poisson bracket $\lbrace.,.\rbrace$, which encodes a lot about the geometry and symmetries of phase space.
 
-The Poisson bracket $\{f,g\}$ between two observables $f$ and $g$ is the new observable:
+The Poisson bracket $\lbrace f,g\rbrace$ between two observables $f$ and $g$ is the new observable:
 
 $$\{f,g\} = \sum_i^{3\mathcal{N}} \left(\frac{\partial f}{\partial q_i}\frac{\partial g}{\partial p_i} -  \frac{\partial f}{\partial p_i}\frac{\partial g}{\partial q_i}\right) $$
 
@@ -108,11 +108,11 @@ $$ \frac{\text{d}\rho}{\text{d}t}= \{\rho,H\} + \frac{\partial \rho}{\partial t}
 
 $$  \frac{\partial \rho}{\partial t}=\{H,\rho\} $$
 
-**Thermal equilibrium** can be understood as $\rho(\Gamma)$ that is $ \frac{\partial \rho}{\partial t}=0$. In this case $\{H,\rho\}=0$ which is true only for functions $\rho(H)$.
+**Thermal equilibrium** can be understood as $\rho(\Gamma)$ that is $ \frac{\partial \rho}{\partial t}=0$. In this case $\lbrace H,\rho\rbrace=0$ which is true only for functions $\rho(H)$.
 Condition for which ergodicity can be assumed to be valid.
 
 
-## Entropy in phase space and the second principle
+## Entropy in phase space
 
 For continuous cases, the entropy takes the form
 
@@ -224,9 +224,13 @@ $$ \int_{\Pi} \text{d}^{3\mathcal{N}}q= V^{\mathcal{N}}$$
 However here, a very subtle point comes into play. A crucial point is whether or not the particles are **distinguishable** or not. This might look like a silly question, but we will see later on that it has a huge impact in the case of quantum physics.
 If particles are distinguishable, you could imagine giving them a name, or a color, such that, at any time, you are able to locate "bob" or "paul". As such, each of the possible particle configuration (microstate) is truely and funamentaly different.
 If particles are indistinguishable, you could imagine interchanging them which would not change anything at all. As such every "swap" of the particles would give the same microstate.
-If so, we should divide by the number of possible rearangement that give the same microstate when counting the states, which is $\mathcal{N}!$. In classical physics, we usually consider that particles are indistiguishable, which we make explicit by correcting the extra counting in the integral:
+If so, we should divide by the number of possible rearangement that give the same microstate when counting the states, which is $\mathcal{N}!$. In classical physics, we usually consider that particles are indistiguishable, which we make explicit by correcting the extra counting in the integrals over phase space, by considering the alternative measure:
 
-$$\int_{\Pi} \text{d}^{3\mathcal{N}}q= \frac{V^{\mathcal{N}}}{\mathcal{N}!} $$
+$$\text{d}\Gamma = \frac{\text{d}^{3\mathcal{N}}q\, \text{d}^{3\mathcal{N}}p}{\mathcal{N}!}  $$
+
+The integral over volumes can absorbe this extra factor to become:
+
+$$\int_{\Pi} \frac{\text{d}^{3\mathcal{N}}q}{\mathcal{N}!}= \frac{V^{\mathcal{N}}}{\mathcal{N}!} $$
 
 
 ### Pressure, temperature and so on

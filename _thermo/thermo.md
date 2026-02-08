@@ -26,10 +26,10 @@ You will find here some fun python applications to physics with some detailled e
 - [One step towards classical thermodynamics](../statistical/classical/)
 - [Continous distributions: Thinking in phase space](../statistical/phasespace/)
 - [The ideal gas: the statistical perspective](../statistical/idealgas/)
-- [Interacting gases](../statistical/interacting_gas/)
+- [Weakly interacting and Van der Waals gas: the statistical perspective](../statistical/interacting_gas/)
 - [Bonus: A new take on $Z$ and ensembles: Generating functions and other derivations](../statistical/generating_function/)
 - [Grand canonical ensemble](../statistical/grandcanonical/)
-<!---- [The three principles of thermodynamics](../statistical/principles/)-->
+- [The second principle of thermodynamics](../statistical/principles/)
 - [Quantum statistics: fermions and bosons](../statistical/quantumstat/)
 - [Fermi gas](../statistical/fermigas/)
 - [The blackbody radiation](../statistical/BB/)

@@ -9,7 +9,7 @@ nav_order: 1
 
 ### The energy of the particles
 
-Let us now apply our understanding of phase space to rederive the ideal gas properties known from classical thermodynamics. Consider a box filled with $\mathcal{N}$ particles. These particles are free and non interacting. Furthermore, we assume for now that they have all the same mass i.e. that the gas has a single composition. Treating the particles classicaly in the context of Newtonian mechanics, we can write the energy of each particle as $mv^2/2 = \vec{p}^2/2m$ (see the [classical mechanics](../../_meca/Newton/Energy.md) lecture on this topic). In a three dimensional space $\vec{p}^2 = p_1^2 +p_2^2+p_3^2$, following the notations for the components of the momentum introduced in the previous lecture.  As such, the energy of a microstate, i.e. a particle configuration in the box associated to a point $\Gamma$ in phase space is the sum of each the energy of each individual particle, that is
+Let us now apply our understanding of phase space to rederive the ideal gas properties known from classical thermodynamics, which we discussed extensively [here](../thermo/idealgas.md). Consider a box filled with $\mathcal{N}$ particles. These particles are free and non interacting. Furthermore, we assume for now that they have all the same mass i.e. that the gas has a single composition. Treating the particles classicaly in the context of Newtonian mechanics, we can write the energy of each particle as $mv^2/2 = \vec{p}^2/2m$ (see the [classical mechanics](../../_meca/Newton/Energy.md) lecture on this topic). In a three dimensional space $\vec{p}^2 = p_1^2 +p_2^2+p_3^2$, following the notations for the components of the momentum introduced in the previous lecture.  As such, the energy of a microstate, i.e. a particle configuration in the box associated to a point $\Gamma$ in phase space is the sum of each the energy of each individual particle, that is
 
 $$E(\Gamma)=\frac{1}{2m}\sum_n^{\mathcal{N}}(\vec{p}^{(n)})^2$$
 
@@ -30,7 +30,9 @@ $$Z=\int_{\Pi} e^{-\frac{\beta}{2m}\sum_i^{\mathcal{3N}}p_i^2} \text{d}\Gamma$$
 
 Note here again that this is just a straightforward generalisation of the discrete "biased die" case $Z=\sum_i^N e^{-\beta E_i}$, where we replaced the sums over the $N$ possible microstates associated to the macrostate by a continuous integral over phase space, as discussed in the previous lecture. As a reminder, the integral here is done over all particle configurations, that is, over all of phase space. We can write
 
-$$\text{d}\Gamma = \text{d}^{3\mathcal{N}}q\, \text{d}^{3\mathcal{N}}p  $$
+$$\text{d}\Gamma = \frac{\text{d}^{3\mathcal{N}}q\, \text{d}^{3\mathcal{N}}p}{\mathcal{N}!}  $$
+
+where we added the $1/\mathcal{N}!$ in the Liouville measure in order to account for indistinguishable particles as discussed in the previous lecture.
 
 It is possible to drastically simplify the previous integral to obtain the much nicer expression for $Z$:
 
@@ -70,11 +72,11 @@ We are now ready to demonstrate the above simple formula for $Z$, in the proof b
 <details>
   <summary><strong>Proof</strong></summary>
 
-$$Z=\int_{\Pi} e^{-\frac{\beta}{2m}\sum_i^{\mathcal{3N}}p_i^2} \text{d}\Gamma = \int \int e^{-\frac{\beta}{2m}\sum_i^{\mathcal{3N}}p_i^2}  \text{d}^{3\mathcal{N}}q\, \text{d}^{3\mathcal{N}}p$$
+$$Z=\int_{\Pi} e^{-\frac{\beta}{2m}\sum_i^{\mathcal{3N}}p_i^2} \text{d}\Gamma = \int \int e^{-\frac{\beta}{2m}\sum_i^{\mathcal{3N}}p_i^2}  \frac{\text{d}^{3\mathcal{N}}q\, \text{d}^{3\mathcal{N}}p}{\mathcal{N}!}$$
 
-Since there is no dependence in $x$ in the energy function, we can factorize the integral over space. As discussed in the previous lecture, it gives
+Since there is no dependence in $q$ in the energy function, we can factorize the integral over space. We thus obtain:
 
-$$\int \text{d}q^{3\mathcal{N}}=\frac{V^\mathcal{N}}{\mathcal{N}!}$$
+$$\int \frac{\text{d}q^{3\mathcal{N}}}{\mathcal{N}!}=\frac{V^\mathcal{N}}{\mathcal{N}!}$$
 
 where the $\mathcal{N}!$ is here to traduce the fact that particles are distinguishable and avoid double conting same particle configurations with different labeling.
 

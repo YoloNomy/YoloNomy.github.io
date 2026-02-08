@@ -12,7 +12,15 @@ $$
 \newcommand{\braket}[2]{ \langle #1 | #2 \rangle} 
 $$
 
+
 # Phase space, the quantum approach
+
+Many (if not most of) the collective phenomenon can't be explained with classical statistics. In fact, beyond simple dilute gas, the explanatory power of classical statistics fail. Actually, we often tend to consider quantum mechanics as an abstract topic, far from our daily life, which concern only very specific phenomenon, as the ones for which there is so few interactions that decoherence can be avoided. In a sense, statistical mechanics disprove this assertion by demonstrating that, without the intrinsic quantum nature governing microphysics, it would be impossible to interpret most of the daily life phenomenon around us from a statistical perspective.
+
+When do we need quantum statistics:
+
+- High densities (solid etc)
+- raditation
 
 # Quantum statistics: bosons, fermions and blackbody
 

@@ -195,3 +195,8 @@ The above expression also demonstrates Joule's second law, stating that $U$ depe
 ## Application: temperature change in the atmosphere
 
 ## Beyond the ideal gas
+
+
+## Going further: recommended readings and watching
+
+- [Statistical mechanics, theoretical minimum lectures - L. Susskind (2013)](https://theoreticalminimum.com/courses/statistical-mechanics/2013/spring)
