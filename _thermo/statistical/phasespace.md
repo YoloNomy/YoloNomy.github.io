@@ -128,6 +128,8 @@ If nothing is known, we find the **microcanonical ensemble**:
 
 $$\rho(\Gamma) = \frac{1}{\Omega(E)}$$
 
+The probability density is proportional to the volume occupied in phase space.
+
 <details markdown="1">
   <summary><strong>Proof:</strong> </summary>
 
@@ -145,11 +147,21 @@ $$ \mathcal{L} = -\int_{\Pi} \rho(\Gamma)\ln(\rho(\Gamma)) \text{d}\Gamma - \alp
 
 </details>
 
+If we re-inject this formula in the entropy, we find that 
+
+$$S = \ln(\Omega)$$
+
+The entropy is the logarithm of the volume occupied in phase space. This is the formula that is written on Boltzmann's grave!
+
 If the mean value of $H$ is "forced" by a thermostat to take a mean value:
 
 $$\rho(\Gamma)= \frac{1}{Z}\int e^{-\beta H} \text{d}\Gamma$$
 
-where $Z$ is further discussed in the next section.
+with the partition function being:
+
+$$ Z = \int_{\Pi} e^{-\beta H(\Gamma)} \text{d}\Gamma$$
+
+We see that these expressions are a straightforward generalisation of the discrete case considered in the previous lectures ($p_i = e^{-\beta E_i}/Z$ and $Z= \sum_i e^{-\beta E_i}$), replacing the sum over each microstate by an integral over phase-space.
 
 <details markdown="1">
   <summary><strong>Proof:</strong> </summary>
@@ -171,22 +183,21 @@ $$ \mathcal{L} = -\int_{\Pi} \rho(\Gamma)\ln(\rho(\Gamma)) \text{d}\Gamma - \alp
 
 </details>
 
+## The second principle of thermodynamics in phase space
+
+Due to chaotic behaviour, two points with close initial conditions will spread. Volume in coarse grained phase space increases.
+The system will occupy all of its available volume in phase space.
+
+Fundamental laws of nature are revesible. But most of macroscopic phenomenon seems irreversible. How to solve this paradox?
+On large scales, reversibility is not impossible, it's just extremely unlikely.
+
+Consider a large room completely empty. Consider taking a small box with $\mathcal{N}$ particle of gas bouncing. If you open the small box and let the particles enter in the room, they will occupy all of phase space. Entropy will increase as the probability density will start to be non zero in the room (2nd principle) The chances that all particles return in the small box is extremely small (irreversibility).
 
 ## Integrating over phase space: a measure problem
 
-In the last classes, we saw that a critically important concept was the one of partition function $Z$, defined as
+We saw in the previous lectures that the partition function $Z$ is a key function in order to rederive physical quantities of interest. The challenge in order to apply this to concrete problems will then be to compute explicitely the integral over phase-space. To do so, we must clarify what is this $\text{d}\Gamma$ that we integrate over.
 
-$$Z= \sum_i e^{-\beta E_i}$$
-
-where $E$ are all the energy level associated to each possible microstates $i$ (if several microstates are associated with the same energy, we introduced the concept of degeneracy $g$).
-
-It's generalisation to the continous case is simply
-
-$$ Z = \int_{\Pi} e^{-\beta H(\Gamma)} \text{d}\Gamma$$
-
-replacing the sum over each microstate by an integral over phase-space. This is indeed the expression of $Z$ we found above when maximizing the entropy to obtain $\rho(\Gamma)$.
-
-Considering a system made of $\mathcal{N}$ classical point particles, then the integral over phase space is of the form
+Considering a system made of $\mathcal{N}$ classical point particles, then the integral over phase space is naturally expected to be of the form
 
 $$\text{d}\Gamma = \text{d}^{3\mathcal{N}}q\, \text{d}^{3\mathcal{N}}p  $$
 
@@ -235,4 +246,54 @@ $$\int_{\Pi} \frac{\text{d}^{3\mathcal{N}}q}{\mathcal{N}!}= \frac{V^{\mathcal{N}
 
 ### Pressure, temperature and so on
 
-You can convince yourself that all the formula we derived in the previous lecture for $T$, $S$, $U$, $P$ etc remain all valid in this continuous case. 
+You can convince yourself that all the formula we derived in the previous lecture for the canonical ensemble (constrained mean energy) remain all valid in this continuous case. 
+The expressions for $T$ and $P$ as derivatives of energy where definitions, and they have no reason to change in this continuous context.
+
+The expressions which express relevant quantities in term of $Z$ are:
+
+$$U = \frac{\partial \ln(Z)}{\partial \beta}$$
+
+$$S = \beta U + \ln(Z)$$
+
+$$P = \frac{1}{\beta}\frac{\partial \ln(Z)}{\partial V}\Bigg|_{T}$$ 
+
+All of them can be prooved identically as in the discrete case, simply by carefully replacing sums by integrals. It is a good exercice to see if you can remember how the proof went in the discrete case.
+
+<details markdown="1">
+  <summary><strong>Proof:</strong> </summary>
+
+Starting with the mean energy, we have 
+
+$$U = \langle H \rangle = \int \rho(\Gamma) H(\Gamma) \text{d}\Gamma$$
+
+replacing the expression for the probability density, we find
+
+$$U =  \int \frac{e^{-\beta H(\Gamma)} H(\Gamma)}{Z} \text{d}\Gamma$$
+
+Now, on the other hand we have
+
+$$\frac{\text{d}Z}{\text{d}\beta} = \int -H(\Gamma)e^{-\beta H(\Gamma)} \text{d}\Gamma $$
+
+So, by identifying the two expressions, we conclude that (remember that $Z$ is just a number once the integral is done):
+
+$$U = -\frac{1}{Z}\frac{\text{d}Z}{\text{d}\beta}= -\frac{\partial \ln(Z)}{\partial \beta} $$
+
+Looking now at the expression for $S$:
+
+$$
+\begin{align}
+S&=- \int \rho(\Gamma)\ln(\rho(\Gamma))\text{d}\Gamma\\
+&=- \int \frac{e^{-\beta H(\Gamma)}}{Z} \left(-\beta H(\Gamma) -\ln(Z)\right) \text{d}\Gamma \\
+&= \int \frac{e^{-\beta H(\Gamma)}}{Z} \left(\beta H(\Gamma) +\ln(Z)\right) \text{d}\Gamma \\
+&=  \beta\int \frac{e^{-\beta H(\Gamma)}}{Z}\text{d}\Gamma  + \ln(Z) \frac{1}{Z}\int e^{-\beta H(\Gamma)}\text{d}\Gamma\\
+&= \beta U + \ln(Z)
+\end{align}
+$$
+
+Now, the proof of the expression for $P$ presented in the discrete case was totally independent of the discretness of the microstates. You can copy it identically to obtain
+
+$$P = \frac{1}{\beta}\frac{\partial \ln(Z)}{\partial V}\Bigg|_{T}$$ 
+
+
+</details>
+
