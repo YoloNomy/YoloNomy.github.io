@@ -211,27 +211,6 @@ $$
 \end{align}
 $$
 
-In the next classes, we will have to compute explicitely integrals over phase space. For example, we will have to compute integrals of the form:
-
-$$\int \text{d}^{3\mathcal{N}}q$$
-
-For a single particle, contained (and thus forced to move) within a container of gas of volume $V$, we expect:
-
-$$\int_{\Pi} \text{d}^{3}q = \iiint\text{d}q_1\text{d}q_2\text{d}q_3 = V$$
-
-For $\mathcal{N}$ particles, we have 
-
-$$
-\begin{align}
-\int_{\Pi} \text{d}^{3\mathcal{N}}q &= \iiint \text{d}q_1\text{d}q_2\text{d}q_3\text{d}q_4\text{d}q_5\text{d}q_6 ... \text{d}q_{3\mathcal{N}-2}\text{d}q_{3\mathcal{N}-1}\text{d}q_{3\mathcal{N}}\\
- &=\iiint \text{d}q_1\text{d}q_2\text{d}q_3\iiint\text{d}q_4\text{d}q_5\text{d}q_6 ...\iiint \text{d}q_{3\mathcal{N}-2}\text{d}q_{3\mathcal{N}-1}\text{d}q_{3\mathcal{N}}
-\end{align}
-$$
-
-where we should keep in mind that $q_1,q_2,q_3$ are the three coordinates of the first particle, $q_4,q_5,q_6$ are the three coordinates of the second particle and so on until the particle $\mathcal{N}$. As such, each of these integral will give again $V$, such that we will obtain $\mathcal{N}$ products of $V$. As such, we obtain
-
-$$ \int_{\Pi} \text{d}^{3\mathcal{N}}q= V^{\mathcal{N}}$$
-
 However here, a very subtle point comes into play. A crucial point is whether or not the particles are **distinguishable** or not. This might look like a silly question, but we will see later on that it has a huge impact in the case of quantum physics.
 If particles are distinguishable, you could imagine giving them a name, or a color, such that, at any time, you are able to locate "bob" or "paul". As such, each of the possible particle configuration (microstate) is truely and funamentaly different.
 If particles are indistinguishable, you could imagine interchanging them which would not change anything at all. As such every "swap" of the particles would give the same microstate.
@@ -239,9 +218,20 @@ If so, we should divide by the number of possible rearangement that give the sam
 
 $$\text{d}\Gamma = \frac{\text{d}^{3\mathcal{N}}q\, \text{d}^{3\mathcal{N}}p}{\mathcal{N}!}  $$
 
-The integral over volumes can absorbe this extra factor to become:
+One last issue must be addressed: as introduced above, the phase-space measure $\mathrm{d}\Gamma$ is not dimensionless, but carries units of
+$(\text{length} \times \text{momentum})^{3\mathcal{N}},$
+i.e. units of an action raised to the power $3\mathcal{N}$. As a consequence, the phase-space density $\rho(\Gamma)$ cannot be dimensionless, as a probability density should be, but must instead carry units of $(\text{action})^{-3\mathcal{N}}$ in order to satisfy the normalization condition
+$
+\int \rho(\Gamma)\,\mathrm{d}\Gamma = 1.
+$ This reflects the fact that classical mechanics does not provide a natural, dimensionless measure on phase space. In order to define a dimensionless probability density, one must therefore normalize the phase-space volume element by a reference action scale raised to the power $3\mathcal{N}$. Equivalently, this amounts to introducing an elementary cell of finite volume in phase space.
 
-$$\int_{\Pi} \frac{\text{d}^{3\mathcal{N}}q}{\mathcal{N}!}= \frac{V^{\mathcal{N}}}{\mathcal{N}!} $$
+The physically well-motivated way to fix this scale is obtained by considering the classical limit of quantum mechanics, which naturally introduces a fundamental unit of action given by Planck’s constant $h$. It is possible to show (and we will not show it now!) that this leads to the well motivated phase-space measure
+
+$$
+\mathrm{d}\Gamma = \frac{\mathrm{d}^{3\mathcal{N}}q\,\mathrm{d}^{3\mathcal{N}}p}{\mathcal{N}!\,h^{3\mathcal{N}}},
+$$
+
+In the following, and until the discussion of quantum statistics, we will adopt units in which $h = 1$ for simplicity, with the understanding that the appropriate powers of $h$ can be restored when required.
 
 
 ### Pressure, temperature and so on

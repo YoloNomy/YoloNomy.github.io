@@ -9,7 +9,7 @@ nav_order: 1
 
 ### The energy of the particles
 
-Let us now apply our understanding of phase space to rederive the ideal gas properties known from classical thermodynamics, which we discussed extensively [here](../thermo/idealgas.md). Consider a box filled with $\mathcal{N}$ particles. These particles are free and non interacting. Furthermore, we assume for now that they have all the same mass i.e. that the gas has a single composition. Treating the particles classicaly in the context of Newtonian mechanics, we can write the energy of each particle as $mv^2/2 = \vec{p}^2/2m$ (see the [classical mechanics](../../_meca/Newton/Energy.md) lecture on this topic). In a three dimensional space $\vec{p}^2 = p_1^2 +p_2^2+p_3^2$, following the notations for the components of the momentum introduced in the previous lecture.  As such, the energy of a microstate, i.e. a particle configuration in the box associated to a point $\Gamma$ in phase space is the sum of each the energy of each individual particle, that is
+Let us now apply our understanding of phase space to rederive the ideal gas properties known from classical thermodynamics, which we discussed extensively [here](../thermo/idealgas.md). Consider a box of volume $V$ filled with $\mathcal{N}$ particles. These particles are free and non interacting. Furthermore, we assume for now that they have all the same mass i.e. that the gas has a single composition. Treating the particles classicaly in the context of Newtonian mechanics, we can write the energy of each particle as $mv^2/2 = \vec{p}^2/2m$ (see the [classical mechanics](../../_meca/Newton/Energy.md) lecture on this topic). In a three dimensional space $\vec{p}^2 = p_1^2 +p_2^2+p_3^2$, following the notations for the components of the momentum introduced in the previous lecture.  As such, the energy of a microstate, i.e. a particle configuration in the box associated to a point $\Gamma$ in phase space is the sum of each the energy of each individual particle, that is
 
 $$E(\Gamma)=\frac{1}{2m}\sum_n^{\mathcal{N}}(\vec{p}^{(n)})^2$$
 
@@ -74,13 +74,29 @@ We are now ready to demonstrate the above simple formula for $Z$, in the proof b
 
 $$Z=\int_{\Pi} e^{-\frac{\beta}{2m}\sum_i^{\mathcal{3N}}p_i^2} \text{d}\Gamma = \int \int e^{-\frac{\beta}{2m}\sum_i^{\mathcal{3N}}p_i^2}  \frac{\text{d}^{3\mathcal{N}}q\, \text{d}^{3\mathcal{N}}p}{\mathcal{N}!}$$
 
-Since there is no dependence in $q$ in the energy function, we can factorize the integral over space. We thus obtain:
+Since there is no dependence in $q$ in the energy function, we can factorize the integral over space. 
 
-$$\int \frac{\text{d}q^{3\mathcal{N}}}{\mathcal{N}!}=\frac{V^\mathcal{N}}{\mathcal{N}!}$$
+$$Z= \frac{1}{\mathcal{N}!}\int \text{d}^{3\mathcal{N}} q \int e^{-\frac{\beta}{2m}\sum_i^{\mathcal{3N}}p_i^2}   \text{d}^{3\mathcal{N}}p$$
 
-where the $\mathcal{N}!$ is here to traduce the fact that particles are distinguishable and avoid double conting same particle configurations with different labeling.
+Let's compute this first integral.
+For a single particle, contained (and thus forced to move) within a container of gas of volume $V$, we expect:
 
-We are then left with
+$$\int_{\Pi} \text{d}^{3}q = \iiint\text{d}q_1\text{d}q_2\text{d}q_3 = V$$
+
+For $\mathcal{N}$ particles, we have 
+
+$$
+\begin{align}
+\int_{\Pi} \text{d}^{3\mathcal{N}}q &= \iiint \text{d}q_1\text{d}q_2\text{d}q_3\text{d}q_4\text{d}q_5\text{d}q_6 ... \text{d}q_{3\mathcal{N}-2}\text{d}q_{3\mathcal{N}-1}\text{d}q_{3\mathcal{N}}\\
+ &=\iiint \text{d}q_1\text{d}q_2\text{d}q_3\iiint\text{d}q_4\text{d}q_5\text{d}q_6 ...\iiint \text{d}q_{3\mathcal{N}-2}\text{d}q_{3\mathcal{N}-1}\text{d}q_{3\mathcal{N}}
+\end{align}
+$$
+
+where we should keep in mind that $q_1,q_2,q_3$ are the three coordinates of the first particle, $q_4,q_5,q_6$ are the three coordinates of the second particle and so on until the particle $\mathcal{N}$. As such, each of these integral will give again $V$, such that we will obtain $\mathcal{N}$ products of $V$. As such, we obtain
+
+$$ \int_{\Pi} \text{d}^{3\mathcal{N}}q= V^{\mathcal{N}}$$
+
+Our integral for the partition function thus becomes:
 
 $$Z=\frac{V^\mathcal{N}}{\mathcal{N}!}\int e^{-\frac{\beta}{2m}\sum_i^{\mathcal{3N}}p_i^2} \text{d}^{3\mathcal{N}}p$$
 
@@ -232,8 +248,110 @@ that is, we derived back the ideal gas law! As such, only by assuming that parti
 
 ### The Maxwell-Boltzmann speed distribution of speed
 
-In the previous lecture, we learned to think in phase space. We saw that the concept of discrete probability of a microstate $p_i$ can be generalised to the one of probability density $\rho(\Gamma)$ defined on each point of phase space (i.e. for each configuration/microstate).
+In the previous lecture, we learned to think in phase space. We saw that the concept of discrete probability of a microstate $p_i$ can be generalised to the one of probability density $\rho(\Gamma)$ defined on each point of phase space (i.e. for each configuration/microstate). We saw that, just like in the discrete case, $\rho$ could be inffered from a maximization of the entropy to be $\rho = \int e^{-\beta H}/Z\text{d}\Gamma$. 
+In the case of the ideal gas, reusing the expressions we derived above, this gives:
 
-We saw that, just like in the discrete case, $\rho$ could be inffered from a maximization of the entropy. In the case of the ideal gas, we obtain:
+$$\rho(\Gamma) = \left(\frac{\rho}{e}\right)^{\mathcal{N}}\left(\frac{1}{2m\pi k_BT}\right)^{\frac{3\mathcal{N}}{2}}e^{-\frac{\beta}{2m}\sum^{3\mathcal{N}}_i p^2_i}$$
 
-$$\rho(\Gamma) = \frac{1}{Z}e^{-\frac{\beta m}{2}\sum^{3\mathcal{N}_i p^2_i}}$$
+As a reminder, $\rho$ allows to compute the probability $\text{d}p=\rho(\Gamma)\text{d}\Gamma$ that the particle configuration within the box is located in a given infinitesimal region of phase-space.
+
+Now, we can ask ourselves about the probability density for a single particle of the gas to have a given velocity $v=\sqrt{v_1^2+v_2^2+v^2_3}$, where $v_i = p_i/m$. 
+
+First, starting from $\rho(\Gamma)$, it is possible to show that the probability distribution for a particle to have the velocity vector $\vec{v}$ is:
+
+$$\rho(\vec{v})= \left(\frac{m}{2\pi k_B T}\right)^{\frac{3}{2}}e^{-\frac{m\vec{v}^2}{2k_B T}}$$
+
+with $\rho(\vec{v})= \rho(v_1,v_2,v_3)$.
+
+<details>
+ <summary><strong>Proof</strong></summary>
+
+Before we go further, we should remind ourselves about **marginalisation**. If a probability density depends on multiple variables $\rho(x,y,...,z)$, it is possible to infer a probability density for a single variable $\rho(x)$ by integrating over all the other variables (all but $x$):
+
+$$ \rho(x)= \int...\int\rho(x,y,z,.,z)\text{d}y...\text{d}z$$
+
+$\rho(x)$ is called a marginal probability distribution.
+
+We can use this trick here to derive the probability distribution of momentum associated to a single particle by marginalizing over the momenta and positions of all the other particles. We will end up with
+
+$$\rho(\vec{v})= C e^{-\frac{\beta}{2m}\sum_i^3 p_i^2}$$
+
+where $C$ is a gigantic integral of $\rho(\Gamma)$ over all dimensions of phase space but the momentum of the first particle, that is $p_1,p_2$ and $p_3$. Instead of suffering and computing $C$ explicitely (try to do it!), we can deduce it by reminding ourselves that $\rho(\vec{p})$ should be a probability distribution, and thus be normalized to one:
+
+$$
+\begin{align}
+\int  C e^{-\frac{\beta}{2m}\sum_i^3 p_i^2} \text{d}p_i &= 1\\
+ \left(\int e^{-\frac{\beta}{2m} p_1^2} \text{d}p_1\right)^3 &= 1/C \\
+ \left(\sqrt{\frac{2m\pi}{\beta} }\right)^3 &= 1/C \\
+ \left(\frac{1}{2\pi m k_B T}\right)^{3/2} &=C
+\end{align}
+$$
+
+A similar result would have been obtained by considering a gas made of a single particle, which would give us the exact same expressions as for our total gas (without the Stirling approximation) with $\mathcal{N}=1$:
+
+$$\rho(q_1,q_2,q_3,p_1,p_2,p_3) = \frac{1}{V} \left(\frac{1}{2m\pi k_B T}\right)^{3/2} e^{- \frac{\beta}{2m}\sum_i^3p_i^2}$$
+
+and then marginalizing over position in order to get the probability for $\vec{p}$ only:
+
+$$ 
+\begin{align}
+\rho(p_1,p_2,p_3)&= \iiint\rho(q_1,q_2,q_3,p_1,p_2,p_3) \text{d}^3q\\
+& = \frac{1}{V}\iiint\text{d}^3q \left(\frac{1}{2m\pi k_B T}\right)^{3/2} e^{- \frac{\beta}{2m}\sum_i^3p_i^2}\\
+&= \left(\frac{1}{2m\pi k_B T}\right)^{3/2} e^{- \frac{\beta}{2m}\sum_i^3p_i^2}
+\end{align}
+$$
+
+Note that, even with a more complex spatial integral (like a potential in the Hamiltonian, which will be discussed in the next class), we will obtain the same result, as long as this potential depends only on position and not on momentum. This result is thus much more general than the case of the ideal gas only.
+
+Once we have $\rho(\vec{p})$, we can easily obtain $\rho(\vec{v})$ by reminding ourselves how to go from a probability distribution of a variable to another.
+
+The key is that the probability that the system is contained within a volume should be the same:
+
+$$\text{d}p= \rho(p_1,p_2,p_3)\text{d}p_1\text{d}p_2\text{d}p_3=\rho(v_1,v_2,v_3)\text{d}v_1\text{d}v_2\text{d}v_3 $$
+
+From which:
+
+$$\rho(v_1,v_2,v_3) = \rho(p_1,p_2,p_3)\frac{\text{d}p_1}{\text{d}v_1}\frac{\text{d}p_2}{\text{d}v_2}\frac{\text{d}p_3}{\text{d}v_3}=m^3 \rho(p_1,p_2,p_3)$$
+
+From which we get:
+
+$$\rho(\vec{v})= \left(\frac{m}{2\pi k_B T}\right)^{\frac{3}{2}}e^{-\frac{m\vec{v}^2}{2k_B T}}$$
+
+</details>
+
+From this expression, we can find that the mean velocity vector of a particle in the gas is zero, traducing isotropy (no prefered direction and hence no "group velocity"):
+
+$$\boxed{\langle \vec{v} \rangle =0 }$$
+
+<details>
+ <summary><strong>Proof</strong></summary>
+
+
+</details>
+
+We can translate the probability distribution on $\vec{v}$ into a probability on the modulus of the velocity $v$, to obtain:
+
+$$\boxed{\rho(v)= \left(\frac{m}{2\pi k_B T}\right)^{\frac{3}{2}}4\pi v^2 e^{-\frac{mv^2}{2k_B T}}}$$
+
+This curve is known as a **Maxwellian curve** and give us the probability distribution for the velocity of a single particle of the gas depending on the temperature.
+
+<details>
+ <summary><strong>Proof</strong></summary>
+Here again, we should remind ourselves that
+
+
+</details>
+
+$$ \boxed{\langle v \rangle = \sqrt{\frac{8k_B T}{\pi m}}}$$
+
+<details>
+ <summary><strong>Proof</strong></summary>
+We know that
+
+$$
+\begin{aligned}
+\langle v \rangle = \int v \rho(v) \text{d}v}
+\end{aligned}
+$$
+
+</details>
