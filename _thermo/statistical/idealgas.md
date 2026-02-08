@@ -268,7 +268,7 @@ with $\rho(\vec{v})= \rho(v_1,v_2,v_3)$.
 
 Before we go further, we should remind ourselves about **marginalisation**. If a probability density depends on multiple variables $\rho(x,y,...,z)$, it is possible to infer a probability density for a single variable $\rho(x)$ by integrating over all the other variables (all but $x$):
 
-$$ \rho(x)= \int...\int\rho(x,y,z,.,z)\text{d}y...\text{d}z$$
+$$ \rho(x)= \int...\int\rho(x,y,.,z)\text{d}y...\text{d}z$$
 
 $\rho(x)$ is called a marginal probability distribution.
 

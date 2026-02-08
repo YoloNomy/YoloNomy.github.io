@@ -13,18 +13,20 @@ $$
 $$
 
 
-# Phase space, the quantum approach
+# Quantum statistics
 
 Many (if not most of) the collective phenomenon can't be explained with classical statistics. In fact, beyond simple dilute gas, the explanatory power of classical statistics fail. Actually, we often tend to consider quantum mechanics as an abstract topic, far from our daily life, which concern only very specific phenomenon, as the ones for which there is so few interactions that decoherence can be avoided. In a sense, statistical mechanics disprove this assertion by demonstrating that, without the intrinsic quantum nature governing microphysics, it would be impossible to interpret most of the daily life phenomenon around us from a statistical perspective.
 
-When do we need quantum statistics:
+In particular, we absolutely need quantum statistics in order to describe:
 
-- High densities (solid etc)
-- raditation
+- systems with **high densities**, like solids or cristals.
+- To describe **raditation**, like light, as the well known UV catastrophe illustrates.
 
-# Quantum statistics: bosons, fermions and blackbody
+We will assume here some prior knowledge of quantum mechanics and we warmly advise the reader to first have a look at the [quantum mechanics](../../_quantum/quantum.md) class before reading further.
 
-A quantum system is described by a *wave-vector* $\ket{\phi}$, element of a complex Hilbert space. *Observables* are described by Hermitian operators $\hat{X}$ on this Hilbert space. The wavevector can always be written as a linear decomposition on the basis of the eigenvectors $\ket{x_i}$ of $\hat{X}$ as:
+## Microstates: Wave-vectors, density operator and entropy
+
+A quantum system is described by a **wave-vector** $\ket{\phi}$, element of a complex Hilbert space. **Observables** are described by Hermitian operators $\hat{X}$ on this Hilbert space. The wavevector can always be written as a linear decomposition on the basis of the eigenvectors $\ket{x_i}$ of $\hat{X}$ as:
 
 $$
 \ket{\phi} = \sum_i \alpha_i \ket{x_i}
@@ -37,7 +39,7 @@ $$
 \hat{X}\ket{x_i} = x_i \ket{x_i}
 $$
 
-The probability for the system to be oberved in the state $\ket{x_i}$ with the measured value $x_i$ for the observable $\hat{X}$ is then given by $p(x_i) = \alpha_i^* \alpha_i$ (and so $\sum_i \alpha_i^* \alpha_i = 1$) and the average value of $\hat{X}$ is given by $\langle X \rangle = \bra{\phi}\hat{X}\ket{\phi}$. In this sense, $\ket{\phi}$ contains all the quantum informations about the system.
+The probability for the system to be observed in the state $\ket{x_i}$ with the measured value $x_i$ for the observable $\hat{X}$ is then given by $p(x_i) = \alpha_i^* \alpha_i$ (and so $\sum_i \alpha_i^* \alpha_i = 1$) and the average value of $\hat{X}$ is given by $\langle X \rangle = \bra{\phi}\hat{X}\ket{\phi}$. In this sense, $\ket{\phi}$ contains all the quantum informations about the system.
 
 The *density operator* $\hat{\rho}$, generalizes the wavevector to take into account for more general states, called mixed states $\ket{\psi}$ that are statistical mixtures of pure states $\ket{\phi_i}$.
 
@@ -61,14 +63,14 @@ $$
 \label{eq:densitymatrixproperties}
 $$
 
-Out of the density operator, one can build the *Von Neumann entropy*:
+Out of the density operator, one can build the **Von Neumann entropy**:
 
 $$
 S = Tr(\hat{\rho} \ln(\hat{\rho})) 
 $$
 
 
-which is equivalent to the classical entropy.  Due to its Concavity, extremalization is maximization. Using the Lagrange multiplier technique we find the expression for $\hat{\rho}$ maximizing $S$. Grand canonical ensemble: system can exchange both particles and energy with the surrounding medium at equilibrium. We ask for the conditions in Eq.~\ref{eq:densitymatrixproperties} with $\hat{X}_i= \{\hat{H},\hat{N}\}$. We get:
+which is equivalent to the classical entropy.  Due to its Concavity, extremalization is maximization. Using the Lagrange multiplier technique we find the expression for $\hat{\rho}$ maximizing $S$. Grand canonical ensemble: system can exchange both particles and energy with the surrounding medium at equilibrium. We ask for the conditions of normalisation and mean value with $\hat{X}_i= \{\hat{H},\hat{N}\}$. We get:
 
 $$
 \hat{\rho}= \frac{1}{\Xi}e^{-\beta(\hat{H} - \mu \hat{N})}
@@ -81,6 +83,9 @@ $$
 \Xi = \text{Tr}(e^{-\beta(\hat{H} - \mu \hat{N})}) 
 $$
 
+## Quantum phase-space: Hilbert space and Ehrenfest theorem
+
+$$\frac{\text{d}\hat{\rho}}{\text{d}t}= \frac{1}{i\hbar} [\hat{H},\hat{\rho}] $$
 
 ## Quantum statistics
 

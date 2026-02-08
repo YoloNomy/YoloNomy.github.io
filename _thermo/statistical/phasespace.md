@@ -103,8 +103,16 @@ For general systems, the probability density must also be a function of time $\r
 
 $$ \frac{\text{d}\rho}{\text{d}t}= \{\rho,H\} + \frac{\partial \rho}{\partial t}$$
 
+**Liouville theorem** states that volumes in phase space are conserved through time evolution, which can be expressed as 
 
-**Liouville theorem** volumes in phase space are conserved leading to $\frac{\text{d}\rho}{\text{d}t}= 0$.
+$$\frac{\text{d}\rho}{\text{d}t}= 0.$$ 
+
+<details markdown="1">
+  <summary><strong>Proof:</strong> </summary>
+
+</details>
+
+From this, we can write:
 
 $$  \frac{\partial \rho}{\partial t}=\{H,\rho\} $$
 

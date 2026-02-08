@@ -20,15 +20,18 @@ You will find here some fun python applications to physics with some detailled e
 
 # Statistical physics
 
+- **I. Foundations and discrete probability distributions**
 - [Introducing the statistical entropy](../statistical/entropy/)
 - [Maximizing the entropy: the Lagrange multipliers](../statistical/entropy-max/)
 - [Maximizing the entropy: the canonical ensemble](../statistical/canonical/)
-- [One step towards classical thermodynamics](../statistical/classical/)
+- [One step towards classical thermodynamics](../statistical/classical/) 
+- **II. Classical statistics**
 - [Continous distributions: Thinking in phase space](../statistical/phasespace/)
 - [The ideal gas: the statistical perspective](../statistical/idealgas/)
 - [Weakly interacting and Van der Waals gas: the statistical perspective](../statistical/interacting_gas/)
-- [Bonus: A new take on $Z$ and ensembles: Generating functions and other derivations](../statistical/generating_function/)
 - [Grand canonical ensemble](../statistical/grandcanonical/)
+- [Bonus: A new take on $Z$ and ensembles: Generating functions and other derivations](../statistical/generating_function/)
+- **III. Quantum statistics**
 - [Quantum statistics: fermions and bosons](../statistical/quantumstat/)
 - [Fermi gas](../statistical/fermigas/)
 - [The blackbody radiation](../statistical/BB/)
@@ -37,3 +40,4 @@ You will find here some fun python applications to physics with some detailled e
 # Radiative transfer
 
 - [Radiative transfer equations](../radiation/transfer-equations/)
+
