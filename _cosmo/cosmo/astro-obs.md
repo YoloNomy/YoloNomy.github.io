@@ -25,7 +25,7 @@ These two measurable characteristics of stars are fundamental, as temperature an
 
 ### Colors and temperatures
 
-![image](../images/blackbody.png){: width="80%"}
+![image](../images/blackbody.png){: width="100%"}
 
 *Black-body spectra for some specific stars and illustration of Wien's law. Generated with this [python code](../codes/blackbody.py).*
 
@@ -43,7 +43,7 @@ $$T = \frac{\nu_{\text{max}}}{b},$$
 where $\nu_{\text{max}}$ is the frequency at which the star emits the most energy and $b\simeq 0.0588$ THz.K$^{-1}$ is known as Wien's constant. This relation is known as "Wien's displacement law". As such, the redder is a star, the colder it is and the bluer is a star the hotter it is.
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
 
 To find the maximum $\nu_{\text{max}}$ of the blackbody law $B_\nu$, we need to compute its derivative with respect to $\nu$ and set this derivative equal to zero, that is, we must solve
 
@@ -88,7 +88,7 @@ $$\sigma=\frac{2\pi^5k_B^4}{15h^3c^2}.$$
 This is known as the Stefan-Boltzmann law.
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
 
 The total luminosity of the star is the integral of the Boltzmann law over the surface of the star, the total solid angle and the frequency
 
@@ -144,7 +144,7 @@ Let's now see how we can infer these four properties from concrete measurements 
 
 **Exercice: try to list all the hypothesis we assumed in order to  describe stars with these four parameters. For each hypothesis, discuss what could be their limits.**
 <details>
-  <summary>Solution</summary>
+  <summary><strong>Solution</strong></summary>
   We assumed the following:
   <ul>
   <li>Stars are in <strong>thermal equilibrium</strong>. This assumption is crucial and is required to define the temperature $T$, constant for the whole star and that its radiation behaves as a blackbody. Clearly, the temperature varies inside of stars, moreover, as they are open systems, radiating into space, stars are clearly not in thermal equilibrium. This is even worse fort out-of main sequences/pulsating stars which evolve quickly and are not in hydrostatic equlibrum (see next lectures).  However, stars are more corectly understood to be in local thermal equilbrium, meaning that small regions are in equilibrium with their surroundings. From observation of stars, we know that they radiate largely as  blackbody, which garantees that this assumption is largely verified. Additionaly other features are imposed on there spectra beyond the modified black body (as absorption lines from the stellar atmosphere), but still this will not have any impact on the underlying blackbody assumption.</li> 
@@ -196,7 +196,7 @@ $$M = m- 5\log_{10}(d/\text{pc}) + 5$$
 
 **Exercice: proove this!**
 <details>
-  <summary>Solution</summary>
+  <summary><strong>Solution</strong></summary>
 
 Remember, as always, the usual log properties: $\log_{10}(a^b)=b\log_{10}(a)$, $\log_{10}(a\times b)=\log_{10}(a)+\log_{10}(b)$ and $\log_{10}(a/b)=\log_{10}(a)-\log_{10}(b)$. Note also that $\log_{10}(10)=1$.
 
@@ -248,7 +248,7 @@ Without absorption, the color indices are independent of the distance.
 
 **Exercice: proove this!**
 <details>
-  <summary>Solution</summary>
+  <summary><strong>Solution</strong></summary>
 
 Remember, as always, the usual log properties: $\log_{10}(a^b)=b\log_{10}(a)$, $\log_{10}(a\times b)=\log_{10}(a)+\log_{10}(b)$ and $\log_{10}(a/b)=\log_{10}(a)-\log_{10}(b)$. Note also that $\log_{10}(10)=1$.
 
@@ -292,7 +292,7 @@ The parallax method can be used only for nearby star (otherwise the effect is to
 
 **Exercice: The parallaxe of Sirius is measured to be 374 milli arcseconds (mas). Infer its distance in meters, parsec and light years.**
 <details>
-  <summary>Solution</summary>
+  <summary><strong>Solution</strong></summary>
 
 For Sirius $\alpha=$. $\tan(\alpha)=$, so  the small angle approximation is valid.
 

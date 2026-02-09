@@ -38,7 +38,6 @@ In reading all this, one should keep in mind that:
 
 - Entropy maximisation here is not yet related to 2nd principle. It is a way to derive $p_i$, coming from information theory. If you are skeptical about this, we will look much later at at other ways to derive $p_i$ without using $S$.
 - We assumed a discrete set of accessible energy level which is of course a simplification. We will gradually go beyond this simplification in the next lectures. However, the logic and the formula we derive above will remain extremely important.
-- In this class, we are now exclusively concerned with systems in thermal equilibrium. This is translated here by the fact that the probability distribution $p_i$ does not change with time. The system moves around its microstates, but the probability of each microstate always remain the same. After a long enough time, it will have explored all of it's accessible microstates.
 
 ### Restoring physical units
 
@@ -80,6 +79,11 @@ In what follows, we will freely alternate between expressions written in thermod
 
 ## Zeroth principle and equilibrium
 
+The notion of **thermal equilibrium** was a bit hidden so far, and we should be explicit on how it appears in our model. 
+In this class, we are now exclusively concerned with systems in thermal equilibrium. The fact that we can define unambigiously a single temperature $T$ to our system is a clear sign that we are in such a situation here.
+The assumption of thermal equilbrium is hidden behind the fact that the probability distribution $p_i$ does not change with time. The system moves around its microstates, but the probability of each microstate always remain the same. After a long enough time, it will have explored all of it's accessible microstates, allowing us to assume ergodicity (see supplement on the mean value in this [lecture](./entropy.md)). 
+Even when considering transformations in the following section, we always consider transition from one state of equilibrium to another one.
+
 ## Energy conservation and the first principle 
 
 The mean energy $\langle E \rangle$ of the system, is nothing else than the internal energy $U$ in the context of classical thermodynamics. As such, and from now on, we will use the two notations interchangably. As a reminder:
@@ -90,11 +94,116 @@ Now, it is instructive to look at the differential of $U$:
 
 $$\text{d} U = \sum_i E_i\text{d}p_i + \sum_i p_i \text{d}E_i $$
 
+### Heat
+
 We see a first term corresponding to how the mean energy change if the probability associated to each microstate were to change, keeping each energy level fixed. This correspond to what we define as a heat injection:
 
 $$\boxed{\delta Q = \sum_i E_i\text{d}p_i }$$
 
-and a second term corresponding to how the mean energy change if the energy level associated to each microstate were to change, keeping the probabilities fixed. This correspond to what we define as work:
+Indeed, if heat is injected, the possible microstates remain the same, but the ones of higher energy become more populated. This means shifting the probability distribution towards higher entropy (and energy) equilibrium distributions on the figure plotted in the [previous lecture](./canonical.md).
 
+We can convince ourselves -- using only our most primitive concepts -- that this transformation correspond indeed to the classical definition of heat:
+
+$$\sum_i E_i\text{d}p_i =  T\text{d}S$$
+
+<details>
+  <summary><strong>Proof</strong></summary>
+
+Recall that
+
+
+$$p_i= \frac{e^{-\beta E_i}}{Z}$$ 
+
+and hence:
+
+$$E_i = -\ln(Zp_i)/\beta = -(\ln(Z)+\ln(p_i))/\beta$$
+
+Furthermore
+
+$$\sum_i p_i =1$$
+
+implies 
+
+$$\sum_i \text{d}p_i = 0$$ 
+
+and as such (remember that $\text{d}(\ln(x))= \text{d}x/x$):
+
+$$
+\begin{align}
+\text{d}S &= -\text{d}\left(\sum_i p_i \ln(p_i)\right)\\
+&=-\sum_i \ln(p_i)\text{d}p_i - \sum_i p_i \text{d}p_i/p_i\\
+&= -\sum_i \ln(p_i)\text{d}p_i - \sum_i\text{d}p_i\\
+&=  -\sum_i \ln(p_i)\text{d}p_i
+\end{align}
+$$
+
+As such:
+
+$$
+\begin{align}
+\delta Q &=\sum_i E_i\text{d}p_i\\
+&= -\frac{1}{\beta}\sum_i(\ln(Z)+\ln(p_i))\text{d}p_i\\
+&= -\frac{\ln(Z)}{\beta}\sum_i \text{d}p_i - \sum_i \frac{\ln(p_i)}{\beta}\text{d}p_i\\
+&= T \text{d}S
+\end{align}
+$$ 
+
+Note that, by restablishing the units as indicated previously $\beta = 1/(k_B T)$ and $S_{\rm th}=k_B S$, such that boltzmann constants simplify!
+</details>
+
+That is, a heat injection always comes with an increase in entropy of the system of 
+
+$$\boxed{\text{d}S = \frac{\delta Q}{T}}$$
+
+as discussed in classical thermodynamics. Let us repeat again that this increase in $S$ comes from the broadening of the probability distribution by populating the higher energy microstates, associated with a larger value of $U=\langle E \rangle$ (from the first principle equation).
+
+### Work
+
+The second term in the transformation of $U$ is corresponding to how the mean energy change if the energy level associated to each microstate were to change, keeping the probabilities fixed. This correspond to what we define as work:
 
 $$\boxed{\delta W =  \sum_i p_i \text{d}E_i}$$
+
+we note that this definition of work is very general and implies **any phenomenon** which would change the value of the energy of the microstates $E_i$ (as a e.g. magnetic field). 
+
+In the case where a force is applied that change the volume of the system (compression/decompression) by an infinitesimal amount $\text{d}V$, we can show similarly using our basic principles that:
+
+$$\boxed{\delta W = - P \text{d}V}$$
+
+
+<details>
+  <summary><strong>Proof</strong></summary>
+
+For a change of volume, the mean energy $U$ changes as 
+
+$$
+\begin{align}
+\frac{\text{d}U}{\text{d}V} &=\frac{\text{d}(\sum_i p_i E_i)}{\text{d}V}    \\
+&= \sum_i p_i \frac{\text{d}E_i}{\text{d} V} + \sum_i E_i \frac{\text{d}p_i}{\text{d} V}
+\end{align}
+$$
+
+The second term is clearly heat generated by the change of volume, which we know will change the entropy. The second term however, is at constant entropy (since $\text{d}S$ only depends on $\text{d}p_i$ and not on $E_i$ from the previous proof on heat). Now, recall the definition of the pressure:
+
+$$P = -\frac{\partial U}{\partial V}\Bigg|_{S} $$
+
+and hence 
+
+$$P = -\sum_i p_i \frac{\text{d}E_i}{\text{d} V} $$
+
+The work can then be written as:
+
+$$
+\begin{align}
+\delta W &= \sum_i p_i \text{d}E_i\\
+&= \sum_i p_i \frac{\partial E_i}{\partial V} \text{d}V \\
+&= - P \text{d} V
+\end{align}
+$$
+
+</details>
+
+
+
+### On the generality of the concepts used so far
+
+Before concluding this class, let us note that so far, we made very few assumptions about the physical nature of our system, simply assuming discrete accessible microstates and using the familiar picture of a "box of gas" and the analogy with a die that can be biased or not. This implies that all the notions we are using now (temperature, heat, work ...) are much more general than what is usually considered in classical thermodynamics, and can be applied to a great variety of physical systems.

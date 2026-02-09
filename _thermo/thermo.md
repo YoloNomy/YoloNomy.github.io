@@ -15,7 +15,7 @@ You will find here some fun python applications to physics with some detailled e
 - [The ideal gas: the thermodynamics perspective](../thermo/idealgas/)
 - Van der Waals gas
 - [Second law of thermodynamics: entropy](../thermo/secondprinciple/)
-- [thermodynamical potentials and phase transitions](../thermo/potentials/)
+- [Thermodynamical potentials and phase transitions](../thermo/potentials/)
 - [Heat transfer equations](../thermo/heat_transfer/)
 
 # Statistical physics
@@ -32,9 +32,11 @@ You will find here some fun python applications to physics with some detailled e
 - [Grand canonical ensemble](../statistical/grandcanonical/)
 - [Bonus: A new take on $Z$ and ensembles: Generating functions and other derivations](../statistical/generating_function/)
 - **III. Quantum statistics**
-- [Quantum statistics: fermions and bosons](../statistical/quantumstat/)
+- [Quantum statistics: Thinking in Hilbert space](../statistical/quantumstat/)
+- [Quantum statistics: fermions and bosons](../statistical/fermions_bosons/)
 - [Fermi gas](../statistical/fermigas/)
 - [The blackbody radiation](../statistical/BB/)
+- **IV. Advanced topics**
 - [Out of equilibrium: The Boltzmann equations](../statistical/boltzmann/)
 
 # Radiative transfer

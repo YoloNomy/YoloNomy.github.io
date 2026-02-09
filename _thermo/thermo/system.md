@@ -25,7 +25,7 @@ In classical thermodynamics, a system is caracterized by the mesurable quantitie
 - The **pressure** $P$, which is the force exerted by the system on it's surface. 
 - The **temperature** $T$, which matches the intuition you have, and that can be measured with a thermometer!
 - The **volume** $V$ of the system, which is also exactly what you think!
-- The **quantity of matter** $n$ (in moles) or equivalently the number of particles $N=nN_A$, where $N_A= 6.022 \times 10^{23}$ is the Avogadro number (the number of particles in one mole).
+- The **quantity of matter** $n$ (in moles) or equivalently the number of particles $\mathcal{N}=nN_A$, where $N_A= 6.022 \times 10^{23}$ is the Avogadro number (the number of particles in one mole).
 
 As we will further discuss, for the typical case of a gas in a box, pressure can be interpreted as the transfer of momentum when particles hit the walls and temperature as the kinetic energy of the particles. However, thermodyanmics intend to be able to treat very general systems, far beyond the simple examples of gases. It was also develloped historically before the understanding of gases as made of atoms and molecules and as such does not require any interpretation of this kind. 
 

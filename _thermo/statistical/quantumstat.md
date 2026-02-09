@@ -19,139 +19,124 @@ Many (if not most of) the collective phenomenon can't be explained with classica
 
 In particular, we absolutely need quantum statistics in order to describe:
 
-- systems with **high densities**, like solids or cristals.
-- To describe **raditation**, like light, as the well known UV catastrophe illustrates.
+- Systems with **high densities**, like solids or cristals.
+- To describe **radiation**, like light, as the well known UV catastrophe illustrates.
 
 We will assume here some prior knowledge of quantum mechanics and we warmly advise the reader to first have a look at the [quantum mechanics](../../_quantum/quantum.md) class before reading further.
 
 ## Microstates: Wave-vectors, density operator and entropy
 
-A quantum system is described by a **wave-vector** $\ket{\phi}$, element of a complex Hilbert space. **Observables** are described by Hermitian operators $\hat{X}$ on this Hilbert space. The wavevector can always be written as a linear decomposition on the basis of the eigenvectors $\ket{x_i}$ of $\hat{X}$ as:
+A quantum system is described by a **wave-vector** $\ket{\phi}$, element of a complex Hilbert space $\mathcal{H}$ equipped with an Hermitian product $\braket{.}{.}: \mathcal{H}\times\mathcal{H}\to \mathbb{C}$. As such, the wave-vector describing the system is the **microstate** of the system in a quantum mechanical context.
+**Observables** are described by Hermitian operators $\hat{f}$ on this Hilbert space, that is object that act on wave-vector to give another wave-vector $\hat{f}: \mathcal{H}\to\mathcal{H}$. The wavevector describing the system can be written as a linear decomposition on the basis of the eigenvectors $\ket{f_i}$ of an operator $\hat{f}$ as:
 
 $$
-\ket{\phi} = \sum_i \alpha_i \ket{x_i}
+\ket{\phi} = \sum_i \alpha_i \ket{f_i}
 $$
 
 
-Where $\alpha$ are complex coefficients, the probability amplitudes and
+Where the coefficients $\alpha_i= \braket{\phi}{f_i}$ are complex coefficients, the **probability amplitudes** and, by definition of the eigenvectors:
 
 $$
-\hat{X}\ket{x_i} = x_i \ket{x_i}
+\hat{f}\ket{f_i} = f_i \ket{f_i}
 $$
 
-The probability for the system to be observed in the state $\ket{x_i}$ with the measured value $x_i$ for the observable $\hat{X}$ is then given by $p(x_i) = \alpha_i^* \alpha_i$ (and so $\sum_i \alpha_i^* \alpha_i = 1$) and the average value of $\hat{X}$ is given by $\langle X \rangle = \bra{\phi}\hat{X}\ket{\phi}$. In this sense, $\ket{\phi}$ contains all the quantum informations about the system.
+The probability for the system to be observed in the state $\ket{f_i}$ with the measured value $f_i$ for the observable $\hat{f}$ is then given by $p(f_i) = \alpha_i^* \alpha_i$ (and so $\sum_i \alpha_i^* \alpha_i = 1$) and the average value of $\hat{f}$ is given by $\langle f \rangle = \bra{\phi}\hat{f}\ket{\phi}$. In this sense, $\ket{\phi}$ contains all the quantum informations about the system.
 
-The *density operator* $\hat{\rho}$, generalizes the wavevector to take into account for more general states, called mixed states $\ket{\psi}$ that are statistical mixtures of pure states $\ket{\phi_i}$.
+The **density operator** $\hat{\rho}$, generalizes the wavevector to take into account for more general states, called mixed states $\ket{\psi}$ that are statistical mixtures of pure states $\ket{\phi_i}$.
 
 $$
 \hat{\rho}:= \ket{\psi(t)}\bra{\psi(t)} = \sum_i \mathcal{P}_i \ket{\phi_i(t)}\bra{\phi_i(t)}
 $$
 
-
-Where $\mathcal{P}_i$ are the classical probabilities associated to the pure state $\ket{\phi_i}$.
+Where $\mathcal{P}_i$ are the classical probabilities -- which can also be time dependent -- associated to the pure state $\ket{\phi_i}$.
 
 This operator is necessary in statistical physics where the system is composed of a big number of independant quantum sub-systems, all described by pure states. Despite the quantum nature of all the subsystems, the mixture behaves stochasticly with classical probabilities. 
-It can also be used when the system considered is the sub-part of a quantum entangled system (for example considering a single electron in an intriqued "EPR" electron-positron pair). In such a cituation, we can show that this sub-part behaves as a classical statistical variable.
+It can also be used when the system considered is the sub-part of a quantum entangled system (for example considering a single electron in an intriqued "EPR" electron-positron pair). In such a situation, we can show that this sub-part behaves as a classical statistical variable. As such, the best and more general tool to describe a **microstate** in the quantum context is given by $\hat{\rho}$.
 
-The normalization of all probabilities and the mean value of an observable $\hat{X}$ are given by:
+The mean value of an observable $\hat{f}$ is obtained from $\rho$ using the trace:
 
-$$
-\begin{aligned}
-&\text{Tr}{\hat{\rho}}=1\\
-&\text{Tr}{\hat{\rho}\hat{X_i}}= \langle X_i \rangle
-\end{aligned}
-\label{eq:densitymatrixproperties}
-$$
+$$\langle \hat{f}\rangle = {\rm Tr}(\hat{\rho}\hat{f}) $$
+
+<details>
+  <summary><strong>Complement:</strong> More informations on the density operator</summary>
+
+</details>
 
 Out of the density operator, one can build the **Von Neumann entropy**:
 
 $$
-S = Tr(\hat{\rho} \ln(\hat{\rho})) 
+\boxed{S = Tr(\hat{\rho} \ln(\hat{\rho}))}
+$$
+
+which is equivalent to the classical entropy.  Due to its concavity, extremalization is maximization. Using the Lagrange multiplier technique we find the expression for $\hat{\rho}$ maximizing $S$.
+
+The constraints for maximizing $S$ are normalization of all probabilities and the mean value of an observable $\hat{X}$, which takes the form:
+
+$$
+\begin{aligned}
+\begin{cases}
+\text{Tr}{\hat{\rho}}&=1\\
+\text{Tr}{\hat{\rho}\hat{X_i}}&= \langle X_i \rangle
+\end{cases}
+\end{aligned}
 $$
 
 
-which is equivalent to the classical entropy.  Due to its Concavity, extremalization is maximization. Using the Lagrange multiplier technique we find the expression for $\hat{\rho}$ maximizing $S$. Grand canonical ensemble: system can exchange both particles and energy with the surrounding medium at equilibrium. We ask for the conditions of normalisation and mean value with $\hat{X}_i= \{\hat{H},\hat{N}\}$. We get:
+Grand canonical ensemble: system can exchange both particles and energy with the surrounding medium at equilibrium. We ask for the conditions of normalisation and mean value with $\hat{X}_i= \{\hat{H},\hat{N}\}$. We get the quantum generalisation of the Grand canonical ensemble:
 
 $$
-\hat{\rho}= \frac{1}{\Xi}e^{-\beta(\hat{H} - \mu \hat{N})}
+\boxed{\hat{\rho}= \frac{1}{\Xi}e^{-\beta(\hat{H} - \mu \hat{N})}}
 $$
 
-
-The lagrange multiplier can be showned to be equal to $\beta= (k_\text{B} T)^{-1}$ and $\mu$ the chemical potential. $\Xi$ is the partition function: 
+With $\Xi$ is the quantum partition function: 
 
 $$
 \Xi = \text{Tr}(e^{-\beta(\hat{H} - \mu \hat{N})}) 
 $$
 
-## Quantum phase-space: Hilbert space and Ehrenfest theorem
+Similarly, the microcanonical and canonical distribution keep identical structures as the ones in the classical case.
+
+## Quantum phase-space: time evolution and Ehrenfest theorem
+
+The classical phase space of classical mechanics is replaced by the Hilbert space $\mathcal{H}$ in a quantum context. As discussed above, observables $\hat{f}$ are not functions like in classical mechanics but operators $\hat{f}:\mathcal{H}\to\mathcal{H}$. Just like in classical mechanics, a special observable, the Hamiltonian $\hat{H}$ governs the time evolution of microstates, through the
+**Schrödinger equation**:
+
+$$i\hbar \frac{\text{d}}{\text{d}t}\ket{\phi} = \hat{H}\ket{\phi}$$
+
+which solution gives the time evolution of the wave-vector from a time $t_0$ to a time $t$ as
+
+$$\ket{\phi(t)}= U(t-t_0)\ket{\phi(t_0)}$$
+
+with the time evolution operator:
+
+$$U(t-t_0)=e^{\frac{-i \hat{H}t}{\hbar}}$$
+
+
+<!-- $$\hat{f}(t)=U(t-t_0)\hat{f}(t_0)U(t-t_0)$$ -->
+
+As in classical mechanics, the commutator with $\hat{H}$ allows to infer the time evolution of the mean value of observables through the **Erhenfest theorem**, which follows from the Schrödinger equation: 
+
+$$\frac{\text{d}}{\text{d}t} \langle \hat{f} \rangle= \frac{1}{i\hbar}\langle [\hat{H},\hat{f}] \rangle +\langle \frac{\partial \hat{f}}{\partial t}\rangle$$
+
+<details>
+  <summary><strong>Proof:</strong></summary>
+
+</details>
+
+The geometry of the Hilbert space is encoded in the operator commutator $[.,.]$, which is the quantum equivalent to the classical Poisson bracket: 
+
+$$[\hat{f},\hat{g}]= \hat{f}\hat{g} -\hat{g}\hat{f}$$
+
+It disctates the time evolution of $\hat{\rho}$ (which is time depend through $\mathcal{P}_i(t)$ and $\ket{\phi_i(t)}$):
 
 $$\frac{\text{d}\hat{\rho}}{\text{d}t}= \frac{1}{i\hbar} [\hat{H},\hat{\rho}] $$
 
-## Quantum statistics
+which follows and generalizes the  Schrödinger equation.
 
-To describe multiparticle states, we work in Fock space, that is, tensorial product of single particle Hilbert spaces. The basis wavevector describing the states of the systems are given by the eigenvector of several commuting observables $\ket{n_1,n_2, \cdots, n_M}$. Where $1\cdots M$ represents the (potentialy infinite) $M$ possible quantum states accessible to a particle and $n_\lambda$ are the occupation number of each quantum states i.e. the number $n_\lambda$ of particles observed in the quantum state $\ket{\lambda}$. The wavevector $\ket{\Phi}$ describing the multiparticle system can then be decomposed in the basis:
+<details>
+  <summary><strong>Proof:</strong></summary>
 
-$$
-\ket{\Phi}= \sum_i \alpha_{n_1,n_2, \cdots, n_M} \ket{n_1,n_2, \cdots, n_M}
-$$
+</details>
 
-$$
-\begin{aligned}
-&E=\sum_\lambda n_\lambda \epsilon_\lambda \\
-&N=\sum_\lambda n_\lambda
-\end{aligned}
-$$
+The probability distribution is independant of time if $\hat{H}$ commutes with $\hat{\rho}$: $[\hat{H},\hat{\rho}]=0$. This condition is satisfied for any function of the Hamlitonian: $\hat{\rho}=f(\hat{H})$, which are characteristic of **thermal equilibrium**.
 
-One can show that the total partition function can be written as the product of the partition function associated to each individual quantum state:
-
-$$
-\Xi = \prod_\lambda \xi_\lambda
-$$
-
-
-With:
-
-$$
-\xi_\lambda = \sum_{n_\lambda=0}^\infty e^{-\beta n_\lambda (\epsilon_\lambda - \mu)}
-$$
-
-
-The average number of particle occuping a quantum state is given by:
-
-$$
-\langle n_{\lambda} \rangle = \frac{\partial \ln(\xi_\lambda)}{\partial \alpha}
-$$
-
-with $\alpha := \beta \mu$
-
-Due to spin-statistics theorem, Bosons have no limits on their occupation number, each state can be populate infinitly. They follow the *Bose-Einstein* (BE) statistics:
-
-$$
-\xi^{BE}_\lambda = \sum_{n_\lambda=0}^\infty \left(e^{-\beta (\epsilon_\lambda - \mu)}\right)^{n_\lambda} = \frac{1}{1-e^{-\beta(\epsilon_\lambda - \mu)}}
-$$
-
-
-Remembering the expression for an infinite geometric sum:
-
-$$
-\sum_{k=0}^\infty q^k = \frac{1}{1-q}
-$$
-
-
-We then get:
-
-$$
-\langle n^{BE}_\lambda \rangle = \frac{1}{e^{\beta(\epsilon_\lambda - \mu)}-1}
-$$
-
-
-For fermions, 
-
-$$
-\xi^{FD}_\lambda = \sum_{n_\lambda=0}^1 \left(e^{-\beta n_\lambda (\epsilon_\lambda - \mu)}\right) = 1 + e^{-\beta (\epsilon_\lambda - \mu)}
-$$
-
-
-$$
-\langle n^{FD}_\lambda \rangle = \frac{1}{e^{\beta(\epsilon_\lambda - \mu)}+1}
-$$

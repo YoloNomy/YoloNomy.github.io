@@ -301,7 +301,7 @@ $$
 \end{align}
 $$
 
-Note that, even with a more complex spatial integral (like a potential in the Hamiltonian, which will be discussed in the next class), we will obtain the same result, as long as this potential depends only on position and not on momentum. This result is thus much more general than the case of the ideal gas only.
+Note that, even with a more complex spatial integral (like a potential in the Hamiltonian $e^{-\beta U(q)}$, which will be discussed in the next class), we will obtain the same result, as long as this potential depends only on position and not on momentum. Indeed any integral of the form $\int f(q) \text{d}^3q$ would be the present in $Z$ and simplified in the marginalisation process. Thus, the Maxwellian curve is thus much more general than the case of the ideal gas only.
 
 Once we have $\rho(\vec{p})$, we can easily obtain $\rho(\vec{v})$ by reminding ourselves how to go from a probability distribution of a variable to another.
 
@@ -429,4 +429,32 @@ $$
 </details>
 
 As discussed in one the proof for $\rho(\vec{v})$, this result is much more general than the case of the ideal gas, and would be true for any classical gas with interactions dependent only on the position (because the integrals over $q$ disapear when marginalizing, in the proofs above).
+
+For example, it would apply to molecules of an atmosphere, trapped in the gravitational field of a planet. The fact that, at equal temperatures, the velocity is inversely proportional to the mass of the particle, atmospheres can keep only some specific molecules which are heavy enough before getting ejected into space. This explains why earth's atmosphere is almost entierly devoided of Hydrogen, which is omnipresent in the Universe, but too light to be kept within its gravitational field.
+
+<!-- <details markdown="1">
+ <summary><strong>Exercice:</strong> Compute the maximal mass of a particle in an atmosphere of temperature $T$ before it is ejected into space. </summary>
+
+We showed that the mean velocity of a particle is
+
+$$ \langle v \rangle = \sqrt{\frac{8k_B T}{\pi m}}$$
+
+and we convinced ourself that this result would be true even if the particles are trapped the gravitational field of an atmosphere.
+We saw in the [mechanics class](../../_meca/Newton/Energy.md) that the liberation velocity of a particle located around a planet of mass $M$ and radius $R$ is
+
+$$v_l = \sqrt{\frac{GM}{R}}$$
+
+The condition for a particle not to escale the atmosphere is:
+
+$$  \langle v \rangle \lessim  v_l$$
+
+$$\sqrt{\frac{8k_B T}{\pi m}} \leq \sqrt{\frac{GM}{R}} $$
+
+$$m \lessim \frac{8k_B T R}{\pi G M}$$
+
+
+</details> -->
+
+
+
 
