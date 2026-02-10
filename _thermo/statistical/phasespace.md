@@ -9,9 +9,9 @@ nav_order: 1
 
 Now that we understood carefully the case of a system with discrete energy levels that are accessed randomly (like a die being continuously drawn), we are ready to move towards a more realistic statistical description of a physical system.
 
-The complete description of a classical system, like a box of gas, is given by a single point in phase space. Before going further, you might want to first have a look at the [analytical mechanics](../../_meca/meca.md) class, which will be indispensable from now on.
+The complete description of a classical system, like a box of gas, is given by a single point in phase space. Before going further, you might want to first have a look at the [analytical mechanics](../../_meca/meca.md) class, which will be indispensable from now on. This lecture is significantly more advanced than the previous ones, you can try to follow it as much as possible and gloss over the details you do not understand and try to reconnect with the next lectures, where only the key formula and concepts will be needed.
 
-As a reminder, phase space is the space made of the positions $q_i$ and momentum $p_i$. For a single particle moving in three dimensions, it is thus a space of six dimension. A point $\Gamma$ in phase space is a sixtuplet $(q_1,q_2,q_3,p_1,p_2,p_3)$. In simple Cartesian coordinates $q_1=x,q_2=y,q_3=z$. The evolution of a particle moving through time will be given by a trajectory $\Gamma(t)$ in this space. For $\mathcal{N}$ particles moving in three dimensions, this space is of dimension $6\mathcal{N}$. A point would be labelled by the huge set of numbers:
+Phase space is the space made of the positions $q_i$ and momentum $p_i$ of classical particles. For a single particle moving in three dimensions, it is thus a space of six dimension. A point $\Gamma$ in phase space is a sixtuplet $(q_1,q_2,q_3,p_1,p_2,p_3)$. In simple Cartesian coordinates $q_1=x,q_2=y,q_3=z$. The evolution of a particle moving through time will be given by a trajectory $\Gamma(t)$ in this space. For $\mathcal{N}$ particles moving in three dimensions, this space is of dimension $6\mathcal{N}$. A point would be labelled by the huge set of numbers:
 
 $$\Gamma=(q_1^{(1)}, q_2^{(1)},q_3^{(1)}, ... q_1^{(\mathcal{N})}, q_2^{(\mathcal{N})},q_3^{(\mathcal{N})}..., p_1^{(1)}, p_2^{(1)},p_3^{(1)}, ... p_1^{(\mathcal{N})}, p_2^{(\mathcal{N})},p_3^{(\mathcal{N})})
 $$
@@ -51,7 +51,6 @@ What will interest us, is the density probability associated to $x$ where $x$ is
 Let us now label by $\Gamma$ the position of a point in phase space, i.e. the whole set of positions $q^{(1)}_1,q^{(1)}_2...$ and momentums $p_1^{(1)},p_2^{(1)}...$ for each particle. A **microstate**, discussed in previous lectures, is corresponding exactly to a given value of $\Gamma$. Noting the phase space $\Pi$ (or quite pretentiously as $\Pi=TQ^{\*}$ for reasons that will only be clear in the differential geometry classes), then $\Gamma \in \Pi$.
 
 To alleviate the notations and emphasize on the $6\mathcal{N}$ dimensional aspect of phase space, we will now label the $q$ and the $p$ between $1$ and $3\mathcal{N}$, going over all the particles, that is:
-
 
 $$
 
@@ -99,16 +98,76 @@ The time evolution of any observable $f$ is given by:
 
 $$\frac{\text{d}f}{\text{d}t}=\{f,H\} + \frac{\partial f}{\partial t}$$
 
-For general systems, the probability density must also be a function of time $\rho(\Gamma,t)$. As such, $\rho$ is expected to change as
+We say that $H$ is the **generator** of time translations (similarly $p_i$ would generate space translations and angular momentum $L_i$ would generate rotations). 
+From this equation, one can infer the evolution of a microstate through time ($q_i$ and $p_i$ are coordinates of $\Pi$ and are as such time independent observables), giving the **Hamilton equations**:
+
+$$ \begin{cases}
+\begin{align}
+\frac{\text{d}q_i}{\text{d}t}&= \{q_i,H\}= -\frac{\partial H}{\partial p_i}\\
+\frac{\text{d}p_i}{\text{d}t}&=\{p_i,H\}= \frac{\partial H}{\partial q_i}
+\end{align}
+\end{cases}
+$$
+
+An observable is conserved if it does not depend explicitely on time and if it commutes with the Hamiltonian $\lbrace f, H\rbrace=0$.
+As such, energy is concerved through the time evolution of the system, as long as the Hamiltonian is not a function of time $t$, since $\lbrace H,H\rbrace =0$.
+
+For general systems, the probability density must also be a function of time $\rho(\Gamma,t)$. As such, $\rho$ will also evolve according to
 
 $$ \frac{\text{d}\rho}{\text{d}t}= \{\rho,H\} + \frac{\partial \rho}{\partial t}$$
 
-**Liouville theorem** states that volumes in phase space are conserved through time evolution, which can be expressed as 
+**Liouville theorem** states that volumes in phase space are conserved through time evolution, which is equivalent to require a conservation of the probability along the flows in phase space. This condition lead to:
 
-$$\frac{\text{d}\rho}{\text{d}t}= 0.$$ 
+$$\boxed{\frac{\text{d}\rho}{\text{d}t}= 0.}$$ 
 
 <details markdown="1">
   <summary><strong>Proof:</strong> </summary>
+
+$\rho$ is a probability distribution of the microstate to be at a point $\Gamma$ of phase space. Probability must be conserved locally, the system can not disapear! If probability density change at a point, it should be "transferred" in another region of phase space. This implies that $\rho$ must satisfy a continuity equation over the $6\mathcal{N}$ dimensional phase-space
+
+$$\frac{\partial \rho}{\partial t} = \vec{\nabla}_{q,p}\cdot(\rho\vec{v})$$
+
+where 
+
+$$\vec{\nabla}_{q,p}= \left(\frac{\partial}{\partial q_1},...,\frac{\partial}{\partial q_{3\mathcal{N}}},\frac{\partial}{\partial p_1}...,\frac{\partial}{\partial p_{3\mathcal{N}}}\right)$$
+
+is the divergence over phase space and 
+
+$$\vec{v}= \left(\frac{d q_1}{\text{d}t},...,\frac{d q_{3\mathcal{N}}}{\text{d}t},\frac{d p_1}{\text{d}t},...,\frac{d p_{3\mathcal{N}}}{\text{d}t}\right)$$
+
+is the velocity of the microstate in phase space.
+This is perfectly analogous to continuituy equation in fluid mechanics. It state that if probability density is not created out of nowhere, if the value of $\rho$ decrease at one point of phase space, it must "go out of it", and if it increases some probability must "go in".
+
+The divergence is:
+
+$$
+\begin{align}
+\vec{\nabla}_{q,p}\cdot(\rho\vec{v})= \vec{\nabla}_{q,p}(\rho)\cdot\vec{v} + \rho\vec{\nabla}_{q,p}\cdot\vec{v}
+\end{align}
+$$
+
+such that the continuity equation becomes:
+
+$$ \frac{\partial \rho}{\partial t} + \vec{\nabla}_{q,p}(\rho)\cdot\vec{v} = - \rho\vec{\nabla}_{q,p}\cdot\vec{v} $$
+
+the left hand side is:
+
+$$ \frac{\partial \rho}{\partial t} + \vec{\nabla}_{q,p}(\rho)\cdot\vec{v} = \frac{\partial \rho}{\partial t} + \sum_i \frac{\partial\rho}{\partial q_i}\frac{\partial q_i}{\partial t} + \sum_i \frac{\partial\rho}{\partial p_i}\frac{\partial p_i}{\partial t}  = \frac{\text{d}\rho}{\text{d}t}$$
+
+the right hand side is:
+
+$$
+\begin{align}
+- \rho\vec{\nabla}_{q,p}\cdot(\vec{v})&= - \rho\sum_i \left( \frac{\partial}{\partial q_i}\frac{\partial q_i}{\partial t} + \frac{\partial}{\partial p_i}\frac{\partial p_i}{\partial t} \right)\\
+&= - \rho \sum_i\left(\frac{\partial^2 H}{\partial q_i \partial p_i} -\frac{\partial^2 H}{\partial p_i \partial q_i}  \right)\\
+&=0
+\end{align}
+$$
+
+where we re-injected Hamilton's equations and used the fact that second order derivative of a function commutes.
+Hence:
+
+$$\frac{\text{d}\rho}{\text{d}t}= 0$$
 
 </details>
 
@@ -117,8 +176,7 @@ From this, we can write:
 $$  \frac{\partial \rho}{\partial t}=\{H,\rho\} $$
 
 **Thermal equilibrium** can be understood as $\rho(\Gamma)$ that is $ \frac{\partial \rho}{\partial t}=0$. In this case $\lbrace H,\rho\rbrace=0$ which is true only for functions $\rho(H)$.
-Condition for which ergodicity can be assumed to be valid.
-
+Condition for which ergodicity can be assumed to be valid. Furthermore, most of the high dimensional systems display **chaotic** evolution, meaning that very nearby initial conditions in phase space ends up diverging and exploring very different regions of phase space. This property quickly spread probability distributions over $\Pi$, easing the ergodicity and leading to thermal equilbrium. 
 
 ## Entropy in phase space
 
@@ -132,44 +190,71 @@ We can, as for the discrete case, looking for probability densities over phase s
 
 We will see that doing so gives back identical formula than the ones found in the discrete case, replacing sum over the energy states by integrals over phase space. As such, our understanding of the discrete case will translate directly here.
 
-If nothing is known, we find the **microcanonical ensemble**:
+If nothing is known except the normalisation of probabilities, we find the probability distribution for the **microcanonical ensemble**:
 
-$$\rho(\Gamma) = \frac{1}{\Omega(E)}$$
+$$\boxed{\rho(\Gamma) = \frac{1}{\Omega}}$$
 
-The probability density is proportional to the volume occupied in phase space.
+where $\Omega = \int_\Pi \text{d}\Gamma$ is the total phase space-volume. All microstates are **equiprobable**. This is sometimes taken to be the **fundamental postulate** of statistical mechanics. Indeed, assuming this, it is possible to derive the expression for the other ensembles without invoking the maximisation of entropy, as discussed in [this lecture](./generating_function.md).
+If we were to focus on specific regions of phase space with a given value of energy, we would find $\rho(E)=1/\Omega(E)$, which is equivalent to the discrete case with degeneracies $g$. The probability density is thus proportional to the volume occupied in phase space by the energy value. 
 
 <details markdown="1">
   <summary><strong>Proof:</strong> </summary>
 
-The proof is very similar to the discrete case.
-
-We want to maximize $S$, under the two following constraints
+The proof is similar to the discrete case. We want to maximize $S$, under the two following constraints:
 
 $$ \int_\Pi \rho(\Gamma)\text{d}\Gamma=1$$
-The second equation means that our microstates are "forced" to follow trajectories in phase space for which the mean value of the Hamiltonian is $\langle E \rangle$.
 
 Using the Lagrange multiplier methods exactly as before, we obtain
 
-$$ \mathcal{L} = -\int_{\Pi} \rho(\Gamma)\ln(\rho(\Gamma)) \text{d}\Gamma - \alpha(\int_\Pi \rho(\Gamma)\text{d}\Gamma-1) - \beta(\int_\Pi \rho(\Gamma)H(\Gamma) \text{d}\Gamma- \langle E \rangle)$$
+$$ \mathcal{L} = -\int_{\Pi} \rho(\Gamma)\ln(\rho(\Gamma)) \text{d}\Gamma - \alpha(\int_\Pi \rho(\Gamma)\text{d}\Gamma-1)$$
 
+Now, analoguously to what is done to obtain Euler-Lagrange equations in mechanics (where $\mathcal{L}$ here plays the role of an action $\mathcal{S}$), we should set
+
+$$\delta \mathcal{L} = \int_{\Pi}\frac{\delta \mathcal{L}}{\delta \rho}\delta \rho \text{d}\Gamma=0 \, ,\ \forall \delta \rho \leftrightarrow \frac{\delta \mathcal{L}}{\delta \rho} = 0$$
+
+Hence:
+
+$$ \delta \mathcal{L} = -\int_{\Pi} \delta\rho(1+\ln(\rho)) \text{d}\Gamma - \alpha \int_{\Pi}\delta \rho \text{d}\Gamma = -\int_{\Pi} \delta \rho \left(1+\ln(\rho)+\alpha\right)\text{d}\Gamma=0$$
+
+which means
+
+$$-(1+\ln(\rho)+\alpha)=0$$
+
+and hence
+
+$$\rho = e^{-1-\alpha}$$
+
+$\alpha$ is fixed from the condition on the normalisation of probabilities
+
+$$\int_{\Pi} \rho \text{d}\Gamma = \int_{\Pi}\text{d}\Gamma e^{-1-\alpha}=1$$
+
+leading to:
+
+$$ \alpha = \ln(\Omega)-1$$
+
+where we fixed $\Omega= \int_{\Pi} \text{d}\Gamma$.
+
+Hence:
+
+$$\rho = \frac{1}{\Omega} $$
 
 </details>
 
-If we re-inject this formula in the entropy, we find that 
+If we re-inject this formula in the entropy, and re-inject the Boltzmann constant to consider the thermodynamic entropy, we find that 
 
-$$S = \ln(\Omega)$$
+$$\boxed{S_{\rm th} = k_B\ln(\Omega)}$$
 
-The entropy is the logarithm of the volume occupied in phase space. This is the formula that is written on Boltzmann's grave!
+The entropy is the logarithm of the volume occupied by the microstates of interest in phase space. This is the formula that is written on Ludwig Boltzmann's grave! As we will discuss below, it is indeed important to understand the second principle and irreversibility in a statistical context.
 
-If the mean value of $H$ is "forced" by a thermostat to take a mean value:
+If the mean value of $H$ is "forced" by a thermostat to take a mean value $U$, we obtain instead:
 
-$$\rho(\Gamma)= \frac{1}{Z}\int e^{-\beta H} \text{d}\Gamma$$
+$$\boxed{\rho(\Gamma)= \frac{1}{Z}\int e^{-\beta H} \text{d}\Gamma}$$
 
 with the partition function being:
 
 $$ Z = \int_{\Pi} e^{-\beta H(\Gamma)} \text{d}\Gamma$$
 
-We see that these expressions are a straightforward generalisation of the discrete case considered in the previous lectures ($p_i = e^{-\beta E_i}/Z$ and $Z= \sum_i e^{-\beta E_i}$), replacing the sum over each microstate by an integral over phase-space.
+We see that these expressions are a straightforward generalisation of the discrete case considered in the previous lectures ($p_i = e^{-\beta E_i}/Z$ and $Z= \sum_i e^{-\beta E_i}$), replacing the sum over each microstate by an integral over phase-space. This is probability density for the **canonical ensemble**.
 
 <details markdown="1">
   <summary><strong>Proof:</strong> </summary>
@@ -188,6 +273,21 @@ Using the Lagrange multiplier methods exactly as before, we obtain
 
 $$ \mathcal{L} = -\int_{\Pi} \rho(\Gamma)\ln(\rho(\Gamma)) \text{d}\Gamma - \alpha(\int_\Pi \rho(\Gamma)\text{d}\Gamma-1) - \beta(\int_\Pi \rho(\Gamma)H(\Gamma) \text{d}\Gamma- \langle E \rangle)$$
 
+$$ \delta \mathcal{L} = -\int_{\Pi} \delta\rho(1+\ln(\rho)) \text{d}\Gamma - \alpha \int_{\Pi}\delta \rho \text{d}\Gamma = -\int_{\Pi} \delta \rho \left(1+\ln(\rho)+\alpha + \beta H\right)\text{d}\Gamma=0$$
+
+$$-(1+\ln(\rho)+\alpha+\beta H)=0$$ 
+
+and hence 
+
+$$\rho = e^{-1-\alpha - \beta H} = \frac{1}{Z}e^{-\beta H}$$
+
+$Z= e^{1+\alpha}$ is fixed using the normalisation of probabilities:
+
+$$\int_{\Pi} \rho \text{d}\Gamma = \int_{\Pi}\frac{1}{Z}e^{- \beta H}\text{d}\Gamma =1 $$
+
+and then:
+
+$$Z= \int_{\Pi} e^{-\beta H}\text{d}\Gamma$$
 
 </details>
 
@@ -200,6 +300,8 @@ Fundamental laws of nature are revesible. But most of macroscopic phenomenon see
 On large scales, reversibility is not impossible, it's just extremely unlikely.
 
 Consider a large room completely empty. Consider taking a small box with $\mathcal{N}$ particle of gas bouncing. If you open the small box and let the particles enter in the room, they will occupy all of phase space. Entropy will increase as the probability density will start to be non zero in the room (2nd principle) The chances that all particles return in the small box is extremely small (irreversibility).
+
+This has some links with the unidirectionality of the **flow of time** in a very complicated and yet partialy understood fashion.
 
 ## Integrating over phase space: a measure problem
 

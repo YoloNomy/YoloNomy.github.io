@@ -140,3 +140,9 @@ which follows and generalizes the  Schrödinger equation.
 
 The probability distribution is independant of time if $\hat{H}$ commutes with $\hat{\rho}$: $[\hat{H},\hat{\rho}]=0$. This condition is satisfied for any function of the Hamlitonian: $\hat{\rho}=f(\hat{H})$, which are characteristic of **thermal equilibrium**.
 
+## Multiple particles
+
+$\ket{\phi}$ or $\rho$ must describe the microstate associated to multiple particles, possibly interacting. How to do so?
+
+## Thinking in Fock space
+

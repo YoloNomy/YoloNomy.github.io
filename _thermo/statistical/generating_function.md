@@ -8,6 +8,19 @@ nav_order: 1
 # Bonus: A new take on $Z$ and ensembles
 
 In this "bonus" lecture, we want to further reflect on $Z$, its role and propose alternative ways to derive the ensembles of statistical physics without calling for the maximisation of entropy.
+This lecture is a bit technical (but enlightening!), and might be skipped on a first go through the class.
+The statements in this lecture are very general and apply to both the discrete, the continuous and the quantum case, as you can convince yourself easily.
+
+# Other derivations of the ensembles
+
+**fundamental postulate** of statistical physics, in the microcanonical ensemble, all microstates are equiprobable.
+
+$$ p= \frac{1}{\Omega}$$ 
+
+in the continuous case discussed in [this lecture](./phasespace.md), we will see that $\Omega$ correspond to some volume in phase-space.
+Probabilities are ratio of size, or of volumes.
+
+$$ p = \frac{\Omega_{\rm sys}}{\Omega_{\rm tot}}$$
 
 # Generating functions
 
@@ -73,7 +86,6 @@ Which is the so-called **Laplace transformation** of the function $p(x)$.
 
 ## Cumulents
 
-# Other derivations of the ensembles
 
 ## Going further: recommended readings
 

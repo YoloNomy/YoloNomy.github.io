@@ -19,6 +19,10 @@ subtitle: Maths and mathematical physics
 - Group, vector spaces and algebra
 - Manifolds
 - General notions: curve, functions, sequences
+- Applications to thermodynamics
+- classical electromagnetism
+- Symplectic geometry: Phase space
+- space-time and general relativity
 
 # Measure theory and foundations of quantum mechanics
 
@@ -37,7 +41,7 @@ subtitle: Maths and mathematical physics
 - Fiber bundles
 - [Connections: general relativity and gauge theories](./gauge/connections.md)
 - [Curvature: general relativity and gauge theories](./gauge/curvature.md)
-- Symplectic geometry: Phase space
+
 
 # Complex analysis and quantum field theory
 

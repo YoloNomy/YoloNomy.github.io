@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Electromag
+title: Electromagnetism
 subtitle: Here are some small lectures on selected topics with associated illustrative codes you can play with.
 ---
 
