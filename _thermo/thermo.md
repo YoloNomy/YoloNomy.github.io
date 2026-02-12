@@ -38,6 +38,7 @@ You will find here some fun python applications to physics with some detailled e
 - [The blackbody radiation](../statistical/BB/)
 - **IV. Advanced topics**
 - [Out of equilibrium: The Boltzmann equations](../statistical/boltzmann/)
+- Phase transitions
 
 # Radiative transfer
 

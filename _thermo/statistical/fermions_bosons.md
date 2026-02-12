@@ -35,7 +35,7 @@ $$
 
 $$
 \begin{aligned}
-&E=\sum_\lambda n_\lambda \epsilon_\lambda \\
+&U=\sum_\lambda n_\lambda \epsilon_\lambda \\
 &N=\sum_\lambda n_\lambda
 \end{aligned}
 $$
@@ -45,7 +45,6 @@ As discussed above, the total partition function can be written as the product o
 $$
 \Xi = \prod_\lambda \xi_\lambda
 $$
-
 
 With:
 
@@ -62,7 +61,7 @@ $$
 
 with $\alpha := \beta \mu$
 
-Due to spin-statistics theorem, Bosons have no limits on their occupation number, each state can be populate infinitly. They follow the *Bose-Einstein* (BE) statistics:
+Due to spin-statistics theorem, Bosons have no limits on their occupation number, each state can be populate infinitly. They follow the **Bose-Einstein** (BE) statistics:
 
 $$
 \xi^{BE}_\lambda = \sum_{n_\lambda=0}^\infty \left(e^{-\beta (\epsilon_\lambda - \mu)}\right)^{n_\lambda} = \frac{1}{1-e^{-\beta(\epsilon_\lambda - \mu)}}
@@ -83,7 +82,7 @@ $$
 $$
 
 
-For fermions, 
+For fermions, **Fermi-Dirac** statistics: 
 
 $$
 \xi^{FD}_\lambda = \sum_{n_\lambda=0}^1 \left(e^{-\beta n_\lambda (\epsilon_\lambda - \mu)}\right) = 1 + e^{-\beta (\epsilon_\lambda - \mu)}

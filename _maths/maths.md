@@ -45,6 +45,9 @@ subtitle: Maths and mathematical physics
 
 # Complex analysis and quantum field theory
 
+# Geometrical quantization
+
+
 # General mathematics 
 
 - [Polyhedrons (french)](polyhedron/polyhedron.md)

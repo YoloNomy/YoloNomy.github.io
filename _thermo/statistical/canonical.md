@@ -22,50 +22,52 @@ In this case, all possible particle configuration are equally probable, and thus
 $$\boxed{p_i = \frac{1}{N}}$$
 
 associated with a single value for the entropy $$S = \ln(N)$$.
-As $N$ is extremely large, each configuration of particle is treated equally and has an extremely low probability of occuring. What else is there to say for this very specific case?
+As $N$ is extremely large, each configuration of particle is treated equally and has an extremely low probability of occuring. In the case of an isolated system at equilibrium, this is the best description we can go for. What else is there to say for this very specific case?
 
-Imagine that we have no informations at all about the system, but that the microstates can be distinguished by some property. They could have different energy $E_i$ or be associated with different observed colors or anything you might want.
-Let $g_i$ be the **degeneracy** that is the number of possible microstates (particle configurations) amongst the $N$ associated with the same property, say the energy $E_i$. That is, for example $g(E_2)=3$ would mean that there exist three different particle configurations in the box with the same energy state $E_2$.
+Imagine that we have no informations at all about the system, but that the microstates can be distinguished by some property. They could have different energy $E_i$ (and thus not be isolated, in which case all microstates would have a fixed total energy $E$) or be associated with different observed colors or anything you might want. 
+Let $g_n$ be the **degeneracy** that is the number of possible microstates (particle configurations) amongst the $N$ associated with the same property, say the energy $E_n$. Now the index $n$ goes over all the possible energy values, while $i$ will label the $N$ accessible microstates. For example $g(E_2)=3$ would mean that there exist three different particle configurations in the box with the same energy state $E_2$. In the case of the fair dice analogy, this could mean that amongst our 6 faces labelled by indices $i$, faces could also have a color $C_n=\lbrace \text{blue}, \text{green}...\rbrace$. Multiple faces could have the same colors. For example, $g_2 = g(\text{green})=3$ would mean that three faces amongst the 6 are green.
 
 We have then, by construction:
 
 $$
-\sum_i g_i = N
+\sum_n g_n = N
 $$
 
-where, as a reminder, $N$ is the total number of microstates (which for the case of possible particle configurations could be extremely large, and even infinite) and $g_i$ is the number of such configurations with energy $E_i$.
+where, as a reminder, $N$ is the total number of microstates (which for the case of possible particle configurations could be extremely large, and even infinite) and $g_n$ is the number of such configurations with energy $E_n$.
 
-It is clear now, that the probability $p(E_i)$ that the observed microstate has the energy $E_i$ should be $p(E_i)=p_i g_i$. Since $p_i=1/N$, we have:
+It is clear now, that the probability $p(E_n)$ that the observed microstate has the energy $E_n$ should be
 
-$$\boxed{p(E_i) = \frac{g_i}{N}}$$
+$$p(E_n)=\sum_{i \,\text{with}\, E_i=E_n}p_i.$$
+
+Since each microstate has an identical probability $p_i=1/N$ and there are $g_n$ microstates with energy $E_n$, we get:
+
+$$\boxed{p(E_n) = \frac{g_n}{N}}$$
 
 Note that even though they have similar names, $p_i$ and $p(E_i)$ are different quantities. The first is the probability that the system will be observed in the specific and unique configuration $i$, while the second is the probability that the state will be one of possibly many with energy $E_i$. Clearly, the more configurations (microstates) are associated with a specific energy state, the more probable this energy state will be. Without any further constraints, the system will occupy spontenously the energy states associated with the largest number of microscopic configurations (most of them being e.g. a random distribution of particles around the box) and strange microscopic configurations (as all the particles in one corner, or all particles with high velocity, associated with very low or very high energy respecitvely), will remain possible, but largely excluded.
 
-<!---
-Now, can we write the entropy of such system in an interesting way?
-
-## Expressing and interpreting the entropy 
-
+<!-- <details markdown="1">
+  <summary><strong>Supplement: microcanonical entropy and number of configurations</strong></summary>
+ 
 Recall from the [first lecture](../entropy/), that the entropy $S$ of a probability distribution $p_i$ is 
 
 $$ S= -\sum_i p_i \ln(p_i)$$
 
-Let's try to re-express it term of the degeneracy $g_i$.
-To do so, we consider the number of possible ways to rearange the $N$ microstates into the possible allowed energy states with degeneracies $g_i$, given by:
+Let's try to re-express it term of the degeneracy $g_n$.
+To do so, we consider the number of possible ways to rearange the $N$ microstates into the possible allowed energy states with degeneracies $g_n$, given by:
 
 $$
-C^g_N = C^{g_1,g_2,...}_N = \frac{N!}{\prod_i g_i!}
+C^g_N = C^{g_1,g_2,...}_N = \frac{N!}{\prod_i g_n!}
 $$
 
-$C^{g}_N$ thus tells you how you could redistribute $g_i$ degeneracies amongst the $N$ microstates.
+$C^{g}_N$ thus tells you how you could redistribute $g_n$ degeneracies amongst the $N$ microstates.
 
-Maximizing $C^g_N$ will give us the most probable configuration of the $g_i$. It can be shown that this maximum is very sharp, making other configurations almost impossible. 
+Maximizing $C^g_N$ will give us the most probable configuration of the $g_n$. It can be shown that this maximum is very sharp, making other configurations almost impossible. 
 
-If $N$ and $g_i \to \infty$, which is clearly the case for physical systems made of atoms, we can use the so called **Stirling approximation**:
+If $N$ and $g_n \to \infty$, which is clearly the case for physical systems made of atoms, we can use the so called **Stirling approximation**:
 
-$$ N! \sim N^N e^{-N} $$
+$$ N! \sim N^N e^{-N} $$ -->
 
-<details>
+<!-- <details>
   <summary>Proof</summary>
   
 Recall first that $N! = 1\times 2 \times 3 ... \times N$ and that for two number $a$ and $b$, $ln(a \times b)=\ln(a)+\ln(b)$. Then $\ln(N!)= \ln(1\times 2 \times 3 ... \times N) = \ln(1)+ \ln(2) + ...+\ln(N)$. As such:
@@ -101,22 +103,22 @@ $$
 Using Stirling's approximation:
 
 $$
-C^g_N =  \frac{N!}{\prod_i g_i!} \sim \frac{N^N e^{-N}}{\prod_i g_i^{g_i}e^{-g_i}}
+C^g_N =  \frac{N!}{\prod_i g_n!} \sim \frac{N^N e^{-N}}{\prod_i g_n^{g_n}e^{-g_n}}
 $$
 
-Now $$\prod_i g_i^{g_i}e^{-g_i}= e^{-\sum_k g_i}\prod_i g_i^{g_i}$$, since $e^{-g_1}e^{-g_2}...= e^{-g_1-g_2...}$. And since $\sum_k n_k =N$, we find that $\prod_i g_i^{g_i}e^{-g_i}= e^{-N}\prod_i g_i^{g_i}$. 
+Now $$\prod_i g_n^{g_n}e^{-g_n}= e^{-\sum_k g_n}\prod_i g_n^{g_n}$$, since $e^{-g_1}e^{-g_2}...= e^{-g_1-g_2...}$. And since $\sum_k n_k =N$, we find that $\prod_i g_n^{g_n}e^{-g_n}= e^{-N}\prod_i g_n^{g_n}$. 
 
 Thus:
 
 $$
-C^g_N \sim \frac{N^N}{\prod_i g_i^{g_i}}
+C^g_N \sim \frac{N^N}{\prod_i g_n^{g_n}}
 $$
 
 Taking now the logarithm (and recalling that $ln(a/b)=ln(a)-ln(b)$):
 
 $$
 \begin{aligned}
-\ln(C^g_N)&= N\ln(N)- \sum_i g_i \ln(g_i)\\
+\ln(C^g_N)&= N\ln(N)- \sum_i g_n \ln(g_n)\\
 &= Nln(N) - \sum_i p_i N \ln(p_iN)\\
 & =  Nln(N) - \sum_i p_i N(\ln(p_i)+ \ln(N))\\
 &= Nln(N) - \sum_i N p_i\ln(p_i)+ \sum_i N p_i\ln(N))\\
@@ -124,10 +126,14 @@ $$
 & = N S
 \end{aligned}
 $$
-</details>
+</details> -->
 
-From the previous expression, we understand that maximizing $C^g_N$ is equivalent to maximizing $S$ (as $N$ is fixed). As such, given $N$ microstates and some ways to redistribute them into degeneracies $g_i$, maximizing the entropy gives us the distribution associated with the largest number of ways to 
--->
+<!-- From the previous expression, we understand that maximizing $C^g_N$ is equivalent to maximizing $S$ (as $N$ is fixed). As such, given $N$ microstates and some ways to redistribute them into degeneracies $g_n$, maximizing the entropy gives us the distribution associated with the largest number of ways to arange energy states.
+
+</details> -->
+
+
+
 
 ## The biased dice of nature: The canonical model and equilibrium with a heat bath
 

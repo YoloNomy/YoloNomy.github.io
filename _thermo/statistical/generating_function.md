@@ -13,16 +13,23 @@ The statements in this lecture are very general and apply to both the discrete, 
 
 # Other derivations of the ensembles
 
-**fundamental postulate** of statistical physics, in the microcanonical ensemble, all microstates are equiprobable.
+It is sometimes stated that the
+**fundamental postulate** of statistical physics, is that all accessible microstates of an isolated system at equilibrium are equiprobable, which is a result we found for the microcanonical ensemble. 
+If multiple microstates $g(E_i)$ amongst the total number of $N$ possible microstates are associated with the same energy value, the probabily $p_i$ for the system to have an energy $E_i$ is:
 
-$$ p= \frac{1}{\Omega}$$ 
+$$p_i =  \frac{g(E_i)}{N}$$
 
-in the continuous case discussed in [this lecture](./phasespace.md), we will see that $\Omega$ correspond to some volume in phase-space.
-Probabilities are ratio of size, or of volumes.
+Consider a large thermostat $\mathcal{S}$ and a smaller subsystem $\mathcal{s}$. The total system made by the large thermostat and the small subsystem have a total energy $E_{\rm tot}$. 
+The small subsystem can be in various energy levels $E_i$ with degeneracy $g^{s}(E_i)$. 
 
-$$ p = \frac{\Omega_{\rm sys}}{\Omega_{\rm tot}}$$
+$$g^{s}(E_i)g^{\mathcal{S}}_i(E_{\rm tot}-E_i)$$
 
-# Generating functions
+
+$$p_i = \frac{g^{s}(E_i)g^{\mathcal{S}}_i(E_{\rm tot}-E_i)}{\sum_i g^{s}(E_i)g^{\mathcal{S}}_i(E_{\rm tot}-E_i)}$$
+
+For [the continuous case](./phasespace.md), we saw that the degeneracy should be replaced by $\Omega(E)$ which are the volumes occupied in phase-space. Otherwise, the proof goes identically. This proof is often presented in the litterature as an alternative to the entropy maximisation. 
+
+# Generating functions and $Z$
 
 Now that we saw some fundamental principle on statistical physics, we can try to go a little deeper. The aim of this lecture is to get better insight on what is the partition function $Z$ and why it seems to be such a powerful tool. To do so, we will look at slightly advanced concepts of statistics: moments, cumulents and their generating functions.
 

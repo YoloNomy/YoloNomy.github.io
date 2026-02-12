@@ -82,7 +82,9 @@ In what follows, we will freely alternate between expressions written in thermod
 The notion of **thermal equilibrium** was a bit hidden so far, and we should be explicit on how it appears in our model. 
 In this class, we are now exclusively concerned with systems in thermal equilibrium. The fact that we can define unambigiously a single temperature $T$ to our system is a clear sign that we are in such a situation here.
 The assumption of thermal equilbrium is hidden behind the fact that the probability distribution $p_i$ does not change with time. The system moves around its microstates, but the probability of each microstate always remain the same. After a long enough time, it will have explored all of it's accessible microstates, allowing us to assume ergodicity (see supplement on the mean value in this [lecture](./entropy.md)). 
-Even when considering transformations in the following section, we always consider transition from one state of equilibrium to another one.
+When considering transformations (as in the following section), we always consider transition from one state of equilibrium to another one.
+
+Quantities such as $n$,$V$, $P$ and $T$ were state variables in classical thermodynamics, that is quantities that could be measured, defining the state of the system. In a statistical context, they are better understood as mean quantities caracterising the thermal equilibrium, emmerging from the averaged and uniform underlying microscopic properties (e.g. mean momentum for $P$ an mean energy for $T$), as well as quantities characterizing how the system would transform if he went from one state of equilibrium to another ($P$ and $T$ characterizing changes of $\langle E \rangle$ and of the underlying $p_i$ if $V$ or $S$ change).
 
 ## Energy conservation and the first principle 
 

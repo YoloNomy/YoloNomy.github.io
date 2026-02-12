@@ -195,7 +195,7 @@ If nothing is known except the normalisation of probabilities, we find the proba
 $$\boxed{\rho(\Gamma) = \frac{1}{\Omega}}$$
 
 where $\Omega = \int_\Pi \text{d}\Gamma$ is the total phase space-volume. All microstates are **equiprobable**. This is sometimes taken to be the **fundamental postulate** of statistical mechanics. Indeed, assuming this, it is possible to derive the expression for the other ensembles without invoking the maximisation of entropy, as discussed in [this lecture](./generating_function.md).
-If we were to focus on specific regions of phase space with a given value of energy, we would find $\rho(E)=1/\Omega(E)$, which is equivalent to the discrete case with degeneracies $g$. The probability density is thus proportional to the volume occupied in phase space by the energy value. 
+If we were to focus on specific regions of phase space with a given value of energy, we would find $\rho(E)=\Omega(E)/\Omega$, which is equivalent to the discrete case with degeneracies $p_i=g_i/N$. The probability density is thus proportional to the volume occupied in phase space by the energy value. 
 
 <details markdown="1">
   <summary><strong>Proof:</strong> </summary>
