@@ -5,7 +5,7 @@ parent: thermo
 nav_order: 1
 ---
 
-Let's now traduce the principle of maximum entropy in term of more familiar problems, as a large number of particles boucing in a box. We will be interested here in a system, like a gas, which has a discrete number of distinguishable microstates. For now, the exact physical system is not important, and the equations we will derive will be very general. The only thing that matters is that our system can access multiple microstates with different energy levels.
+Let's now translate the principle of maximum entropy in term of more familiar problems, as a large number of particles boucing in a box. We will be interested here in a system, like a gas, which has a discrete number of distinguishable microstates. For now, the exact physical system is not important, and the equations we will derive will be very general. The only thing that matters is that our system can access multiple microstates with different energy levels.
 
 ## The fair dice of nature: The microcanonical ensemble for isolated systems
 
@@ -15,7 +15,7 @@ For now, you can think of this box of gas as a die with an extremely large numbe
 
 ## Microstates and degeneracies
 
-In the case where either nothing special is known about the system, or all of its properties are strictly fixed (for example imagine an isolated system of perfectly known properties: $T$, $V$, $n$) all possible microstates are equally accessible and none are prefered. This would simply be a generalisation of the fair die.
+In the case where either nothing special is known about the system, or all of its properties are strictly fixed (for example imagine an isolated system of perfectly known properties: $P$, $V$, $n$) all possible microstates are equally accessible and none are prefered. This would simply be a generalisation of the fair die.
 
 In this case, all possible particle configuration are equally probable, and thus, by maximizing the entropy, we would obtain, as in the previous lecture for the fair die:
 
@@ -348,7 +348,7 @@ $$\lim_{\beta \to 0} p(E_n)= \frac{g_n}{N}$$
 
 At very high temperatures, we thus find back the microcanonical model for which the entropy is maximised without any additional constraint! This means that, at high energy the states become equally accessible and energy of the heat bath can not discriminate and prefer some states anymore. 
 
-This can be understand again by looking at the above figure $p_i(E_i)$. With increasing values of $\langle E\rangle$ (and thus of $T$), we see that the $p_i$ curves become flatter and flatter, getting closer and closer to an equiprobable distribution (which would be a flat line). At high temperature, all energy state (very high and very low) become equally accessible. The lack of information, disorder and lack of predibility are thus maximum, which correspond to a high entropy state. 
+This can be understand again by looking at the above figure $p_i(E_i)$. With increasing values of $\langle E\rangle$ (and thus of $T$), we see that the $p_i$ curves become flatter and flatter, getting closer and closer to an equiprobable distribution (which would be a flat line). At high temperature, all energy state (very high and very low) become equally accessible. The lack of information, disorder and lack of predictability are thus maximum, which correspond to a high entropy state. 
  
 Another way to see this is as follows. Assuming that $S$ and $\langle E \rangle$ are suitable functions for the inverse derivative theorem (link), we can express 
 
@@ -373,7 +373,7 @@ From which
 
 $$ P = \frac{\text{d} \vec{F}\cdot\text{d}\vec{x}}{\text{d}V} =-\frac{\partial{ \langle E \rangle}}{\partial{V}}\Bigg|_S$$ 
 
-The condition of fixed $\mathcal{S}$ is here simply to ensure that we are considering the mechanical change of energy (work) due to pressure without considering any possible contribution coming from other energy transfer, such as heat (which would be the case if the transformation considered is **adiabatic**, as defined in the classical thermodynamics class).
+The condition of fixed $S$ is here simply to ensure that we are considering the mechanical change of energy (work) due to pressure without considering any possible contribution coming from other energy transfer, such as heat (which would be the case if the transformation considered is **adiabatic**, as defined in the classical thermodynamics class).
 
 
 The definition above for pressure is very nice, but difficult to use in practice, as it is not easy to express simply the condition of constant entropy. A much convinient formula that we can find for $p$ is given by
@@ -452,7 +452,7 @@ $$A = \langle E \rangle - T S $$
 
 from our previous derivations:
 
-$$A = - \log(Z)/\beta$$
+$$A = - \ln(Z)/\beta$$
 
 </details>
 
