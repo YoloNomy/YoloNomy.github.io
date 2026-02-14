@@ -277,7 +277,7 @@ As such, knowing $Z$ allows us to express all our state variable and state funct
 
 We see a common structure in the definition of $T$ and $P$ above in the sense that they are both defined as the rate of change of the mean energy with respect to under some fixed conditions. That is, both definition follows the structure:
 
-$$ X = -\frac{\partial{\langle E\rangle}}{\partial{Y}}\Bigg|_Z$$ 
+$$ X = \frac{\partial{\langle E\rangle}}{\partial{Y}}\Bigg|_Z$$ 
 
 If two variables $X$ and $Y$ are related in such a way, they are say to be **conjugate variables** in the sense of thermodynamics. $X$ is **intensive** while $Y$, sometimes called the **control parameter** is **extensive** (see classical thermodynamics class).
 This is the case of many relevant quantities that appear in thermodynamics. All these quantities appear in the first principle of thermodynamics as products in the form of:
@@ -289,7 +289,7 @@ that is, changing the control parameter $Y$ a little adds $X\text{d}Y$ to the in
 Here are some example of conjugate variables:
 
 - $T$ and $S$ (temperature and entropy)
-- $p$ and $V$ (pressure and volume)
+- $P$ and $V$, or more rigorously -$V$ (pressure and volume)
 - $\mu$ and $N$ (chemical potential and number of particles)
 
 </details>
@@ -457,7 +457,6 @@ $$A = - \ln(Z)/\beta$$
 </details>
 
 Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to express the partition function $Z$, from which we can infer all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the average energy $E$, the entropy $S$...). This is done only under the assumption that the statistical entropy is maximum, reflecting our knowledge of the system in the most unbiased way.
-
 
 ## Going further: recommended readings and watching
 

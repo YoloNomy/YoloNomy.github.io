@@ -13,21 +13,38 @@ The statements in this lecture are very general and apply to both the discrete, 
 
 # Other derivations of the ensembles
 
+## From microstates of the reservoir
+
 It is sometimes stated that the
-**fundamental postulate** of statistical physics, is that all accessible microstates of an isolated system at equilibrium are equiprobable, which is a result we found for the microcanonical ensemble. 
-If multiple microstates $g(E_i)$ amongst the total number of $N$ possible microstates are associated with the same energy value, the probabily $p_i$ for the system to have an energy $E_i$ is:
+**fundamental postulate** of statistical physics, is that all accessible microstates of an isolated system at equilibrium are equiprobable, which is a result we found by maximizing the entropy for the microcanonical ensemble. We can use this as a starting point to rederive the $p_i$ for the other ensembles, without using the entropy maximisation technique. This approach is the most commonly found in standard textbooks on statistical physics.
 
-$$p_i =  \frac{g(E_i)}{N}$$
+As we saw, the canonical ensemble is used when one consider a small system $s$ in contact with a large reservoir $R$, constraining $s$ to have a mean energy $\langle E \rangle$.
+One can consider the total system $s+R$ as being isolated and as such, any configuration of this total system must be equiprobable. 
+Since it is isolated, the total system has a fixed energy $E=E_R + E_s$, where both $E_R$ and $E_s$ can change with time (but not $E$).
+Let's assume that the small system has $N_s$ possible microstates and that the reservoir has $N_R$ possible microstates. The total number of microstates for $s+R$ will be $N_{s+R}=N_s N_R$ to account for all possible combination of both.
 
-Consider a large thermostat $\mathcal{S}$ and a smaller subsystem $\mathcal{s}$. The total system made by the large thermostat and the small subsystem have a total energy $E_{\rm tot}$. 
-The small subsystem can be in various energy levels $E_i$ with degeneracy $g^{s}(E_i)$. 
+Now, if the small system $s$ is in one the microstate $i$ with an energy $E_s=E_i$, the reservoir $R$ must be in one of the its $g_R(E-E_i)$ possible configuration with energy $E- E_R$. For now we assume that there is a unique microstate with energy $E_i$ (ignoring degeneracies, which would simply require to multiply everything by $g_s$). Then, the probability that $s$ is in its microstates $i$ is equal to the probability that $R$ is in a microstate of energy $E-E_i$, that is:
 
-$$g^{s}(E_i)g^{\mathcal{S}}_i(E_{\rm tot}-E_i)$$
+$$\boxed{p_i = \frac{g_R(E_i - E)}{N_{s+R}}}$$
 
+We will leave it to you to decide whether you are more convinced by this proof for the canonical ensemble derivation, or by the maximum entropy approach. Both are undoubtly complementary.
 
-$$p_i = \frac{g^{s}(E_i)g^{\mathcal{S}}_i(E_{\rm tot}-E_i)}{\sum_i g^{s}(E_i)g^{\mathcal{S}}_i(E_{\rm tot}-E_i)}$$
+For the [continuous case](../statistical/phasespace.md), an absolutely identical argumentation can be pursued using ratios of volumes in phase space:
 
-For [the continuous case](./phasespace.md), we saw that the degeneracy should be replaced by $\Omega(E)$ which are the volumes occupied in phase-space. Otherwise, the proof goes identically. This proof is often presented in the litterature as an alternative to the entropy maximisation. 
+$$\rho = \frac{\Omega(E-E_i)}{\Omega}$$
+
+but you will need the next lecture to properly understand this! 
+
+## Using the properties of the exponential function
+
+Energy is only defined up to a constant:
+
+$$\frac{P(E_n)}{P(E_m)}= \frac{P(E_n+C)}{P(E_m+C)} $$
+
+The only continuous function satisfying this constraint is of the form:
+
+$$P(E_n) \propto e^{-\beta E_n}$$
+
 
 # Generating functions and $Z$
 
@@ -96,4 +113,5 @@ Which is the so-called **Laplace transformation** of the function $p(x)$.
 
 ## Going further: recommended readings
 
+- Elements of Statistical Mechanics: With an Introduction to Quantum Field Theory and Numerical Simulation - I. Sachs, S. Sen, J. Sexton (2006) -  Cambridge University Press 
 - Physique statistique (French) - 2nd edition (2024) - C. Texier, G. Roux - Dunod

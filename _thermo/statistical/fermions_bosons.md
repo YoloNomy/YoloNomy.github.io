@@ -21,11 +21,12 @@ However, $s$ as a very important impact for statistical physics, as it divide th
 
 The link between the spins of particles and their statistical properties is a very subtle one, given by the so-called **spin-statistics** theorem which is notably difficult to prove.
 
+## Fock spaces for bosons and fermions
+
 ## Factorisation of the partition functions
 
 
-
-## Quantum statistics
+## Partition functions and occupation number
 
 To describe multiparticle states, we work in Fock space, that is, tensorial product of single particle Hilbert spaces. The basis wavevector describing the states of the systems are given by the eigenvector of several commuting observables $\ket{n_1,n_2, \cdots, n_M}$. Where $1\cdots M$ represents the (potentialy infinite) $M$ possible quantum states accessible to a particle and $n_\lambda$ are the occupation number of each quantum states i.e. the number $n_\lambda$ of particles observed in the quantum state $\ket{\lambda}$. The wavevector $\ket{\Phi}$ describing the multiparticle system can then be decomposed in the basis:
 

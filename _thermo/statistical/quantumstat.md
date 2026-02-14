@@ -137,6 +137,38 @@ $$\frac{\text{d}}{\text{d}t} \langle \hat{f} \rangle= \frac{1}{i\hbar}\langle [\
 <details>
   <summary><strong>Proof:</strong></summary>
 
+$$
+\begin{align}
+\frac{\text{d}}{dt} \langle \hat{f} \rangle 
+&= \frac{\text{d}}{\text{d}t} \bra{\phi(t)} \hat{f}(t) \ket{\phi(t)} \\
+&= \left(\frac{\text{d}}{\text{d} t}\bra{\phi(t)}\right) \hat{f}(t) \ket{\phi(t)} 
++ \bra{\phi(t)} \frac{\partial \hat{f}(t)}{\partial t} \ket{\phi(t)} 
++ \bra{\phi(t)} \hat{f}(t) \frac{\text{d}}{\text{d} t} \ket{\phi(t)}.
+\end{align}
+$$
+
+Using Schrödinger equation:
+$$
+\begin{align}
+\begin{cases}
+i \hbar \frac{d}{dt} \ket{\phi(t)} &= \hat{H} \ket{\phi(t)}, \\
+-i \hbar \frac{d}{dt} \bra{\phi(t)} &= \bra{\phi(t)} \hat{H},
+\end{cases}
+\end{align}
+$$
+
+we get:
+
+$$
+\begin{align}
+\frac{d}{dt} \langle \hat{f} \rangle 
+&= \frac{1}{i \hbar} \bra{\phi(t)} \hat{H} \hat{f}(t) \ket{\phi(t)} 
+- \frac{1}{i \hbar} \bra{\phi(t)} \hat{f}(t) \hat{H} \ket{\phi(t)} 
++ \bra{\phi(t)} \frac{\partial \hat{f}(t)}{\partial t} \ket{\phi(t)} \\
+&= \frac{1}{i \hbar} \langle [\hat{f}(t), \hat{H}] \rangle 
++ \left\langle \frac{\partial \hat{f}(t)}{\partial t} \right\rangle.
+\end{align}
+$$
 </details>
 
 The geometry of the Hilbert space is encoded in the operator commutator $[.,.]$, which is the quantum equivalent to the classical Poisson bracket: 
@@ -167,10 +199,20 @@ However, this can not be the right approach as due to the uncertainty principle 
 
 In quantum mechanics, if a system is described by a wave-vector/density operator in a Hilbert space $\mathcal{H}_1$, the composition of $\mathcal{N}$ such systems is described by a wave-vector/density operator living on the tensor-product space of each individual subsystem, that is:
 
-$$\mathcal{H} = \mathcal{H}_1 \otimes \mathcal{H}_2 ... \otimes \mathcal{H}_{\mathcal{N}} $$
+$$\mathcal{H}_{\mathcal{N}} = \mathcal{H}_1 \otimes \mathcal{H}_2 ... \otimes \mathcal{H}_{\mathcal{N}} $$
 
 This tensor product is at the heart of quantum collective behaviour, at origin notably of the puzzling **quantum intrication**. 
 
+However, such an account can not account for two critical features of statistical systems:
+
+- varying particle numbers.
+- indistinguishability
+
 ## Thinking in Fock space
 
+
 $$\mathcal{F}= \bigoplus_{\mathcal{N}}^{i=0} \mathcal{H}_i$$
+
+The space defined above is not quite yet what we need, because of the distinction between bosons and fermions, which we will discuss in the next class.
+
+Since Fock space itself is an Hilbert space, all the previous notions (entropy, density operator, time evolution) applies identically.

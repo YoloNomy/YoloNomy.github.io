@@ -332,7 +332,7 @@ We plotted below the probability distribution maximizing the entropy with the co
 
 
 <details markdown="1">
-<summary><strong>Exercice :</strong> think about other observational constraints you could add to the biased die to refine the estimation of it's probability distribution. Try to add them in the code and see how it changes the figure of $p_i$  </summary>
+<summary><strong>Exercice :</strong> think about other observational constraints you could add to the biased die to refine the estimation of it's probability distribution. Try to add them in the code and see how it changes the curve of $p_i$  </summary>
 
 For the case of a biased die, we can not look at other observables than $i$ to constraint their average value. 
 
@@ -347,8 +347,13 @@ $$
 
 The variance quantifies the average deviation of $i$ around it's average value. In other word, it quantifies the scatter of $i$ around $\langle i \rangle$.
 
-Adding the constraint on the variance with it's own Lagrange multiplier can be done and further specify the shape of $p_i$ as done in [this code](../codes/biased_dice_var.py).
-However, one should be careful, as doing so might force the probability distribution to look like a bell curve. It should thus be done only when justified, in order to avoid biaising what we think $p_i$ look like with unjustified a priori.
+Adding the constraint on the variance with it's own Lagrange multiplier can be done and further specify the shape of $p_i$, leading to:
+
+$$ p_i = \frac{1}{\sum_i^6e^{-\lambda_1i - \lambda_2 i^2}}e^{-\lambda_1i - \lambda_2 i^2}$$
+
+This is further illustrated in [this code](../codes/biased_dice_var.py). However, one should be careful, as doing so might force the probability distribution to look like a Gaussian bell curve.
+
+It should thus be done only when justified, in order to avoid biaising what we think $p_i$ look like with unjustified a priori.
 
 ![image](../images/biased_dice_var.png){: width="80%"}
 
@@ -359,7 +364,6 @@ However, one should be careful, as doing so might force the probability distribu
 <details markdown="1">
   <summary><strong>Exercice :</strong> Consider the same exercice for the sum of two dice, fair and biased. </summary>
 
-*Maximum entropy solution for the biased die problem with a mean of 4.5 and a variance of 0.5. Plotted using [this code](../codes/biased_dice_var.py).*
 
 </details>
 
