@@ -11,18 +11,6 @@ $$
 \newcommand{\braket}[2]{ \langle #1 | #2 \rangle} 
 $$
 
-## Bosons and fermions
-
-At the fundamental level, elementary particles are described by quantum fields. These abstract fields, are discussed in the associated [class](../../_quantum/quantum.md). The mathematical form that these fields can have is not purely arbitrary, but is deeply dictated by symmetry principle. In particular, the structure and symmetries of our space-time impose the fields to be associated with a number, the spin $s$, which can be either an integer or a half-integer. The value of $s$ is rather mysterious and dictates how the field transform under rotations and change of reference frame in space-time. Discussing it further is way beyond the scope of this class.
-However, $s$ as a very important impact for statistical physics, as it divide the elementary particles into two distinct types:
-
-- **fermions**: which are particles associated with fields of half-integer spins. We know that most particles forming matter: electrons, protons and quarks are fermions of spin $s=1/2$. This is also the case of every atomic nuclei with a odd number of nucleons.
-- **bosons**: which are particles associated with fields of integer spins. Particles associated to fundamental forces of natures are bosons. This is the case for photons, gluons and $W$ and $Z$ bosons with $s=1$ and the Higgs boson with $s=0$. Atomic nuclei with an even number of nucleons also behave as bosons.
-
-The link between the spins of particles and their statistical properties is a very subtle one, given by the so-called **spin-statistics** theorem which is notably difficult to prove.
-
-## Fock spaces for bosons and fermions
-
 ## Factorisation of the partition functions
 
 
@@ -36,8 +24,8 @@ $$
 
 $$
 \begin{aligned}
-&U=\sum_\lambda n_\lambda \epsilon_\lambda \\
-&N=\sum_\lambda n_\lambda
+&U=\langle \hat{H}\rangle = \sum_\lambda n_\lambda \epsilon_\lambda \\
+&N= \langle \hat{N}\rangle=\sum_\lambda n_\lambda
 \end{aligned}
 $$
 
@@ -57,7 +45,7 @@ $$
 The average number of particle occuping a quantum state is given by:
 
 $$
-\langle n_{\lambda} \rangle = \frac{\partial \ln(\xi_\lambda)}{\partial \alpha}
+\boxed{\langle n_{\lambda} \rangle = \frac{\partial \ln(\xi_\lambda)}{\partial \alpha}}
 $$
 
 with $\alpha := \beta \mu$
@@ -74,7 +62,6 @@ Remembering the expression for an infinite geometric sum:
 $$
 \sum_{k=0}^\infty q^k = \frac{1}{1-q}
 $$
-
 
 We then get:
 

@@ -32,8 +32,9 @@ You will find here some fun python applications to physics with some detailled e
 - [Weakly interacting and Van der Waals gas: the statistical perspective](../statistical/interacting_gas/)
 - [Grand canonical ensemble](../statistical/grandcanonical/)
 - **III. Quantum statistics**
-- [Quantum statistics: Thinking in Hilbert and Fock spaces](../statistical/quantumstat/)
-- [Quantum statistics: fermions and bosons](../statistical/fermions_bosons/)
+- [Quantum statistics: Thinking in Hilbert space](../statistical/quantumstat/)
+- [Quantum statistics: Thinking in Fock space](../statistical/Fock_space/)
+- [Quantum statistics: partition function for fermions and bosons](../statistical/fermions_bosons/)
 - [Fermi gas](../statistical/fermigas/)
 - [The blackbody radiation](../statistical/BB/)
 - **IV. Advanced topics**

@@ -68,7 +68,7 @@ $$\langle \hat{f}\rangle = {\rm Tr}(\hat{\rho}\hat{f}) $$
 Out of the density operator, one can build the **Von Neumann entropy**:
 
 $$
-\boxed{S = Tr(\hat{\rho} \ln(\hat{\rho}))}
+\boxed{S = -\text{Tr}(\hat{\rho} \ln(\hat{\rho}))}
 $$
 
 which is equivalent to the classical entropy.  Due to its concavity, extremalization is maximization. Using the Lagrange multiplier technique we find the expression for $\hat{\rho}$ maximizing $S$.
@@ -88,11 +88,36 @@ After the discrete and the continuous case, we get a third flavour of the exact 
 
 **Microcanonical ensemble:** maximising $S$ using only the normalisation of probabilities we find
 
-$$\rho = \frac{1}{N}\mathbb{1}$$
+$$\rho = \frac{1}{N}\mathbb{I}$$
 
-where $N$ is the dimension of the Hilbert space and $\mathbb{1}$ is the unit operator on $\mathcal{H}$ such that $\ket{\psi}=\mathbb{1}\ket{\psi}$ for all $\psi \in \mathcal{H}$.
+where $N$ is the dimension of the Hilbert space and $\mathbb{I}$ is the unit operator on $\mathcal{H}$ such that $\ket{\psi}=\mathbb{I}\ket{\psi}$ for all $\psi \in \mathcal{H}$.
 
-**(Grand) canonical ensemble:** considering now a system that can exchange both particles and energy with the surrounding medium at equilibrium and adding conditions on the mean values of energy and particle number,we get the quantum generalisation of the Grand canonical ensemble:
+<details>
+  <summary><strong>Proof</strong></summary>
+
+In this case, we have no information about the system other than it must exist in a valid state. The only constraint is the normalization of the density operator:
+$\text{Tr}(\hat{\rho}​)=1$
+
+Using Lagrange multipliers:
+
+$$\mathcal{L}(\hat{\rho})=−\text{Tr}(\hat{\rho}\ln(\hat{\rho}​)-\alpha(\text{Tr}(\hat{\rho}​)−1)$$
+
+Taking the functional derivative with respect to $\hat{\rho}$​ and setting it to zero:
+
+$$\frac{\delta \hat{\rho}\delta}{\delta \hat{\rho}}​=−\ln(\hat{\rho})​−\mathbb{I}−\alpha\mathbb{I}=0$$
+
+$$ln(\hat{\rho})​=−(1+\alpha)\mathbb{I}$$
+
+$$\hat{\rho}​=e^{−(1+\alpha)}\mathbb{I}$$
+
+Since $e^{−(1+\alpha)}$ is a constant, we call it $1/N$. Normalization $Tr(\hat{\rho}​)=1$ implies $N$ is the dimension of the accessible Hilbert space, yielding the equiprobability state:
+
+$$\rho = \frac{1}{N}\mathbb{I}$$
+
+</details>
+
+
+**(Grand) canonical ensemble:** considering now a system that can exchange both particles and energy with the surrounding medium at equilibrium. The number of particle $N$ is an observable, and we thus assume that there exist an operator $\hat{N}$ on $\mathcal{H}$ associated to the number of particles in the system. We will discuss in the next lecture exactly how to provide such an operator. Adding conditions on the mean values of energy and particle number in the entropy maximisation, we get the quantum generalisation of the Grand canonical ensemble:
 
 $$
 \boxed{\hat{\rho}= \frac{1}{\Xi}e^{-\beta(\hat{H} - \mu \hat{N})}}
@@ -109,6 +134,44 @@ Without surprise, we find here, with an identical proof, the same expressions fo
 <details>
   <summary><strong>Proof</strong></summary>
 
+In Fock space, we impose a constraint on the mean particle number
+$N = \mathrm{Tr}(\hat{\rho} \hat{N})$ and energy $U = \mathrm{Tr}(\hat{\rho} \hat{H})$.  
+We then define the Lagrangian to maximize the entropy under constraints:
+
+$$
+\begin{equation}
+\mathcal{L} = - \mathrm{Tr}(\hat{\rho} \ln \hat{\rho})
+- \lambda_0 \left( \mathrm{Tr}(\hat{\rho}) - 1 \right)
+- \beta \left( \mathrm{Tr}(\hat{\rho} \hat{H}) - \langle E \rangle \right)
+- \gamma \left( \mathrm{Tr}(\hat{\rho} \hat{N}) - \langle N \rangle \right),
+\end{equation}
+$$
+
+where $\lambda_0, \beta, \gamma$ are Lagrange multipliers.
+
+Taking the functional derivative of $\mathcal{L}$ with respect to $\hat{\rho}$ and setting it to zero gives:
+
+$$
+\begin{equation}
+\hat{\rho} = e^{-(\lambda_0 + 1)} \, e^{-\beta \hat{H} - \gamma \hat{N}}.
+\end{equation}
+$$
+
+We identify the chemical potential $\mu$ by
+
+$$
+\begin{equation}
+\gamma = - \beta \mu,
+\end{equation}
+$$
+
+and define $\Xi$ as
+
+$$
+\begin{equation}
+\Xi = e^{\lambda_0 + 1} = \mathrm{Tr} \left( e^{-\beta (\hat{H} - \mu \hat{N})} \right).
+\end{equation}
+$$
 
 </details>
 
@@ -188,31 +251,7 @@ which follows and generalizes the  Schrödinger equation.
 
 The probability distribution is independant of time if $\hat{H}$ commutes with $\hat{\rho}$: $[\hat{H},\hat{\rho}]=0$. This condition is satisfied for any function of the Hamlitonian: $\hat{\rho}=f(\hat{H})$, which are characteristic of **thermal equilibrium**.
 
-## Microstate for multiple particles 
+## Multiple particles
 
-In the above presentation, $\ket{\phi}$ or $\rho$ must describe the systems associated to multiple particles, possibly interacting, as $\Gamma$ was in classical mechanics. How to built such a Hilbert space in a consistent way?
-
-First, what should be our microstates? A crucial and irreconcible difference between classical and quantum mechanics is that, in classical mechanics, microstates $\Gamma$ were associated to unique, tangible physical realities (particle configurations). Finding $\rho(\Gamma)$ was looking for a statistical description of these possible realities. In quantum mechanics, the intrinsic and atomic describtion we use for the system is already intrinsically a probabilistic quantity $\ket{\phi}$ or $\hat{\rho}$.
-
-A naive idea would be to assume that each classical microstate $\Gamma$ should be associated with a possible pure state $\ket{\Gamma}$ such that the quantum state of the total system $\ket{\psi}$ is a linear combination of classical microstates.
-However, this can not be the right approach as due to the uncertainty principle ($[q_i,p_i]=i\hbar \delta_{ij}$), it is impossible to know both position and momentum perfectly. Thus the classical microstates can not be associated directly to quantum states $\ket{q_1,...q_\mathcal{N},p_1,...,p_\mathcal{N}}$. Furthemore, the transformation from classical phase space to Hilbert space, that is the replacement of the Poisson bracket with the commutator and of functions by operators change the structure of the theory in a deep and non trivial way. In short: there is a profound incompatibility between the classical geometry and the quantum geometry preventing us to do any simple transition from one to another. Finding this link is the topic of geometric quantization. As said in introduction, we will not further explore this direction here but instead build "from scratch" our quantum microstates for multiparticle systems.
-
-In quantum mechanics, if a system is described by a wave-vector/density operator in a Hilbert space $\mathcal{H}_1$, the composition of $\mathcal{N}$ such systems is described by a wave-vector/density operator living on the tensor-product space of each individual subsystem, that is:
-
-$$\mathcal{H}_{\mathcal{N}} = \mathcal{H}_1 \otimes \mathcal{H}_2 ... \otimes \mathcal{H}_{\mathcal{N}} $$
-
-This tensor product is at the heart of quantum collective behaviour, at origin notably of the puzzling **quantum intrication**. 
-
-However, such an account can not account for two critical features of statistical systems:
-
-- varying particle numbers.
-- indistinguishability
-
-## Thinking in Fock space
-
-
-$$\mathcal{F}= \bigoplus_{\mathcal{N}}^{i=0} \mathcal{H}_i$$
-
-The space defined above is not quite yet what we need, because of the distinction between bosons and fermions, which we will discuss in the next class.
-
-Since Fock space itself is an Hilbert space, all the previous notions (entropy, density operator, time evolution) applies identically.
+All this is nice and well. We motivated the use of Hilbert space instead of phase space as a necessary transition to go from classical systems to quantum systems. The two spaces share deep similarities in the form of their equations (time evolution of observable, entropy, partition function), as well as profound disimilarities in their internal structures and geometry (functions/operators, Poisson bracket/commutators).
+Now, in order to do proper statistical physics, we must understand what exactly should be the wave-vector $\ket{\phi}$, or the density operator $\hat{\rho}$ in the case of a system composed of multiple particles. This will be the topic of our next lecture.
