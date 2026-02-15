@@ -17,4 +17,6 @@ You will find here some fun python applications to physics with some detailled e
 
 # Quantum field theory
 
+- Thinking in Fock space, episode 2.
+
 # The standard model of particle physics

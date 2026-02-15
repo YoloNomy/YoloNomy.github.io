@@ -1,9 +1,146 @@
 ---
 layout: home
 title: Yolonomy
-subtitle: Learning maths and physics from begginer to advanced!
+subtitle: Learning maths and physics from beginner to advanced!
 ---
 
-Welcome to the Yolonomy website.
+<style>
+  /* Fix for the Beautiful Jekyll footer and general page background */
+  body, .footer-base, footer {
+    background-color: white !important;
+  }
 
-Logo: courtesy of J. Aumont.
+  :root {
+    --accent: #4285F4; /* Nice dark orange */
+    --accent-light: #F8F9FA;
+    --text-main: #1f2937;
+    --text-muted: #4b5563;
+    --border: #e5e7eb;
+  }
+
+  .home-content {
+    max-width: 800px;
+    margin: 60px auto 40px auto;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+  }
+
+  .home-content p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    max-width: 650px;
+    margin: 0 auto 20px auto;
+  }
+
+  .course-container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  .category-group {
+    margin-bottom: 50px;
+  }
+
+  .category-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .category-header::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: var(--accent);
+    opacity: 0.2;
+  }
+
+  .course-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .course-item {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .course-item:last-child {
+    border-bottom: none;
+  }
+
+  .course-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 10px;
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+  }
+
+  .course-link:hover {
+    background-color: var(--accent-light);
+    color: var(--accent);
+    padding-left: 20px;
+  }
+
+  .course-link::after {
+    content: "→";
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.2s ease;
+    transform: translateX(-10px);
+  }
+
+  .course-link:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .footer-attribution {
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 40px;
+    font-size: 0.85rem;
+    color: #9ca3af;
+  }
+</style>
+
+<div class="home-content">
+</div> 
+
+<div class="course-container">
+  <div class="category-group">
+    <div class="category-header">Our lectures</div>
+    <ul class="course-list">
+      <li class="course-item"><a href="/thermo/thermo/" class="course-link">Thermodynamics and statistical physics</a></li>
+      <li class="course-item"><a href="/optics/optics/" class="course-link">Optics</a></li>
+      <li class="course-item"><a href="/meca/meca/" class="course-link">Mechanics</a></li>
+      <li class="course-item"><a href="/EM/EM/" class="course-link">Electromagnetism</a></li>
+      <li class="course-item"><a href="/quantum/quantum/" class="course-link">Quantum Mechanics</a></li>
+      <li class="course-item"><a href="/cosmo/cosmo/" class="course-link">Astrophysics and cosmology</a></li>
+      <li class="course-item"><a href="/maths/maths/" class="course-link">Mathematics for physics</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer-attribution">
+  Logo: courtesy of J. Aumont.
+</div>

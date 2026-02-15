@@ -22,14 +22,15 @@ However, this can not be the right approach as due to the uncertainty principle 
 
 In quantum mechanics, if a system is described by a wave-vector/density operator in a Hilbert space $\mathcal{H}_1$, the composition of $\mathcal{N}$ such systems is described by a wave-vector/density operator living on the tensor-product space of each individual subsystem, that is:
 
-$$\mathcal{H}_{\mathcal{N}} = \mathcal{H}_1 \otimes \mathcal{H}_2 ... \otimes \mathcal{H}_{\mathcal{N}} $$
+$$\mathcal{H}_{\mathcal{N}} = \mathcal{H}_{(1)} \otimes \mathcal{H}_{(2)} ... \otimes \mathcal{H}_{(\mathcal{N})} $$
 
+where $\mathcal{H}_{\mathcal{N}}$ is the Hilbert space of the $\mathcal{N}$ systems taken together while $\mathcal{H}(i)$ is the Hilbert space of the $i^{\text{th}}$ subsystem.
 This tensor product is at the heart of quantum collective behaviour, at origin notably of the puzzling **quantum intrication**. Indeed, in such context, particles are not treated as separate, independent entities (and it is possible to do so only in specific conditions).
-As a reminder (and illustration), imagine that $\mathcal{H}_1$ is a two dimensional Hilbert space, which could for exemple describing the spin of a particle. A basis of  $\mathcal{H}_1$ is given by two orthogonal vectors $(\ket{\phi_1}=\ket{\uparrow}$, $\ket{\phi_2}=\ket{\downarrow})$. A general $\phi \in \mathcal{H}_1$ is thus written:
+As a reminder (and illustration), imagine that $\mathcal{H}(1)$ is a two dimensional Hilbert space, which could for exemple describing the spin of a particle. A basis of  $\mathcal{H}(1)$ is given by two orthogonal vectors $(\ket{\phi_1}=\ket{\uparrow}$, $\ket{\phi_2}=\ket{\downarrow})$. A general $\phi \in \mathcal{H}(1)$ is thus written:
 
 $$\ket{\phi} = \alpha\ket{\phi_1} + \alpha_2\ket{\phi_2}$$
 
-Where $\alpha_i$ quantify the probability for the particle to be observed as up or down ($\alpha_1\alpha_1^* +\alpha_1\alpha_2^*=1$). The Hilbert space of two identical particle treated together is $\mathcal{H}_2= \mathcal{H}_1 \otimes \mathcal{H}_1$. A basis for this space is $\lbrace \ket{\phi_1\phi_1}, \ket{\phi_1\phi_2}, \ket{\phi_2\phi_1}, \ket{\phi_2\phi_2} \rbrace$, where we used the shortcut notation
+Where $\alpha_i$ quantify the probability for the particle to be observed as up or down ($\alpha_1\alpha_1^* +\alpha_1\alpha_2^*=1$). The Hilbert space of two identical particle treated together is $\mathcal{H}_2= \mathcal{H}(1) \otimes \mathcal{H}(1)$. A basis for this space is $\lbrace \ket{\phi_1\phi_1}, \ket{\phi_1\phi_2}, \ket{\phi_2\phi_1}, \ket{\phi_2\phi_2} \rbrace$, where we used the shortcut notation
 $\ket{\phi_i}\otimes \ket{\phi_j} = \ket{\phi_i \phi_j}$, and as a reminder, the first slot is associated to the first particle and the second slot to the second particle. A general vector $\psi\in  \mathcal{H}_2$ can be written as:
 
 $$\ket{\psi} = \alpha_{11} \ket{\phi_1 \phi_1} + \alpha_{12} \ket{\phi_1 \phi_2} + \alpha_{21} \ket{ \phi_2 \phi_1} + \alpha_{22} \ket{ \phi_2 \phi_2 } $$
@@ -47,14 +48,14 @@ To address the physical reality of varying particle numbers—where particles ca
 
 $$\tilde{\mathcal{F}}= \bigoplus^{\infty}_{i=0} \mathcal{H}_i$$
 
-with $H_0=\mathbb{C}$ (representing the vacuum state, containing zero particles).
+with $\mathcal{H}_0=\mathbb{C}$ (representing the vacuum state, containing zero particles).
 A general $\ket{\Phi}\in \tilde{\mathcal{F}}$ can be written as:
 
 $$\ket{\Phi}= \alpha_0 \ket{0} + \alpha_1 \ket{\phi} + \alpha_2 \ket{\psi} + ... $$
 
-where $\ket{\phi}\in \mathcal{H}_1$, $\ket{\psi}\in \mathcal{H}_2$ ... can be decomposed on a basis of $\mathcal{H}_1$ ($\ket{\phi_i}$) as described in the previous section. $\ket{\Phi}$ is thus an entangled sum of states with zero particle, a state with one particle etc. As such, $\tilde{\mathcal{F}}$ is a relevant space to allow for the change in particle numbers, as $\ket{\Phi}$ encompass different possibilities for $\mathcal{N}$ and while $\ket{\Phi}$ evolve with time from states with more or less particles, it changes the probability that the state with more or less particles are occupied. 
+where $\ket{\phi}\in \mathcal{H}_1$, $\ket{\psi}\in \mathcal{H}_2$ ... $\ket{\Phi}$ is thus an entangled sum of states with zero particle, a state with one particle etc. As such, $\tilde{\mathcal{F}}$ is a relevant space to allow for the change in particle numbers, as $\ket{\Phi}$ encompass different possibilities for $\mathcal{N}$ and while $\ket{\Phi}$ evolve with time from states with more or less particles, it changes the probability that the state with more or less particles are occupied. 
 
-Let again $\ket{\phi_i}$ be a orthonormal basis of $\mathcal{H}_1$. In the case of spin it could be the two dimensional basis $\lbrace \ket{\phi_1}=\ket{\uparrow}$, $\ket{\phi_2}=\ket{\downarrow}\rbrace$, in the case of a quantum point particle it could be the infinite dimensional position eigenvectors $\ket{x}$. Staying in the case of $N$ discrete basis vectors, a basis of $\tilde{\mathcal{F}}$ is made of all the possible combination $$\ket{\phi_1}\otimes\ket{\phi_2} \otimes ...\ket{\phi_N}$$.
+From now one, we consider that all the particles are **identical** that is they are all living individually in the same Hilbert space $\mathcal{H}(1)$. Let again $\ket{\phi_i}$ be a orthonormal basis of $\mathcal{H}(1)$. In the case of spin it could be the two dimensional basis $\lbrace \ket{\phi_1}=\ket{\uparrow}$, $\ket{\phi_2}=\ket{\downarrow}\rbrace$, in the case of a quantum point particle it could be the infinite dimensional position eigenvectors $\ket{x}$. Staying in the case of $N$ discrete basis vectors, a basis of $\tilde{\mathcal{F}}$ is made of all the possible combination $$\ket{\phi_1}\otimes\ket{\phi_2} \otimes ...\ket{\phi_N}$$.
 We can rewrite $\ket{\Phi}$ explicitely as
 
 $$\ket{\Phi} = \sum_{\mathcal{N},i_1...i_\mathcal{N}}^{\infty} \alpha_{i_1,i_2... i_{\mathcal{N}}} \ket{\phi_{i_1}\phi_{i_2}...\phi_{i_{\mathcal{N}}}} $$
@@ -204,7 +205,8 @@ We glossed over some subtelties in the above presentation, namely the formal pro
 
 $$\mathcal{F}= \mathcal{S}\left( \tilde{\mathcal{F}}\right)=\bigoplus^{\mathcal{N}}_{i=0} \mathcal{S}\left(\mathcal{H}_i\right)$$
 
-where $S$ is a symmetrisation operator which allow to account for the boson or fermion statistical properties. In the previous section, we slopily made some identifications as $\ket{\phi_1\phi_2}= \pm \ket{\phi_2\phi_1}$ on the unsymmetrised Fock space and look at the consequences. The proper way to do so is to make the following identifications
+where $S$ is a symmetrisation operator which allow to account for the boson or fermion statistical properties. For our construction to work, we should also set the restriction that $\mathcal{H}_i= (\mathcal{H})^{\otimes i}$ is the $i^{\text{th}}$ tensorial power of an identical Hilbert space $\mathcal{H}$ (system of identical particles).
+In the previous section, we slopily made some identifications as $\ket{\phi_1\phi_2}= \pm \ket{\phi_2\phi_1}$ on the unsymmetrised Fock space and look at the consequences. The proper way to do so is to make the following identifications
 
 - **Bosons:** $$(\mathcal{S}(\ket{\psi}) = \frac{1}{\sqrt{N!\Pi_i n_i!}} \sum_{\sigma} \ket{\psi_\sigma})$$
 - **Fermions:** $$(\mathcal{S}(\ket{\psi}) = \frac{1}{\sqrt{N!}} \sum_{\sigma} \text{sign}(\sigma) \ket{\psi_\sigma})$$
@@ -223,18 +225,13 @@ $$\ket{\Phi} = \sum_{n_i,n_j...,n_N}\alpha_{n_i,n_j ...}\ket{n_i,n_j ...,n_{N}} 
 
 ## Statistical mechanics on Fock space
 
-The shift we did from $\ket{\phi}_i$ to $\ket{n_1,n_2...n_N}$ is sometimes refered to as the **second quantization**.
-When considering position of particles as the quantity of interest ($\ket{\phi_i}=\ket{x}$), we end up defining such a Fock space at each point of space(-time), and counting the number of particles present for the states at a given location. This leads precisely the notion of "field" in quantum field. We will leave a detailed discussion of this particularity for later.
-
-Since Fock space itself is an Hilbert space, all the previous notions (entropy, density operator, time evolution) applies identically. Put more bluntly: all of the previous equations can be used now replacing $\ket{\phi(t)}$ by $\ket{\Phi(t)}$. One can construct $\hat{\rho}$ with states as $\ket{\Phi}$ and obtain from it 
+The shift we did from $\ket{\phi}_i$ to $\ket{n_1,n_2...n_N}$ is sometimes refered to as the **second quantization**. Since Fock space itself is an Hilbert space, all the previous notions (entropy, density operator, time evolution) applies identically. Put more bluntly: all of the previous equations can be used now replacing $\ket{\phi(t)}$ by $\ket{\Phi(t)}$. One can construct $\hat{\rho}$ with states as $\ket{\Phi}$ and obtain from it 
 
 $$\hat{\rho}= \frac{1}{\Xi}e^{-\beta\left(\hat{H}- \mu \hat{N}\right)}$$
 
 Where $\hat{N}$ and $\hat{H}$ are the number and Hamiltonian operators in Fock space. Now, what can these be?
 
-If our original basis $\ket{\phi_i}$ of the $\mathcal{H}_1$ were eigenstates of the Hamiltonian, they also represent states with definite energy. Let's note by $\epsilon_i$ the energy of the state $\ket{\phi_i}$ in the one particle Hilbert space. Furthermore, we assume that the particles are not interacting.
-
-We can define $\hat{H}$ and $\hat{N}$ by their action on the basis vector of $\mathcal{F}$ as:
+If our original basis $\ket{\phi_i}$ of the $\mathcal{H}_1$ were eigenstates of the Hamiltonian, they also represent states with definite energy. Let's note by $\epsilon_i$ the energy of the state $\ket{\phi_i}$ in the one particle Hilbert space. Furthermore, we assume from now on the **particles are not interacting**. If this is the case, we can define $\hat{H}$ and $\hat{N}$ by their action on the basis vector of $\mathcal{F}$ as:
 
 $$ \hat{N}\ket{n_1,n_2...n_N}= \left(\sum_i^{N}n_i\right)\ket{n_1,n_2...n_N}$$
 
@@ -249,6 +246,9 @@ $$
 \end{aligned}
 $$
 
-Note the close proximity of this formalism with the quantum harmonic oscillator. Creation and anhilation operators can be defined in Fock space. But we will leave this topic for the quantum field theory class.
+The trace over Fock space is the sum over all possible basis states in $\mathcal{F}$:
 
-The trace over Fock space becomes:
+$$\text{Tr}(\hat{A}) = \sum_{n_1=0}^\infty\sum_{n_2=0}^\infty...\sum_{n_N=0}^\infty \bra{n_1,n_2...n_N} \hat{A}\ket{n_1,n_2...n_N}  $$
+
+
+Note the close proximity of this formalism with the quantum harmonic oscillator. Creation and anhilation operators can similary be defined in Fock space allowing to move between states with different occupation number. Furthermore, the proper treatment of the continuous space where the basis vector of interests are the space $\ket{x}$, will lead us to define formally the notion of a quantum field. We will leave these advanced topics for the quantum field theory class.

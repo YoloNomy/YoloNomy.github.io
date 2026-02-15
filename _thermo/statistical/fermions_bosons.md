@@ -14,8 +14,8 @@ $$
 ## Factorisation of the partition functions
 
 In the previous lectures, we described the right mathematical space, Fock space, in which to consider a system made of a varying number of quantum particles. 
-More precisely, we are here considering a system made of $\mathcal{N}$ non-interacting quantum particles. The single particle Hilbert space has $N$ accessible states, each having an energy $\epsilon_\lambda$.
-On this Fock space, the density matrix which maximize the entropy under (grand canonical) constraints is the operator: 
+We will now focus on the special case of a system made of $\mathcal{N}$ **identical** and **non-interacting** quantum particles. The single particle Hilbert space has $N$ accessible states, each having an energy $\epsilon_\lambda$.
+On Fock space, the density matrix which maximize the entropy under (grand canonical) constraints is the operator: 
 
 $$ \hat{\rho}= \frac{1}{\Xi}e^{-\beta\left( \hat{H} - \mu \hat{\mathcal{N}}\right)}$$
 
@@ -44,7 +44,7 @@ $$
 \begin{align}
 \Xi &= \text{Tr}(e^{-\beta(\hat{H} - \mu \hat{\mathcal{N}})}) \\
      &=\sum_{n_\lambda} \bra{n_1,n_2,...,n_N} e^{-\beta(\hat{H} - \mu \hat{\mathcal{N}})}\ket{n_1,n_2,...,n_N} \\
-     &= \sum_{\lambda=0}^N e^{-\beta\sum_\lambda n_\lambda(\epsilon_\lambda -\mu)}\\
+     &= \sum_{\lambda=0} e^{-\beta\sum_\lambda n_\lambda(\epsilon_\lambda -\mu)}\\
      &= \prod_\lambda\left( \sum_{n_\lambda} e^{-\beta n_\lambda(\epsilon_\lambda -\mu)}\right)\\
      &= \prod_\lambda \xi_\lambda
 \end{align}
@@ -68,6 +68,7 @@ with $\alpha := \beta \mu$
 
 ## Partition functions and occupation number
 
+### Bosons
 
 Due to spin-statistics theorem, Bosons have no limits on their occupation number, each state can be populate infinitly. They follow the **Bose-Einstein** (BE) statistics:
 
@@ -88,8 +89,10 @@ $$
 \boxed{\langle n^{BE}_\lambda \rangle = \frac{1}{e^{\beta(\epsilon_\lambda - \mu)}-1}}
 $$
 
+### Fermions
 
-For fermions, **Fermi-Dirac** statistics: 
+
+For fermions, **Fermi-Dirac** (FD) statistics: 
 
 $$
 \xi^{FD}_\lambda = \sum_{n_\lambda=0}^1 \left(e^{-\beta n_\lambda (\epsilon_\lambda - \mu)}\right) = 1 + e^{-\beta (\epsilon_\lambda - \mu)}

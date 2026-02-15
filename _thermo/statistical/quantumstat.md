@@ -63,6 +63,9 @@ $$\langle \hat{f}\rangle = {\rm Tr}(\hat{\rho}\hat{f}) $$
 <details>
   <summary><strong>Complement:</strong> More informations on the density operator and the trace</summary>
 
+$$Tr(\hat{A}) = \sum_i \bra{\phi_i} \hat{A}\ket{\phi_i}$$
+
+
 </details>
 
 Out of the density operator, one can build the **Von Neumann entropy**:
