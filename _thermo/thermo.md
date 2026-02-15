@@ -25,13 +25,13 @@ You will find here some fun python applications to physics with some detailled e
 - [Maximizing the entropy: the Lagrange multipliers](../statistical/entropy-max/)
 - [Maximizing the entropy: the canonical ensemble](../statistical/canonical/)
 - [One step towards classical thermodynamics](../statistical/classical/) 
-- [Bonus: A new take on $Z$ and ensembles: Generating functions and other derivations](../statistical/generating_function/)
+- [Bonus: A new take on $Z$ and the canonical ensemble](../statistical/generating_function/)
 - **II. Classical statistics**
 - [Continous distributions: Thinking in phase space](../statistical/phasespace/)
 - [The ideal gas: the statistical perspective](../statistical/idealgas/)
 - [Weakly interacting and Van der Waals gas: the statistical perspective](../statistical/interacting_gas/)
 - [Grand canonical ensemble](../statistical/grandcanonical/)
-- [Overview of the ensembles](../statistical/ensemble_overview/)
+- [Overview of the ensembles and thermodynamics potential](../statistical/ensemble_overview/) 
 - **III. Quantum statistics**
 - [Quantum statistics: Thinking in Hilbert space](../statistical/quantumstat/)
 - [Quantum statistics: Thinking in Fock space](../statistical/Fock_space/)

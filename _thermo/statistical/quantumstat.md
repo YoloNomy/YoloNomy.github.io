@@ -129,7 +129,7 @@ $$
 \Xi = \text{Tr}(e^{-\beta(\hat{H} - \mu \hat{\mathcal{N}})}) 
 $$
 
-Without surprise, we find here, with an identical proof, the same expressions for the ensemble distributions of discrete and classical statistical mechanics (the canonical ensemble can be found using only constraint on energy, leading to $\mu=0$) and all the ensembles have identical structure to the classical ones.
+Without surprise, we find here, with an identical proof, the same expressions for the ensemble distributions of discrete and classical statistical mechanics (the canonical ensemble can be found using only constraint on energy, leading to $\mu=0$) and all the ensembles have identical structure to the classical ones. However, we put more emphasize on the grand canonical ensemble here than in classical physics, as -- in a quantum context-- particles can be created and destroyed even within a closed box! Indeed think for exemple about photons being absorbed or emitted by atoms. As such, the grand canonical model is the minimal ensemble we want to consider in a quantum context.
 
 <details>
   <summary><strong>Proof</strong></summary>

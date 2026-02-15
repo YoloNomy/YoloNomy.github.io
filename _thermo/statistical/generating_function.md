@@ -5,13 +5,13 @@ parent: thermo
 nav_order: 1
 ---
 
-# Bonus: A new take on $Z$ and ensembles
+# Bonus: A new take on $Z$ and the canonical ensemble
 
 In this "bonus" lecture, we want to further reflect on $Z$, its role and propose alternative ways to derive the ensembles of statistical physics without calling for the maximisation of entropy.
 This lecture is a bit technical (but enlightening!), and might be skipped on a first go through the class.
 The statements in this lecture are very general and apply to both the discrete, the continuous and the quantum case, as you can convince yourself easily.
 
-# Other derivations of the ensembles
+# Other derivations of the canonical ensemble
 
 ## From microstates of the reservoir
 
@@ -78,9 +78,9 @@ $$ \langle XY \rangle =  \langle X \rangle \langle Y \rangle$$
 
 $$p(x) = \mu_0 + \mu_1 x + \mu_2 x^2 + ... = \sum_i \mu_i x^i$$
 
-$$Z(\beta) = \mu_0 - \mu_1 \beta + \frac{\mu_2}{2} \beta^2 -\frac{\mu_3}{6}\beta^3 + ... = \sum_i \frac{1}{\beta !}\mu_i (-\beta)^i$$
+$$Z(\lambda) = \mu_0 - \mu_1 \lambda + \frac{\mu_2}{2} \lambda^2 -\frac{\mu_3}{6}\lambda^3 + ... = \sum_i \frac{1}{\lambda !}\mu_i (-\lambda)^i$$
 
-$$\mu_i = \left(\frac{\text{d}^i Z }{\text{d} \beta^i} \right)_{\beta=0}$$
+$$\mu_i = \left(\frac{\text{d}^i Z }{\text{d} \lambda^i} \right)_{\beta=0}$$
 
 Re-expressing the moments as $\mu_i=\langle X^i \rangle$, we get  
 
@@ -88,19 +88,19 @@ $$\mu_0 = \langle X^0 \rangle =1 $$
 
 and 
 
-$$Z(\beta) = 1 - \langle X \rangle \beta + \frac{\langle X^2 \rangle}{2} \beta^2 -\frac{\langle X^3 \rangle}{6}\beta^3 + ... = \sum_i \frac{1}{\beta !}\langle X^i \rangle (-\beta)^i$$
+$$Z(\lambda) = 1 - \langle X \rangle \lambda + \frac{\langle X^2 \rangle}{2} \lambda^2 -\frac{\langle X^3 \rangle}{6}\lambda^3 + ... = \sum_i \frac{1}{\lambda !}\langle X^i \rangle (-\lambda)^i$$
 
 Now recalling that, for any variable $\alpha$, the exponential can be expressed as a polynomial (Taylor expansion) as
 
 $$e^{\alpha} = 1 + X + \frac{1}{2}\alpha^2 +   \frac{1}{6}\alpha^3 + ...$$ 
 
-we can notice that the generating function is almost an exponential for the variable $\alpha = -\beta X$. Using the fact that $\langle aX + bY \rangle = a\langle X \rangle + b \langle Y \rangle$, we can rewrite:
+we can notice that the generating function is almost an exponential for the variable $\alpha = -\lambda X$. Using the fact that $\langle aX + bY \rangle = a\langle X \rangle + b \langle Y \rangle$, we can rewrite:
 
-$$ Z(\beta) = \langle e^{-\beta X}\rangle$$
+$$ Z(\lambda) = \langle e^{-\lambda X}\rangle$$
 
 For to the continuous case, this is written
 
-$$ Z(\beta) = \int p(x) e^{-\beta X} \text{d} x $$
+$$ Z(\lambda) = \int p(x) e^{-\lambda X} \text{d} x $$
 
 Which is the so-called **Laplace transformation** of the function $p(x)$.
 
@@ -108,8 +108,35 @@ Which is the so-called **Laplace transformation** of the function $p(x)$.
 
 ### Central limit theorem
 
-## Cumulents
+### Cumulents
 
+### Partition function and moments
+
+Adding constraints on the mean value of multiple variables $X^{(j)}$ and maximizing the entropy always lead:
+
+$$p_i = \frac{1}{Z} e^{-\sum_j \lambda_j X^{(j)}_i} $$
+
+$$ Z= \sum_i e^{-\sum_j \lambda_j X^{(j)}_i}$$
+
+where $\lambda_i$ are the Lagrange multipliers associated to the variable $X^{(j)}$.
+
+$$\langle X_i \rangle =-\frac{\partial \ln(Z)}{\partial \lambda_i} $$
+
+$$\frac{\partial^2 \ln(Z)}{\partial \lambda_j \lambda_k} = \langle X_jX_j\rangle -  \langle X_j\rangle \langle X_j\rangle $$
+
+For the case of energy, in the canonical model:
+
+$${\rm Var}(E)= \frac{\partial^2 \ln(Z)}{\partial \beta^2}$$
+
+and any higher order cumulents with higher derivatives of $\ln(Z)$. Defining
+
+$$C_v := \frac{\partial U}{\partial T} $$
+
+we find the expression:
+
+$${\rm Var}(E)= -\frac{\partial U}{\partial \beta} = k_B T^2\frac{\partial U}{\partial T} = k_B T^2 C_v$$
+
+Thus, fluctuations in energy within a microscopic system grows as $T^2$.
 
 ## Going further: recommended readings
 

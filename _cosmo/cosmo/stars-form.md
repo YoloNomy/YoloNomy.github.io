@@ -39,7 +39,7 @@ $$\boxed{V = -\frac{3}{5}\frac{GM^2}{R}}$$
 You can recognize here the $GM^2/R$ contribution from Newtonian mechanics (link), which is the energy of gravitation of two masses $M$ separated by a distance $R$. The factor of $3/5$ asks for a bit of extra work. The proof is detailed below, but if you don't want to face the trouble, you can just assume it for now.
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
 
 The trick is to write the total potential of the sphere as the integral
 
@@ -71,7 +71,7 @@ $$ V=  -\frac{3}{5}\frac{GM^2}{R}$$
 
 </details>
 
-The thermal energy, can be understood as the kinetic energy due to the constituant of the gas. It can be shown that, for a monoatomic [ideal gas](../../../thermo/thermo/idealgas/), the mean kinetic energy per particle is given by $\langle mv^2/2 \rangle = 3k_B T/2$, where $k_B$ is the Boltzmann constant, allowing to translate temperatures into energy. If you do not know this formula, you can also take it for granted for now. The total thermal energy of our sphere of gas is then given by
+The thermal energy, can be understood as the kinetic energy due to the constituant of the gas. It can be shown that, for a monoatomic [ideal gas](../../../thermo/thermo/idealgas/), the mean kinetic energy per particle is given by $\langle mv^2/2 \rangle = 3k_B T/2$, where $k_B$ is the Boltzmann constant, allowing to translate temperatures into energy. If you do not know this formula, you can also take it for granted for now (the full answer is in our [statistical mechanics class](../../../thermo/statistical/idealgas)). The total thermal energy of our sphere of gas is then given by
 
 $$E_T = N\frac{3 k_B T}{2}= \frac{M}{\mu}\frac{3k_B T}{2}$$
 
@@ -98,7 +98,7 @@ with the proportionality constant
 $$\mathcal{C}= \left(\frac{5k_B}{2G}\right)^{3/2}\sqrt{\frac{3}{4\pi}}$$
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
 
 Starting from the inequality 
 
@@ -159,7 +159,7 @@ $$ \boxed{t_f = \sqrt{\frac{3\pi}{32 G \rho}}}$$
 This time suppose that nothing is stopping the cloud while it collapse on itself. 
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
 
 Consider a a particle of mass $m$ located at the edge of the collapsing cloud. We label its position by the radial distance $r$. The particle starts at $r=R$ and fall freely until it reaches the center of the cloud at $r=0$. The [second law of dynamics](../../../meca/Newton/laws/) for this particle becomes
 
@@ -262,7 +262,7 @@ Now, making the *very* rough assumption that the gas at center of the star is an
 $$\boxed{T_c\sim\frac{1}{2}\frac{GM\mu}{k_BR}}$$ 
 
 <details>
-  <summary>Proof</summary>
+  <summary><strong>Proof</strong></summary>
 
 The ideal gas law reads:
 
@@ -303,7 +303,7 @@ To show this, we will use the so-called "virial theorem", stating that for a sta
 $$\boxed{E= \frac{V}{2}}$$
 
 <details>
-  <summary>Virial theorem</summary>
+  <summary><strong>Virial theorem</strong></summary>
 
 </details>
 

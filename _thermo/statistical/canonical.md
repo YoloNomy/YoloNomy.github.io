@@ -443,19 +443,6 @@ $$
 
 </details>
 
-<details>
-  <summary><strong>Sidenote: on thermodynamical potentials</strong></summary>
-
-We note here that maximising the entropy for the canonical case is equivalent to maximize the Helmholtz free energy $F$.
-
-$$A = \langle E \rangle - T S $$
-
-from our previous derivations:
-
-$$A = - \ln(Z)/\beta$$
-
-</details>
-
 Hence, knowing only the expression of the energy $E_i$ of each microstate, we are able to express the partition function $Z$, from which we can infer all the thermodynamically relevant quantities (the pressure $P$, the temperature $T$, the average energy $E$, the entropy $S$...). This is done only under the assumption that the statistical entropy is maximum, reflecting our knowledge of the system in the most unbiased way.
 
 ## Going further: recommended readings and watching

@@ -179,8 +179,7 @@ $$
 \end{aligned}
 $$
 
-This is much simpler than for bosons! We see that all the 3 fermions states are excluded by our symmetry principle, as they would necessarly imply two particles in the same quantum state for a two state system.
-
+This is much simpler than for bosons! We see that all the 3 fermions states are excluded by our symmetry principle, as they would necessarly imply two particles in the same quantum state for a two state system. This is also the case of any system with more than 2 particles. We simply end up with:
 
 $$
 \begin{aligned}
@@ -189,8 +188,7 @@ $$
 &+ \underbrace{\alpha_{1,0} \ket{1,0} + \alpha_{0,1} \ket{0,1}}_{\substack{\mathcal{N}=1}} \\
 &+ \underbrace{
  \alpha_{1,1}\ket{1,1}
-}_{\substack{\mathcal{N}=2}} \\
-&+ \dots
+}_{\substack{\mathcal{N}=2}}
 \end{aligned}
 $$
 
@@ -232,11 +230,25 @@ Since Fock space itself is an Hilbert space, all the previous notions (entropy, 
 
 $$\hat{\rho}= \frac{1}{\Xi}e^{-\beta\left(\hat{H}- \mu \hat{N}\right)}$$
 
-Where $\hat{N}$ and $\hat{H}$ are the number and Hamiltonian operators in Fock space. 
+Where $\hat{N}$ and $\hat{H}$ are the number and Hamiltonian operators in Fock space. Now, what can these be?
 
-$$ \hat{N}\ket{n_1,n_2...n_N}= \sum_i^{N}n_i\ket{n_1,n_2...n_N}$$
+If our original basis $\ket{\phi_i}$ of the $\mathcal{H}_1$ were eigenstates of the Hamiltonian, they also represent states with definite energy. Let's note by $\epsilon_i$ the energy of the state $\ket{\phi_i}$ in the one particle Hilbert space. Furthermore, we assume that the particles are not interacting.
 
-$$ \hat{H}\ket{n_1,n_2...n_N}= \sum_i^{N}n_i\epsilon_i\ket{n_1,n_2...n_N}$$
+We can define $\hat{H}$ and $\hat{N}$ by their action on the basis vector of $\mathcal{F}$ as:
 
-Note the close proximity with the quantum harmonic oscillator. Creation and anhilation operators can be defined in Fock space. But we will leave this topic for the quantum field theory class.
+$$ \hat{N}\ket{n_1,n_2...n_N}= \left(\sum_i^{N}n_i\right)\ket{n_1,n_2...n_N}$$
 
+$$ \hat{H}\ket{n_1,n_2...n_N}= \left(\sum_i^{N}n_i\epsilon_i\right)\ket{n_1,n_2...n_N}$$
+
+Such that:
+
+$$
+\begin{aligned}
+&U=\langle \hat{H}\rangle = \sum_\lambda n_\lambda \epsilon_\lambda \\
+&\langle \mathcal{N} \rangle= \langle \hat{\mathcal{N}}\rangle=\sum_\lambda n_\lambda
+\end{aligned}
+$$
+
+Note the close proximity of this formalism with the quantum harmonic oscillator. Creation and anhilation operators can be defined in Fock space. But we will leave this topic for the quantum field theory class.
+
+The trace over Fock space becomes:

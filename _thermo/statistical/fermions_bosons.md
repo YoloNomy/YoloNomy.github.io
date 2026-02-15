@@ -13,26 +13,44 @@ $$
 
 ## Factorisation of the partition functions
 
+In the previous lectures, we described the right mathematical space, Fock space, in which to consider a system made of a varying number of quantum particles. 
+More precisely, we are here considering a system made of $\mathcal{N}$ non-interacting quantum particles. The single particle Hilbert space has $N$ accessible states, each having an energy $\epsilon_\lambda$.
+On this Fock space, the density matrix which maximize the entropy under (grand canonical) constraints is the operator: 
+
 $$ \hat{\rho}= \frac{1}{\Xi}e^{-\beta\left( \hat{H} - \mu \hat{\mathcal{N}}\right)}$$
 
-$$
-\begin{aligned}
-&U=\langle \hat{H}\rangle = \sum_\lambda n_\lambda \epsilon_\lambda \\
-&\langle \mathcal{N} \rangle= \langle \hat{\mathcal{N}}\rangle=\sum_\lambda n_\lambda
-\end{aligned}
-$$
-
+with
 
 $$
-\Xi = \prod_\lambda \xi_\lambda
+\Xi = \text{Tr}(e^{-\beta(\hat{H} - \mu \hat{\mathcal{N}})}) 
 $$
 
-With:
+If the system is made of a varying $\mathcal{N}$ number of identical particles,
 
 $$
-\xi_\lambda = \sum_{n_\lambda=0}^\infty e^{-\beta n_\lambda (\epsilon_\lambda - \mu)}
+\boxed{\Xi = \prod_\lambda \xi_\lambda}
 $$
 
+With the partition function for a single particle being:
+
+$$
+\boxed{\xi_\lambda = \sum_{n_\lambda=0}^\infty e^{-\beta n_\lambda (\epsilon_\lambda - \mu)}}
+$$
+
+<details>
+  <summary><strong>Proof:</strong> </summary>
+
+$$
+\begin{align}
+\Xi &= \text{Tr}(e^{-\beta(\hat{H} - \mu \hat{\mathcal{N}})}) \\
+     &=\sum_{n_\lambda} \bra{n_1,n_2,...,n_N} e^{-\beta(\hat{H} - \mu \hat{\mathcal{N}})}\ket{n_1,n_2,...,n_N} \\
+     &= \sum_{\lambda=0}^N e^{-\beta\sum_\lambda n_\lambda(\epsilon_\lambda -\mu)}\\
+     &= \prod_\lambda\left( \sum_{n_\lambda} e^{-\beta n_\lambda(\epsilon_\lambda -\mu)}\right)\\
+     &= \prod_\lambda \xi_\lambda
+\end{align}
+$$
+
+</details>
 
 The average number of particle occuping a quantum state is given by:
 
@@ -41,6 +59,12 @@ $$
 $$
 
 with $\alpha := \beta \mu$
+
+<details>
+  <summary><strong>Proof:</strong> </summary>
+
+
+</details>
 
 ## Partition functions and occupation number
 
