@@ -208,7 +208,7 @@ $$\mathcal{F}= \mathcal{S}\left( \tilde{\mathcal{F}}\right)=\bigoplus^{\mathcal{
 
 where $S$ is a symmetrisation operator which allow to account for the boson or fermion statistical properties. In the previous section, we slopily made some identifications as $\ket{\phi_1\phi_2}= \pm \ket{\phi_2\phi_1}$ on the unsymmetrised Fock space and look at the consequences. The proper way to do so is to make the following identifications
 
-- **Bosons:** $$(\mathcal{S}(\ket{\psi}) = \frac{1}{\sqrt{N!}} \sum_{\sigma} \ket{\psi_\sigma})$$
+- **Bosons:** $$(\mathcal{S}(\ket{\psi}) = \frac{1}{\sqrt{N!\Pi_i n_i!}} \sum_{\sigma} \ket{\psi_\sigma})$$
 - **Fermions:** $$(\mathcal{S}(\ket{\psi}) = \frac{1}{\sqrt{N!}} \sum_{\sigma} \text{sign}(\sigma) \ket{\psi_\sigma})$$
 
 In the case of a two state system, $\ket{0}$, $\ket{\phi_1}$ and $\ket{\phi_2}$ remain untouched by $\mathcal{S}$ while:

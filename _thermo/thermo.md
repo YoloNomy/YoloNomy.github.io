@@ -31,10 +31,11 @@ You will find here some fun python applications to physics with some detailled e
 - [The ideal gas: the statistical perspective](../statistical/idealgas/)
 - [Weakly interacting and Van der Waals gas: the statistical perspective](../statistical/interacting_gas/)
 - [Grand canonical ensemble](../statistical/grandcanonical/)
+- [Overview of the ensembles](../statistical/ensemble_overview/)
 - **III. Quantum statistics**
 - [Quantum statistics: Thinking in Hilbert space](../statistical/quantumstat/)
 - [Quantum statistics: Thinking in Fock space](../statistical/Fock_space/)
-- [Quantum statistics: partition function for fermions and bosons](../statistical/fermions_bosons/)
+- [Partition function and occupation number for fermions and bosons](../statistical/fermions_bosons/)
 - [Fermi gas](../statistical/fermigas/)
 - [The blackbody radiation](../statistical/BB/)
 - **IV. Advanced topics**

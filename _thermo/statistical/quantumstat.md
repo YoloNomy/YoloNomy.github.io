@@ -78,8 +78,8 @@ The constraints for maximizing $S$ are normalization of all probabilities and th
 $$
 \begin{aligned}
 \begin{cases}
-\text{Tr}{\hat{\rho}}&=1\\
-\text{Tr}{\hat{\rho}\hat{X_i}}&= \langle X_i \rangle
+\text{Tr}{(\hat{\rho})}&=1\\
+\text{Tr}{(\hat{\rho}\hat{X_i})}&= \langle X_i \rangle
 \end{cases}
 \end{aligned}
 $$
@@ -117,25 +117,25 @@ $$\rho = \frac{1}{N}\mathbb{I}$$
 </details>
 
 
-**(Grand) canonical ensemble:** considering now a system that can exchange both particles and energy with the surrounding medium at equilibrium. The number of particle $N$ is an observable, and we thus assume that there exist an operator $\hat{N}$ on $\mathcal{H}$ associated to the number of particles in the system. We will discuss in the next lecture exactly how to provide such an operator. Adding conditions on the mean values of energy and particle number in the entropy maximisation, we get the quantum generalisation of the Grand canonical ensemble:
+**(Grand) canonical ensemble:** considering now a system that can exchange both particles and energy with the surrounding medium at equilibrium. The number of particle $N$ is an observable, and we thus assume that there exist an operator $\hat{\mathcal{N}}$ on $\mathcal{H}$ associated to the number of particles in the system. We will discuss in the next lecture exactly how to provide such an operator. Adding conditions on the mean values of energy and particle number in the entropy maximisation, we get the quantum generalisation of the Grand canonical ensemble:
 
 $$
-\boxed{\hat{\rho}= \frac{1}{\Xi}e^{-\beta(\hat{H} - \mu \hat{N})}}
+\boxed{\hat{\rho}= \frac{1}{\Xi}e^{-\beta(\hat{H} - \mu \hat{\mathcal{N}})}}
 $$
 
 With $\Xi$ is the quantum partition function: 
 
 $$
-\Xi = \text{Tr}(e^{-\beta(\hat{H} - \mu \hat{N})}) 
+\Xi = \text{Tr}(e^{-\beta(\hat{H} - \mu \hat{\mathcal{N}})}) 
 $$
 
-Without surprise, we find here, with an identical proof, the same expressions for the ensemble distributions of discrete and classical statistical mechanics (the canonical ensemble can be found using only constraint on energy, leading to $\mu=0$).
+Without surprise, we find here, with an identical proof, the same expressions for the ensemble distributions of discrete and classical statistical mechanics (the canonical ensemble can be found using only constraint on energy, leading to $\mu=0$) and all the ensembles have identical structure to the classical ones.
 
 <details>
   <summary><strong>Proof</strong></summary>
 
 In Fock space, we impose a constraint on the mean particle number
-$N = \mathrm{Tr}(\hat{\rho} \hat{N})$ and energy $U = \mathrm{Tr}(\hat{\rho} \hat{H})$.  
+$\langle \mathcal{N} \rangle = \mathrm{Tr}(\hat{\rho} \hat{\mathcal{N}})$ and energy $U = \mathrm{Tr}(\hat{\rho} \hat{H})$.  
 We then define the Lagrangian to maximize the entropy under constraints:
 
 $$
@@ -143,7 +143,7 @@ $$
 \mathcal{L} = - \mathrm{Tr}(\hat{\rho} \ln \hat{\rho})
 - \lambda_0 \left( \mathrm{Tr}(\hat{\rho}) - 1 \right)
 - \beta \left( \mathrm{Tr}(\hat{\rho} \hat{H}) - \langle E \rangle \right)
-- \gamma \left( \mathrm{Tr}(\hat{\rho} \hat{N}) - \langle N \rangle \right),
+- \gamma \left( \mathrm{Tr}(\hat{\rho} \hat{\mathcal{N}}) - \langle N \rangle \right),
 \end{equation}
 $$
 
@@ -153,7 +153,7 @@ Taking the functional derivative of $\mathcal{L}$ with respect to $\hat{\rho}$ a
 
 $$
 \begin{equation}
-\hat{\rho} = e^{-(\lambda_0 + 1)} \, e^{-\beta \hat{H} - \gamma \hat{N}}.
+\hat{\rho} = e^{-(\lambda_0 + 1)} \, e^{-\beta \hat{H} - \gamma \hat{\mathcal{N}}}.
 \end{equation}
 $$
 
@@ -169,7 +169,7 @@ and define $\Xi$ as
 
 $$
 \begin{equation}
-\Xi = e^{\lambda_0 + 1} = \mathrm{Tr} \left( e^{-\beta (\hat{H} - \mu \hat{N})} \right).
+\Xi = e^{\lambda_0 + 1} = \mathrm{Tr} \left( e^{-\beta (\hat{H} - \mu \hat{\mathcal{N}})} \right).
 \end{equation}
 $$
 

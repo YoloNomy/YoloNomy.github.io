@@ -13,23 +13,15 @@ $$
 
 ## Factorisation of the partition functions
 
-
-## Partition functions and occupation number
-
-To describe multiparticle states, we work in Fock space, that is, tensorial product of single particle Hilbert spaces. The basis wavevector describing the states of the systems are given by the eigenvector of several commuting observables $\ket{n_1,n_2, \cdots, n_M}$. Where $1\cdots M$ represents the (potentialy infinite) $M$ possible quantum states accessible to a particle and $n_\lambda$ are the occupation number of each quantum states i.e. the number $n_\lambda$ of particles observed in the quantum state $\ket{\lambda}$. The wavevector $\ket{\Phi}$ describing the multiparticle system can then be decomposed in the basis:
-
-$$
-\ket{\Phi}= \sum_i \alpha_{n_1,n_2, \cdots, n_M} \ket{n_1,n_2, \cdots, n_M}
-$$
+$$ \hat{\rho}= \frac{1}{\Xi}e^{-\beta\left( \hat{H} - \mu \hat{\mathcal{N}}\right)}$$
 
 $$
 \begin{aligned}
 &U=\langle \hat{H}\rangle = \sum_\lambda n_\lambda \epsilon_\lambda \\
-&N= \langle \hat{N}\rangle=\sum_\lambda n_\lambda
+&\langle \mathcal{N} \rangle= \langle \hat{\mathcal{N}}\rangle=\sum_\lambda n_\lambda
 \end{aligned}
 $$
 
-As discussed above, the total partition function can be written as the product of the partition function associated to each individual quantum state:
 
 $$
 \Xi = \prod_\lambda \xi_\lambda
@@ -49,6 +41,9 @@ $$
 $$
 
 with $\alpha := \beta \mu$
+
+## Partition functions and occupation number
+
 
 Due to spin-statistics theorem, Bosons have no limits on their occupation number, each state can be populate infinitly. They follow the **Bose-Einstein** (BE) statistics:
 
@@ -80,3 +75,5 @@ $$
 $$
 \boxed{\langle n^{FD}_\lambda \rangle = \frac{1}{e^{\beta(\epsilon_\lambda - \mu)}+1}}
 $$
+
+PLOTS

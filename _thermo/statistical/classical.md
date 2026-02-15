@@ -205,7 +205,6 @@ $$
 </details>
 
 
-
 ### On the generality of the concepts used so far
 
 Before concluding this class, let us note that so far, we made very few assumptions about the physical nature of our system, simply assuming discrete accessible microstates and using the familiar picture of a "box of gas" and the analogy with a die that can be biased or not. This implies that all the notions we are using now (temperature, heat, work ...) are much more general than what is usually considered in classical thermodynamics, and can be applied to a great variety of physical systems.
