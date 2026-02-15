@@ -83,6 +83,11 @@ $$
 \sum_{k=0}^\infty q^k = \frac{1}{1-q}
 $$
 
+<details>
+  <summary><strong>Proof:</strong> </summary>
+
+
+</details>
 We then get:
 
 $$
@@ -104,3 +109,7 @@ $$
 $$
 
 PLOTS
+
+### Classical limit
+
++ comp with Maxwell-Boltzmann
