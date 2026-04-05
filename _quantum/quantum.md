@@ -13,10 +13,12 @@ You will find here some fun python applications to physics with some detailled e
 - Particle in a box
 - De Broglie-Bohm trajectories
 
+# Quantum information
+
 # Relativistic quantum theory
 
 # Quantum field theory
 
-- Thinking in Fock space, episode 2.
+- [Thinking in Fock space, episode 2.](QFT/QFT_Fock.md)
 
 # The standard model of particle physics

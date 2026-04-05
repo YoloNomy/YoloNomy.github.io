@@ -12,7 +12,22 @@ Distance measurements are one of the most important probes in cosmology. Distanc
 Paralaxes.
 
 
+# Redshift
+
+What is really observable, is the redshift 
+
+$$z = \lambda^{\rm obs} - \lambda^{\rm emit}$$
+
+It can be related to the scale factor as:
+
+$$z=\frac{1}{a}-1$$
+
+Or:
+
+$$ a = \frac{1}{1 + z}.$$
+
 # Few reminders
+
 Here we will use the FLRW metric under the form
 
 $$ds^2 = -dt^2 + a^2(t)\left\{d\chi^2 + S_k^2(\chi)\left(d\theta^2 + \sin^2\theta d\phi^2\right)\right\},$$
@@ -88,3 +103,5 @@ $$
 $$
 
 # The luminosity distance
+
+Add plot of distances with respect to $z$

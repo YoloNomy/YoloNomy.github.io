@@ -79,7 +79,7 @@ $$\overline{f}= \langle f \rangle.$$
 
 where
 
-$$ \langle f \rangle = \int_{P} \rho(\Gamma)f(\Gamma) \text{d}\Gamma $$
+$$ \langle f \rangle = \int_{\Pi} \rho(\Gamma)f(\Gamma) \text{d}\Gamma $$
 
 If so, the empirical mean reflects the properties of the underlying theoretical probability density $\rho$. It assumes that, through its time evolution, the system will explore the whole phase space, with more time spent in regions where $\rho(\Gamma)$ has a larger value.
 Such a property is called **ergodicity**, which is characteristic of system at thermal equilibrium. Indeed, for systems with a fast evolution, $\rho$ might change with time, such that this property is not satisfied. A similar problem happens for systems with very few interactions betweens its constituents, in which the whole phase space can not be explored.

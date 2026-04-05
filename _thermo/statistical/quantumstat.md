@@ -63,8 +63,11 @@ $$\langle \hat{f}\rangle = {\rm Tr}(\hat{\rho}\hat{f}) $$
 <details>
   <summary><strong>Complement:</strong> More informations on the density operator and the trace</summary>
 
+The trace of an operator $\hat{A}$ is defined in a basis $\ket{\phi_i}$ of $\mathcal{H}$ as
+
 $$Tr(\hat{A}) = \sum_i \bra{\phi_i} \hat{A}\ket{\phi_i}$$
 
+and is independent of the choice of basis.
 
 </details>
 

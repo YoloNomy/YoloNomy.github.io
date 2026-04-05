@@ -53,11 +53,7 @@ E_{\mathrm{th}} \sim k_B T.
 $$
 Because $k_B$ is numerically very small, the energy associated with thermal excitation is usually a small quantity when expressed in joules.
 
-The constant $k_B$ also fixes the physical units of entropy. In statistical mechanics, entropy is first introduced as a dimensionless quantity derived from a probability distribution,
-
-$$
-S = - \sum_i p_i \ln p_i
-$$
+The constant $k_B$ also fixes the physical units of entropy. In statistical mechanics, entropy is first introduced as a dimensionless quantity derived from a probability distribution.
 
 The corresponding thermodynamic entropy is obtained by
 

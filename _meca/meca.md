@@ -22,6 +22,8 @@ You will find here some fun python applications to physics with some detailled e
 - Lagrangian mechanics
 - Phase space
 - Hamiltonian mechanics
+- Hamilton-Jacobi equations
+- Constrained Hamiltonian systems
 
 # Dynamical systems and chaos
 
@@ -31,3 +33,5 @@ You will find here some fun python applications to physics with some detailled e
 - Chaotic pendulum
 - Saturn's ring
 - Sinai's Billiards
+- Lotka-Volterra model
+- Pattern formation: reaction-diffusion models

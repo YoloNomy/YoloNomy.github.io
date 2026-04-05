@@ -88,6 +88,7 @@ $$
 
 
 </details>
+
 We then get:
 
 $$

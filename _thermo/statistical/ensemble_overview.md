@@ -7,7 +7,7 @@ nav_order: 1
 
 ## Isobaric-Isothermal ensemble
 
-Note that allowing other constraints (like volume fluctuation) would add new lagrange multipliers appearing in the exponential of the expression of $p_i$.
+Note that allowing other constraints (like volume fluctuation) would add new Lagrange multipliers appearing in the exponential of the expression of $p_i$.
 
 The **isobaric-isothermal** ensemble, where both $U$ and $V$ are constrained to a mean value. It is easy to show.
 
@@ -26,7 +26,6 @@ All ensembles have
 $$ p_i = \frac{\text{Weight}}{\text{Partition function}}$$
 
 
-
 | Ensemble | Fixed Variables | Probability Weight ($p_i \propto \dots$) | Partition Function | Thermodynamic Potential |
 | :--- | :--- | :--- | :--- | :--- |
 | **Microcanonical** | $N, V, E$ | $1$ | $N$ or $\Omega$ | Energy $U$ or entropy $S =  \ln \Omega$|
@@ -42,9 +41,6 @@ Bla
 | **Canonical** | $A = U - TS$ | $\text{d}A = -S\text{d}T - P\text{d}V + \mu \text{d}\mathcal{N}$ |
 | **Grand Canonical** | $\Phi_G= A - \mu N$ | $\text{d}\Phi_G = -S\text{d}T - P\text{d}V - N\text{d}\mu$ |
 | **Isobaric-Isothermal** | $G = A + PV$ | $\text{d}G = -S\text{d}T + V\text{d}P + \mu \text{d}\mathcal{N}$ |
-
-
-
 
 
 ## Legendre transform

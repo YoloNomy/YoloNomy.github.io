@@ -47,6 +47,7 @@ subtitle: Maths and mathematical physics
 
 # Geometrical quantization
 
+- Going from classic to quantum
 
 # General mathematics 
 

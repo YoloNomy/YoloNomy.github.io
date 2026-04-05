@@ -17,16 +17,27 @@ You will find here some fun python applications to physics with some detailled e
 - [Molecular clouds and cosmic dust](cosmo/dust.md)
 - Nebulae and synchrotron emission
 
-# Special and general relativity
+# Special relativity
 
+- The relativity principle: Inertial frames and the speed of light
+- 
+
+# General relativity
+
+- The equivalence principle
+- Manifolds, curve, functions and vectors
+- Connections and parallel transport
+- Newton-Cartan theory
 - [Black holes, part II](cosmo/black-holes.md)
 
 # Cosmology
 
-- [Friedmann equations and evolution of the Universe](cosmo/friedmann.md)
+- [Friedmann equations and evolution of the Universe: an introduction](cosmo/friedmann.md)
+- [The FLRW metric: a closer look](cosmo/FLRW.md)
 - [Distances in cosmology](cosmo/distances.md)
 - [Cosmological horizons](cosmo/horizons.md)
-- The cosmic microwave background
+- [Thermodynamics in an expanding Universe](cosmo/thermo_cosmo.md)
 - Boltzmann equations in the expanding Universe
+- The cosmic microwave background
 - On inflation and scalar fields on cosmic scales
 - Varying fundamental constants
