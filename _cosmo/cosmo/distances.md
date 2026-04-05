@@ -9,16 +9,20 @@ nav_order: 1
 Distance measurements are one of the most important probes in cosmology. Distances are directly linked to the geometry of space time through Einstein's equations and thus, measuring them allow to learn about the Universe geometry and components. However the definition of the distance on cosmological scales is not nique. Here we will define the different distances that are used in cosmology. 
 
 # Distances in the (very) local Universe
-Paralaxes.
+
+Parallaxes.
 
 
 # Redshift
 
-What is really observable, is the redshift 
+What is really observable, is the redshift, that is the shift of some specific wavelength due to the expansion of the Universe. It is defined as:
 
-$$z = \lambda^{\rm obs} - \lambda^{\rm emit}$$
+$$z =\frac{\lambda^{\rm obs}-\lambda^{\rm emit}}{\lambda^{\rm emit}} = \frac{\lambda^{\rm obs}}{\lambda^{\rm emit}}-1$$
 
-It can be related to the scale factor as:
+Since a wavelength is scaled by the expansion of the universe as $\lambda(t)=a(t)\lambda_0$.
+Thus, redshift can be related to the scale factor as:
+
+$$\frac{\lambda^{\rm obs}}{\lambda^{\rm emit}} = \frac{a^{\rm obs}}{a^{\rm emit}}= \frac{1}{\lambda^{\rm emit}} $$
 
 $$z=\frac{1}{a}-1$$
 

@@ -77,6 +77,13 @@ $$\dot{\rho} + 3H(1+w)\rho=0$$
 - For **radiation** or **relativistic species**, we will show below that $w=1/3$. As such $\rho \propto a^{-4}$. There are multiple complementary ways to understand this result. This corresponds to a dilution of the number of particles as $a^{-3}$ with an additional dilution of the wavelength in $a^{-1}$.
 - For a **cosmological constant**, it is possible to show that $w=-1$ and thus $\rho = cst$. The energy of the vacuum never gets diluted.
 
+<!-- 
+$$\Omega_i = \frac{\rho_i}{\rho_{\rm crit}}$$
+
+$$\rho_{\rm crit}= \frac{3 H_0^2}{8\pi G}$$
+
+$$\sum_i \Omega_i = 1$$ -->
+
 ## Thermodynamics in the expanding Universe
 
 ### Particle number density
@@ -165,9 +172,11 @@ f(p) &= \frac{1}{e^{(E - \mu)/T} + 1} \quad \text{for fermions}.
 \end{aligned}
 $$
 
-In an expanding universe we use the **comobile momentum**:
+In an expanding universe we use the **physical momentum**:
 
 $$ p^i =P^i/a $$
+
+which is the value of the momentum scaled by the effect of the expansion of the Universe. Using this variable, the expansion preserves the form of the distribution function. 
 
 The **energy density** is simply:
 
@@ -249,39 +258,27 @@ $$s = \frac{\rho + P - \sum_i \mu_i n }{T}$$
 
 </details>
 
-Assuming that $\mu_i=0$ and using the continuity equation we can show that $s$ evolves with the expansion as
+Using the continuity equation we can show that $s$ evolves with the expansion as
 
-$$s \propto \frac{1}{a^3}$$
+$$s = \frac{s_0}{a^3}$$
 
-## Application the species in the Universe
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
+</details>
+
+
+## Application to the different species in the Universe
+
+### Baryons
+
+### Dark matter
 
 ### Photons
 
-For photons, we are able to recover classical results known for the blackbody distribution. As such, we obtain that the number density depends on the third power of the temperature:
+For photons, we are able to recover classical results known for the blackbody distribution. Photons are characterized by $g=2$, corresponding to their two possible spin states (helicities). As massless particles, their energy is related to their momentum as $E=pc$. Furthermore, if in thermal equilibrium, photons have a zero chemical potential $\mu_\gamma=0$.
 
-$$ n_\gamma = \frac{2}{\pi^2}\zeta(3) T_\gamma^3$$
-
-where we consider that photons have $g=2$ helicities.
-
-<details markdown="1">
-  <summary><strong>Proof</strong></summary>
-
-</details>
-
-We also get that the energy density is proportional to the fourth of the temperature:
-
-$$ \rho_\gamma = \frac{\pi^2}{15} T_\gamma^4$$
-
-also known as the Stefan-Boltzmann's law.
-
-<details markdown="1">
-  <summary><strong>Proof</strong></summary>
-
-$$ \rho = \frac{g T^4}{2\pi^2}\int_0^\infty \frac{x^3}{e^x \pm 1}\text{d}x $$
-
-</details>
-
-Finally, we can find from the definition of $\rho$ and $P$ that $w=1/3$.
+First, we can easily find from the definition of $\rho$ and $P$ that, for photons, $w=P/\rho=1/3$. Thus, a universe dominated by a photon contribution grows as $a^{-4}$ from the continuity equation.
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
@@ -297,28 +294,69 @@ $$
 
 </details>
 
-### neutrinos
+Then, we obtain that the number density of photons depends on the third power of the temperature:
+
+$$ n_\gamma = \frac{2}{\pi^2}\zeta(3) T_\gamma^3$$
+
+
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
+</details>
+
+We also get that the energy density is proportional to the fourth of the temperature:
+
+$$ \rho_\gamma = \frac{\pi^2}{15} T_\gamma^4$$
+
+also known as the Stefan-Boltzmann's law. Since $\rho \propto a^{-4}$, $T\propto a^{-1}$ when photon dominates the energy budget.
+
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
+$$ \rho = \frac{g T^4}{2\pi^2}\int_0^\infty \frac{x^3}{e^x \pm 1}\text{d}x $$
+
+</details>
+
+
+### Neutrinos
+
+$$n_\nu= $$
+
+
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
+</details>
+
 
 For neutrinos, we get a similar dependence with temperature
 
-$$\rho_\nu =   N_\nu\frac{7}{8}\frac{\pi^2}{15}T_\nu^4$$
+$$\rho_\nu =   N_\nu\frac{7}{8}\frac{\pi^2}{15}T_\nu^4 $$
 
-where $N_\nu$ is the number of neutrino generations.
+where $N_\nu$ is the number of neutrino generations, $N_\nu=3$.
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
 
-
 </details>
+
+The neutrino energy density can be expressed in term of the photon energy density as
+
+$$\rho_\nu = N_\nu \frac{7}{8} \rho_\gamma \left(\frac{T_\nu}{T_\gamma}\right)^4$$
 
 ### The effective number of relativistic species
 
-$$ \rho_\gamma = N_{f} \frac{8}{7}\left(\frac{11}{4}\right)^{\frac{4}{3}} \rho_\nu$$
+Now, what should be the difference of temperature between the photons and the neutrinos?
+
+$$\left(\frac{T_\nu}{T_\gamma}\right)^4 =  \left(\frac{4}{11}\right)^{\frac{3}{4}}$$
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
 
 </details>
+
+
+$$N_{eff} = \frac{8}{7}\left(\frac{11}{4}\right)^{\frac{4}{3}} \frac{\rho_\nu}{\rho_\gamma}$$
 
 ### Further reading
 
