@@ -36,8 +36,14 @@ You will find here some fun python applications to physics with some detailled e
 - [The FLRW metric: a closer look](cosmo/FLRW.md)
 - [Distances in cosmology](cosmo/distances.md)
 - [Cosmological horizons](cosmo/horizons.md)
+- The Friedmann equations
 - [Thermodynamics in an expanding Universe](cosmo/thermo_cosmo.md)
-- Boltzmann equations in the expanding Universe
+- [Boltzmann equations in the expanding Universe](cosmo/boltzmann.md)
 - The cosmic microwave background
+- Cosmological probes
 - On inflation and scalar fields on cosmic scales
+
+# Advanced cosmology: modified gravity
+
+- Modified gravity
 - Varying fundamental constants
