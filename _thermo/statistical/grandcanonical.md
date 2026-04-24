@@ -15,7 +15,7 @@ So far, we only considered situations in which the number of particle was fixed.
 
 In order to introduce the grand canonical ensemble, let us first go back on the discrete case, which already allowed us to derive very powerful results without having to deal with the complexity of phase space.
 
-Consider a system with accessible microstates caracterised by an energy $E_i$ and a number of particle $\mathcal{N}_i$. This would be typically the case of an open system in contact with a large reservoir, in which particle are free to enter and leave freely. The reservoir still impose the system to have a mean energy $\langle E \rangle=U$ and a mean particle number $\langle N \rangle$.
+Consider a system with accessible microstates characterized by an energy $E_i$ and a number of particle $\mathcal{N}_i$. This would be typically the case of an open system in contact with a large reservoir, in which particle are free to enter and leave freely. The reservoir still impose the system to have a mean energy $\langle E \rangle=U$ and a mean particle number $\langle \mathcal{N} \rangle$, which we will note $\mathcal{N}$ for simplicity.
 Maximizing the entropy $S$ of the system in this context, means asking for the constraints:
 
 $$
@@ -142,9 +142,11 @@ $$
 
 We introduce now the **chemical potential**
 
-$$\boxed{\mu = \frac{\partial U}{\partial N}\Bigg|_{S,V}}$$
+$$\boxed{\mu = \frac{\partial U}{\partial \mathcal{N}}\Bigg|_{S,V}}$$
 
-which is the canonical conjugate of $N$ (see supplements [here](./canonical.md)). 
+which is the canonical conjugate of $\mathcal{N}$ (see supplements [here](./canonical.md)). 
+From this definition, we see that $\mu$ quantifies how much the energy of the system changes when one goes from one equilibrium system to another with a different number of particles, **keeping the volume and the entropy fixed**. 
+
 Using our understanding of the connection between statistical physics and classical thermodynamics aquired in [a previous lecture](./classical.md), we are able to infer the physical meaning of the Lagrange multipliers:
 
 $$
@@ -379,7 +381,7 @@ Note here again that we could have guessed that $U = -\partial \ln(Xi)/\partial 
 
 The pressure remains 
 
-$$P =\frac{1}{\beta}\frac{\partial \Xi}{\partial V} $$
+$$\boxed{P =\frac{1}{\beta}\frac{\partial \Xi}{\partial V}}$$
 
 <details>
   <summary><strong>Proof:</strong></summary>
@@ -405,7 +407,98 @@ $$
 
 </details>
 
+## The continuous case
 
-### The continuous case
+### From sums to integrals
+
+### The ideal gas in the grand canonical ensemble
+
+Now consider the ideal gas scenario, identical to before, but with porous walls, such that particles can freely go in and out of the box of gas to/from the exterior. Remember that the system is in equilibrium with the exterior such that both the system and the exterior have the same temperature $T$.
+
+$$\Xi = \sum_{\mathcal{N}=0}^\infty e^{\beta\mu\mathcal{N}}\int_{\Pi} e^{-\beta\left(\frac{1}{2m}\sum_i^{3\mathcal{N}} p_i^2\right)}\text{d}\Gamma$$ 
+
+leading after integration to
+
+$$\boxed{\Xi = \rm{exp}\left(e^{\beta\mu}V\left(\frac{2m\pi}{\beta}\right)^{3/2}\right)}$$
+
+Contrarily to the canonical case, $\mathcal{N}$ is no more a constant appearing in the partition function, but should be understood as the mean of a fluctuating number of particle going in and out of the system $\mathcal{N}= \langle \mathcal{N}\rangle$, which can be infered from $\Xi$. We are able to derive:
+
+$$\boxed{\mathcal{N}= e^{\beta\mu} V(2\pi m T)^{3/2}}$$
+
+inverting the relation, we get:
+
+$$\boxed{\mu = T\left(\ln\left(\rho_{\mathcal{N}}\right)- \frac{3}{2}\ln\left(2\pi m T\right)\right)}$$
+
+Now, recalling that $\mu$ is related to the derivative of $U$ with respect to $\mathcal{N}$, you might think that this quantity is the energy added to the system if one particle is added. Such an interpretation is incorrect, as we know that it should be $3k_BT/2$. Furthermore, we see from the expression of $\mu$ that it seems to be negative for dilute gas ($\rho_{\mathcal{N}}$ small compared to the thermal term). How could the gas loose energy when one particle is added? 
+
+The way out is to remember that $\mu$ is indeed the change of energy when a particle is added, but at **constant volume and entropy**. Thus, $\mu$ informs you how the energy would change if you were to find another equilibrium state as the one under consideration, with the same entropy and same volume but one more particle.
+
+Thus, adding a particle at fixed $V$ and $S$ must be analyzed as a **two-step process**.
+
+**Step 1 — add the particle at fixed $T$ and $V$.** The particle deposits its share of thermal kinetic energy,
+
+$$\Delta U_1 = \frac{3}{2}T,$$
+
+and contributes an entropy
+
+$$\Delta S_1 = \left(\frac{\partial S}{\partial \mathcal{N}}\right)_{T,V} = -\ln\rho_\mathcal{N} + \frac{3}{2}\ln(2\pi m T) + \frac{3}{2} = -\frac{\mu}{T} + \frac{3}{2},$$
+
+obtained by differentiating the Sackur–Tetrode entropy
+
+$$S = \mathcal{N}\!\left[-\ln\rho_\mathcal{N} + \frac{3}{2}\ln(2\pi m T) + \frac{5}{2}\right]$$
+
+at fixed $T$ and $V$. For a dilute gas $\mu/T$ is large and negative, so $\Delta S_1 \gg 3/2$: the new particle carries far more entropy than the $3T/2$ of kinetic energy alone would suggest, because of the huge configurational phase space now available to it.
+
+**Step 2 — cool the gas to restore $S$.** With heat capacity $C_V = \tfrac{3}{2}\mathcal{N}$ and $(\partial S/\partial T)_{\mathcal{N},V} = C_V/T$, the temperature drop needed to erase the entropy gain of Step 1 is
+
+$$\delta T = -\frac{T\,\Delta S_1}{C_V} = \frac{2\mu}{3\mathcal{N}} - \frac{T}{\mathcal{N}}.$$
+
+This cooling strips energy out of the pre-existing gas:
+
+$$\Delta U_2 = C_V\,\delta T = \mu - \frac{3}{2}T.$$
+
+**Summing the two steps.**
+
+$$\left(\frac{\partial U}{\partial \mathcal{N}}\right)_{\!S,V} = \Delta U_1 + \Delta U_2 = \frac{3}{2}T + \mu - \frac{3}{2}T = \mu.$$
+
+The $3T/2$ that the new particle brings in is refunded **exactly** by the compensating cooling, and what survives is $\mu$ itself — negative for a dilute classical gas, because the cooling must remove *more* energy than the new particle deposits in order to cancel the large configurational entropy that came with it. This is the correct reading of "energy cost of one more particle": not the naive $3T/2$ at fixed temperature, but the net energy balance once the rest of the gas has been readjusted to keep its entropy unchanged.
+In a sense, we can say that $\mu$ quantifies the change in energy for the addition of motionless particle to the gas, which then thermalizes. In our case, this would cool down the gas as accelerating it would cost some energy. 
+
+While it is more abstract, it is often more useful to understand this problem in terms of Gibbs free energy. Indeed, if one adds a particle and increase entropy by $\Delta S$ and energy by a quantity $\Delta U$, we would get:
+
+$$\mu= \Delta U - T \Delta S$$
+
+which corresponds to a non variation of Gibbs free energy, which is maximum at equilibrium as a thermodynamical potential. At constant volume and for $\Delta \mathcal{N}=1$:
+
+$$ \Delta G = \Delta U - T \Delta S + \mu   = 0$$
+
+You can easily convince yourself that, from this expression, the expressions for $U$, $P$ and $S$ will be the same as the one we already obtained in the canonical case, that is:
+
+$$U = \frac{3}{2}\mathcal{N}T $$
+
+$$S = $$
+
+$$P = $$
+
+<details>
+  <summary><strong>Proof:</strong></summary>
+
+</details>
+
+However, again, in all these expressions, $\mathcal{N}$ is interpreted as the mean value of something fluctuating.
 
 
+## Multiple species interactions
+
+$$
+\Xi = \sum_i e^{-\beta(E_i - \mu_A \mathcal{N}_i^A - \mu_B \mathcal{N}_i^B)}
+$$
+
+If a reaction $A \leftrightarrow B$ goes 
+
+$$\mu_A  = \mu_B $$
+
+
+For $N_{s}$ species with reactions $A+B+C ... \leftrightarrow X+Y+Z+ ...$
+
+$$\mu_A + \mu_B + \mu_C + ...= \mu_X + \mu_Y + \mu_Z $$

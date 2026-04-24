@@ -35,11 +35,11 @@ with $U_0= \int U(\|q\|)\text{d}q$ for a single particle.
 
 From the expression of $Z$, it becomes possible to express, as before, the physical quantities of interest:
 
-$$\boxed{ U = \frac{3}{2}\mathcal{N}k_B T + \frac{\mathcal{N}\rho}{2}U_0}$$
+$$\boxed{ U = \frac{3}{2}\mathcal{N}k_B T + \frac{\mathcal{N}\rho_{\mathcal{N}}}{2}U_0}$$
 
-$$\boxed{P =  \rho k_B T + \frac{\rho^2}{2}U_0}$$
+$$\boxed{P =  \rho_{\mathcal{N}} k_B T + \frac{\rho_{\mathcal{N}}^2}{2}U_0}$$
 
-We see that we get the ideal gas formula plus some corrections due to the interactions proportional to the density of particles $\rho$ (and hence, at very low densities $\rho \to 0$, we recover the ideal gas).
+We see that we get the ideal gas formula plus some corrections due to the interactions proportional to the density of particles $\rho_{\mathcal{N}}$ (and hence, at very low densities $\rho_{\mathcal{N}} \gg \rho_{\mathcal{N}}^2$, we recover the ideal gas).
 
 
 <details>

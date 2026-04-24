@@ -19,9 +19,9 @@ subtitle: Maths and mathematical physics
 - Group, vector spaces and algebra
 - Manifolds
 - General notions: curve, functions, sequences
-- Applications to thermodynamics
 - classical electromagnetism
 - Symplectic geometry: Phase space
+- [Thermodynamics and its analogies with mechanics](./geodiff/thermodynamics.md)
 - space-time and general relativity
 
 # Measure theory and foundations of quantum mechanics

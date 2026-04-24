@@ -12,6 +12,8 @@ From the local conservation of energy-momentum in a curved space-time $\nabla_\m
 
 $$\boxed{\dot{\rho} = -3H(\rho + P)}$$
 
+where $\rho$ is the energy density of the content of the Universe (not to confuse with the probability density in phase space in the thermodynamics class or mass density in fluid mechanics) and $P$ is its pressure.
+
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
 
@@ -39,7 +41,7 @@ $$
 \end{aligned}
 $$
 
-Setting it to zero as imposed by the conservation law and defining $H= \dot{a}/a$.:
+Setting it to zero as imposed by the conservation law and defining $H= \dot{a}/a$:
 
 $$\dot{\rho} + 3H(\rho + P)=0$$
 
@@ -108,16 +110,41 @@ Again, since $H_0$ is poorly known, it is more convenient to consider the reduce
 
 ### Particle number density
 
-The number density i.e. the mean number of particle in a state of position $x$ and spatial momentum $p$ in phase space is noted $f(x, p)$. If the content of the universe is homogeneous $f(x,p)=f(p)$. This function can be identified with the $\langle n_{p} \rangle$ in [statistical mechanics](../../../thermo/statistical/fermions_bosons/), where the energy of the state is expressed in terms of its momentum $p$. [Phase space](../../../thermo/statistical/phasespace/) is re-introduced from Fock-space using the semi-classical limit. From this, it is possible to express, $n$ the number density of particles at a point $x$ in space-time as
+The number density i.e. the mean number of particle in a state of position $\vec{x}$ and spatial momentum $\vec{p}$ in phase space is noted $f(\vec{x}, \vec{p})$. The **cosmological principle** implies that the universe is, on large scales is **homogeneous** (no preferred location) and **isotropic** (no preferred direction).
+As such, if the content of the universe is distributed homogeneously, $f(\vec{x},\vec{p})=f(\vec{p})$. Furthermore, if it is distributed isotropically then $f(\vec{x},\vec{p})=f(p)$ with $p=\|\vec{p}\|$. This function can be identified with the $\langle n_{p} \rangle$ in [statistical mechanics](../../../thermo/statistical/fermions_bosons/), where the energy of the state is expressed in terms of its momentum $p$. [Phase space](../../../thermo/statistical/phasespace/) is re-introduced from Fock-space using the semi-classical limit. From this, it is possible to express, $n$ the number density of particles at a point $x$ in space as
 
 $$\boxed{n = g \int f(p) \frac{\text{d}^3p}{(2\pi \hbar)^3}.}$$
 
-The factor $1/(2\pi\hbar)^3$ is the semi-classical volume of a cell in phase space. $g$ is the **degeneracy**, quantifying the multiplicity of the energy states.
+The factor $1/(2\pi\hbar)^3$ is the semi-classical volume of a cell in phase space. $g$ is the **degeneracy**, quantifying the multiplicity of the energy states. Note that here we follow standard notations in cosmology and use $n$ as the number of particles per unit of volume, which was noted $\rho_{\mathcal{N}}$ in the thermodynamics class (while $n$ was the number of particles in moles entering in the ideal gas law and $n_\lambda$ the number of excitations of a quantum state $\lambda$). We should be careful not to confuse all these concepts! 
+
+The isotropy assumption further helps us in the calculation of integrals such as the ones for $n$, as it implies that $\int \text{d}^3p =\int \text{d}p_x\text{d}p_y\text{d}p_z = \int 4\pi p^2 \text{d}p$.
+
+<details markdown="1">
+  <summary><strong>A quick reminder on spherical coordinates</strong></summary>
+
+Simply as a quick reminder: Looking at a point of space $x$, the number of particle can depends on $p_x$, $p_y$ and $p_z$ (this is a slice of phase space). The vector $\vec{p}$ can be expressed in spherical coordinates as $p_x=p\sin(\theta)\cos(\varphi)$, $p_y=p\sin(\theta)\cos(\varphi)$ $p_z=p\cos(\theta)$, with $p=\|\vec{p}\|$. Using a bit of trigonometric gymnastic we reach:
+
+$$\text{d}^3p=\text{d}p_x\text{d}p_y\text{d}p_z =  \sin(\theta) p^2 \text{d}p \text{d}\theta \text{d}\varphi$$
+
+If the matter is distributed isotropically, no direction should be prefered and the distribution function must depends only on the norm $p$. The integrals over all possible modes becomes
+
+$$
+\begin{aligned}
+\int f(p)\text{d}^3p&=  \iiint f(p)p^2 \text{d}p \text{d}\theta \text{d}\varphi \\
+&= \int_0^\pi \sin(\theta)\text{d}\theta \int_0^{2\pi}\text{d}\varphi \int f(p) p^2\text{d}p \\
+&= [-\cos(\theta)]_0^{\pi} 2\pi  \int p^2 f(p)\text{d}p\\
+&= 4\pi \int p^2 f(p)\text{d}p
+\end{aligned}
+$$
+
+</details>
+
+
 
 <details markdown="1">
   <summary><strong>Supplement: from statistical physics to cosmology</strong></summary>
 
-In [statistical mechanics](../../../thermo/statistical/fermions_bosons/), we saw that quantum statistical systems made of identical non-interacting particles were properly described in Fock space. The operator for the number of particles was noted $\hat{\mathcal{N}}$. Furthermore, quantum systems were characterized by occupation number $n_lambda$ of each accessible energy state, labelled by the index $\lambda$. Assuming that we are considering free particles, there energy states can alternatively be labelled by their spatial momenta $p$. Indeed, it will be possible to recover the energy state from $p$ through some form of dispersion relation as $E(p)=\sqrt{p^2+m^2}$. From the partition functions, we were able to express the mean number of particles in a given state, $\langle n_{p}\rangle$.
+In [statistical mechanics](../../../thermo/statistical/fermions_bosons/), we saw that quantum statistical systems made of identical non-interacting particles were properly described in Fock space. The operator for the number of particles was noted $\hat{\mathcal{N}}$. Furthermore, quantum systems were characterized by occupation number $n_lambda$ of each accessible energy state, labelled by the index $\lambda$. Assuming that we are considering free particles, there energy states can alternatively be labelled by the norm of their spatial momenta $p$. Indeed, it will be possible to recover the energy state from $p$ through some form of dispersion relation as $E(p)=\sqrt{p^2+m^2}$. From the partition functions, we were able to express the mean number of particles in a given state, $\langle n_{p}\rangle$.
 
 The mean number of particles of the total system becomes:
 
@@ -128,7 +155,7 @@ $$
 Here, $p$ labels discrete momentum eigenstates.
 
 We now want to connect this description to the classical phase space description.
-To make the problem well-defined, place the system in a box of finite volume $V = L^3$. While this might seems arbitrary, it is the standard way to obtain the semi-classical limit. We will then be able to consider the limit $L\to infty$.
+To make the problem well-defined, place the system in a box of finite volume $V = L^3$. While this might seems arbitrary, it is the standard way to obtain the semi-classical limit. We will then be able to consider the limit $L\to \infty$.
 
 With periodic boundary conditions, each component of the momentum is quantized as:
 
@@ -191,11 +218,11 @@ f(p) &= \frac{1}{e^{(E - \mu)/T} + 1} \quad \text{for fermions}.
 \end{aligned}
 $$
 
-In an expanding universe we use the **physical momentum**:
+In an expanding universe these distributions are true with respect to the **physical momentum**, which as we saw in a [previous lecture](../cosmo/FLRW.md), is stretched with the evolution of the Universe as
 
-$$ p^i =P^i/a $$
+$$ p^i \propto 1/a $$
 
-which is the value of the momentum scaled by the effect of the expansion of the Universe. Using this variable, the expansion preserves the form of the distribution function. 
+As we will see in the lecture discussing the time evolution of $f$ with the [Boltzmann equation](../cosmo/boltzmann.md), the expansion preserves the form of the distribution function expressed in terms of $p$. 
 
 The **energy density** is simply:
 
@@ -205,9 +232,9 @@ in which we sum over all momentum space the product of the number of particles w
 
 The expression for the **pressure** is trickier and reads:
 
-$$\boxed{P = g \int f(p)\frac{p^2}{3E(p)}\frac{\text{d}^3p}{(2\pi)^3}}$$
+$$\boxed{P = g \int f(p)\frac{p^2}{3E(p)}\frac{\text{d}^3p}{(2\pi)^3}}.$$
 
-and expresses the flux of momentum through a surface.
+It expresses the flux of momentum of the fluid through a surface.
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
@@ -257,7 +284,7 @@ In term of $f(p)$, the entropy density takes the rather complicated form:
 
 $$s= -g\int f(p)\ln(f(p))\mp(1\pm f(p))\ln(1\pm f(p)) \frac{\text{d}^3 p}{(2\pi)^3},$$
 
-which generalizes the statistical mechanics formula $S= -\int \rho \ln(\rho)\text{d}\Gamma$. Thanksfully, we will not have to work directly with such a complicated expression, and we present this formula and discuss it in the following supplement only for the curious reader. 
+which generalizes the statistical mechanics formula $S= -\int \rho(\Gamma) \ln(\rho(\Gamma))\text{d}\Gamma$, with $\rho(\Gamma)$ the probability density at a phase space point $\Gamma$. Thanksfully, we will not have to work directly with such a complicated expression, and we present this formula and discuss it in the following supplement only for the curious reader. 
 
 <details markdown="1">
   <summary><strong>Supplement: from statistical entropy to $s$ </strong></summary>
@@ -288,7 +315,7 @@ $$s = \frac{\rho + P - \sum_i \mu_i n }{T}$$
 
 Using the continuity equation we can show that $s$ evolves with the expansion as
 
-$$s = \frac{s_0}{a^3}$$
+$$\boxed{s \propto \frac{1}{a^3}}$$
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
@@ -301,12 +328,12 @@ $$s = \frac{s_0}{a^3}$$
 ### Baryons and Dark matter
 
 As we know very well, our universe contains matter composed of particles of the standard model: electrons and quarks. The mass of such matter is mostly dominated by baryons in the form of protons (and neutrons when bounded into atoms). As such, it is standard to name as **baryonic matter** such matter.
-From now one, we will use the indices $m$ for matter, $b$ for baryonic matter. Baryonic matter is slow on cosmological scales, and its energy is largely dominated by its mass $m$.
+From now one, we will use the indices $m$ for matter, $b$ for baryonic matter. Baryonic matter is slow on cosmological scales, and its energy is largely dominated by its mass $m$. As we will see, and as expected, baryonic matter on cosmological sclaes behaves largely as an **ideal gas**.
 
 Restoring units, the energy of a relativistic particle is related to its momentum and mass $m$ through the dispersion relation
 $E(p)= \sqrt{p^2c^2 + m^2c^4}$. In the limit of a massive and slow (non-relativistic) particle, this expression takes the form $E(p)\simeq \frac{p^2}{2m} + mc^2$. Using this formula in the definition of the number density, we obtain, for slow moving particles:
 
-$$\boxed{n_b = g_b \left(\frac{m T}{2 \pi}\right)^{3/2} e^{\frac{\mu - m}{T_b}}}$$
+$$\boxed{n_b = g_b \left(\frac{m T_b}{2 \pi}\right)^{3/2} e^{\frac{\mu - m}{T_b}}}$$
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
@@ -328,9 +355,13 @@ We know that the energy of the baryonic matter is dominated by protons and neutr
 
 $$\begin{aligned}
 n_b &= g_b \int \frac{1}{e^{(\frac{p^2}{2m}+ m -\mu)/ T_b}}\frac{\text{d}^3p}{(2\pi)^3}\\
+&=g_b \int e^{-(\frac{p^2}{2m} + m-\mu)/T_b}4\pi p^2\frac{\text{d}p}{(2\pi)^3}\\
+&= \frac{g_b}{2\pi^2} e^{\frac{\mu-m}{T_b}}\int e^{-\frac{p^2}{2mT_b}}p^2\text{d}p
 \end{aligned}$$
 
 </details>
+
+The exponential supression of $n$ by $e^{(\mu-m)/T}$ can be understood as the anhilation of particles and anti-particles at low energy, where pair production is rare (to be more discussed). 
 
 baryon asymmertry and CP violation.
 
@@ -338,15 +369,25 @@ The energy density becomes
 
 $$\boxed{\rho_b = n_b\left(m + \frac{3}{2}T_b\right)}$$
 
-Recongizing the ideal gas energy.
+Recongizing the rest mass energy ($mc^2$) as well as the ideal gas energy per particle ($3k_BT/2$).
 
-The pressure 
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
+</details>
+
+The pressure is given by the **ideal gas** law
 
 $$\boxed{P_b = n_b T_b}$$
 
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
+</details>
+
 Since $mc^2 \gg k_bT_b$, $P_b\gg \rho_b$. As such $w=0$ for baryonic matter.
 
-$\Omega_b h^2$ $\Omega_b$
+$\Omega_b h^2$, $\Omega_b$
 
 
 Assumption is that dark matter is a form of matter, which is **cold** and **heavy**. As such we assume that $w=0$ even though its nature remain unknown.
@@ -422,10 +463,9 @@ $$ s_\gamma =\frac{4\pi^2}{45}T_\gamma^3$$
 
 ### Neutrinos
 
-Since neutrinos are highly relativistic, they also have $E\sim pc$, such that $w~1/3$, for the same reasons as for the photons.
+Since neutrinos are highly relativistic, they also have $E\sim pc$, such that $w\sim 1/3$, for the same reasons as for the photons. We will assume for now that $\mu_\nu=0$.
 
-$$n_\nu= $$
-
+$$\boxed{n_\nu= \frac{3}{4}\frac{2\zeta(3)}{\pi^2}T_\nu^3}$$
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
@@ -434,19 +474,51 @@ $$n_\nu= $$
 
 For neutrinos, we get a similar dependence with temperature
 
-$$\rho_\nu = N_\nu\frac{7}{8}\frac{\pi^2}{15}T_\nu^4 $$
+$$\boxed{\rho_\nu = N_\nu\frac{7}{8}\frac{\pi^2}{15}T_\nu^4}$$
 
 where $N_\nu$ is the number of neutrino generations, $N_\nu=3$.
+
+$$\sum_\nu m_\nu \leq  0.120 \,\text{eV}$$
+
+Measurement of the CMB constraint $\Omega_r= \Omega_\gamma + \Omega_\nu$, and this is consistent with the expect density of neutrinos from the standard model.
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
 
 </details>
 
+### Dark energy 
 
-## Decoupling and the effective number of relativistic species
+### Summary
 
-Now all these components are together. Only when all can interact enough to thermalize do we have a single $T=T_b=T_\gamma=T_\nu$ shared by all of them.
+| Quantity | Baryons | Cold dark matter | Photons | Neutrinos | Dark energy |
+|---|---|---|---|---|---|
+| $w$ | $0$ | $0$ | $1/3$ | $1/3$ | $-1$ |
+| $\Omega_i h^2$ | $0.02237 \pm 0.00015$ | $0.1200 \pm 0.0012$ | $2.47\times10^{-5}$ | $1.68\times10^{-5}$ | $0.311\, h^2 \approx 0.141$ |
+| $\Omega_i$ ($h=0.674$) | $0.0493 \pm 0.0003$ | $0.264 \pm 0.003$ | $5.4\times10^{-5}$ | $3.7\times10^{-5}$ | $0.685 \pm 0.007$ |
+| $n$ | $g_b\left(\frac{m_b T_b}{2\pi}\right)^{3/2}e^{(\mu-m_b)/T_b}$ | $\propto a^{-3} \propto T_\gamma^3$ (relic) | $\frac{2\zeta(3)}{\pi^2}T_\gamma^3$ | $\frac{3}{4}\frac{2\zeta(3)}{\pi^2}T_\nu^3$ | undefined |
+| $\rho$ | $n_b\left(m + \frac{3T_b}{2}\right)$ | $n_{c}\cdot m_{c}$ | $\frac{\pi^2}{15}T_\gamma^4$ | $\frac{7}{8}\frac{\pi^2}{15}g_\nu T_\nu^4$ | $\frac{\Lambda}{8\pi G}$ |
+| $P$ | $n_bT_b$ | $\approx 0$ | $\frac{\pi^2}{45}T_\gamma^4$ | $\rho_\nu/3$ | $-\frac{\Lambda}{8\pi G}$ |
+| $\rho \propto$ | $a^{-3}$ | $a^{-3}$ | $a^{-4}$ | $a^{-4}$ | $a^{0}$ |
+
+
+## Decoupling and the thermal history of the Universe
+
+Now let us consider all these components are together. Only when all can interact enough to thermalize do we have a single $T=T_b=T_\gamma=T_\nu$ shared by all of them. This is expected to be the case in the very early Universe, when the temperature and density was extremely high, such that each component was highly interacting and could be in thermal equilibrium with one another.
+
+As the Universe cools and expands, some of the interactions become more and more rare until ultimately some particles **decouple** from the other components. Their interaction rate with the other components becomes so low that the mean interaction time with another component becomes larger than the age of the Universe at that epoch.
+
+Schematically, the early thermal history of the Universe goes as follows:
+
+- Initially, all components are in thermal equilibrium and interacting highly. Around one second after the birth of the universe, matter is made of a large quantity of electrons and positrons, as well as some quarks bounded into protons and neutrons.   
+- The **neutrinos** are the first ones to decouple, around 1 second after the birth of the Universe. The reason is that they already interact very few with other components of matters, only through the weak interaction and gravity. C$\nu$B.
+- Around 6 seconds after the birth of the Universe, electrons and positrons anihilate, leaving only a few amount of baryonic matter. They transform into photons, thus transferring their energy content to the background of photons. 
+- Around 3 minutes after the birth of the Universe, protons and neutrons are merged to form some elements. **BBN**.
+- Around 380 000 years after the birth of the Universe, the first atoms are formed. **photons** decouple. CMB.
+- Baryonic and dark matter decoupling.
+- Dark energy never decouples.
+
+### Decoupling of neutrinos and the effective number of relativistic species
 
 The neutrino energy density can be expressed in terms of the photon energy density as
 
@@ -456,18 +528,27 @@ Now, what should be the difference of temperature between the photons and the ne
 
 It is possible to show that:
 
-$$\boxed{\left(\frac{T_\nu}{T_\gamma}\right)^4 =  \left(\frac{4}{11}\right)^{\frac{3}{4}}}$$
+$$\boxed{\left(\frac{T_\nu}{T_\gamma}\right)^4 =  \left(\frac{4}{11}\right)^{\frac{4}{3}}}$$
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
 
 </details>
 
+$$
+\boxed{\rho_r = \rho_\gamma\left(1 + \frac{7}{8}\left(\frac{4}{11}\right)^{4/3} N_{eff}\right)} 
+$$
+
+with **the effective number of relativistic species**:
 
 $$\boxed{N_{eff} = \frac{8}{7}\left(\frac{11}{4}\right)^{\frac{4}{3}} \frac{\rho_\nu}{\rho_\gamma}}$$
 
-### Dark energy 
+### Decoupling of dark matter
+
+### Decoupling of baryonic matter
+
 
 ### Further reading
 
-- S. Dodelson - Modern Cosmology - 2025 (3rd edition)
+- S. Dodelson, F. Smith - Modern Cosmology - 2025 (3rd edition).
+- D. Baumann - Cosmology - Cambridge University press - 2022.

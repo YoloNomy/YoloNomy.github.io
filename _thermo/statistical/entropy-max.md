@@ -332,7 +332,7 @@ We plotted below the probability distribution maximizing the entropy with the co
 
 
 <details markdown="1">
-<summary><strong>Exercice :</strong> think about other observational constraints you could add to the biased die to refine the estimation of it's probability distribution. Try to add them in the code and see how it changes the curve of $p_i$  </summary>
+<summary><strong>Exercice :</strong> think about other observational constraints you could add to the biased die to refine the estimation of its probability distribution. Try to add them in the code and see how it changes the curve of $p_i$  </summary>
 
 For the case of a biased die, we can not look at other observables than $i$ to constraint their average value. 
 
@@ -345,15 +345,15 @@ $$
  \end{aligned}
 $$
 
-The variance quantifies the average deviation of $i$ around it's average value. In other word, it quantifies the scatter of $i$ around $\langle i \rangle$.
+The variance quantifies the average deviation of $i$ around its average value. In other word, it quantifies the scatter of $i$ around $\langle i \rangle$.
 
-Adding the constraint on the variance with it's own Lagrange multiplier can be done and further specify the shape of $p_i$, leading to:
+Adding the constraint on the variance with its own Lagrange multiplier can be done and further specify the shape of $p_i$, leading to:
 
 $$ p_i = \frac{1}{\sum_i^6e^{-\lambda_1i - \lambda_2 i^2}}e^{-\lambda_1i - \lambda_2 i^2}$$
 
-This is further illustrated in [this code](../codes/biased_dice_var.py). However, one should be careful, as doing so might force the probability distribution to look like a Gaussian bell curve.
+This is further illustrated in [this code](../codes/biased_dice_var.py). However, one should be careful, as doing so force the probability distribution to look like a Gaussian bell curve.
 
-It should thus be done only when justified, in order to avoid biaising what we think $p_i$ look like with unjustified a priori.
+The next section will focus on what constraints can legitimately be added to estimate $p_i$ in a way that really reflects the properties of the physical system under consideration. 
 
 ![image](../images/biased_dice_var.png){: width="80%"}
 
@@ -366,6 +366,17 @@ It should thus be done only when justified, in order to avoid biaising what we t
 
 
 </details>
+
+### What constraints are legitimate to add?
+
+In practice, one could think of adding every possible measured value to improve the estimation of $p_i$. However, this is not true and the addition of some problematic constraints could bias your estimation of $p_i$. 
+If we consider now a physical system evolving through time across accessible microstates, we might wander what constraints we could add in order to get an estimation of the probability of each microstate that reflects reality (i.e. that reflects how many time the system visit one of its microstate).
+In order to make sense, the constraints added to the maximisation of entropy must be:
+
+- Stable through time evolution: if I measure the mean value of something, it should be true that this value will always be the same.
+- Independent of one another: I should not add a constraint that is linked to another one. Or add some information that is already determined by the constraints already asked. This would typically be the case if one adds the moments on top of the mean value for energy fluctuations in a thermal bath (or, as we will see, if one fixes the number of photons of a black body, which is already itself fully determined by the temperature).
+
+More generally, the choice of “good” constraints is not purely a mathematical matter but relies on physical insight about which macroscopic variables are the relevant ones for the system at hand.
 
 ## Going further: recommended readings and watching
 

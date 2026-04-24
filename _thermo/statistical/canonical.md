@@ -272,14 +272,14 @@ $$\boxed{P := -\frac{\partial{\langle E \rangle}}{\partial{V}}\Bigg|_S}$$
 We will also justify such a definition in the next section.
 As such, knowing $Z$ allows us to express all our state variable and state functions and relate them to the microscopic behaviour of the system. Note that we operate here a change of point of view compared to classical thermodynamics, where quantities such as $P,T$ are not only considered only as state variables which can be measured and of which we try to keep track of the evolution. They are clearly considered as emerging from the underlying microscopic probability distribution of the constituents of the system and reflect the transformation of these probability distributions when some physical transformation is applied on the system (respectively a change of mean energy for the temperature and a change of volume for the pressure).
 
-<details>
-  <summary><strong>Sidenote: on thermodynamical conjugate variables</strong></summary>
+<details markdown="1">
+  <summary><strong>Sidenote: reminder on thermodynamical conjugate variables</strong></summary>
 
 We see a common structure in the definition of $T$ and $P$ above in the sense that they are both defined as the rate of change of the mean energy with respect to under some fixed conditions. That is, both definition follows the structure:
 
 $$ X = \frac{\partial{\langle E\rangle}}{\partial{Y}}\Bigg|_Z$$ 
 
-If two variables $X$ and $Y$ are related in such a way, they are say to be **conjugate variables** in the sense of thermodynamics. $X$ is **intensive** while $Y$, sometimes called the **control parameter** is **extensive** (see classical thermodynamics class).
+If two variables $X$ and $Y$ are related in such a way, they are said to be **conjugate variables** in the sense of thermodynamics. $X$ is **intensive** while $Y$, sometimes called the **control parameter** is **extensive** (see classical thermodynamics class).
 This is the case of many relevant quantities that appear in thermodynamics. All these quantities appear in the first principle of thermodynamics as products in the form of:
 
 $$\text{d} U = X \text{d}Y$$
@@ -290,7 +290,22 @@ Here are some example of conjugate variables:
 
 - $T$ and $S$ (temperature and entropy)
 - $P$ and $V$, or more rigorously -$V$ (pressure and volume)
-- $\mu$ and $N$ (chemical potential and number of particles)
+- $\mu$ and $\mathcal{N}$ (chemical potential and number of particles)
+
+When two system have different value for the extensive variabl $X$, a flow of the intensive variable $Y$ will appear until the two system agree on the value of $X$.
+This allows to define equilibrium:
+
+- Thermal equilibrium for the couple $T/S$.
+- Mechanical equilibrium for the couple $P/V$.
+- Diffusive equilibrium for the couple $\mu/\mathcal{N}$.
+
+For more on this, see also our discussion in our classical thermodynamics lectures on [equilibrium](../thermo/equilibrium.md) and [thermodynamics potentials](../thermo/potentials.md).
+
+Conjugate variable play such a key role in statistical physics as $X$ is interpreted as the Lagrange multiplier associated to some constraint on $Y$. There is an extra-subtelty here, with the fact that the Lagrange multiplier associated with $\langle E \rangle$ is $1/T$ (and not $T$ which would be the Lagrange multiplier of $S$). These conflates two separate notion of conjugaison. The pair $X$ and $Y$ defined above are related to variations of $U$ and are said to be conjugate in the sense of the Legendre transformation, which we will discuss more in [a later lecture](../statistical/ensemble_overview.md). The conjugaison between Lagrange multiplier and constraint is related to how pairs of variables appear in the change of the entropy $S$ and is obtained by looking instead at the entropy in the definition 
+
+$$\text{d} S = X' \text{d}Y'$$
+
+If we use this definition, we could call $X'$ and $Y'$ the Lagrange conjugates and we obtain the pairs $(1/T,U)$, $(P/T,V)$ and $(\mu/T,\mathcal{N})$. We see that we obtain similar, but still different pairs of conjugates as with Legendre, which really are (as we will see later) the pairs Lagrange multiplier/quantity that is constrained.
 
 </details>
 

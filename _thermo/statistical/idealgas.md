@@ -36,9 +36,9 @@ where we added the $1/\mathcal{N}!$ in the Liouville measure in order to account
 
 It is possible to drastically simplify the previous integral to obtain the much nicer expression for $Z$:
 
-$$ \boxed{Z=\left(\frac{e}{\rho}\right)^\mathcal{N}\left(\frac{2m\pi}{\beta}\right)^{\frac{3\mathcal{N}}{2}}}$$
+$$ \boxed{Z=\left(\frac{e}{\rho_{\mathcal{N}}}\right)^\mathcal{N}\left(\frac{2m\pi}{\beta}\right)^{\frac{3\mathcal{N}}{2}}}$$
 
-where $\rho = \mathcal{N}/V$ is the number density of particles.
+where $\rho_{\mathcal{N}} = \mathcal{N}/V$ is the number density of particles.
 
 To obtain it, we must first know the following property of **Gaussian integral**:
 
@@ -118,13 +118,13 @@ $$
 \begin{align}
 \frac{V^\mathcal{N}}{\mathcal{N}!} &\sim\frac{V^\mathcal{N}}{\mathcal{N}^\mathcal{N}e^{-\mathcal{N}}} \\
 &=  \frac{e^{\mathcal{N}}V^\mathcal{N}}{\mathcal{N}^\mathcal{N}}\\
-&= \left(\frac{e}{\rho}\right)^{\mathcal{N}}
+&= \left(\frac{e}{\rho_{\mathcal{N}}}\right)^{\mathcal{N}}
 \end{align}
 $$
 
-with $\rho= \mathcal{N}/V$. Replacing, we obtain the final result:
+with $\rho_{\mathcal{N}}= \mathcal{N}/V$. Replacing, we obtain the final result:
 
-$$Z=\left(\frac{e}{\rho}\right)^{\mathcal{N}} \left(\frac{2m\pi}{\beta}\right)^{\frac{3\mathcal{N}}{2}}$$
+$$Z=\left(\frac{e}{\rho_{\mathcal{N}}}\right)^{\mathcal{N}} \left(\frac{2m\pi}{\beta}\right)^{\frac{3\mathcal{N}}{2}}$$
 
 </details>
 
@@ -148,8 +148,8 @@ We thus recover the property that $U=U(T)$ for an ideal gas, known as the first 
 Start by computing $\ln(Z)$:
 
 $$\begin{aligned}
-\ln(Z)&=\ln\left(\left(\frac{e}{\rho}\right)^\mathcal{N}\left(\frac{2m\pi}{\beta}\right)^{\frac{3\mathcal{N}}{2}}\right) \\
-&= \mathcal{N}\ln\left(\frac{e}{\rho}\right)+\frac{3\mathcal{\mathcal{N}}}{2}\left(\ln(2m\pi)-\ln(\beta)\right)\\
+\ln(Z)&=\ln\left(\left(\frac{e}{\rho_{\mathcal{N}}}\right)^\mathcal{N}\left(\frac{2m\pi}{\beta}\right)^{\frac{3\mathcal{N}}{2}}\right) \\
+&= \mathcal{N}\ln\left(\frac{e}{\rho_{\mathcal{N}}}\right)+\frac{3\mathcal{\mathcal{N}}}{2}\left(\ln(2m\pi)-\ln(\beta)\right)\\
 \end{aligned}
 $$
 
@@ -176,7 +176,9 @@ $$S =  \beta U + \ln(Z)$$
 
 we are able to derive easily from the previous expressions:
 
-$$\boxed{S = \mathcal{N}\left(\frac{5}{2} - \ln(\rho) + \frac{3}{2}\ln(2\pi mk_B T)\right)}$$
+$$\boxed{S = \mathcal{N}\left(\frac{5}{2} - \ln(\rho_{\mathcal{N}}) + \frac{3}{2}\ln(2\pi mk_B T)\right)}$$
+
+This is known as the **Sackur-Tetrode equation**.
 
 <details>
  <summary><strong>Proof</strong></summary>
@@ -184,7 +186,7 @@ $$\boxed{S = \mathcal{N}\left(\frac{5}{2} - \ln(\rho) + \frac{3}{2}\ln(2\pi mk_B
 From the proof of the expression for $U$, we already computed both
 
 $$\begin{aligned}
-\ln(Z) = \mathcal{N}\ln\left(\frac{e}{\rho}\right)+\frac{3\mathcal{N}}{2}\left(\ln(2m\pi)-\ln(\beta)\right)\\
+\ln(Z) = \mathcal{N}\ln\left(\frac{e}{\rho_{\mathcal{N}}}\right)+\frac{3\mathcal{N}}{2}\left(\ln(2m\pi)-\ln(\beta)\right)\\
 \end{aligned}
 $$
 
@@ -197,10 +199,10 @@ $$
 Puting everything together, we obtain
 
 $$
-\begin{align}S &= \frac{3}{2}\mathcal{N} +  \mathcal{N}\ln\left(\frac{e}{\rho}\right)+\frac{3\mathcal{N}}{2}\left(\ln(2m\pi)+\ln(k_B T)\right)\\
-&= \frac{3}{2}\mathcal{N} + \mathcal{N} - \mathcal{N}\ln(\rho) + \frac{3}{2}\mathcal{N}\ln(2m\pi) + \frac{3}{2}\mathcal{N}\ln(k_B T)\\
-&= \mathcal{N}\left(\frac{3}{2} + 1 - \ln(\rho) + \ln(2\pi mk_B T)\right) \\
-&= \mathcal{N}\left(\frac{5}{2} - \ln(\rho) + \frac{3}{2}\ln(2\pi mk_B T)\right)
+\begin{align}S &= \frac{3}{2}\mathcal{N} +  \mathcal{N}\ln\left(\frac{e}{\rho_{\mathcal{N}}}\right)+\frac{3\mathcal{N}}{2}\left(\ln(2m\pi)+\ln(k_B T)\right)\\
+&= \frac{3}{2}\mathcal{N} + \mathcal{N} - \mathcal{N}\ln(\rho_{\mathcal{N}}) + \frac{3}{2}\mathcal{N}\ln(2m\pi) + \frac{3}{2}\mathcal{N}\ln(k_B T)\\
+&= \mathcal{N}\left(\frac{3}{2} + 1 - \ln(\rho_{\mathcal{N}}) + \ln(2\pi mk_B T)\right) \\
+&= \mathcal{N}\left(\frac{5}{2} - \ln(\rho_{\mathcal{N}}) + \frac{3}{2}\ln(2\pi mk_B T)\right)
 \end{align}
 $$
 
@@ -217,14 +219,14 @@ $$
 
 using the previous expression for $Z$, we obtain:
 
-$$P = \rho k_B T = \frac{\mathcal{N}}{V}k_B T$$
+$$P = \rho_{\mathcal{N}} k_B T = \frac{\mathcal{N}}{V}k_B T$$
 
 <details>
  <summary><strong>Proof</strong></summary>
 We know that
 
 $$\begin{aligned}
-\ln(Z) &= \mathcal{N}\ln\left(\frac{e}{\rho}\right)+\frac{3\mathcal{N}}{2}\left(\ln(2m\pi)-\ln(\beta)\right)\\
+\ln(Z) &= \mathcal{N}\ln\left(\frac{e}{\rho_{\mathcal{N}}}\right)+\frac{3\mathcal{N}}{2}\left(\ln(2m\pi)-\ln(\beta)\right)\\
 &= \mathcal{N} \left( 1 - \ln(\mathcal{N}) + \ln(V)\right) + \text{const}(T)
 \end{aligned}
 $$
@@ -232,12 +234,12 @@ $$
 From which: 
 
 $$
-\frac{\partial \ln(Z)}{\partial V}\Bigg|_{T}= \frac{\mathcal{N}}{V} = \rho
+\frac{\partial \ln(Z)}{\partial V}\Bigg|_{T}= \frac{\mathcal{N}}{V} = \rho_{\mathcal{N}}
 $$
 
 and then 
 
-$$ P = \rho \beta =\rho k_B T  $$
+$$ P = \rho_{\mathcal{N}} \beta =\rho_{\mathcal{N}} k_B T  $$
 </details>
 
 which, might look familiar. Indeed, introducing the number of particles in mole $n= N_A\mathcal{N}$ and the ideal gas constant $\mathcal{R}= k_B/ N_A$, we find:
@@ -251,7 +253,7 @@ that is, we derived back the ideal gas law! As such, only by assuming that parti
 In the previous lecture, we learned to think in phase space. We saw that the concept of discrete probability of a microstate $p_i$ can be generalised to the one of probability density $\rho(\Gamma)$ defined on each point of phase space (i.e. for each configuration/microstate). We saw that, just like in the discrete case, $\rho$ could be inffered from a maximization of the entropy to be $\rho = \int e^{-\beta H}/Z\text{d}\Gamma$. 
 In the case of the ideal gas, reusing the expressions we derived above, this gives:
 
-$$\rho(\Gamma) = \left(\frac{\rho}{e}\right)^{\mathcal{N}}\left(\frac{1}{2m\pi k_BT}\right)^{\frac{3\mathcal{N}}{2}}e^{-\frac{\beta}{2m}\sum^{3\mathcal{N}}_i p^2_i}$$
+$$\rho(\Gamma) = \left(\frac{\rho_{\mathcal{N}}}{e}\right)^{\mathcal{N}}\left(\frac{1}{2m\pi k_BT}\right)^{\frac{3\mathcal{N}}{2}}e^{-\frac{\beta}{2m}\sum^{3\mathcal{N}}_i p^2_i}$$
 
 As a reminder, $\rho$ allows to compute the probability $\text{d}p=\rho(\Gamma)\text{d}\Gamma$ that the particle configuration within the box is located in a given infinitesimal region of phase-space.
 

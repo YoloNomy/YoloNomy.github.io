@@ -33,15 +33,22 @@ $\sqrt{\text{d}x^2 +\text{d}y^2 + \text{d}z^2}$ is sometimes noted $r$ or $\chi$
 
 ### Connection and geodesic equation
 
-The momentum of a particle in the expanding Universe follows the **geodesic equation**:
+The four-momentum of a freely moving particle in the expanding Universe follows the **geodesic equation**:
 
 $$
-P^\mu \nabla_\mu P_\nu = 0
+p^\mu \nabla_\mu p_\nu = 0
 $$
+
+This is a direct consequence of general relativity and is true both for massive and massless particles. Despite its geometrical meaning of particles following geodesics (shortest-length paths) in space-time, this equation can be derived from the continuity equation for a point-like particle.
+
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
+</details>
 
 In coordinate form
 
-$$\partial_\mu P_\nu + \Gamma^{\lambda}_{\,\,\mu \nu}P_\lambda=0$$
+$$\partial_\mu p_\nu + \Gamma^{\lambda}_{\,\,\mu \nu}p_\lambda=0$$
 
 The connection coefficients can be expressed from the metric as:
 
@@ -70,4 +77,28 @@ $$
 
 </details>
 
+Hence, we can find that both energy and momentum of a free particle moving in space-time obey the equation:
+
+$$\frac{\text{d}p_i}{\text{d}t} + \frac{\dot{a}}{a}p_i =0.$$
+
+From this we can find that both the value of the physical energy and momentum decreases with the expansion as
+
+$$ p_i \propto 1/a $$
+
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
+$$\begin{aligned}
+&\partial_0 p_i + \Gamma^{\lambda}_{\,\,0 i}p_\lambda=0\\
+& \frac{\partial p_i}{\partial t} + \Gamma^{0}_{\,\,0 i}p_0 + \Gamma^{j}_{\,\,0 i}p_j =0\\
+&\frac{\partial p_i}{\partial t} + \frac{\dot{a}}{a} \delta^{i}_{j} p_j =0\\
+& \frac{\partial p_i}{\partial t} + \frac{\dot{a}}{a} p_i =0
+\end{aligned}
+$$
+
+</details>
+
+For light, $p\propto \lambda$ and $E \propto \nu$, such that the wavelength of a photon, as well as its energy, is stretched by $1/a$ during the expansion.
+
 ## Adding spatial curvature
+

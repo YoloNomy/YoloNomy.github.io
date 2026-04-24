@@ -28,10 +28,10 @@ $$ p_i = \frac{\text{Weight}}{\text{Partition function}}$$
 
 | Ensemble | Fixed Variables | Probability Weight ($p_i \propto \dots$) | Partition Function | Thermodynamic Potential |
 | :--- | :--- | :--- | :--- | :--- |
-| **Microcanonical** | $N, V, E$ | $1$ | $N$ or $\Omega$ | Energy $U$ or entropy $S =  \ln \Omega$|
-| **Canonical** | $N, V, T$ | $e^{-\beta E_i}$ | $Z = \sum_i e^{-\beta E_i}$ | Free Energy: $A = - T \ln Z$ |
-| **Grand Canonical** | $\mu, V, T$ | $e^{-\beta(E_i - \mu N_i)}$ | $\Xi = \sum_i e^{-\beta(E_i - \mu N_i)}$ | Grand Potential: $\Phi_G = - T \ln \Xi$ |
-| **Isobaric-Isothermal** | $N, P, T$ | $e^{-\beta(E_i + PV_i)}$ | $\Delta = \sum_i e^{-\beta(E_i + PV_i)}$ | Gibbs Free Energy: $G = - T \ln \Delta$ |
+| **Microcanonical** | $\mathcal{N},  V, E$ | $1$ | $N$ or $\Omega$ | Energy $U$ or entropy $S =  \ln \Omega$|
+| **Canonical** | $\mathcal{N},  V, T$ | $e^{-\beta E_i}$ | $Z = \sum_i e^{-\beta E_i}$ | Free Energy: $A = - T \ln Z$ |
+| **Grand Canonical** | $\mu, V, T$ | $e^{-\beta(E_i - \mu \mathcal{N}_i)}$ | $\Xi = \sum_i e^{-\beta(E_i - \mu \mathcal{N}_i)}$ | Grand Potential: $\Phi_G = - T \ln \Xi$ |
+| **Isobaric-Isothermal** | $\mathcal{N},  P, T$ | $e^{-\beta(E_i + PV_i)}$ | $\Delta = \sum_i e^{-\beta(E_i + PV_i)}$ | Gibbs Free Energy: $G = - T \ln \Delta$ |
 
 Bla
 
@@ -39,7 +39,7 @@ Bla
 | :--- | :--- | :--- | :--- | :--- |
 | **Microcanonical** | $S =  \ln \Omega$ | $\text{d}S = \frac{1}{T}dU + \frac{P}{T}\text{d}V - \frac{\mu}{T}\text{d}\mathcal{N}$ |
 | **Canonical** | $A = U - TS$ | $\text{d}A = -S\text{d}T - P\text{d}V + \mu \text{d}\mathcal{N}$ |
-| **Grand Canonical** | $\Phi_G= A - \mu N$ | $\text{d}\Phi_G = -S\text{d}T - P\text{d}V - N\text{d}\mu$ |
+| **Grand Canonical** | $\Phi_G= A - \mu \mathcal{N}$ | $\text{d}\Phi_G = -S\text{d}T - P\text{d}V - \mathcal{N}\text{d}\mu$ |
 | **Isobaric-Isothermal** | $G = A + PV$ | $\text{d}G = -S\text{d}T + V\text{d}P + \mu \text{d}\mathcal{N}$ |
 
 

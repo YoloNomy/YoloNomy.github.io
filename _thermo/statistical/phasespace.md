@@ -293,15 +293,17 @@ $$Z= \int_{\Pi} e^{-\beta H}\text{d}\Gamma$$
 
 ## The second principle of thermodynamics in phase space
 
-Due to chaotic behaviour, two points with close initial conditions will spread. Volume in coarse grained phase space increases.
-The system will occupy all of its available volume in phase space.
+Due to **Liouville's theorem**, the *fine-grained* Gibbs entropy should not evolve over time: under a Hamiltonian evolution, the phase-space volume of any region is exactly preserved, so if we were able to follow the density $\rho(q,p,t)$ at infinite resolution, $S = - \int \rho \ln\rho \, d\Gamma$ would be a strict constant of motion.
 
-Fundamental laws of nature are revesible. But most of macroscopic phenomenon seems irreversible. How to solve this paradox?
-On large scales, reversibility is not impossible, it's just extremely unlikely.
+However, most realistic systems exhibit **chaotic behaviour**: two trajectories with arbitrarily close initial conditions diverge exponentially in time. As a result, an initially compact "droplet" of phase-space density is stretched into extremely thin, fractal-like filaments that wind through phase space. The fine-grained volume is still conserved — Liouville remains valid — but as soon as we look at phase space with *finite* resolution (i.e. we *coarse-grain*), these filaments appear to fill up the available region: the **coarse-grained entropy** increases. This is the modern way to reconcile Liouville's theorem with the second law.
+In this picture, the system ends up occupying (in a coarse-grained sense) essentially all of its accessible phase-space volume.
 
-Consider a large room completely empty. Consider taking a small box with $\mathcal{N}$ particle of gas bouncing. If you open the small box and let the particles enter in the room, they will occupy all of phase space. Entropy will increase as the probability density will start to be non zero in the room (2nd principle) The chances that all particles return in the small box is extremely small (irreversibility).
+This raises a famous tension, first sharply formulated by Loschmidt (1876) and Zermelo (1896): the **fundamental laws of nature are time-reversible** (at least at the classical and non-dissipative quantum level), yet most **macroscopic phenomena are strikingly irreversible**. How to solve this paradox?
+The Boltzmannian answer, still the most widely accepted today, is that on macroscopic scales reversibility is *not impossible, it is just overwhelmingly unlikely*: macrostates of low entropy correspond to a vanishingly small fraction of the accessible microstates, so a "typical" microstate compatible with a given macrostate will, with probability extremely close to $1$, evolve towards higher-entropy macrostates.
 
-This has some links with the unidirectionality of the **flow of time** in a very complicated and yet partialy understood fashion.
+A classical illustration: consider a large empty room, and a small box containing $\mathcal{N}$ gas particles bouncing around. If we open the box and let the particles enter the room, they will progressively occupy the full accessible phase space. The coarse-grained probability density becomes non-zero throughout the room, and the entropy increases — this is the second principle in action. The time-reversed process — all $\mathcal{N}$ particles spontaneously returning to the initial box — is not *forbidden* by the microscopic laws, but its probability is of the order of $V_\text{box}/V_\text{room})^{\mathcal{N}}$, which for $\mathcal{N} \sim 10^{23}$ is so small that it would never be observed within the age of the universe. Irreversibility thus emerges statistically, not dynamically.
+
+This statistical irreversibility has deep and still only **partially understood** links with the unidirectionality of the **flow of time** (the so-called *thermodynamic arrow of time*). Why the universe happens to have started in a state of extraordinarily low entropy — the so-called **Past Hypothesis** — remains one of the genuine open questions of modern physics and cosmology, and its relation to the other "arrows" (cosmological, radiative, quantum-mechanical) is the subject of an active debate.
 
 ## Integrating over phase space: a measure problem
 

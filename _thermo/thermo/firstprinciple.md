@@ -140,4 +140,5 @@ $$
 
 ### Generalisation for open system
 
-$$\boxed{\text{d}U = \delta Q + \delta W + \mu \text{d}N}$$
+$$\boxed{\text{d}U = \delta Q + \delta W + \mu \text{d}\mathcal{N}}$$
+

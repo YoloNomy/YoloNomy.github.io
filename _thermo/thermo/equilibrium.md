@@ -19,6 +19,38 @@ That is: consider three systems $A$, $B$ and $C$. If $A$ is in thermal equilibri
 
 Often considered as a consequence of a combination of the first and the second principle (we'll rediscuss this later).
 
-## Temperature
+## Temperature and thermal equilbrium 
 
 Temperature is a state variable that is not like the others. If it is the same between two systems, both are necessarily in thermal equilibrium between one another.
+
+In the case of a difference of temperature $\Delta T$ between two systems, a flow of heat will occur until:
+
+$$T_A=T_B$$,
+
+$A$ and $B$ are in thermal equilibrium.
+
+## Mechanical equilbrium
+
+In the case of a difference of pressure $\Delta P$ between two objects, an adjustement of volumes will occur until:
+
+$P_A=P_B$
+
+This is mechanical equilibrium.
+
+## Diffusive equilbrium 
+
+In case of a difference of chemical potential between two systems, a flow of particles will occur until:
+
+$\mu_A=\mu_B$
+
+## Conjugate variables
+
+We do not have yet all the tools to discuss in detail the subtle notion of conjugate variables.
+
+- $T$ and $Q$, and more precisely, the entropy $S$ that we will introduce later.
+- $P$ and $V$.
+- $\mu$ an $\mathcal{N}$.
+
+We will see that 
+
+$$\text{d}U = T\text{d}S - P\text{d}V + \mu \mathcal{d}\mathcal{N}$$
