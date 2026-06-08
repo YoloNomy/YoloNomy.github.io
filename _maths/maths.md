@@ -19,10 +19,12 @@ subtitle: Maths and mathematical physics
 - Group, vector spaces and algebra
 - Manifolds
 - General notions: curve, functions, sequences
-- classical electromagnetism
-- Symplectic geometry: Phase space
+- Exterior derivatives and forms
+- Classical electromagnetism
+- Lagrangian mechanics
+- [Symplectic geometry: Phase space](./geodiff/Hamiltonian.md)
 - [Thermodynamics and its analogies with mechanics](./geodiff/thermodynamics.md)
-- space-time and general relativity
+- Space-time and general relativity
 
 # Measure theory and foundations of quantum mechanics
 
@@ -42,7 +44,6 @@ subtitle: Maths and mathematical physics
 - [Connections: general relativity and gauge theories](./gauge/connections.md)
 - [Curvature: general relativity and gauge theories](./gauge/curvature.md)
 
-
 # Complex analysis and quantum field theory
 
 # Geometrical quantization
@@ -52,3 +53,7 @@ subtitle: Maths and mathematical physics
 # General mathematics 
 
 - [Polyhedrons (french)](polyhedron/polyhedron.md)
+
+# Other:
+
+- [Multiple approaches to Legendre transforms](./other/Legendre.md)

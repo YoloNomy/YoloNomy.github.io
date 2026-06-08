@@ -38,6 +38,7 @@ You will find here some fun python applications to physics with some detailled e
 - [Partition function and occupation number for fermions and bosons](../statistical/fermions_bosons/)
 - [Fermi gas](../statistical/fermigas/)
 - [The blackbody radiation](../statistical/BB/)
+- Bose-Einstein condensate
 - **IV. Advanced topics**
 <!-- - [Out of equilibrium: The Boltzmann equations](../statistical/boltzmann/) -->
 - Phase transitions

@@ -40,10 +40,11 @@ You will find here some fun python applications to physics with some detailled e
 - [Thermodynamics in an expanding Universe](cosmo/thermo_cosmo.md)
 - [Boltzmann equations in the expanding Universe](cosmo/boltzmann.md)
 - The cosmic microwave background
-- Cosmological probes
-- On inflation and scalar fields on cosmic scales
+- [Spectral distortions of the CMB](cosmo/spect-dist.md)
+- Cosmological probes: large scales
+- Initial condition problems and motivations for inflation
+- [Scalar fields on cosmic scales](cosmo/scalar_fields.md)
 
-# Advanced cosmology: modified gravity
+# Modified gravity
 
-- Modified gravity
-- Varying fundamental constants
+- [Page of dedicated to the lecture](./modified_gravity/mod_grav.md)

@@ -7,13 +7,13 @@ nav_order: 1
 
 ## In intensity
 
-### Absorbtion
+### Absorption
 
 ### Emission 
 
 ## In polarisation
 
-### Absorbtion
+### Absorption
 
 ### Emission 
 

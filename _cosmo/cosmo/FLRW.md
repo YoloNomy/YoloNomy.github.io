@@ -81,6 +81,12 @@ Hence, we can find that both energy and momentum of a free particle moving in sp
 
 $$\frac{\text{d}p_i}{\text{d}t} + \frac{\dot{a}}{a}p_i =0.$$
 
+Or, in a more fancy way:
+
+$$\frac{\text{d}p_i}{\text{d}t} = - H p_i $$
+
+where we defined the **Hubble parameter** as  $H=\dot{a}/a$. We see that this equation is analgous to a Newtonian motion in presence of friction, as a moving particle in air (by inserting a force as $\vec{F}_{\text{fric}}=-\lambda \vec{v}$ in Newton's second law). $H$ plays a role analoguous to a (time-dependent) friction coefficient. The expansion of the Universe thus act as a force slowing down particles, known as the **Hubble drag** or **Hubble friction**.
+
 From this we can find that both the value of the physical energy and momentum decreases with the expansion as
 
 $$ p_i \propto 1/a $$
@@ -101,4 +107,5 @@ $$
 For light, $p\propto \lambda$ and $E \propto \nu$, such that the wavelength of a photon, as well as its energy, is stretched by $1/a$ during the expansion.
 
 ## Adding spatial curvature
+
 

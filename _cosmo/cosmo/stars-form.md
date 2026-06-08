@@ -81,7 +81,7 @@ Using the two formulas above, our condition for gravitational collapse becomes
 
 $$\frac{3}{5}\frac{GM^2}{R} \geq \frac{3 k_B T}{2} \frac{M}{\mu}$$
 
-Of course, the formulas used here are approximations of what is really happening in real conditions[^1], but they will give us pretty good understanding of what is really going on.
+Of course, the formulas used here are approximations of what is really happening in real conditions[^1], but they will give us pretty good understanding of what is really going on 
 
 [^1]: Overall, we assume here that the cloud is spherical and homogeneous and that no exterior force acts on it. We further assume that it is made of monoatomic gas at a constant temperature $T$ and furthermore that the cloud is not rotating and not magnetized. Indeed this is a lot of assumptions! Reality is much more complex (as we discuss later on) but the computations become quickly unbearable and better suited for computers!
 

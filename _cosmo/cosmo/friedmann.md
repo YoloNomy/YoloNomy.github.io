@@ -44,7 +44,6 @@ The principal solution of Einstein's equations satisfying the constraints given 
 
 <a name="eq1"></a>
 
-
 $$
 \text{d}s^2 = -c^2\text{d}t^2 + a(t)^2\left( \frac{\text{d}r^2}{1 - kr^2}  + r^2\text{d}\Omega^2\right) 
 $$

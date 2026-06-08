@@ -19,10 +19,9 @@ You will find here some fun python applications to physics with some detailled e
 
 # Analytical mechanics
 
-- Lagrangian mechanics
-- Phase space
-- Hamiltonian mechanics
-- Hamilton-Jacobi equations
+- [Lagrangian mechanics](./Analytical/Lagrangian.md)
+- [Hamiltonian mechanics](./Analytical/Hamiltonian.md)
+- [Hamilton-Jacobi equations](./Analytical/Hamilton-Jacobi.md)
 - Constrained Hamiltonian systems
 
 # Dynamical systems and chaos

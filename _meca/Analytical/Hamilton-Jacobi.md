@@ -9,11 +9,14 @@ nav_order: 2
 
 $$S =\int L \text{d}t $$
 
+Legendre transform:
+
 $$L = p\dot{q}-H $$
 
-$$S = \int p\dot{q}-H \text{d}t $$
 
-$$S = \int p \text{d}q - \int H \text{d}t$$
+$$S = \int (p\dot{q}-H) \text{d}t $$
+
+$$S = \int p \frac{\text{d}q}{\text{d}t}\text{d}t - \int H \text{d}t$$
 
 $S$ thought as a function of $q$ and $t$:
 
@@ -27,5 +30,13 @@ Hamilton-Jacobi equation:
 
 $$\frac{\partial S}{\partial t} - H(q,t,\nabla S) = 0 $$
 
+<details>
+  <summary><strong>Proof</strong></summary>
 
-### Quantum mechanics Lurking
+</details>
+
+
+### Wave and ray optics and quantum mechanics lurking
+
+
+## Further reading

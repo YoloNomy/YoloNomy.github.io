@@ -51,6 +51,7 @@ We do not have yet all the tools to discuss in detail the subtle notion of conju
 - $P$ and $V$.
 - $\mu$ an $\mathcal{N}$.
 
-We will see that 
+We will see that
 
 $$\text{d}U = T\text{d}S - P\text{d}V + \mu \mathcal{d}\mathcal{N}$$
+

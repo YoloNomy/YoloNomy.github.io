@@ -144,7 +144,7 @@ $$
 <details markdown="1">
   <summary><strong>Supplement: from statistical physics to cosmology</strong></summary>
 
-In [statistical mechanics](../../../thermo/statistical/fermions_bosons/), we saw that quantum statistical systems made of identical non-interacting particles were properly described in Fock space. The operator for the number of particles was noted $\hat{\mathcal{N}}$. Furthermore, quantum systems were characterized by occupation number $n_lambda$ of each accessible energy state, labelled by the index $\lambda$. Assuming that we are considering free particles, there energy states can alternatively be labelled by the norm of their spatial momenta $p$. Indeed, it will be possible to recover the energy state from $p$ through some form of dispersion relation as $E(p)=\sqrt{p^2+m^2}$. From the partition functions, we were able to express the mean number of particles in a given state, $\langle n_{p}\rangle$.
+In [statistical mechanics](../../../thermo/statistical/fermions_bosons/), we saw that quantum statistical systems made of identical non-interacting particles were properly described in Fock space. The operator for the number of particles was noted $\hat{\mathcal{N}}$. Furthermore, quantum systems were characterized by occupation number $n_{\lambda}$ of each accessible energy state, labelled by the index $\lambda$. Assuming that we are considering free particles, there energy states can alternatively be labelled by the norm of their spatial momenta $p$. Indeed, it will be possible to recover the energy state from $p$ through some form of dispersion relation as $E(p)=\sqrt{p^2+m^2}$. From the partition functions, we were able to express the mean number of particles in a given state, $\langle n_{p}\rangle$.
 
 The mean number of particles of the total system becomes:
 
@@ -258,7 +258,7 @@ Now, for a relativistic particle, we better use the relationship:
 $$\vec{v}=\frac{\vec{p}}{E}$$
 
 Which, is $\vec{v}/c^2=\vec{p}/E$ when explicating back the $c$ factors.
-This expression is true both for massive particles with $\vec{p}= \gamma m \vec{v}$ and $E=\gamma mc^2$, as well as for massless particles with $\|\vec{v}\|= c$ and $E= \|\vec{p}\|c$.
+This expression is true both for massive particles with $\vec{p}= \gamma m \vec{v}$ and $E=\gamma mc^2$, as well as for massless particles with $\|\vec{v}\|= c$ and $E= \|\vec{p}\|c$. If you wonder where this relation comes from, note that this actually a special case of the Hamilton equation $\dot{x}= \partial H/\partial p$ with $H=\sqrt{p^2c^2+m^2c^4}$.
 
 Hence:
 
@@ -512,7 +512,7 @@ Schematically, the early thermal history of the Universe goes as follows:
 
 - Initially, all components are in thermal equilibrium and interacting highly. Around one second after the birth of the universe, matter is made of a large quantity of electrons and positrons, as well as some quarks bounded into protons and neutrons.   
 - The **neutrinos** are the first ones to decouple, around 1 second after the birth of the Universe. The reason is that they already interact very few with other components of matters, only through the weak interaction and gravity. C$\nu$B.
-- Around 6 seconds after the birth of the Universe, electrons and positrons anihilate, leaving only a few amount of baryonic matter. They transform into photons, thus transferring their energy content to the background of photons. 
+- Around 6 seconds after the birth of the Universe, electrons and positrons annihilate, leaving only a few amount of baryonic matter. They transform into photons, thus transferring their energy content to the background of photons. 
 - Around 3 minutes after the birth of the Universe, protons and neutrons are merged to form some elements. **BBN**.
 - Around 380 000 years after the birth of the Universe, the first atoms are formed. **photons** decouple. CMB.
 - Baryonic and dark matter decoupling.
@@ -547,6 +547,12 @@ $$\boxed{N_{eff} = \frac{8}{7}\left(\frac{11}{4}\right)^{\frac{4}{3}} \frac{\rho
 
 ### Decoupling of baryonic matter
 
+
+## How about spatial curvature?
+
+For the rest of this class, we will assume that $\Omega_k = 0$.
+From Feynman lectures on gravitation: free lunch universe, it cost zero to create a new particle. Machian principle?
+Why is density so close to critical density? Inflation. 
 
 ### Further reading
 
