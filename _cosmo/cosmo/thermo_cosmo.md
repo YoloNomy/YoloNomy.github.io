@@ -497,7 +497,7 @@ Measurement of the CMB constraint $\Omega_r= \Omega_\gamma + \Omega_\nu$, and th
 | $\Omega_i h^2$ | $0.02237 \pm 0.00015$ | $0.1200 \pm 0.0012$ | $2.47\times10^{-5}$ | $1.68\times10^{-5}$ | $0.311\, h^2 \approx 0.141$ |
 | $\Omega_i$ ($h=0.674$) | $0.0493 \pm 0.0003$ | $0.264 \pm 0.003$ | $5.4\times10^{-5}$ | $3.7\times10^{-5}$ | $0.685 \pm 0.007$ |
 | $n$ | $g_b\left(\frac{m_b T_b}{2\pi}\right)^{3/2}e^{(\mu-m_b)/T_b}$ | $\propto a^{-3} \propto T_\gamma^3$ (relic) | $\frac{2\zeta(3)}{\pi^2}T_\gamma^3$ | $\frac{3}{4}\frac{2\zeta(3)}{\pi^2}T_\nu^3$ | undefined |
-| $\rho$ | $n_b\left(m + \frac{3T_b}{2}\right)$ | $n_{c}\cdot m_{c}$ | $\frac{\pi^2}{15}T_\gamma^4$ | $\frac{7}{8}\frac{\pi^2}{15}g_\nu T_\nu^4$ | $\frac{\Lambda}{8\pi G}$ |
+| $\rho$ | $n_b\left(m_b + \frac{3T_b}{2}\right)$ | $n_{c}\cdot m_{c}$ | $\frac{\pi^2}{15}T_\gamma^4$ | $\frac{7}{8}\frac{\pi^2}{15}g_\nu T_\nu^4$ | $\frac{\Lambda}{8\pi G}$ |
 | $P$ | $n_bT_b$ | $\approx 0$ | $\frac{\pi^2}{45}T_\gamma^4$ | $\rho_\nu/3$ | $-\frac{\Lambda}{8\pi G}$ |
 | $\rho \propto$ | $a^{-3}$ | $a^{-3}$ | $a^{-4}$ | $a^{-4}$ | $a^{0}$ |
 

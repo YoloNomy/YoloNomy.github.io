@@ -49,9 +49,9 @@ for star, T in star_Ts.items():
     nu_max = wien(T)
     color = cmap(norm(T))
     
-    plt.plot(nu / 1e12, I, label=f"{star} (T = {T} K)", color=color)
+    plt.plot(nu / 1e12, I, label=f"{star} ($T$ = {T} K)", color=color)
     plt.axvline(nu_max / 1e12, color=color, linestyle="--", alpha=0.7,
-                label=r"$\nu_{\rm max}=%s \, THz$"%(int(nu_max / 1e12)))
+                label=r"$\nu_{\rm max}=%s \, {\rm THz}$"%(int(nu_max / 1e12)))
 
 plt.xlabel(r"$\nu$ [THz]",fontsize=12)
 plt.ylabel(r"$B_\nu\,$ [W·sr⁻¹·Hz⁻¹·m⁻²]",fontsize=12)
