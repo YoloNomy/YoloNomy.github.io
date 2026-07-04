@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 
-## Evolution of the 
+## Evolution of the distribution function
 
 Any function (observable) on [phase space](../../_thermo/statistical/phasespace.md) evolves in time with the time evolution operator, or the **Liouville operator**:
 
@@ -47,5 +47,6 @@ $$\begin{align}
 
 Where we identified $F= \partial p /\partial t$ as a force and $v=\partial x /\partial t$ as a velocity. If we assume the universe isotropic then $\partial f/\partial x=0$, hence the velocity term disappears. Furthermore, we saw in our class on the [FLRW metric](./FLRW.md) that the geodesic equation gives $\partial p/\partial t= -Hp$, and hence:
 
-$$\boxed{\frac{\partial f}{\partial t} - Hp \frac{\partial f}{\partial p} = \mathcal{C}[f]}$$
+$$\boxed{\frac{\partial f}{\partial t} - Hp \frac{\partial f}{\partial p} = \mathcal{C}}$$
 
+$\mathcal{C}$ is the *interaction term*. It can couple different modes $\vec{p}$ and $\vec{p}'$ and thus change the shape of the energy distribution.

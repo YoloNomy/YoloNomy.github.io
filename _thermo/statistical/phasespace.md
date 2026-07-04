@@ -65,7 +65,7 @@ Hence phase space really has to be thought of as a large $6\mathcal{N}$ dimensio
 
 Our system will then evolve in time, following a trajectory $\Gamma(t)$ in phase space, dictated by the Hamiltonian/Lagrangian. Formally, $\Gamma(t)$ is a curve in phase space $\mathbb{R}\to \Pi$.
 
-An **observable** $f$, is a function on phase space, which associate to each $\Gamma$ a real number (that is $f: \Pi \to \mathbb{R}$). Examples of observable is for example, the energy $E(\Gamma)$ associated with the microstate $\Gamma$.
+An **observable** $f$, is a function on phase space, which associate to each $\Gamma$ a real number (that is $f: \Pi \to \mathbb{R}$). Examples of observable is for example, the energy $E(\Gamma)$ associated with the microstate $\Gamma$. 
 
 We can associate to each $\Gamma \in \Pi$ a probability density $\rho(\Gamma)$ which takes values in the real numbers is an observable as defined above. The value of $\rho(\Gamma)$ over the whole phase space is what represent the **macrostate** of the system.
 
@@ -97,6 +97,8 @@ $$\{f,g\} = \sum_i^{3\mathcal{N}} \left(\frac{\partial f}{\partial q_i}\frac{\pa
 The time evolution of any observable $f$ is given by:
 
 $$\frac{\text{d}f}{\text{d}t}=\{f,H\} + \frac{\partial f}{\partial t}$$
+
+translating the fact that $f$ can change with time as the system evolves along a curve on $\Pi$ dictated by the Hamiltonian $H$. The additional $\frac{\partial f}{\partial t}$ term is here to encompass any possible explicit variations of $f$ with time that would not result solely from the Hamiltonian motion of the system through phase space, such that $f$ is generalized to be a function $f:\mathbb{R}\times \Pi \to \mathbb{R}$.
 
 We say that $H$ is the **generator** of time translations (similarly $p_i$ would generate space translations and angular momentum $L_i$ would generate rotations). 
 From this equation, one can infer the evolution of a microstate through time ($q_i$ and $p_i$ are coordinates of $\Pi$ and are as such time independent observables), giving the **Hamilton equations**:

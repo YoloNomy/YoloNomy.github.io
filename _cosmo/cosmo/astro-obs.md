@@ -31,14 +31,14 @@ These two measurable characteristics of stars are fundamental, as temperature an
 
 Assuming that the star is in thermal equilibrium, it should radiate as a blackbody. We derived and discussed this law in the lecture of [statistical mechanics](../../_thermo/statistical/BB.md), but for now it can also be assumed as an experimental fact. The blackbody law of emission is written as
 
-$$B_\nu(T)= \frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{k_bT}}-1}$$
+$$\boxed{B_\nu(T)= \frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{k_bT}}-1}}$$
 
 where $B_\nu$ is the energy radiated by the star per unit of surface of the body, per unit time, per solid angle and per frequency $\nu$. $T$ is the temperature of the radiating body, which in our case corresponds to the surface temperature of the star. $h$, $k_b$ and $c$ are respectively Planck and Boltzmann's constants and the speed of light in vacuum.
 
 The radiation of a star is thus closely linked to the temperature of its surface. It is thus possible to infer the surface temperature of a star from its "color" i.e. from its spectrum.
 From the blackbody law, it is possible to obtain 
 
-$$T = \frac{\nu_{\text{max}}}{b},$$
+$$\boxed{T = \frac{\nu_{\text{max}}}{b},}$$
 
 where $\nu_{\text{max}}$ is the frequency at which the star emits the most energy and $b\simeq 0.0588$ THz.K$^{-1}$ is known as Wien's constant. This relation is known as "Wien's displacement law". As such, the redder is a star, the colder it is and the bluer is a star the hotter it is.
 
@@ -79,7 +79,7 @@ In the above figure, we have computed the blackbody spectrum of different iconic
 
 From the blackbody law, we can also infer a link between the intrinsic luminosity of the star $L$ -- that is the total energy the star radiates in space per unit of time -- and its size (radius) $R$ and temperature $T$ as
 
-$$ L = 4\pi R^2\sigma T^4,$$
+$$\boxed{L = 4\pi R^2\sigma T^4,}$$
 
 where 
 
@@ -161,7 +161,7 @@ Let's now see how we can infer these four properties from concrete measurements 
 
 The brightness of a star, as seen in the sky, is quantified by its *apparent magnitude* $m$. $m$ is a unitless number defined as
 
-$$m = -2.5 \log_{10}\left(F\right) + m_0$$
+$$\boxed{m = -2.5 \log_{10}\left(F\right) + m_0}$$
 
 where $F$ is the received flux of the star that is its luminosity as measured on Earth. $m_0$ is the arbitrary magnitude which defines the origin of the magnitude system. It is usually set such that the star Vega -- a blue star iconic of the northern summer nights -- has an apparent magnitude of zero.
 
@@ -172,7 +172,7 @@ In real conditions, $m$ can have a different value depending on the absorption b
 
 The *absolute magnitude* $M$ is its apparent magnitude observed at a distance of 10 parsecs, that is
 
-$$M = -2.5 \log_{10}\left(\frac{L}{4\pi (10 \text{ pc})^2}\right) + m_0$$
+$$\boxed{M = -2.5 \log_{10}\left(\frac{L}{4\pi (10 \text{ pc})^2}\right) + m_0}$$
 
 In the table below, you can find the values of $m$ and $M$ for our iconic stars:
 

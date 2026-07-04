@@ -42,6 +42,13 @@ $$\frac{\text{d}\ket{\psi}}{\text{d}t} = -\frac{i}{\hbar}\hat{H}\ket{\psi} $$
 
 ### The momentum
 
+$T(a)\ket{x} = \ket{x+a} $$
+
+with 
+
+$$T(a) = e^{-ipa} $$
+
+
 ### The potential
 
 If $\hat{V}$ can only be expressed in term of the operator $\hat{X}$, which we will assume, from classical mechanics, $\hat{V}$ is self-adjoint and eigenvectors of $\hat{X}$ are also eigenvectors of $\hat{V}$:
@@ -51,7 +58,6 @@ $$\hat{V}\ket{x} = V(x)\ket{x}$$
 Hence:
 
 $$\bra{x}\hat{V}\ket{\psi} = (\hat{V}\ket{x})^{\dagger}\ket{\psi} = V(x)\braket{x}{\psi}= V(x)\psi(x)$$
-
 
 ## Uncertainty relations and Fourier transform
 

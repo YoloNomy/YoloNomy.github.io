@@ -12,7 +12,7 @@ In cosmology, we use **comoving frames**, that is frames "dragged along" by the 
 If the Universe is spatially flat:
 
 $$
-\text{d}s^2 = -c^2\text{d}t^2 + a(t)^2(\text{d}x^2 +\text{d}y^2 + \text{d}z^2) 
+\boxed{\text{d}s^2 = -c^2\text{d}t^2 + a(t)^2(\text{d}x^2 +\text{d}y^2 + \text{d}z^2)}
 $$
 
 Or, as a matrix 
@@ -83,7 +83,7 @@ $$\frac{\text{d}p_i}{\text{d}t} + \frac{\dot{a}}{a}p_i =0.$$
 
 Or, in a more fancy way:
 
-$$\frac{\text{d}p_i}{\text{d}t} = - H p_i $$
+$$\boxed{\frac{\text{d}p_i}{\text{d}t} = - H p_i}$$
 
 where we defined the **Hubble parameter** as  $H=\dot{a}/a$. We see that this equation is analgous to a Newtonian motion in presence of friction, as a moving particle in air (by inserting a force as $\vec{F}_{\text{fric}}=-\lambda \vec{v}$ in Newton's second law). $H$ plays a role analoguous to a (time-dependent) friction coefficient. The expansion of the Universe thus act as a force slowing down particles, known as the **Hubble drag** or **Hubble friction**.
 

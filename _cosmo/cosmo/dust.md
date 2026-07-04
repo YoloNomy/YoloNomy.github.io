@@ -19,5 +19,5 @@ nav_order: 1
 
 ### Further reading
 
-- 
+- [Shirley](https://arxiv.org/pdf/2601.10989)
 - 

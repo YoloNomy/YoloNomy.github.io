@@ -4,15 +4,26 @@ title: Scalar fields
 parent: cosmo
 ---
 
+### Why scalar fields?
+
+
+Scalar field models propose to add one or several new dynamical entities given by a frame independent value of a real or complex number at every point of space-time. They are very common in the cosmological literature and are so often invoked because:
+- They are easy to implement consistently without breaking the general covariance of the theory. As such, they allow to build phenomenological "toy models" providing simple solutions to most of the cosmological puzzles as the $H_0$ tension, dark matter, inflation and so on. From the point of view of effective field theory (EFT), they can also reproduce the effective behavior of a more complicated underlying dynamics. They thus provides both simple and consistent modeling in order to seek for effects going beyond the SM, as varying dark energy, modification of gravity or possible variations of the fundamental constants of nature. 
+- Due to Lovelock theorem, we know adding new fields represent one of our only options to go beyond GR. Moreover, multiple higher order terms modifications of the action of gravity. can be shown to be equivalent to the addition of one or several scalar fields coupled to gravity. Furthermore, the addition of new compact dimensions to space-time gives rise to scalar degrees of freedom in the higher dimensional metric. Overall, multiple phenomenological routes beyond GR thus lead to scalar fields. 
+- Furthermore, scalar fields appear as theoretical necessities in multiple high energy physics models beyond the SM as Kaluza-Klein or string theory. They indeed appear in dimensional compactification (scalar degrees of freedom appearing in dimensional reduction are called the radions and moduli fields in Kaluza-Klein and string theory respectively) but also as fundamental fields like members of the string spectra (as the string dilaton). As such, fundamental routes from deeper principles tend also to lead to the existence of scalar fields.
+- We know for a fact that they can be part of nature's building blocks as proved by the discovery of the Higgs boson, which is itself a complex scalar field.
+
+However, if the presence of such a field were ever detected on cosmological scales, a change of high energy physics paradigm would have to be considered, in order to understand where this new entity could fit in the realm of gauge theories over curved space-time, as well as how this new field can remain yet undetected in local/particle physics experiments.
+
 ### Field Lagrangian
 
 If one wants to add a new entity present in the cosmological space-time, the most rigorous way to do so is to introduce it at the Lagrangian level.
-The standard Lagrangian density for a scalar field in flat space-time is
+The standard Lagrangian density for a real scalar field in flat space-time is
 
 $$\boxed{\mathcal{L}_\phi = -\frac{1}{2}\partial_\mu \phi \partial^\mu \phi - V(\phi)}$$
 
-which is the standard difference between a kinetic and a potential term. The expression for the kinetic term can be justified in multiple ways. It is the most general term that can be included being Lorentz invariant and is second order in derivatives. The minus sign in front of the kinetic term is a signature of our metric choice $(-,+,+,+)$, common in general relativity but uncommon for the particle physicist.
- 
+which is the standard difference between a kinetic and a potential term. The expression for the kinetic term can be justified in multiple ways. It is the most general term that can be included being Lorentz invariant and is second order in derivatives. The minus sign in front of the kinetic term is a signature of our metric choice $(-,+,+,+)$, common in general relativity but uncommon for the particle physicist. This Lagrangian can also be derived by considering coupled harmonic oscillators and taking the continum and covariant limit, or by trying to obtain a relativistic form for the Schrödinger equation.
+
 Its generalisation to curve space-time is straightforward. The standard procedure is to replace standard derivatives $\partial_\mu$ with covariant derivatives $\nabla_\mu$. However, these have no impact on scalar fields so $\mathcal{L}$ remains unchanged.
 
 The action is given by the integral with the volume form:
@@ -23,17 +34,19 @@ where $\vert g\vert$ is the determinant of the metric.
 
 ## Stress-energy in flat and curved space-time
 
-Noether theorem, invariance of $\mathcal{L}$ under a change $x^\mu \to x^\mu + \epsilon^\mu$
+Now, we can wonder what would be the energy density and the pressure that such a field would exert on cosmological scales. These two ingredients are crucial, as we saw that they are appearing in the Friedman equations, driving the time evolution of the scale factor. As for every other component of the universe, the pressure and energy density are encoded in the **stress energy tensor** of the field.
+
+As we discussed already, the stress-energy-tensor is the Noether current associated with the invariance of $\mathcal{L}$ under space-time translations, that is a change $x^\mu \to x^\mu + \epsilon^\mu$. It is expressed as
 
 $$(T^{\phi})^{\mu}_{\,\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)}\partial_\nu \phi - \delta^{\mu}_{\nu}\mathcal{L}$$
 
-In GR:
+In General relativity, it is defined alternatively as:
 
 $$T^{\phi}_{\mu\nu} = \frac{2}{\sqrt{-|g|}}\frac{\delta S}{\delta g^{\mu\nu}}$$
 
 Both expression lead
 
-$$\boxed{T^{\phi}_{\mu\nu}= g^{\mu\nu}\partial_\mu \phi \partial_\nu \phi - \left( \frac{1}{2}g^{\rho \sigma}\partial_\rho \phi \partial_\nu \phi + V(\phi)\right)}$$
+$$\boxed{T^{\phi}_{\mu\nu}= \partial_\mu \phi \partial_\nu \phi + \delta_{\mu\nu}\left(\frac{1}{2}g^{\rho \sigma}\partial_\rho \phi \partial_\nu \phi + V(\phi)\right)}$$
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
@@ -192,6 +205,7 @@ $$
 &\ddot{\phi} + 3H \dot{\phi} = -\frac{\partial V}{\partial \phi}
 \end{align}
 $$
+
 </details>
 
 

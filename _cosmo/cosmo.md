@@ -20,7 +20,7 @@ You will find here some fun python applications to physics with some detailled e
 # Special relativity
 
 - The relativity principle: Inertial frames and the speed of light
-- 
+- Lagrangian and Hamiltonian formulation of special relativity
 
 # General relativity
 
@@ -47,4 +47,4 @@ You will find here some fun python applications to physics with some detailled e
 
 # Modified gravity
 
-- [Page of dedicated to the lecture](./modified_gravity/mod_grav.md)
+- [Page dedicated to the lecture](./modified_gravity/mod_grav.md)
