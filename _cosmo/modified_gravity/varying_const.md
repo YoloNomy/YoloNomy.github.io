@@ -42,15 +42,115 @@ We use the term "non-gravitational constants" here to describe broadly any funda
 A variation of the non-gravitational fundamental constants would lead to a direct violation of the local position invariance (LPI), which is one of the three building block of the EEP and that we defined in our [previous class](./foundations-GR.md).
 Indeed, in such a case, the results of non-gravitational experimental tests would clearly depend on the region of space and time in which they are performed.
 
-Furthermore, a space-time variation of the non-gravitational fundamental constants would lead to a violation of the weak equivalence principle (WEP) stating that all bodies must fall identically.
+Furthermore, a space-time variation of the non-gravitational fundamental constants would lead to a violation of the weak equivalence principle (WEP) stating that all bodies must fall identically. This boils down to the fact that, if non-gravitational constants become dependent on space and time, so are the masses of the atoms and objects.
+
+As we discussed in the previous lecture, the validity of the WEP is quantified by the value of the Eotvos parameter
+
+$$\eta = 2\,\frac{|\vec{a}_1-\vec{a}_2|}{|\vec{a}_1+\vec{a}_2|}$$
+
+If we introduce the so-called **sensitivity coefficient** 
+
+$$f_i = \frac{\partial \ln(m_i)}{\partial \alpha}$$
+
+which quantifies how the mass $m_i$ of particle $i$ depends on a change of a non-gravitational constant $\alpha$.
+
+It is then possible to show that, in a constant gravitational field $g$,
+
+$$\boxed{\eta \simeq \frac{c^{2}}{g}\,|f_1-f_2|\,\big|\vec{\nabla}\alpha\big|}$$
+
+Thus measurements of the UFF also constraint varying non-gravitational constant models, and on the other hand, the variation of non-gravitational constant indeed induces a violation of the EEP. 
+
+The proof of this expression both in a Newtonian and in a general relativistic context can be found in the following bonus session. 
 
 <details markdown="1">
   <summary><strong>Violation of WEP from varying constants</strong></summary>
 
+Consider any non-gravitational constant which we note $\alpha$. The mass of any composite body (e.g. an atom) depends on this constant, both through the masses of its constituents (yukawa couplings and Higgs potential) and through its internal binding energies (electromagnetic, strong, weak): $m = m(\alpha)$. If $\alpha$ becomes a function of space and time, $\alpha \to \alpha(x,t)$, this leads to a violation of the weak equivalence principle (WEP), i.e. of the universality of free fall. We show this first in Newtonian mechanics to build some intuition and then in general relativity.
+
 **The Newtonian version**
 
+Consider a particle of mass $m(\alpha)$ free-falling in the constant gravitational field $g$ of earth. We consider a Cartesian frame with unit vectors $\hat{x},\hat{y},\hat{z}=\hat{x_i}$. The particle is assumed to fall along the vertical $z$ axis, which is zero on the ground and pointing upward.
+
+We start from the Lagrangian $L = T - V$ as the most fundamental quantity. In this context:
+
+$$L = \frac{1}{2}m(\alpha)v^2 - m(\alpha)gz $$
+
+Here remember that $\alpha$ is a function of space and time and thus $m=m(\alpha(\vec{x},t))$.
+The [Euler–Lagrange](../../_meca/Analytical/Lagrangian.md) equations for each generalized coordinate $x_i$ are:
+
+$$\frac{\text{d}}{\text{d}t}\frac{\partial L}{\partial \dot{x}_i}= \frac{\partial L}{\partial x_i}$$
+
+and in our context, only the one along the $z$ axis is non-trivial and gives:
+
+$$\frac{\text{d}}{\text{d} t}\Big(m(\alpha)\,\dot{z}\Big) = \frac{\partial}{\partial z}\Big(\frac{1}{2}m(\alpha)\dot{z}^2 - m(\alpha)\,g z\Big),$$
+
+where the partial derivative is taken at fixed $\dot{z}$ and $t$. Expanding both sides and using the product rule we get:
+
+$$\frac{\text{d} m}{\text{d} t}\dot{z} + m \ddot{z} =  \frac{\partial m}{\partial z}\left(\frac{\dot{z}^2}{2} -gz\right) - mg$$ 
+
+where dotted quantities denote time derivatives (and $\text{d}m/\text{d}t = \partial_t m + \dot{z}\,\partial_z m$ is the total derivative along the trajectory). We thus notice additional terms that lead to a clear violation of the WEP. Indeed, if we rearrange the equation, we get:
+
+$$\ddot{z}+g = -\frac{\text{d} \ln(m)}{\text{d} t}\dot{z} + \frac{\partial\ln(m)}{\partial z}\left(\frac{\dot{z}^2}{2} -gz\right)$$
+
+which should be strictly zero in standard Newtonian mechanics, for which $\ddot{z}=-g$ in agreement with WEP.
+
+We can further develop this expression using the chain rule (recall that $m$ depends
+on $z$ and $t$ only through $\alpha$, with no explicit dependence):
+
+$$\frac{\text{d}\ln(m)}{\text{d}t} = \frac{\partial \ln(m)}{\partial \alpha}\,\dot{\alpha}, \qquad \frac{\partial\ln(m)}{\partial z} = \frac{\partial \ln(m)}{\partial \alpha}\frac{\partial \alpha}{\partial z} $$
+
+where $\dot{\alpha} \equiv \text{d}\alpha/\text{d}t = \partial_t\alpha + \dot{z}\,\partial_z\alpha$
+is the total derivative along the trajectory. We introduce the **sensitivity coefficient**:
+
+$$f = \frac{\partial \ln(m)}{\partial \alpha}$$
+
+The important aspect is that $f$ will be different depending on the particle under consideration. For example different atoms will have different number of protons and electrons and thus will depend differently on the non-gravitational constants, like the fine-structure constant. The general expression to get the mass of an atom in terms of the mass of its constituants and their interactions is known as the **Bethe-Weizsäcker formula**.
+
+Now, it is quite straightforward to generalize the previous expression to vector form:
+
+$$\vec{a}-\vec{g}= -f\dot{\alpha}\,\vec{v}+ f\vec{\nabla}\alpha\left(\frac{v^2}{2}- \Phi\right)$$
+
+where $\Phi = gz$ is the gravitational potential. If we add the rest-mass term
+$L_0 = -mc^2$ to the Lagrangian (the leading term of the non-relativistic expansion
+$-mc^2\sqrt{1-v^2/c^2}\approx -mc^2 + \frac{1}{2}mv^2$), we obtain the final expression:
+
+$$\boxed{\vec{a}-\vec{g}= -f\dot{\alpha}\,\vec{v}+ f\vec{\nabla}\alpha\left(-c^2+\frac{v^2}{2}- \Phi\right)}$$
+
+Now consider two particles with masses $m_1$ and $m_2$ and sensitivity coefficients
+$f_1$ and $f_2$, compared at the same point with the same velocity $\vec{v}$. They fall
+differently, leading to a non-zero value of the so-called Eötvös parameter
+
+$$\eta = 2\,\frac{|\vec{a}_1-\vec{a}_2|}{|\vec{a}_1+\vec{a}_2|}$$
+
+From the formula above, using $\vert\vec{a}_1+\vec{a}_2\vert \approx 2g$, $\vec{v}_1 \simeq \vec{v}_2$ and $\alpha_1 \simeq \alpha_2$, we get directly
+
+$$\eta \simeq \frac{|f_1-f_2|}{g}\left|\,\dot{\alpha}\,\vec{v} + \vec{\nabla}\alpha\left(c^{2}-\frac{v^{2}}{2}+\Phi\right)\right|$$
+
+and hence
+
+$$\boxed{\eta \simeq \frac{c^{2}}{g}\,|f_1-f_2|\,\big|\vec{\nabla}\alpha\big|}$$
+
+since the rest-mass contribution dominates by a factor $\sim c^2/v^2$.
 
 **In General relativity**
+
+In General relativity, the action of a point-like particle with a $\alpha$ dependent mass is given by
+
+$$S = -\int m(\alpha)c \sqrt{-g_{\mu\nu}u^\mu u^\nu} $$
+
+This action leads to the geodesic equation $u^\nu\nabla_\nu u^\mu =0$ when extremalized if $m$ is constant. If $m$ varies, we obtain
+
+$$\boxed{u^\nu\nabla_\nu u^\mu = -f \partial_\beta \alpha \left(g^{\beta\mu} + u^{\beta}u^\mu\right)}$$
+
+Hence, the space-time variation of $\alpha$ will deviate geodesics in a component dependent way (as $f$ is different depending on the atom under consideration).
+
+This can be proved as follows:
+
+
+
+**A sidenote: EEP violation and fifth force**
+
+Duality field/geometry.
 
 </details>
 
@@ -116,10 +216,6 @@ We will discuss later how to produce self consistent models of modified gravity 
 </details>
 
 Is equivalent to vary all masses identically together
-
-## A sidenote: EEP violation and fifth force
-
-Duality field/geometry.
 
 ## Further reading
 
