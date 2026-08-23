@@ -140,7 +140,7 @@ $$
 
 </details>
 
-In flat space-time, the metric is the Minkowski metric ($g=\eta$) and hence $\mu=1$ and the whole term is zero. However, if we consider the FLRW metric and a field that is isotropic $\phi(t)$, we get:
+In flat space-time, the metric is the Minkowski metric ($g=\eta$) and hence $\omega=1$ and $\partial_\mu(g^{\mu\nu})=0$, such the two term additional terms depending on the metric are zero. However, if we consider the FLRW metric and a field that is isotropic $\phi(t)$, we get:
 
 $$\boxed{\ddot{\phi} + 3H \dot{\phi} = -\frac{\partial V}{\partial \phi}}$$
 

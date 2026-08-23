@@ -7,7 +7,15 @@ nav_order: 1
 
 ## In intensity
 
-### Absorption
+### Element depletion 
+
+### Extinction
+
+### Spectral lines
+
+### Spinning dust and AME
+
+### Starlight scattering
 
 ### Emission 
 
@@ -20,4 +28,6 @@ nav_order: 1
 ### Further reading
 
 - [Shirley](https://arxiv.org/pdf/2601.10989)
-- 
+- The Physics of the Interstellar Medium
+By J.E. Dyson, D.A. Williams - 2021
+- Draine

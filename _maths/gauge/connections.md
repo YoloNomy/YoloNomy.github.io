@@ -11,7 +11,7 @@ Connections are certainly one of the most important notion of fundamental physic
 
 Connections are introduced to solve the following major problem: in order to define the derivative of geometrical objects such as vectors or tensors, we should be able compare two such objects living at different points of the manifold, to be able to quantify how much they changed. But there are no immediate way to do so. In principle, two tangent spaces are independent vector spaces, and there are no canonical way to say that two vectors associated to different points are "the same" or "different in such a way" (the same reasoning applies between two fibers on a fiber bundle). Connections hence define an identification between different points in nearby tangent spaces (or fibers). Hence their names: they "connect" different spaces living at different points of a manifold.
 
-**add drawing**
+**To do: add drawing here**
 
 ## Affine connections and Levi-Civita's connection
 
@@ -19,7 +19,7 @@ Connections are introduced to solve the following major problem: in order to def
 
 Perhaps the most familiar connection for physicists is the so-called "Levi-Civita" connection, appearing in general relativity. This connection, which can be expressed in term of the metric tensor $g$, can be used to compute the geodesic equations and the curvature of space-time which describes respectively the motion of particles in a gravitational field and the tidal forces due to gravity itself. As we will discuss here, this connection is the special case of an object called an "affine connection", which is itself a special case of the more general notion of connection. Let us start with rather abstract and formal definitions and try to put some intuition on it in the next sections.
 
-An affine connection $\Gamma$ on a manifold $M$ allows to define the derivation of vector fields $v\in TM$, living on the tangent bundle of a manifold $M$. $\nabla$ is a map which takes two vector fields $v,w\in TM$ and return a vector field $\nabla \to \nabla_wv: TM \times TM\to TM$ (Hence $\nabla \in TM^*\otimes \text{ End}(TM)$). The resulting vector field $\nabla_wv$ is called the covariant derivative of $v$ in the direction $w$.
+An affine connection $\nabla$ on a manifold $M$ allows to define the derivation of vector fields $v\in TM$, living on the tangent bundle of a manifold $M$. $\nabla$ is a map which takes two vector fields $v,w\in TM$ and return a vector field $\nabla \to \nabla_wv: TM \times TM\to TM$ (Hence $\nabla \in TM^*\otimes \text{ End}(TM)$). The resulting vector field $\nabla_wv$ is called the covariant derivative of $v$ in the direction $w$.
 
 Let $v,w,z \in TM$ be three vector fields, $f\in C^{\infty}(M)$ be a function on $M$ and $\alpha\in\mathbb{R}$ a real number. $\nabla$ is defined as a map satisfying the following properties:
 
@@ -37,7 +37,7 @@ $$
 \nabla_{e_\mu} e_\nu = \Gamma^\lambda_{\,\,\mu \nu}e_\lambda
 $$ 
 
-which defines the coefficients $\Gamma^\lambda_{\,\,\mu \nu}$ called the *connection's coefficients* or the *christoffel symbols*.  $\Gamma^\lambda_{\,\,\mu \nu}$ are then the coordinates of the vector $\nabla_\mu e_\nu$ in the $e_\lambda$ basis. Put differently: $\Gamma^\lambda_{\,\,\mu \nu}$ express how to derivate the vector basis $e_\nu$ in the direction $e_\mu$.
+which defines the coefficients $\Gamma^\lambda_{\,\,\mu \nu}$ called the **connection's coefficients** or the **Christoffel symbols**.  $\Gamma^\lambda_{\,\,\mu \nu}$ are then the coordinates of the vector $\nabla_\mu e_\nu$ in the $e_\lambda$ basis. Put differently: $\Gamma^\lambda_{\,\,\mu \nu}$ express how to derivate the vector basis $e_\nu$ in the direction $e_\mu$.
 
 Using all the properties above, we can express $\nabla_wv$ in a basis as
 
@@ -46,8 +46,8 @@ $$
 $$
 
 
-<details>
-  <summary>Proof</summary>
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
 
 $$
 \begin{aligned}
@@ -75,7 +75,7 @@ The Levi-Civita connection, central object of general relativity, is a special c
  
 #### Metric preserving
 
-An affine connection $\nabla$ is said to be *metric preserving* if $\forall v,w,z \in TM$ if
+An affine connection $\nabla$ is said to be **metric preserving** if $\forall v,w,z \in TM$ if
 
 $$\boxed{v(g(w,z))=g(\nabla_vw,z)+g(w,\nabla_v z)}$$
 
@@ -83,7 +83,7 @@ A metric satisfying this condition preserve the length of the vectors.
 
 #### Torsion free
 
-An affine connection $\nabla$ is said to be *torsion-free* $\forall v,w \in TM$ if
+An affine connection $\nabla$ is said to be **torsion-free** $\forall v,w \in TM$ if
 
 $$\boxed{\nabla_vw-\nabla_wv=[v,w]}$$
 
@@ -93,8 +93,8 @@ When applying this condition on basis vectors, we find that $\Gamma$ must respec
 
 $$\Gamma^\lambda_{\,\,\mu \nu}=\Gamma^\lambda_{\,\,\nu \mu}$$
 
-<details>
-  <summary>Proof</summary>
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
 
 Choosing again a natural frame $e_\mu=\partial_\mu$, we must have $[e_\mu,e_\nu]=0$ as 
 
@@ -124,8 +124,9 @@ $$
 
 which is again a familiar formula for the physicist.
 
-<details>
-  <summary>Proof</summary>
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
 
 Consider again a natural frame $e_\mu$ in which the metric compatibility condition reads
 
@@ -154,6 +155,8 @@ which can be inverted to find
 
 $$\Gamma^\lambda_{\,\,\mu\nu}= \frac{1}{2}g^{\lambda \kappa}(\partial_\mu g_{\nu\kappa} + \partial_{\nu}g_{\mu\kappa}-\partial_\kappa g_{\mu \nu})$$
 
+Thus, asking for both torsion freeness and metric compatibility, we see that there exist a single expression of $\Gamma^\lambda_{\,\,\mu\nu}$, entirely determined by the metric tensor $g$ and its derivatives. 
+
 </details>
 
 ### Geodesics
@@ -172,8 +175,9 @@ $$
 \frac{\partial^2 x^\lambda}{\partial \tau^2} = - \Gamma^{\lambda}_{\mu \nu}\frac{\partial x^\mu}{\partial \tau}\frac{\partial x^\nu}{\partial \tau}
 $$
 
-<details>
-  <summary>Proof</summary>
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
 
 In a given chart $u = \partial_\tau x^\mu \partial_\mu$, where $x^\mu(\tau)$ is the coordinate expression of $\gamma(\tau)$, such that 
 
@@ -203,16 +207,17 @@ $$
 
 Torsion does not impact geodesic equations.
 
-Geodesics of the Levi-Civita connection are curves which extremalize the length on a Riemannian manifold. Indeed consider the total length $\mathcal{S}$ of a curve $\gamma(\tau)$ relating two points on the manifold defined as
+Geodesics of the Levi-Civita connection are curves which extremalize the length on a Riemannian manifold. Indeed consider the total length $S_m$ of a curve $\gamma(\tau)$ relating two points on the manifold defined as
 
- $$\mathcal{S}=\int \text{d}s = \int \sqrt{g(u,u)}\text{d}\tau$$
+ $$S_m=\int \text{d}s = \int \sqrt{g(u,u)}\text{d}\tau$$
 
 where $u=\gamma'$ is the tangent vector of the curve. In a coordinate frame, the length interval $\text{d}s$ in the above expression can be directly linked to the familiar expression used in General relativity:
 
 $$ \text{d}s^2=g_{\mu\nu}\text{d}x^\mu\text{d}x^\nu$$
 
-<details>
-  <summary>Proof</summary>
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
 
 From the above integral:
 
@@ -237,7 +242,7 @@ correct as here $x$ is not the general coordinate frame but the expression of th
 
 </details>
 
-Extremalizing $\mathcal{S}$ thus correspond to find the path $\gamma(\tau)$ extramalizing the metric distance between two points, which is commonly defined as a geodesic curve. We can show that doing this extremalization gives back the geodesic equation above associated with the definition of $\Gamma$ in term of $g$ as the Levi-Civita connection. Hence, the geodesics of the Levi-Civita connection are curves which extremalize the length in a Riemannian manifold. 
+Extremalizing $S_m$ thus correspond to find the path $\gamma(\tau)$ extramalizing the metric distance between two points, which is commonly defined as a geodesic curve. We can show that doing this extremalization gives back the geodesic equation above associated with the definition of $\Gamma$ in term of $g$ as the Levi-Civita connection. Hence, the geodesics of the Levi-Civita connection are curves which extremalize the length in a Riemannian manifold. 
 
 ### The parallel transporter, parallel transport and projectors 
 
@@ -259,8 +264,9 @@ Hence, $\nabla_wv$ states how a vector $v$ can be transported in the direction g
 
 We can now show that the torsion free and metric preserving properties of $\nabla$ are direct consequences of the definition given above.
 
-<details>
-  <summary>Proof</summary>
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
 
 First, looking at $w,z\in \mathbb{R}^D$ 
 
@@ -302,8 +308,9 @@ From the metric compatibility condition, we can immediately derive that the leng
 
 $$ \frac{\text{d}}{\text{d}\tau}g(v,v)=0$$
 
-<details>
-  <summary>Proof</summary>
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
 
 For a single vector $v$, the metric compatibility condition is
 
