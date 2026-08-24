@@ -4,13 +4,13 @@ title: Torsion and gauge gravity
 parent: cosmo
 ---
 
-In the previous classes we went beyond GR by **adding new fields** — a scalar, a vector. Here we do something different and, in a sense, more conservative: we add nothing at all. We simply notice that GR quietly *switched off* a structure that was available from the start, and we switch it back on.
+In the previous classes we went beyond GR by **adding new fields** — like scalars or vectors. Here we do something different and, in a sense, more conservative: we add nothing at all. We simply notice that GR quietly *switched off* a structure that was available from the start, and we switch it back on.
 
 ## But why would one set null torsion in GR?
 
-### Two independent structures
+### Reminders on torsion
 
-A manifold carries **two logically independent** pieces of structure, and it is worth insisting on how independent they really are:
+As stated already in the [trinity](./trinity.md) class, a smooth manifold can carry **two logically independent** pieces of structure, and it is worth insisting on how independent they really are:
 
 1. a **metric** $g_{\mu\nu}$, which tells you how to measure lengths and angles;
 2. an **affine connection** $\Gamma^\rho_{\mu\nu}$, which tells you how to parallel-transport a vector from one point to a neighbouring one, and hence how to differentiate.
@@ -19,70 +19,42 @@ Nothing in the definition of a manifold forces these to be related. GR imposes *
 
 $$\underbrace{\nabla_\rho g_{\mu\nu} = 0}_{\text{metricity}}, \qquad \underbrace{\Gamma^\rho_{\mu\nu} = \Gamma^\rho_{\nu\mu}}_{\text{no torsion}} .$$
 
-Together these are exactly enough to fix $\Gamma$ uniquely in terms of $g$ — that is the **fundamental theorem of Riemannian geometry**, and the result is the Levi-Civita connection (the Christoffel symbols). The point to appreciate is that this is a *choice*, not a theorem about nature.
+Together these are exactly enough to fix $\Gamma$ uniquely in terms of $g$ as being the Levi-Civita connection (the Christoffel symbols). The point to appreciate is that this is a *choice*, not a theorem about nature.
 
-### Definitions
+As a reminder torsion can be thought as the failure of parallelograms to close and is defined as:
 
-$$\boxed{\;T^\rho{}_{\mu\nu} \;\equiv\; \Gamma^\rho_{\mu\nu} - \Gamma^\rho_{\nu\mu} \;=\; 2\,\Gamma^\rho_{[\mu\nu]}\;}\qquad\textbf{torsion}$$
+$$\boxed{\;T^\rho{}_{\mu\nu} \;\equiv\; \Gamma^\rho_{\mu\nu} - \Gamma^\rho_{\nu\mu} \;=\; 2\,\Gamma^\rho_{[\mu\nu]}\;}$$
 
-$$\boxed{\;Q_{\rho\mu\nu} \;\equiv\; \nabla_\rho\, g_{\mu\nu}\;}\qquad\textbf{non-metricity}$$
+**It is a tensor**, even though $\Gamma$ is not.  This is relevant, because $T^\rho{}_{\mu\nu}$ is a tensor, **it cannot be removed by any choice of coordinates**. If it is non-zero anywhere, it is non-zero for every observer.
 
-**Torsion is a tensor**, even though $\Gamma$ is not. The proof is one line, and it is exactly the argument we used for $\delta\Gamma$ in the [Brans-Dicke class](./Brans-Dicke.md): under a change of coordinates the connection acquires the inhomogeneous term
-
-$$\frac{\partial x'^\rho}{\partial x^\sigma}\frac{\partial^2 x^\sigma}{\partial x'^\mu\partial x'^\nu},$$
-
-which is **symmetric in $\mu\nu$** because partial derivatives commute. Antisymmetrising therefore kills it. $\square$
-
-This matters enormously. Because $T^\rho{}_{\mu\nu}$ is a tensor, **it cannot be removed by any choice of coordinates**. If it is non-zero anywhere, it is non-zero for every observer.
-
-The general connection then decomposes uniquely as
-
-$$\Gamma^\rho_{\mu\nu} = \underbrace{\genfrac\{\}{0pt}{}{\rho}{\mu\nu}}_{\text{Levi-Civita}} + \underbrace{K^\rho{}_{\mu\nu}}_{\text{contorsion}} + \underbrace{L^\rho{}_{\mu\nu}}_{\text{disformation}},$$
-
-where contorsion is built from torsion, $$K^\rho{}_{\mu\nu} = \tfrac12\big(T^\rho{}_{\mu\nu} + T_\mu{}^\rho{}_\nu + T_\nu{}^\rho{}_\mu\big)$$, and disformation from non-metricity. **GR is the choice $K=L=0$.**
-
-### What torsion means geometrically
-
-The cleanest picture, and the one to remember:
-
-> **Curvature**: parallel-transport a vector around a closed loop and it comes back **rotated**.
-> **Torsion**: try to build the loop and it **does not close**.
-
-Concretely: take two infinitesimal vectors $u$ and $v$ at a point. Parallel-transport $u$ along $v$, and $v$ along $u$. In Riemannian geometry the two paths meet — the parallelogram closes. With torsion there is a **gap**, and the gap is precisely $T(u,v)$. Torsion is the failure of infinitesimal parallelograms to close.
-
-A useful mental image from condensed matter: in a crystal, curvature corresponds to *disclinations* (rotational defects) and torsion to *dislocations* (translational defects). This is not merely an analogy — the mathematics is identical.
-
-### So why did Einstein set it to zero?
-
-Four reasons, of very unequal quality.
+Now, we can identify at least four reasons, of very unequal quality, for why torsion is set to zero within GR:
 
 **1. History.** Riemannian geometry — Riemann, Ricci, Levi-Civita — was built with $T=0$ from the start, and it was the only geometry available in 1915. Cartan introduced torsion in **1922**, seven years *after* GR. Einstein could not have used what did not exist. (Cartan and Einstein then corresponded about it at length in 1929–1932, without agreeing.)
 
 **2. Economy.** With $T=Q=0$, the connection is *determined* by the metric. Allowing torsion means carrying $24$ extra independent components with no obvious source, and GR was already reproducing observations.
 
-**3. A version of the equivalence principle.** With $T=0$ one can always choose coordinates such that $\Gamma^\rho_{\mu\nu}(p)=0$ at a chosen point — this is the local inertial frame, the mathematical expression of "freely falling observers see no gravity". With torsion this is **impossible**, since a tensor cannot be transformed away.
-
-> **But be careful here — this is often overstated.** It does *not* mean torsion violates the WEP. A structureless test particle obeys the equation of motion derived from its action $S = -m\int\sqrt{-g_{\mu\nu}dx^\mu dx^\nu}$, which contains the **metric only**, so it follows an ordinary metric geodesic whatever the torsion does. What fails is only the statement "the connection can be flattened at a point", not "all bodies fall alike". Torsion couples to **spin**, not to mass.
+**3. A version of the equivalence principle.** With $T=0$ one can always choose coordinates such that $\Gamma^\rho_{\mu\nu}(p)=0$ at a chosen point — this is the local inertial frame, the mathematical expression of "freely falling observers see no gravity". With torsion this is **impossible**, since a tensor cannot be transformed away. **But we should be careful here** It does *not* mean torsion violates the WEP for spinless test particles. A structureless test particle obeys the equation of motion derived from its action $S = -m\int\sqrt{-g_{\mu\nu}dx^\mu dx^\nu}$, which contains the **metric only**, so it follows an ordinary metric geodesic whatever the torsion does. What fails is only the statement "the connection can be flattened at a point", not "all bodies fall alike". Torsion couples to **spin**, not to mass. However two particles with different spins will fall differently and **this** is a violation of the WEP.
 
 **4. The retrospective reason, and the best one.** As we will see in the next section, in the minimal theory torsion turns out to be **non-propagating** and to vanish identically outside matter. Setting $T=0$ was therefore, by accident, almost harmless. Einstein got the right answer for the wrong reason.
 
-> **A modern footnote: the geometric trinity.** One can build a theory of gravity empirically equivalent to GR out of *any one* of the three ingredients, switching off the other two: curvature (GR), torsion (**TEGR**, teleparallel), or non-metricity (**STEGR**, symmetric teleparallel). The gravitational field is not "curvature" in any absolute sense — that is a representation. See [Beltrán Jiménez, Heisenberg & Koivisto (2019)](https://arxiv.org/abs/1903.06830).
+## Einstein–Cartan theory 
 
-## What could be the impact of torsion?
-
-### Einstein–Cartan theory in three steps
-
-*References: [Cartan 1922]; [Sciama 1964](https://doi.org/10.1103/RevModPhys.36.463); [Kibble 1961](https://doi.org/10.1063/1.1703702); review: [Hehl, von der Heyde, Kerlick & Nester 1976](https://doi.org/10.1103/RevModPhys.48.393).*
-
-**Step 1 — change nothing but the variation.** Keep the Einstein–Hilbert action exactly as it is,
+We will now add torsion back to general relativity and assess the consequences. This is known as Einstein-Cartan theory. For more on this topic, see [Sciama 1964](https://doi.org/10.1103/RevModPhys.36.463); [Kibble 1961](https://doi.org/10.1063/1.1703702) and [Hehl, von der Heyde, Kerlick & Nester 1976](https://doi.org/10.1103/RevModPhys.48.393). Keep the Einstein–Hilbert action exactly as it is,
 
 $$S = \frac{1}{16\pi G}\int d^4x\,\sqrt{-g}\;R(g,\Gamma) \;+\; S_m[g,\Gamma,\psi],$$
 
-but now treat $g_{\mu\nu}$ and $\Gamma^\rho_{\mu\nu}$ as **independent variables** and vary with respect to both (the *Palatini* procedure). That is the entire modification. No new field, no new parameter, no new scale.
-
-**Step 2 — vary with respect to the connection.** One obtains
+but now treat $g_{\mu\nu}$ and $\Gamma^\rho_{\mu\nu}$ as **independent variables** and vary with respect to both (the *Palatini* procedure we already encountered in [another lecture](./altform_GR.md)). That is the entire modification. No new field, no new parameter, no new scale.
+Varying with respect to the connection, one obtains
 
 $$T^\rho{}_{\mu\nu} + \delta^\rho_\mu\,T^\sigma{}_{\sigma\nu} - \delta^\rho_\nu\,T^\sigma{}_{\sigma\mu} \;=\; 8\pi G\; s^\rho{}_{\mu\nu},$$
+
+<details markdown="1">
+  <summary><strong>Proof</strong></summary>
+
+**in prep**
+
+</details>
+
 
 where $$s^\rho{}_{\mu\nu} \equiv \delta S_m/\delta K^{\mu\nu}{}_\rho$$ is the **spin angular momentum density** of matter — the *intrinsic* spin, not orbital.
 
@@ -94,61 +66,42 @@ where $$s^\rho{}_{\mu\nu} \equiv \delta S_m/\delta K^{\mu\nu}{}_\rho$$ is the **
 
 This is a very unusual situation among the theories in this course: a modification of gravity that costs nothing observationally, because it is invisible by construction rather than by screening.
 
-**Step 3 — substitute back.** Eliminating torsion algebraically leaves an ordinary Einstein equation with an extra piece:
+Eliminating torsion algebraically leaves an ordinary Einstein equation with an extra piece:
 
-$$G_{\mu\nu}(\{\}) = 8\pi G\left(T_{\mu\nu} + T^{\rm spin}_{\mu\nu}\right),\qquad T^{\rm spin}_{\mu\nu} \sim -\,8\pi G\,s^2 .$$
+$$G_{\mu\nu} = 8\pi G\left(T_{\mu\nu} + T^{\rm spin}_{\mu\nu}\right),\qquad T^{\rm spin}_{\mu\nu} \sim -\,8\pi G\,s^2 .$$
 
-The spin correction is a **four-fermion contact interaction** (the Hehl–Datta term), schematically $\sim G\,(\bar\psi\gamma^5\gamma^\mu\psi)^2$, and — this is the crucial sign — it enters with a **negative effective energy density**. Gravity acquires a **repulsive** component at very high fermion density.
+The spin correction is a **four-fermion contact interaction** (the Hehl–Datta term), schematically $\sim G\,(\bar\psi\gamma^5\gamma^\mu\psi)^2$, and — this is the crucial sign — it enters with a **negative effective energy density**. Gravity acquires a **repulsive** component at very high fermion density. 
 
-### When does any of this matter?
-
-Let us estimate it. Spin density $s\sim \hbar n/2$ for $n$ fermions per unit volume. The spin term competes with the ordinary one when
+Now, **when does any of this matter?** Let us estimate it. Spin density $s\sim \hbar n/2$ for $n$ fermions per unit volume. The spin term competes with the ordinary one when
 
 $$\underbrace{G\,s^2}_{\text{spin}} \;\sim\; \underbrace{m\,n}_{\text{mass}} \qquad\Longrightarrow\qquad n \;\sim\; \frac{m}{G\hbar^2} \;=\; \frac{1}{\overline{\lambda}_{\rm C}\,\ell_{\rm Pl}^2},$$
 
-with $\overline{\lambda}_{\rm C}=\hbar/mc$ the Compton wavelength and $\ell_{\rm Pl}$ the Planck length. For nucleons this gives the **Cartan density**
+with $$\overline{\lambda}_{\rm C}=\hbar/mc$$ the Compton wavelength and $\ell_{\rm Pl}$ the Planck length. For nucleons this gives the **Cartan density**
 
 $$\boxed{\;\rho_C \;\sim\; 10^{54}\ \mathrm{g/cm^3}\;}$$
 
-Put it in context:
-
-| | density (g/cm³) |
-|---|---|
-| water | $1$ |
-| neutron star core | $10^{15}$ |
-| **Cartan density** | $\mathbf{10^{54}}$ |
-| Planck density | $10^{93}$ |
-
-So torsion is utterly negligible for stars — including neutron stars, by nearly forty orders of magnitude. But notice the **second** comparison, which is the interesting one: $\rho_C$ is roughly $10^{-40}$ of the Planck density. Since $\rho\sim T^4$, that means it is reached at a temperature
+To put this, in context, a neutron star core has a density of $10^{15}$ g.cm$${^-3}$$ while the Planck density is of $10^{93}$ g.cm$${^-3}$$. So torsion is utterly negligible for stars — including neutron stars, by nearly forty orders of magnitude. But notice the **second** comparison, which is the interesting one: $\rho_C$ is roughly $10^{-40}$ of the Planck density. Since $\rho\sim T^4$, that means it is reached at a temperature
 
 $$T_C \sim 10^{-10}\,T_{\rm Pl} \sim 10^{9}\ \mathrm{GeV},$$
 
-**ten orders of magnitude below the Planck scale.** Whatever torsion does in the early universe, it does *before* quantum gravity is required. That is what makes Einstein–Cartan cosmology worth taking seriously rather than dismissing as speculation.
+**ten orders of magnitude below the Planck scale.** Whatever torsion does in the early universe, it does *before* quantum gravity is required. That is what makes Einstein–Cartan cosmology worth taking seriously rather than dismissing as speculation. However, such phenomena could be relevant in the very early Universe, for example as alternative to **inflation** ([Popławski (2010)](https://www.sciencedirect.com/science/article/pii/S0370269310011561)).
 
-### Geodesics or autoparallels?
-
-With torsion, "straightest" and "shortest" come apart:
+Now, how about the geodesic equation with torsion? With torsion, "straightest" and "shortest" come apart:
 
 - **autoparallel** (straightest): $\ddot x^\rho + \Gamma^\rho_{\mu\nu}\dot x^\mu\dot x^\nu = 0$, using the **full** connection;
 - **geodesic** (shortest): extremum of $\int d\tau$, using **Levi-Civita only**.
 
 Which one do particles follow? The question sounds deep but the answer is prosaic: **you do not get to choose — the matter action decides.** A structureless particle has $S=-m\int d\tau$, which knows only about $g_{\mu\nu}$, so it follows the metric **geodesic**. Autoparallels are a different curve that nothing forces particles onto.
 
-(Worth adding: for the *totally antisymmetric* torsion that a Dirac field actually generates, the two coincide anyway — the symmetric part of the contorsion vanishes identically.)
-
-Spinning bodies are another matter: their spin precesses relative to the metric-parallel-transported frame. **This is the only way torsion could ever be detected directly.**
-
-### Experimental constraints
+(To be discussed: for the *totally antisymmetric* torsion that a Dirac field actually generates, the two coincide anyway — the symmetric part of the contorsion vanishes identically.) Spinning bodies are another matter: their spin precesses relative to the metric-parallel-transported frame. **This is the only way torsion could ever be detected directly.**
 
 Because torsion couples to spin, the tests are spin-polarised experiments, not orbital ones:
 
 - **Torsion-balance and spin-pendulum experiments** (Eöt-Wash), which look for a coupling of electron spin to a hypothetical background torsion field;
-- **Lorentz-violation searches** reinterpreted as torsion bounds: [Kostelecký, Russell & Tasson (2008)](https://arxiv.org/abs/0712.4393) obtained limits on constant background torsion components down to $10^{-31}\,\mathrm{GeV}$;
-- **Gravity Probe B** was proposed as a torsion probe ([Mao, Tegmark, Guth & Cabi 2007](https://arxiv.org/abs/gr-qc/0608121)), though the claim was contested — in Einstein–Cartan proper, gyroscopes made of unpolarised matter do not couple to torsion at all ([Flanagan & Rosenthal 2007](https://arxiv.org/abs/0704.1447)).
+- **Lorentz-violation searches** reinterpreted as torsion bounds: [Kostelecký, Russell and Tasson (2008)](https://arxiv.org/abs/0712.4393) obtained limits on constant background torsion components down to $10^{-31}\,\mathrm{GeV}$;
+- **Gravity Probe B** was proposed as a torsion probe ([Mao, Tegmark, Guth and Cabi (2007)](https://arxiv.org/abs/gr-qc/0608121)), though the claim was contested — in Einstein–Cartan proper, gyroscopes made of unpolarised matter do not couple to torsion at all ([Flanagan and Rosenthal (2007)](https://arxiv.org/abs/0704.1447)).
 
-**Be honest about what these bounds mean.** They constrain a hypothetical *background* torsion. They say almost nothing about Einstein–Cartan theory itself, which predicts zero torsion outside matter and is therefore, in its minimal form, essentially **untestable** with present technology.
-
-### Making torsion propagate
+These bounds constrain a hypothetical *background* torsion. They say almost nothing about Einstein–Cartan theory itself, which predicts zero torsion outside matter and is therefore, in its minimal form, essentially **untestable** with present technology.
 
 If you want torsion to do something observable, you must give it dynamics — that is, put derivatives of torsion into the action. This means quadratic invariants:
 
@@ -159,6 +112,10 @@ the general **Poincaré gauge theory** (PGT), with about ten free parameters. No
 The price is severe: **generic parameter choices give ghosts or tachyons.** Only a small number of combinations are healthy ([Sezgin & van Nieuwenhuizen 1980](https://doi.org/10.1103/PhysRevD.21.3269); see [Obukhov 2018](https://arxiv.org/abs/1805.07385) for the modern overview). This is the same Ostrogradsky-flavoured problem that motivated the Horndeski construction, reappearing in the connection sector.
 
 ## Gauge theory of gravity
+
+**in prep**
+
+<!-- ## Gauge theory of gravity
 
 ### The gauge principle, in one paragraph
 
@@ -243,7 +200,7 @@ Let us end this class the way we ended the one on screening, by asking whether w
 
 **Against.** The same feature that makes it safe makes it nearly empty. Torsion does not propagate, vanishes outside matter, and becomes relevant only at $10^{40}$ times nuclear density. **There is currently no realistic prospect of testing Einstein–Cartan theory.** The bounce is a genuine prediction, but it concerns an epoch we observe only through its late-time relics, and inflation efficiently erases what came before it. Meanwhile the versions that *would* be testable — propagating torsion, $f(\mathbb{T})$ — pay for that testability with ghosts or with broken Lorentz invariance.
 
-**A fair verdict.** Torsion is best regarded not as a phenomenological model competing with $\Lambda$CDM, but as a **structural correction to how we formulated GR in the first place**: the statement that Einstein's theory was written in a geometry that was, historically speaking, one step too narrow. Whether nature uses that extra room is a separate question, and one we currently have no way to answer.
+**A fair verdict.** Torsion is best regarded not as a phenomenological model competing with $\Lambda$CDM, but as a **structural correction to how we formulated GR in the first place**: the statement that Einstein's theory was written in a geometry that was, historically speaking, one step too narrow. Whether nature uses that extra room is a separate question, and one we currently have no way to answer. -->
 
 ## Further reading
 

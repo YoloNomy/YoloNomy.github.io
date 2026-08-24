@@ -581,6 +581,8 @@ $$\mathcal{L}_\phi = -\frac{1}{2}(\partial\phi)^2\Big[\,1 \;+\; 2\kappa\phi \;+\
 
 and, worse, **the matter side loops too**: the interaction term $\kappa\phi\,\mathcal{T}_m$ is part of the matter Lagrangian, so it has its own stress-energy tensor, whose trace generates a term $\propto\kappa^2\phi^2$, which generates a term $\propto \kappa^3\phi^3$, and so on. The two loops feed each other, and there is no obvious reason for either of them to stop.
 
+*The story is that accounting for these loops allows to give back exactly Nortdstrom second theory! (in prep)*
+
 **Bootstrap here**
 
 </details>
