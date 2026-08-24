@@ -396,7 +396,7 @@ K_{\mu\nu}\;\equiv\;\partial_\mu A_\nu - A_\mu A_\nu \;=\; -\,\varphi\,\partial_
 \qquad K\equiv\eta^{\mu\nu}K_{\mu\nu}
 $$
 
-Adding Steps 1 and 2, every term organises into $K$:
+Adding Steps 1 and 2, every term organizes into $K$:
 
 $$
 \boxed{\;R^\lambda{}_{\mu\nu\rho}
@@ -421,7 +421,6 @@ $$
 And thus:
 
 $$\boxed{\;R_{\mu\nu} = -2K_{\mu\nu} - \eta_{\mu\nu}\left(K+3A^2\right)\;}$$
-
 
 Finally, the Ricci scalar: Trace with $g^{\mu\nu}=\varphi^{-2}\eta^{\mu\nu}$ (note $\eta^{\mu\nu}\eta_{\mu\nu}=4$):
 
@@ -461,7 +460,7 @@ flat-space stress tensor is
 $$T^{\mu\nu}(x) = m\!\int\! ds_\eta\;\frac{dz^\mu}{ds_\eta}\frac{dz^\nu}{ds_\eta}\;\delta^4(x-z)$$
 
 Its trace follows from the normalisation of the four-velocity,
-$\eta_{\mu\nu}\,\frac{dz^\mu}{ds_\eta}\frac{dz^\nu}{ds_\eta} = -1$:
+$$\eta_{\mu\nu}\,\frac{dz^\mu}{ds_\eta}\frac{dz^\nu}{ds_\eta} = -1$$:
 
 $$\mathcal{T} \;\equiv\; \eta_{\mu\nu}T^{\mu\nu} \;=\; -\,m\!\int\! ds_\eta\;\delta^4(x-z)$$
 
@@ -474,8 +473,8 @@ which is just the *free* matter action written with the metric
 $g_{\mu\nu}=\varphi^{2}\eta_{\mu\nu}$, since $ds_g = \varphi\,ds_\eta$. The whole matter
 sector is therefore $S_m[g]$, and the theory can be written with **no explicit coupling to the stress-energy tensor at all**:
 
-$$\boxed{\;\mathcal{L} = -\frac{1}{2\kappa^{2}}\,\partial_\mu \varphi\,\partial^\mu \varphi
-\;+\; \mathcal{L}_m\!\left[\varphi^{2}\eta\right]\;}$$
+$$\boxed{\;S = -\int \frac{1}{2\kappa^{2}}\,\partial_\mu \varphi\,\partial^\mu \varphi \text{d}^4x
+\;+\; S_m\!\left[\varphi^{2}\eta\right]\;}$$
 
 All the $\varphi$-dependence now hides inside $g_{\mu\nu}$. This formulation of the field Lagrangian can be called the **second Nordström theory**. This is what lets us bring in
 the stress-energy tensor of matter *in the curved geometry defined by $\varphi$*,
@@ -510,7 +509,7 @@ identical. The factor $\varphi^{3}$ records that $\mathcal{T}$ counts mass per u
 **coordinate** volume while $$\mathcal{T}_{(g)}$$ counts it per unit **proper** volume, the
 two being related by the 3-volume Jacobian $\sqrt{\det g_{ij}} = \varphi^{3}$.
 
-<!-- As a word of caution: the relation between flat and curved stress energy tensor ($$\mathcal{T}=\varphi^{3}\mathcal{T}_{(g)}$$) is true only for the motion of massive particles. For more general fluid, this is not true and the $\kappa \mathcal{T}$ theory can be understood as a first order linearisation of the more complete and non-linear second Nordström theory. -->
+As a word of caution: the relation between flat and curved stress energy tensor ($$\mathcal{T}=\varphi^{3}\mathcal{T}_{(g)}$$) is true only for the motion of massive particles. For more general fluid, this is not true and the $\kappa \mathcal{T}$ theory can be understood as a first order linearisation of the more complete and non-linear second Nordström theory (see second box below). 
 
 Finally, insert the curvature identity obtained above:
 

@@ -86,13 +86,13 @@ Switch off $V$ for a moment ($V'=0$). Then
 
 $$\nabla^2\phi = \frac{\beta\rho}{M_{\rm Pl}}
 \qquad\text{versus}\qquad
-\nabla^2\Phi_N = 4\pi G\rho = \frac{\rho}{2M_{\rm Pl}^2}.$$
+\nabla^2\Phi = 4\pi G\rho = \frac{\rho}{2M_{\rm Pl}^2}.$$
 
 **Same source, same equation.** So up to a constant,
 
-$$\boxed{\;\phi(r) = \phi_{\rm out} - 2\beta M_{\rm Pl}\,\Phi_N(r)\;}$$
+$$\boxed{\;\phi(r) = \phi_{\rm out} - 2\beta M_{\rm Pl}\,\Phi(r)\;}$$
 
-The scalar field profile *is* the Newtonian potential, rescaled by $2\beta M_{\rm Pl}$ and flipped in sign (the field is pulled *down* where gravity is deep). Outside the body $\Phi_N(r)=GM/r$, and a test particle feels the acceleration $a_\phi = -(\beta/M_{\rm Pl})\nabla\phi$, giving the unscreened result
+The scalar field profile *is* the Newtonian potential, rescaled by $2\beta M_{\rm Pl}$ and flipped in sign (the field is pulled *down* where gravity is deep). Outside the body $\Phi(r)=GM/r$, and a test particle feels the acceleration $a_\phi = -(\beta/M_{\rm Pl})\nabla\phi$, giving the unscreened result
 
 $$\frac{F_\phi}{F_N} = 2\beta^2 \qquad\text{(no screening).}$$
 
@@ -104,7 +104,7 @@ Compare two numbers:
 
 | quantity | meaning |
 |---|---|
-| $2\beta M_{\rm Pl}\Phi_N$ | the drop the field *would like* to make (Step 1) |
+| $2\beta M_{\rm Pl}\Phi$ | the drop the field *would like* to make (Step 1) |
 | $\phi_{\rm out}-\phi_{\rm in}$ | the drop it *is allowed* to make (Step 2) |
 
 - **Allowed drop $>$ requested drop** — the field never reaches the floor, Step 1 holds everywhere, the body is **unscreened**: $F_\phi/F_N = 2\beta^2$. (In the literature: *thick shell*.)
@@ -116,7 +116,7 @@ For $r < R-\Delta R$ the field is constant, $\phi=\phi_{\rm in}$, hence $\nabla\
 
 Only the outer layer $R-\Delta R < r < R$, where the field climbs from $\phi_{\rm in}$ up towards $\phi_{\rm out}$, has a gradient. That layer is the **thin shell**.
 
-Integrate $\nabla^2\phi = \beta\rho/M_{\rm Pl}$ over a sphere of radius $R$ (dropping $V'$, which is negligible compared to $\beta\rho_{\rm in}/M_{\rm Pl}$ as soon as $\phi>\phi_{\rm in}$ — by definition of $\phi_{\rm in}$ the two are equal *at* $\phi_{\rm in}$, and $|V'|$ falls off above it):
+Integrate $$\nabla^2\phi = \beta\rho/M_{\rm Pl}$$ over a sphere of radius $R$ (dropping $V'$, which is negligible compared to $$\beta\rho_{\rm in}/M_{\rm Pl}$$ as soon as $$\phi>\phi_{\rm in}$$ — by definition of $$\phi_{\rm in}$$ the two are equal *at* $$\phi_{\rm in}$$, and $\vert V'\vert$ falls off above it):
 
 $$4\pi R^2\,\phi'(R) = \frac{\beta}{M_{\rm Pl}}\,M_{\rm shell},
 \qquad
@@ -134,32 +134,32 @@ We know the *shape* of the solution but not yet the thickness $\Delta R$. Fix it
 
 The climb happens in two places, and this is the subtle point:
 
-1. **Across the shell itself.** There $\phi'' \simeq \beta\rho_{\rm in}/M_{\rm Pl}$ (locally 1D since $\Delta R\ll R$), with $\phi'=0$ at the inner edge. Integrating twice, $\phi(R)-\phi_{\rm in} = \tfrac12(\beta\rho_{\rm in}/M_{\rm Pl})\Delta R^2 = 3\beta M_{\rm Pl}\Phi_N\left(\Delta R/R\right)^2$.
-2. **Along the exterior $1/r$ tail**, from $r=R$ to infinity: $\phi_{\rm out}-\phi(R) = 2\beta M_{\rm Pl}\dfrac{GM_{\rm eff}}{R} = 6\beta M_{\rm Pl}\Phi_N\dfrac{\Delta R}{R}$.
+1. **Across the shell itself.** There $\phi'' \simeq \beta\rho_{\rm in}/M_{\rm Pl}$ (locally 1D since $\Delta R\ll R$), with $\phi'=0$ at the inner edge. Integrating twice, $\phi(R)-\phi_{\rm in} = \tfrac12(\beta\rho_{\rm in}/M_{\rm Pl})\Delta R^2 = 3\beta M_{\rm Pl}\Phi\left(\Delta R/R\right)^2$.
+2. **Along the exterior $1/r$ tail**, from $r=R$ to infinity: $\phi_{\rm out}-\phi(R) = 2\beta M_{\rm Pl}\dfrac{GM_{\rm eff}}{R} = 6\beta M_{\rm Pl}\Phi\dfrac{\Delta R}{R}$.
 
 Contribution 2 is $O(\Delta R/R)$, contribution 1 is $O((\Delta R/R)^2)$: **most of the climb happens outside the body, not in the shell.** (This is why the final answer is *linear* in $\Delta R/R$; a naive "the field climbs across the shell" argument gives a wrong quadratic law.) Keeping the leading term,
 
-$$\phi_{\rm out}-\phi_{\rm in} \simeq 6\beta M_{\rm Pl}\Phi_N\,\frac{\Delta R}{R}
+$$\phi_{\rm out}-\phi_{\rm in} \simeq 6\beta M_{\rm Pl}\Phi\,\frac{\Delta R}{R}
 \qquad\Longrightarrow\qquad
-\boxed{\;\frac{\Delta R}{R} \simeq \frac{\phi_{\rm out}-\phi_{\rm in}}{6\,\beta\,M_{\rm Pl}\,\Phi_N}\;},
-\qquad \Phi_N=\frac{GM}{R}.$$
+\boxed{\;\frac{\Delta R}{R} \simeq \frac{\phi_{\rm out}-\phi_{\rm in}}{6\,\beta\,M_{\rm Pl}\,\Phi}\;},
+\qquad \Phi=\frac{GM}{R}.$$
 
 Combining Steps 1 and 4, the exterior fifth force is the unscreened one reduced by $M_{\rm eff}/M$:
 
-$$\frac{F_\phi}{F_N} \simeq 2\beta^2\cdot\frac{3\Delta R}{R} = \frac{\beta\,(\phi_{\rm out}-\phi_{\rm in})}{M_{\rm Pl}\,\Phi_N}\;\ll\;2\beta^2 .$$
+$$\frac{F_\phi}{F_N} \simeq 2\beta^2\cdot\frac{3\Delta R}{R} = \frac{\beta\,(\phi_{\rm out}-\phi_{\rm in})}{M_{\rm Pl}\,\Phi}\;\ll\;2\beta^2 .$$
 
-Read the last expression: **at fixed model parameters the fifth force is suppressed as $1/\Phi_N$.** Note also that one power of $\beta$ has cancelled — a *stronger* coupling makes the body *more* screened, which is the counter-intuitive signature of the mechanism.
+Read the last expression: **at fixed model parameters the fifth force is suppressed as $1/\Phi$.** Note also that one power of $\beta$ has cancelled — a *stronger* coupling makes the body *more* screened, which is the counter-intuitive signature of the mechanism.
 
-> **Validity.** The formula was derived for $\Delta R/R\ll1$. Setting $\Delta R/R\to1$ gives the screening criterion $\Phi_N \gtrsim \chi \equiv (\phi_{\rm out}-\phi_{\rm in})/(6\beta M_{\rm Pl})$, where $\chi$ is called the **self-screening parameter**. The $O(1)$ coefficient there should not be taken seriously — the crude argument of Step 2 gives $2\beta M_{\rm Pl}\Phi_N$ instead of $6\beta M_{\rm Pl}\Phi_N$ — but the *scaling* $\Phi_N$ vs. $(\phi_{\rm out}-\phi_{\rm in})/\beta M_{\rm Pl}$ is exact.
+Note however that the formula was derived for $\Delta R/R\ll1$. Setting $\Delta R/R\to1$ gives the screening criterion $\Phi \gtrsim \chi \equiv (\phi_{\rm out}-\phi_{\rm in})/(6\beta M_{\rm Pl})$, where $\chi$ is called the **self-screening parameter**. The $O(1)$ coefficient there should not be taken seriously — the crude argument of Step 2 gives $2\beta M_{\rm Pl}\Phi$ instead of $6\beta M_{\rm Pl}\Phi$ — but the *scaling* $\Phi$ vs. $(\phi_{\rm out}-\phi_{\rm in})/\beta M_{\rm Pl}$ is exact.
 
-Thus **Screening is controlled by $\Phi_N$, not by $\rho$**. This deserves to be stated on its own, because it is constantly confused: **the criterion is the depth of the gravitational potential well, not the density.** A diffuse but massive halo can be screened; a dense but small object need not be.
+Thus **Screening is controlled by $\Phi$, not by $\rho$**. This deserves to be stated on its own, because it is constantly confused: **the criterion is the depth of the gravitational potential well, not the density.** A diffuse but massive halo can be screened; a dense but small object need not be.
 
 Two further consequences:
 
 - **Environmental (or "blanket") screening.** $\phi_{\rm out}$ is the ambient value, set by the *neighbourhood*, not by the cosmological mean. A small body inside an already-screened big one lives in a bath where $\phi$ is already low, so $\phi_{\rm out}-\phi_{\rm in}$ is tiny and it is screened for free. This is why the Earth passes, despite $\Phi_\oplus = 7\times10^{-10}$. See [Hui, Nicolis & Stubbs (2009)](https://arxiv.org/abs/0905.2966).
 - **Violation of the (weak) equivalence principle.** A screened and an unscreened body fall differently in the same external field: only the unscreened one feels $F_\phi$. Hui, Nicolis & Stubbs make this the sharp prediction — *small galaxies fall faster than large ones*.
 
-| object | $\Phi_N$ | screened? |
+| object | $\Phi$ | screened? |
 |---|---|---|
 | galaxy cluster | $\sim10^{-5}$ | yes |
 | Sun | $2\times10^{-6}$ | yes |
@@ -167,14 +167,12 @@ Two further consequences:
 | Earth | $7\times10^{-10}$ | yes — blanketed by the Galaxy |
 | **dwarf galaxy in a void** | $\sim10^{-8}$ | **no** |
 
-For Hu–Sawicki $f(R)$ with $n=1$ the self-screening parameter is $\chi=\tfrac32|f_{R0}|$, so requiring the Milky Way ($\Phi_N\sim10^{-6}$) to be screened gives the familiar bound $|f_{R0}|\lesssim10^{-6}$ (see the review [Brax, Casas, Desmond & Elder (2022)](https://arxiv.org/abs/2201.10817)).
+For Hu–Sawicki $f(R)$ with $n=1$ the self-screening parameter is $$\chi=\tfrac32\vert f_{R0}\vert$$, so requiring the Milky Way ($\Phi\sim10^{-6}$) to be screened gives the familiar bound $$\vert f_{R0}\vert\lesssim10^{-6}$$ (see the review [Brax, Casas, Desmond & Elder (2022)](https://arxiv.org/abs/2201.10817)).
 
 That last table line is a genuine observational strategy, not a curiosity: **look for dwarf galaxies in voids and compare them with identical dwarfs inside clusters.** If gravity is environment-dependent, their stars (screened, compact) and their gas (unscreened, extended) will not trace the same rotation curve, and the two populations of dwarfs will differ systematically. This is a prediction $\Lambda$CDM simply cannot make.
 
 
-[Wang, Hui & Khoury, *No-Go Theorems for Generalized Chameleon Field Theories*, PRL **109**, 241301 (2012)](https://arxiv.org/abs/1208.4612) is the paper to know before believing any claim that a chameleon "explains dark energy" or "modifies structure growth". The remarkable thing is that it uses **one single observational input** — the Milky Way must be screened — and gets two very strong conclusions out of it.
-
-From §3, the Milky Way is screened provided
+[Wang, Hui & Khoury (2012)](https://arxiv.org/abs/1208.4612) is the paper to know before believing any claim that a chameleon "explains dark energy" or "modifies structure growth". The remarkable thing is that it uses **one single observational input** — the Milky Way must be screened — and gets two very strong conclusions out of it. From before, the Milky Way is screened provided:
 
 $$\Delta\ln A \;\equiv\; \ln\frac{A(\phi_{\rm out})}{A(\phi_{\rm in})} \;=\; \frac{\beta\,(\phi_{\rm out}-\phi_{\rm in})}{M_{\rm Pl}} \;\lesssim\; \Phi_{N,\rm MW}\sim 10^{-6}.$$
 

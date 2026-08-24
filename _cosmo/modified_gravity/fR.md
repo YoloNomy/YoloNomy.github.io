@@ -12,21 +12,19 @@ In this class we attack a *different* assumption: **L3**, *"the field equations 
 
 $$\mathcal{L} \;\propto\; R \;+\; \alpha R^2 \;+\; \beta R^3 \;+\;\dots \;\equiv\; f(R)\ ?$$
 
-This is the road sketched in Figure 1, and the family of theories obtained this way is called **$f(R)$ gravity**. It is by far the most studied modified gravity theory after Brans-Dicke — partly because it is easy to write down, partly because, as we will discover, it is *secretly* a theory we already know.
+This is the road sketched in Figure 1, and the family of theories obtained this way is called **$f(R)$ gravity**. It is by far the most studied modified gravity theory after general scalar tensor theories — partly because it is easy to write down, partly because, as we will discover, it is *secretly* a theory we already know.
 
 ![image](../pictures/add-orders.png){: width="50%"}
 
 *Figure 1: A roadmap of higher-order models of modified gravity. Credit: [Ishak et al. (2024)](https://arxiv.org/abs/2411.12026).*
 
-Historically, the idea is old: **Buchdahl (1970)** already studied non-linear Lagrangians in cosmology ([MNRAS **150**, 1](https://academic.oup.com/mnras/article/150/1/1/2602890)), and **Starobinsky (1980)** used $f(R)=R+R^2/6M^2$ to build the first working model of inflation ([Phys. Lett. B **91**, 99](https://doi.org/10.1016/0370-2693(80)90670-X)). The modern wave of interest started when [Carroll, Duvvuri, Trodden & Turner (2004)](https://arxiv.org/abs/astro-ph/0306438) proposed $f(R)=R-\mu^4/R$ as an explanation of cosmic acceleration *without* dark energy — a proposal which, as we shall see, died within months.
+Historically, the idea is old: [Buchdahl (1970)](](https://academic.oup.com/mnras/article/150/1/1/2602890)) already studied non-linear Lagrangians in cosmology and [Starobinsky (1980)]((https://doi.org/10.1016/0370-2693(80)90670-X)) used $f(R)=R+R^2/6M^2$ to build the first working model of inflation. The modern wave of interest started when [Carroll, Duvvuri, Trodden & Turner (2004)](https://arxiv.org/abs/astro-ph/0306438) proposed $f(R)=R-\mu^4/R$ as an explanation of cosmic acceleration *without* dark energy — a proposal which, as we shall see, died within months.
 
 ### A warning before we start: Ostrogradsky's theorem
 
-There is a very good reason why almost nobody adds higher derivatives lightly. Let us state the danger precisely, since it will control everything below.
+There is a very good reason why almost nobody adds higher derivatives lightly and we already encountered it in the [Hornedski](./Horndeski.md) class: **the Ostrogradsky theorem (1850).** If a Lagrangian $L(q,\dot q,\ddot q,\dots)$ depends on derivatives higher than the first, and is **non-degenerate** in its highest derivative (i.e. $\partial^2 L/\partial\ddot q^{\,2}\neq0$ can be solved for $\ddot q$), then the corresponding Hamiltonian is **linear** in at least one canonical momentum, and is therefore unbounded from below (**Degenerate** means that the highest-derivative terms are not independent, so the Legendre transform to the Hamiltonian is not invertible and Ostrogradsky's construction does not apply.)
 
-> **Ostrogradsky's theorem (1850).** If a Lagrangian $L(q,\dot q,\ddot q,\dots)$ depends on derivatives higher than the first, and is **non-degenerate** in its highest derivative (i.e. $\partial^2 L/\partial\ddot q^{\,2}\neq0$ can be solved for $\ddot q$), then the corresponding Hamiltonian is **linear** in at least one canonical momentum, and is therefore unbounded from below.
-
-*Definitions.* A **ghost** is a degree of freedom whose kinetic energy has the wrong sign, so that its energy is unbounded from below. This is not merely "unstable": in a theory containing both a ghost and an ordinary field, the vacuum can decay into ghost + ordinary particle pairs at *no energy cost*, with a phase-space volume that diverges. **Degenerate** means that the highest-derivative terms are not independent, so the Legendre transform to the Hamiltonian is not invertible and Ostrogradsky's construction does not apply.
+In other words: higher order terms very often include **ghosts** which as we saw in the [Brans Dicke](./Brans-Dicke.md) class is fatal for the theory. 
 
 Two remarks that will matter:
 
@@ -101,11 +99,7 @@ The associated length scale is the **Compton wavelength** of the scalaron, $\lam
 
 ## $f(R)$ is Brans-Dicke in disguise
 
-We now prove the statement we have been teasing since the [Lovelock class](./Lovelock_thm.md).
-
-> **$f(R)$ gravity with $f_{RR}\neq0$ is exactly equivalent to a Brans-Dicke theory with $\omega=0$ and a potential.**
-
-Note the logic carefully: we set out to break assumption **L3** (higher derivatives) and we landed back on assumption **L2** (extra field). This is remark 1 of the [Lovelock class](./Lovelock_thm.md) made concrete — *almost every road to modified gravity collapses onto extra degrees of freedom.*
+We now prove the statement we have been teasing since the [Lovelock class](./Lovelock_thm.md). **$f(R)$ gravity with $f_{RR}\neq0$ is exactly equivalent to a Brans-Dicke theory with $\omega=0$ and a potential.** Note the logic carefully: we set out to break assumption **L3** (higher derivatives) and we landed back on assumption **L2** (extra field). This is remark 1 of the [Lovelock class](./Lovelock_thm.md) made concrete — *almost every road to modified gravity collapses onto extra degrees of freedom.*
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
@@ -134,7 +128,7 @@ $$\boxed{\;S = \frac{1}{16\pi G}\int \text{d}^4x\sqrt{-\vert g\vert}\;\Big[\phi 
 
 $$\mathcal{L}_{\rm BD} = \frac{1}{16\pi}\left(\phi_{\rm BD} R - \frac{\omega}{\phi_{\rm BD}}g^{\mu\nu}\partial_\mu\phi_{\rm BD}\partial_\nu\phi_{\rm BD}\right) + \mathcal{L}_m .$$
 
-With the identification $\phi_{\rm BD} = \phi/G = f_R/G$ (our $\phi$ is dimensionless, theirs had the dimension of $1/G$), the two match **provided $\omega=0$**, with the addition of a potential $V$. $\blacksquare$
+With the identification $\phi_{\rm BD} = \phi/G = f_R/G$ (our $\phi$ is dimensionless, theirs had the dimension of $1/G$), the two match **provided $\omega=0$**, with the addition of a potential $V$.
 
 </details>
 
@@ -209,11 +203,11 @@ These conditions are restrictive. Note in particular the tension built into the 
 
 **Hu-Sawicki (2007)** ([arXiv:0705.1158](https://arxiv.org/abs/0705.1158)) is the reference model, and the one implemented in essentially every code:
 
-$$\boxed{\;f(R) = R - m^2\,\frac{c_1 (R/m^2)^n}{c_2 (R/m^2)^n + 1}\;},\qquad m^2 \equiv \frac{8\pi G\bar\rho_0}{3} = \Omega_m H_0^2 .$$
+$$\boxed{\;f(R) = R - M^2\,\frac{c_1 (R/M^2)^n}{c_2 (R/mM2)^n + 1}\;},\qquad M^2 \equiv \frac{8\pi G\bar\rho_0}{3} = \Omega_m H_0^2 .$$
 
-The design is transparent once you expand it for $R\gg m^2$:
+The design is transparent once you expand it for $R\gg M^2$:
 
-$$f(R) \;\simeq\; R \;-\; \frac{c_1}{c_2}m^2 \;+\; \frac{c_1}{c_2^2}\,m^2\left(\frac{m^2}{R}\right)^{n} .$$
+$$f(R) \;\simeq\; R \;-\; \frac{c_1}{c_2}M^2 \;+\; \frac{c_1}{c_2^2}\,M^2\left(\frac{M^2}{R}\right)^{n} .$$
 
 - The **constant** term is an effective cosmological constant: $c_1/c_2 = 6\Omega_\Lambda/\Omega_m$ reproduces $\Lambda$CDM expansion exactly.
 - The **last** term is the modification, and it dies off as $R^{-n}$: large curvature $\Rightarrow$ no modification. This is precisely the screening requirement built into the functional form by hand.
@@ -223,16 +217,16 @@ Rather than $(c_1,c_2,n)$, everyone parametrises the model by the **present back
 
 $$f_{R0}\equiv f_R(\bar R_0) \simeq -\,n\,\frac{c_1}{c_2^2}\left(\frac{12}{\Omega_m}-9\right)^{-(n+1)},$$
 
-using $\bar R_0 = m^2(12/\Omega_m - 9)$ for a $\Lambda$CDM background. **$\vert f_{R0}\vert$ is the one number the data constrain**, and it has a direct physical meaning: it fixes the Compton wavelength of the scalaron today.
+using $\bar R_0 = M^2(12/\Omega_m - 9)$ for a $\Lambda$CDM background. **$\vert f_{R0}\vert$ is the one number the data constrain**, and it has a direct physical meaning: it fixes the Compton wavelength of the scalaron today.
 
 <details markdown="1">
   <summary><strong>The Compton wavelength today, explicitly</strong></summary>
 
-Take $n=1$ and write $A\equiv c_1/c_2^2$, so $f_R = -A(m^2/R)^2$ and $f_{RR} = 2A\,m^4/R^3$. Then
+Take $n=1$ and write $A\equiv c_1/c_2^2$, so $f_R = -A(M^2/R)^2$ and $f_{RR} = 2A\,M^4/R^3$. Then
 
-$$m_{\rm scal}^2 = \frac{1}{3f_{RR}} = \frac{R^3}{6A\,m^4}.$$
+$$m_{\rm scal}^2 = \frac{1}{3f_{RR}} = \frac{R^3}{6A\,M^4}.$$
 
-Since $\vert f_{R0}\vert = A(m^2/\bar R_0)^2$, we can eliminate $A$:
+Since $\vert f_{R0}\vert = A(M^2/\bar R_0)^2$, we can eliminate $A$:
 
 $$m_{\rm scal}^2 = \frac{\bar R_0}{6\vert f_{R0}\vert} \qquad\Longrightarrow\qquad \boxed{\;\lambda_C = \sqrt{\frac{6\vert f_{R0}\vert}{\bar R_0}}\;}$$
 
@@ -264,6 +258,7 @@ Everything above concerns *small* curvature. Go the other way — add a positive
 
 $$f(R) = R + \frac{R^2}{6M^2}.$$
 
+Note that such a function is motivated by possible **quantum gravity** corrections to the Einstein-Hilbert action at high energies.
 Its Einstein frame follows from our general formula. With $f_R = 1+R/(3M^2) = e^{\sqrt{2/3}\,\tilde\phi/M_{\rm Pl}}$:
 
 $$V_E(\tilde\phi) = M_{\rm Pl}^2\frac{Rf_R - f}{2f_R^2} = \frac{M_{\rm Pl}^2 R^2/(6M^2)}{2f_R^2} = \boxed{\;\frac34 M^2M_{\rm Pl}^2\left(1 - e^{-\sqrt{2/3}\,\tilde\phi/M_{\rm Pl}}\right)^2\;}$$
@@ -278,6 +273,9 @@ giving $n_s\simeq0.964$ and $r\simeq0.004$ for $N=55$. For two decades this sat 
 
 ## Cosmological phenomenology
 
+### Modified Friedmann equations
+
+
 ### $\mu$, $\Sigma$ and $\eta$ for $f(R)$
 
 Recall from the [cosmology class](./cosmology.md) the parametrisation
@@ -289,6 +287,15 @@ In the **quasi-static approximation** (valid for $k\gg aH$: we neglect time deri
 $$\boxed{\;\mu(a,k) = \frac{1}{f_R}\;\frac{4 + 3\,a^2m^2/k^2}{3 + 3\,a^2m^2/k^2}\;},\qquad \boxed{\;\Sigma(a,k) = \frac{1}{f_R}\;}$$
 
 with $m=m(a)$ the background scalaron mass. Let us read these off carefully, because they encode everything the data will see. Write $x\equiv a^2m^2/k^2$. Since the *physical* wavelength of a mode is $\lambda \sim a/k$ and the Compton wavelength is $\lambda_C = 1/m$, this is simply $x = (\lambda/\lambda_C)^2$: the single dimensionless number comparing the perturbation to the range of the scalaron.
+
+<details markdown="1">
+  <summary><strong> Perturbations in f(R) </strong></summary>
+
+**in prep**
+
+</details>
+
+We see that:
 
 - **Large scales**, $\lambda\gg\lambda_C$ (so $x\to\infty$): $\mu\to1/f_R\simeq1$. The scalaron is too heavy to move on these scales; **GR is recovered**.
 - **Small scales**, $\lambda\ll\lambda_C$ (so $x\to0$): $\mu\to\frac{4}{3f_R}\simeq\frac43$. There it is again — the same $4/3$ we obtained from $2\beta^2=1/3$ in the Einstein frame. Two completely different calculations, one answer.
@@ -302,6 +309,9 @@ $$\eta = \frac{2\Sigma}{\mu}-1 = \frac{2+3x}{4+3x} \qquad\Longrightarrow\qquad \
 ![image](../pictures/mu_eta_Sigma_modified_gravity_MGCAMB.png)
 
 *Figure 2: $\mu$, $\eta$ and $\Sigma$ for several modified gravity models including Hu-Sawicki $f(R)$ at two values of $k$, computed with MGCAMB in the associated [notebook](./codes/modified_gravity_growth_MGCAMB.ipynb). Note that the illustrative value used there, $f_{R0}=10^{-4}$, is by now firmly excluded — it is chosen to make the effect visible.*
+
+
+### Gravitational waves
 
 ### Growth of structure
 
@@ -361,13 +371,13 @@ Let us step back, because the lesson of this class is more general than the theo
 2. **The extra mode is a chameleon, necessarily.** Its coupling $\beta=1/\sqrt6$ is fixed by the structure of the theory and cannot be tuned. Everything hinges on the density-dependent mass of the scalaron.
 3. **The whole phenomenology is one number**, $\vert f_{R0}\vert$, equivalently one length, $\lambda_C\simeq 30\,\text{Mpc}\,(\vert f_{R0}\vert/10^{-4})^{1/2}$. Above $\lambda_C$: GR. Below: gravity is $4/3$ stronger and $\eta=1/2$.
 4. **The constraints have squeezed that length below a Megaparsec**, which is to say: below any scale on which $f(R)$ was invented to do something interesting. As a dark-energy model, $f(R)$ is finished. As a *benchmark* — a fully worked example of a screened, scale-dependent modification with second-order equations and unmodified light propagation — it remains indispensable, and it is the model against which most survey pipelines are validated.
-5. **And $R+R^2$, at the other end of the curvature range, is a completely different story** — the same function, applied at high curvature rather than low, gives our best model of inflation. That it may now be in mild tension with ACT DR6 is a reminder to keep checking.
+5. **And $R+R^2$, at the other end of the curvature range, is a completely different story** — the same function, applied at high curvature rather than low, gives one of our best model of inflation. That it may now be in mild tension with ACT DR6 is a reminder to keep checking.
 
 ## Further reading and watching
 
-- [Sotiriou & Faraoni - $f(R)$ theories of gravity (2010), Rev. Mod. Phys. **82**, 451](https://arxiv.org/abs/0805.1726) — the standard review, exhaustive on the metric/Palatini distinction.
-- [De Felice & Tsujikawa - $f(R)$ theories (2010), Living Rev. Rel. **13**, 3](https://arxiv.org/abs/1002.4928) — the standard review, more oriented towards cosmology and viability conditions.
-- [Woodard - Ostrogradsky's theorem on Hamiltonian instability (2015)](https://arxiv.org/abs/1506.02210) — short, clear, and the reference for *why* $f(R)$ is the exception.
-- [Hu & Sawicki - Models of $f(R)$ cosmic acceleration that evade solar-system tests (2007)](https://arxiv.org/abs/0705.1158) — read the original, the model design logic is very instructive.
-- [Cataneo & Rapetti - Tests of gravity with galaxy clusters (2018)](https://arxiv.org/abs/1902.10124) — the observational side.
-- [Clifton, Ferreira, Padilla & Skordis - Modified gravity and cosmology (2012)](https://arxiv.org/abs/1106.2476) — §4.1 for $f(R)$ in context.
+- [Sotiriou & Faraoni - $f(R)$ theories of gravity (2010), Rev. Mod. Phys. **82**, 451](https://arxiv.org/abs/0805.1726)
+- [De Felice & Tsujikawa - $f(R)$ theories (2010), Living Rev. Rel. **13**, 3](https://arxiv.org/abs/1002.4928).
+- [Woodard - Ostrogradsky's theorem on Hamiltonian instability (2015)](https://arxiv.org/abs/1506.02210).
+- [Hu & Sawicki - Models of $f(R)$ cosmic acceleration that evade solar-system tests (2007)](https://arxiv.org/abs/0705.1158).
+- [Cataneo & Rapetti - Tests of gravity with galaxy clusters (2018)](https://arxiv.org/abs/1902.10124).
+- [Clifton, Ferreira, Padilla & Skordis - Modified gravity and cosmology (2012)](https://arxiv.org/abs/1106.2476).
