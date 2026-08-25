@@ -39,7 +39,7 @@ Léo Vacher
 
 ### Additional material
 
-- Slides
+- [Slides](./files/modified_gravity.pdf)
 - Full pdf of lecture notes
 - [Tutorials](https://github.com/YoloNomy/YoloNomy.github.io/tree/main/_cosmo/modified_gravity/codes/)
 

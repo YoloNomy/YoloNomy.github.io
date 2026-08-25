@@ -211,7 +211,7 @@ m_0 \;\gtrsim\; 3\times10^{3}\,\beta\,H_0 .$$
 
 **(e) Translate into a range.** With $H_0^{-1}\simeq4.4\,$Gpc,
 
-$$\lambda_0 = \frac{1}{m_0} \;\lesssim\; \frac{10^{-3}}{\beta}\,H_0^{-1} \;\sim\; \frac{{\rm few}}{\beta}\ \mathrm{Mpc}.$$
+$$\lambda_0 = \frac{1}{m_0} \;\lesssim\; \frac{10^{-3}}{\beta}\,H_0^{-1} \;\sim\; \frac{\text{ few}}{\beta}\ \mathrm{Mpc}.$$
 
 **So the naive expectation "$\lambda\sim$ Gpc in the cosmological background" is wrong by three orders of magnitude.** The logic is a tug-of-war: a light field has a long range, but a light field also rolls a lot as $\rho$ dilutes, and rolling a lot means $A$ changes a lot, which the Milky Way forbids. The Milky Way constraint is therefore *also* a constraint on the cosmological Compton wavelength.
 Hence:
