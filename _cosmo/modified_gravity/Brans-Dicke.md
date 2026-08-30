@@ -1369,13 +1369,7 @@ so $S_2$ is the *leading* object controlling the perturbations. The target is al
 
 $$S_2 = \frac{1}{2}\int dt\,d^3x\;a^3\left[\;\mathcal{A}\,\dot{\delta\phi}^{\,2}\;-\;\mathcal{B}\,\frac{(\partial_i\delta\phi)^2}{a^2}\;-\;\mathcal{C}\,\delta\phi^2\;\right],$$
 
-because the three coefficients then map one-to-one onto the three ways a theory can be sick:
-
-| coefficient | pathology if negative | how bad |
-|---|---|---|
-| $\mathcal{A}$ | **ghost** — energy unbounded from below | fatal |
-| $\mathcal{B}/\mathcal{A}\equiv c_s^2$ | **gradient instability** — growth rate $\propto k$ | fatal |
-| $\mathcal{C}/\mathcal{A}\equiv m^2$ | **tachyon** — bounded growth, $k<a\,\lvert m\rvert/c_s$ only | harmless |
+where the three coefficients $$\mathcal{A},\mathcal{B}$ and $\mathcal{C}$$ correspond to the coefficients discussed in the previous section, allowing to identify the presence of pathologies.
 
 For a general field Lagrangian in the Einstein frame
 

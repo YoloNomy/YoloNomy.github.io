@@ -8,6 +8,8 @@ parent: cosmo
 
 Léo Vacher
 
+**Disclaimer: These notes are still a work in progress! Let me know if you spot any typos or anything to add at leo.vacher@ijclab.in2p3.fr**
+
 ### Lecture notes
 
 - **I. Foundations of general relativity** 
@@ -40,7 +42,7 @@ Léo Vacher
 ### Additional material
 
 - [Slides](./files/modified_gravity.pdf)
-- Full pdf of lecture notes
+- Full pdf of lecture notes (in prep)
 - [Tutorials](https://github.com/YoloNomy/YoloNomy.github.io/tree/main/_cosmo/modified_gravity/codes/)
 
 ### Tools you may need:
@@ -52,3 +54,4 @@ CLASS and CAMB are usual Boltzmann solvers used in cosmology. They admit special
 - [EFT CAMB](http://eftcamb.org/codes/download.html): CAMB for effective field theory
 - [MGCAMB](https://github.com/sfu-cosmo/MGCAMB): CAMB for modified gravity
 - [hi_cola](https://github.com/Hi-COLACode/Hi-COLA): $N$-body simulations for Horndeski models to test the non-linear regime 
+
