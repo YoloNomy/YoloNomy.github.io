@@ -40,6 +40,7 @@ You will find here some fun python applications to physics with some detailled e
 - [Thermodynamics in an expanding Universe](cosmo/thermo_cosmo.md)
 - [Boltzmann equations in the expanding Universe](cosmo/boltzmann.md)
 - The cosmic microwave background
+- [Bonus: CMB polarisation as a sandbox for differential geometry and group theory](cosmo/cmb_pol.md)
 - [Spectral distortions of the CMB](cosmo/spect-dist.md)
 - Cosmological probes: large scales
 - Initial condition problems and motivations for inflation
