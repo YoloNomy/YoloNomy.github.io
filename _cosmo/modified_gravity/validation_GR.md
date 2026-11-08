@@ -81,20 +81,20 @@ Different measurements of $\delta$ can be found in the middle panel of Figure 2.
 
 $$\boxed{\delta \lesssim 10^{-26},}$$
 
-obtained using so-called Hughes–Drever-type experiments [Chupp 1989](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.63.1541). These experiments do not focus on light propagation but instead seek for a possible dependence of a nucleus's resonance frequency as the Earth carries it around. In order to reach such a precision, they exploit modern quantum technologies such as laser cooled trapped atoms and ions.
+obtained using so-called Hughes–Drever-type experiments ([Chupp 1989](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.63.1541)). These experiments do not focus on light propagation but instead seek for a possible dependence of a nucleus's resonance frequency as the Earth carries it around. In order to reach such a precision, they exploit modern quantum technologies such as laser cooled trapped atoms and ions.
 
 However, $\delta$ is an "old school" figure of merit for LLI violations. Today, possible violations of the Lorentz invariance are more finely measured using the so called standard model extension (SME) tables. These contain hundred of different coefficients quantifying all the possible violations of CPT and Lorentz symmetry. For a complete up to date table, see the review of [Kostelecky and Russell (2026)](https://arxiv.org/pdf/0801.0287).
 
 ### Tests of the LPI and gravitational redshift
 
-If the LLI is true, all clocks should tick identically **in their own reference frame** no matter where (and when) they are located in the Universe. Yet two identical clocks placed at different heights in a gravitational field and compared, for example by exchanging light signals, do not agree: this is the gravitational redshift.
+If the LPI is true, all clocks should tick identically **in their own reference frame** no matter where (and when) they are located in the Universe. Yet two identical clocks placed at different heights in a gravitational field and compared, for example by exchanging light signals, do not agree: this is the gravitational redshift.
 
 Assuming the EEP, General Relativity provides a precise formula for this effect. In fact, the formula follows from the EEP alone, so it holds in any metric theory of gravity.
-Indeed, from the Newtonian limit derivation discussed in our [previous lecture](./foundations-GR.md), it is possible to show that, considering two points at rest in a gravitational field, a photon emitted from the first point with a frequency $\nu_{em}$, will be received at the other point with another frequency $\nu_{rec}$ such that:
+Indeed, from the Newtonian limit derivation discussed in our [previous lecture](./foundations-GR.md), it is possible to show that, considering two points at rest in a gravitational field, a photon emitted from the first point with a frequency $\nu_{\rm em}$, will be received at the other point with another frequency $\nu_{\rm rec}$ such that:
 
-$$\boxed{\frac{\nu_{emm}- \nu_{rec}}{\nu_{rec}} = (1+\tilde{\alpha})\frac{\Delta \Phi}{c^2}}$$
+$$\boxed{\frac{\nu_{\rm em}- \nu_{\rm rec}}{\nu_{\rm rec}} = (1+\tilde{\alpha})\frac{\Delta \Phi}{c^2}}$$
 
-Where $\tilde{\alpha}$ must be strictly zero for the LPI to be valid. Hence measuring the redshift of a photon traveling in a gravitational field allows to test the EEP.
+Where $\tilde{\alpha}$ quantifies a possible variation of the proper time experienced at different location, which must be strictly zero for the LPI to be valid. Hence measuring the redshift of a photon traveling in a gravitational field allows to test the EEP.
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
@@ -153,7 +153,7 @@ Different measures on $\tilde{\alpha}$ are found in the right panel of Figure 2.
 
 $$\boxed{\tilde{\alpha} = (-4.5 \pm 3.1) \times 10^{-5}}$$
 
-when taking the mean posterior of three different clocks [Herrmann et al (2018)](https://arxiv.org/pdf/1812.09161). LPI is also tested by looking for possible space-time variations of the fundamental constants, which will be the topic of the [next lecture](./varying_const.md).
+when taking the mean posterior of three different clocks ([Herrmann et al (2018)](https://arxiv.org/pdf/1812.09161)). LPI is also tested by looking for possible space-time variations of the fundamental constants, which will be the topic of the [next lecture](./varying_const.md).
 
 ### EEP violations, formalisms and fifth force
 
@@ -165,7 +165,7 @@ As a side note, we emphasize that even if a violation of the EEP were ever detec
 
 The previous discussion focused on the experimental validation of the EEP, and hence on whether or not gravity can be described by a metric theory (probing mostly the "S" type axioms). However, we did not yet constrain the dynamics of gravity (mostly D1).
 
-In order to do so, it is common to introduce the so-called **Parametrized Post-Newtonian (PPN) formalism**, developed in its modern form [Will and Nordtvedt (1972)](https://articles.adsabs.harvard.edu/pdf/1972ApJ...177..757W). This formalism provides ten measurable coefficients which quantify deviations from the dynamics of GR within any metric theory of gravity.
+In order to do so, it is common to introduce the so-called **Parametrized Post-Newtonian (PPN) formalism**, developed in its modern form by [Will and Nordtvedt (1972)](https://articles.adsabs.harvard.edu/pdf/1972ApJ...177..757W). This formalism provides ten measurable coefficients which quantify deviations from the dynamics of GR within any metric theory of gravity.
 
 The idea is quite simple. The leading-order approximation of GR that we discussed in the [first lecture](./foundations-GR.md) is known as the Newtonian approximation. Pushing the expansion one order further in the small parameter $\epsilon$, one obtains the post-Newtonian approximation of General Relativity. In this framework, for a static, spherically symmetric source of mass $M$, the metric in isotropic coordinates reads:
 
