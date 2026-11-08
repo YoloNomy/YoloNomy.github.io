@@ -21,10 +21,14 @@ subtitle: Maths and mathematical physics
 - General notions: curve, functions, sequences
 - Exterior derivatives and forms
 - Classical electromagnetism
+- Space-time and general relativity
+
+# Differential geometry of classical mechanics and geometric quantization
+
 - Lagrangian mechanics
 - [Symplectic geometry: Phase space](./geodiff/Hamiltonian.md)
 - [Thermodynamics and its analogies with mechanics](./geodiff/thermodynamics.md)
-- Space-time and general relativity
+- [Geometric quantization](./geodiff/geo-quantization.md)
 
 # Measure theory and foundations of quantum mechanics
 
@@ -45,10 +49,6 @@ subtitle: Maths and mathematical physics
 - [Curvature: general relativity and gauge theories](./gauge/curvature.md)
 
 # Complex analysis and quantum field theory
-
-# Geometrical quantization
-
-- Going from classic to quantum
 
 # General mathematics 
 

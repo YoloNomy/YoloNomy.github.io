@@ -789,8 +789,7 @@ Translating this into the geodesic equation, this equation means that matter par
 
 $$\tilde u^\nu\tilde\nabla_\nu \tilde u^{\mu} = -\left(\tilde g^{\mu\nu} + \tilde u^\mu\tilde u^\nu\right)\partial_\nu\ln A = \frac{\kappa}{2}\left(\tilde g^{\mu\nu} + \tilde u^\mu\tilde u^\nu\right)\partial_\nu\tilde\phi ,$$
 
-the last equality using $\ln A = -\kappa\tilde\phi/2$. The right-hand side is a **fifth force**. But note that $A(\tilde\phi)$ is *universal* — the same function for every species — so the trajectory is still independent of the body's composition and the **WEP is thus valid**. 
-
+the last equality using $\ln A = -\kappa\tilde\phi/2$. The right-hand side is a **fifth force**. But note that $A(\tilde\phi)$ is *universal* — the same function for every species — so the trajectory is still independent of the body's composition and the **WEP is thus valid**.  Furthermore, **all masses change identically** and hence the model is blind to constraints on mass ratios (e.g. $\mu$) [coming from spectroscopic measurements](./varying_const.md). The effect of varying all mass identically would simply shift linearly all the atomic lines, which is equivalent to changing the redshift of the objects, which is the same physical effect that would be induced by a varying $G$, but with a different physical interpretation.
 
 <details markdown="1">
   <summary><strong>Proof of the Einstein-frame equations</strong></summary>

@@ -72,7 +72,7 @@ For more on MICROSCOPE results and their impact, see also the review of [Bergé 
 
 ### Tests of the LLI and ether drift
 
-Tests of the validity of the local Lorentz invariance can take multiple forms, but many of them consist of generalizations and refinement of the Michelson-Morley experiment, trying to use interferometry in order to detect possible changes in the value of the speed of light in different direction of motion. 
+Tests of the validity of the local Lorentz invariance can take multiple forms, but many of them consist of generalizations and refinements of the Michelson-Morley experiment, trying to use interferometry in order to detect possible changes in the value of the speed of light in different direction of motion. 
 Possible variation of the speed of light $c$ in a direction compared to a reference value $c_0$ are quantified by the parameter:
 
 $$\boxed{\delta = \left\vert 1-\frac{c^{-2}_0}{c^2} \right\vert}$$
@@ -87,12 +87,14 @@ However, $\delta$ is an "old school" figure of merit for LLI violations. Today, 
 
 ### Tests of the LPI and gravitational redshift
 
-General relativity, under the assumption of the perfect validity of the EEP is able to derive a precise a formula for the so-called gravitational redshift experienced by a photon moving in a gravitational field. 
-Indeed, from the Newtonian limit derivation discussed in our [previous lecture](./foundations-GR.md), it is possible to show that, considering two points at rest in a gravitational field and a photon emitted from on point at a frequency  to another will $\nu_{em}$ will be received with another frequency $\nu_{ref}$ such as:
+If the LLI is true, all clocks should tick identically **in their own reference frame** no matter where (and when) they are located in the Universe. Yet two identical clocks placed at different heights in a gravitational field and compared, for example by exchanging light signals, do not agree: this is the gravitational redshift.
+
+Assuming the EEP, General Relativity provides a precise formula for this effect. In fact, the formula follows from the EEP alone, so it holds in any metric theory of gravity.
+Indeed, from the Newtonian limit derivation discussed in our [previous lecture](./foundations-GR.md), it is possible to show that, considering two points at rest in a gravitational field, a photon emitted from the first point with a frequency $\nu_{em}$, will be received at the other point with another frequency $\nu_{rec}$ such that:
 
 $$\boxed{\frac{\nu_{emm}- \nu_{rec}}{\nu_{rec}} = (1+\tilde{\alpha})\frac{\Delta \Phi}{c^2}}$$
 
-with $\tilde{\alpha}=0$ if LPI is valid.
+Where $\tilde{\alpha}$ must be strictly zero for the LPI to be valid. Hence measuring the redshift of a photon traveling in a gravitational field allows to test the EEP.
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
@@ -125,7 +127,7 @@ $$\frac{\nu_{\rm em} - \nu_{\rm rec}}{\nu_{\rm rec}} \simeq \frac{\Delta\Phi}{c^
 
 which is the standard gravitational redshift: light climbing out of a potential well ($\Delta\Phi > 0$) arrives with a lower frequency.
 
-Notice what the derivation above never used: **the nature of the clock**. We never asked whether the emitter was a $^{57}$Fe nucleus, a caesium atom or a hydrogen maser. We implicitly assumed that a given atomic transition, measured *locally* in the freely falling frame of the emitter, always yields the same frequency $\nu^{(0)}$ — a universal constant of nature. This assumption is precisely **local position invariance (LPI)**.
+Notice what the derivation above never used: **the nature of the clock**. We never asked whether the emitter was a $^{57}$Fe nucleus, a caesium atom or a hydrogen maser. We implicitly assumed that a given atomic transition, measured *locally* in the freely falling frame of the emitter, always yields the same frequency $\nu^{(0)}$ — constant no matter the atom emitting it. This assumption is precisely **local position invariance (LPI)**.
 
 Suppose now that LPI is violated: the internal physics of the clock — through a possible dependence of the fundamental constants on the ambient gravitational potential — makes the locally measured transition frequency depend on where the clock sits,
 
