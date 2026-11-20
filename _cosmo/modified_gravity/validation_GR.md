@@ -72,7 +72,7 @@ For more on MICROSCOPE results and their impact, see also the review of [Bergé 
 
 ### Tests of the LLI and ether drift
 
-Tests of the validity of the local Lorentz invariance can take multiple forms, but many of them consist of generalizations and refinements of the Michelson-Morley experiment, trying to use interferometry in order to detect possible changes in the value of the speed of light in different direction of motion. 
+Tests of the validity of the local Lorentz invariance (LLI) can take multiple forms, but many of them consist of generalizations and refinements of the Michelson-Morley experiment, trying to use interferometry in order to detect possible changes in the value of the speed of light in different direction of motion. 
 Possible variation of the speed of light $c$ in a direction compared to a reference value $c_0$ are quantified by the parameter:
 
 $$\boxed{\delta = \left\vert 1-\frac{c^{-2}_0}{c^2} \right\vert}$$
@@ -87,65 +87,82 @@ However, $\delta$ is an "old school" figure of merit for LLI violations. Today, 
 
 ### Tests of the LPI and gravitational redshift
 
-If the LPI is true, all clocks should tick identically **in their own reference frame** no matter where (and when) they are located in the Universe. Yet two identical clocks placed at different heights in a gravitational field and compared, for example by exchanging light signals, do not agree: this is the gravitational redshift.
+If the local positional invariance (LPI) is true, all clocks should tick identically **in their own reference frame** no matter where (and when) they are located in the Universe. Yet two identical clocks placed at different heights in a gravitational field and compared, for example by exchanging light signals, do not agree: this is the gravitational redshift.
 
 Assuming the EEP, General Relativity provides a precise formula for this effect. In fact, the formula follows from the EEP alone, so it holds in any metric theory of gravity.
 Indeed, from the Newtonian limit derivation discussed in our [previous lecture](./foundations-GR.md), it is possible to show that, considering two points at rest in a gravitational field, a photon emitted from the first point with a frequency $\nu_{\rm em}$, will be received at the other point with another frequency $\nu_{\rm rec}$ such that:
 
 $$\boxed{\frac{\nu_{\rm em}- \nu_{\rm rec}}{\nu_{\rm rec}} = (1+\tilde{\alpha})\frac{\Delta \Phi}{c^2}}$$
 
-Where $\tilde{\alpha}$ quantifies a possible variation of the proper time experienced at different location, which must be strictly zero for the LPI to be valid. Hence measuring the redshift of a photon traveling in a gravitational field allows to test the EEP.
+Where $\tilde{\alpha}$ quantifies a possible variation of the proper time experienced at different location, which must be strictly zero for the LPI to be valid. Hence measuring the redshift of a photon traveling in a gravitational field allows to test the EEP. You might feel that there is a contradiction and that this might sound like a "gravitational experiment", while the statement of the LPI concerns only non gravitational experiment. However, this test really quantifies whether  the ticking rate of an atomic clock is universal, which has nothing to do with gravity. Furthermore the expression for the gravitational redshift can be derived only by considering the local equivalence between frames at rests in a gravitational frame and upward accelerated frames implied by the EEP. Hence, this gravitational redshift has to be understood as a Doppler shift, and is independent of the expression of the gravitational force. As stated previously it thus holds in any metric theory of gravity.
 
 <details markdown="1">
   <summary><strong>Proof</strong></summary>
 
-We saw in the [previous class](./foundations-GR.md) that, within GR and in the Newtonian limit, $g_{00} = -\left(1 + \frac{2\Phi}{c^2}\right)$.
+Let us first derive the expression of the gravitational redshift simply under the local equivalence of accelerated frames and gravity implied by the EEP.
 
-Consider an observer at rest at a fixed position in a **static** gravitational field, i.e. one whose metric does not depend on the time coordinate $t$. Setting $\mathrm{d}x^i = 0$ in $\mathrm{d}s^2 = g_{\mu\nu}\mathrm{d}x^\mu \mathrm{d}x^\nu = -c^2\mathrm{d}\tau^2$, the proper time measured by this observer is
+Let us set the stage. Consider an emitter E and a receiver R are at rest in the lab, with R located at an height $h$ above E. $\Phi$ is the Newtonian potential. It increases with height, since $\vec g = -\vec\nabla\Phi$. We write $\Delta\Phi \equiv \Phi_{\rm rec}-\Phi_{\rm em}$, so that $\Delta\Phi = gh>0$ in a uniform field. Each frequency is measured *locally*: $\nu_{\rm em}$ by a clock next to E, $\nu_{\rm rec}$ by a clock next to R. Indeed, the frequency of a photon is a number of oscillation per unit of time, hence measuring it is like measuring the duration of a fundamental process. If this frequency characterize the emission of an atom, it is a fundamental process of physics which must be independent of where and when it is measured according to the LPI. We work at first order in $gh/c^2$, which is tiny: $g/c^2 \simeq 1.1\times10^{-16}\,{\rm m^{-1}}$ on Earth.
 
-$$\mathrm{d}\tau^2 = \left(1 + \frac{2\Phi}{c^2}\right)\mathrm{d}t^2 \qquad \Longrightarrow \qquad \mathrm{d}\tau \simeq \left(1 + \frac{\Phi}{c^2}\right)\mathrm{d}t ,$$
+By the EEP, a freely falling frame $\mathcal F$ is locally an inertial frame, in which special relativity holds. We release $\mathcal F$ from rest at the instant the photon is emitted. Seen from $\mathcal F$, the lab accelerates *upward* with acceleration $g$. This is the "accelerated rocket" equivalent of the lab at rest on the ground. At $t=0$ the emitter is at rest in $\mathcal F$, so in $\mathcal F$ the photon has frequency $\nu_{\rm em}$.
 
-where the last step is the first-order expansion in $$\Phi/c^2 \ll 1$$. Here $$\mathrm{d}t$$ is the **coordinate time**, a bookkeeping label shared by the whole spacetime, while $\mathrm{d}\tau$ is the **proper time**, the time actually measured by a physical clock sitting at that location. The two differ by the local value of the potential: clocks deeper in the potential well ($\Phi$ more negative) tick more slowly.
+ The photon reaches R after $\Delta t \simeq h/c$. During this time the lab moves by $\tfrac12 g\Delta t^2 = gh^2/2c^2 \ll h$, which is a second-order correction.
 
-Let an emitter at rest at position $$\vec{x}_{\rm em}$$ send out two successive crests of a light wave, and let a receiver at rest at $\vec{x}_{\rm rec}$ collect them. Because the metric is static, the spacetime geometry is identical at the moment of the first crest and at the moment of the second: the two crests therefore follow exactly the same trajectory and take exactly the same coordinate time to travel from emitter to receiver. Whatever that travel time is — and we never need to compute it — it cancels in the difference, so
+ At that instant R moves upward, away from the point of emission, with velocity $v = g\Delta t = gh/c$.
 
-$$\Delta t_{\rm rec} = \Delta t_{\rm em} \equiv \Delta t .$$
+For a receding observer,
+$$
+\nu_{\rm rec} = \nu_{\rm em}\sqrt{\frac{1-v/c}{1+v/c}} \simeq \nu_{\rm em}\left(1-\frac{v}{c}\right) = \nu_{\rm em}\left(1-\frac{gh}{c^2}\right).
+$$
+We assumed that R's clock ticks like an inertial clock with the same instantaneous velocity, i.e. that acceleration itself does not change its rate (the *clock hypothesis*). Time dilation is of order $v^2/c^2$ and therefore negligible.
 
-**The coordinate period of the signal is unchanged along the path.** This is the whole content of the geometrical part of the effect, and it relies only on staticity.
+$$
+\frac{\nu_{\rm em}-\nu_{\rm rec}}{\nu_{\rm rec}} = \frac{gh/c^2}{1-gh/c^2}\simeq \frac{gh}{c^2} = \frac{\Delta\Phi}{c^2}.
+$$
 
-Applying the relation between proper and coordinate time at each end,
+The argument is local. We cut the path into thin slices of thickness $\text{d}z$, each small enough for $g$ to be uniform across it. Each slice gives $\text{d}\nu/\nu = -g\,\text{d}z/c^2 = -\text{d}\Phi/c^2$. Integrating gives $\nu_{\rm rec} = \nu_{\rm em}\,e^{-\Delta\Phi/c^2}$, hence at first order
 
-$$\Delta \tau_{\rm em} \simeq \left(1 + \frac{\Phi_{\rm em}}{c^2}\right)\Delta t , \qquad \Delta \tau_{\rm rec} \simeq \left(1 + \frac{\Phi_{\rm rec}}{c^2}\right)\Delta t .$$
+$$\boxed{\frac{\nu_{\rm em}- \nu_{\rm rec}}{\nu_{\rm rec}} = \frac{\Delta \Phi}{c^2}}$$
 
-A frequency is the inverse of a period measured by a local physical clock, $\nu = 1/\Delta\tau$. Hence
+No field equation of gravity was used: only the existence of local inertial frames and the free-fall acceleration $g$.
 
-$$\frac{\nu_{\rm rec}}{\nu_{\rm em}} = \frac{\Delta\tau_{\rm em}}{\Delta\tau_{\rm rec}} = \frac{1 + \Phi_{\rm em}/c^2}{1 + \Phi_{\rm rec}/c^2} \simeq 1 - \frac{\Phi_{\rm rec} - \Phi_{\rm em}}{c^2} .$$
+Note that the same resultcould have been derived using the Newtonian expansion of the metric. Indeed, in the Newtonian limit of the [previous lecture](./foundations-GR.md), $g_{00}\simeq -(1+2\Phi/c^2)$.
 
-Defining $\Delta\Phi \equiv \Phi_{\rm rec} - \Phi_{\rm em}$, this is
+1. The metric is independent of time, so every wave crest takes the same coordinate time $t$ to travel from E to R. The frequency counted in coordinate time, $\nu_t$, is therefore the same at both ends.
+2. A clock at rest measures $\text{d}\tau=\sqrt{-g_{00}}\,\text{d}t \simeq (1+\Phi/c^2)\,\text{d}t$, so it reads $\nu = \nu_t/(1+\Phi/c^2)$.
+3. Therefore $\nu_{\rm em}/\nu_{\rm rec} = (1+\Phi_{\rm rec}/c^2)/(1+\Phi_{\rm em}/c^2)\simeq 1+\Delta\Phi/c^2$.
 
-$$\frac{\nu_{\rm em} - \nu_{\rm rec}}{\nu_{\rm rec}} \simeq \frac{\Delta\Phi}{c^2} ,$$
+Only $g_{00}$ enters, at first order, and it is the same $g_{00}$ that governs Newtonian free fall. This is why the result holds in any metric theory at this order.
 
-which is the standard gravitational redshift: light climbing out of a potential well ($\Delta\Phi > 0$) arrives with a lower frequency.
+e assumed that the clocks at E and R tick at the rate of proper time wherever they sit, just as they would in the rocket. Equivalently: R never receives "$\nu_{\rm em}$" itself. It receives the photon and compares it with **its own** identical clock, *assuming* that this clock ticks as the emitter did at its location.
 
-Notice what the derivation above never used: **the nature of the clock**. We never asked whether the emitter was a $^{57}$Fe nucleus, a caesium atom or a hydrogen maser. We implicitly assumed that a given atomic transition, measured *locally* in the freely falling frame of the emitter, always yields the same frequency $\nu^{(0)}$ — constant no matter the atom emitting it. This assumption is precisely **local position invariance (LPI)**.
+Let us now drop the LPI.  We keep the WEP and local Lorentz invariance. Part 1 then still describes the photon, provided its frequency is counted in proper time $\tau$. Proper time is the time defined by the metric, which can be mapped independently with light signals and free-fall experiments. What we drop is the assumption that a real clock (e.g. an atomic transition) ticks at the same proper-time rate everywhere.
 
-Suppose now that LPI is violated: the internal physics of the clock — through a possible dependence of the fundamental constants on the ambient gravitational potential — makes the locally measured transition frequency depend on where the clock sits,
+The proper-time duration of one cycle of the clock now depends on its location: $\Delta\tau(\Phi)$. In a weak static field the potential is the natural scalar that labels a location, so we expand at first order:
 
-$$\nu^{\rm local}(\Phi) = \nu^{(0)}\left(1 + \tilde{\alpha}\,\frac{\Phi}{c^2}\right) ,$$
+$$
+\Delta\tau(\Phi) = \Delta\tau_0\left[1-\tilde\alpha\,\frac{\Phi-\Phi_0}{c^2}\right]
+\quad\Longleftrightarrow\quad
+\nu(\Phi)\equiv\frac{1}{\Delta\tau(\Phi)} = \nu_0\left[1+\tilde\alpha\,\frac{\Phi-\Phi_0}{c^2}\right],
+\qquad \tilde\alpha \equiv c^2\,\frac{\text{d}\ln\nu}{\text{d}\Phi}.
+$$
 
-where $\tilde{\alpha}$ is a dimensionless parameter which **may differ from one type of clock to another**.
+Here $\Phi_0$ is an arbitrary reference point, $\nu_0$ is the clock frequency there, and $\tilde\alpha$ is dimensionless.
 
-The measurement now involves two effects. Repeating Step 2 with $\nu_{\rm em} \to \nu^{\rm local}(\Phi_{\rm em})$, the signal arrives at the receiver with
+The photon leaves E with proper-time frequency $\nu(\Phi_{\rm em})$. By Part 1, it arrives at R with $\nu(\Phi_{\rm em})\left(1-\Delta\Phi/c^2\right)$.
 
-$$\nu_{\rm rec} \simeq \nu^{(0)}\left(1 + \tilde{\alpha}\frac{\Phi_{\rm em}}{c^2}\right)\left(1 - \frac{\Delta\Phi}{c^2}\right) .$$
+At R, the photon ($\nu_{\rm rec}$) is compared with an identical clock sitting at R. That clock provides the nominal frequency $\nu_{\rm em}$ of the formula, so $\nu_{\rm em}=\nu(\Phi_{\rm rec})$. Both signals are at the same place, so their ratio is a pure number, independent of how proper time is realized.
 
-But the receiver does not know $\nu^{(0)}$: it compares the incoming signal to *its own* identical clock, which ticks at $\nu^{(0)}\left(1 + \tilde{\alpha}\Phi_{\rm rec}/c^2\right)$. Taking the ratio and keeping first order,
+At first order, $(1+a)/(1+b)\simeq 1+a-b$ and $1/(1-x)\simeq1+x$. Hence
+$$
+\frac{\nu_{\rm em}}{\nu_{\rm rec}}
+= \frac{1+\tilde\alpha(\Phi_{\rm rec}-\Phi_0)/c^2}{\left[1+\tilde\alpha(\Phi_{\rm em}-\Phi_0)/c^2\right]\left(1-\Delta\Phi/c^2\right)}
+\simeq 1+\tilde\alpha\,\frac{\Delta\Phi}{c^2}+\frac{\Delta\Phi}{c^2}.
+$$
+$\nu_0$ and $\Phi_0$ drop out: only the potential difference matters. Subtracting 1 gives
 
-$$\frac{\nu_{\rm rec}}{\nu_{\rm em}} \simeq \left(1 - \tilde{\alpha}\frac{\Delta\Phi}{c^2}\right)\left(1 - \frac{\Delta\Phi}{c^2}\right) \simeq 1 - (1 + \tilde{\alpha})\frac{\Delta\Phi}{c^2} ,$$
+$$\boxed{\frac{\nu_{\rm em}- \nu_{\rm rec}}{\nu_{\rm rec}} = (1+\tilde{\alpha})\frac{\Delta \Phi}{c^2}}$$
 
-which gives the announced result
-
-$$\boxed{\frac{\nu_{\rm em} - \nu_{\rm rec}}{\nu_{\rm rec}} = (1 + \tilde{\alpha})\frac{\Delta\Phi}{c^2}} \qquad \Delta\Phi \equiv \Phi_{\rm rec} - \Phi_{\rm em} .$$
+The "1" is the universal, geometric part, coming from light propagation and the motion of the frames. $\tilde\alpha$ comes from the clock's own physics depending on where it sits. The LPI holds if and only if $\tilde\alpha=0$.
 
 </details>
 
